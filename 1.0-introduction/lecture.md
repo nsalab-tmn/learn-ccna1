@@ -54,10 +54,10 @@
 Нажмите кнопку воспроизведения видео, чтобы в подробностях ознакомиться с процессом загрузки и установки Packet Tracer.
 
 <video width="768" height="432" controls>
-  <source src="./assets/1.0.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  <source src="https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
 
-https://github.com/nsalab-tmn/learn-ccna1/blob/main/1.0-introduction/assets/1.0.3.mp4
+https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.3.mp4
 
 1.0.4
 ## Видео - Начало работы в Cisco Packet Tracer
@@ -75,10 +75,10 @@ Packet Tracer - это инструмент, который позволяет �
 Нажмите кнопку Воспроизведение в видео, чтобы узнать, как использовать меню и как создать первую сеть Packet Tracer.
 
 <video width="768" height="432" controls>
-  <source src="./assets/1.0.4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  <source src="https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
 
-https://github.com/nsalab-tmn/learn-ccna1/blob/main/1.0-introduction/assets/1.0.4.mp4
+https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.4.mp4
 
 1.0.5
 ## Packet Tracer - Исследование логического и физического режима
