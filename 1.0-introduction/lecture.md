@@ -44,20 +44,14 @@
 
 Для получения и установки копии Cisco Packet Tracer выполните следующие простые шаги.
 
-- Шаг 1. Войдите на свою страницу I’m Learning (Я учусь) в Сетевой академии Cisco.
-- Шаг 2. Выберите Ресурсы.
-- Шаг 3. Выберите Download Packet Tracer (Загрузить Packet Tracer).
-- Шаг 4. Выберите необходимую версию Packet Tracer.
-- Шаг 5. Сохраните файл на свой компьютер.
-- Шаг 6. Запустите программу установки Packet Tracer.
+- Шаг 1. [Сохраните файл на свой компьютер](./todo_place_link_to_packet_tracer_win_lin_mac)
+- Шаг 2. Запустите программу установки Packet Tracer.
 
 Нажмите кнопку воспроизведения видео, чтобы в подробностях ознакомиться с процессом загрузки и установки Packet Tracer.
 
 <video width="768" height="432" controls>
-  <source src="https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  <source src="./assets/1.0.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
-
-https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.3.mp4
 
 1.0.4
 ## Видео - Начало работы в Cisco Packet Tracer
@@ -75,10 +69,8 @@ Packet Tracer - это инструмент, который позволяет �
 Нажмите кнопку Воспроизведение в видео, чтобы узнать, как использовать меню и как создать первую сеть Packet Tracer.
 
 <video width="768" height="432" controls>
-  <source src="https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  <source src="./assets/1.0.4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
-
-https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.4.mp4
 
 1.0.5
 ## Packet Tracer - Исследование логического и физического режима
