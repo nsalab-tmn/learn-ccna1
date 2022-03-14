@@ -6,3 +6,8 @@
 </video>
 
 https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.0-introduction/assets/1.0.3.mp4
+
+
+
+https://user-images.githubusercontent.com/24583341/158264215-210fa4f3-101c-4d58-a1b8-46ce82428a78.mp4
+
