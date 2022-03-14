@@ -14,7 +14,7 @@
 Нажмите кнопку Воспроизведение, чтобы узнать, как мы используем технологии, чтобы сделать мир лучше.
 
 <video width="768" height="432" controls>
-  <source src="D:\1.1.2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  <source src="./assets/1.1.2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
 
 1.1.3
