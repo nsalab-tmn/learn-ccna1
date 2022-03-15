@@ -1,0 +1,11 @@
+{
+    "title": "1.1-how-networks-affect-human-life",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT1H20M",
+    "tags": ["Network", "Cisco"],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}
