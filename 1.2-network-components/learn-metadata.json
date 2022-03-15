@@ -1,9 +1,9 @@
 {
-    "title": "1.2-network-components",
+    "title": "Компоненты сети",
     "materialType": "lecture",
     "description": "",
     "difficulty": 3,
-    "duration": "PT1H20M",
+    "duration": "PT0H5M",
     "tags": ["Network", "Cisco"],
     "skills": {},
     "testProjectPath": "./lecture.md",
