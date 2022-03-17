@@ -101,7 +101,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 Найти ссылку на m3u8 файл можно во вкладке Network в режиме разработчика как показано ниже:
 
-![](./readme-assets/pictures.png)
+![](./readme-assets/video.png)
 
 ### Файлы PKA и PDF
 
