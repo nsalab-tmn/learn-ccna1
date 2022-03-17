@@ -91,7 +91,7 @@
 
 ### Видео
 
-Встречаются редко, но если встречаются их можно выкачать утилитой ffmpeg используя следующую команды
+Встречаются редко, но если встречаются их можно выкачать утилитой [ffmpeg](https://1drv.ms/u/s!At1RfXB5mNd79FouXrqLgHRRkUgd?e=W0K1lF) используя следующую команды
 
 ```
 ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downloads\output.mp4
