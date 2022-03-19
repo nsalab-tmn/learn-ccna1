@@ -13,7 +13,7 @@
 Загрузите тот же файл PKT, который используется в видео. По тренируйтесь с помощью команд ipconfig и show ip interface brief, как показано на видео.
 
 ![](./assets/2.8.1.mp4)
-<!-- /courses/itn-dl/aeec9260-34fa-11eb-ad9a-f74babed41a6/af1e77d2-34fa-11eb-ad9a-f74babed41a6/assets/2d988780-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 ![Скачать файл для Packet Tracer](./assets/2.8.1-video-activity---test-the-interface-assignment_ru-RU.pkt)
 
 <!-- 2.8.2-->
