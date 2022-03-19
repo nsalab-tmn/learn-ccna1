@@ -113,6 +113,24 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 [Скачать файл для Packet Tracer](./assets/1.0.5-packet-tracer---logical-and-physical-mode-exploration_ru-RU.pka)
 ```
 
+### Анимации
+ Делаем из анимации gif-файл при помощи [Recordit](https://recordit.co/)
+ 
+1. Выделяем область захвата, нажимаем Record, запускаем анимацию.
+ ![](./readme-assets/gif-1.png)
+ 
+2. Ждем окончания анимации, нажимаем Stop.
+  ![](./readme-assets/gif-2.png)
+  
+3. Переходим на сайт.
+![](./readme-assets/gif-3.png)
+
+4. Жмем на Play и затем на кнопку GIF.
+![](./readme-assets/gif-4.png)
+
+5. Сохраняем gif файл.
+![](./readme-assets/gif-5.png)
+
 ### Квизы в конце модуля
 
 Пока игнорируем
