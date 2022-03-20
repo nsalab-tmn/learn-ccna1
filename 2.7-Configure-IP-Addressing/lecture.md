@@ -59,6 +59,6 @@ IP-адрес можно ввести в оконечное устройство
 ## Packet Tracer. Создание основных подключений
 В этом упражнении вы сначала настроите основные параметры коммутатора. Затем вы создадите основные подключения, настроив IP-адреса на коммутаторах и ПК. Завершив настройку IP-адресации, вы будете использовать различные команды **show**, чтобы проверить настройки, а также команду **ping** для проверки основных подключений между устройствами.
 
-![Создание основных подключений](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pdf)
+[Создание основных подключений](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pdf)
 
-![Скачать файл для Packet Tracer](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka)
+[Скачать файл для Packet Tracer](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka)
