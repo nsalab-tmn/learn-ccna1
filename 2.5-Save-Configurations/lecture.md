@@ -88,6 +88,6 @@
 ## Packet Tracer - Настройка начальных параметров коммутатора
 В этом упражнении вы настроите базовые параметры коммутатора. Вы обеспечите безопасность доступа к интерфейсу командной строки (CLI) и порту консоли с помощью зашифрованных и открытых паролей. Вы также научитесь настраивать сообщения для пользователей, выполняющих вход в систему коммутатора. Эти баннеры также предупреждают пользователей о том, что несанкционированный доступ запрещен.
 
-![Настройка начальных параметров коммутатора](./assets/2.5.5-packet-tracer---configure-initial-switch-settings_ru-RU.pdf)
+[Настройка начальных параметров коммутатора](./assets/2.5.5-packet-tracer---configure-initial-switch-settings_ru-RU.pdf)
 <!-- /courses/itn-dl/_common/2.5.5-packet-tracer---configure-initial-switch-settings_ru-RU.pdf -->
-![Скачать файл для Packet Tracer](./assets/2.5.5-packet-tracer---configure-initial-switch-settings_ru-RU.pka)
+[Скачать файл для Packet Tracer](./assets/2.5.5-packet-tracer---configure-initial-switch-settings_ru-RU.pka)
