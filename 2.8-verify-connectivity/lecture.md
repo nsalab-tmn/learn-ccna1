@@ -14,7 +14,7 @@
 
 ![](./assets/2.8.1.mp4)
 
-![Скачать файл для Packet Tracer](./assets/2.8.1-video-activity---test-the-interface-assignment_ru-RU.pkt)
+[Скачать файл для Packet Tracer](./assets/2.8.1-video-activity---test-the-interface-assignment_ru-RU.pkt)
 
 <!-- 2.8.2-->
 ## Видео задание - Проверка сквозного подключения
@@ -27,4 +27,4 @@
 Загрузите тот же файл PKT, который используется в видео. Практика с использованием ping команды, как показано на видео.
 ![](./assets/2.8.2.mp4)
 
-![Скачать файл для Packet Tracer](./assets/2.8.2-video-activity---test-end-to-end-connectivity_ru-RU.pkt)
+[Скачать файл для Packet Tracer](./assets/2.8.2-video-activity---test-end-to-end-connectivity_ru-RU.pkt)
