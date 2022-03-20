@@ -1,9 +1,9 @@
 {
-    "title": "Правила",
+    "title": "Протоколы",
     "materialType": "lecture",
     "description": "",
     "difficulty": 3,
-    "duration": "PT0H15M",
+    "duration": "PT0H6M",
     "tags": ["Network", "Cisco"],
     "skills": {},
     "testProjectPath": "./lecture.md",
