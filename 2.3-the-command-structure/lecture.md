@@ -127,4 +127,4 @@ Play Video
 
 **Лабораторное оборудование**
 
-[Навигация по IOS с помощью Tera Term при консольном подключении](./assets/2.3.8-lab---navigate-the-ios-by-using-tera-term-for-console-connectivity_ru-RU.pdf)
+[Навигация по IOS с помощью Tera Term при консольном подключении (pdf)](./assets/2.3.8-lab---navigate-the-ios-by-using-tera-term-for-console-connectivity_ru-RU.pdf)
