@@ -143,7 +143,7 @@ MAC-адреса Ethernet обычно имеют шестнадцатеричн
 Windows IP Configuration
 Ethernet adapter Local Area Connection:
    Connection-specific DNS Suffix . :
-   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:fc 99:47ff:fe75:cee0 
+   IPv6 Address. . . . . . . . . . . : <font color="green">2001:db8:acad:1:</font><font color="orange">fc 99:47</font>ff:fe<font color="orange">75:cee0</font>
    Link-local IPv6 Address . . . . . : fe80::fc99:47ff:fe75:cee0
    Default Gateway . . . . . . . . . : fe80::1
 C:\ ></code></pre>
@@ -162,7 +162,7 @@ C:\ ></code></pre>
 Windows IP Configuration
 Ethernet adapter Local Area Connection:
    Connection-specific DNS Suffix  . :
-   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:50a5:8a35:a5bb:66e1
+   IPv6 Address. . . . . . . . . . . : <font color="green">2001:db8:acad:1:</font><font color="orange">50a5:8a35:a5bb:66e1</font>
    Link-local IPv6 Address . . . . . : fe80::50a5:8a35:a5bb:66e1
    Default Gateway . . . . . . . . . : fe80::1
 C:\></code></pre>
