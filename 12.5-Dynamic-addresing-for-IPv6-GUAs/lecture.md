@@ -158,13 +158,13 @@ C:\ ></code></pre>
 
 ### Случайным образом сгенерированный 64-битный идентификатор интерфейса
 
-<code>C:\> ipconfig
+<pre><code>C:\> ipconfig
 Windows IP Configuration
 Ethernet adapter Local Area Connection:
    Connection-specific DNS Suffix  . :
    IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:50a5:8a35:a5bb:66e1
    Link-local IPv6 Address . . . . . : fe80::50a5:8a35:a5bb:66e1
    Default Gateway . . . . . . . . . : fe80::1
-C:\></code>
+C:\></code></pre>
 
 **Примечание:** Чтобы обеспечить уникальный индивидуальный IPv6-адрес клиент может использовать процесс обнаружения дублирующихся адресов (Duplicate Address Detection, DAD). Это аналогично ARP-запросу собственного адреса. Отсутствие ответного сообщения означает, что адрес уникален.

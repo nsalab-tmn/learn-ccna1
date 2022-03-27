@@ -26,7 +26,7 @@
 
 ### Конфигурация глобального уникального IPv6-адреса на маршрутизаторе R1
 
-<code>R1(config)# interface gigabitethernet 0/0/0 
+<pre><code>R1(config)# interface gigabitethernet 0/0/0 
 R1(config-if)# ipv6 address 2001:db8:acad:1::1/64
 R1(config-if)# no shutdown
 R1(config-if)# exit
@@ -36,7 +36,7 @@ R1(config-if)# no shutdown
 R1(config-if)# exit
 R1(config)# interface serial 0/1/0 
 R1(config-if)# ipv6 address 2001:db8:acad:3::1/64
-R1(config-if)# no shutdown</code>
+R1(config-if)# no shutdown</code></pre>
 
 <!-- 12.4.2 -->
 ## Статическая конфигурация глобального уникального IPv6-адреса на узле Windows
@@ -76,7 +76,7 @@ LLA можно настроить вручную с помощью **ipv6 addres
 
 В примере показана конфигурация LLA на маршрутизаторе R1.
 
-<code>R1(config)# interface gigabitethernet 0/0/0 
+<pre><code>R1(config)# interface gigabitethernet 0/0/0 
 R1(config-if)# ipv6 address fe80::1:1 link-local
 R1(config-if)# exit
 R1(config)# interface gigabitethernet 0/0/1 
@@ -84,7 +84,7 @@ R1(config-if)# ipv6 address fe80::1:2 link-local
 R1(config-if)# exit
 R1(config)# interface serial 0/1/0 
 R1(config-if)# ipv6 address fe80::1:3 link-local
-R1(config-if)# exit</code>
+R1(config-if)# exit</code></pre>
 
 Статически настроенные LLA используются для того, чтобы сделать их более легко узнаваемыми как принадлежащие маршрутизатору R1. В этом примере все интерфейсы маршрутизатора R1 настроены с LLA, начинающегося с **fe80::1:**n, и уникальной правой цифрой «n». «**1**» представляет маршрутизатор R1.
 
