@@ -1,9 +1,9 @@
 {
-    "title": "Динамическая адресация локальных адресов канала IPv6",
+    "title": "Групповые IPv6-адреса",
     "materialType": "lecture",
     "description": "",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H8M",
     "tags": ["Network", "Cisco"],
     "skills": {},
     "testProjectPath": "./lecture.md",
