@@ -47,7 +47,7 @@ Desktop Downloads lab.support.files second_drive
 
 На рисунке показан список версий IOS для коммутатора Cisco Catalyst 2960.
 
-Пример загрузки программного обеспечения Cisco
+Пример загрузки программного обеспечения Cisco<br>
 ![](./assets/2.1.3.png)
 <!-- /courses/itn-dl/aeecb970-34fa-11eb-ad9a-f74babed41a6/af1ec5f0-34fa-11eb-ad9a-f74babed41a6/assets/2d9ec912-1c25-11ea-81a0-ffc2c49b96bc_md.png>
 
