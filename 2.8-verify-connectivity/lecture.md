@@ -13,8 +13,6 @@
 
 Загрузите тот же файл PKT, который используется в видео. По тренируйтесь  с помощью  команд **ipconfig** и  **show ip interface brief**, как показано на видео.
 
-
-
 <video width="768" height="432" controls>
   <source src="./assets/2.8.1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
