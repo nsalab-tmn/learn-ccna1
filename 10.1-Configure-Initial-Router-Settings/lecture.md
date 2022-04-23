@@ -16,7 +16,7 @@ Router(config)# hostname
 2\. Обеспечьте безопасность привилегированного режима EXEC.
 
 ```
-Router(config)# enable secret password
+Router(config)# enable secret <secret_password>
 ```
 
 
@@ -25,7 +25,7 @@ Router(config)# enable secret password
 
 ```
  Router(config)# line console 0 
- Router(config-line)# password password 
+ Router(config-line)# password <plain_text_password> 
  Router(config-line)# login 
 ```
 
@@ -35,7 +35,7 @@ Router(config)# enable secret password
 
 ```
  Router(config-line)# line vty 0 4 
- Router(config-line)# password  password 
+ Router(config-line)# password <plain_text_password>
  Router(config-line)# login 
  Router(config-line)# transport input { ssh  | telnet} 
 ```
@@ -54,7 +54,7 @@ Router(config)# enable secret password
 6. Создайте баннер с правовым уведомлением.
 
 ```
-Router(config)# banner motd delimiter message delimiter
+Router(config)# banner motd <# message #>
 ```
 
 
@@ -75,10 +75,6 @@ Router(config)# banner motd delimiter message delimiter
 
 ![](./assets/10.1.2.png)
 <!-- /courses/itn-dl/aeed2ea2-34fa-11eb-ad9a-f74babed41a6/af21fa42-34fa-11eb-ad9a-f74babed41a6/assets/2e1dbd13-1c25-11ea-81a0-ffc2c49b96bc.svg -->
-
-<!--
-The figure shows a network topology diagram with two PCs, two switches, two routers, and an internet cloud. From left to right PC 1 connects to a switch which connects to R1 which connects to R2 which connects to a second switch, which connects to PC2. PC1 is on the 192.168.10.0/24 IPv4 network and has IPv4 address 192.168.10.10. PC1 also connects to the 2001.db8:acad:10::/64 IPv6 network and has IPv6 address 2001:db8:acad:10::10. Router R1 G0/0/0 interface is on the same network as PC1. The IPv4 and IPv6 address of the G0/0/0 interface of R1 is 192.168.10.1 and 2001:db8:acad:10::1. The IPv4 network connecting R1 and R2 is 209.165.200.224/30. The IPv6 network connecting R1 and R2 is 2001:db8:feed:224::/64. R1 connects to R2 over interface G0/0/1 which has IPv4 address 209.165.200. 225 and IPv6 address 2001:db8:feed:224::1. The IP addresses for R2 on the shared network with R1 are 209.165.200. 226 and 2001:db8:feed:224::2.  PC2 and R2 are connected on IPv4 network 10.1.1.0/24 and IPv6 network 2001:db8:cafe:1::/64. PC1 has IPv4 address 10.1.1.10 and IPv6 address 2001:db8:cafe::10. R2 has IPv4 address 10.1.1.1 and IPv6 address 2001:db8:cafe::1.
--->
 
 Чтобы настроить имя устройства для R1, используйте следующие команды.
 
@@ -152,8 +148,6 @@ R1#
 ## Cisco Packet Tracer. Настройка исходных параметров маршрутизатора
 
 В этом упражнении вы выполните основные настройки маршрутизатора. Вы обеспечите безопасность доступа к интерфейсу командной строки (CLI) и порту консоли с помощью зашифрованных и открытых паролей. Также вы настроите сообщения для пользователей, входящих в систему маршрутизатора. Эти баннеры также предупреждают неавторизованных пользователей о том, что доступ запрещен. В завершение вы проверите и сохраните текущую конфигурацию.
-
-
 
 [Настройка исходных параметров маршрутизатора (pdf)](./assets/10.1.4-packet-tracer---configure-initial-router-settings.pdf)
 
