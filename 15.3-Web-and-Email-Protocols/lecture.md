@@ -121,7 +121,6 @@
 
 POP3 является наиболее часто используемой версией.
 
-
 ![](./assets/15.3.4-2.png)
 <!-- /courses/itn-dl/aeed7cc2-34fa-11eb-ad9a-f74babed41a6/af24b960-34fa-11eb-ad9a-f74babed41a6/assets/2e735722-1c25-11ea-81a0-ffc2c49b96bc.svg -->
 
