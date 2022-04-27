@@ -9,8 +9,6 @@
 
 Настройте сетевые устройства для устранения проблем с подключением.
 
-
-
 [Использование ICMP для проверки и исправления сетевого подключения (pdf)](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity.pdf)
 
 [Использование ICMP для проверки и исправления сетевого подключения (pka)](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity.pka)
