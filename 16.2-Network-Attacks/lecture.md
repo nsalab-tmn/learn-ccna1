@@ -26,8 +26,8 @@
 ![](./assets/16.2.1.gif)
 
 <!--
-The animation shows a network with two PCs and two routers with the routers are connected to each other sit between the two PCs with each PC connected to one of the routers. The PC on the left has an attacker. As the animation plays a text box opens that reads “The primary vulnerabilities for end-user workstations are virus, worm, and Trojan Horse attacks. As the animation continues to play the attacker at the PC on the left sends a virus attack on the network that travels over the network routers to the PC on the right. A text box opens that reads “A virus is malicious software which executes a specific unwanted, and often harmful, function on a computer”.
-As the animation continues to play the attacker at the PC on the left sends a worm attack on the network that travels over the network routers to the PC on the right. A text box opens that reads “A worm executes arbitrary code and installs copies of itself in the memory of the infected computer. The main purpose of a worm is to automatically replicate itself and spread across the network from system to system”. As the animation continues to play the attacker at the PC on the left sends a Trojan Horse attack on the network that travels over the network routers to the PC on the right. A text box opens that reads “A Trojan horse is a non-self-replicating type of malware. It often contains malicious code that is designed to look like something else, such as a legitimate application or file. When an infected application or file is downloaded and opened, the Trojan horse can attack the end device from within”. 
+The animation shows a network with two PCs and two routers with the routers are connected to each other sit between the two PCs with each PC connected to one of the routers. The PC on the left has an attacker. As the animation plays a text box opens that reads “The primary vulnerabilities for end-user workstations are virus, worm, and Trojan Horse attacks. As the animation continues to play the attacker at the PC on the left sends a virus attack on the network that travels over the network routers to the PC on the right. A text box opens that reads “A virus is malicious software which executes a specific unwanted, and often harmful, function on a computer”.
+As the animation continues to play the attacker at the PC on the left sends a worm attack on the network that travels over the network routers to the PC on the right. A text box opens that reads “A worm executes arbitrary code and installs copies of itself in the memory of the infected computer. The main purpose of a worm is to automatically replicate itself and spread across the network from system to system”. As the animation continues to play the attacker at the PC on the left sends a Trojan Horse attack on the network that travels over the network routers to the PC on the right. A text box opens that reads “A Trojan horse is a non-self-replicating type of malware. It often contains malicious code that is designed to look like something else, such as a legitimate application or file. When an infected application or file is downloaded and opened, the Trojan horse can attack the end device from within”. 
 -->
 
 <!-- 16.2.2 -->
@@ -42,8 +42,6 @@ As the animation continues to play the attacker at the PC on the left sends a wo
 Злоумышленники извне могут использовать инструменты Интернета, например программные средства **nslookup** и **whois**, которые позволяют с легкостью определить пространство IP-адресов, назначенное определенной корпорации или юридическому лицу. После определения пространства IP-адресов злоумышленник может отправить команду ping для проверки связи с общедоступными IP-адресами, чтобы выявить активные адреса. Для автоматизации этого этапа хакер может использовать инструмент эхо-тестирования, например, **fping** или **gping**. Систематически отправляет эхо-запросы на все сетевые адреса в заданном диапазоне или подсети. Этот процесс можно сравнить с просмотром раздела телефонной книги и звонком на каждый из номеров, чтобы проверить, кто ответит.
 
 ### Интернет-запросы
-
-**Интернет запросы**
 
 Нажмите Воспроизведение на рисунке для просмотра анимации. Хакер ищет исходную информацию о целевом объекте. Можно использовать различные инструменты, в том числе поиск Google, веб-сайт организаций, Whois и многое другое.
 
@@ -159,8 +157,6 @@ This animation shows a Web server, www.XYZcorp.com, an internet user, two PCs, a
 
 ### Распределенная атака DDoS
 
-**DDoS-атака**
-
 Распределенные атаки типа «Отказ в обслуживании» (DDoS) похожи на DoS-атаки, но проводятся скоординировано из нескольких источников. Например, злоумышленник создает сеть зараженных хостов, известных как зомби. Сеть зомби называется ботнетом. Актер угрозы использует программу командования и управления (CnC), чтобы инструктировать ботнет зомби выполнять DDoS-атаку.
 
 Нажмите кнопку Play (Воспроизведение), чтобы просмотреть анимацию DDoS-атаки.
@@ -182,8 +178,6 @@ This animation shows a Web server, www.QZXBANK.com, two internet users, two PCs,
 * Часть 1: Изучение веб-сайта SANS
 * Часть 2: Определение новых угроз безопасности сети
 * Часть 3: Подробное описание отдельной угрозы безопасности сети
-
-
 
 [Изучение угроз безопасности сети (lab)](./assets/16.2.6-lab---research-network-security-threats.pdf)
 
