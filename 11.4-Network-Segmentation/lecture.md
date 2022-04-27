@@ -86,7 +86,6 @@
 
 **Разделение на подсети по типу устройств**
 
-
 ![](./assets/11.4.3-3.png)
 <!-- /courses/itn-dl/aeed55b0-34fa-11eb-ad9a-f74babed41a6/af22bd92-34fa-11eb-ad9a-f74babed41a6/assets/2e30f6f7-1c25-11ea-81a0-ffc2c49b96bc.svg -->
 
