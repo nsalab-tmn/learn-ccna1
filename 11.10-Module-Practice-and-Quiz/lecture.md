@@ -10,8 +10,6 @@
 * Проверьте IP-подключение.
 * Поиск и устранение неполадок подключения
 
-
-
 [Разработка и реализация схемы адресации VLSM (pdf)](./assets/11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme.pdf)
 
 [Разработка и реализация схемы адресации VLSM (pka)](./assets/11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme.pka)
