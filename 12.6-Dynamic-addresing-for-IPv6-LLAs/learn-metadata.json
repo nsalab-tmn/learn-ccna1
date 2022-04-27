@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H9M",
     "tags": ["Network", "Cisco"],
     "skills": {},
     "testProjectPath": "./lecture.md",
