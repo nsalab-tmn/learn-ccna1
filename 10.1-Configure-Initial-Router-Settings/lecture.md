@@ -11,45 +11,35 @@
 Router(config)# hostname
 ```
 
-
-
 2\. Обеспечьте безопасность привилегированного режима EXEC.
 
 ```
 Router(config)# enable secret password
 ```
 
-
-
 3\. Обеспечьте безопасность доступа к пользовательскому режиму EXEC.
 
 ```
- Router(config)# line console 0 
- Router(config-line)# password password 
- Router(config-line)# login 
+Router(config)# line console 0
+Router(config-line)# password password
+Router(config-line)# login
 ```
-
- 
 
 4 Обеспечьте безопасность удаленного доступа по протоколу Telnet или SSH.
 
 ```
- Router(config-line)# line vty 0 4 
- Router(config-line)# password  password 
- Router(config-line)# login 
- Router(config-line)# transport input { ssh  | telnet} 
+Router(config-line)# line vty 0 4
+Router(config-line)# password password
+Router(config-line)# login
+Router(config-line)# transport input {ssh | telnet}
 ```
-
- 
 
 5. Защитите все пароли в файле конфигурации.
 
 ```
- Router(config-line)# exit 
- Router(config)# service password-encryption 
+Router(config-line)# exit
+Router(config)# service password-encryption
 ```
-
- 
 
 6. Создайте баннер с правовым уведомлением.
 
@@ -57,16 +47,12 @@ Router(config)# enable secret password
 Router(config)# banner motd delimiter message delimiter
 ```
 
-
-
 7 Сохраните конфигурацию.
 
 ```
- Router(config)# end 
- Router# copy running-config startup-config 
+Router(config)# end
+Router# copy running-config startup-config
 ```
-
- 
 
 <!-- 10.1.2 -->
 ## Базовая конфигурация маршрутизатора
@@ -138,22 +124,12 @@ R1#
 ```
 
 <!-- 10.1.3 -->
-## Проверка синтаксиса - настройка начальных параметров маршрутизатора
-
-Используйте эту проверку синтаксиса для тренировки настройки начальных параметров маршрутизатора.
-
-* Настройте имя устройства.
-* Обеспечьте безопасность доступа к привилегированному режиму EXEC
-* Обеспечьте безопасность удаленного доступа по протоколу Telnet и SSH
-* ·Зашифруйте все открытые пароли.
-* Создайте баннер с правовым уведомлением.
+<!-- syntax -->
 
 <!-- 10.1.4 -->
 ## Cisco Packet Tracer. Настройка исходных параметров маршрутизатора
 
 В этом упражнении вы выполните основные настройки маршрутизатора. Вы обеспечите безопасность доступа к интерфейсу командной строки (CLI) и порту консоли с помощью зашифрованных и открытых паролей. Также вы настроите сообщения для пользователей, входящих в систему маршрутизатора. Эти баннеры также предупреждают неавторизованных пользователей о том, что доступ запрещен. В завершение вы проверите и сохраните текущую конфигурацию.
-
-
 
 [Настройка исходных параметров маршрутизатора (pdf)](./assets/10.1.4-packet-tracer---configure-initial-router-settings.pdf)
 
