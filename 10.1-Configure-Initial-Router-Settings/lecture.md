@@ -11,15 +11,11 @@
 Router(config)# hostname
 ```
 
-
-
 2\. Обеспечьте безопасность привилегированного режима EXEC.
 
 ```
 Router(config)# enable secret <secret_password>
 ```
-
-
 
 3\. Обеспечьте безопасность доступа к пользовательскому режиму EXEC.
 
@@ -28,8 +24,6 @@ Router(config)# enable secret <secret_password>
  Router(config-line)# password <plain_text_password> 
  Router(config-line)# login 
 ```
-
- 
 
 4 Обеспечьте безопасность удаленного доступа по протоколу Telnet или SSH.
 
@@ -40,16 +34,12 @@ Router(config)# enable secret <secret_password>
  Router(config-line)# transport input { ssh  | telnet} 
 ```
 
- 
-
 5. Защитите все пароли в файле конфигурации.
 
 ```
- Router(config-line)# exit 
- Router(config)# service password-encryption 
+Router(config-line)# exit
+Router(config)# service password-encryption
 ```
-
- 
 
 6. Создайте баннер с правовым уведомлением.
 
@@ -57,16 +47,12 @@ Router(config)# enable secret <secret_password>
 Router(config)# banner motd <# message #>
 ```
 
-
-
 7 Сохраните конфигурацию.
 
 ```
- Router(config)# end 
- Router# copy running-config startup-config 
+Router(config)# end
+Router# copy running-config startup-config
 ```
-
- 
 
 <!-- 10.1.2 -->
 ## Базовая конфигурация маршрутизатора
@@ -134,15 +120,7 @@ R1#
 ```
 
 <!-- 10.1.3 -->
-## Проверка синтаксиса - настройка начальных параметров маршрутизатора
-
-Используйте эту проверку синтаксиса для тренировки настройки начальных параметров маршрутизатора.
-
-* Настройте имя устройства.
-* Обеспечьте безопасность доступа к привилегированному режиму EXEC
-* Обеспечьте безопасность удаленного доступа по протоколу Telnet и SSH
-* ·Зашифруйте все открытые пароли.
-* Создайте баннер с правовым уведомлением.
+<!-- syntax -->
 
 <!-- 10.1.4 -->
 ## Cisco Packet Tracer. Настройка исходных параметров маршрутизатора
