@@ -9,10 +9,6 @@
 
 ![](./assets/17.5.1.jpg)
 
-<!--
-screen capture of the Windows Network Connection Details dialog box showing IP configuration information including IP address, subnet mask, default gateway, and DNS сервер
--->
-
 Тем не менее, сетевые администраторы обычно просматривают информацию IP-адресации на  Windows устройствах, выполняя  команду **ipconfig** в командной строке  Windows, как показано в примере.
 
 ```
@@ -105,10 +101,6 @@ Windows IP Configuration
 
 ![](./assets/17.5.2.jpg)
 
-<!--
-screen capture of the Connections Information dialog box on a Linux host showing IP configuration details including IP address, subnet mask, default gateway, and DNS сервер
--->
-
 В командной строке сетевые администраторы используют  команду **ifconfig** для отображения состояния активных интерфейсов и их IP-конфигурации, как показано в примере.
 
 ```
@@ -123,7 +115,7 @@ enp0s3    Link encap:Ethernet  HWaddr 08:00:27:b5:d6:cb
           RX bytes:1855455014 (1.8 GB)  TX bytes:13140139 (13.1 MB)
 lo: flags=73  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
-        inet6 ::1  prefixlen 128  scopeid 0x10
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
@@ -131,7 +123,7 @@ lo: flags=73  mtu 65536
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
- В Linux команда **ip address** используется для отображения адресов и их свойств. Она также может использоваться для добавления или удаления IP-адресов.
+В Linux команда **ip address** используется для отображения адресов и их свойств. Она также может использоваться для добавления или удаления IP-адресов.
 
 **Примечание:** Вывод  может варьироваться в зависимости от дистрибутива Linux .
 
@@ -141,10 +133,6 @@ lo: flags=73  mtu 65536
 В графическом интерфейсе хоста Mac откройте меню  **Network Preferences > Advanced** для получения информации об IP-адресации, как показано на рисунке.
 
 ![](./assets/17.5.3.jpeg)
-
-<!--
-screen capture of the dialog box on a macOS host showing IP addressing configuration details including IP address, subnet mask, and router
--->
 
 Однако,  команда **ifconfig** также может использоваться для проверки конфигурации интерфейса IP, показанной в выводе.
 
@@ -193,10 +181,6 @@ MacBook-Air:~ Admin$
 ![](./assets/17.5.4.png)
 <!-- /courses/itn-dl/aeeda3d0-34fa-11eb-ad9a-f74babed41a6/af257cb2-34fa-11eb-ad9a-f74babed41a6/assets/2e8f1c83-1c25-11ea-81a0-ffc2c49b96bc.svg -->
 
-<!--
-пять узлов с IP-адресами 10.0.0.1/24, 10.0.0.2/24, 10.0.0.3/24, 10.0.0.4/24 и 10.0.0.5/24 подключены к коммутатору, подключенному к маршрутизатору с IP-адресом 10.0.0.254/24
--->
-
 Вывод  команды **arp -a** на узле Windows PC-A. 
 
 ```
@@ -227,24 +211,26 @@ Cisco IOS CLI позволяет пользоваться командами **s
 
 В таблице перечислены часто используемые **show** команды и время их использования.
 
-| Command | **Useful for …** |
+| Команда | **Для чего используется** |
 | --- | --- |
-| **show running-config**  | To verify the current configuration and settings |
-| **show interfaces** | To verify the interface status and see if there are any error messages |
-| **show ip interface** | To verify the Layer 3 information of an interface |
-| **show arp** | To verify the list of known hosts on the local Ethernet LANs |
-| **show ip route**  | To verify the Layer 3 routing information |
-| **show protocols**  | To verify which protocols are operational |
-| **show version**  | To verify the memory, interfaces, and licences of the device |
-
- 
+| **show running-config**  | Проверяет текущую конфигурацию и параметры |
+| **show interfaces** | Проверяет состояние интерфейса и отображает все сообщения об ошибках |
+| **show ip interface** | Проверяет информацию 3 уровня  интерфейса |
+| **show arp** | Проверяет список известных узлов в локальных сетях Ethernet |
+| **show ip route**  | Проверяет информацию маршрутизации уровня 3 |
+| **show protocols**  | Проверяет, какие протоколы работают |
+| **show version**  | Проверяет память, интерфейсы и лицензии устройства |
 
 ### show running-config 
 
 Проверяет текущую конфигурацию и параметры
 
 ```
-R1# show running-config(Output omitted)!
+R1# show running-config
+
+(Output omitted)
+
+!
 version 15.5
 service timestamps debug datetime msec
 service timestamps log datetime msec
@@ -315,7 +301,8 @@ GigabitEthernet0/0/0 is up, line protocol is up
      0 babbles, 0 late collision, 0 deferred
      1 lost carrier, 0 no carrier, 0 pause output
      0 output buffer failures, 0 output buffers swapped out
-GigabitEthernet0/0/1 is up, line protocol is up(Output omitted)
+GigabitEthernet0/0/1 is up, line protocol is up
+(Output omitted)
 ```
 
 ### show ip interface
@@ -366,7 +353,8 @@ GigabitEthernet0/0/0 is up, line protocol is up
   IPv4 WCCP Redirect outbound is disabled
   IPv4 WCCP Redirect inbound is disabled
   IPv4 WCCP Redirect exclude is disabled
-GigabitEthernet0/0/1 is up, line protocol is up(Output omitted)
+GigabitEthernet0/0/1 is up, line protocol is up
+(Output omitted)
 ```
 
 ### show arp
@@ -441,12 +429,20 @@ Cisco IOS XE Software, Version 03.16.08.S - Extended Support Release
 Cisco IOS Software, ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 15.5(3)S8, RELEASE SOFTWARE (fc2)
 Technical Support: http://www.cisco.com/techsupport
 Copyright (c) 1986-2018 by Cisco Systems, Inc.
-Compiled Wed 08-Aug-18 10:48 by mcpre(Output omitted)ROM: IOS-XE ROMMON
+Compiled Wed 08-Aug-18 10:48 by mcpre
+
+(Output omitted)
+
+ROM: IOS-XE ROMMON
 R1 uptime is 2 hours, 25 minutes
 Uptime for this control processor is 2 hours, 27 minutes
 System returned to ROM by reload
 System image file is "bootflash:/isr4300-universalk9.03.16.08.S.155-3.S8-ext.SPA.bin"
-Last reload reason: LocalSoft(Output omitted)Technology Package License Information:
+Last reload reason: LocalSoft
+
+(Output omitted)
+
+Technology Package License Information:
 -----------------------------------------------------------------
 Technology    Technology-package           Technology-package
               Current       Type           Next reboot
@@ -487,10 +483,6 @@ R1#
 ![](./assets/17.5.6.png)
 <!-- /courses/itn-dl/aeeda3d0-34fa-11eb-ad9a-f74babed41a6/af257cb2-34fa-11eb-ad9a-f74babed41a6/assets/2e8fdfd2-1c25-11ea-81a0-ffc2c49b96bc.svg -->
 
-<!--
-маршрутизатор R3 подключен через интерфейс G0/0/1 к коммутатору S3 на порту F0/5, который подключен к коммутатору S4
--->
-
 ```
 R3# show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
@@ -504,7 +496,7 @@ R3#
 
 Выходные данные показывают, что интерфейс R3 GigabitEthernet 0/0/1 подключен к интерфейсу FastEthernet 0/5 S3, который является коммутатором Cisco Catalyst 2960+. Обратите внимание, что R3 не собрал информацию о S4. Это связано с тем, что CDP может обнаруживать только напрямую подключенные устройства Cisco. S4 напрямую не подключен к R3 и поэтому не указан в выводе.
 
- Команда **show cdp neighbors detail** показывает IP-адрес соседнего устройства, как показано на выводе. Протокол CDP отображает IP-адрес соседнего устройства независимо от того, насколько успешно удается выполнить проверку связи с ним. Эту команду рекомендуется использовать, когда двум маршрутизаторам Cisco не удается выполнить маршрутизацию по общему каналу данных. Команда **show cdp neighbors detail** позволяет определить наличие ошибок конфигурации IP в любом из соседних устройств CDP.
+Команда **show cdp neighbors detail** показывает IP-адрес соседнего устройства, как показано на выводе. Протокол CDP отображает IP-адрес соседнего устройства независимо от того, насколько успешно удается выполнить проверку связи с ним. Эту команду рекомендуется использовать, когда двум маршрутизаторам Cisco не удается выполнить маршрутизацию по общему каналу данных. Команда **show cdp neighbors detail** позволяет определить наличие ошибок конфигурации IP в любом из соседних устройств CDP.
 
 Несмотря на свою полезность, CDP также может быть угрозой безопасности, поскольку он может предоставлять злоумышленникам важные данные сетевой инфраструктуры. Например, по умолчанию многие версии IOS посылают объявления CDP на все поддерживаемые порты. Рекомендуется включать CDP только на интерфейсах, соединенных с другими устройствами инфраструктуры Cisco. Объявления CDP должны быть отключены на портах, ориентированных на пользователей.
 
@@ -528,8 +520,6 @@ GigabitEthernet0       unassigned      YES unset  administratively down down
 R1#
 ```
 
-**Verify Switch Interfaces**
-
 Команду **show ip interface brief** также можно использовать для проверки статуса интерфейсов коммутатора.
 
 ```
@@ -541,7 +531,7 @@ FastEthernet0/2        unassigned      YES unset  up                    up
 FastEthernet0/3        unassigned      YES unset  up                    up
 ```
 
-The VLAN1 interface is assigned an IPv4 address of 192.168.254.250, has been enabled, and is operational.  
+Интерфейсу VLAN1 назначен IPv4-адрес 192.168.254.250, он включен и работает.
 
 В результатах выполнения команды также указано, что интерфейс FastEthernet0/1 отключен. Это означает, что к интерфейсу не подключены устройства или сетевой интерфейс подключенного устройства не работает.
 
@@ -550,7 +540,7 @@ The VLAN1 interface is assigned an IPv4 address of 192.168.254.250, has been ena
 <!-- 17.5.8 -->
 ## Видео. Команда show version
 
-Команду **show version** можно применять для проверки и устранения неполадок базовых программных и аппаратных компонентов, которые используются во время загрузки. Нажмите кнопку «Воспроизведение», чтобы посмотреть видео, представленное ранее в этом курсе и посвященное команде **show version**.
+Команду **show version** можно применять для проверки и устранения неполадок базовых программных и аппаратных компонентов, которые используются во время загрузки. Посмотрите видео, представленное ранее в этом курсе, посвященное команде **show version**.
 
 <video width="768" height="432" controls>
   <source src="./assets/17.5.8.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -560,8 +550,6 @@ The VLAN1 interface is assigned an IPv4 address of 192.168.254.250, has been ena
 ## Packet Tracer - Интерпретация выходных данных команды show
 
 Это упражнение предназначено для закрепления знаний о командах **show** маршрутизатора. Вам не нужно будет выполнять настройку, вы просто изучите выходные данные отдельных команд show.
-
-
 
 [интерпретация выходных данных команды show (pdf)](./assets/17.5.9-packet-tracer---interpret-show-command-output.pdf)
 
