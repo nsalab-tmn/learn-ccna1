@@ -11,15 +11,12 @@
 Задача настройки интерфейса маршрутизатора очень похожа на управление SVI на коммутаторе. В частности, он включает в себя выполнение следующих команд:
 
 ```
- Router(config)# interface type-and-number
- Router(config-if)# description description-text 
- Router(config-if)# ip address{" "} ipv4-address subnet-mask 
- Router(config-if)# ipv6 address{" "} ipv6-address/prefix-length 
- Router(config-if)# no shutdown 
+Router(config)# interface type-and-number
+Router(config-if)# description description-text
+Router(config-if)# ip address <ipv4-address> <subnet-mask>
+Router(config-if)# ipv6 address <ipv6-address/prefix-length>
+Router(config-if)# no shutdown
 ```
-
-
-
 
 **Примечание:** Когда интерфейс маршрутизатора включен, должны отображаться информационные сообщения, подтверждающие включенную связь.
 
@@ -76,7 +73,7 @@ R1(config)#
 <!-- 10.2.3 -->
 ## Проверка конфигурации интерфейса
 
-Для проверки конфигурации интерфейса можно использовать несколько команд. Наиболее полезными из них являются **show ip interface brief** команды **show ipv6 interface brief** and, как показано в примере.
+Для проверки конфигурации интерфейса можно использовать несколько команд. Наиболее полезными из них являются команды **show ip interface brief** и **show ipv6 interface brief**, как показано в примере.
 
 ```
 R1#  show ip interface brief
@@ -103,13 +100,11 @@ R1#
 
 | Команды | Описание |
 | --- | --- |
-| ` show ip interface brief `<br>` show ipv6 interface brief ` | Выходные данные содержат все интерфейсы, их IP адреса, а также их текущее состояние. Активные и действующие интерфейсы представлены значением «up» в столбцах «Status» и «Protocol». Любые другие значения будут означать наличие проблемы либо с настройками, либо с подключением кабелей. |
-| ` show ip route `<br>` show ipv6 route ` | Отображает содержимое таблицы маршрутизации IPv4, которая хранится в ОЗУ. |
-| ` show interfaces ` | Отображает статистические сведения по всем интерфейсам устройства. Тем не менее, эта будет отображать только информацию об адресации IPv4. |
-| ` show ip interfaces ` | Отображает статистику IPv4 всех интерфейсов маршрутизатора. |
-| ` show ipv6 interface ` | Отображает статистику IPv6 всех интерфейсов маршрутизатора. |
-
-
+| `show ip interface brief`<br>`show ipv6 interface brief` | Выходные данные содержат все интерфейсы, их IP адреса, а также их текущее состояние. Активные и действующие интерфейсы представлены значением «up» в столбцах «Status» и «Protocol». Любые другие значения будут означать наличие проблемы либо с настройками, либо с подключением кабелей. |
+| `show ip route`<br>`show ipv6 route` | Отображает содержимое таблицы маршрутизации IPv4, которая хранится в ОЗУ. |
+| `show interfaces` | Отображает статистические сведения по всем интерфейсам устройства. Тем не менее, эта будет отображать только информацию об адресации IPv4. |
+| `show ip interfaces` | Отображает статистику IPv4 всех интерфейсов маршрутизатора. |
+| `show ipv6 interface` | Отображает статистику IPv6 всех интерфейсов маршрутизатора. |
 
 ### show ip interface brief
 
