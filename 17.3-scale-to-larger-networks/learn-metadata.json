@@ -4,7 +4,10 @@
     "description": "",
     "difficulty": 3,
     "duration": "PT0H5M",
-    "tags": ["Network", "Cisco"],
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
     "skills": {},
     "testProjectPath": "./lecture.md",
     "assetsPath": "assets"
