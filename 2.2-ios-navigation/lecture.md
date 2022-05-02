@@ -38,9 +38,11 @@
 
 Нажмите кнопку «Воспроизведение» на рисунке для просмотра видео, демонстрирующего переключение между режимами IOS.
 
-<video width="768" height="432" controls>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B269UlVAN40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- <video width="768" height="432" controls>
   <source src="./assets/2.2.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+</video> -->
 
 <!-- 2.2.4 -->
 ## Переключение между режимами IOS
@@ -80,9 +82,11 @@ Switch(config-if)#
 
 Нажмите кнопку «Воспроизведение» на рисунке для просмотра видео, демонстрирующего переключение между различными режимами CLI в IOS.
 
-<video width="768" height="432" controls>
+<!-- <video width="768" height="432" controls>
   <source src="./assets/2.2.5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+</video> -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-n1tO4Xg6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 2.2.6 -->
 ## Примечание о действиях проверки синтаксиса
@@ -90,9 +94,7 @@ Switch(config-if)#
 Когда вы изучаете, как изменять конфигурации устройств, вы можете начать работу в безопасной, непроизводственной среде, прежде чем опробовать ее на реальном оборудовании. NetAcad предоставляет различные инструменты моделирования, которые помогут вам развить навыки настройки и устранения неполадок. Поскольку это инструменты моделирования, они обычно не обладают всеми функциональными возможностями реального оборудования. Одним из таких инструментов является проверка синтаксиса. (Syntax Checker.) В каждом задании Syntax Checker вам дается набор инструкций для ввода определенного набора команд. Вы не можете выполнить проверку синтаксиса, если не будет введена точная и полная команда, как указано. Более продвинутые инструменты моделирования, такие как Packet Tracer, позволяют вводить сокращенные команды, как и на реальном оборудовании.
 
 <!-- 2.2.7 -->
-##  Проверка синтаксиса - переход между режимами IOS
-
-Используйте задание проверки синтаксиса для навигации между командами IOS на коммутаторе.
+<!-- ##  Проверка синтаксиса - переход между режимами IOS -->
 
 <!-- 2.2.8 -->
 <!-- quiz -->
