@@ -146,9 +146,9 @@
 
 
 
-[Навигация по IOS (pdf)](./assets/2.3.7-packet-tracer---navigate-the-ios.pdf)
+[Навигация по IOS (pdf)](./assets/2.3.7-packet-tracer---navigate-the-ios_ru-RU.pdf)
 
-[Навигация по IOS (pka)](./assets/2.3.7-packet-tracer---navigate-the-ios.pka)
+[Навигация по IOS (pka)](./assets/2.3.7-packet-tracer---navigate-the-ios_ru-RU.pka)
 
 <!-- 2.3.8 -->
 ## Лабораторная работа - Навигация по IOS с помощью Tera Term при консольном подключении
@@ -159,9 +159,9 @@
 * Часть 2: Отображение и настройка основных параметров устройства
 * Часть 3: Получение доступа к маршрутизатору Cisco с помощью консольного кабеля mini-USB (дополнительно)
 
-[Навигация по IOS с помощью клиента терминала для подключения консоли - режим симуляции физического оборудования (pdf)](./assets/2.3.8-packet-tracer---navigate-the-ios-using-a-terminal-client-for-console-connectivity---physical-mode.pdf)
+[Навигация по IOS с помощью клиента терминала для подключения консоли - режим симуляции физического оборудования (pdf)](./assets/2.3.8-packet-tracer---navigate-the-ios-using-a-terminal-client-for-console-connectivity---physical-mode_ru-RU.pdf)
 
-[Навигация по IOS с помощью клиента терминала для подключения консоли - режим симуляции физического оборудования (pka)](./assets/2.3.8-packet-tracer---navigate-the-ios-using-a-terminal-client-for-console-connectivity---physical-mode.pka)
+[Навигация по IOS с помощью клиента терминала для подключения консоли - режим симуляции физического оборудования (pka)](./assets/2.3.8-packet-tracer---navigate-the-ios-using-a-terminal-client-for-console-connectivity---physical-mode_ru-RU.pka)
 
-[Навигация по IOS с помощью Tera Term при консольном подключении (lab)](./assets/2.3.8-lab---navigate-the-ios-by-using-tera-term-for-console-connectivity.pdf)
+[Навигация по IOS с помощью Tera Term при консольном подключении (lab)](./assets/2.3.8-lab---navigate-the-ios-by-using-tera-term-for-console-connectivity_ru-RU.pdf)
 
