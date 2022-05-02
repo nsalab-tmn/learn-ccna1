@@ -67,19 +67,11 @@ hostname Sw-Floor-1
 
 ![](./assets/2.5.4-1.png)
 
-<!--
-screen capture of a PuTTY interface including the various categories available, a place to specify the destination you want to connect to using a host name or IP address, the port number to be used, and the connection type
--->
-
 **Шаг 2.** Активируйте ведение журнала в программе терминала и назначьте файлу журнала имя и место сохранения. На рисунке  показано, что **All session output** будут записываться в указанный файл (например, MySwitchLogs).
 
 ![](./assets/2.5.4-2.png)
 
-<!--
-screen capture of a PuTTY session with the logging category selected, the all session output selected under session logging, and MySwitchLogs entered as the log file name
--->
-
-**Шаг 3.**Выполните  команду **show running-config** или **show startup-config** в привилегированном режиме EXEC. Текст, отображенный в окне терминала, будет помещен в выбранный файл.
+**Шаг 3.** Выполните  команду **show running-config** или **show startup-config** в привилегированном режиме EXEC. Текст, отображенный в окне терминала, будет помещен в выбранный файл.
 
 ```
 Switch# show running-config
@@ -90,10 +82,6 @@ Building configuration...
 **Шаг 4.** Отключите ведение журнала в программе терминала. На рисунке показано, как отключить ведение журнала сеанса, выбрав **None**.
 
 ![](./assets/2.5.4-3.png)
-
-<!--
-screen capture of a PuTTY session with the logging category selected and session logging set to none
--->
 
 Созданный текстовый файл можно использовать как протокол текущей конфигурации устройства. Возможно, файл придется отредактировать, прежде чем использовать его для восстановления сохраненной конфигурации на устройстве.
 
@@ -109,8 +97,6 @@ screen capture of a PuTTY session with the logging category selected and session
 ## Packet Tracer - Настройка начальных параметров коммутатора
 
 В этом упражнении вы настроите базовые параметры коммутатора. Вы обеспечите безопасность доступа к интерфейсу командной строки (CLI) и порту консоли с помощью зашифрованных и открытых паролей. Вы также научитесь настраивать сообщения для пользователей, выполняющих вход в систему коммутатора. Эти баннеры также предупреждают пользователей о том, что несанкционированный доступ запрещен.
-
-
 
 [Настройка начальных параметров коммутатора (pdf)](./assets/2.5.5-packet-tracer---configure-initial-switch-settings.pdf)
 
