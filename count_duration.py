@@ -16,6 +16,7 @@ contents = os.listdir('./')
 contents.sort()
 summary = 0
 
+
 print ('Using avarage reading speed ' + str(awpm) + ' words per minute')
 
 start_time = datetime.now()
