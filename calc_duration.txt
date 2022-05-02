@@ -1,0 +1,124 @@
+Using avarage reading speed 120 words per minute
+Folder is 1.0-introduction
+--Metadata duration is 5 minutes
+--lecture.md has 758 words. Reading time is 6 minutes
+--Video 1.0.3.mp4 is 5 minutes 21 seconds long
+--PDF 1.0.5-packet-tracer---logical-and-physical-mode-exploration_ru-RU.pdf has 1318 words. Reading time is 11 minutes
+--Video 1.0.4.mp4 is 5 minutes 21 seconds long
+--Calculated completion time for 1.0-introduction is 27 minutes
+Folder is 1.1-networks-affect-our-lives
+--Metadata duration is 5 minutes
+--lecture.md has 301 words. Reading time is 3 minutes
+--Video 1.1.2.mp4 is 2 minutes 27 seconds long
+--Calculated completion time for 1.1-networks-affect-our-lives is 5 minutes
+Folder is 1.10-summary
+--Metadata duration is 10 minutes
+--lecture.md has 948 words. Reading time is 8 minutes
+--Calculated completion time for 1.10-summary is 8 minutes
+Folder is 1.2-network-components
+--Metadata duration is 5 minutes
+--lecture.md has 1299 words. Reading time is 11 minutes
+--Calculated completion time for 1.2-network-components is 11 minutes
+Folder is 1.3-network-topologies
+--Metadata duration is 5 minutes
+--lecture.md has 829 words. Reading time is 7 minutes
+--Calculated completion time for 1.3-network-topologies is 7 minutes
+Folder is 1.4-network-types
+--Metadata duration is 10 minutes
+--lecture.md has 1238 words. Reading time is 10 minutes
+--Calculated completion time for 1.4-network-types is 10 minutes
+Folder is 1.5-internet-connection
+--Metadata duration is 10 minutes
+--lecture.md has 771 words. Reading time is 6 minutes
+--PDF 1.5.7-packet-tracer---network-representation_ru-RU.pdf has 620 words. Reading time is 5 minutes
+--Calculated completion time for 1.5-internet-connection is 11 minutes
+Folder is 1.6-redundant-networks
+--Metadata duration is 10 minutes
+--lecture.md has 976 words. Reading time is 8 minutes
+--Calculated completion time for 1.6-redundant-networks is 8 minutes
+Folder is 1.7-network-trends
+--Metadata duration is 10 minutes
+--lecture.md has 1588 words. Reading time is 13 minutes
+--Video 1.7.5.mp4 is 1 minutes 21 seconds long
+--Calculated completion time for 1.7-network-trends is 14 minutes
+Folder is 1.8-network-security
+--Metadata duration is 10 minutes
+--lecture.md has 735 words. Reading time is 6 minutes
+--Calculated completion time for 1.8-network-security is 6 minutes
+Folder is 1.9-it-specialist
+--Metadata duration is 5 minutes
+--lecture.md has 349 words. Reading time is 3 minutes
+--PDF 1.9.3-lab---research-it-and-networking-job-opportunities_ru-RU.pdf has 467 words. Reading time is 4 minutes
+--Calculated completion time for 1.9-it-specialist is 7 minutes
+Folder is 10.0-introduction
+--Metadata duration is 5 minutes
+--lecture.md has 250 words. Reading time is 2 minutes
+--Calculated completion time for 10.0-introduction is 2 minutes
+Folder is 10.1-Configure-Initial-Router-Settings
+--Metadata duration is 5 minutes
+--lecture.md has 462 words. Reading time is 4 minutes
+--PDF 10.1.4-packet-tracer---configure-initial-router-settings.pdf has 870 words. Reading time is 7 minutes
+--Calculated completion time for 10.1-Configure-Initial-Router-Settings is 11 minutes
+Folder is 10.2-Configure-Interfaces
+--Metadata duration is 14 minutes
+--lecture.md has 1553 words. Reading time is 13 minutes
+--Calculated completion time for 10.2-Configure-Interfaces is 13 minutes
+Folder is 10.3-Configure-the-Default-Gateway
+--Metadata duration is 8 minutes
+--lecture.md has 776 words. Reading time is 6 minutes
+--PDF 10.3.4-packet-tracer---connect-a-router-to-a-lan.pdf has 992 words. Reading time is 8 minutes
+--PDF 10.3.5-packet-tracer---troubleshoot-default-gateway-issues.pdf has 1023 words. Reading time is 9 minutes
+--Calculated completion time for 10.3-Configure-the-Default-Gateway is 23 minutes
+Folder is 10.4-Module-Practice-and-Quiz
+--Metadata duration is 15 minutes
+--lecture.md has 511 words. Reading time is 4 minutes
+--PDF 10.4.4-lab---build-a-switch-and-router-network.pdf has 1542 words. Reading time is 13 minutes
+--PDF 10.4.3-packet-tracer---basic-device-configuration.pdf has 428 words. Reading time is 4 minutes
+--Video 10.4.1.mp4 is 4 minutes 30 seconds long
+--Video 10.4.2.mp4 is 10 minutes 16 seconds long
+--PDF 10.4.4-packet-tracer---build-a-switch-and-router-network---physical-mode.pdf has 948 words. Reading time is 8 minutes
+--Calculated completion time for 10.4-Module-Practice-and-Quiz is 44 minutes
+Folder is 11.0-introduction
+--Metadata duration is 5 minutes
+--lecture.md has 342 words. Reading time is 3 minutes
+--Calculated completion time for 11.0-introduction is 3 minutes
+Folder is 11.1-IPv4-Address-Structure
+--Metadata duration is 15 minutes
+--lecture.md has 1452 words. Reading time is 12 minutes
+--Video 11.1.5.mp4 is 6 minutes 21 seconds long
+--Calculated completion time for 11.1-IPv4-Address-Structure is 18 minutes
+Folder is 11.10-Module-Practice-and-Quiz
+--Metadata duration is 11 minutes
+--lecture.md has 1282 words. Reading time is 11 minutes
+--PDF 11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode.pdf has 1114 words. Reading time is 9 minutes
+--PDF 11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme.pdf has 1386 words. Reading time is 12 minutes
+--PDF 11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme.pdf has 387 words. Reading time is 3 minutes
+--Calculated completion time for 11.10-Module-Practice-and-Quiz is 35 minutes
+Folder is 11.2-IPv4-Unicast-Broadcast-and-Multicast
+--Metadata duration is 7 minutes
+--lecture.md has 632 words. Reading time is 5 minutes
+--Calculated completion time for 11.2-IPv4-Unicast-Broadcast-and-Multicast is 5 minutes
+Folder is 11.3-Types-of-IPv4-Addresses
+--Metadata duration is 13 minutes
+--lecture.md has 1273 words. Reading time is 11 minutes
+--Calculated completion time for 11.3-Types-of-IPv4-Addresses is 11 minutes
+Folder is 11.4-Network-Segmentation
+--Metadata duration is 8 minutes
+--lecture.md has 624 words. Reading time is 5 minutes
+--Calculated completion time for 11.4-Network-Segmentation is 5 minutes
+Folder is 11.5-Subnet-an-IPv4-Network
+--Metadata duration is 15 minutes
+--lecture.md has 1110 words. Reading time is 9 minutes
+--Video 11.5.4.mp4 is 14 minutes 49 seconds long
+--Video 11.5.3.mp4 is 8 minutes 9 seconds long
+--PDF 11.5.5-packet-tracer---subnet-an-ipv4-network.pdf has 1080 words. Reading time is 9 minutes
+--Calculated completion time for 11.5-Subnet-an-IPv4-Network is 41 minutes
+Folder is 11.6-subnet-a-16-and-8-prefix
+--Metadata duration is 15 minutes
+--lecture.md has 1006 words. Reading time is 8 minutes
+--Video 11.6.4.mp4 is 5 minutes 20 seconds long
+--PDF 11.6.6-lab---calculate-ipv4-subnets.pdf has 522 words. Reading time is 4 minutes
+--Calculated completion time for 11.6-subnet-a-16-and-8-prefix is 17 minutes
+Folder is 11.7-Subnet-to-Meet-Requirements
+--Metadata duration is 15 minutes
+--lecture.md has 1312 words. Reading time is 11 minutes

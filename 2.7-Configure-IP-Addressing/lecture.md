@@ -11,19 +11,11 @@ IP-адрес можно ввести в оконечное устройство
 
 ![](./assets/2.7.1-1.png)
 
-<!--
-example of the Ethernet properties Windows dialog box for a connection using a Realtek PCIe GBE family controller with Internet Protocol Version 4 (TCP/IPv4) highlighted
--->
-
 Выделите Internet Protocol Version 4 (TCP/IPv4) и нажмите, **Properties** чтобы открыть  окно **Internet Protocol Version 4 (TCP/IPv4) Properties**, показанное на рисунке. Настройте адрес IPv4 и маску подсети, а также шлюз по умолчанию.
 
 **Примечание**: Параметры адресации IPv6 и конфигурации аналогичны IPv4.
 
 ![](./assets/2.7.1-2.jpg)
-
-<!--
-example of the TCP/IPv4 Windows dialog box manually set to use the IP address 192.168.1.10, subnet mask of 255.255.2550, and default gateway of 192.168.1.1
--->
 
 **Примечание**:  Адреса DNS-серверов — это IPv4-адреса DNS-серверов, которые используются для преобразования IP-адресов в имена доменов, например www.cisco.com.
 
@@ -39,10 +31,6 @@ example of the TCP/IPv4 Windows dialog box manually set to use the IP address 19
 **Примечание**: IPv6 использует DHCPv6 и SLAAC  (Stateless Address Autoconfiguration) для динамического распределения адресов.
 
 ![](./assets/2.7.2.jpg)
-
-<!--
-example of the TCP/IPv4 Windows dialog box with the IP settings set to obtain an IP address automatically
--->
 
 <!-- 2.7.3 -->
 ##  Проверка синтаксиса - Проверка конфигурации IP ПК с Windows
@@ -68,14 +56,12 @@ Sw-Floor-1(config)# ip default-gateway 192.168.1.1
 ```
 
 <!-- 2.7.5 -->
-## Инструмент проверки синтаксиса. Настройка виртуального интерфейса коммутатора
+<!-- syntax -->
 
 <!-- 2.7.6 -->
 ## Packet Tracer. Создание основных подключений
 
 В этом упражнении вы сначала настроите основные параметры коммутатора. Затем вы создадите основные подключения, настроив IP-адреса на коммутаторах и ПК. Завершив настройку IP-адресации, вы будете использовать различные команды **show**, чтобы проверить настройки, а также команду **ping** для проверки основных подключений между устройствами.
-
-
 
 [Создание основных подключений (pdf)](./assets/2.7.6-packet-tracer---implement-basic-connectivity.pdf)
 
