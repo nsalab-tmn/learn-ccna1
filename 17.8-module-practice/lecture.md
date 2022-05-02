@@ -1,0 +1,31 @@
+#  Практика по организации небольшой сети
+
+<!-- 17.8.1 -->
+## Лабораторная работа - Проектирование и построение сети малого предприятия
+
+В этой лабораторной работе вы будете проектировать и строить сеть.
+
+[Проектирование и построение небольшой сети — Режим симуляции физического оборудования (pdf)](./assets/17.8.1-packet-tracer---design-and-build-a-small-network---physical-mode.pdf)
+
+[Проектирование и построение небольшой сети — Режим симуляции физического оборудования (pka)](./assets/17.8.1-packet-tracer---design-and-build-a-small-network---physical-mode.pka)
+
+[Проектирование и построение небольшой сети (lab)](./assets/17.8.1-lab---design-and-build-a-small-network.pdf)
+
+<!-- 17.8.2 -->
+## Packet Tracer. Отработка комплексных практических навыков
+
+В этом задании Packet Tracer вы будете использовать все навыки, приобретенные в  этом курсе.
+
+[Отработка комплексных практических навыков (pdf)](./assets/17.8.2-packet-tracer---skills-integration-challenge.pdf)
+
+[Отработка комплексных практических навыков (pka)](./assets/17.8.2-packet-tracer---skills-integration-challenge.pka)
+
+<!-- 17.8.3 -->
+## Packet Tracer. Поиск и устранение неполадок
+
+В этом упражнении Packet Tracer вы устраните неполадки и решите ряд проблем в существующей сети.
+
+[Поиск и устранение неполадок (pdf)](./assets/17.8.3-packet-tracer---troubleshooting-challenge.pdf)
+
+[Поиск и устранение неполадок (pka)](./assets/17.8.3-packet-tracer---troubleshooting-challenge.pka)
+
