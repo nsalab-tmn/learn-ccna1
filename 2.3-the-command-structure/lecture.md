@@ -163,7 +163,5 @@
 
 [Навигация по IOS с помощью клиента терминала для подключения консоли - режим симуляции физического оборудования (pka)](./assets/2.3.8-packet-tracer---navigate-the-ios-using-a-terminal-client-for-console-connectivity---physical-mode.pka)
 
-**Лабораторное оборудование**
-
 [Навигация по IOS с помощью Tera Term при консольном подключении (lab)](./assets/2.3.8-lab---navigate-the-ios-by-using-tera-term-for-console-connectivity.pdf)
 

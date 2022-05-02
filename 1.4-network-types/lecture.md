@@ -25,19 +25,11 @@
 
 ![](./assets/1.4.1-1.jpg)
 
-<!--
-small home network consisting of a monitor, computer tower, keyboard, mouse, speakers, and printer located in a cabinet
--->
-
 **Небольшие домашние/офисные сети**
 
 Небольшие домашние или офисные сети (SOHO) позволяют подключаться к корпоративной сети или получать доступ к централизованным и совместно используемым ресурсам из дома или удаленного офиса.
 
 ![](./assets/1.4.1-2.jpg)
-
-<!--
-small office home office network consisting of two office cubicles with desks, chairs, filing cabinets, monitors, telephones, a computer tower, and printer
--->
 
 **Средние и крупные сети**
 
@@ -45,20 +37,12 @@ small office home office network consisting of two office cubicles with desks, c
 
 ![](./assets/1.4.1-3.jpg)
 
-<!--
-medium to large network in a three-floor building with computer systems and printers on each floor
--->
-
 **Глобальные сети**
 
 Глобальная электронная сеть Интернет является сетью сетей, связывающей миллионы компьютеров по всему миру.
 
 ![](./assets/1.4.1-4.png)
 <!-- /courses/itn-dl/aeec9260-34fa-11eb-ad9a-f74babed41a6/af1e50c0-34fa-11eb-ad9a-f74babed41a6/assets/2d8ca0a1-1c25-11ea-81a0-ffc2c49b96bc.svg -->
-
-<!--
-глобальные сети, показывающие глобальную карту с пятью зданиями
--->
 
 <!-- 1.4.2 -->
 ## Сети LAN и WAN
@@ -74,7 +58,6 @@ medium to large network in a three-floor building with computer systems and prin
 
 ![](./assets/1.4.2-1.png)
 <!-- /courses/itn-dl/aeec9260-34fa-11eb-ad9a-f74babed41a6/af1e50c0-34fa-11eb-ad9a-f74babed41a6/assets/2d8cc7b3-1c25-11ea-81a0-ffc2c49b96bc.svg -->
-
 
 В топологии сети показаны три LAN, подключенные по каналу глобальной сети в центре. Легенда показывает, что LAN выделены желтым цветом, а WAN - светло-фиолетовым.  WAN находится в центре схемы. Он содержит символ облака, обозначенный облаком с красными WAN соединениями с тремя маршрутизаторами.  Каждый маршрутизатор находится частично в глобальной сети, а частично в локальной сети. В левом нижнем углу находится центральная локальная сеть LAN.  Он содержит сервер, два многоуровневых коммутатора, два коммутатора LAN и четыре компьютера. В правом нижнем углу находится LAN Филиала.  Он содержит коммутатор, сервер, принтер, два IP-телефона, подключенных к ПК, и беспроводную точку доступа с беспроводными подключениями к ноутбуку и смартфону. В правом верхнем углу находится LAN домашнего офиса.  Он содержит беспроводной маршрутизатор с проводным подключением к принтеру и беспроводные подключения к ноутбуку и монитору.
 
@@ -141,11 +124,6 @@ medium to large network in a three-floor building with computer systems and prin
 
 ![](./assets/1.4.4.png)
 <!-- /courses/itn-dl/aeec9260-34fa-11eb-ad9a-f74babed41a6/af1e50c0-34fa-11eb-ad9a-f74babed41a6/assets/2d8db213-1c25-11ea-81a0-ffc2c49b96bc.svg -->
-
-
-
-
-
 
 <!-- 1.4.5 -->
 <!-- quiz -->

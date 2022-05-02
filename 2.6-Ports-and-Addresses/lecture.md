@@ -24,17 +24,9 @@
 
 ![](./assets/2.6.1-1.jpg)
 
-<!--
-example of the TCP/IPv4 Windows dialog box manually set to use the IP address 192.168.1.10, subnet mask of 255.255.255.0, and default gateway of 192.168.1.1
--->
-
 Длина IPv6-адресов составляет 128 бит, написанных в виде строки шестнадцатеричных значений. Каждые 4 бита представлены одной шестнадцатеричной цифрой, причем общее количество шестнадцатеричных значений равно 32. Группы из четырех шестнадцатеричных цифр разделяются двоеточием (:). IPv6-адреса нечувствительны к регистру, их можно записывать как строчными, так и прописными буквами.
 
 ![](./assets/2.6.1-2.png)
-
-<!--
-example of the TCP/IPv6 Windows dialog box manually set to use the IPv6 address 2001:db8:acad:10::10, subnet prefix length of 64, and default gateway of fe80::1
--->
 
 <!-- 2.6.2 -->
 ## Интерфейсы и порты
@@ -43,10 +35,6 @@ example of the TCP/IPv6 Windows dialog box manually set to use the IPv6 address 
 
 ![](./assets/2.6.2.png)
 <!-- /courses/itn-dl/aeecb970-34fa-11eb-ad9a-f74babed41a6/af1f1412-34fa-11eb-ad9a-f74babed41a6/assets/2daafe12-1c25-11ea-81a0-ffc2c49b96bc.svg -->
-
-<!--
-
--->
 
 Типы средства сетевого подключения данных различаются возможностями и преимуществами. Не все средства сетевого подключения имеют одинаковые характеристики. Не все средства сетевого подключения подходят для одной и той же цели. Вот некоторые различия между типами средствами:
 
