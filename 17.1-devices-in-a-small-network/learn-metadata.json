@@ -1,0 +1,14 @@
+{
+    "title": "Устройства в рамках небольшой сети",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H8M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

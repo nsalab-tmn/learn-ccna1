@@ -1,0 +1,14 @@
+{
+    "title": "Эталонные модели",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H51M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

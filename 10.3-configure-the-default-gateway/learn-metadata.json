@@ -1,0 +1,14 @@
+{
+    "title": "Настройка шлюза по умолчанию",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H57M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

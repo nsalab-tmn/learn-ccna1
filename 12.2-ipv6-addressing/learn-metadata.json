@@ -1,0 +1,14 @@
+{
+    "title": "Представление IPv6-адресов",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H10M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

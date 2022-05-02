@@ -1,0 +1,14 @@
+{
+    "title": "Тестирование при помощи ping и traceroute",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H43M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

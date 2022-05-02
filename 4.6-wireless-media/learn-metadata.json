@@ -1,0 +1,14 @@
+{
+    "title": "Средства беспроводного подключения",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT1H1M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Сценарии поиска и устранения неполадок",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT1H18M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}

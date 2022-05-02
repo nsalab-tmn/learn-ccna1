@@ -1,0 +1,14 @@
+{
+    "title": "Статическая настройка глобальных динамических адресов для одноадресной рассылки и динамически настраиваемые локальные адреса канала.",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H6M",
+    "tags": [
+        "Network",
+        "Cisco"
+    ],
+    "skills": {},
+    "testProjectPath": "./lecture.md",
+    "assetsPath": "assets"
+}
