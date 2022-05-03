@@ -15,7 +15,6 @@
 
 <iframe width="970" height="546" src="https://www.youtube.com/embed/CkvRVRcOkls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 [Проверка назначения интерфейса (pkt)](./assets/2.8.1-video-activity---test-the-interface-assignment.pkt)
 
 <!-- 2.8.2 -->

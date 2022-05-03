@@ -142,7 +142,6 @@ login
 
 В следующем примере показаны шаги по настройке баннера на Sw-Floor-1.
 
-
 ```
 Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# banner motd #Authorized Access Only# 
