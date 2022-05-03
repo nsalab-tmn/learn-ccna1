@@ -102,5 +102,5 @@ Ethernet определяется протоколами канального и
 * Часть 1: Изучение полей заголовков в кадре Ethernet II
 * Часть 2: Перехват и анализ кадров Ethernet с помощью программы Wireshark
 
-[Анализ кадров Ethernet с помощью программы Wireshark (lab)](./assets/7.1.6-lab---use-wireshark-to-examine-ethernet-frames.pdf)
+[Анализ кадров Ethernet с помощью программы Wireshark (лабораторная работа для физического оборудования)](./assets/7.1.6-lab---use-wireshark-to-examine-ethernet-frames.pdf)
 

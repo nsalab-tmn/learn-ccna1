@@ -28,6 +28,6 @@
 
 **Лабораторное оборудование** 
 
-[Проверка сетевого подключения с помощью команд ping и traceroute (lab)](./assets/13.3.2-lab---use-ping-and-traceroute-to-test-network-connectivity.pdf)
+[Проверка сетевого подключения с помощью команд ping и traceroute (лабораторная работа для физического оборудования)](./assets/13.3.2-lab---use-ping-and-traceroute-to-test-network-connectivity.pdf)
 
 

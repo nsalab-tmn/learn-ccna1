@@ -120,5 +120,5 @@
 * Часть 1: Определение подсетей по IPv4-адресу
 * Часть 2: Расчет подсетей по IPv4-адресу
 
-[Расчет подсетей IPv4 (lab)](./assets/11.6.6-lab---calculate-ipv4-subnets.pdf)
+[Описание лабораторной работы (pdf)](./assets/11.6.6-lab---calculate-ipv4-subnets.pdf)
 

@@ -9,7 +9,7 @@
 
 [Проектирование и построение небольшой сети — Режим симуляции физического оборудования (pka)](./assets/17.8.1-packet-tracer---design-and-build-a-small-network---physical-mode.pka)
 
-[Проектирование и построение небольшой сети (lab)](./assets/17.8.1-lab---design-and-build-a-small-network.pdf)
+[Проектирование и построение небольшой сети (лабораторная работа для физического оборудования)](./assets/17.8.1-lab---design-and-build-a-small-network.pdf)
 
 <!-- 17.8.2 -->
 ## Packet Tracer: Отработка комплексных практических навыков

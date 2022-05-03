@@ -25,4 +25,4 @@
 
 **Лабораторное оборудование** 
 
-[Разработка и реализация схемы адресации VLSM (lab)](./assets/11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme.pdf)
+[Разработка и реализация схемы адресации VLSM (лабораторная работа для физического оборудования)](./assets/11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme.pdf)

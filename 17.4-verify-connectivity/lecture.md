@@ -301,5 +301,5 @@ C:\Users\PC-A>
 * Часть 1: Регистрация задержки сети с помощью команды ping
 * Часть 2: Регистрация задержки сети с помощью команды traceroute
 
-[Проверка задержки сети с помощью команд ping и traceroute (lab)](./assets/17.4.6-lab---test-network-latency-with-ping-and-traceroute.pdf)
+[Проверка задержки сети с помощью команд ping и traceroute (лабораторная работа для физического оборудования)](./assets/17.4.6-lab---test-network-latency-with-ping-and-traceroute.pdf)
 
