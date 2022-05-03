@@ -145,9 +145,7 @@
 
 Посмотрите видео о трехстороннем квитировании TCP в программе Wireshark.
 
-<video width="768" height="432" controls>
-  <source src="./assets/14.5.5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/14.5.5.png)](https://www.youtube.com/watch?v=UbqcbYsPoss)
 
 <!-- 14.5.6 -->
 <!-- quiz -->

@@ -27,9 +27,7 @@
 
 Посмотрите видео, посвященное порядковым номерам и подтверждениям TCP.
 
-<video width="768" height="432" controls>
-  <source src="./assets/14.6.2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/14.6.2.png)](https://www.youtube.com/watch?v=tz7eawYRHf0)
 
 <!-- 14.6.3 -->
 ## Надежность TCP: потеря данных и повторная передача
@@ -55,9 +53,7 @@ TCP использует таймеры, чтобы узнать, сколько
 
 Нажмите кнопку Play (Воспроизведение) на рисунке, чтобы ознакомиться с учебным материалом, посвященным повторной передаче TCP.
 
-<video width="768" height="432" controls>
-  <source src="./assets/14.6.4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/14.6.4.png)](https://www.youtube.com/watch?v=3AzR-82OI7Q)
 
 <!-- 14.6.5 -->
 ## Управление потоком TCP. Размер окна и подтверждения

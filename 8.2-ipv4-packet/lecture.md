@@ -38,11 +38,9 @@ IPv4 является одним из основных протоколов св
 <!-- 8.2.3 -->
 ## Видео. Пример заголовков IPv4 в программе Wireshark
 
-Просмотрите видеоролик об изучении заголовков IPv4 с помощью программы Wireshark.
+Просмотрите видео об изучении заголовков IPv4 с помощью программы Wireshark.
 
-<video width="768" height="432" controls>
-  <source src="./assets/8.2.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/8.2.3.png)](https://www.youtube.com/watch?v=PArGE7H_eN8)
 
 <!-- 8.2.4 -->
 <!-- quiz -->

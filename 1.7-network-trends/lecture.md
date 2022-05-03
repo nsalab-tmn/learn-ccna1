@@ -46,11 +46,9 @@ Cisco Webex Teams — это многофункциональный инстру
 <!-- 1.7.5 -->
 ## Видео - Cisco Webex для небольших переговорных
 
-Нажмите «Воспроизведение» на рисунке, чтобы увидеть, как Cisco Webex внедряется в повседневную жизнь и бизнес.
+Посмотрите промо ролик о том, как Cisco Webex внедряется в повседневную жизнь и бизнес.
 
-<video width="768" height="432" controls>
-  <source src="https://github.com/nsalab-tmn/learn-ccna1/raw/main/1.7-network-trends/assets/1.7.5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/1.7.5.png)](https://www.youtube.com/watch?v=e85Y71fsyyY)
 
 <!-- 1.7.6 -->
 ## Облачные вычисления

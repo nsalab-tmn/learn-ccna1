@@ -3,17 +3,13 @@
 <!-- 10.4.1 -->
 ## Видео - Различия сетевых устройств
 
-Просмотрите два видеоролика с объяснением различий маршрутизаторов и коммутаторов, которые могут возникнуть во время работы Packet Tracer и лабораторных работ.
+Просмотрите два видеоролика с объяснением различий маршрутизаторов и коммутаторов, которые могут возникнуть во время работы Packet Tracer и лабораторных работ на реальном оборудовании.
 
-<video width="768" height="432" controls>
-  <source src="./assets/10.4.1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/10.4.1.png)](https://www.youtube.com/watch?v=DNL4DPxjgNM)
 
 <!-- 10.4.2 -->
 
-<video width="768" height="432" controls>
-  <source src="./assets/10.4.2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/10.4.2.png)](https://www.youtube.com/watch?v=RH_KIUdHZlE)
 
 <!-- 10.4.3 -->
 ## Packet Tracer - Базовая конфигурация устройства

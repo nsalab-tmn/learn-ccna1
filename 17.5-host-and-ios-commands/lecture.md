@@ -542,9 +542,7 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 
 Команду **show version** можно применять для проверки и устранения неполадок базовых программных и аппаратных компонентов, которые используются во время загрузки. Посмотрите видео, представленное ранее в этом курсе, посвященное команде **show version**.
 
-<video width="768" height="432" controls>
-  <source src="./assets/17.5.8.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/17.5.8.png)](https://www.youtube.com/watch?v=dFKfyJkuSqQ)
 
 <!-- 17.5.9 -->
 ## Packet Tracer - Интерпретация выходных данных команды show

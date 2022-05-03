@@ -107,9 +107,7 @@
 
 Посмотрите видеоролик о том, как использовать «магическое число» для классовых границ бит.
 
-<video width="768" height="432" controls>
-  <source src="./assets/11.6.4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/11.6.4.png)](https://www.youtube.com/watch?v=TJSWlSplC1Q)
 
 <!-- 11.6.5 -->
 <!-- ## Упражнение. Расчет маски подсети -->

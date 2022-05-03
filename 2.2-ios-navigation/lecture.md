@@ -36,13 +36,9 @@
 <!-- 2.2.3 -->
 ## Видео. Основные командные режимы интерфейса командной строки IOS
 
-Нажмите кнопку «Воспроизведение» на рисунке для просмотра видео, демонстрирующего переключение между режимами IOS.
+Посмотрите видео, демонстрирующее переключение между режимами IOS.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B269UlVAN40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- <video width="768" height="432" controls>
-  <source src="./assets/2.2.3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video> -->
+ [![](./assets/2.2.3.png)](https://www.youtube.com/watch?v=B269UlVAN40)
 
 <!-- 2.2.4 -->
 ## Переключение между режимами IOS
@@ -80,13 +76,9 @@ Switch(config-if)#
 <!-- 2.2.5 -->
 ## Видео. Переключение между режимами IOS
 
-Нажмите кнопку «Воспроизведение» на рисунке для просмотра видео, демонстрирующего переключение между различными режимами CLI в IOS.
+Посмотрите видео, демонстрирующее переключение между различными режимами CLI в IOS.
 
-<!-- <video width="768" height="432" controls>
-  <source src="./assets/2.2.5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video> -->
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-n1tO4Xg6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](./assets/2.2.5.png)](https://www.youtube.com/watch?v=Z-n1tO4Xg6w)
 
 <!-- 2.2.6 -->
 ## Примечание о действиях проверки синтаксиса

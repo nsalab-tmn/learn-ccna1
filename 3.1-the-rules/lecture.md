@@ -3,11 +3,9 @@
 <!-- 3.1.1 -->
 ## Видео - Устройства в пузыре
 
-Нажмите  Воспроизведение, чтобы просмотреть видео, объясняющее, как сетевое устройство работает в сети.
+Посмотрите видео, объясняющее как сетевое устройство работает в сети.
 
-<video width="768" height="432" controls>
-  <source src="./assets/3.1.1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+[![](./assets/3.1.1.png)](https://www.youtube.com/watch?v=yWjd-4WN4hE)
 
 <!-- 3.1.2 -->
 ## Основы коммуникаций
@@ -35,19 +33,11 @@
 
 ![](./assets/3.1.3-1.gif)
 
-<!--
-The figure is an animated representation of communication between a female and a male. Up top are words with right arrows between them: message, message source signal transmitter transmission medium signal receiver, and message, message destination. The animation shows a lightbulb appearing above the female traveling to the male and a lightbulb appear above his head.
--->
-
 ### Сеть
 
 На анимации представлено взаимодействие двух устройств. Как показано в анимации, предыдущий пример справедлив и для компьютерной связи. Подумайте над тем, сколько разных правил или протоколов регулируют способы коммуникации, существующие в современном мире.
 
 ![](./assets/3.1.3-2.gif)
-
-<!--
-The figure is an animated representation of communication between a laptop and a p c that have a line between them. Up top are words with right arrows between them: message, message source signal transmitter transmission medium signal receiver, and message, message destination. The animation shows a lightbulb appearing on the laptop display then traveling through an envelope along the wire to the p c and a lightbulb appear within the display of the p c.
--->
 
 <!-- 3.1.4 -->
 ## Установление правил
@@ -130,10 +120,6 @@ Internet Protocol (IP) — это протокол с функцией, анал
 ![](./assets/3.1.7-2.png)
 <!-- /courses/itn-dl/aeece080-34fa-11eb-ad9a-f74babed41a6/af1f6230-34fa-11eb-ad9a-f74babed41a6/assets/2db66fc1-1c25-11ea-81a0-ffc2c49b96bc.svg -->
 
-<!--
-The figure shows 4 rows of words. Above the rows are 4 uniform sections labeled byte 1 byte 2 byte 3 byte 4. Down the side of the rows there is a line with arrows at both end running from top to bottom labeled 40 bytes. The top row has 3 blocks. The first block is labeled version and its size is half of byte 1. The next block is traffic classes that runs half way between byte 1 and half way through byte 2. The last label is flow label and it uses the rest of the space until the end of byte 4. The second row has 3 sections payload length that runs between bytes 1 and 2, next header which takes up byte 3, and hop limit which takes up byte 4. Row 3 is labeled source i p address and runs across the 4 bytes. Row 4 is labeled destination i p address and runs across the 4 bytes.
--->
-
 <!-- 3.1.8 -->
 ## Размер сообщений
 
@@ -161,10 +147,6 @@ The figure shows 4 rows of words. Above the rows are 4 uniform sections labeled 
 * **Способ доступа**  - определяет, когда конкретный человек сможет отправить сообщение. На анимации представлены люди, говорящие одновременно, затем происходит «столкновение информации», и им необходимо отступить и начать снова. Аналогичным образом, когда устройство хочет передавать данные по беспроводной локальной сети, необходимо, чтобы сетевая карта WLAN (NIC) определяла, доступен ли беспроводной носитель.
 
 ![](./assets/3.1.9.gif)
-
-<!--
-На анимации изображены женщина и мужчина, говорящие одновременно. Женщина спрашивает, во сколько кино? и человек говорит, когда мы встречаемся на ужин? Потому что они говорили одновременно, не понимали друг друга, и они оба говорят «Извините»? Повтори, пожалуйста.
--->
 
 <!-- 3.1.10 -->
 ## Варианты доставки сообщений
