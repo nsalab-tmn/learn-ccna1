@@ -126,7 +126,7 @@
 <iframe width="970" height="546" src="https://www.youtube.com/embed/YDXgJUjGjcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 2.3.7 -->
-## Packet Tracer. Навигация по IOS
+## Packet Tracer: Навигация по IOS
 
 В этом упражнении вы сможете на практике отработать навыки, необходимые для навигации по операционной системе Cisco IOS, включая различные пользовательские режимы доступа, всевозможные режимы конфигурации, а также наиболее распространенные команды, используемые регулярно. Кроме того, вы поработаете с контекстной справкой при настройке команды clock.
 
