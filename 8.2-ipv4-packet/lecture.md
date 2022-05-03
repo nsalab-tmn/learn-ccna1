@@ -40,7 +40,7 @@ IPv4 является одним из основных протоколов св
 
 Просмотрите видео об изучении заголовков IPv4 с помощью программы Wireshark.
 
-[![](./assets/8.2.3.png)](https://www.youtube.com/watch?v=PArGE7H_eN8)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/PArGE7H_eN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 8.2.4 -->
 <!-- quiz -->

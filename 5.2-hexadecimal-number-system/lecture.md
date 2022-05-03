@@ -31,7 +31,7 @@
 
 Посмотрите видео о том, как конвертировать между шестнадцатеричной и десятичной системами нумерации.
 
-[![](./assets/5.2.2.png)](https://www.youtube.com/watch?v=50O7DGHEz6A)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/50O7DGHEz6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 5.2.3 -->
 ## Преобразование десятичных чисел в шестнадцатеричные

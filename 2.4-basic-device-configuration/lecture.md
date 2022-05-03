@@ -153,7 +153,7 @@ Sw-Floor-1(config)# banner motd #Authorized Access Only#
 
 Посмотрите видео, демонстрирующее защиту административного доступа к коммутатору.
 
-[![](./assets/2.4.6.png)](https://www.youtube.com/watch?v=Ae9qSUlJ3a4)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/Ae9qSUlJ3a4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 2.4.7 -->
 <!-- syntax -->

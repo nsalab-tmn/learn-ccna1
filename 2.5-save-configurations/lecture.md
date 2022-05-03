@@ -52,7 +52,7 @@ hostname Sw-Floor-1
 
 Посмотрите видео, демонстрирующее сохранение файлов конфигурации коммутатора.
 
-[![](./assets/2.5.3.png)](https://www.youtube.com/watch?v=lQQ28pdSqfg)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/lQQ28pdSqfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 2.5.4 -->
 ## Запись конфигурации в текстовый файл

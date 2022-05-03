@@ -89,7 +89,7 @@
 
 Посмотрите видео о маске подсети и о разделении на подсети с помощью «магического числа».
 
-[![](./assets/11.5.3.png)](https://www.youtube.com/watch?v=LKjCyGaiH4Q)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/LKjCyGaiH4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 11.5.4 
 ## Видео - Разделение на подсети с помощью «магического числа»
@@ -97,7 +97,7 @@
 Нажмите кнопку «Воспроизведение», чтобы посмотреть видеоролик о «магическом числе».
 -->
 
-[![](./assets/11.5.4.png)](https://www.youtube.com/watch?v=A2P7i6ebSCE)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/A2P7i6ebSCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 11.5.5 -->
 ## Packet Tracer — Разделение IPv4-сети на подсети

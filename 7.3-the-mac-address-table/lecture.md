@@ -91,7 +91,7 @@
 
 Просмотрите видео о построении таблиц МАС-адресов в двух соединенных между собой коммутаторах.
 
-[![](./assets/7.3.4.png)](https://www.youtube.com/watch?v=fi7Ss-_9LvY)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/fi7Ss-_9LvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 7.3.5 -->
 ## Видео - Отправка кадра на шлюз по умолчанию
@@ -102,7 +102,7 @@
 
 **Примечание**: В этом видео в IP-пакете, отправляемом с компьютера PC-A на устройство в удаленной сети, указаны IP-адрес источника компьютера PC-A и IP-адрес назначения удаленного узла. В возвращаемом IP-пакете указаны IP-адрес источника удаленного узла и IP-адрес назначения, т. е. адрес компьютера PC-A.
 
-[![](./assets/7.3.5.png)](https://www.youtube.com/watch?v=RXLercop7eU)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/RXLercop7eU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 7.3.6 -->
 <!--## Упражнение. Коммутация в действии! -->

@@ -46,7 +46,7 @@ Cisco Webex Teams — это многофункциональный инстру
 
 Посмотрите промо ролик о том, как Cisco Webex внедряется в повседневную жизнь и бизнес.
 
-[![](./assets/1.7.5.png)](https://www.youtube.com/watch?v=e85Y71fsyyY)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/e85Y71fsyyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 1.7.6 -->
 ## Облачные вычисления

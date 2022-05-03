@@ -112,7 +112,7 @@
 
 Посмотрите видео о том, как определяется сетевой адрес, адрес узла и широковещательный адрес для конкретного IPv4-адреса и маски подсети.
 
-[![](./assets/11.1.5.png)](https://www.youtube.com/watch?v=7DoggTtOLN0)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/7DoggTtOLN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 11.1.6 -->
 ## Сетевой адрес, адрес хоста и адрес трансляции

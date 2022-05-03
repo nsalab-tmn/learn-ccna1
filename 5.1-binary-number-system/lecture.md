@@ -33,7 +33,7 @@
 
 Посмотрите видео о том, как двоичный адрес преобразуется в десятичный.
 
-[![](./assets/5.1.2.png)](https://www.youtube.com/watch?v=lxeBvUOA9oE)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/lxeBvUOA9oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 5.1.3 -->
 ## Двоичная позиционная система счисления

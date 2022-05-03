@@ -7,14 +7,14 @@
 
 Посмотрите видео об основных методах VLSM.
 
-[![](./assets/11.8.1.png)](https://www.youtube.com/watch?v=R_Ti9y2AShc)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/R_Ti9y2AShc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 11.8.2 -->
 ## Видео - Пример VLSM 
 
 Посмотрите видеоролик о VLSM-разделении на подсети.
 
-[![](./assets/11.8.2.png)](https://www.youtube.com/watch?v=_V-YboU4Rq4)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/_V-YboU4Rq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 11.8.3 -->
 ## Сохранение адресов IPv4

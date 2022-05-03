@@ -36,7 +36,7 @@
 
 Посмотрите видео, демонстрирующее переключение между режимами IOS.
 
- [![](./assets/2.2.3.png)](https://www.youtube.com/watch?v=B269UlVAN40)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/B269UlVAN40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 2.2.4 -->
 ## Переключение между режимами IOS
@@ -76,7 +76,7 @@ Switch(config-if)#
 
 Посмотрите видео, демонстрирующее переключение между различными режимами CLI в IOS.
 
-[![](./assets/2.2.5.png)](https://www.youtube.com/watch?v=Z-n1tO4Xg6w)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/Z-n1tO4Xg6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 2.2.6 -->
 ## Примечание о действиях проверки синтаксиса

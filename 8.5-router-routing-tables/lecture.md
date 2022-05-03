@@ -115,7 +115,7 @@ R1, R2 и R3 используют протокол динамической ма
 
 Просмотрите видео о таблице маршрутизации для IPv4.
 
-[![](./assets/8.5.5.png)](https://www.youtube.com/watch?v=pt_Qw1Jfo5w)
+<iframe width="970" height="546" src="https://www.youtube.com/embed/pt_Qw1Jfo5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 8.5.6 -->
 ## Введение в таблицу маршрутизации IPv4
