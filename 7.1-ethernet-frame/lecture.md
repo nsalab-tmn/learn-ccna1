@@ -1,4 +1,4 @@
-# Кадры Ethernet
+<!-- verified: agorbachev 03.05.2022 -->
 
 <!-- 7.1.1 -->
 ## Инкапсуляция Ethernet

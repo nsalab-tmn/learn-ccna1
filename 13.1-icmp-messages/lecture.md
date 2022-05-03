@@ -1,4 +1,4 @@
-# Сообщения ICMP
+<!-- verified: agorbachev 03.05.2022 -->
 
 <!-- 13.1.1 -->
 ##  Сообщения ICMPv4 и ICMPv6
