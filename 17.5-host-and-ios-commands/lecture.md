@@ -545,7 +545,7 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 <iframe width="970" height="546" src="https://www.youtube.com/embed/dFKfyJkuSqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 17.5.9 -->
-## Packet Tracer: интерпретация выходных данных команды show
+## Работа в симуляторе: интерпретация выходных данных команды show
 
 Это упражнение предназначено для закрепления знаний о командах **show** маршрутизатора. Вам не нужно будет выполнять настройку, вы просто изучите выходные данные отдельных команд show.
 

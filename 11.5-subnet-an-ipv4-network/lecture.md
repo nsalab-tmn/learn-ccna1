@@ -98,7 +98,7 @@
 <iframe width="970" height="546" src="https://www.youtube.com/embed/A2P7i6ebSCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 11.5.5 -->
-## Packet Tracer — Разделение IPv4-сети на подсети
+## Работа в симуляторе: Разделение IPv4-сети на подсети
 
 В этом задании  вам нужно будет разделить сеть, начиная с адреса и маски сети, на несколько подсетей. При создании схемы подсети необходимо учитывать количество компьютеров каждой подсети и другие аспекты, например дальнейшее расширение узлов в сети.
 
