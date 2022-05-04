@@ -538,14 +538,14 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 И наоборот, в результатах выполнения команды указано, что интерфейсы FastEthernet0/2 и FastEthernet0/3 работают. Это обозначено состоянием up в столбцах Status (Состояние) и Protocol (Протокол).
 
 <!-- 17.5.8 -->
-## Видео: Команда show version
+## Видео: команда show version
 
 Команду **show version** можно применять для проверки и устранения неполадок базовых программных и аппаратных компонентов, которые используются во время загрузки. Посмотрите видео, представленное ранее в этом курсе, посвященное команде **show version**.
 
 <iframe width="970" height="546" src="https://www.youtube.com/embed/dFKfyJkuSqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- 17.5.9 -->
-## Packet Tracer: Интерпретация выходных данных команды show
+## Packet Tracer: интерпретация выходных данных команды show
 
 Это упражнение предназначено для закрепления знаний о командах **show** маршрутизатора. Вам не нужно будет выполнять настройку, вы просто изучите выходные данные отдельных команд show.
 
