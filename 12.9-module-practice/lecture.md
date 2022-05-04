@@ -22,7 +22,7 @@
 
 [Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pka)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pka)
 
-[Настройка IPv6-адресов на сетевых устройствах (лабораторная работа для физического оборудования)](./assets/12.9.2-lab---configure-ipv6-addresses-on-network-devices.pdf)
+<!-- [Настройка IPv6-адресов на сетевых устройствах (лабораторная работа для физического оборудования)](./assets/12.9.2-lab---configure-ipv6-addresses-on-network-devices.pdf) -->
 
 
 
