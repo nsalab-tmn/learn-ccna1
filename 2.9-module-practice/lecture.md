@@ -18,8 +18,8 @@
 * Часть 2: Настройка узлов ПК
 * Часть 3: Настройка и проверка основных параметров коммутатора
 
-[Packet Tracer - Базовая конфигурация коммутатора и оконечного устройства - Режим симуляции физического оборудования (pdf)](./assets/2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode.pdf)
+[Базовая конфигурация коммутатора и оконечного устройства - Режим симуляции физического оборудования (pdf)](./assets/2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode.pdf)
 
-[Packet Tracer - Базовая конфигурация коммутатора и оконечного устройства - Режим симуляции физического оборудования (pka)](./assets/2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode.pka)
+[Базовая конфигурация коммутатора и оконечного устройства - Режим симуляции физического оборудования (pka)](./assets/2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode.pka)
 
 [Базовая конфигурация коммутатора и оконечного устройства (лабораторная работа для физического оборудования)](./assets/2.9.2-lab---basic-switch-and-end-device-configuration.pdf)

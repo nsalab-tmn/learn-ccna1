@@ -22,9 +22,9 @@
 * Часть 3: Базовая проверка сети с помощью команд tracert и traceroute
 * Часть 4: Поиск и устранение проблем в топологии
 
-[Packet Tracer - Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pdf)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pdf)
+[Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pdf)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pdf)
 
-[Packet Tracer - Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pka)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pka)
+[Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pka)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pka)
 
  
 

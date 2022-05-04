@@ -207,9 +207,9 @@ Address:  208.67.222.222
 * Проверка полной функциональности
 * Документирование результатов проделанной работы и изменений в конфигурации
 
-[Packet Tracer - Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pdf)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pdf)
+[Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pdf)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pdf)
 
-[Packet Tracer - Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pka)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pka)
+[Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pka)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pka)
 
  
 

@@ -18,9 +18,9 @@
 * Часть 2: Ручная настройка IPv6-адресов
 * Часть 3: Проверка сквозного подключения
 
-[Packet Tracer - Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pdf)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pdf)
+[Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pdf)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pdf)
 
-[Packet Tracer - Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pka)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pka)
+[Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pka)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pka)
 
 [Настройка IPv6-адресов на сетевых устройствах (лабораторная работа для физического оборудования)](./assets/12.9.2-lab---configure-ipv6-addresses-on-network-devices.pdf)
 
