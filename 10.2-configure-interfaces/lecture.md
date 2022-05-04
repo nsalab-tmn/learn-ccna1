@@ -106,7 +106,7 @@ R1#
 | `show ip interfaces` | Отображает статистику IPv4 всех интерфейсов маршрутизатора. |
 | `show ipv6 interface` | Отображает статистику IPv6 всех интерфейсов маршрутизатора. |
 
-### show ip interface brief
+### Команда ``show ip interface brief``
 
 ```
 R1# show ip interface brief
@@ -117,7 +117,7 @@ Vlan1 unassigned YES unset administratively down down
 R1#
 ```
 
-### show ipv6 interface brief
+### Команда ``show ipv6 interface brief``
 
 ```
 R1# show ipv6 interface brief
@@ -132,7 +132,7 @@ Vlan1 [administratively down/down]
 R1#
 ```
 
-### show ip route
+### Команда ``show ip route``
 
 ```
 R1# show ip route
@@ -155,7 +155,7 @@ L        209.165.200.225/32 is directly connected, GigabitEthernet0/0/1
 R1#
 ```
 
-### show ipv6 route
+### Команда ``show ipv6 route``
 
 ```
 R1# show ipv6 route
@@ -180,7 +180,7 @@ L FF00::/8 [0/0]
 R1# 
 ```
 
-### show interfaces
+### Команда ``show interfaces``
 
 ```
 R1# show interfaces gig0/0/0
@@ -216,7 +216,7 @@ GigabitEthernet0/0/0 is up, line protocol is up
 R1#
 ```
 
-### show ip interface
+### Команда ``show ip interface``
 
 ```
 R1# show ip interface g0/0/0
@@ -264,7 +264,7 @@ GigabitEthernet0/0/0 is up, line protocol is up
 R1#
 ```
 
-### show ipv6 interface
+### Команда ``show ipv6 interface``
 
 ```
 R1# show ipv6 interface g0/0/0

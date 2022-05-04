@@ -1,7 +1,7 @@
 <!-- verified: agorbachev 03.05.2022 -->
 
 <!-- 10.1.1 -->
-## Шаги базовой конфигурации маршрутизатора
+## Описание шагов для базовой конфигурации
 
 При настройке начальных параметров маршрутизатора необходимо выполнить следующие задачи.
 
@@ -25,29 +25,29 @@ Router(config)# enable secret <secret_password>
  Router(config-line)# login 
 ```
 
-4 Обеспечьте безопасность удаленного доступа по протоколу Telnet или SSH.
+4\. Обеспечьте безопасность удаленного доступа по протоколу Telnet или SSH.
 
 ```
  Router(config-line)# line vty 0 4 
  Router(config-line)# password <plain_text_password>
  Router(config-line)# login 
- Router(config-line)# transport input { ssh  | telnet} 
+ Router(config-line)# transport input { ssh | telnet} 
 ```
 
-5. Защитите все пароли в файле конфигурации.
+5\. Защитите все пароли в файле конфигурации.
 
 ```
 Router(config-line)# exit
 Router(config)# service password-encryption
 ```
 
-6. Создайте баннер с правовым уведомлением.
+6\. Создайте баннер с правовым уведомлением.
 
 ```
 Router(config)# banner motd <# message #>
 ```
 
-7 Сохраните конфигурацию.
+7\. Сохраните конфигурацию.
 
 ```
 Router(config)# end
