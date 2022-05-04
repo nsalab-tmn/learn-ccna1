@@ -61,7 +61,7 @@ ARP-запрос отправляется в том случае, когда у�
 
 Просмотрите видео об ARP-запросе для адреса IPv4, который находится в локальной сети.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/tna6DaUeu5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=tna6DaUeu5c)
 
 <!-- 9.2.4 -->
 ## Видео: принцип работы протокола ARP — ARP-ответ
@@ -84,7 +84,7 @@ ARP-запрос отправляется в том случае, когда у�
 
 Просмотрите видео об ARP-ответе.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/Ud1angOlxHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=Ud1angOlxHE)
 
 <!-- 9.2.5 -->
 ## Видео: роль ARP в обмене данными с удаленными сетями
@@ -95,7 +95,7 @@ IPv4-адрес шлюза по умолчанию хранится в конф�
 
 Просмотрите видео об ARP-запросе и ответе, при коммуникации с хостами за пределами локальной сети.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/1ZB2euss3YY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=1ZB2euss3YY)
 
 <!-- 9.2.6 -->
 ## Удаление записей из таблицы ARP

@@ -7,7 +7,7 @@
 
 Просмотрите видео об обнаружении соседей в сети IPv6.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/S0SyGKhCEV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=S0SyGKhCEV0)
 
 <!-- 9.3.2 -->
 ## Сообщения об обнаружении соседей IPv6

@@ -5,11 +5,11 @@
 
 Просмотрите два видеоролика с объяснением различий маршрутизаторов и коммутаторов, которые могут возникнуть во время работы Packet Tracer и лабораторных работ на реальном оборудовании.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/DNL4DPxjgNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=DNL4DPxjgNM)
 
 <!-- 10.4.2 -->
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/RH_KIUdHZlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=RH_KIUdHZlE)
 
 <!-- 10.4.3 -->
 ## Работа в симуляторе: базовая конфигурация устройства

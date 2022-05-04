@@ -121,7 +121,7 @@
 
 Посмотрите видео о трехстороннем квитировании TCP в программе Wireshark.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/UbqcbYsPoss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=UbqcbYsPoss)
 
 <!-- 14.5.6 -->
 <!-- quiz -->

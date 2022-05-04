@@ -48,7 +48,7 @@
 
 Посмотрите видео, чтобы в подробностях ознакомиться с процессом загрузки и установки Packet Tracer.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/7E9ilk9dOOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=7E9ilk9dOOI)
 
 <!-- 1.0.4 -->
 ## Видео: начало работы в Cisco Packet Tracer
@@ -67,7 +67,7 @@ Packet Tracer - это инструмент, который позволяет �
 
 Посмотрите видео чтобы узнать, как использовать меню и как создать первую сеть Packet Tracer.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/uync1j2x6Ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=uync1j2x6Ms)
 
 <!-- 1.0.5 -->
 ## Работа в симуляторе: исследование логического и физического режима

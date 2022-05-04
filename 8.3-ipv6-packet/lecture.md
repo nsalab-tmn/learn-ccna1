@@ -81,7 +81,7 @@ IPv4 по-прежнему используется и сегодня. Этот 
 
 Просмотрите видеоролик об изучении заголовков IPv6 с помощью программы Wireshark.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/aOwXEempJ4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=aOwXEempJ4k)
 
 <!-- 8.3.6 -->
 <!-- quiz -->

@@ -5,7 +5,7 @@
 
 Посмотрите видео, объясняющее как сетевое устройство работает в сети.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/yWjd-4WN4hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=yWjd-4WN4hE)
 
 <!-- 3.1.2 -->
 ## Основы коммуникаций

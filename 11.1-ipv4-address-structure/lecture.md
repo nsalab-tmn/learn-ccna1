@@ -109,7 +109,7 @@
 
 Посмотрите видео о том, как определяется сетевой адрес, адрес узла и адрес широковещательной рассылки для конкретного.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/7DoggTtOLN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=7DoggTtOLN0)
 
 <!-- 11.1.6 -->
 

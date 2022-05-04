@@ -87,7 +87,7 @@
 
 Посмотрите видео о маске подсети и о разделении на подсети с помощью «магического числа».
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/LKjCyGaiH4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=LKjCyGaiH4Q)
 
 <!-- 11.5.4 
 ## Видео: разделение на подсети с помощью «магического числа»
@@ -95,7 +95,7 @@
 Нажмите кнопку «Воспроизведение», чтобы посмотреть видеоролик о «магическом числе».
 -->
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/A2P7i6ebSCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=A2P7i6ebSCE)
 
 <!-- 11.5.5 -->
 ## Работа в симуляторе: Разделение IPv4-сети на подсети

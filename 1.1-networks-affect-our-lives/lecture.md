@@ -12,7 +12,7 @@
 
 Людьми, которые меняют мир, не рождаются. Ими становятся. С 1997 года Сетевая Академия Cisco работает над единственной целью: обучением и развитием навыков нового поколения талантов, востребованные компаниями в условиях современной цифровой экономики.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/wcIP__5sa1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=wcIP__5sa1o)
 
 <!-- 1.1.3 -->
 ## Сети без границ

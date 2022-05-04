@@ -13,7 +13,7 @@
 
 Загрузите тот же файл PKT, который используется в видео. По тренируйтесь  с помощью  команд **ipconfig** и  **show ip interface brief**, как показано на видео.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/CkvRVRcOkls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=CkvRVRcOkls)
 
 [Проверка назначения интерфейса (pkt)](./assets/2.8.1-video-activity---test-the-interface-assignment.pkt)
 
@@ -28,7 +28,7 @@
 
 Загрузите тот же файл PKT, который используется в видео. Практика с использованием **ping** команды, как показано на видео.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/gex3BaiuQiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=gex3BaiuQiw)
 
 [Проверка сквозного подключения (pkt)](./assets/2.8.2-video-activity---test-end-to-end-connectivity.pkt)
 

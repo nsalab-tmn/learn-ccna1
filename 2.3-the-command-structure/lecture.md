@@ -67,7 +67,7 @@
 
 Посмотрите видео, демонстрирующее контекстную справку и проверку синтаксиса команды.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/K_VEPe8aRUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=K_VEPe8aRUE)
 
 <!-- 2.3.5 -->
 ## Горячие клавиши и клавиши быстрого вызова
@@ -121,7 +121,7 @@
 
 Нажмите кнопку «Воспроизведение» на рисунке для просмотра видео, демонстрирующего различные горячие клавиши и клавиши быстрого вызова.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/YDXgJUjGjcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=YDXgJUjGjcw)
 
 <!-- 2.3.7 -->
 ## Работа в симуляторе: навигация по интерфейсу коммандной строки Cisco IOS

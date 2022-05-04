@@ -542,7 +542,7 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 
 Команду **show version** можно применять для проверки и устранения неполадок базовых программных и аппаратных компонентов, которые используются во время загрузки. Посмотрите видео, представленное ранее в этом курсе, посвященное команде **show version**.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/dFKfyJkuSqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=dFKfyJkuSqQ)
 
 <!-- 17.5.9 -->
 ## Работа в симуляторе: интерпретация выходных данных команды show

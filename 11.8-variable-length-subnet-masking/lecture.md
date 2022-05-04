@@ -7,11 +7,11 @@
 
 Посмотрите видео об основных методах и примерах VLSM.
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/R_Ti9y2AShc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=R_Ti9y2AShc)
 
 <!-- 11.8.2 -->
 
-<iframe width="970" height="546" src="https://www.youtube.com/embed/_V-YboU4Rq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![youtube](https://www.youtube.com/watch?v=_V-YboU4Rq4)
 
 <!-- 11.8.3 -->
 ## Эффективное использвование IPv4-адресов
