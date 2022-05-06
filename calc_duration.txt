@@ -1,26 +1,26 @@
-Path is /home/menus12/dev/learn-ccna1
+Path is .
 Using avarage reading speed 120 words per minute
 Using avarage lab completion speed 2 times reading time
 Update is True
 ---
 Folder is 1.0-introduction
- |-- Metadata duration is 49 minutes
- |-- lecture.md has 755 words. Reading time is 6 minutes
- |-- Video 1.0.3.mp4 is 5 minutes 21 seconds long
- |-- Video 1.0.4.mp4 is 5 minutes 21 seconds long
+ |-- Metadata duration is 57 minutes
+ |-- lecture.md has 728 words. Reading time is 6 minutes
+ |-- Video https://www.youtube.com/watch?v=7E9ilk9dOOI is 5 minutes 22 seconds long
+ |-- Video https://www.youtube.com/watch?v=uync1j2x6Ms is 13 minutes 14 seconds long
  |-- PDF 1.0.5-packet-tracer---logical-and-physical-mode-exploration_ru-RU.pdf has 1318 words. Reading time is 11 minutes
  |-- Lab completion time for above PDF is 22 minutes (2 times reading time).
- |-- Calculated completion time for 1.0-introduction is 49 minutes
+ |-- Calculated completion time for 1.0-introduction is 57 minutes
  |-- Metadata has been updated
 Folder is 1.1-networks-affect-our-lives
- |-- Metadata duration is 5 minutes
- |-- lecture.md has 286 words. Reading time is 2 minutes
- |-- Video 1.1.2.mp4 is 2 minutes 27 seconds long
+ |-- Metadata duration is 4 minutes
+ |-- lecture.md has 272 words. Reading time is 2 minutes
+ |-- Video https://www.youtube.com/watch?v=wcIP__5sa1o is 2 minutes 28 seconds long
  |-- Calculated completion time for 1.1-networks-affect-our-lives is 4 minutes
  |-- Metadata has been updated
 Folder is 1.10-summary
  |-- Metadata duration is 8 minutes
- |-- lecture.md has 943 words. Reading time is 8 minutes
+ |-- lecture.md has 936 words. Reading time is 8 minutes
  |-- Calculated completion time for 1.10-summary is 8 minutes
  |-- Metadata has been updated
 Folder is 1.2-network-components
@@ -29,9 +29,9 @@ Folder is 1.2-network-components
  |-- Calculated completion time for 1.2-network-components is 11 minutes
  |-- Metadata has been updated
 Folder is 1.3-network-topologies
- |-- Metadata duration is 7 minutes
- |-- lecture.md has 826 words. Reading time is 7 minutes
- |-- Calculated completion time for 1.3-network-topologies is 7 minutes
+ |-- Metadata duration is 3 minutes
+ |-- lecture.md has 417 words. Reading time is 3 minutes
+ |-- Calculated completion time for 1.3-network-topologies is 3 minutes
  |-- Metadata has been updated
 Folder is 1.4-network-types
  |-- Metadata duration is 10 minutes
@@ -40,7 +40,7 @@ Folder is 1.4-network-types
  |-- Metadata has been updated
 Folder is 1.5-internet-connection
  |-- Metadata duration is 21 minutes
- |-- lecture.md has 728 words. Reading time is 6 minutes
+ |-- lecture.md has 729 words. Reading time is 6 minutes
  |-- PDF 1.5.7-packet-tracer---network-representation_ru-RU.pdf has 620 words. Reading time is 5 minutes
  |-- Lab completion time for above PDF is 10 minutes (2 times reading time).
  |-- Calculated completion time for 1.5-internet-connection is 21 minutes
@@ -52,8 +52,8 @@ Folder is 1.6-redundant-networks
  |-- Metadata has been updated
 Folder is 1.7-network-trends
  |-- Metadata duration is 14 minutes
- |-- lecture.md has 1544 words. Reading time is 13 minutes
- |-- Video 1.7.5.mp4 is 1 minutes 21 seconds long
+ |-- lecture.md has 1530 words. Reading time is 13 minutes
+ |-- Video https://www.youtube.com/watch?v=e85Y71fsyyY is 1 minutes 21 seconds long
  |-- Calculated completion time for 1.7-network-trends is 14 minutes
  |-- Metadata has been updated
 Folder is 1.8-network-security
@@ -62,7 +62,7 @@ Folder is 1.8-network-security
  |-- Calculated completion time for 1.8-network-security is 6 minutes
  |-- Metadata has been updated
 Folder is 1.9-it-specialist
- |-- Metadata duration is 15 minutes
+ |-- Metadata duration is 13 minutes
  |-- lecture.md has 125 words. Reading time is 1 minutes
  |-- PDF 1.9.3-lab---research-it-and-networking-job-opportunities_ru-RU.pdf has 467 words. Reading time is 4 minutes
  |-- Lab completion time for above PDF is 8 minutes (2 times reading time).
@@ -75,14 +75,14 @@ Folder is 10.0-introduction
  |-- Metadata has been updated
 Folder is 10.1-configure-initial-router-settings
  |-- Metadata duration is 25 minutes
- |-- lecture.md has 463 words. Reading time is 4 minutes
+ |-- lecture.md has 464 words. Reading time is 4 minutes
  |-- PDF 10.1.4-packet-tracer---configure-initial-router-settings.pdf has 870 words. Reading time is 7 minutes
  |-- Lab completion time for above PDF is 14 minutes (2 times reading time).
  |-- Calculated completion time for 10.1-configure-initial-router-settings is 25 minutes
  |-- Metadata has been updated
 Folder is 10.2-configure-interfaces
  |-- Metadata duration is 13 minutes
- |-- lecture.md has 1555 words. Reading time is 13 minutes
+ |-- lecture.md has 1562 words. Reading time is 13 minutes
  |-- Calculated completion time for 10.2-configure-interfaces is 13 minutes
  |-- Metadata has been updated
 Folder is 10.3-configure-the-default-gateway
@@ -95,21 +95,19 @@ Folder is 10.3-configure-the-default-gateway
  |-- Calculated completion time for 10.3-configure-the-default-gateway is 57 minutes
  |-- Metadata has been updated
 Folder is 10.4-module-practice
- |-- Metadata duration is 92 minutes
- |-- lecture.md has 235 words. Reading time is 2 minutes
+ |-- Metadata duration is 53 minutes
+ |-- lecture.md has 204 words. Reading time is 2 minutes
+ |-- Video https://www.youtube.com/watch?v=DNL4DPxjgNM is 4 minutes 31 seconds long
+ |-- Video https://www.youtube.com/watch?v=RH_KIUdHZlE is 10 minutes 16 seconds long
  |-- PDF 10.4.4-packet-tracer---build-a-switch-and-router-network---physical-mode.pdf has 948 words. Reading time is 8 minutes
  |-- Lab completion time for above PDF is 16 minutes (2 times reading time).
- |-- PDF 10.4.4-lab---build-a-switch-and-router-network.pdf has 1542 words. Reading time is 13 minutes
- |-- Lab completion time for above PDF is 26 minutes (2 times reading time).
  |-- PDF 10.4.3-packet-tracer---basic-device-configuration.pdf has 428 words. Reading time is 4 minutes
  |-- Lab completion time for above PDF is 8 minutes (2 times reading time).
- |-- Video 10.4.1.mp4 is 4 minutes 30 seconds long
- |-- Video 10.4.2.mp4 is 10 minutes 16 seconds long
- |-- Calculated completion time for 10.4-module-practice is 92 minutes
+ |-- Calculated completion time for 10.4-module-practice is 53 minutes
  |-- Metadata has been updated
 Folder is 10.4.5-summary
  |-- Metadata duration is 2 minutes
- |-- lecture.md has 295 words. Reading time is 2 minutes
+ |-- lecture.md has 288 words. Reading time is 2 minutes
  |-- Calculated completion time for 10.4.5-summary is 2 minutes
  |-- Metadata has been updated
 Folder is 11.0-introduction
@@ -119,75 +117,73 @@ Folder is 11.0-introduction
  |-- Metadata has been updated
 Folder is 11.1-ipv4-address-structure
  |-- Metadata duration is 18 minutes
- |-- lecture.md has 1461 words. Reading time is 12 minutes
- |-- Video 11.1.5.mp4 is 6 minutes 21 seconds long
+ |-- lecture.md has 1432 words. Reading time is 12 minutes
+ |-- Video https://www.youtube.com/watch?v=7DoggTtOLN0 is 6 minutes 22 seconds long
  |-- Calculated completion time for 11.1-ipv4-address-structure is 18 minutes
  |-- Metadata has been updated
 Folder is 11.10-module-practice
- |-- Metadata duration is 74 minutes
- |-- lecture.md has 193 words. Reading time is 2 minutes
+ |-- Metadata duration is 38 minutes
+ |-- lecture.md has 190 words. Reading time is 2 minutes
  |-- PDF 11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode.pdf has 1114 words. Reading time is 9 minutes
  |-- Lab completion time for above PDF is 18 minutes (2 times reading time).
- |-- PDF 11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme.pdf has 1386 words. Reading time is 12 minutes
- |-- Lab completion time for above PDF is 24 minutes (2 times reading time).
  |-- PDF 11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme.pdf has 387 words. Reading time is 3 minutes
  |-- Lab completion time for above PDF is 6 minutes (2 times reading time).
- |-- Calculated completion time for 11.10-module-practice is 74 minutes
+ |-- Calculated completion time for 11.10-module-practice is 38 minutes
  |-- Metadata has been updated
 Folder is 11.10.3-summary
  |-- Metadata duration is 9 minutes
- |-- lecture.md has 1102 words. Reading time is 9 minutes
+ |-- lecture.md has 1096 words. Reading time is 9 minutes
  |-- Calculated completion time for 11.10.3-summary is 9 minutes
  |-- Metadata has been updated
 Folder is 11.2-ipv4-unicast-broadcast-and-multicast
  |-- Metadata duration is 5 minutes
- |-- lecture.md has 630 words. Reading time is 5 minutes
+ |-- lecture.md has 632 words. Reading time is 5 minutes
  |-- Calculated completion time for 11.2-ipv4-unicast-broadcast-and-multicast is 5 minutes
  |-- Metadata has been updated
 Folder is 11.3-types-of-ipv4-addresses
- |-- Metadata duration is 11 minutes
- |-- lecture.md has 1274 words. Reading time is 11 minutes
- |-- Calculated completion time for 11.3-types-of-ipv4-addresses is 11 minutes
+ |-- Metadata duration is 10 minutes
+ |-- lecture.md has 1259 words. Reading time is 10 minutes
+ |-- Calculated completion time for 11.3-types-of-ipv4-addresses is 10 minutes
  |-- Metadata has been updated
 Folder is 11.4-network-segmentation
  |-- Metadata duration is 5 minutes
- |-- lecture.md has 626 words. Reading time is 5 minutes
+ |-- lecture.md has 630 words. Reading time is 5 minutes
  |-- Calculated completion time for 11.4-network-segmentation is 5 minutes
  |-- Metadata has been updated
 Folder is 11.5-subnet-an-ipv4-network
  |-- Metadata duration is 59 minutes
- |-- lecture.md has 1117 words. Reading time is 9 minutes
- |-- Video 11.5.4.mp4 is 14 minutes 49 seconds long
+ |-- lecture.md has 1076 words. Reading time is 9 minutes
+ |-- Video https://www.youtube.com/watch?v=LKjCyGaiH4Q is 8 minutes 9 seconds long
+ |-- Video https://www.youtube.com/watch?v=A2P7i6ebSCE is 14 minutes 50 seconds long
  |-- PDF 11.5.5-packet-tracer---subnet-an-ipv4-network.pdf has 1080 words. Reading time is 9 minutes
  |-- Lab completion time for above PDF is 18 minutes (2 times reading time).
- |-- Video 11.5.3.mp4 is 8 minutes 9 seconds long
  |-- Calculated completion time for 11.5-subnet-an-ipv4-network is 59 minutes
  |-- Metadata has been updated
 Folder is 11.6-subnet-a-16-and-8-prefix
  |-- Metadata duration is 25 minutes
- |-- lecture.md has 1009 words. Reading time is 8 minutes
- |-- Video 11.6.4.mp4 is 5 minutes 20 seconds long
+ |-- lecture.md has 954 words. Reading time is 8 minutes
+ |-- Video https://www.youtube.com/watch?v=TJSWlSplC1Q is 5 minutes 21 seconds long
  |-- PDF 11.6.6-lab---calculate-ipv4-subnets.pdf has 522 words. Reading time is 4 minutes
  |-- Lab completion time for above PDF is 8 minutes (2 times reading time).
  |-- Calculated completion time for 11.6-subnet-a-16-and-8-prefix is 25 minutes
  |-- Metadata has been updated
 Folder is 11.7-subnet-to-meet-requirements
  |-- Metadata duration is 29 minutes
- |-- lecture.md has 1310 words. Reading time is 11 minutes
+ |-- lecture.md has 1279 words. Reading time is 11 minutes
  |-- PDF 11.7.5-packet-tracer---subnetting-scenario.pdf has 766 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
  |-- Calculated completion time for 11.7-subnet-to-meet-requirements is 29 minutes
  |-- Metadata has been updated
 Folder is 11.8-variable-length-subnet-masking
  |-- Metadata duration is 23 minutes
- |-- lecture.md has 1191 words. Reading time is 10 minutes
- |-- Video 11.8.1.mp4 is 2 minutes 31 seconds long
- |-- Video 11.8.2.mp4 is 10 minutes 23 seconds long
+ |-- lecture.md has 1155 words. Reading time is 10 minutes
+ |-- Video https://www.youtube.com/watch?v=R_Ti9y2AShc is 2 minutes 32 seconds long
+ |-- Video https://www.youtube.com/watch?v=_V-YboU4Rq4 is 10 minutes 24 seconds long
  |-- Calculated completion time for 11.8-variable-length-subnet-masking is 23 minutes
  |-- Metadata has been updated
 Folder is 11.9-structured-design
  |-- Metadata duration is 21 minutes
- |-- lecture.md has 704 words. Reading time is 6 minutes
+ |-- lecture.md has 705 words. Reading time is 6 minutes
  |-- PDF 11.9.3-packet-tracer---vlsm-design-and-implementation-practice.pdf has 627 words. Reading time is 5 minutes
  |-- Lab completion time for above PDF is 10 minutes (2 times reading time).
  |-- Calculated completion time for 11.9-structured-design is 21 minutes
@@ -199,62 +195,60 @@ Folder is 12.0-introduction
  |-- Metadata has been updated
 Folder is 12.1-ipv4-issues
  |-- Metadata duration is 5 minutes
- |-- lecture.md has 596 words. Reading time is 5 minutes
+ |-- lecture.md has 595 words. Reading time is 5 minutes
  |-- Calculated completion time for 12.1-ipv4-issues is 5 minutes
  |-- Metadata has been updated
 Folder is 12.2-ipv6-addressing
  |-- Metadata duration is 10 minutes
- |-- lecture.md has 1228 words. Reading time is 10 minutes
+ |-- lecture.md has 1217 words. Reading time is 10 minutes
  |-- Calculated completion time for 12.2-ipv6-addressing is 10 minutes
  |-- Metadata has been updated
 Folder is 12.3-ipv6-address-types
  |-- Metadata duration is 13 minutes
- |-- lecture.md has 1574 words. Reading time is 13 minutes
+ |-- lecture.md has 1542 words. Reading time is 13 minutes
  |-- Calculated completion time for 12.3-ipv6-address-types is 13 minutes
  |-- Metadata has been updated
 Folder is 12.4-gua-and-lla-static-configuration
- |-- Metadata duration is 6 minutes
- |-- lecture.md has 666 words. Reading time is 6 minutes
- |-- Calculated completion time for 12.4-gua-and-lla-static-configuration is 6 minutes
+ |-- Metadata duration is 5 minutes
+ |-- lecture.md has 651 words. Reading time is 5 minutes
+ |-- Calculated completion time for 12.4-gua-and-lla-static-configuration is 5 minutes
  |-- Metadata has been updated
 Folder is 12.5-dynamic-addresing-for-ipv6-guas
- |-- Metadata duration is 14 minutes
- |-- lecture.md has 1657 words. Reading time is 14 minutes
- |-- Calculated completion time for 12.5-dynamic-addresing-for-ipv6-guas is 14 minutes
+ |-- Metadata duration is 13 minutes
+ |-- lecture.md has 1618 words. Reading time is 13 minutes
+ |-- Calculated completion time for 12.5-dynamic-addresing-for-ipv6-guas is 13 minutes
  |-- Metadata has been updated
 Folder is 12.6-dynamic-addresing-for-ipv6-llas
- |-- Metadata duration is 27 minutes
- |-- lecture.md has 1021 words. Reading time is 9 minutes
+ |-- Metadata duration is 26 minutes
+ |-- lecture.md has 1017 words. Reading time is 8 minutes
  |-- PDF 12.6.6-packet-tracer---configure-ipv6-addressing.pdf has 774 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
- |-- Calculated completion time for 12.6-dynamic-addresing-for-ipv6-llas is 27 minutes
+ |-- Calculated completion time for 12.6-dynamic-addresing-for-ipv6-llas is 26 minutes
  |-- Metadata has been updated
 Folder is 12.7-ipv6-multicast-addresses
  |-- Metadata duration is 22 minutes
- |-- lecture.md has 429 words. Reading time is 4 minutes
+ |-- lecture.md has 422 words. Reading time is 4 minutes
  |-- PDF 12.7.4-lab---identify-ipv6-addresses.pdf has 774 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
  |-- Calculated completion time for 12.7-ipv6-multicast-addresses is 22 minutes
  |-- Metadata has been updated
 Folder is 12.8-subnet-an-ipv6-network
  |-- Metadata duration is 4 minutes
- |-- lecture.md has 504 words. Reading time is 4 minutes
+ |-- lecture.md has 491 words. Reading time is 4 minutes
  |-- Calculated completion time for 12.8-subnet-an-ipv6-network is 4 minutes
  |-- Metadata has been updated
 Folder is 12.9-module-practice
- |-- Metadata duration is 61 minutes
- |-- lecture.md has 155 words. Reading time is 1 minutes
+ |-- Metadata duration is 31 minutes
+ |-- lecture.md has 152 words. Reading time is 1 minutes
  |-- PDF 12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pdf has 782 words. Reading time is 7 minutes
  |-- Lab completion time for above PDF is 14 minutes (2 times reading time).
- |-- PDF 12.9.2-lab---configure-ipv6-addresses-on-network-devices.pdf has 1185 words. Reading time is 10 minutes
- |-- Lab completion time for above PDF is 20 minutes (2 times reading time).
  |-- PDF 12.9.1-packet-tracer---implement-a-subnetted-ipv6-addressing-scheme.pdf has 349 words. Reading time is 3 minutes
  |-- Lab completion time for above PDF is 6 minutes (2 times reading time).
- |-- Calculated completion time for 12.9-module-practice is 61 minutes
+ |-- Calculated completion time for 12.9-module-practice is 31 minutes
  |-- Metadata has been updated
 Folder is 12.9.3-summary
  |-- Metadata duration is 9 minutes
- |-- lecture.md has 1083 words. Reading time is 9 minutes
+ |-- lecture.md has 1076 words. Reading time is 9 minutes
  |-- Calculated completion time for 12.9.3-summary is 9 minutes
  |-- Metadata has been updated
 Folder is 13.0-introduction
@@ -269,7 +263,7 @@ Folder is 13.1-icmp-messages
  |-- Metadata has been updated
 Folder is 13.2-ping-and-traceroute-testing
  |-- Metadata duration is 43 minutes
- |-- lecture.md has 1166 words. Reading time is 10 minutes
+ |-- lecture.md has 1168 words. Reading time is 10 minutes
  |-- PDF 13.2.7-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity.pdf has 863 words. Reading time is 7 minutes
  |-- Lab completion time for above PDF is 14 minutes (2 times reading time).
  |-- PDF 13.2.6-packet-tracer---verify-ipv4-and-ipv6-addressing.pdf has 515 words. Reading time is 4 minutes
@@ -277,19 +271,17 @@ Folder is 13.2-ping-and-traceroute-testing
  |-- Calculated completion time for 13.2-ping-and-traceroute-testing is 43 minutes
  |-- Metadata has been updated
 Folder is 13.3-module-practice
- |-- Metadata duration is 161 minutes
- |-- lecture.md has 188 words. Reading time is 2 minutes
+ |-- Metadata duration is 71 minutes
+ |-- lecture.md has 185 words. Reading time is 2 minutes
  |-- PDF 13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity.pdf has 350 words. Reading time is 3 minutes
  |-- Lab completion time for above PDF is 6 minutes (2 times reading time).
  |-- PDF 13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pdf has 2458 words. Reading time is 20 minutes
  |-- Lab completion time for above PDF is 40 minutes (2 times reading time).
- |-- PDF 13.3.2-lab---use-ping-and-traceroute-to-test-network-connectivity.pdf has 3552 words. Reading time is 30 minutes
- |-- Lab completion time for above PDF is 60 minutes (2 times reading time).
- |-- Calculated completion time for 13.3-module-practice is 161 minutes
+ |-- Calculated completion time for 13.3-module-practice is 71 minutes
  |-- Metadata has been updated
 Folder is 13.3.3-summary
  |-- Metadata duration is 5 minutes
- |-- lecture.md has 580 words. Reading time is 5 minutes
+ |-- lecture.md has 573 words. Reading time is 5 minutes
  |-- Calculated completion time for 13.3.3-summary is 5 minutes
  |-- Metadata has been updated
 Folder is 14.0-introduction
@@ -314,37 +306,37 @@ Folder is 14.3-udp-overview
  |-- Metadata has been updated
 Folder is 14.4-port-numbers
  |-- Metadata duration is 8 minutes
- |-- lecture.md has 1005 words. Reading time is 8 minutes
+ |-- lecture.md has 1002 words. Reading time is 8 minutes
  |-- Calculated completion time for 14.4-port-numbers is 8 minutes
  |-- Metadata has been updated
 Folder is 14.5-tcp-communication-process
  |-- Metadata duration is 15 minutes
- |-- lecture.md has 949 words. Reading time is 8 minutes
- |-- Video 14.5.5.mp4 is 6 minutes 54 seconds long
+ |-- lecture.md has 929 words. Reading time is 8 minutes
+ |-- Video https://www.youtube.com/watch?v=UbqcbYsPoss is 6 minutes 55 seconds long
  |-- Calculated completion time for 14.5-tcp-communication-process is 15 minutes
  |-- Metadata has been updated
 Folder is 14.6-reliability-and-flow-control
  |-- Metadata duration is 20 minutes
- |-- lecture.md has 1586 words. Reading time is 13 minutes
- |-- Video 14.6.4.mp4 is 3 minutes 23 seconds long
- |-- Video 14.6.2.mp4 is 4 minutes 6 seconds long
+ |-- lecture.md has 1539 words. Reading time is 13 minutes
+ |-- Video https://www.youtube.com/watch?v=tz7eawYRHf0 is 4 minutes 6 seconds long
+ |-- Video https://www.youtube.com/watch?v=3AzR-82OI7Q is 3 minutes 24 seconds long
  |-- Calculated completion time for 14.6-reliability-and-flow-control is 20 minutes
  |-- Metadata has been updated
 Folder is 14.7-udp-communication
- |-- Metadata duration is 5 minutes
- |-- lecture.md has 544 words. Reading time is 5 minutes
- |-- Calculated completion time for 14.7-udp-communication is 5 minutes
+ |-- Metadata duration is 4 minutes
+ |-- lecture.md has 534 words. Reading time is 4 minutes
+ |-- Calculated completion time for 14.7-udp-communication is 4 minutes
  |-- Metadata has been updated
 Folder is 14.8-module-practice
  |-- Metadata duration is 43 minutes
- |-- lecture.md has 63 words. Reading time is 1 minutes
+ |-- lecture.md has 64 words. Reading time is 1 minutes
  |-- PDF 14.8.1-packet-tracer---tcp-and-udp-communications.pdf has 1640 words. Reading time is 14 minutes
  |-- Lab completion time for above PDF is 28 minutes (2 times reading time).
  |-- Calculated completion time for 14.8-module-practice is 43 minutes
  |-- Metadata has been updated
 Folder is 14.8.2-summary
  |-- Metadata duration is 8 minutes
- |-- lecture.md has 969 words. Reading time is 8 minutes
+ |-- lecture.md has 964 words. Reading time is 8 minutes
  |-- Calculated completion time for 14.8.2-summary is 8 minutes
  |-- Metadata has been updated
 Folder is 15.0-introduction
@@ -364,24 +356,24 @@ Folder is 15.2-peer-to-peer
  |-- Metadata has been updated
 Folder is 15.3-web-and-email-protocols
  |-- Metadata duration is 8 minutes
- |-- lecture.md has 923 words. Reading time is 8 minutes
+ |-- lecture.md has 912 words. Reading time is 8 minutes
  |-- Calculated completion time for 15.3-web-and-email-protocols is 8 minutes
  |-- Metadata has been updated
 Folder is 15.4-ip-addressing-services
  |-- Metadata duration is 36 minutes
- |-- lecture.md has 1441 words. Reading time is 12 minutes
+ |-- lecture.md has 1434 words. Reading time is 12 minutes
  |-- PDF 15.4.8-lab---observe-dns-resolution.pdf has 972 words. Reading time is 8 minutes
  |-- Lab completion time for above PDF is 16 minutes (2 times reading time).
  |-- Calculated completion time for 15.4-ip-addressing-services is 36 minutes
  |-- Metadata has been updated
 Folder is 15.5-file-sharing-services
  |-- Metadata duration is 4 minutes
- |-- lecture.md has 482 words. Reading time is 4 minutes
+ |-- lecture.md has 484 words. Reading time is 4 minutes
  |-- Calculated completion time for 15.5-file-sharing-services is 4 minutes
  |-- Metadata has been updated
 Folder is 15.6-summary
  |-- Metadata duration is 7 minutes
- |-- lecture.md has 892 words. Reading time is 7 minutes
+ |-- lecture.md has 885 words. Reading time is 7 minutes
  |-- Calculated completion time for 15.6-summary is 7 minutes
  |-- Metadata has been updated
 Folder is 16.0-introduction
@@ -391,42 +383,38 @@ Folder is 16.0-introduction
  |-- Metadata has been updated
 Folder is 16.1-security-threats-and-vulnerabilities
  |-- Metadata duration is 8 minutes
- |-- lecture.md has 1018 words. Reading time is 8 minutes
+ |-- lecture.md has 1017 words. Reading time is 8 minutes
  |-- Calculated completion time for 16.1-security-threats-and-vulnerabilities is 8 minutes
  |-- Metadata has been updated
 Folder is 16.2-network-attacks
  |-- Metadata duration is 28 minutes
- |-- lecture.md has 1203 words. Reading time is 10 minutes
+ |-- lecture.md has 1177 words. Reading time is 10 minutes
  |-- PDF 16.2.6-lab---research-network-security-threats.pdf has 698 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
  |-- Calculated completion time for 16.2-network-attacks is 28 minutes
  |-- Metadata has been updated
 Folder is 16.3-network-attack-mitigation
  |-- Metadata duration is 10 minutes
- |-- lecture.md has 1227 words. Reading time is 10 minutes
+ |-- lecture.md has 1229 words. Reading time is 10 minutes
  |-- Calculated completion time for 16.3-network-attack-mitigation is 10 minutes
  |-- Metadata has been updated
 Folder is 16.4-device-security
- |-- Metadata duration is 73 minutes
- |-- lecture.md has 1611 words. Reading time is 13 minutes
- |-- PDF 16.4.7-lab---configure-network-devices-with-ssh.pdf has 1735 words. Reading time is 14 minutes
- |-- Lab completion time for above PDF is 28 minutes (2 times reading time).
+ |-- Metadata duration is 31 minutes
+ |-- lecture.md has 1614 words. Reading time is 13 minutes
  |-- PDF 16.4.6-packet-tracer---configure-secure-passwords-and-ssh.pdf has 711 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
- |-- Calculated completion time for 16.4-device-security is 73 minutes
+ |-- Calculated completion time for 16.4-device-security is 31 minutes
  |-- Metadata has been updated
 Folder is 16.5-module-practice
- |-- Metadata duration is 52 minutes
- |-- lecture.md has 87 words. Reading time is 1 minutes
- |-- PDF 16.5.2-lab---secure-network-devices.pdf has 1635 words. Reading time is 14 minutes
- |-- Lab completion time for above PDF is 28 minutes (2 times reading time).
+ |-- Metadata duration is 10 minutes
+ |-- lecture.md has 90 words. Reading time is 1 minutes
  |-- PDF 16.5.1-packet-tracer---secure-network-devices.pdf has 404 words. Reading time is 3 minutes
  |-- Lab completion time for above PDF is 6 minutes (2 times reading time).
- |-- Calculated completion time for 16.5-module-practice is 52 minutes
+ |-- Calculated completion time for 16.5-module-practice is 10 minutes
  |-- Metadata has been updated
 Folder is 16.5.3-summary
  |-- Metadata duration is 5 minutes
- |-- lecture.md has 632 words. Reading time is 5 minutes
+ |-- lecture.md has 625 words. Reading time is 5 minutes
  |-- Calculated completion time for 16.5.3-summary is 5 minutes
  |-- Metadata has been updated
 Folder is 17.0-introduction
@@ -436,13 +424,13 @@ Folder is 17.0-introduction
  |-- Metadata has been updated
 Folder is 17.1-devices-in-a-small-network
  |-- Metadata duration is 8 minutes
- |-- lecture.md has 982 words. Reading time is 8 minutes
+ |-- lecture.md has 978 words. Reading time is 8 minutes
  |-- Calculated completion time for 17.1-devices-in-a-small-network is 8 minutes
  |-- Metadata has been updated
 Folder is 17.2-small-network-applications-and-protocols
- |-- Metadata duration is 8 minutes
- |-- lecture.md has 904 words. Reading time is 8 minutes
- |-- Calculated completion time for 17.2-small-network-applications-and-protocols is 8 minutes
+ |-- Metadata duration is 7 minutes
+ |-- lecture.md has 879 words. Reading time is 7 minutes
+ |-- Calculated completion time for 17.2-small-network-applications-and-protocols is 7 minutes
  |-- Metadata has been updated
 Folder is 17.3-scale-to-larger-networks
  |-- Metadata duration is 5 minutes
@@ -451,17 +439,17 @@ Folder is 17.3-scale-to-larger-networks
  |-- Metadata has been updated
 Folder is 17.4-verify-connectivity
  |-- Metadata duration is 44 minutes
- |-- lecture.md has 2031 words. Reading time is 17 minutes
+ |-- lecture.md has 2025 words. Reading time is 17 minutes
  |-- PDF 17.4.6-lab---test-network-latency-with-ping-and-traceroute.pdf has 1138 words. Reading time is 9 minutes
  |-- Lab completion time for above PDF is 18 minutes (2 times reading time).
  |-- Calculated completion time for 17.4-verify-connectivity is 44 minutes
  |-- Metadata has been updated
 Folder is 17.5-host-and-ios-commands
  |-- Metadata duration is 43 minutes
- |-- lecture.md has 3413 words. Reading time is 28 minutes
+ |-- lecture.md has 3397 words. Reading time is 28 minutes
+ |-- Video https://www.youtube.com/watch?v=dFKfyJkuSqQ is 5 minutes 37 seconds long
  |-- PDF 17.5.9-packet-tracer---interpret-show-command-output.pdf has 379 words. Reading time is 3 minutes
  |-- Lab completion time for above PDF is 6 minutes (2 times reading time).
- |-- Video 17.5.8.mp4 is 5 minutes 36 seconds long
  |-- Calculated completion time for 17.5-host-and-ios-commands is 43 minutes
  |-- Metadata has been updated
 Folder is 17.6-troubleshooting-methodologies
@@ -470,19 +458,17 @@ Folder is 17.6-troubleshooting-methodologies
  |-- Calculated completion time for 17.6-troubleshooting-methodologies is 11 minutes
  |-- Metadata has been updated
 Folder is 17.7-troubleshooting-scenarios
- |-- Metadata duration is 78 minutes
- |-- lecture.md has 1824 words. Reading time is 15 minutes
+ |-- Metadata duration is 48 minutes
+ |-- lecture.md has 1821 words. Reading time is 15 minutes
  |-- PDF 17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pdf has 487 words. Reading time is 4 minutes
  |-- Lab completion time for above PDF is 8 minutes (2 times reading time).
  |-- PDF 17.7.7-packet-tracer---troubleshoot-connectivity-issues.pdf has 844 words. Reading time is 7 minutes
  |-- Lab completion time for above PDF is 14 minutes (2 times reading time).
- |-- PDF 17.7.6-lab---troubleshoot-connectivity-issues.pdf has 1170 words. Reading time is 10 minutes
- |-- Lab completion time for above PDF is 20 minutes (2 times reading time).
- |-- Calculated completion time for 17.7-troubleshooting-scenarios is 78 minutes
+ |-- Calculated completion time for 17.7-troubleshooting-scenarios is 48 minutes
  |-- Metadata has been updated
 Folder is 17.8-module-practice
  |-- Metadata duration is 31 minutes
- |-- lecture.md has 128 words. Reading time is 1 minutes
+ |-- lecture.md has 130 words. Reading time is 1 minutes
  |-- PDF 17.8.2-packet-tracer---skills-integration-challenge.pdf has 641 words. Reading time is 5 minutes
  |-- Lab completion time for above PDF is 10 minutes (2 times reading time).
  |-- PDF 17.8.1-packet-tracer---design-and-build-a-small-network---physical-mode.pdf has 153 words. Reading time is 1 minutes
@@ -495,7 +481,7 @@ Folder is 17.8-module-practice
  |-- Metadata has been updated
 Folder is 17.8.4-summary
  |-- Metadata duration is 10 minutes
- |-- lecture.md has 1174 words. Reading time is 10 minutes
+ |-- lecture.md has 1170 words. Reading time is 10 minutes
  |-- Calculated completion time for 17.8.4-summary is 10 minutes
  |-- Metadata has been updated
 Folder is 2.0-introduction
@@ -510,34 +496,32 @@ Folder is 2.1-access-to-cisco-ios
  |-- Metadata has been updated
 Folder is 2.2-ios-navigation
  |-- Metadata duration is 14 minutes
- |-- lecture.md has 834 words. Reading time is 7 minutes
- |-- Video 2.2.5.mp4 is 3 minutes 52 seconds long
- |-- Video 2.2.3.mp4 is 2 minutes 33 seconds long
+ |-- lecture.md has 806 words. Reading time is 7 minutes
+ |-- Video https://www.youtube.com/watch?v=B269UlVAN40 is 2 minutes 33 seconds long
+ |-- Video https://www.youtube.com/watch?v=Z-n1tO4Xg6w is 3 minutes 52 seconds long
  |-- Calculated completion time for 2.2-ios-navigation is 14 minutes
  |-- Metadata has been updated
 Folder is 2.3-the-command-structure
- |-- Metadata duration is 135 minutes
- |-- lecture.md has 1299 words. Reading time is 11 minutes
+ |-- Metadata duration is 84 minutes
+ |-- lecture.md has 1282 words. Reading time is 11 minutes
+ |-- Video https://www.youtube.com/watch?v=K_VEPe8aRUE is 4 minutes 2 seconds long
+ |-- Video https://www.youtube.com/watch?v=YDXgJUjGjcw is 6 minutes 2 seconds long
  |-- PDF 2.3.7-packet-tracer---navigate-the-ios_ru-RU.pdf has 1038 words. Reading time is 9 minutes
  |-- Lab completion time for above PDF is 18 minutes (2 times reading time).
- |-- Video 2.3.4.mp4 is 4 minutes 1 seconds long
- |-- PDF 2.3.8-lab---navigate-the-ios-by-using-tera-term-for-console-connectivity_ru-RU.pdf has 1998 words. Reading time is 17 minutes
- |-- Lab completion time for above PDF is 34 minutes (2 times reading time).
- |-- Video 2.3.6.mp4 is 6 minutes 1 seconds long
  |-- PDF 2.3.8-packet-tracer---navigate-the-ios-using-a-terminal-client-for-console-connectivity---physical-mode_ru-RU.pdf has 1384 words. Reading time is 12 minutes
  |-- Lab completion time for above PDF is 24 minutes (2 times reading time).
- |-- Calculated completion time for 2.3-the-command-structure is 135 minutes
+ |-- Calculated completion time for 2.3-the-command-structure is 84 minutes
  |-- Metadata has been updated
 Folder is 2.4-basic-device-configuration
  |-- Metadata duration is 17 minutes
- |-- lecture.md has 1184 words. Reading time is 10 minutes
- |-- Video 2.4.6.mp4 is 6 minutes 56 seconds long
+ |-- lecture.md has 1170 words. Reading time is 10 minutes
+ |-- Video https://www.youtube.com/watch?v=Ae9qSUlJ3a4 is 6 minutes 57 seconds long
  |-- Calculated completion time for 2.4-basic-device-configuration is 17 minutes
  |-- Metadata has been updated
 Folder is 2.5-save-configurations
  |-- Metadata duration is 43 minutes
- |-- lecture.md has 713 words. Reading time is 6 minutes
- |-- Video 2.5.3.mp4 is 7 minutes 8 seconds long
+ |-- lecture.md has 700 words. Reading time is 6 minutes
+ |-- Video https://www.youtube.com/watch?v=lQQ28pdSqfg is 7 minutes 9 seconds long
  |-- PDF 2.5.5-packet-tracer---configure-initial-switch-settings.pdf has 1241 words. Reading time is 10 minutes
  |-- Lab completion time for above PDF is 20 minutes (2 times reading time).
  |-- Calculated completion time for 2.5-save-configurations is 43 minutes
@@ -549,32 +533,30 @@ Folder is 2.6-ports-and-addresses
  |-- Metadata has been updated
 Folder is 2.7-configure-ip-addressing
  |-- Metadata duration is 22 minutes
- |-- lecture.md has 521 words. Reading time is 4 minutes
+ |-- lecture.md has 522 words. Reading time is 4 minutes
  |-- PDF 2.7.6-packet-tracer---implement-basic-connectivity.pdf has 745 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
  |-- Calculated completion time for 2.7-configure-ip-addressing is 22 minutes
  |-- Metadata has been updated
 Folder is 2.8-verify-connectivity
  |-- Metadata duration is 10 minutes
- |-- lecture.md has 245 words. Reading time is 2 minutes
- |-- Video 2.8.2.mp4 is 2 minutes 40 seconds long
- |-- Video 2.8.1.mp4 is 4 minutes 36 seconds long
+ |-- lecture.md has 217 words. Reading time is 2 minutes
+ |-- Video https://www.youtube.com/watch?v=CkvRVRcOkls is 4 minutes 36 seconds long
+ |-- Video https://www.youtube.com/watch?v=gex3BaiuQiw is 2 minutes 40 seconds long
  |-- Calculated completion time for 2.8-verify-connectivity is 10 minutes
  |-- Metadata has been updated
 Folder is 2.9-module-practice
- |-- Metadata duration is 43 minutes
- |-- lecture.md has 165 words. Reading time is 1 minutes
- |-- PDF 2.9.2-lab---basic-switch-and-end-device-configuration.pdf has 564 words. Reading time is 5 minutes
- |-- Lab completion time for above PDF is 10 minutes (2 times reading time).
+ |-- Metadata duration is 28 minutes
+ |-- lecture.md has 162 words. Reading time is 1 minutes
  |-- PDF 2.9.1-packet-tracer---basic-switch-and-end-device-configuration.pdf has 310 words. Reading time is 3 minutes
  |-- Lab completion time for above PDF is 6 minutes (2 times reading time).
  |-- PDF 2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode.pdf has 704 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
- |-- Calculated completion time for 2.9-module-practice is 43 minutes
+ |-- Calculated completion time for 2.9-module-practice is 28 minutes
  |-- Metadata has been updated
 Folder is 2.9.3-summary
  |-- Metadata duration is 4 minutes
- |-- lecture.md has 508 words. Reading time is 4 minutes
+ |-- lecture.md has 501 words. Reading time is 4 minutes
  |-- Calculated completion time for 2.9.3-summary is 4 minutes
  |-- Metadata has been updated
 Folder is 3.0-introduction
@@ -585,10 +567,10 @@ Folder is 3.0-introduction
  |-- Calculated completion time for 3.0-introduction is 9 minutes
  |-- Metadata has been updated
 Folder is 3.1-the-rules
- |-- Metadata duration is 18 minutes
- |-- lecture.md has 1392 words. Reading time is 12 minutes
- |-- Video 3.1.1.mp4 is 3 minutes 44 seconds long
- |-- Calculated completion time for 3.1-the-rules is 16 minutes
+ |-- Metadata duration is 15 minutes
+ |-- lecture.md has 1359 words. Reading time is 11 minutes
+ |-- Video https://www.youtube.com/watch?v=yWjd-4WN4hE is 3 minutes 44 seconds long
+ |-- Calculated completion time for 3.1-the-rules is 15 minutes
  |-- Metadata has been updated
 Folder is 3.2-protocols
  |-- Metadata duration is 7 minutes
@@ -597,7 +579,7 @@ Folder is 3.2-protocols
  |-- Metadata has been updated
 Folder is 3.3-protocol-suites
  |-- Metadata duration is 13 minutes
- |-- lecture.md has 1559 words. Reading time is 13 minutes
+ |-- lecture.md has 1558 words. Reading time is 13 minutes
  |-- Calculated completion time for 3.3-protocol-suites is 13 minutes
  |-- Metadata has been updated
 Folder is 3.4-standards-organizations
@@ -609,7 +591,7 @@ Folder is 3.4-standards-organizations
  |-- Metadata has been updated
 Folder is 3.5-reference-models
  |-- Metadata duration is 51 minutes
- |-- lecture.md has 1048 words. Reading time is 9 minutes
+ |-- lecture.md has 1049 words. Reading time is 9 minutes
  |-- PDF 3.5.5-packet-tracer---investigate-the-tcp-ip-and-osi-models-in-action.pdf has 1623 words. Reading time is 14 minutes
  |-- Lab completion time for above PDF is 28 minutes (2 times reading time).
  |-- Calculated completion time for 3.5-reference-models is 51 minutes
@@ -621,7 +603,7 @@ Folder is 3.6-data-encapsulation
  |-- Metadata has been updated
 Folder is 3.7-data-access
  |-- Metadata duration is 77 minutes
- |-- lecture.md has 1706 words. Reading time is 14 minutes
+ |-- lecture.md has 1681 words. Reading time is 14 minutes
  |-- PDF 3.7.9-lab---install-wireshark.pdf has 625 words. Reading time is 5 minutes
  |-- Lab completion time for above PDF is 10 minutes (2 times reading time).
  |-- PDF 3.7.10-lab---use-wireshark-to-view-network-traffic.pdf has 1933 words. Reading time is 16 minutes
@@ -630,7 +612,7 @@ Folder is 3.7-data-access
  |-- Metadata has been updated
 Folder is 3.8-summary
  |-- Metadata duration is 7 minutes
- |-- lecture.md has 837 words. Reading time is 7 minutes
+ |-- lecture.md has 830 words. Reading time is 7 minutes
  |-- Calculated completion time for 3.8-summary is 7 minutes
  |-- Metadata has been updated
 Folder is 4.0-introduction
@@ -665,7 +647,7 @@ Folder is 4.5-fiber-optic-cabling
  |-- Metadata has been updated
 Folder is 4.6-wireless-media
  |-- Metadata duration is 61 minutes
- |-- lecture.md has 849 words. Reading time is 7 minutes
+ |-- lecture.md has 839 words. Reading time is 7 minutes
  |-- PDF 4.6.6-lab---view-wired-and-wireless-nic-information.pdf has 1217 words. Reading time is 10 minutes
  |-- Lab completion time for above PDF is 20 minutes (2 times reading time).
  |-- PDF 4.6.5-packet-tracer---connect-a-wired-and-wireless-lan.pdf has 933 words. Reading time is 8 minutes
@@ -673,17 +655,17 @@ Folder is 4.6-wireless-media
  |-- Calculated completion time for 4.6-wireless-media is 61 minutes
  |-- Metadata has been updated
 Folder is 4.7-module-practice
- |-- Metadata duration is 174 minutes
- |-- lecture.md has 1030 words. Reading time is 9 minutes
+ |-- Metadata duration is 167 minutes
+ |-- lecture.md has 242 words. Reading time is 2 minutes
  |-- PDF 4.7.1-packet-tracer---physical-layer-exploration---physical-mode.pdf has 5232 words. Reading time is 44 minutes
  |-- Lab completion time for above PDF is 88 minutes (2 times reading time).
  |-- PDF 4.7.1-packet-tracer---connect-the-physical-layer.pdf has 1263 words. Reading time is 11 minutes
  |-- Lab completion time for above PDF is 22 minutes (2 times reading time).
- |-- Calculated completion time for 4.7-module-practice is 174 minutes
+ |-- Calculated completion time for 4.7-module-practice is 167 minutes
  |-- Metadata has been updated
 Folder is 4.7.3-summary
  |-- Metadata duration is 7 minutes
- |-- lecture.md has 801 words. Reading time is 7 minutes
+ |-- lecture.md has 794 words. Reading time is 7 minutes
  |-- Calculated completion time for 4.7.3-summary is 7 minutes
  |-- Metadata has been updated
 Folder is 5.0-introduction
@@ -693,19 +675,19 @@ Folder is 5.0-introduction
  |-- Metadata has been updated
 Folder is 5.1-binary-number-system
  |-- Metadata duration is 29 minutes
- |-- lecture.md has 2530 words. Reading time is 21 minutes
- |-- Video 5.1.2.mp4 is 8 minutes 21 seconds long
+ |-- lecture.md has 2477 words. Reading time is 21 minutes
+ |-- Video https://www.youtube.com/watch?v=lxeBvUOA9oE is 8 minutes 22 seconds long
  |-- Calculated completion time for 5.1-binary-number-system is 29 minutes
  |-- Metadata has been updated
 Folder is 5.2-hexadecimal-number-system
  |-- Metadata duration is 11 minutes
- |-- lecture.md has 486 words. Reading time is 4 minutes
- |-- Video 5.2.2.mp4 is 6 minutes 35 seconds long
+ |-- lecture.md has 472 words. Reading time is 4 minutes
+ |-- Video https://www.youtube.com/watch?v=50O7DGHEz6A is 6 minutes 35 seconds long
  |-- Calculated completion time for 5.2-hexadecimal-number-system is 11 minutes
  |-- Metadata has been updated
 Folder is 5.3-summary
  |-- Metadata duration is 2 minutes
- |-- lecture.md has 197 words. Reading time is 2 minutes
+ |-- lecture.md has 190 words. Reading time is 2 minutes
  |-- Calculated completion time for 5.3-summary is 2 minutes
  |-- Metadata has been updated
 Folder is 6.0-introduction
@@ -715,22 +697,22 @@ Folder is 6.0-introduction
  |-- Metadata has been updated
 Folder is 6.1-purpose-of-the-data-link-layer
  |-- Metadata duration is 7 minutes
- |-- lecture.md has 898 words. Reading time is 7 minutes
+ |-- lecture.md has 895 words. Reading time is 7 minutes
  |-- Calculated completion time for 6.1-purpose-of-the-data-link-layer is 7 minutes
  |-- Metadata has been updated
 Folder is 6.2-topologies
  |-- Metadata duration is 15 minutes
- |-- lecture.md has 1757 words. Reading time is 15 minutes
+ |-- lecture.md has 1759 words. Reading time is 15 minutes
  |-- Calculated completion time for 6.2-topologies is 15 minutes
  |-- Metadata has been updated
 Folder is 6.3-data-link-frame
  |-- Metadata duration is 11 minutes
- |-- lecture.md has 1361 words. Reading time is 11 minutes
+ |-- lecture.md has 1363 words. Reading time is 11 minutes
  |-- Calculated completion time for 6.3-data-link-frame is 11 minutes
  |-- Metadata has been updated
 Folder is 6.4-summary
  |-- Metadata duration is 6 minutes
- |-- lecture.md has 672 words. Reading time is 6 minutes
+ |-- lecture.md has 665 words. Reading time is 6 minutes
  |-- Calculated completion time for 6.4-summary is 6 minutes
  |-- Metadata has been updated
 Folder is 7.0-introduction
@@ -740,26 +722,22 @@ Folder is 7.0-introduction
  |-- Metadata has been updated
 Folder is 7.1-ethernet-frame
  |-- Metadata duration is 57 minutes
- |-- lecture.md has 1042 words. Reading time is 9 minutes
+ |-- lecture.md has 1033 words. Reading time is 9 minutes
  |-- PDF 7.1.6-lab---use-wireshark-to-examine-ethernet-frames.pdf has 1874 words. Reading time is 16 minutes
  |-- Lab completion time for above PDF is 32 minutes (2 times reading time).
  |-- Calculated completion time for 7.1-ethernet-frame is 57 minutes
  |-- Metadata has been updated
 Folder is 7.2-ethernet-mac-address
- |-- Metadata duration is 48 minutes
- |-- lecture.md has 1414 words. Reading time is 12 minutes
- |-- PDF 7.2.7-lab---view-network-device-mac-addresses.pdf has 1498 words. Reading time is 12 minutes
- |-- Lab completion time for above PDF is 24 minutes (2 times reading time).
- |-- Calculated completion time for 7.2-ethernet-mac-address is 48 minutes
+ |-- Metadata duration is 12 minutes
+ |-- lecture.md has 1416 words. Reading time is 12 minutes
+ |-- Calculated completion time for 7.2-ethernet-mac-address is 12 minutes
  |-- Metadata has been updated
 Folder is 7.3-the-mac-address-table
- |-- Metadata duration is 41 minutes
- |-- lecture.md has 1012 words. Reading time is 8 minutes
- |-- Video 7.3.4.mp4 is 3 minutes 5 seconds long
- |-- Video 7.3.5.mp4 is 2 minutes 57 seconds long
- |-- PDF 7.3.7-lab---view-the-switch-mac-address-table.pdf has 1052 words. Reading time is 9 minutes
- |-- Lab completion time for above PDF is 18 minutes (2 times reading time).
- |-- Calculated completion time for 7.3-the-mac-address-table is 41 minutes
+ |-- Metadata duration is 14 minutes
+ |-- lecture.md has 986 words. Reading time is 8 minutes
+ |-- Video https://www.youtube.com/watch?v=fi7Ss-_9LvY is 3 minutes 5 seconds long
+ |-- Video https://www.youtube.com/watch?v=RXLercop7eU is 2 minutes 58 seconds long
+ |-- Calculated completion time for 7.3-the-mac-address-table is 14 minutes
  |-- Metadata has been updated
 Folder is 7.4-switch-speeds-and-forwarding-methods
  |-- Metadata duration is 11 minutes
@@ -768,7 +746,7 @@ Folder is 7.4-switch-speeds-and-forwarding-methods
  |-- Metadata has been updated
 Folder is 7.5-summary
  |-- Metadata duration is 4 minutes
- |-- lecture.md has 429 words. Reading time is 4 minutes
+ |-- lecture.md has 422 words. Reading time is 4 minutes
  |-- Calculated completion time for 7.5-summary is 4 minutes
  |-- Metadata has been updated
 Folder is 8.0-introduction
@@ -778,20 +756,20 @@ Folder is 8.0-introduction
  |-- Metadata has been updated
 Folder is 8.1-network-layer-characteristics
  |-- Metadata duration is 10 minutes
- |-- lecture.md has 1191 words. Reading time is 10 minutes
+ |-- lecture.md has 1187 words. Reading time is 10 minutes
  |-- Calculated completion time for 8.1-network-layer-characteristics is 10 minutes
  |-- Metadata has been updated
 Folder is 8.2-ipv4-packet
  |-- Metadata duration is 9 minutes
- |-- lecture.md has 515 words. Reading time is 4 minutes
- |-- Video 8.2.3.mp4 is 5 minutes 20 seconds long
+ |-- lecture.md has 495 words. Reading time is 4 minutes
+ |-- Video https://www.youtube.com/watch?v=PArGE7H_eN8 is 5 minutes 21 seconds long
  |-- Calculated completion time for 8.2-ipv4-packet is 9 minutes
  |-- Metadata has been updated
 Folder is 8.3-ipv6-packet
  |-- Metadata duration is 13 minutes
- |-- lecture.md has 901 words. Reading time is 8 minutes
- |-- Video 8.3.5.mp4 is 5 minutes 48 seconds long
- |-- Calculated completion time for 8.3-ipv6-packet is 14 minutes
+ |-- lecture.md has 883 words. Reading time is 7 minutes
+ |-- Video https://www.youtube.com/watch?v=aOwXEempJ4k is 5 minutes 48 seconds long
+ |-- Calculated completion time for 8.3-ipv6-packet is 13 minutes
  |-- Metadata has been updated
 Folder is 8.4-how-a-host-routes
  |-- Metadata duration is 8 minutes
@@ -800,13 +778,13 @@ Folder is 8.4-how-a-host-routes
  |-- Metadata has been updated
 Folder is 8.5-router-routing-tables
  |-- Metadata duration is 19 minutes
- |-- lecture.md has 1527 words. Reading time is 13 minutes
- |-- Video 8.5.5.mp4 is 5 minutes 42 seconds long
+ |-- lecture.md has 1513 words. Reading time is 13 minutes
+ |-- Video https://www.youtube.com/watch?v=pt_Qw1Jfo5w is 5 minutes 42 seconds long
  |-- Calculated completion time for 8.5-router-routing-tables is 19 minutes
  |-- Metadata has been updated
 Folder is 8.6-summary
  |-- Metadata duration is 6 minutes
- |-- lecture.md has 712 words. Reading time is 6 minutes
+ |-- lecture.md has 705 words. Reading time is 6 minutes
  |-- Calculated completion time for 8.6-summary is 6 minutes
  |-- Metadata has been updated
 Folder is 9.0-introduction
@@ -822,32 +800,32 @@ Folder is 9.1-mac-and-ip
  |-- Calculated completion time for 9.1-mac-and-ip is 29 minutes
  |-- Metadata has been updated
 Folder is 9.2-arp
- |-- Metadata duration is 39 minutes
- |-- lecture.md has 1535 words. Reading time is 13 minutes
+ |-- Metadata duration is 38 minutes
+ |-- lecture.md has 1490 words. Reading time is 12 minutes
+ |-- Video https://www.youtube.com/watch?v=tna6DaUeu5c is 2 minutes 53 seconds long
+ |-- Video https://www.youtube.com/watch?v=Ud1angOlxHE is 1 minutes 45 seconds long
+ |-- Video https://www.youtube.com/watch?v=1ZB2euss3YY is 3 minutes 1 seconds long
  |-- PDF 9.2.9-packet-tracer---examine-the-arp-table.pdf has 681 words. Reading time is 6 minutes
  |-- Lab completion time for above PDF is 12 minutes (2 times reading time).
- |-- Video 9.2.3.mp4 is 2 minutes 52 seconds long
- |-- Video 9.2.5.mp4 is 3 minutes 0 seconds long
- |-- Video 9.2.4.mp4 is 1 minutes 45 seconds long
- |-- Calculated completion time for 9.2-arp is 39 minutes
+ |-- Calculated completion time for 9.2-arp is 38 minutes
  |-- Metadata has been updated
 Folder is 9.3-neighbor-discovery
  |-- Metadata duration is 43 minutes
- |-- lecture.md has 454 words. Reading time is 4 minutes
- |-- Video 9.3.1.mp4 is 6 minutes 6 seconds long
+ |-- lecture.md has 441 words. Reading time is 4 minutes
+ |-- Video https://www.youtube.com/watch?v=S0SyGKhCEV0 is 6 minutes 7 seconds long
  |-- PDF 9.3.4-packet-tracer---ipv6-neighbor-discovery.pdf has 1346 words. Reading time is 11 minutes
  |-- Lab completion time for above PDF is 22 minutes (2 times reading time).
  |-- Calculated completion time for 9.3-neighbor-discovery is 43 minutes
  |-- Metadata has been updated
 Folder is 9.4-summary
  |-- Metadata duration is 4 minutes
- |-- lecture.md has 438 words. Reading time is 4 minutes
+ |-- lecture.md has 431 words. Reading time is 4 minutes
  |-- Calculated completion time for 9.4-summary is 4 minutes
  |-- Metadata has been updated
 ---
-Lectures read time is 16 hours 6 minutes
-Videos watch time is 3 hours 10 minutes
-Labs completion time is 28 hours 15 minutes
+Lectures read time is 15 hours 46 minutes
+Videos watch time is 3 hours 18 minutes
+Labs completion time is 20 hours 57 minutes
 ---
-Total time is 47 hours 31 minutes
-Script has been running for 10 minutes 27 seconds
+Total time is 40 hours 1 minutes
+Script has been running for 8 minutes 27 seconds
