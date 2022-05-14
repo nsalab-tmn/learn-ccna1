@@ -202,7 +202,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 На примере лекции из CCNA1 - ``02.07-configure-ip-addressing/lecture.md``
 
-Для каждой лабораторной работы в Packet Tracer есть дублирующий файл с описанием в PDF. Данные файлы сгенерированы непосредственно из самого Packet Tracer.
+Для каждой лабораторной работы в Packet Tracer есть дублирующий файл с описанием в PDF. Для каждого PDF файла есть оригинальный файл ``docx``, все файлы лежат в папке ``packet-tracer-source-files``.
 
 ```
 <!-- 2.7.6 -->
@@ -219,7 +219,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 ```bash
 02.07.06-lab-implement-basic-connectivity/ <--- [номер раздела в оригинальной лекции] + lab + [название лабораторной работы]
-├── README.md <--- сюда пойдет описание лабораторной работы из PDF/PKA
+├── README.md <--- сюда пойдет описание лабораторной работы из PDF/PKA/DOCX
 ├── assets    <--- папка для asset'ов
 │   ├── 2.7.6-packet-tracer---implement-basic-connectivity.pka <--- сюда копируем PKA файл из оригинальной лекции
 │   └── topology.png <--- рисунок с топологией из Packet Tracer
@@ -263,7 +263,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 ```
 ### Как переносить
 
-На текущий момент не найдено как быстро и чисто можно конвертировать PDF в MD с сохранением форматирования. Более менее приличную конверсию из PDF в MD можно получить [здесь](https://products.aspose.app/words/conversion/pdf-to-md). При этом придется вычищать колонтитулы и руками возвращать стили.
+На текущий момент не найдено как быстро и чисто можно конвертировать DOCX в MD с сохранением форматирования. Более менее приличную конверсию из DOCX в MD можно получить [здесь](https://products.aspose.app/words/conversion/docx-to-md). При этом придется вычищать колонтитулы и руками возвращать стили.
 
 Поэтому проще всего переносить оригинальный текст из описания в Packet Tracer с использованием Microsoft Word и плагином [Writage](https://www.writage.com/Writage-2.9.msi) - устанавливается как расширение Word и позволяет работать со стилями MD.
 
@@ -293,15 +293,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 ![](./readme-assets/lab-topology-good.png)
 
-Открываем Activity Wizard, вводим пароль ``PT_ccna7``
-
-![](./readme-assets/pt-menu.png)
-
-В меню слева выбираем раздел ``Instructions``, внутри переходим во вкладку Rich Editor.
-
-![](./readme-assets/pt-editor.png)
-
-Выделяем весь текст, копируем открываем MS Word и вставляем его туда. Переходим во вкладку Writage. Здесь остается только прощелкать MD стили.
+Открываем оригинальный ``docx`` файл, например ``./packet-tracer-source-files/2.7.6 Packet Tracer - Implement Basic Connectivity.docx``. Переходим во вкладку Writage. Здесь остается только убрать логотип и колонтитулы, и прощелкать MD стили.
 
 ![](./readme-assets/writage-1.png)
 
