@@ -210,9 +210,9 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 В этом упражнении вы сначала настроите основные параметры коммутатора. Затем вы создадите основные подключения, настроив IP-адреса на коммутаторах и ПК. Завершив настройку IP-адресации, вы будете использовать различные команды **show**, чтобы проверить настройки, а также команду **ping** для проверки основных подключений между устройствами.
 
-[Настройка базовых подключений (pdf)](./assets/2.7.6-packet-tracer---implement-basic-connectivity.pdf)
+[Настройка базовых подключений (pdf)](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pdf)
 
-[Настройка базовых подключений (pka)](./assets/2.7.6-packet-tracer---implement-basic-connectivity.pka)
+[Настройка базовых подключений (pka)](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka)
 ```
 
 Создаем отдельную директорию для лабораторной работы со следующей структурой:
@@ -221,7 +221,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 02.07.06-lab-implement-basic-connectivity/ <--- [номер раздела в оригинальной лекции] + lab + [название лабораторной работы]
 ├── README.md <--- сюда пойдет описание лабораторной работы из PDF/PKA/DOCX
 ├── assets    <--- папка для asset'ов
-│   ├── 2.7.6-packet-tracer---implement-basic-connectivity.pka <--- сюда копируем PKA файл из оригинальной лекции
+│   ├── 2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka <--- сюда копируем PKA файл из оригинальной лекции
 │   └── topology.png <--- рисунок с топологией из Packet Tracer
 └── learn-metadata.json <--- файл метаданных
 ```
@@ -273,7 +273,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
  * [для MacOS](https://onedrive.live.com/download?cid=7BD79879707D51DD&resid=7bd79879707d51dd%2125232&authkey=ACKt_L68GAbq2To)
  * [для Ubuntu\Debian](https://onedrive.live.com/download?cid=7BD79879707D51DD&resid=7bd79879707d51dd%2125233&authkey=ANGAvnMRTs6PL5M)
 
-Скачиваем PKA-файл из оригинальной лекции, к примеру ``02.07-configure-ip-addressin/assets/2.7.6-packet-tracer---implement-basic-connectivity.pka``, открываем его в Packet Tracer.
+Скачиваем PKA-файл из оригинальной лекции, к примеру ``02.07-configure-ip-addressin/assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka``, открываем его в Packet Tracer.
 
 При первом входе Packet Trcer просит войти в свою учетную запись на Netacad или SkillsForAll. Делаем следующим образом: 
 
@@ -310,7 +310,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 В конце файла вставляем ссылку на оригинальный файл Packet Tracer.
 
 ```
-[Скачать файл Packet Tracer для локального запуска](./assets/2.7.6-packet-tracer---implement-basic-connectivity.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka)
 ```
 
 Сохраняем размеченный файл в ``./README.md``.
@@ -319,9 +319,9 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 [Ссылка на оригинальную лекцию](./02.07-configure-ip-addressing/lecture.md)
 
-[Ссылка на оригинальное описание лабораторной работы в PDF](./02.07-configure-ip-addressing/assets/2.7.6-packet-tracer---implement-basic-connectivity.pdf)
+[Ссылка на оригинальное описание лабораторной работы в PDF](./02.07-configure-ip-addressing/assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pdf)
 
-[Ссылка на оригинальный файл лабораторной работы в PKA](./02.07-configure-ip-addressing/assets/2.7.6-packet-tracer---implement-basic-connectivity.pka)
+[Ссылка на оригинальный файл лабораторной работы в PKA](./02.07-configure-ip-addressing/assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka)
 
 [Ссылка на описание лабораторной работы перенесенное в MD](/02.07.06-lab-implement-basic-connectivity/README.md)
 

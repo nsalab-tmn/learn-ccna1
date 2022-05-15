@@ -95,7 +95,7 @@ Ethernet определяется протоколами канального и
 <!-- quiz -->
 
 <!-- 7.1.6 -->
-## Исследовательская работа: анализ кадров Ethernet с помощью программы Wireshark [(описание в PDF)](./assets/7.1.6-lab---use-wireshark-to-examine-ethernet-frames.pdf)
+## Исследовательская работа: анализ кадров Ethernet с помощью программы Wireshark [(описание в PDF)](./assets/7.1.6-lab---use-wireshark-to-examine-ethernet-frames_ru-RU.pdf)
 
 В этой работе вам необходимо выполнить следующие задачи:
 

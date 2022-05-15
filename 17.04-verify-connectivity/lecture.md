@@ -294,7 +294,7 @@ C:\Users\PC-A>
 Рекомендации Cisco для базовых процессов можно найти, выполнив поиск в Интернете «Рекомендации по базовым процессам». (“Baseline Process Best Practices”)
 
 <!-- 17.4.6 -->
-## Лабораторная работа: проверка задержки сети с помощью команд ping и traceroute [(описание в PDF)](./assets/17.4.6-lab---test-network-latency-with-ping-and-traceroute.pdf)
+## Лабораторная работа: проверка задержки сети с помощью команд ping и traceroute [(описание в PDF)](./assets/17.4.6-lab---test-network-latency-with-ping-and-traceroute_ru-RU.pdf)
 
 В этой работе вам необходимо выполнить следующие задачи:
 

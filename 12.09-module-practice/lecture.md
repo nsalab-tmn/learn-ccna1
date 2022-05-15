@@ -5,9 +5,9 @@
 
 Сетевой администратор хочет, чтобы вы назначили пять IPv6-подсетей /64 для сети, показанной в топологии. Ваша задача — определить IPv6-подсети, присвоить IPv6-адреса для маршрутизаторов и настроить компьютеры для автоматического получения IPv6-адресации. В конце вы должны проверить подключения между IPv6-узлами.
 
-[Реализация схемы адресации разделенной на подсети IPv6-сети (pdf)](./assets/12.9.1-packet-tracer---implement-a-subnetted-ipv6-addressing-scheme.pdf)
+[Реализация схемы адресации разделенной на подсети IPv6-сети (pdf)](./assets/12.9.1-packet-tracer---implement-a-subnetted-ipv6-addressing-scheme_ru-RU.pdf)
 
-[Реализация схемы адресации разделенной на подсети IPv6-сети (pka)](./assets/12.9.1-packet-tracer---implement-a-subnetted-ipv6-addressing-scheme.pka)
+[Реализация схемы адресации разделенной на подсети IPv6-сети (pka)](./assets/12.9.1-packet-tracer---implement-a-subnetted-ipv6-addressing-scheme_ru-RU.pka)
 
 <!-- 12.9.2 -->
 ## Лабораторная работа: настройка IPv6-адресов на сетевых устройствах
@@ -18,11 +18,11 @@
 * Часть 2: Ручная настройка IPv6-адресов
 * Часть 3: Проверка сквозного подключения
 
-[Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pdf)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pdf)
+[Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pdf)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode_ru-RU.pdf)
 
-[Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pka)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode.pka)
+[Настройка адресов IPv6 на сетевых устройствах - Режим симуляции физического оборудования (pka)](./assets/12.9.2-packet-tracer---configure-ipv6-addresses-on-network-devices---physical-mode_ru-RU.pka)
 
-<!-- [Настройка IPv6-адресов на сетевых устройствах (лабораторная работа для физического оборудования)](./assets/12.9.2-lab---configure-ipv6-addresses-on-network-devices.pdf) -->
+<!-- [Настройка IPv6-адресов на сетевых устройствах (лабораторная работа для физического оборудования)](./assets/12.9.2-lab---configure-ipv6-addresses-on-network-devices_ru-RU.pdf) -->
 
 
 

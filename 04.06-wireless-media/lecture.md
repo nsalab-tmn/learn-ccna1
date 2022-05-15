@@ -63,12 +63,12 @@
 
 
 
-[Подключение проводной и беспроводной локальных сетей (pdf)](./assets/4.6.5-packet-tracer---connect-a-wired-and-wireless-lan.pdf)
+[Подключение проводной и беспроводной локальных сетей (pdf)](./assets/4.6.5-packet-tracer---connect-a-wired-and-wireless-lan_ru-RU.pdf)
 
-[Подключение проводной и беспроводной локальных сетей (pka)](./assets/4.6.5-packet-tracer---connect-a-wired-and-wireless-lan.pka)
+[Подключение проводной и беспроводной локальных сетей (pka)](./assets/4.6.5-packet-tracer---connect-a-wired-and-wireless-lan_ru-RU.pka)
 
 <!-- 4.6.6 -->
-## Исследовательская работа: просмотр информации о проводных и беспроводных сетевых интерфейсных платах [(описание в PDF)](./assets/4.6.6-lab---view-wired-and-wireless-nic-information.pdf)
+## Исследовательская работа: просмотр информации о проводных и беспроводных сетевых интерфейсных платах [(описание в PDF)](./assets/4.6.6-lab---view-wired-and-wireless-nic-information_ru-RU.pdf)
 
 В этой работе вам необходимо выполнить следующие задачи:
 

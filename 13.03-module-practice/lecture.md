@@ -9,9 +9,9 @@
 
 Настройте сетевые устройства для устранения проблем с подключением.
 
-[Использование ICMP для проверки и исправления сетевого подключения (pdf)](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity.pdf)
+[Использование ICMP для проверки и исправления сетевого подключения (pdf)](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity_ru-RU.pdf)
 
-[Использование ICMP для проверки и исправления сетевого подключения (pka)](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity.pka)
+[Использование ICMP для проверки и исправления сетевого подключения (pka)](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity_ru-RU.pka)
 
 <!-- 13.3.2 -->
 ## Лабораторная работа: проверка сетевого подключения с помощью команд ping и traceroute
@@ -22,12 +22,12 @@
 * Часть 3: Базовая проверка сети с помощью команд tracert и traceroute
 * Часть 4: Поиск и устранение проблем в топологии
 
-[Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pdf)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pdf)
+[Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pdf)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode_ru-RU.pdf)
 
-[Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pka)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode.pka)
+[Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pka)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode_ru-RU.pka)
 
  
 
-<!-- [Проверка сетевого подключения с помощью команд ping и traceroute (лабораторная работа для физического оборудования)](./assets/13.3.2-lab---use-ping-and-traceroute-to-test-network-connectivity.pdf) -->
+<!-- [Проверка сетевого подключения с помощью команд ping и traceroute (лабораторная работа для физического оборудования)](./assets/13.3.2-lab---use-ping-and-traceroute-to-test-network-connectivity_ru-RU.pdf) -->
 
 

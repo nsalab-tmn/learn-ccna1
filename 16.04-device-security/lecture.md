@@ -170,9 +170,9 @@ Router(config-line)# transport input ssh
 
 Администратор сети обратился к вам с просьбой подготовить RTA и SW1 для развертывания. Перед его подключением к сети необходимо активировать функции безопасности.
 
-[Настройка безопасного пароля и протокола SSH (pdf)](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh.pdf)
+[Настройка безопасного пароля и протокола SSH (pdf)](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh_ru-RU.pdf)
 
-[Настройка безопасного пароля и протокола SSH (pka)](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh.pka)
+[Настройка безопасного пароля и протокола SSH (pka)](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh_ru-RU.pka)
 
 <!-- 16.4.7 -->
 <!-- ## Лабораторная работа: доступ к сетевым устройствам по протоколу SSH
@@ -184,5 +184,5 @@ Router(config-line)# transport input ssh
 * Часть 3: Настройка коммутатора для доступа по протоколу SSH
 * Часть 4: Настройка протокола SSH с использованием интерфейса командной строки (CLI) коммутатора
 
-[Доступ к сетевым устройствам по протоколу SSH (лабораторная работа для физического оборудования)](./assets/16.4.7-lab---configure-network-devices-with-ssh.pdf) -->
+[Доступ к сетевым устройствам по протоколу SSH (лабораторная работа для физического оборудования)](./assets/16.4.7-lab---configure-network-devices-with-ssh_ru-RU.pdf) -->
 

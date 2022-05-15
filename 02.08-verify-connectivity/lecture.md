@@ -15,7 +15,7 @@
 
 ![youtube](https://www.youtube.com/watch?v=CkvRVRcOkls)
 
-[Проверка назначения интерфейса (pkt)](./assets/2.8.1-video-activity---test-the-interface-assignment.pkt)
+[Проверка назначения интерфейса (pkt)](./assets/2.8.1-video-activity---test-the-interface-assignment_ru-RU.pkt)
 
 <!-- 2.8.2 -->
 ## Видео задание - Проверка сквозного подключения
@@ -30,5 +30,5 @@
 
 ![youtube](https://www.youtube.com/watch?v=gex3BaiuQiw)
 
-[Проверка сквозного подключения (pkt)](./assets/2.8.2-video-activity---test-end-to-end-connectivity.pkt)
+[Проверка сквозного подключения (pkt)](./assets/2.8.2-video-activity---test-end-to-end-connectivity_ru-RU.pkt)
 

@@ -5,7 +5,7 @@
 
 В этом упражнении вы можете изучить функциональные особенности протоколов TCP и UDP, а также возможности мультиплексирования и функцию номеров портов при определении локального приложения, запросившего данные или отправляющего их.
 
-[Обмен данными с использованием TCP и UDP (pdf)](./assets/14.8.1-packet-tracer---tcp-and-udp-communications.pdf)
+[Обмен данными с использованием TCP и UDP (pdf)](./assets/14.8.1-packet-tracer---tcp-and-udp-communications_ru-RU.pdf)
 
-[Обмен данными с использованием TCP и UDP (pka)](./assets/14.8.1-packet-tracer---tcp-and-udp-communications.pka)
+[Обмен данными с использованием TCP и UDP (pka)](./assets/14.8.1-packet-tracer---tcp-and-udp-communications_ru-RU.pka)
 

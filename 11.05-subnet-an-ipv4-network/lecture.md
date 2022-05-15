@@ -106,7 +106,7 @@
 
 После того как сетевые устройства и компьютеры будут настроены, вы проверите сетевые подключения с помощью команды **ping**.
 
-[Разделение  IPv4-сети  на подсети (pdf)](./assets/11.5.5-packet-tracer---subnet-an-ipv4-network.pdf)
+[Разделение  IPv4-сети  на подсети (pdf)](./assets/11.5.5-packet-tracer---subnet-an-ipv4-network_ru-RU.pdf)
 
-[Разделение  IPv4-сети  на подсети (pka)](./assets/11.5.5-packet-tracer---subnet-an-ipv4-network.pka)
+[Разделение  IPv4-сети  на подсети (pka)](./assets/11.5.5-packet-tracer---subnet-an-ipv4-network_ru-RU.pka)
 

@@ -10,19 +10,19 @@
 * Проверьте IP-подключение.
 * Поиск и устранение неполадок подключения
 
-[Разработка и реализация схемы адресации VLSM (pdf)](./assets/11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme.pdf)
+[Разработка и реализация схемы адресации VLSM (pdf)](./assets/11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme_ru-RU.pdf)
 
-[Разработка и реализация схемы адресации VLSM (pka)](./assets/11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme.pka)
+[Разработка и реализация схемы адресации VLSM (pka)](./assets/11.10.1-packet-tracer---design-and-implement-a-vlsm-addressing-scheme_ru-RU.pka)
 
 <!-- 11.10.2 -->
 ## Лабораторная работа: разработка и реализация схемы адресации VLSM
 
 В этой лабораторной работе вам нужно разработать схему адресации для сети, изображенной на диаграмме топологии, используя адрес 192.168.33.128/25. VLSM используется для обеспечения соответствия требованиям адресации IPv4. После создания схемы адресации VLSM вам нужно будет настроить интерфейсы на маршрутизаторах, указав соответствующие IP-адреса. Будущие локальные сети BR2 должны иметь выделенные адреса, но в настоящее время интерфейсы не будут настроены.  
 
-[Разработка и реализация схемы адресации VLSM - Режим симуляции физического оборудования (pdf)](./assets/11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode.pdf)
+[Разработка и реализация схемы адресации VLSM - Режим симуляции физического оборудования (pdf)](./assets/11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode_ru-RU.pdf)
 
-[Разработка и реализация схемы адресации VLSM - Режим симуляции физического оборудования (pka)](./assets/11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode.pka)
+[Разработка и реализация схемы адресации VLSM - Режим симуляции физического оборудования (pka)](./assets/11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode_ru-RU.pka)
 
  
 
-<!-- [Разработка и реализация схемы адресации VLSM (лабораторная работа для физического оборудования)](./assets/11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme.pdf) -->
+<!-- [Разработка и реализация схемы адресации VLSM (лабораторная работа для физического оборудования)](./assets/11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme_ru-RU.pdf) -->

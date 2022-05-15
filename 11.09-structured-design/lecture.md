@@ -37,7 +37,7 @@
 
 В этом задании вы будете использовать заданный сетевой адрес /24 для разработки схемы адресации VLSM. На основании требований вы назначите подсети и адреса, настроите устройства и проверите подключения.
 
-[Практика проектирования и внедрения VLSM (pdf)](./assets/11.9.3-packet-tracer---vlsm-design-and-implementation-practice.pdf)
+[Практика проектирования и внедрения VLSM (pdf)](./assets/11.9.3-packet-tracer---vlsm-design-and-implementation-practice_ru-RU.pdf)
 
-[Практика проектирования и внедрения VLSM (pka)](./assets/11.9.3-packet-tracer---vlsm-design-and-implementation-practice.pka)
+[Практика проектирования и внедрения VLSM (pka)](./assets/11.9.3-packet-tracer---vlsm-design-and-implementation-practice_ru-RU.pka)
 

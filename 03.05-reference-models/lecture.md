@@ -86,7 +86,7 @@
 
 
 
-[Изучение моделей TCP/IP и OSI в действии (pdf)](./assets/3.5.5-packet-tracer---investigate-the-tcp-ip-and-osi-models-in-action.pdf)
+[Изучение моделей TCP/IP и OSI в действии (pdf)](./assets/3.5.5-packet-tracer---investigate-the-tcp-ip-and-osi-models-in-action_ru-RU.pdf)
 
-[Изучение моделей TCP/IP и OSI в действии (pka)](./assets/3.5.5-packet-tracer---investigate-the-tcp-ip-and-osi-models-in-action.pka)
+[Изучение моделей TCP/IP и OSI в действии (pka)](./assets/3.5.5-packet-tracer---investigate-the-tcp-ip-and-osi-models-in-action_ru-RU.pka)
 

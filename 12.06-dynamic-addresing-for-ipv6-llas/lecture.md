@@ -159,6 +159,6 @@ R1#
 
 В этом упражнении вам предстоит отработать настройку IPv6-адресов на маршрутизаторе, серверах и клиентских узлах. Кроме того, вы проверите выполнение IPv6-адресации.
 
-[Настройка IPv6-адресации (pdf)](./assets/12.6.6-packet-tracer---configure-ipv6-addressing.pdf)
+[Настройка IPv6-адресации (pdf)](./assets/12.6.6-packet-tracer---configure-ipv6-addressing_ru-RU.pdf)
 
-[Настройка IPv6-адресации (pka)](./assets/12.6.6-packet-tracer---configure-ipv6-addressing.pka)
+[Настройка IPv6-адресации (pka)](./assets/12.6.6-packet-tracer---configure-ipv6-addressing_ru-RU.pka)

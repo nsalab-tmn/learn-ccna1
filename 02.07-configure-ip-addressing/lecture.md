@@ -59,7 +59,7 @@ Sw-Floor-1(config)# ip default-gateway 192.168.1.1
 
 В этом упражнении вы сначала настроите основные параметры коммутатора. Затем вы создадите основные подключения, настроив IP-адреса на коммутаторах и ПК. Завершив настройку IP-адресации, вы будете использовать различные команды **show**, чтобы проверить настройки, а также команду **ping** для проверки основных подключений между устройствами.
 
-[Создание основных подключений (pdf)](./assets/2.7.6-packet-tracer---implement-basic-connectivity.pdf)
+[Создание основных подключений (pdf)](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pdf)
 
-[Создание основных подключений (pka)](./assets/2.7.6-packet-tracer---implement-basic-connectivity.pka)
+[Создание основных подключений (pka)](./assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pka)
 

@@ -67,9 +67,9 @@ IP-пакет уровня 3 содержит следующее:
 
 Это упражнение оптимизировано для просмотра единиц данных протокола (PDU). Устройства уже настроены. Вам необходимо в режиме моделирования собрать сведения о единице данных протокола (PDU), а также ответить на ряд вопросов о собираемых данных.
 
-[Определение MAC- и IP-адресов (pdf)](./assets/9.1.3-packet-tracer---identify-mac-and-ip-addresses.pdf)
+[Определение MAC- и IP-адресов (pdf)](./assets/9.1.3-packet-tracer---identify-mac-and-ip-addresses_ru-RU.pdf)
 
-[Определение MAC- и IP-адресов (pka)](./assets/9.1.3-packet-tracer---identify-mac-and-ip-addresses.pka)
+[Определение MAC- и IP-адресов (pka)](./assets/9.1.3-packet-tracer---identify-mac-and-ip-addresses_ru-RU.pka)
 
 <!-- 9.1.4 -->
 <!-- quiz -->

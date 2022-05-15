@@ -193,9 +193,9 @@ Address:  208.67.222.222
 
 Цель данного упражнения в программе Packet Tracer — найти неисправности подключения и по возможности устранить их. Если проблемы с подключением устранить не удается, подробно задокументируйте их для дальнейшей эскалации.
 
-[Поиск и устранение неполадок подключения (pdf)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues.pdf)
+[Поиск и устранение неполадок подключения (pdf)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues_ru-RU.pdf)
 
-[Поиск и устранение неполадок подключения (pka)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues.pka)
+[Поиск и устранение неполадок подключения (pka)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues_ru-RU.pka)
 
 <!-- 17.7.7 -->
 ## Лабораторная работа: поиск и устранение неполадок подключения
@@ -207,11 +207,11 @@ Address:  208.67.222.222
 * Проверка полной функциональности
 * Документирование результатов проделанной работы и изменений в конфигурации
 
-[Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pdf)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pdf)
+[Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pdf)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode_ru-RU.pdf)
 
-[Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pka)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode.pka)
+[Поиск и устранение неполадок подключения- Режим симуляции физического оборудования (pka)](./assets/17.7.7-packet-tracer---troubleshoot-connectivity-issues---physical-mode_ru-RU.pka)
 
  
 
-<!-- [Поиск и устранение неполадок подключения (лабораторная работа для физического оборудования)](./assets/17.7.6-lab---troubleshoot-connectivity-issues.pdf) -->
+<!-- [Поиск и устранение неполадок подключения (лабораторная работа для физического оборудования)](./assets/17.7.6-lab---troubleshoot-connectivity-issues_ru-RU.pdf) -->
 
