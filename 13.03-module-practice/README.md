@@ -25,9 +25,3 @@
 [Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pdf)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode_ru-RU.pdf)
 
 [Использование Ping и Traceroute для проверки сетевого подключения - Режим симуляции физического оборудования (pka)](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode_ru-RU.pka)
-
- 
-
-<!-- [Проверка сетевого подключения с помощью команд ping и traceroute (лабораторная работа для физического оборудования)](./assets/13.3.2-lab---use-ping-and-traceroute-to-test-network-connectivity_ru-RU.pdf) -->
-
-

@@ -21,5 +21,3 @@
 [Базовая конфигурация коммутатора и оконечного устройства - Режим симуляции физического оборудования (pdf)](./assets/2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode_ru-RU.pdf)
 
 [Базовая конфигурация коммутатора и оконечного устройства - Режим симуляции физического оборудования (pka)](./assets/2.9.2-packet-tracer---basic-switch-and-end-device-configuration---physical-mode_ru-RU.pka)
-
-<!-- [Базовая конфигурация коммутатора и оконечного устройства (лабораторная работа для физического оборудования)](./assets/2.9.2-lab---basic-switch-and-end-device-configuration_ru-RU.pdf) -->

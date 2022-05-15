@@ -22,7 +22,3 @@
 [Разработка и реализация схемы адресации VLSM - Режим симуляции физического оборудования (pdf)](./assets/11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode_ru-RU.pdf)
 
 [Разработка и реализация схемы адресации VLSM - Режим симуляции физического оборудования (pka)](./assets/11.10.2-packet-tracer---design-and-implement-a-vlsm-addressing-scheme---physical-mode_ru-RU.pka)
-
- 
-
-<!-- [Разработка и реализация схемы адресации VLSM (лабораторная работа для физического оборудования)](./assets/11.10.2-lab---design-and-implement-a-vlsm-addressing-scheme_ru-RU.pdf) -->

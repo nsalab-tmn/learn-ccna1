@@ -32,5 +32,3 @@
 [Построение сети с коммутатором и маршрутизатором - режим симуляции физического оборудования (pdf)](./assets/10.4.4-packet-tracer---build-a-switch-and-router-network---physical-mode_ru-RU.pdf)
 
 [Построение сети с коммутатором и маршрутизатором - режим симуляции физического оборудования (pka)](./assets/10.4.4-packet-tracer---build-a-switch-and-router-network---physical-mode_ru-RU.pka)
-
-<!-- [Создание сети, состоящей из коммутатора и маршрутизатора (лабораторная работа для физического оборудования)](./assets/10.4.4-lab---build-a-switch-and-router-network_ru-RU.pdf) -->
