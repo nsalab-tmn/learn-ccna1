@@ -331,7 +331,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 ### Структура
 
-На примере квиза 1.2.6 в CCNA1.
+На примере квиза [1.2.6](./01.02.06-network-components-quiz/learn-metadata.json) в CCNA1.
 
 Создаем отдельную директорию для квиза или контрольной работы со следующей структурой:
 
