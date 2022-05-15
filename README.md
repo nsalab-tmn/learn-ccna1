@@ -37,7 +37,7 @@ xx.yy-lowercase-without-spaces
 
 Структура файлов для каждой лекции\модуля:
 - learn-metadata.json - файл с метаданными
-- lecture.md - файл с лекциями
+- README.md - файл с лекциями
 - assets - папка для хранения файлов, связанных с лекцией
 
 В файле learn-metadata.json указывается название лекции (модуля) и продолжительность
@@ -51,7 +51,7 @@ xx.yy-lowercase-without-spaces
     "duration": "PT0H10M", <-- не меняется, считается автоматически
     "tags": ["Network", "Cisco"], <-- не меняется
     "skills": {}, <-- не меняется
-    "testProjectPath": "./lecture.md", <-- не меняется
+    "testProjectPath": "./README.md", <-- не меняется
     "assetsPath": "assets" <-- не меняется
 }
 ```
@@ -65,7 +65,7 @@ xx.yy-lowercase-without-spaces
 
 ![](./readme-assets/headers_example.png)
 
-Файл 12.08-subnet-an-ipv6-network\lecture.md:
+Файл 12.08-subnet-an-ipv6-network\README.md:
 
 ```
 <!-- 12.8.1 -->
@@ -96,7 +96,7 @@ xx.yy-lowercase-without-spaces
         "Cisco"
     ],
     "skills": {},
-    "testProjectPath": "./lecture.md",
+    "testProjectPath": "./README.md",
     "assetsPath": "assets"
 }
 ```
@@ -200,7 +200,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 ### Что переносить
 
-На примере лекции из CCNA1 - ``02.07-configure-ip-addressing/lecture.md``
+На примере лекции из CCNA1 - ``02.07-configure-ip-addressing/README.md``
 
 Для каждой лабораторной работы в Packet Tracer есть дублирующий файл с описанием в PDF. Для каждого PDF файла есть оригинальный файл ``docx``, все файлы лежат в папке ``packet-tracer-source-files``.
 
@@ -317,7 +317,7 @@ ffmpeg -i https://example.org/master.m3u8 -c copy -bsf:a aac_adtstoasc C:\downlo
 
 ### Примеры
 
-[Ссылка на оригинальную лекцию](./02.07-configure-ip-addressing/lecture.md)
+[Ссылка на оригинальную лекцию](./02.07-configure-ip-addressing/README.md)
 
 [Ссылка на оригинальное описание лабораторной работы в PDF](./02.07-configure-ip-addressing/assets/2.7.6-packet-tracer---implement-basic-connectivity_ru-RU.pdf)
 
