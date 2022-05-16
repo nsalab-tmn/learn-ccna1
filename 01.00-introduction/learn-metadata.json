@@ -9,6 +9,6 @@
         "Cisco"
     ],
     "skills": {},
-    "testProjectPath": "./README.md",
-    "assetsPath": "assets"
+    "text": { "$ref": "./README.md" },
+    "assets": { "$ref": "./assets" }
 }
