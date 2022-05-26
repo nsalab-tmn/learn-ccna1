@@ -1,0 +1,30 @@
+{
+    "title": "Лабораторная работа: проверка сетевого подключения с помощью команд ping и traceroute",
+    "shortName": "lab-13.3.2",
+    "materialType": "lab",
+    "description": "В этой лабораторной работе вы выполните следующие задачи.\n* Часть 1: Создание и настройка сети\n* Часть 2: Базовая проверка сети с помощью команды ping\n* Часть 3: Базовая проверка сети с помощью команд tracert и traceroute\n* Часть 4: Поиск и устранение проблем в топологии",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": [
+        "Cisco",
+        "Packet Tracer"
+    ],
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "deploymentPath": "deploy",
+    "assetsPath": "assets"
+}

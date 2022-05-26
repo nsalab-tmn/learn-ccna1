@@ -1,0 +1,30 @@
+{
+    "title": "Лабораторная работа: разработка и реализация схемы адресации VLSM",
+    "shortName": "lab-11.10.2",
+    "materialType": "lab",
+    "description": "В этой лабораторной работе вам нужно разработать схему адресации для сети, изображенной на диаграмме топологии, используя адрес 192.168.33.128/25. VLSM используется для обеспечения соответствия требованиям адресации IPv4. После создания схемы адресации VLSM вам нужно будет настроить интерфейсы на маршрутизаторах, указав соответствующие IP-адреса. Будущие локальные сети BR2 должны иметь выделенные адреса, но в настоящее время интерфейсы не будут настроены.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": [
+        "Cisco",
+        "Packet Tracer"
+    ],
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "deploymentPath": "deploy",
+    "assetsPath": "assets"
+}
