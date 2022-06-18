@@ -1,0 +1,30 @@
+{
+    "title": "Работа в симуляторе: настройка безопасного пароля и протокола SSH",
+    "shortName": "lab-16.4.6",
+    "materialType": "lab",
+    "description": "Администратор сети обратился к вам с просьбой подготовить RTA и SW1 для развертывания. Перед его подключением к сети необходимо активировать функции безопасности.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": [
+        "Cisco",
+        "Packet Tracer"
+    ],
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "deploymentPath": "deploy",
+    "assetsPath": "assets"
+}

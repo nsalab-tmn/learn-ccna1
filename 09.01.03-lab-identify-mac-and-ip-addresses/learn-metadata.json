@@ -1,0 +1,30 @@
+{
+    "title": "Работа в симмуляторе: Определение MAC- и IP-адресов",
+    "shortName": "lab-9.1.3",
+    "materialType": "lab",
+    "description": "В рамках данного упражнения Packet Tracer необходимо решить следующие задачи.\n\n* Сбор информации PDU для локальной сети связи\n* Сбор информации PDU для удаленной сетевой связи\n\nЭто упражнение оптимизировано для просмотра единиц данных протокола (PDU). Устройства уже настроены. Вам необходимо в режиме моделирования собрать сведения о единице данных протокола (PDU), а также ответить на ряд вопросов о собираемых данных.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": [
+        "Cisco",
+        "Packet Tracer"
+    ],
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "deploymentPath": "deploy",
+    "assetsPath": "assets"
+}

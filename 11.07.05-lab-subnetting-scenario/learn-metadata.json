@@ -1,0 +1,30 @@
+{
+    "title": "Работа в симуляторе: сценарий разделения на подсети",
+    "shortName": "lab-11.7.5",
+    "materialType": "lab",
+    "description": "В этом упражнении вам предоставляется сетевой адрес 192.168.100.0/24 для подсети, и вы должны составить схему IP-адресации сети, изображенной в топологии. Для каждой локальной сети (LAN) в сети требуется достаточно пространства для, по крайней мере, 25 адресов для оконечных устройств, коммутатора и маршрутизатора. Для соединения между маршрутизаторами R1 и R2 потребуется по одному IP-адресу на каждом конце канала.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": [
+        "Cisco",
+        "Packet Tracer"
+    ],
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "deploymentPath": "deploy",
+    "assetsPath": "assets"
+}

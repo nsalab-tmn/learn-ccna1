@@ -1,0 +1,30 @@
+{
+    "title": "Работа в симуляторе: проверка адресации IPv4 и IPv6",
+    "shortName": "lab-13.2.6",
+    "materialType": "lab",
+    "description": "Протоколы IPv4- и IPv6 могут сосуществовать в одной сети. Использование команд и отображение результатов в командной строке на компьютере несколько отличается.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": [
+        "Cisco",
+        "Packet Tracer"
+    ],
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "deploymentPath": "deploy",
+    "assetsPath": "assets"
+}
