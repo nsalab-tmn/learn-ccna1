@@ -3,6 +3,7 @@
   "materialType": "course",
   "tags": { "$ref": "./material-tags.json" },
   "materials": [
-    { "$ref": "./01-networking-today/learn-metadata.json" }
+    { "$ref": "./01-networking-today/learn-metadata.json" },
+    { "$ref": "./02-basic-switch-and-end-device-configuration/learn-metadata.json" }
   ]
 }
