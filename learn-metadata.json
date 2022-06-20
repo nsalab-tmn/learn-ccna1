@@ -1,0 +1,8 @@
+{
+  "title": "Введение в сетевые технологии",
+  "materialType": "course",
+  "tags": { "$ref": "./material-tags.json" },
+  "materials": [
+    { "$ref": "./01-networking-today/learn-metadata.json" }
+  ]
+}
