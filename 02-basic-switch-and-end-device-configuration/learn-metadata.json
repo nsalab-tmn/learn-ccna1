@@ -1,0 +1,26 @@
+{
+    "title": "Базовая конфигурация коммутатора и оконечного устройства",
+    "materialType": "course",
+    "tags": { "$ref": "../material-tags.json" },
+    "materials": [
+      { "$ref": "./02.00-introduction/learn-metadata.json" },
+      { "$ref": "./02.01-access-to-cisco-ios/learn-metadata.json" },
+      { "$ref": "./02.01.06-access-to-cisco-ios-quiz/learn-metadata.json" },
+      { "$ref": "./02.02-ios-navigation/learn-metadata.json" },
+      { "$ref": "./02.02.08-ios-navigation-quiz/learn-metadata.json" },
+      { "$ref": "./02.03-the-command-structure/learn-metadata.json" },
+      { "$ref": "./02.03.07-lab-navigate-the-ios/learn-metadata.json" },
+      { "$ref": "./02.03.08-lab-navigate-the-ios-using-a-terminal-client-for-console-connectivity-physical-mode/learn-metadata.json" },
+      { "$ref": "./02.04-basic-device-configuration/learn-metadata.json" },
+      { "$ref": "./02.05-save-configurations/learn-metadata.json" },
+      { "$ref": "./02.05.05-lab-configure-initial-switch-settings/learn-metadata.json" },
+      { "$ref": "./02.06-ports-and-addresses/learn-metadata.json" },
+      { "$ref": "./02.07-configure-ip-addressing/learn-metadata.json" },
+      { "$ref": "./02.07.06-lab-implement-basic-connectivity/learn-metadata.json" },
+      { "$ref": "./02.08-verify-connectivity/learn-metadata.json" },
+      { "$ref": "./02.09-module-practice/learn-metadata.json" },
+      { "$ref": "./02.09.01-lab-basic-switch-and-end-device-configuration/learn-metadata.json" },
+      { "$ref": "./02.09.02-lab-basic-switch-and-end-device-configuration-physical-mode/learn-metadata.json" },
+      { "$ref": "./02.10-summary/learn-metadata.json" }
+    ]
+  }

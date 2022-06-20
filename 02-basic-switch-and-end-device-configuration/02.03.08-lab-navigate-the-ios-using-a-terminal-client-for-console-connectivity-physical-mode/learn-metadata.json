@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: навигация по интерфейсу коммандной строки Cisco  IOS с помощью Tera Term при консольном подключении",
+    "shortName": "lab-2.3.8",
+    "materialType": "lab",
+    "description": "В этой лабораторной работе вы выполните следующие задачи.\n\n* Часть 1: Получение доступа к коммутатору Cisco через консольный порт последовательного подключения\n* Часть 2: Отображение и настройка основных параметров устройства\n* Часть 3: Получение доступа к маршрутизатору Cisco с помощью консольного кабеля mini-USB (дополнительно)",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}

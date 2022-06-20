@@ -1,0 +1,11 @@
+{
+    "title": "Интерфейс командной строки",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H14M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "assets": { "$ref": "./assets" }
+}
