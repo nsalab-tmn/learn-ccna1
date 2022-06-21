@@ -4,6 +4,7 @@
   "tags": { "$ref": "./material-tags.json" },
   "materials": [
     { "$ref": "./01-networking-today/learn-metadata.json" },
-    { "$ref": "./02-basic-switch-and-end-device-configuration/learn-metadata.json" }
+    { "$ref": "./02-basic-switch-and-end-device-configuration/learn-metadata.json" },
+    { "$ref": "./03-protocols-and-models/learn-metadata.json" }
   ]
 }
