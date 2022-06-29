@@ -5,10 +5,7 @@
     "description": "При работе в программе Packet Tracer (в лабораторной среде или в корпоративных условиях) необходимо уметь правильно выбирать кабели и подключать устройства. В ходе данного упражнения будут рассмотрены: конфигурирование устройств в программе Packet Tracer, выбор кабеля в зависимости от конфигурации, а также подключение устройств. Также в этом упражнении будет подробно рассмотрено физическое представление сети в программе Packet Tracer.",
     "difficulty": 1,
     "duration": "PT0H22M",
-    "tags": [
-        "Cisco",
-        "Packet Tracer"
-    ],
+    "tags": { "$ref": "../../material-tags.json" },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -24,7 +21,7 @@
         }
     },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "deploymentPath": "deploy",
-    "assetsPath": "assets"
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
 }

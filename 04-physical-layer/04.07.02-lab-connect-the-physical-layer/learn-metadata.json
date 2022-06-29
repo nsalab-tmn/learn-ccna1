@@ -5,10 +5,7 @@
     "description": "В этом упражнении вы изучите различные параметры межсетевых устройств. Вам также нужно будет определить, настройка каких параметров позволяет установить надежное соединение при подключении нескольких устройств. В завершении вы добавите соответствующие модули и подключите устройства.",
     "difficulty": 1,
     "duration": "PT0H22M",
-    "tags": [
-        "Cisco",
-        "Packet Tracer"
-    ],
+    "tags": { "$ref": "../../material-tags.json" },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -24,7 +21,7 @@
         }
     },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "deploymentPath": "deploy",
-    "assetsPath": "assets"
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
 }

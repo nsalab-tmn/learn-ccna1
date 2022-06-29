@@ -161,4 +161,4 @@
 
 2.  Откройте вкладку **Logical Workspace** (Логическая рабочая область), чтобы вернуться к логической топологии.
 
-[Скачать файл Packet Tracer для локального запуска](./assets/4.6.5-packet-tracer---connect-a-wired-and-wireless-lan_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/4.6.5-lab.pka)
