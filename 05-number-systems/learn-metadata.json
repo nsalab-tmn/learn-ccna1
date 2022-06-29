@@ -1,0 +1,11 @@
+{
+    "title": "Системы счисления",
+    "materialType": "course",
+    "tags": { "$ref": "../material-tags.json" },
+    "materials": [
+      { "$ref": "./05.00-introduction/learn-metadata.json" },
+      { "$ref": "./05.01-binary-number-system/learn-metadata.json" },
+      { "$ref": "./05.02-hexadecimal-number-system/learn-metadata.json" },
+      { "$ref": "./05.03-summary/learn-metadata.json" }
+    ]
+  }
