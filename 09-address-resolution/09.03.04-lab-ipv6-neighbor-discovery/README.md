@@ -230,4 +230,4 @@
 
     **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/9.3.4-packet-tracer---ipv6-neighbor-discovery_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/9.3.4-lab.pka)

@@ -182,4 +182,4 @@
 
     **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/9.1.3-packet-tracer---identify-mac-and-ip-addresses_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/9.1.3-lab.pka)

@@ -182,4 +182,4 @@
 
     **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/9.2.9-packet-tracer---examine-the-arp-table_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/9.2.9-lab.pka)

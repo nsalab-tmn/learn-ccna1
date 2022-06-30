@@ -5,10 +5,6 @@
     "description": "Чтобы устройство взаимодействует с другим устройством, должен быть известен MAC-адрес устройства назначения. С IPv6 процесс, называемый Обнаружение соседних IPv6 устройств, отвечает за определение MAC-адреса назначения. Вы будете собирать информацию PDU в режиме моделирования, чтобы лучше понять процесс. Для этого задания Packet Tracer нет оценки.",
     "difficulty": 1,
     "duration": "PT0H22M",
-    "tags": [
-        "Cisco",
-        "Packet Tracer"
-    ],
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -24,7 +20,8 @@
         }
     },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "deploymentPath": "deploy",
-    "assetsPath": "assets"
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" },
+    "tags": { "$ref": "../../material-tags.json" }
 }

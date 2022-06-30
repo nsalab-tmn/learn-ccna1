@@ -5,10 +5,6 @@
     "description": "В рамках данного упражнения Packet Tracer необходимо решить следующие задачи.\n\n* Сбор информации PDU для локальной сети связи\n* Сбор информации PDU для удаленной сетевой связи\n\nЭто упражнение оптимизировано для просмотра единиц данных протокола (PDU). Устройства уже настроены. Вам необходимо в режиме моделирования собрать сведения о единице данных протокола (PDU), а также ответить на ряд вопросов о собираемых данных.",
     "difficulty": 1,
     "duration": "PT0H22M",
-    "tags": [
-        "Cisco",
-        "Packet Tracer"
-    ],
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -24,7 +20,8 @@
         }
     },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "deploymentPath": "deploy",
-    "assetsPath": "assets"
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" },
+    "tags": { "$ref": "../../material-tags.json" }
 }

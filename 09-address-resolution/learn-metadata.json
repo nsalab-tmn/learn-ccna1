@@ -1,0 +1,15 @@
+{
+    "title": "Разрешение адресов",
+    "materialType": "course",
+    "tags": { "$ref": "../material-tags.json" },
+    "materials": [
+      { "$ref": "./09.00-introduction/learn-metadata.json" },
+      { "$ref": "./09.01-mac-and-ip/learn-metadata.json" },
+      { "$ref": "./09.01.03-lab-identify-mac-and-ip-addresses/learn-metadata.json" },
+      { "$ref": "./09.02-arp/learn-metadata.json" },
+      { "$ref": "./09.02.09-lab-examine-the-arp-table/learn-metadata.json" },
+      { "$ref": "./09.03-neighbor-discovery/learn-metadata.json" },
+      { "$ref": "./09.03.04-lab-ipv6-neighbor-discovery/learn-metadata.json" },
+      { "$ref": "./09.04-summary/learn-metadata.json" }
+    ]
+  }
