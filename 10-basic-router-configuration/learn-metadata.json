@@ -1,0 +1,18 @@
+{
+    "title": "Базовая конфигурация маршрутизатора",
+    "materialType": "course",
+    "tags": { "$ref": "../material-tags.json" },
+    "materials": [
+      { "$ref": "./10.00-introduction/learn-metadata.json" },
+      { "$ref": "./10.01-configure-initial-router-settings/learn-metadata.json" },
+      { "$ref": "./10.01.04-lab-configure-initial-router-settings/learn-metadata.json" },
+      { "$ref": "./10.02-configure-interfaces/learn-metadata.json" },
+      { "$ref": "./10.03-configure-the-default-gateway/learn-metadata.json" },
+      { "$ref": "./10.03.04-lab-connect-a-router-to-a-lan/learn-metadata.json" },
+      { "$ref": "./10.03.05-lab-troubleshoot-default-gateway-issues/learn-metadata.json" },
+      { "$ref": "./10.04-module-practice/learn-metadata.json" },
+      { "$ref": "./10.04.03-lab-basic-device-configuration/learn-metadata.json" },
+      { "$ref": "./10.04.04-lab-build-a-switch-and-router-network-physical-mode/learn-metadata.json" },
+      { "$ref": "./10.05-summary/learn-metadata.json" }
+    ]
+  }

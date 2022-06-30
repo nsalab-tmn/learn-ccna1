@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: создание сети, состоящей из коммутатора и маршрутизатора",
+    "shortName": "lab-10.4.4",
+    "materialType": "lab",
+    "description": "В этой лабораторной работе вы выполните следующие задачи.\n\n* Часть 1: Настройка топологии и инициализация устройств\n* Часть 2: Настройка устройств и проверка подключения\n* Часть 3: Отображение сведений об устройстве",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" },
+    "tags": { "$ref": "../../material-tags.json" }
+}
