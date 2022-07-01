@@ -1,0 +1,21 @@
+{
+    "title": "IPv6-адресация",
+    "materialType": "course",
+    "tags": { "$ref": "../material-tags.json" },
+    "materials": [
+      { "$ref": "./12.00-introduction/learn-metadata.json" },
+      { "$ref": "./12.01-ipv4-issues/learn-metadata.json" },
+      { "$ref": "./12.02-ipv6-addressing/learn-metadata.json" },
+      { "$ref": "./12.03-ipv6-address-types/learn-metadata.json" },
+      { "$ref": "./12.04-gua-and-lla-static-configuration/learn-metadata.json" },
+      { "$ref": "./12.05-dynamic-addresing-for-ipv6-guas/learn-metadata.json" },
+      { "$ref": "./12.06-dynamic-addresing-for-ipv6-llas/learn-metadata.json" },
+      { "$ref": "./12.06.06-lab-configure-ipv6-addressing/learn-metadata.json" },
+      { "$ref": "./12.07-ipv6-multicast-addresses/learn-metadata.json" },
+      { "$ref": "./12.08-subnet-an-ipv6-network/learn-metadata.json" },
+      { "$ref": "./12.09-module-practice/learn-metadata.json" },
+      { "$ref": "./12.09.01-lab-implement-a-subnetted-ipv6-addressing-scheme/learn-metadata.json" },
+      { "$ref": "./12.09.02-lab-configure-ipv6-addresses-on-network-devices-physical-mode/learn-metadata.json" },
+      { "$ref": "./12.10-summary/learn-metadata.json" }
+    ]
+  }

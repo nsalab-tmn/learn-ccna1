@@ -1,0 +1,28 @@
+{
+    "title": "Работа в симуляторе: настройка IPv6-адресации",
+    "shortName": "lab-12.6.6",
+    "materialType": "lab",
+    "description": "В этом упражнении вам предстоит отработать настройку IPv6-адресов на маршрутизаторе, серверах и клиентских узлах. Кроме того, вы проверите выполнение IPv6-адресации.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" },
+    "tags": { "$ref": "../../material-tags.json" }
+}

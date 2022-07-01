@@ -13,6 +13,7 @@
     { "$ref": "./08-network-layer/learn-metadata.json" },
     { "$ref": "./09-address-resolution/learn-metadata.json" },
     { "$ref": "./10-basic-router-configuration/learn-metadata.json" },
-    { "$ref": "./11-ipv4-addressing/learn-metadata.json" }
+    { "$ref": "./11-ipv4-addressing/learn-metadata.json" },
+    { "$ref": "./12-ipv6-addressing/learn-metadata.json" }
   ]
 }
