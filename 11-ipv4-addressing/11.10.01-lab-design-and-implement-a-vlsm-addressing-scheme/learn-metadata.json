@@ -1,0 +1,27 @@
+{
+    "title": "Работа в симуляторе: разработка и реализация схемы адресации VLSM",
+    "shortName": "lab-11.10.1",
+    "materialType": "lab",
+    "description": "В этой лабораторной работе вы разработаете схему адресации VLSM с учетом сетевого адреса и требований к узлу. Вы будете настраивать адресации на маршрутизаторах, коммутаторах и узлах сети.\n\n* Разработайте схему IP-адресации VLSM с учетом требований.\n* Настройка адресации на сетевых устройствах и узлах.\n* Проверьте IP-подключение.\n* Поиск и устранение неполадок подключения",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" },
+    "tags": { "$ref": "../../material-tags.json" }
+}

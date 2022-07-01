@@ -1,0 +1,11 @@
+{
+    "title": "Разделение сети IPv4 на подсети",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 3,
+    "duration": "PT0H59M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "assets": { "$ref": "./assets" }
+}

@@ -12,6 +12,7 @@
     { "$ref": "./07-ethernet-switching/learn-metadata.json" },
     { "$ref": "./08-network-layer/learn-metadata.json" },
     { "$ref": "./09-address-resolution/learn-metadata.json" },
-    { "$ref": "./10-basic-router-configuration/learn-metadata.json" }
+    { "$ref": "./10-basic-router-configuration/learn-metadata.json" },
+    { "$ref": "./11-ipv4-addressing/learn-metadata.json" }
   ]
 }
