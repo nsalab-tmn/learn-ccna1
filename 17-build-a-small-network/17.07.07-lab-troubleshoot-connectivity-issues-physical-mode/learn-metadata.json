@@ -1,0 +1,35 @@
+{
+    "title": "Лабораторная работа: поиск и устранение неполадок подключения. Режим симуляции физического оборудования",
+    "shortName": "lab-17.7.7",
+    "materialType": "lab",
+    "description": "Выполняя эту лабораторную работу, вы решите следующие задачи:\n\n* Определение проблемы\n* Реализация изменений в сети\n* Проверка полной функциональности\n* Документирование результатов проделанной работы и изменений в конфигурации",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    }
+}

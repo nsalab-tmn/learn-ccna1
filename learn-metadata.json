@@ -18,6 +18,7 @@
     { "$ref": "./13-icmp/learn-metadata.json" },
     { "$ref": "./14-transport-layer/learn-metadata.json" },
     { "$ref": "./15-application-layer/learn-metadata.json" },
-    { "$ref": "./16-network-security-fundamentals/learn-metadata.json" }
+    { "$ref": "./16-network-security-fundamentals/learn-metadata.json" },
+    { "$ref": "./17-build-a-small-network/learn-metadata.json" }
   ]
 }

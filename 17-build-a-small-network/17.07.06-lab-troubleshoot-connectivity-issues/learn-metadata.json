@@ -1,0 +1,35 @@
+{
+    "title": "Работа в симуляторе: поиск и устранение неполадок подключения",
+    "shortName": "lab-17.7.6",
+    "materialType": "lab",
+    "description": "Цель данного упражнения в программе Packet Tracer — найти неисправности подключения и по возможности устранить их. Если проблемы с подключением устранить не удается, подробно задокументируйте их для дальнейшей эскалации.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    }
+}

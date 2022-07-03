@@ -1,0 +1,57 @@
+{
+    "title": "Организация небольшой сети",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./17.00-introduction/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.01-devices-in-a-small-network/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.02-small-network-applications-and-protocols/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.03-scale-to-larger-networks/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.04-verify-connectivity/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.05-host-and-ios-commands/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.05.09-lab-interpret-show-command-output/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.06-troubleshooting-methodologies/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.07-troubleshooting-scenarios/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.07.06-lab-troubleshoot-connectivity-issues/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.07.07-lab-troubleshoot-connectivity-issues-physical-mode/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.08-module-practice/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.08.01-lab-design-and-build-a-small-network-physical-mode/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.08.02-lab-skills-integration-challenge/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.08.03-lab-troubleshooting-challenge/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.09-summary/learn-metadata.json"
+        }
+    ]
+}
