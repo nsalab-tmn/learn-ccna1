@@ -151,4 +151,4 @@
 
 14. Сохраните конфигурацию в NVRAM.
 
-[Скачать файл Packet Tracer для локального запуска](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/16.4.6-lab.pka)

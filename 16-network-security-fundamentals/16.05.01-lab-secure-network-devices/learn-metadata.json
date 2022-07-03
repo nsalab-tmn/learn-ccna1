@@ -5,10 +5,9 @@
     "description": "В этом задании вы будете настраивать маршрутизатор и коммутатор на основе списка требований.",
     "difficulty": 1,
     "duration": "PT0H22M",
-    "tags": [
-        "Cisco",
-        "Packet Tracer"
-    ],
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -24,7 +23,13 @@
         }
     },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "deploymentPath": "deploy",
-    "assetsPath": "assets"
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    }
 }
