@@ -1,0 +1,35 @@
+{
+    "title": "Работа в симуляторе: обмен данными с использованием TCP и UDP",
+    "shortName": "lab-14.8.1",
+    "materialType": "lab",
+    "description": "В этом упражнении вы можете изучить функциональные особенности протоколов TCP и UDP, а также возможности мультиплексирования и функцию номеров портов при определении локального приложения, запросившего данные или отправляющего их.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    }
+}

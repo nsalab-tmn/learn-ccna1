@@ -1,0 +1,42 @@
+{
+    "title": "Транспортный уровень",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./14.00-introduction/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.01-transportation-of-data/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.02-tcp-overview/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.03-udp-overview/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.04-port-numbers/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.05-tcp-communication-process/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.06-reliability-and-flow-control/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.07-udp-communication/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.08-module-practice/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.08.01-lab-tcp-and-udp-communications/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.09-summary/learn-metadata.json"
+        }
+    ]
+}
