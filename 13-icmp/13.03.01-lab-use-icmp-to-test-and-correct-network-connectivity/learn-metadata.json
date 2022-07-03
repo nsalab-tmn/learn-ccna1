@@ -5,10 +5,9 @@
     "description": "В этой лабораторной работе вы будете использовать ICMP для проверки сетевого подключения и обнаружения сетевых проблем. Вы также исправите простые проблемы конфигурации и восстановите подключение к сети.\n\nИспользуйте ICMP для поиска проблем с подключением.\n\nНастройте сетевые устройства для устранения проблем с подключением.",
     "difficulty": 1,
     "duration": "PT0H22M",
-    "tags": [
-        "Cisco",
-        "Packet Tracer"
-    ],
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -24,7 +23,13 @@
         }
     },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "deploymentPath": "deploy",
-    "assetsPath": "assets"
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    }
 }

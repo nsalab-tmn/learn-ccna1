@@ -4,11 +4,14 @@
     "description": "",
     "difficulty": 3,
     "duration": "PT0H1M",
-    "tags": [
-        "Network",
-        "Cisco"
-    ],
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "testProjectPath": "./README.md",
-    "assetsPath": "assets"
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

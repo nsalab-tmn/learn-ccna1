@@ -148,4 +148,4 @@
 
     **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/13.2.6-packet-tracer---verify-ipv4-and-ipv6-addressing_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/13.2.6-lab.pka)

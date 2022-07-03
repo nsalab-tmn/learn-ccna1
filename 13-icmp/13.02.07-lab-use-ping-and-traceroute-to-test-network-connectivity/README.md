@@ -196,4 +196,4 @@
 
 **Шаг 6. Запишите выбранное решение.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/13.2.7-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/13.2.7-lab.pka)

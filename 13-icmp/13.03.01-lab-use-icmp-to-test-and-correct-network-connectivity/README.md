@@ -55,4 +55,4 @@
 
 -   Найдите конкретные ошибки и исправьте их.
 
-[Скачать файл Packet Tracer для локального запуска](./assets/13.3.1-packet-tracer---use-icmp-to-test-and-correct-network-connectivity_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/13.3.1-lab.pka)

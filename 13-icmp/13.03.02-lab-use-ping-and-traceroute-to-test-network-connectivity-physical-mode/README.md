@@ -344,4 +344,4 @@ S1# traceroute 2001:db8:acad:200::226
 
     **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/13.3.2-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity---physical-mode_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/13.3.2-lab.pka)
