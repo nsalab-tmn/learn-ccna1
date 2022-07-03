@@ -1,0 +1,30 @@
+{
+    "title": "Уровень приложений",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./15.00-introduction/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.01-application-presentation-and-session/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.02-peer-to-peer/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.03-web-and-email-protocols/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.04-ip-addressing-services/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.05-file-sharing-services/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.06-summary/learn-metadata.json"
+        }
+    ]
+}
