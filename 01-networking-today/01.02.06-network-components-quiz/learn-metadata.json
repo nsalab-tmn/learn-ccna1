@@ -6,7 +6,7 @@
     "duration": "PT0H30M",
     "tags": { "$ref": "../../material-tags.json" },
     "skills": {},
-    "passingScore": 0,
+    "passingScore": 100,
     "assets": { "$ref": "./assets" },
     "questions": [
         {

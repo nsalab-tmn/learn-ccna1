@@ -1,22 +1,69 @@
 {
     "title": "Современные сетевые технологии",
     "materialType": "course",
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
     "materials": [
-      { "$ref": "./01.00-introduction/learn-metadata.json" },
-      { "$ref": "./01.00.05-lab-logical-and-physical-mode-exploration/learn-metadata.json" },
-      { "$ref": "./01.01-networks-affect-our-lives/learn-metadata.json" },
-      { "$ref": "./01.02-network-components/learn-metadata.json" },
-      { "$ref": "./01.02.06-network-components-quiz/learn-metadata.json" },
-      { "$ref": "./01.03-network-topologies/learn-metadata.json" },
-      { "$ref": "./01.04-network-types/learn-metadata.json" },
-      { "$ref": "./01.05-internet-connection/learn-metadata.json" },
-      { "$ref": "./01.05.07-lab-network-representation/learn-metadata.json" },
-      { "$ref": "./01.06-redundant-networks/learn-metadata.json" },
-      { "$ref": "./01.07-network-trends/learn-metadata.json" },
-      { "$ref": "./01.08-network-security/learn-metadata.json" },
-      { "$ref": "./01.09-it-specialist/learn-metadata.json" },
-      { "$ref": "./01.10-summary/learn-metadata.json" },
-      { "$ref": "./01.10.02-quiz/learn-metadata.json" }
+        {
+            "$ref": "01.00-introduction/learn-metadata.json"
+        },
+        {
+            "$ref": "01.00.05-lab-logical-and-physical-mode-exploration/learn-metadata.json"
+        },
+        {
+            "$ref": "01.01-networks-affect-our-lives/learn-metadata.json"
+        },
+        {
+            "$ref": "01.02-network-components/learn-metadata.json"
+        },
+        {
+            "$ref": "01.02.06-network-components-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "01.03-network-topologies/learn-metadata.json"
+        },
+        {
+            "$ref": "01.03.03-network-topologies-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "01.04-network-types/learn-metadata.json"
+        },
+        {
+            "$ref": "01.04.05-network-types-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "01.05-internet-connection/learn-metadata.json"
+        },
+        {
+            "$ref": "01.05.07-lab-network-representation/learn-metadata.json"
+        },
+        {
+            "$ref": "01.06-redundant-networks/learn-metadata.json"
+        },
+        {
+            "$ref": "01.06.06-redundant-networks-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "01.07-network-trends/learn-metadata.json"
+        },
+        {
+            "$ref": "01.07.10-network-trends-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "01.08-network-security/learn-metadata.json"
+        },
+        {
+            "$ref": "01.08.03-network-security-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "01.09-it-specialist/learn-metadata.json"
+        },
+        {
+            "$ref": "01.10-summary/learn-metadata.json"
+        },
+        {
+            "$ref": "01.10.02-quiz/learn-metadata.json"
+        }
     ]
-  }
+}
