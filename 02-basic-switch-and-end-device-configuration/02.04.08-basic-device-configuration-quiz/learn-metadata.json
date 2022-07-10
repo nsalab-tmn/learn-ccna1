@@ -1,0 +1,137 @@
+{
+    "title": "Тест на понимание темы: Базовая настройка устройств",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какая  команда испльзуется, чтобы назначить имя «Sw-Floor-2» коммутатору?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "hostname Sw-Floor-2",
+                    "correct": true
+                },
+                {
+                    "answer": "host name Sw-Floor-2",
+                    "correct": false,
+                    "comment": "Командой глобальной конфигурации для установки имени хоста на устройстве Cisco является ``hostname``. То есть, в этом примере полная команда ``Switch(config)# hostname Sw-Floor-2``."
+                },
+                {
+                    "answer": "name Sw-Floor-2",
+                    "correct": false,
+                    "comment": "Командой глобальной конфигурации для установки имени хоста на устройстве Cisco является ``hostname``. То есть, в этом примере полная команда ``Switch(config)# hostname Sw-Floor-2``."
+                }
+            ]
+        },
+        {
+            "question": "Как обеспечить безопасный доступ к привилегированному режиму EXEC на коммутаторе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable class",
+                    "correct": false,
+                    "comment": "Защита доступа к режиму EXEC на коммутаторе Cisco выполняется командой ``enable secret``, за которой следует пароль. В этом примере команда ``Switch(config)# enable secret class``."
+                },
+                {
+                    "answer": "secret class",
+                    "correct": false,
+                    "comment": "Защита доступа к режиму EXEC на коммутаторе Cisco выполняется командой ``enable secret``, за которой следует пароль. В этом примере команда ``Switch(config)# enable secret class``."
+                },
+                {
+                    "answer": "enable secret class",
+                    "correct": true
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": false,
+                    "comment": "Защита доступа к режиму EXEC на коммутаторе Cisco выполняется командой ``enable secret``, за которой следует пароль. В этом примере команда ``Switch(config)# enable secret class``."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда включает аутентификацию по паролю для доступа пользователя в режиме EXEC на коммутаторе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable secret",
+                    "correct": false,
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды ``login``, введенной в режиме линии (Line mode). Например: ``Switch(config-line)# login``."
+                },
+                {
+                    "answer": "login",
+                    "correct": true
+                },
+                {
+                    "answer": "secret",
+                    "correct": false,
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды ``login``, введенной в режиме линии (Line mode). Например: ``Switch(config-line)# login``."
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": false,
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды ``login``, введенной в режиме линии (Line mode). Например: ``Switch(config-line)# login``."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда шифрует все незашифрованные пароли доступа на коммутаторе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable secret",
+                    "correct": false,
+                    "comment": "Команда ``service password-encryption``, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли."
+                },
+                {
+                    "answer": "login",
+                    "correct": false,
+                    "comment": "Команда ``service password-encryption``, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли."
+                },
+                {
+                    "answer": "secret",
+                    "correct": false,
+                    "comment": "Команда ``service password-encryption``, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли."
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какая команда предназначена для настройки баннера, который будет отображаться при подключении к коммутатору?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "banner $ Keep out $",
+                    "correct": false,
+                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору ``Cisco Switch(config)# banner motd $ Keep out $``"
+                },
+                {
+                    "answer": "banner motd $ Keep out $",
+                    "correct": true
+                },
+                {
+                    "answer": "display $ Keep out $",
+                    "correct": false,
+                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору ``Cisco Switch(config)# banner motd $ Keep out $``"
+                },
+                {
+                    "answer": "login banner $ Keep out $",
+                    "correct": false,
+                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору ``Cisco Switch(config)# banner motd $ Keep out $``"
+                }
+            ]
+        }
+    ]
+}
