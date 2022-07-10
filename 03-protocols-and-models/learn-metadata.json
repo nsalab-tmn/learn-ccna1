@@ -1,18 +1,60 @@
 {
     "title": "Протоколы и модели",
     "materialType": "course",
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
     "materials": [
-      { "$ref": "./03.00-introduction/learn-metadata.json" },
-      { "$ref": "./03.01-the-rules/learn-metadata.json" },
-      { "$ref": "./03.02-protocols/learn-metadata.json" },
-      { "$ref": "./03.03-protocol-suites/learn-metadata.json" },
-      { "$ref": "./03.04-standards-organizations/learn-metadata.json" },
-      { "$ref": "./03.05-reference-models/learn-metadata.json" },
-      { "$ref": "./03.05.05-lab-investigate-the-tcp-ip-and-osi-models-in-action/learn-metadata.json" },
-      { "$ref": "./03.06-data-encapsulation/learn-metadata.json" },
-      { "$ref": "./03.07-data-access/learn-metadata.json" },
-      { "$ref": "./03.08-summary/learn-metadata.json" },
-      { "$ref": "./03.08.02-quiz/learn-metadata.json" }
+        {
+            "$ref": "03.00-introduction/learn-metadata.json"
+        },
+        {
+            "$ref": "03.01-the-rules/learn-metadata.json"
+        },
+        {
+            "$ref": "03.01.12-the-rules-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "03.02-protocols/learn-metadata.json"
+        },
+        {
+            "$ref": "03.02.04-protocols-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "03.03-protocol-suites/learn-metadata.json"
+        },
+        {
+            "$ref": "03.03.06-protocol-suites-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "03.04-standards-organizations/learn-metadata.json"
+        },
+        {
+            "$ref": "03.04.05-standards-organizations-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "03.05-reference-models/learn-metadata.json"
+        },
+        {
+            "$ref": "03.05.05-lab-investigate-the-tcp-ip-and-osi-models-in-action/learn-metadata.json"
+        },
+        {
+            "$ref": "03.06-data-encapsulation/learn-metadata.json"
+        },
+        {
+            "$ref": "03.06.06-data-encapsulation-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "03.07-data-access/learn-metadata.json"
+        },
+        {
+            "$ref": "03.07.11-data-access-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "03.08-summary/learn-metadata.json"
+        },
+        {
+            "$ref": "03.08.02-quiz/learn-metadata.json"
+        }
     ]
-  }
+}
