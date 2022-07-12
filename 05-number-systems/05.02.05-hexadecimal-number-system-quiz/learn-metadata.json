@@ -1,0 +1,117 @@
+{
+    "title": "Тест на понимание темы: Шестнадцатеричная система счисления",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какой шестнадцатеричный эквивалент 202?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "B10",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 202 является CA."
+                },
+                {
+                    "answer": "BA",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 202 является CA."
+                },
+                {
+                    "answer": "C10",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 202 является CA."
+                },
+                {
+                    "answer": "CA",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой шестнадцатеричный эквивалент 254?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "EA",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 254 является FE."
+                },
+                {
+                    "answer": "ED ",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 254 является FE."
+                },
+                {
+                    "answer": "Часто задаваемые",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 254 является FE."
+                },
+                {
+                    "answer": "Выездной технический специалист",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой десятичный эквивалент A9?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "168",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент A9 равен 169."
+                },
+                {
+                    "answer": "169 ",
+                    "correct": true
+                },
+                {
+                    "answer": "170",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент A9 равен 169."
+                },
+                {
+                    "answer": "171",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент A9 равен 169."
+                }
+            ]
+        },
+        {
+            "question": "Что из перечисленного является десятичным эквивалентом 7D? ",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "124",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент 7D равен 125."
+                },
+                {
+                    "answer": "125",
+                    "correct": true
+                },
+                {
+                    "answer": "126",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент 7D равен 125."
+                },
+                {
+                    "answer": "127",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент 7D равен 125."
+                }
+            ]
+        }
+    ]
+}
