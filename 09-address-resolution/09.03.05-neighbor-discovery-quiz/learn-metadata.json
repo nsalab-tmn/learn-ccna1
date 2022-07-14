@@ -1,0 +1,85 @@
+{
+    "title": "Тест на понимание темы: Обнаружение соседних IPv6 устройств",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какие два сообщения ICMPv6 используются в SLAAC?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Сообщение «Ответ соседнего узла» (Neighbor Advertisement, NA).",
+                    "correct": false,
+                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к маршрутизатору» и «Ответ маршрутизатора»."
+                },
+                {
+                    "answer": "Сообщение «Запрос соседнего узла» (Neighbor Solicitation, NS)",
+                    "correct": false,
+                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к маршрутизатору» и «Ответ маршрутизатора»."
+                },
+                {
+                    "answer": "Сообщение «Ответ маршрутизатора» (Router Advertisement, RA)",
+                    "correct": true
+                },
+                {
+                    "answer": "Сообщение «Запрос к маршрутизатору» (Router Solicitation, RS)",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие два сообщения ICMPv6 используются для определения MAC-адреса известного IPv6 адреса?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Сообщение «Ответ соседнего узла» (Neighbor Advertisement, NA).",
+                    "correct": true
+                },
+                {
+                    "answer": "Сообщение «Запрос соседнего узла» (Neighbor Solicitation, NS)",
+                    "correct": true
+                },
+                {
+                    "answer": "Маршрутизатор объявляет",
+                    "correct": false,
+                    "comment": "Два  сообщения ICMPv6, используемые для определения MAC-адреса известного  IPv6 адреса, — это Сообщение «Запрос соседнего узла» и «Ответ соседнего  узла»."
+                },
+                {
+                    "answer": "Запрашивает у маршрутизатора",
+                    "correct": false,
+                    "comment": "Два  сообщения ICMPv6, используемые для определения MAC-адреса известного  IPv6 адреса, — это Сообщение «Запрос соседнего узла» и «Ответ соседнего  узла»."
+                }
+            ]
+        },
+        {
+            "question": "Какой тип рассылки используется для отправки сообщения о приглашении соседей ICMPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "одноадресная рассылка",
+                    "correct": false,
+                    "comment": "Сообщения о приглашении соседей ICMPv6 отправляются в виде многоадресной рассылки."
+                },
+                {
+                    "answer": "групповая",
+                    "correct": true
+                },
+                {
+                    "answer": "широковещательная",
+                    "correct": false,
+                    "comment": "Сообщения о приглашении соседей ICMPv6 отправляются в виде многоадресной рассылки."
+                }
+            ]
+        }
+    ]
+}
