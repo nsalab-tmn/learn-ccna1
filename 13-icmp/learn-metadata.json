@@ -6,31 +6,37 @@
     },
     "materials": [
         {
-            "$ref": "./13.00-introduction/learn-metadata.json"
+            "$ref": "13.00-introduction/learn-metadata.json"
         },
         {
-            "$ref": "./13.01-icmp-messages/learn-metadata.json"
+            "$ref": "13.01-icmp-messages/learn-metadata.json"
         },
         {
-            "$ref": "./13.02-ping-and-traceroute-testing/learn-metadata.json"
+            "$ref": "13.01.06-icmp-messages-quiz/learn-metadata.json"
         },
         {
-            "$ref": "./13.02.06-lab-verify-ipv4-and-ipv6-addressing/learn-metadata.json"
+            "$ref": "13.02-ping-and-traceroute-testing/learn-metadata.json"
         },
         {
-            "$ref": "./13.02.07-lab-use-ping-and-traceroute-to-test-network-connectivity/learn-metadata.json"
+            "$ref": "13.02.06-lab-verify-ipv4-and-ipv6-addressing/learn-metadata.json"
         },
         {
-            "$ref": "./13.03-module-practice/learn-metadata.json"
+            "$ref": "13.02.07-lab-use-ping-and-traceroute-to-test-network-connectivity/learn-metadata.json"
         },
         {
-            "$ref": "./13.03.01-lab-use-icmp-to-test-and-correct-network-connectivity/learn-metadata.json"
+            "$ref": "13.03-module-practice/learn-metadata.json"
         },
         {
-            "$ref": "./13.03.02-lab-use-ping-and-traceroute-to-test-network-connectivity-physical-mode/learn-metadata.json"
+            "$ref": "13.03.01-lab-use-icmp-to-test-and-correct-network-connectivity/learn-metadata.json"
         },
         {
-            "$ref": "./13.04-summary/learn-metadata.json"
+            "$ref": "13.03.02-lab-use-ping-and-traceroute-to-test-network-connectivity-physical-mode/learn-metadata.json"
+        },
+        {
+            "$ref": "13.03.04-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "13.04-summary/learn-metadata.json"
         }
     ]
 }
