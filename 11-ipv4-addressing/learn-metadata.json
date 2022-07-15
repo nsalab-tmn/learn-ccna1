@@ -1,25 +1,72 @@
 {
     "title": "IPv4-адресация",
     "materialType": "course",
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
     "materials": [
-      { "$ref": "./11.00-introduction/learn-metadata.json" },
-      { "$ref": "./11.01-ipv4-address-structure/learn-metadata.json" },
-      { "$ref": "./11.02-ipv4-unicast-broadcast-and-multicast/learn-metadata.json" },
-      { "$ref": "./11.03-types-of-ipv4-addresses/learn-metadata.json" },
-      { "$ref": "./11.03.08-quiz/learn-metadata.json" },
-      { "$ref": "./11.04-network-segmentation/learn-metadata.json" },
-      { "$ref": "./11.05-subnet-an-ipv4-network/learn-metadata.json" },
-      { "$ref": "./11.05.05-lab-subnet-an-ipv4-network/learn-metadata.json" },
-      { "$ref": "./11.06-subnet-a-16-and-8-prefix/learn-metadata.json" },
-      { "$ref": "./11.07-subnet-to-meet-requirements/learn-metadata.json" },
-      { "$ref": "./11.07.05-lab-subnetting-scenario/learn-metadata.json" },
-      { "$ref": "./11.08-variable-length-subnet-masking/learn-metadata.json" },
-      { "$ref": "./11.09-structured-design/learn-metadata.json" },
-      { "$ref": "./11.09.03-lab-vlsm-design-and-implementation-practice/learn-metadata.json" },
-      { "$ref": "./11.10-module-practice/learn-metadata.json" },
-      { "$ref": "./11.10.01-lab-design-and-implement-a-vlsm-addressing-scheme/learn-metadata.json" },
-      { "$ref": "./11.10.02-lab-design-and-implement-a-vlsm-addressing-scheme-physical-mode/learn-metadata.json" },
-      { "$ref": "./11.11-summary/learn-metadata.json" }
+        {
+            "$ref": "11.00-introduction/learn-metadata.json"
+        },
+        {
+            "$ref": "11.01-ipv4-address-structure/learn-metadata.json"
+        },
+        {
+            "$ref": "11.01.08-ipv4-address-structure-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "11.02-ipv4-unicast-broadcast-and-multicast/learn-metadata.json"
+        },
+        {
+            "$ref": "11.03-types-of-ipv4-addresses/learn-metadata.json"
+        },
+        {
+            "$ref": "11.03.08-types-of-ipv4-addresses-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "11.04-network-segmentation/learn-metadata.json"
+        },
+        {
+            "$ref": "11.04.04-network-segmentation-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "11.05-subnet-an-ipv4-network/learn-metadata.json"
+        },
+        {
+            "$ref": "11.05.05-lab-subnet-an-ipv4-network/learn-metadata.json"
+        },
+        {
+            "$ref": "11.06-subnet-a-16-and-8-prefix/learn-metadata.json"
+        },
+        {
+            "$ref": "11.07-subnet-to-meet-requirements/learn-metadata.json"
+        },
+        {
+            "$ref": "11.07.05-lab-subnetting-scenario/learn-metadata.json"
+        },
+        {
+            "$ref": "11.08-variable-length-subnet-masking/learn-metadata.json"
+        },
+        {
+            "$ref": "11.09-structured-design/learn-metadata.json"
+        },
+        {
+            "$ref": "11.09.03-lab-vlsm-design-and-implementation-practice/learn-metadata.json"
+        },
+        {
+            "$ref": "11.10-module-practice/learn-metadata.json"
+        },
+        {
+            "$ref": "11.10.01-lab-design-and-implement-a-vlsm-addressing-scheme/learn-metadata.json"
+        },
+        {
+            "$ref": "11.10.02-lab-design-and-implement-a-vlsm-addressing-scheme-physical-mode/learn-metadata.json"
+        },
+        {
+            "$ref": "11.10.04-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "11.11-summary/learn-metadata.json"
+        }
     ]
-  }
+}
