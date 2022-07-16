@@ -12,10 +12,19 @@
             "$ref": "./16.01-security-threats-and-vulnerabilities/learn-metadata.json"
         },
         {
+            "$ref": "./16.01.04-security-threats-and-vulnerabilities-quiz/learn-metadata.json"
+        },
+        {
             "$ref": "./16.02-network-attacks/learn-metadata.json"
         },
         {
+            "$ref": "./16.02.05-network-attacks-quiz/learn-metadata.json"
+        },
+        {
             "$ref": "./16.03-network-attack-mitigation/learn-metadata.json"
+        },
+        {
+            "$ref": "./16.03.08-network-attack-mitigation-quiz/learn-metadata.json"
         },
         {
             "$ref": "./16.04-device-security/learn-metadata.json"
@@ -28,6 +37,9 @@
         },
         {
             "$ref": "./16.05.01-lab-secure-network-devices/learn-metadata.json"
+        },
+        {
+            "$ref": "./16.05.04-quiz/learn-metadata.json"
         },
         {
             "$ref": "./16.06-summary/learn-metadata.json"
