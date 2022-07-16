@@ -6,25 +6,25 @@
     },
     "materials": [
         {
-            "$ref": "05.00-introduction/learn-metadata.json"
+            "$ref": "./05.00-introduction/learn-metadata.json"
         },
         {
-            "$ref": "05.01-binary-number-system/learn-metadata.json"
+            "$ref": "./05.01-binary-number-system/learn-metadata.json"
         },
         {
-            "$ref": "05.01.04-binary-number-system-quiz/learn-metadata.json"
+            "$ref": "./05.01.04-binary-number-system-quiz/learn-metadata.json"
         },
         {
-            "$ref": "05.02-hexadecimal-number-system/learn-metadata.json"
+            "$ref": "./05.02-hexadecimal-number-system/learn-metadata.json"
         },
         {
-            "$ref": "05.02.05-hexadecimal-number-system-quiz/learn-metadata.json"
+            "$ref": "./05.02.05-hexadecimal-number-system-quiz/learn-metadata.json"
         },
         {
-            "$ref": "05.03-summary/learn-metadata.json"
+            "$ref": "./05.03-summary/learn-metadata.json"
         },
         {
-            "$ref": "05.03.02-quiz/learn-metadata.json"
+            "$ref": "./05.03.02-quiz/learn-metadata.json"
         }
     ]
 }

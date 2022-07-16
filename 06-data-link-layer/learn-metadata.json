@@ -6,31 +6,31 @@
     },
     "materials": [
         {
-            "$ref": "06.00-introduction/learn-metadata.json"
+            "$ref": "./06.00-introduction/learn-metadata.json"
         },
         {
-            "$ref": "06.01-purpose-of-the-data-link-layer/learn-metadata.json"
+            "$ref": "./06.01-purpose-of-the-data-link-layer/learn-metadata.json"
         },
         {
-            "$ref": "06.01.05-purpose-of-the-data-link-layer-quiz/learn-metadata.json"
+            "$ref": "./06.01.05-purpose-of-the-data-link-layer-quiz/learn-metadata.json"
         },
         {
-            "$ref": "06.02-topologies/learn-metadata.json"
+            "$ref": "./06.02-topologies/learn-metadata.json"
         },
         {
-            "$ref": "06.02.09-topologies-quiz/learn-metadata.json"
+            "$ref": "./06.02.09-topologies-quiz/learn-metadata.json"
         },
         {
-            "$ref": "06.03-data-link-frame/learn-metadata.json"
+            "$ref": "./06.03-data-link-frame/learn-metadata.json"
         },
         {
-            "$ref": "06.03.05-data-link-frame-quiz/learn-metadata.json"
+            "$ref": "./06.03.05-data-link-frame-quiz/learn-metadata.json"
         },
         {
-            "$ref": "06.04-summary/learn-metadata.json"
+            "$ref": "./06.04-summary/learn-metadata.json"
         },
         {
-            "$ref": "06.04.02-quiz/learn-metadata.json"
+            "$ref": "./06.04.02-quiz/learn-metadata.json"
         }
     ]
 }

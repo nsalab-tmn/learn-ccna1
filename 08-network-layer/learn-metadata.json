@@ -6,43 +6,43 @@
     },
     "materials": [
         {
-            "$ref": "08.00-introduction/learn-metadata.json"
+            "$ref": "./08.00-introduction/learn-metadata.json"
         },
         {
-            "$ref": "08.01-network-layer-characteristics/learn-metadata.json"
+            "$ref": "./08.01-network-layer-characteristics/learn-metadata.json"
         },
         {
-            "$ref": "08.01.07-network-layer-characteristics-quiz/learn-metadata.json"
+            "$ref": "./08.01.07-network-layer-characteristics-quiz/learn-metadata.json"
         },
         {
-            "$ref": "08.02-ipv4-packet/learn-metadata.json"
+            "$ref": "./08.02-ipv4-packet/learn-metadata.json"
         },
         {
-            "$ref": "08.02.04-ipv4-packet-quiz/learn-metadata.json"
+            "$ref": "./08.02.04-ipv4-packet-quiz/learn-metadata.json"
         },
         {
-            "$ref": "08.03-ipv6-packet/learn-metadata.json"
+            "$ref": "./08.03-ipv6-packet/learn-metadata.json"
         },
         {
-            "$ref": "08.03.06-ipv6-packet-quiz/learn-metadata.json"
+            "$ref": "./08.03.06-ipv6-packet-quiz/learn-metadata.json"
         },
         {
-            "$ref": "08.04-how-a-host-routes/learn-metadata.json"
+            "$ref": "./08.04-how-a-host-routes/learn-metadata.json"
         },
         {
-            "$ref": "08.04.05-how-a-host-routes-quiz/learn-metadata.json"
+            "$ref": "./08.04.05-how-a-host-routes-quiz/learn-metadata.json"
         },
         {
-            "$ref": "08.05-router-routing-tables/learn-metadata.json"
+            "$ref": "./08.05-router-routing-tables/learn-metadata.json"
         },
         {
-            "$ref": "08.05.07-router-routing-tables-quiz/learn-metadata.json"
+            "$ref": "./08.05.07-router-routing-tables-quiz/learn-metadata.json"
         },
         {
-            "$ref": "08.06-summary/learn-metadata.json"
+            "$ref": "./08.06-summary/learn-metadata.json"
         },
         {
-            "$ref": "08.06.02-quiz/learn-metadata.json"
+            "$ref": "./08.06.02-quiz/learn-metadata.json"
         }
     ]
 }

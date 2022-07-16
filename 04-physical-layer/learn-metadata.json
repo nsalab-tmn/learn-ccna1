@@ -6,55 +6,55 @@
     },
     "materials": [
         {
-            "$ref": "04.00-introduction/learn-metadata.json"
+            "$ref": "./04.00-introduction/learn-metadata.json"
         },
         {
-            "$ref": "04.01-purpose-of-the-physical-layer/learn-metadata.json"
+            "$ref": "./04.01-purpose-of-the-physical-layer/learn-metadata.json"
         },
         {
-            "$ref": "04.01.03-purpose-of-the-physical-layer-quiz/learn-metadata.json"
+            "$ref": "./04.01.03-purpose-of-the-physical-layer-quiz/learn-metadata.json"
         },
         {
-            "$ref": "04.02-physical-layer-characteristics/learn-metadata.json"
+            "$ref": "./04.02-physical-layer-characteristics/learn-metadata.json"
         },
         {
-            "$ref": "04.02.07-physical-layer-characteristics-quiz/learn-metadata.json"
+            "$ref": "./04.02.07-physical-layer-characteristics-quiz/learn-metadata.json"
         },
         {
-            "$ref": "04.03-copper-cabling/learn-metadata.json"
+            "$ref": "./04.03-copper-cabling/learn-metadata.json"
         },
         {
-            "$ref": "04.03.06-copper-cabling-quiz/learn-metadata.json"
+            "$ref": "./04.03.06-copper-cabling-quiz/learn-metadata.json"
         },
         {
-            "$ref": "04.04-utp-cabling/learn-metadata.json"
+            "$ref": "./04.04-utp-cabling/learn-metadata.json"
         },
         {
-            "$ref": "04.05-fiber-optic-cabling/learn-metadata.json"
+            "$ref": "./04.05-fiber-optic-cabling/learn-metadata.json"
         },
         {
-            "$ref": "04.05.07-fiber-optic-cabling-quiz/learn-metadata.json"
+            "$ref": "./04.05.07-fiber-optic-cabling-quiz/learn-metadata.json"
         },
         {
-            "$ref": "04.06-wireless-media/learn-metadata.json"
+            "$ref": "./04.06-wireless-media/learn-metadata.json"
         },
         {
-            "$ref": "04.06.04-wireless-media-quiz/learn-metadata.json"
+            "$ref": "./04.06.04-wireless-media-quiz/learn-metadata.json"
         },
         {
-            "$ref": "04.06.05-lab-connect-a-wired-and-wireless-lan/learn-metadata.json"
+            "$ref": "./04.06.05-lab-connect-a-wired-and-wireless-lan/learn-metadata.json"
         },
         {
-            "$ref": "04.07.01-lab-physical-layer-exploration-physical-mode/learn-metadata.json"
+            "$ref": "./04.07.01-lab-physical-layer-exploration-physical-mode/learn-metadata.json"
         },
         {
-            "$ref": "04.07.02-lab-connect-the-physical-layer/learn-metadata.json"
+            "$ref": "./04.07.02-lab-connect-the-physical-layer/learn-metadata.json"
         },
         {
-            "$ref": "04.07.04-quiz/learn-metadata.json"
+            "$ref": "./04.07.04-quiz/learn-metadata.json"
         },
         {
-            "$ref": "04.08-summary/learn-metadata.json"
+            "$ref": "./04.08-summary/learn-metadata.json"
         }
     ]
 }

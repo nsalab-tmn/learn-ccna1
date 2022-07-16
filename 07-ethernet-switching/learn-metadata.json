@@ -6,31 +6,31 @@
     },
     "materials": [
         {
-            "$ref": "07.00-introduction/learn-metadata.json"
+            "$ref": "./07.00-introduction/learn-metadata.json"
         },
         {
-            "$ref": "07.01-ethernet-frame/learn-metadata.json"
+            "$ref": "./07.01-ethernet-frame/learn-metadata.json"
         },
         {
-            "$ref": "07.01.05-ethernet-frame-quiz/learn-metadata.json"
+            "$ref": "./07.01.05-ethernet-frame-quiz/learn-metadata.json"
         },
         {
-            "$ref": "07.02-ethernet-mac-address/learn-metadata.json"
+            "$ref": "./07.02-ethernet-mac-address/learn-metadata.json"
         },
         {
-            "$ref": "07.03-the-mac-address-table/learn-metadata.json"
+            "$ref": "./07.03-the-mac-address-table/learn-metadata.json"
         },
         {
-            "$ref": "07.04-switch-speeds-and-forwarding-methods/learn-metadata.json"
+            "$ref": "./07.04-switch-speeds-and-forwarding-methods/learn-metadata.json"
         },
         {
-            "$ref": "07.04.06-switch-speeds-and-forwarding-methods-quiz/learn-metadata.json"
+            "$ref": "./07.04.06-switch-speeds-and-forwarding-methods-quiz/learn-metadata.json"
         },
         {
-            "$ref": "07.05-summary/learn-metadata.json"
+            "$ref": "./07.05-summary/learn-metadata.json"
         },
         {
-            "$ref": "07.05.02-quiz/learn-metadata.json"
+            "$ref": "./07.05.02-quiz/learn-metadata.json"
         }
     ]
 }
