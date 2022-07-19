@@ -12,10 +12,19 @@
             "$ref": "./17.01-devices-in-a-small-network/learn-metadata.json"
         },
         {
+            "$ref": "./17.01.06-devices-in-a-small-network-quiz/learn-metadata.json"
+        },
+        {
             "$ref": "./17.02-small-network-applications-and-protocols/learn-metadata.json"
         },
         {
+            "$ref": "./17.02.04-small-network-applications-and-protocols-quiz/learn-metadata.json"
+        },
+        {
             "$ref": "./17.03-scale-to-larger-networks/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.03.04-scale-to-larger-networks-quiz/learn-metadata.json"
         },
         {
             "$ref": "./17.04-verify-connectivity/learn-metadata.json"
@@ -28,6 +37,9 @@
         },
         {
             "$ref": "./17.06-troubleshooting-methodologies/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.06.05-troubleshooting-methodologies-quiz/learn-metadata.json"
         },
         {
             "$ref": "./17.07-troubleshooting-scenarios/learn-metadata.json"
@@ -49,6 +61,9 @@
         },
         {
             "$ref": "./17.08.03-lab-troubleshooting-challenge/learn-metadata.json"
+        },
+        {
+            "$ref": "./17.08.05-quiz/learn-metadata.json"
         },
         {
             "$ref": "./17.09-summary/learn-metadata.json"
