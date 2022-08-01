@@ -54,9 +54,6 @@
             "$ref": "./11.09.03-lab-vlsm-design-and-implementation-practice/learn-metadata.json"
         },
         {
-            "$ref": "./11.10-module-practice/learn-metadata.json"
-        },
-        {
             "$ref": "./11.10.01-lab-design-and-implement-a-vlsm-addressing-scheme/learn-metadata.json"
         },
         {
