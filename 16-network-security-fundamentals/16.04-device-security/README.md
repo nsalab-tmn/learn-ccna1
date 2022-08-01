@@ -165,13 +165,4 @@ Router(config)# line vty 0 15
 Router(config-line)# transport input ssh
 ```
 
-<!-- 16.4.6 -->
-## Работа в симуляторе: настройка безопасного пароля и протокола SSH
-
-Администратор сети обратился к вам с просьбой подготовить RTA и SW1 для развертывания. Перед его подключением к сети необходимо активировать функции безопасности.
-
-[Настройка безопасного пароля и протокола SSH (pdf)](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh_ru-RU.pdf)
-
-[Настройка безопасного пароля и протокола SSH (pka)](./assets/16.4.6-packet-tracer---configure-secure-passwords-and-ssh_ru-RU.pka)
-
 <!-- 16.4.7 -->
