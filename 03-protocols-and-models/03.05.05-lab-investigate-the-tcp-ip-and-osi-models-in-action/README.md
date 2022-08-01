@@ -182,4 +182,4 @@
 
 **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/3.5.5-packet-tracer---investigate-the-tcp-ip-and-osi-models-in-action_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/3.5.5-lab.pka)
