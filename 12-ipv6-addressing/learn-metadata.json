@@ -48,9 +48,6 @@
             "$ref": "./12.08.05-subnet-an-ipv6-network-quiz/learn-metadata.json"
         },
         {
-            "$ref": "./12.09-module-practice/learn-metadata.json"
-        },
-        {
             "$ref": "./12.09.01-lab-implement-a-subnetted-ipv6-addressing-scheme/learn-metadata.json"
         },
         {
