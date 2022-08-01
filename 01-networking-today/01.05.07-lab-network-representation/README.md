@@ -88,4 +88,4 @@
 
     **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/1.5.7-packet-tracer---network-representation_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/1.5.5-lab.pka)
