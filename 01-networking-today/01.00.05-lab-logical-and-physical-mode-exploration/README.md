@@ -155,4 +155,4 @@
 
 **Введите ваш ответ здесь.**
 
-[Скачать файл Packet Tracer для локального запуска](./assets/1.0.5-packet-tracer---logical-and-physical-mode-exploration_ru-RU.pka)
+[Скачать файл Packet Tracer для локального запуска](./assets/1.0.5-lab.pka)
