@@ -51,9 +51,6 @@
             "$ref": "./14.07.05-udp-communication-quiz/learn-metadata.json"
         },
         {
-            "$ref": "./14.08-module-practice/learn-metadata.json"
-        },
-        {
             "$ref": "./14.08.01-lab-tcp-and-udp-communications/learn-metadata.json"
         },
         {
