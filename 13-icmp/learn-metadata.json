@@ -24,9 +24,6 @@
             "$ref": "./13.02.07-lab-use-ping-and-traceroute-to-test-network-connectivity/learn-metadata.json"
         },
         {
-            "$ref": "./13.03-module-practice/learn-metadata.json"
-        },
-        {
             "$ref": "./13.03.01-lab-use-icmp-to-test-and-correct-network-connectivity/learn-metadata.json"
         },
         {
