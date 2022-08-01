@@ -57,9 +57,6 @@
             "$ref": "./02.08-verify-connectivity/learn-metadata.json"
         },
         {
-            "$ref": "./02.09-module-practice/learn-metadata.json"
-        },
-        {
             "$ref": "./02.09.01-lab-basic-switch-and-end-device-configuration/learn-metadata.json"
         },
         {
