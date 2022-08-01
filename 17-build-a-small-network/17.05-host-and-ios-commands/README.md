@@ -542,11 +542,3 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 
 ![youtube](https://www.youtube.com/watch?v=dFKfyJkuSqQ)
 
-<!-- 17.5.9 -->
-## Работа в симуляторе: интерпретация выходных данных ``show``-команд
-
-Это упражнение предназначено для закрепления знаний о командах **show** маршрутизатора. Вам не нужно будет выполнять настройку, вы просто изучите выходные данные отдельных команд show.
-
-[Интерпретация выходных данных команды show (pdf)](./assets/17.5.9-packet-tracer---interpret-show-command-output_ru-RU.pdf)
-
-[Интерпретация выходных данных команды show (pka)](./assets/17.5.9-packet-tracer---interpret-show-command-output_ru-RU.pka)
