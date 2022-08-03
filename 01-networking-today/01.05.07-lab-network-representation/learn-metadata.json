@@ -23,5 +23,91 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Перечислите категории промежуточных устройств",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Не входя в облако Интернет или Интранет, перечислите количество значков в топологии, представляющих оконечные устройства (при наличии только одного входящего подключения)",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Если не учитывать два облака, сколько значков в топологии представляют промежуточные устройства (при наличии нескольких входящих подключений)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Сколько оконечных устройств **не** является настольными компьютерами?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Сколько различных типов средств подключения используются в этой топологии сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Объясните суть модели «клиент-сервер» на основе полученных знаний",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Назовите минимум две функции промежуточных устройств",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Назовите минимум два критерия для выбора типа средства подключения",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Объясните различия между локальной и глобальной сетью. Приведите примеры каждой из сетей",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Сколько глобальных сетей представлено в сети программы Packet Tracer?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Сколько представлено локальных сетей?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Дайте краткое описание сети Интернет.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Перечислите несколько распространенных способов подключения домашних пользователей к Интернету.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Перечислите несколько распространенных методов подключения предприятий к Интернету в вашем регионе.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Как можно убедиться в правильности подключения устройства?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Что еще требуется этому устройству для работы в качестве промежуточного устройства для других устройств в сети?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }  
