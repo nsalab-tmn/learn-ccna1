@@ -23,5 +23,33 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "questions": [
+                {
+                    "type": "string",
+                    "title": "1. Какие подкатегории содержатся в **Network Devices**?",
+                    "placeholder": "Enter your answer here"
+                },
+                {
+                    "type": "string",
+                    "title": "2. Какие устройства используют проводное соединение для подключения к коммутатору **ALS2**?",
+                    "placeholder": "Enter your answer here"
+                },
+                {
+                    "type": "string",
+                    "title": "3. Какое устройство подключено к **Access_Point**?",
+                    "placeholder": "Enter your answer here"
+                },
+                {
+                    "type": "string",
+                    "title": "4. Где физически находится устройство, подключенное к **Access_Point** ?",
+                    "placeholder": "Enter your answer here"
+                }
+            ] 
+        }
+    }
 }
