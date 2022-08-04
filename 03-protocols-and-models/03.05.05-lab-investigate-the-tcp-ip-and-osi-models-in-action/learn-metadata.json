@@ -23,5 +23,91 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какая информация перечислена в пронумерованных шагах непосредственно под полями **In Layers** (Входящие уровни) и **Out Layers** (Исходящие уровни)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какое значение столбца **Dst Port** на **Уровне 4** в столбце **Out Layers** ?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какое значение имеет параметр **Dest.** Значение IP для **Layer 3** в столбце **Out Layers**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какая информация отображается на слое 2 в столбце **Out Layers**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Если сравнить сведения в разделе **IP** вкладки **PDU Details** со сведениями на вкладке **OSI Model**, какая информация является для них общей? К какому уровню она относится?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Если сравнить сведения в разделе **TCP** вкладки **PDU Details**со сведениями на вкладке **OSI Model**, какая информация является для них общей и к какому уровню она относится?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какой **Host** (узел) указан в разделе **HTTP** вкладки **PDU Details**? C каким уровнем будут связаны эти сведения на вкладке **OSI Model**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Сравните данные в столбце **In Layers** с данными в столбце **Out Layers** и скажите, в чем заключается основное отличие между ними.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Какие дополнительные типы событий показаны?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какие сведения показаны в поле **NAME**: в разделе DNS QUERY?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. На каком устройстве был захвачен PDU?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какое значение показано рядом с полем **ADDRESS**: в разделе DNS ANSWER на вкладке **Inbound PDU Details**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Какие сведения отображаются под пунктами 4 и 5 в пронумерованном списке непосредственно под столбцами **In Layers** и **Out Layers**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Расскажите, для чего предназначено событие, используя информацию, предоставленную в последнем пункте списка (это должен быть пункт 4).",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Какой порт прослушивает **веб-сервер** для получения веб-запросов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Какой порт прослушивает **веб-сервер** для получения DNS-запросов?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
