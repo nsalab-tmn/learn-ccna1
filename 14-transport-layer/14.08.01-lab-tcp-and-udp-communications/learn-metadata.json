@@ -31,5 +31,116 @@
     },
     "deploy": {
         "$ref": "./deploy"
+    },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. В списке событий на панели моделирования отображаются различные блоки PDU. В чем смысл различных цветов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Почему для появления PDU HTTP понадобилось так много времени?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Можно ли назвать такую связь надежной?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Запишите значения параметров **SRC PORT**, **DEST PORT**, **SEQUENCE NUM** и **ACK NUM**",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какие TCP-флаги установлены в этом PDU?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Чем отличаются порт и порядковые номера от имевшихся ранее?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какие данные теперь представлены в разделе TCP? Чем отличаются порт и порядковые номера от предыдущих двух PDU?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Какое значение в поле флага?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Чем отличаются порт и порядковые номера от имевшихся ранее?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Чем отличаются порт и порядковые номера от предыдущих результатов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Какое сообщение было получено от сервера?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Что такое протокол уровня 4?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Почему отсутствует порядковый номер и номер подтверждения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Чем отличаются порт и порядковые номера от имевшихся ранее?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Как называется последний раздел **PDU**? Каков IP-адрес для имени **multiserver.ptu**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Какой протокол транспортного уровня используется для передачи трафика электронной почты?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Какое значение в поле флага?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Чем отличаются порт и порядковые номера от имевшихся ранее?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Чем отличаются порт и порядковые номера от предыдущих двух результатов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Чем отличаются порт и порядковые номера от предыдущих двух **PDU**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Какой протокол электронной почты связан с портом 25 протокола TCP? Какой протокол связан с портом 110 протокола TCP?",
+                "placeholder": "Enter your answer here"
+            }
+        }
     }
 }
