@@ -23,5 +23,91 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Каково значение параметра в битах в секунду?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какое приглашение появляется на экране?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какая команда начинается с буквы «с»?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какие отображаются команды?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какие отображаются команды?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какие из показанных данных описывают команду **enable**? (запишите текст описания)",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Что отображается после нажатия клавиши **TAB**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Что произойдет, если ввести **te`TAB`** в командной строке?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Как изменилась командная строка? (в ответ введите приглашение к вводу)",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Сколько команд, начинающихся на «с», показано теперь, когда включен привилегированный режим EXEC?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11.  Какое появилось сообщение?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Как изменилась командная строка? (в ответ введите приглашение к вводу)",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Какая информация отображена? Какой год отображается?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Какая информация отображена?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Какая информация отображена?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Какие отобразятся сведения, если ввести только команду **clock set**, не запрашивая справку с помощью вопросительного знака?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

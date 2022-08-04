@@ -23,5 +23,21 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Почему одни порты FastEthernet коммутаторов включены, а другие выключены?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Что может помешать установить связь между компьютерами с помощью команды ping?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

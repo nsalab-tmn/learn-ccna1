@@ -23,5 +23,26 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какая версия образа IOS используется на коммутаторе?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Как предотвратить несанкционированный доступ к устройству Cisco через консольный порт?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Назовите достоинства и недостатки использования последовательного консольного подключения по сравнению с консольным подключением USB к маршрутизатору или коммутатору Cisco.",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

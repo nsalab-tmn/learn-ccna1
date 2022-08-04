@@ -23,5 +23,41 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Как можно проверить правильность настройки паролей?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какую команду необходимо для этого выполнить?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Успешен ли пинг? Дайте пояснение.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Для чего нужно настраивать IP-адреса на коммутаторах?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Зачем вы вводите команду **no shutdown**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какая команда сохраняет файл конфигурации из RAM в NVRAM?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

@@ -23,5 +23,76 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Сколько у коммутатора интерфейсов Fast Ethernet?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Сколько у коммутатора интерфейсов Gigabit Ethernet?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Каков диапазон значений, отображаемых в vty-линиях?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какая команда отображает текущее содержимое энергонезависимого ОЗУ (NVRAM)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Почему коммутатор отвечает сообщением startup-config is not present?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Для чего нужна команда **login**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Что отображается в качестве пароля enable secret?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Почему пароль enable secret отображается не так, как было задано?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Если установить на коммутаторе другие пароли, они будут храниться в файле конфигурации в виде обычного текста или в зашифрованном виде? Дайте пояснение",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Когда будет отображаться этот баннер?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Зачем на всех коммутаторах должен быть баннер MOTD?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какова самая короткая версия команды **copy running-config startup-config**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Какая команда отображает содержимое NVRAM?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
