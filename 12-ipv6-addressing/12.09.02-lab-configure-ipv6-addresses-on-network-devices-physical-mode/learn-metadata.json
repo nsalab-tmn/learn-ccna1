@@ -23,5 +23,36 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какие группы многоадресной рассылки назначены интерфейсу G0/0?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Назначен ли индивидуальный IPv6-адрес сетевой интерфейсной карте (NIC) на PC-B?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Почему **PC-B** получил глобальный префикс маршрутизации и идентификатор подсети, которые вы настроили на **R1**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Почему обоим интерфейсам Ethernet на **R1** можно назначить один и тот же локальный адрес канала — FE80::1?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Каков идентификатор подсети одноадресного IPv6-адреса 2001:db8:acad::aaaa:1234/64, если префикс глобальной маршрутизации - /48?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
