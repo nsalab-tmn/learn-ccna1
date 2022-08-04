@@ -23,5 +23,106 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Этот адрес есть в таблице выше?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Сколько копий единицы данных протокола (PDU) создал **Switch1**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какой IP-адрес имеет устройство, которое приняло единицу данных протокола (PDU)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Что произошло с MAC-адресами источника и назначения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Сколько копий единицы данных протокола (PDU) создал коммутатор для ответа на ARP-запрос?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. MAC-адреса источника и назначения соответствуют их IP-адресам?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какому IP-адресу соответствует запись MAC-адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. В общем случае, когда оконечное устройство отправляет ARP-запрос?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Сколько ответов было отправлено и получено?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Совпадают ли записи с указанными в таблице выше?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Совпадают ли записи с указанными в таблице выше?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Почему два MAC-адреса связаны с одним портом?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Какой IP-адрес имеет новая запись в таблице ARP?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Сколько единиц данных протокола (PDU) появилось?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Какой IP-адрес назначения ARP-запроса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Почему IP-адрес назначения не 10.10.10.1?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Сколько MAC-адресов в таблице? Почему?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Есть ли запись для **172.16.31.2**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Что происходит с первым эхо-запросом, когда маршрутизатор отвечает на ARP-запрос?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

@@ -23,5 +23,126 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Почему присутствуют ND PDU?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какой тип сообщения указан для ICMPv6?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Что изменилось в адресации уровня 3?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какие адреса уровня 2 отображаются?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Есть ли разница между **In Layers** и **Out Layers** для уровня 2?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Почему нет Out Layers?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Имеет ли PCA1 всю необходимую информацию для связи с PCA2?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Какой тип имеет эхо-сообщение ICMPv6?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Почему не было событий NDP?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какой адрес используется для IP-адреса Src во входящем PDU?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Какой MAC-адрес используется для MAC-адреса назначения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Что отсутствует в исходящей информации уровня 2?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Почему не было событий NDP?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Что соответствует MAC-адресу назначения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Почему PCB1 использует MAC-адрес интерфейса маршрутизатора для создания ICMP PDU?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Сколько адресов в списке?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. С какими устройствами связаны эти адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Имеются ли какие-либо записи для PCA2 (почему да или почему нет)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Существуют ли записи для PCA2?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Когда устройство требует процесса обнаружения соседей IPv6?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Как маршрутизатор помогает минимизировать объем трафика IPv6 Neighbor Discovery в сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Как IPv6 минимизирует влияние процесса ND на сетевые узлы?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_23": {
+                "type": "string",
+                "title": "23. Чем отличается процесс обнаружения соседей, когда узел назначения находится в одной локальной сети и когда он находится в удаленной локальной сети?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

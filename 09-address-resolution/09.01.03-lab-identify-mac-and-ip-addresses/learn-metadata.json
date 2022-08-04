@@ -23,5 +23,116 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какое устройство имеет этот MAC-адрес назначения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Использовались ли для подключения устройств разные типы проводов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Отразилось ли изменение проводов на обработке единицы данных протокола (PDU)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Были ли на **Hub** (Концентратор) потеряны какие-либо данные?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Что **Hub** (Концентратор) делает с MAC- и IP-адресами?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Делает ли что-то **точка беспроводного доступа** с данными, которые на нее поступают?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Теряются ли какие-либо MAC-адреса или IP-адреса при передаче по беспроводной сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Какой самый высокий уровень модели OSI используется в **Hub** (Концентратор) и **Access Point** (Точка доступа)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Копировали ли **Hub** (Концентратор) или **Access Point** (Точка доступа) единицу протокола данных (PDU), которая была отклонена с красным значком «X»?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какой MAC-адрес при изучении вкладки **PDU Details** (Сведения о PDU) появился первым — адрес источника или адрес назначения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Почему MAC-адреса отображаются именно в этом порядке?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Заметили ли вы общую структуру определения MAC-адресов при моделировании?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Копировали ли коммутаторы единицу данных протокола (PDU), которая была отклонена с красным значком «X»?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. При каждой пересылке единицы данных протокола (PDU) между сетями 10 и 172 была точка, в которой MAC-адреса неожиданно изменялись. На каком устройстве это происходило?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Какое устройство имеет MAC-адрес, начинающийся с 00:D0:BA?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Каким устройствам принадлежали другие MAC-адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Переключались ли IPv4-адреса отправки и получения на какую-либо единицу данных протокола (PDU)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Если следовать эхо-ответу (который иногда называется *pong*), переключаются ли IPv4-адреса отправки и получения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Заметили ли вы общую структуру определения IPv4-адресов при моделировании?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Почему разные IP-адреса сети необходимо присваивать разным портам маршрутизатора?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Если бы в данном моделировании была настроена работа с IPv6-адресами вместо IPv4-адресов, в чем состояло бы отличие?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
