@@ -31,5 +31,61 @@
     },
     "deploy": {
         "$ref": "./deploy"
+    },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какие команды можно использовать для определения IP-адреса и сетевого префикса интерфейсов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какие команды выводят сведения об IP-адресе и назначении интерфейса, но не выводят сведений о префиксе сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какие команды вы используете, чтобы определить, работает ли интерфейс?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Необходимо определить версию IOS, которая выполняется на маршрутизаторе. Какая команда даст вам эту информацию?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какие команды выводят сведения об адресах интерфейсов маршрутизатора?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какие команды выводят сведения об объеме доступной флеш-памяти?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какие команды выводят сведения о линиях, используемых для настройки или мониторинга устройства?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Какие команды выводят статистику по трафику интерфейсов маршрутизатора?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Какие команды выводят сведения о путях, доступных для сетевого трафика?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какие интерфейсы в данный момент активны на маршрутизаторе?",
+                "placeholder": "Enter your answer here"
+            }
+        }
     }
 }

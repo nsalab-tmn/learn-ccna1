@@ -31,5 +31,156 @@
     },
     "deploy": {
         "$ref": "./deploy"
+    },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Ping-запрос на веб-сервер (209.165.201.2).",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Ping-запрос на PC-02?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Ping-запрос на PC-А?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Ping-запрос на PC-B?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Доступен ли сервер www.cisco.pka с узла PC-01 с использованием имени?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Доступен ли сервер с использованием IP-адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Ping-запрос на веб-сервер (209.165.201.2).",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Ping-запрос на PC-01?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Ping-запрос на PC-А?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Ping-запрос на PC-B?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Доступен ли сервер www.cisco.pka с узла PC-02 с использованием имени?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Доступен ли сервер с использованием IP-адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Ping-запрос на веб-сервер (209.165.201.2).",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Ping-запрос на PC-01?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Ping-запрос на PC-02?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Ping-запрос на PC-B?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Доступен ли сервер www.cisco.pka с узла PC-А с использованием имени?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Доступен ли сервер с использованием IP-адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_23": {
+                "type": "string",
+                "title": "23. Ping-запрос на веб-сервер (209.165.201.2).",
+                "placeholder": "Enter your answer here"
+            },
+            "q_24": {
+                "type": "string",
+                "title": "24. Ping-запрос на PC-01?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_25": {
+                "type": "string",
+                "title": "25. Ping-запрос на PC-02?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_26": {
+                "type": "string",
+                "title": "26. Ping-запрос на PC-А?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_27": {
+                "type": "string",
+                "title": "27. Доступен ли сервер www.cisco.pka с узла PC-B с использованием имени?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_28": {
+                "type": "string",
+                "title": "28. Доступен ли сервер с использованием IP-адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_29": {
+                "type": "string",
+                "title": "29. Могут ли все проблемы быть решены на PC-B и по-прежнему использовать DNS2? Если нет, то что вам нужно сделать?",
+                "placeholder": "Enter your answer here"
+            }
+        }
     }
 }
