@@ -23,5 +23,126 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Сколько адресов узлов необходимо для самой крупной подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Каково минимальное количество необходимых подсетей?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Сеть, которую необходимо разделить на подсети, имеет адрес 192.168.0.0/24. Как маска подсети /24 будет выглядеть в двоичном формате?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Что в маске сети представляют единицы?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Что в маске сети представляют нули?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Эквивалент десятичного представления маски подсети с разделением точками:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Количество подсетей и узлов (введите два числа через пробел):",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Эквивалент десятичного представления маски подсети с разделением точками:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Количество подсетей и узлов (введите два числа через пробел):",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Эквивалент десятичного представления маски подсети с разделением точками:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Количество подсетей и узлов (введите два числа через пробел):",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Эквивалент десятичного представления маски подсети с разделением точками:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Количество подсетей и узлов (введите два числа через пробел):",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Эквивалент десятичного представления маски подсети с разделением точками:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Количество подсетей и узлов (введите два числа через пробел):",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Эквивалент десятичного представления маски подсети с разделением точками:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Количество подсетей и узлов (введите два числа через пробел):",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Учитывая ваши ответы, какие маски подсети соответствуют минимальному необходимому количеству адресов узлов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Учитывая ваши ответы, какие маски подсети соответствуют минимальному необходимому количеству подсетей?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Учитывая ваши ответы, какая маска подсети соответствует минимальному необходимому количеству как узлов, так и подсетей?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Получен ли ответ?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Получен ли ответ?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_23": {
+                "type": "string",
+                "title": "23. Вы получили ответ?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

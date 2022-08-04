@@ -23,5 +23,61 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Сколько подсетей требует данная топология сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S1Name\\]\\]**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Сколько доступных для использования адресов узлов будет поддерживать данная подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S2Name\\]\\]**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Сколько доступных для использования адресов узлов будет поддерживать данная подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S3Name\\]\\]**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Сколько доступных для использования адресов узлов будет поддерживать данная подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S4Name\\]\\]**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Сколько доступных для использования адресов узлов будет поддерживать данная подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какая маска подсети обеспечит нужное количество IP-адресов для соединения **\\[\\[R1Name\\]\\]** и **\\[\\[R2Name\\]\\]**?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

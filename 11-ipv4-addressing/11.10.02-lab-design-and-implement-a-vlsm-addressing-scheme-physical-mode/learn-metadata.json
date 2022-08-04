@@ -23,5 +23,151 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Сколько адресов узлов доступно в сети /25?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Сколько всего адресов узлов требуется, исходя из топологии?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Сколько подсетей требует данная топология сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Дайте описание этой подсети (например, BR1 LAN или канал BR1-BR2)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Сколько IP-адресов требуется для самой большой подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какая маска подсети может поддерживать такое количество адресов узла?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Сколько всего адресов узла может поддерживать эта маска подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Можно ли разделить сетевой адрес 192.168.33.128/25 на подсети для поддержки этой подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Какие сетевые адреса образуются в результате данного разбиения на подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Дайте описание этой подсети (например, BR1 LAN или канал BR1-BR2)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Сколько IP-адресов требуется для второй по величине подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какая маска подсети может поддерживать такое количество адресов узла?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Сколько всего адресов узла может поддерживать эта маска подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Возможно ли повторно организовать подсеть оставшейся подсети, поддерживая при этом данную подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Какие сетевые адреса образуются в результате данного разбиения на подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Дайте описание этой подсети (например, BR1 LAN или канал BR1-BR2)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Сколько IP-адресов требуется для второй по величине подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Какая маска подсети может поддерживать такое количество адресов узла?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Сколько всего адресов узла может поддерживать эта маска подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Возможно ли повторно организовать подсеть оставшейся подсети, поддерживая при этом данную подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Какие сетевые адреса образуются в результате данного разбиения на подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Дайте описание этой подсети (например, BR1 LAN или канал BR1-BR2)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_23": {
+                "type": "string",
+                "title": "23. Сколько IP-адресов требуется для второй по величине подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_24": {
+                "type": "string",
+                "title": "24. Какая маска подсети может поддерживать такое количество адресов узла?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_25": {
+                "type": "string",
+                "title": "25. Сколько всего адресов узла может поддерживать эта маска подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_26": {
+                "type": "string",
+                "title": "26. Возможно ли повторно организовать подсеть оставшейся подсети, поддерживая при этом данную подсеть?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_27": {
+                "type": "string",
+                "title": "27. Какие сетевые адреса образуются в результате данного разбиения на подсети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_28": {
+                "type": "string",
+                "title": "28. Каким образом можно быстро рассчитать сетевые адреса последовательных подсетей /30?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
