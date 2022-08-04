@@ -31,5 +31,71 @@
     },
     "deploy": {
         "$ref": "./deploy"
+    },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Получилось ли отправить эхо-запрос с **PC1** на IPv4-адрес **PC2**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Получилось ли отправить эхо-запрос с **PC2** на IPv4-адрес **PC1**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Получилось ли отправить эхо-запрос с **PC1** на IPv6-адрес **PC2**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Получилось ли отправить эхо-запрос с **PC2** на IPv6-адрес **PC1**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какие адреса встретились на пути?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. С какими интерфейсами связаны эти четыре адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какие адреса встретились на пути?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. С какими интерфейсами связаны эти четыре адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Какие адреса встретились на пути?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. С какими интерфейсами связаны эти четыре адреса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Какие адреса встретились на пути?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. С какими интерфейсами связаны эти четыре адреса?",
+                "placeholder": "Enter your answer here"
+            }
+        }
     }
 }

@@ -31,5 +31,41 @@
     },
     "deploy": {
         "$ref": "./deploy"
+    },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Каковы результаты эхо-запросов от S1 до ISP и External?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какие сообщения об ошибках вы получили?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какой IP-адрес используется?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. По какой причине, кроме проблем с сетевым соединением, ответ на команды **ping** и **traceroute** может не доходить на исходное устройство?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какое сообщение выдаст команда **ping**, если отправить эхо-запрос с помощью команды **ping** на несуществующий адрес в удаленной сети, например 209.165.200.227? Что это означает?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какое сообщение выдаст команда **ping**, если с компьютера под управлением ОС Windows отправить эхо-запрос с помощью команды **ping** на адрес, который не существует ни в одной из сетей вашей топологии, например 192.168.5.3? Что означает данное сообщение?",
+                "placeholder": "Enter your answer here"
+            }
+        }
     }
 }
