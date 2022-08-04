@@ -23,5 +23,66 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какие порты управления доступны?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какими LAN- и WAN-интерфейсами оснащен маршрутизатор **East**? Сколько их?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Сколько физических интерфейсов перечислено?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какая пропускная способность задана по умолчанию для данного интерфейса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какая пропускная способность задана по умолчанию для данного интерфейса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Сколько в маршрутизаторе **East** слотов расширения для установки дополнительных модулей?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Сколько у них слотов расширения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. С помощью какого модуля можно подключить три ПК к маршрутизатору **East**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Сколько узлов можно подключить к маршрутизатору с помощью этого модуля?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какой модуль можно вставить, чтобы обеспечить оптоволоконное подключение Gigabit к коммутатору **Switch3**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. В какой слот был вставлен модуль?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

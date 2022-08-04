@@ -23,5 +23,31 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Сколько проводов подключено к коммутатору в синей стойке?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Что находится в таблице справа от синей стойки?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Почему к каждому устройству подключено по два оранжевых кабеля?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Почему нет стойки для оборудования?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

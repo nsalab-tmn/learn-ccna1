@@ -23,5 +23,141 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какой у вашего устройства IPv4-адрес и шлюз по умолчанию?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Каков IPv4-адрес для вашего маршрутизатора?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Укажите общедоступный IPv4-адрес, местоположение и поставщика услуг Интернета.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Как выглядит соединение между вашим устройством и маршрутизатором? Соединение проводное или нет?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Где находится маршрутизатор, который ваше устройство использует для доступа в Интернет?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Как выглядит соединение между маршрутизатором и интернетом?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. В вашей собственной сети, какова технология последней мили, который вы используете?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Каков IP-адрес для POP вашего провайдера?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Каков IPv4-адрес 3<sup>-го</sup> перехода в выходных данных трассировки пакетов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Какой маршрутизатор и интерфейс в здании **monterey.ca** настроен с этим IPv4-адресом?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Каков IPv4-й адрес 4<sup>-го</sup> перехода в выводе трассировки Packet Tracer?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какой маршрутизатор и интерфейс в здании **monterey.ca** настроен с этим IPv4-адресом?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Как вы думаете, почему IP-адреса для других интерфейсов не отображаются в выходных данных traceroute?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Перечислите переходы в собственных выходных данных traceroute, принадлежащие локальному поставщику услуг Интернета.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Какую информацию, если таковая имеется, вы можете расшифровать из доменных имен для вашего локального поставщика услуг Интернета?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Какое здание, маршрутизатор, интерфейс и IPv4-адрес для исходящего канала в Лос-Анджелес?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Какой интерфейс для 10<sup>-го</sup> перехода?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Какая скорость магистрального Интернета, которая обеспечивает соединения между ее членами?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Какой интерфейс используется для этого 11<sup>-го</sup> перехода в выходе traceroute?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Сколько подводных кабелей заканчивается на пляже Хермоса?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Как называется подводный кабель, который проходит от пляжа Хермоса до Гавайев?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Как называется пункт терминирования на Гавайях?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_23": {
+                "type": "string",
+                "title": "23. Сколько подводных кабелей заканчивается в этой точке на Гавайях?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_24": {
+                "type": "string",
+                "title": "24. Найдите в Интернете, сколько километров разделяют каждый ретранслятор на подводном кабеле.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_25": {
+                "type": "string",
+                "title": "25. Какой интерфейс назначен 12<sup>-му</sup> переходу?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_26": {
+                "type": "string",
+                "title": "26. Какой интерфейс присваивается 13<sup>-му</sup> переходу?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
