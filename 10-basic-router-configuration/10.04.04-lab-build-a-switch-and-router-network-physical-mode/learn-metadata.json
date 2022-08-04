@@ -23,5 +23,61 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Почему проверка связи не удалась?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Успешно ли выполнена проверка связи? Дайте пояснение.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какой код используется в таблице маршрутизации для обозначения сети с прямым подключением?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Сколько записей маршрутов закодированы с символом «C» в таблице маршрутизации?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какие типы интерфейсов связаны с маршрутами, закодированными с символом «C»?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Опишите текущее состояние интерфейса G0/0/1.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Назовите МАС-адрес интерфейса G0/1.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Каким образом в этой команде отображается сетевой адрес?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Если интерфейс G0/0/1 выключен администратором, какая команда конфигурации интерфейса позволит его включить?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Что произойдет в случае неправильной конфигурации интерфейса G0/0/1 на маршрутизаторе с IP-адресом 192.168.1.2?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

@@ -23,5 +23,96 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Как называется узел маршрутизатора?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Сколько у маршрутизатора интерфейсов Fast Ethernet?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Сколько у маршрутизатора интерфейсов Gigabit Ethernet?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Сколько у маршрутизатора последовательных интерфейсов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Каков диапазон значений, отображаемых в vty-линиях?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Почему маршрутизатор отвечает сообщением **startup-config is not present** (startup-config отсутствует)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какую команду вы будете использовать?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Зачем на всех маршрутизаторах должен быть баннер с сообщением текущего дня (MOTD)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Если вам не предлагается ввести пароль до того, как вы получите приглашение пользователя EXEC, какую команду консоли вы забыли настроить?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Почему пароль **enable secret** позволяет перейти в привилегированный режим EXEC, а пароль **enable password** больше не действителен?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Если установить на маршрутизаторе другие пароли, они будут храниться в файле конфигурации в открытом или зашифрованном виде? Дайте пояснение.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какую команду нужно ввести, чтобы сохранить конфигурацию в NVRAM? (введите команду в полном формате)",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Какая самая короткая и однозначная версия этой команды?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Какая команда отображает содержимое NVRAM?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Сколько файлов хранится во флеш-памяти в данный момент?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Какой из этих файлов, по вашему мнению, является образом IOS?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Почему вы считаете, что этот файл — образ IOS?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

@@ -23,5 +23,126 @@
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
     "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "tags": { "$ref": "../../material-tags.json" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Какая команда выводит статистику по всем интерфейсам, настроенным на маршрутизаторе?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какая команда выводит сведения только об интерфейсе Serial 0/0/0?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какой IP-адрес настроен на маршрутизаторе **R1**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какую пропускную способность имеет интерфейс Serial 0/0/0?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Какой IP-адрес на маршрутизаторе **R1**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Какой MAC-адрес имеет интерфейс GigabitEthernet 0/0?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какую пропускную способность (BW) имеет интерфейс GigabitEthernet 0/0?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Какая команда выводит краткую сводку по текущим интерфейсам, их состояниям и назначенным им IP-адресам?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Сколько последовательных интерфейсов на маршрутизаторах **R1** и **R2**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Сколько интерфейсов Ethernet на маршрутизаторах **R1** и **R2**?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Являются ли все интерфейсы Ethernet на маршрутизаторе **R1** одинаковыми? Если ответ «Нет», объясните различия.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какая команда выводит на экран содержимое таблицы маршрутизации?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Сколько в таблице подключенных маршрутов (имеют код **C**)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Какой маршрут представлен в списке?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Каким образом маршрутизатор обрабатывает пакет, предназначенный для сети, которая отсутствует в таблице маршрутизации?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Сохраните файлы конфигурации на обоих маршрутизаторах в NVRAM. Какую команду вы использовали?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Сколько интерфейсов настроено на маршрутизаторах **R1** и **R2** с IP-адресом и находятся в активном состоянии («up»)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Какая часть конфигурации интерфейса НЕ отображается в выходных данных команды?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. С помощью каких команд можно проверить эту часть конфигурации?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Сколько подключенных маршрутов (имеют код **C**) отображается на каждом маршрутизаторе?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Сколько маршрутов OSPF (имеют код **O**) отображается на каждом маршрутизаторе?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Сколько локальных (LAN) и глобальных (WAN) сетей присутствует в топологии?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_23": {
+                "type": "string",
+                "title": "23.  Соответствует ли это число количеству маршрутов C и O, показанных в таблице маршрутизации?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
