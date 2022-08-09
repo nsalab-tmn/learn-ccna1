@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: просмотр информации о проводных и беспроводных сетевых интерфейсных платах",
+    "shortName": "lab-4.6.6",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: исследование параметров проводных и беспроводных сетевых интерфейсных плат",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}
