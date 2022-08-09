@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: навигация по IOS с помощью Tera Term при консольном подключении",
+    "shortName": "lab-2.3.8.2",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: отработка навыков, необходимых для получения доступа к устройству Cisco через прямое подключение к порту консоли",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}
