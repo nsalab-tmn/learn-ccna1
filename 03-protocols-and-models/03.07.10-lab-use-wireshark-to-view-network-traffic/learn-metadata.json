@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: использование программы Wireshark для просмотра сетевого трафика",
+    "shortName": "lab-3.7.10",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: исследование сетевого трафика.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}
