@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: Изучение вакансий в сфере информационных и сетевых технологий",
+    "shortName": "lab-1.9.3",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: поиск и изучение вакансий в сфере IT",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}
