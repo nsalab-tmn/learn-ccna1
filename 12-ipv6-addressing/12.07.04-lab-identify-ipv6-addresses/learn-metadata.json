@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: определение IPv6-адресов",
+    "shortName": "lab-12.7.4",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: отработка навыков, необходимых для определения IPv6-адресов",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}
