@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: анализ кадров Ethernet с помощью программы Wireshark",
+    "shortName": "lab-7.2.7",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: исследование кадров Ethernet",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    "deploy": { "$ref": "./deploy" },
+    "assets": { "$ref": "./assets" }
+}
