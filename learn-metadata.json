@@ -6,6 +6,7 @@
     { "$ref": "./01-networking-today/learn-metadata.json" },
     { "$ref": "./02-basic-switch-and-end-device-configuration/learn-metadata.json" },
     { "$ref": "./03-protocols-and-models/learn-metadata.json" },
+    { "$ref": "./01-03-exam/learn-metadata.json" },
     { "$ref": "./04-physical-layer/learn-metadata.json" },
     { "$ref": "./05-number-systems/learn-metadata.json" },
     { "$ref": "./06-data-link-layer/learn-metadata.json" },
