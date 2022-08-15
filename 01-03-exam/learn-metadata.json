@@ -1918,7 +1918,7 @@
             "question": "На каком уровне OSI MAC-адрес назначения добавляется к PDU в процессе инкапсуляции?"
         }
     ],
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": { "$ref": "../material-tags.json" },
     "skills": {},
     "assets": { "$ref": "./assets" }
 }
