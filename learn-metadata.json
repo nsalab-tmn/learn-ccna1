@@ -11,6 +11,7 @@
     { "$ref": "./05-number-systems/learn-metadata.json" },
     { "$ref": "./06-data-link-layer/learn-metadata.json" },
     { "$ref": "./07-ethernet-switching/learn-metadata.json" },
+    { "$ref": "./04-07-exam/learn-metadata.json" },
     { "$ref": "./08-network-layer/learn-metadata.json" },
     { "$ref": "./09-address-resolution/learn-metadata.json" },
     { "$ref": "./10-basic-router-configuration/learn-metadata.json" },
