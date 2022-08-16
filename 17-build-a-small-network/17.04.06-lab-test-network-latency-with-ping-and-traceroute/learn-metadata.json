@@ -31,5 +31,81 @@
     },
     "deploy": {
         "$ref": "./deploy"
+    },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. http://www.afrinic.net - минимальная задержка:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. http://www.afrinic.net - максимальная задержка:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. http://www.afrinic.net - среднее значение задержки:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. http://www.apnic.net - минимальная задержка:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. http://www.apnic.net - максимальная задержка:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. http://www.apnic.net - среднее значение задержки:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. http://www.lacnic.net - минимальная задержка:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. http://www.lacnic.net - максимальная задержка:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. http://www.lacnic.net - среднее значение задержки:",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Сравните результаты задержки. Насколько время задержки зависит от географического местоположения?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Какой вывод можно сделать о зависимости времени прохождения сигнала в обоих направлениях и географического местонахождения узла?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Чем отличаются результаты команды `tracert` при добавлении параметра `–d`?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Результаты использования команд `tracert` и `ping` могут дать важную информацию о задержке сети. Что необходимо для того, чтобы получить точную картину основных данных по задержкам сети?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Как можно использовать полученные базовые показатели?",
+                "placeholder": "Enter your answer here"
+            }
+        }
     }
 }

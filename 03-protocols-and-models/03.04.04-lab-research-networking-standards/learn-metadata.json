@@ -23,5 +23,121 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Кто такой Джонатан Брюс Постел (Jonathan B. Postel)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какие две родственные организации отвечают за управление пространством доменных имен верхнего уровня и серверами системы доменных имен (DNS) в Интернете?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Одним из основателей Интернета является Винтон Серф (Vinton Cerf). Какие интернет-организации он возглавлял или помог основать? В разработке каких интернет-технологий он принимал участие?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Какая организация отвечает за публикацию рабочих предложений (Request for Comments, RFC) по стандартам Интернета?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Что общего между RFC 349 и RFC 1700?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_6": {
+                "type": "string",
+                "title": "6. Кто основал Консорциум Всемирной паутины (World Wide Web Consortium, W3C)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_7": {
+                "type": "string",
+                "title": "7. Какие десять стандартов Всемирной паутины (WWW) разрабатывает и поддерживает W3C?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_8": {
+                "type": "string",
+                "title": "8. Где находится штаб-квартира Института инженеров по электротехнике и электронике (Institute of Electrical and Electronics Engineers, IEEE) и что означает его логотип?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_9": {
+                "type": "string",
+                "title": "9. Какой стандарт IEEE относится к протоколу безопасности Wi-Fi Protected Access 2 (WPA2)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_10": {
+                "type": "string",
+                "title": "10. Является ли Wi-Fi Alliance некоммерческой организацией по стандартизации? Какова ее цель?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_11": {
+                "type": "string",
+                "title": "11. Кто такой Хамадун Туре (Hamadoun Tour?)?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Что такое Международный союз электросвязи (ITU) и где расположена его штаб-квартира?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_13": {
+                "type": "string",
+                "title": "13. Назовите три основных сектора ITU.",
+                "placeholder": "Enter your answer here"
+            },
+            "q_14": {
+                "type": "string",
+                "title": "14. Что означает RS в названии RS-232 и какая организация ввела этот термин?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_15": {
+                "type": "string",
+                "title": "15. Что такое SpaceWire?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_16": {
+                "type": "string",
+                "title": "16. Какова миссия Общества Интернета (ISOC) и где расположена его штаб-квартира?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_17": {
+                "type": "string",
+                "title": "17. Работу каких организаций контролирует IAB?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_18": {
+                "type": "string",
+                "title": "18. Какая организация контролирует IAB?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_19": {
+                "type": "string",
+                "title": "19. Когда была основана Международная организация по стандартизации (ISO) и где расположена ее штаб-квартира?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_20": {
+                "type": "string",
+                "title": "20. Каким образом интернет-стандарты способствуют развитию коммерческой деятельности? Какие проблемы могли бы возникнуть, если бы не было IEEE?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_21": {
+                "type": "string",
+                "title": "21. Какие проблемы могли бы возникнуть, если бы не было W3C?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_22": {
+                "type": "string",
+                "title": "22. Какой вывод в отношении необходимости сетевых стандартов можно сделать на примере Wi-Fi Alliance?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }

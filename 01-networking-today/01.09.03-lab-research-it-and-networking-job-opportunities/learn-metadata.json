@@ -23,5 +23,36 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "assets": { "$ref": "./assets" },
+    "answerSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "q_1": {
+                "type": "string",
+                "title": "1. Удалось ли вам найти вакансии для указанных объектов?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_2": {
+                "type": "string",
+                "title": "2. Какие вакансии вы искали?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_3": {
+                "type": "string",
+                "title": "3. Какие требовались навыки или сертификаты?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_4": {
+                "type": "string",
+                "title": "4. Встречались ли вам должности, о существовании которых вы раньше не знали? Если да, то какие?",
+                "placeholder": "Enter your answer here"
+            },
+            "q_5": {
+                "type": "string",
+                "title": "5. Удалось ли вам найти интересующие вакансии? Если да, то какие именно? Какие навыки или сертификаты требуются от кандидатов?",
+                "placeholder": "Enter your answer here"
+            }
+        }
+    }
 }
