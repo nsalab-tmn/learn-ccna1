@@ -3,7 +3,7 @@
     "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
     "difficulty": 1,
     "duration": "PT0H30M",
-    "materialType": "test",
+    "materialType": "test-exam",
     "passingScore": 100,
     "questions": [
         {
