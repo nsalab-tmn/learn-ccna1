@@ -19,6 +19,7 @@
     { "$ref": "./11-ipv4-addressing/learn-metadata.json" },
     { "$ref": "./12-ipv6-addressing/learn-metadata.json" },
     { "$ref": "./13-icmp/learn-metadata.json" },
+    { "$ref": "./11-13-exam/learn-metadata.json" },
     { "$ref": "./14-transport-layer/learn-metadata.json" },
     { "$ref": "./15-application-layer/learn-metadata.json" },
     { "$ref": "./16-network-security-fundamentals/learn-metadata.json" },
