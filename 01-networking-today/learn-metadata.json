@@ -60,6 +60,9 @@
             "$ref": "./01.09-it-specialist/learn-metadata.json"
         },
         {
+            "$ref": "./01.09.03-lab-research-it-and-networking-job-opportunities/learn-metadata.json"
+        },
+        {
             "$ref": "./01.10-summary/learn-metadata.json"
         },
         {

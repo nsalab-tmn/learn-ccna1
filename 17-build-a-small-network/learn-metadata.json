@@ -30,6 +30,9 @@
             "$ref": "./17.04-verify-connectivity/learn-metadata.json"
         },
         {
+            "$ref": "./17.04.06-lab-test-network-latency-with-ping-and-traceroute/learn-metadata.json"
+        },
+        {
             "$ref": "./17.05-host-and-ios-commands/learn-metadata.json"
         },
         {

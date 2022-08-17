@@ -30,6 +30,9 @@
             "$ref": "./03.04-standards-organizations/learn-metadata.json"
         },
         {
+            "$ref": "./03.04.04-lab-research-networking-standards/learn-metadata.json"
+        },
+        {
             "$ref": "./03.04.05-standards-organizations-quiz/learn-metadata.json"
         },
         {
