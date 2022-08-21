@@ -6,7 +6,7 @@
     "difficulty": 1,
     "duration": "PT0H22M",
     "tags": {
-        "$ref": "../../material-tags.json"
+        "$ref": "../material-tags.json"
     },
     "credentialsSchema": {
         "userName": {
