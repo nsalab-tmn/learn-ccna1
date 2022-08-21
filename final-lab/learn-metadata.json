@@ -1,0 +1,35 @@
+{
+    "title": "Практический итоговый экзамен: введение в сетевые технологии",
+    "shortName": "final-lab-1",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: оценка практических навыков по курсу \"введение в сетевые технологии\".",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    }
+}

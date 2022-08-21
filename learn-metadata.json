@@ -26,6 +26,7 @@
     { "$ref": "./16-network-security-fundamentals/learn-metadata.json" },
     { "$ref": "./17-build-a-small-network/learn-metadata.json" },
     { "$ref": "./16-17-exam/learn-metadata.json" },
+    { "$ref": "./final-lab/learn-metadata.json" },
     { "$ref": "./final-exam/learn-metadata.json" }
   ]
 }
