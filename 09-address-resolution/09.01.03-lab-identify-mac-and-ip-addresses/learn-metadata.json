@@ -21,7 +21,7 @@
     },
     "skills": {},
     "text": { "$ref": "./README.md" },
-    "deploy": { "$ref": "./deploy" },
+    
     "assets": { "$ref": "./assets" },
     "tags": { "$ref": "../../material-tags.json" },
     "answerSchema": {

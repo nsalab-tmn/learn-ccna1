@@ -22,7 +22,7 @@
     },
     "skills": {},
     "text": { "$ref": "./README.md" },
-    "deploy": { "$ref": "./deploy" },
+    
     "assets": { "$ref": "./assets" },
     "answerSchema": {
         "type": "object",

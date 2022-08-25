@@ -28,8 +28,5 @@
     },
     "assets": {
         "$ref": "./assets"
-    },
-    "deploy": {
-        "$ref": "./deploy"
     }
 }
