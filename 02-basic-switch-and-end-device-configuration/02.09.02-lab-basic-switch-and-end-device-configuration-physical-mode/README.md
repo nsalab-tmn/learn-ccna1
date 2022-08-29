@@ -1,3 +1,12 @@
+
+---
+
+> **ВАЖНО**
+> 
+> Форма для ответов на вопросы будет доступна только при развертывании лабораторной работы 
+
+---
+
 ## Топология
 
 ![In the topology, PC-A is connected to S1 via f0/6. PC-B is connected to S2 via F0/6. S1 and S2 are connected to each via F0/1.](./assets/topology.png)

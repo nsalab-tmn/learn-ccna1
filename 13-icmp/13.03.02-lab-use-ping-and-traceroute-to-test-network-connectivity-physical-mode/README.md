@@ -1,3 +1,12 @@
+
+---
+
+> **ВАЖНО**
+> 
+> Форма для ответов на вопросы будет доступна только при развертывании лабораторной работы 
+
+---
+
 ## Топология
 
 ![This topology has two PCs, two routers and 1 switch. PC-A is connected to S1 F0/6. Switch S1 F0/6 is connected to router R1 G0/0/1. Router R1 g0/0/0 is connected to ISP G0/0/0. Router ISP G0/0/1 is connected to the PC External.](./assets/topology.png)
