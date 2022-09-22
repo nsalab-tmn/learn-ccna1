@@ -8,7 +8,7 @@
 Как показано на рисунке, локальный адрес канала динамически создается с помощью префикса FE80::/10 и полученного с помощью процесса EUI-64 или случайно сгенерированного 64-битного идентификатора интерфейса.
 
 ![](./assets/12.6.1.png)
-<!-- /courses/itn-dl/aeed55b2-34fa-11eb-ad9a-f74babed41a6/af2359d6-34fa-11eb-ad9a-f74babed41a6/assets/2e4bd1f1-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 
 <!-- 12.6.2 -->
 ## Специфика LLA в ОС Windows
@@ -74,7 +74,7 @@ R1#
 ## Проверка конфигурации IPv6-адреса
 
 ![](./assets/12.6.4.png)
-<!-- /courses/itn-dl/aeed55b2-34fa-11eb-ad9a-f74babed41a6/af2359d6-34fa-11eb-ad9a-f74babed41a6/assets/2e4c4720-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 
 **Команда ``show ipv6 interface brief``**
 

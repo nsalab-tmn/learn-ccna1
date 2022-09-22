@@ -34,7 +34,7 @@ Router(config-if)# no shutdown
 В этом примере будут включены напрямую подключенные интерфейсы R1 в схеме топологии.
 
 ![](./assets/10.2.2.png)
-<!-- /courses/itn-dl/aeed2ea2-34fa-11eb-ad9a-f74babed41a6/af222150-34fa-11eb-ad9a-f74babed41a6/assets/2e1f6ac2-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 
 Чтобы настроить интерфейсы на R1, используйте следующие команды.
 

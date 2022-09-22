@@ -60,7 +60,7 @@ Router# copy running-config startup-config
 В этом примере маршрутизатор R1 в схеме топологии будет настроен с исходными настройками.
 
 ![](./assets/10.1.2.png)
-<!-- /courses/itn-dl/aeed2ea2-34fa-11eb-ad9a-f74babed41a6/af21fa42-34fa-11eb-ad9a-f74babed41a6/assets/2e1dbd13-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 
 Чтобы настроить имя устройства для R1, используйте следующие команды.
 

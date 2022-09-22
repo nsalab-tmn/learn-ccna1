@@ -179,7 +179,7 @@ MacBook-Air:~ Admin$
 Например, обратимся к следующей топологии.
 
 ![](./assets/17.5.4.png)
-<!-- /courses/itn-dl/aeeda3d0-34fa-11eb-ad9a-f74babed41a6/af257cb2-34fa-11eb-ad9a-f74babed41a6/assets/2e8f1c83-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 
 Вывод  команды **arp -a** на узле Windows PC-A. 
 
@@ -479,7 +479,7 @@ R1#
 * **Платформа** — аппаратная платформа устройства, например маршрутизатор Cisco серии 1841
 
 ![](./assets/17.5.6.png)
-<!-- /courses/itn-dl/aeeda3d0-34fa-11eb-ad9a-f74babed41a6/af257cb2-34fa-11eb-ad9a-f74babed41a6/assets/2e8fdfd2-1c25-11ea-81a0-ffc2c49b96bc.svg -->
+
 
 ```
 R3# show cdp neighbors
