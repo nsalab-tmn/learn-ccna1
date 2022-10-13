@@ -1,0 +1,5 @@
+{
+    "ms.yaml":	{ "$ref": "./assessment/ms.yaml" },
+    "testbed.yaml":	{ "$ref": "./assessment/testbed.yaml" },
+    "parameters.yaml":	{ "$ref": "./assessment/parameters.yaml" }
+}
