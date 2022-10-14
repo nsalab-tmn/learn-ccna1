@@ -1,5 +1,3 @@
 #!/bin/bash
-
-wget -O - https://learncertstore.blob.core.windows.net/supercert/supercert.pem > $LOCAL_PATH/supercert.pem
-wget -O - https://learncertstore.blob.core.windows.net/supercert/supercert.key > $LOCAL_PATH/supercert.key
-
+wget -O $LOCAL_PATH/supercert.pem https://learncertstore.blob.core.windows.net/supercert/supercert.pem
+wget -O $LOCAL_PATH/supercert.key https://learncertstore.blob.core.windows.net/supercert/supercert.key
