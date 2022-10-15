@@ -7,13 +7,13 @@ devices:
     connections:
       a:
         protocol: ssh
-        ip: 127.0.0.1
+        ip: '%ENV{pt-url}'
         port: 22
         ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o TCPKeepAlive=yes -o ServerAliveInterval=10
         credentials:
           default:
             username: 'root'
-            password: 'VeryLongP@ssw0rd'  
+            password: '%ENV{admin_pass}'
         arguments:
           connection_timeout: 15
           learn_hostname: True  

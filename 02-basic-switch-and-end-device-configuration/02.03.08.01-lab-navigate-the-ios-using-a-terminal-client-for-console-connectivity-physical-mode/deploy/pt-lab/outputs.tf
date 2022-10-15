@@ -16,6 +16,11 @@ output "pt-api-port" {
   depends_on  = []
 }
 
+output "admin_pass" {
+  value = var.root_password
+  description = "Admin password"
+}
+
 output "learn_user" {
   value       =  "student"
   description = "Main User"
