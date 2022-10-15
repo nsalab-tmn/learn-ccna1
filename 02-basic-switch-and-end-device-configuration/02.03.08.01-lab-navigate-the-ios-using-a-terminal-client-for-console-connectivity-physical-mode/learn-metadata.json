@@ -23,6 +23,7 @@
     "skills": {},
     "text": { "$ref": "./README.md" },
     "assessment": { "$ref": "./assessment.json" },
+    "testcase": { "$ref": "./assessment/testcases.d" },
     "assets": { "$ref": "./assets" },
     "deploy": { "$ref": "./deploy" },
     "answerSchema": {

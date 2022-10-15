@@ -1,0 +1,12 @@
+- name: Register packet tracer aspect mark
+  code: register
+  type: check
+  result: null
+  device: dummy
+  action_chain:
+    - action: validate_web_response
+      action_vars:
+        name: http://{pt-url}:{pt-api-port}
+        assert_jmespath:
+          path: '"assessment_items"."PC"."Physical Location"."status"'
+          value: Correct
