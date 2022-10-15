@@ -2,18 +2,7 @@ testbed:
   name: lab02.03.08
 
 devices:
-  PT:
-    os: linux
+  dummy:
     connections:
       a:
-        protocol: ssh
-        ip: '%ENV{pt-url}'
-        port: 22
-        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o TCPKeepAlive=yes -o ServerAliveInterval=10
-        credentials:
-          default:
-            username: 'root'
-            password: '%ENV{admin_pass}'
-        arguments:
-          connection_timeout: 15
-          learn_hostname: True  
+        ip: localhost
