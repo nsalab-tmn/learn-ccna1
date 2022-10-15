@@ -11,14 +11,14 @@ Criterions:
       skills: Physical
       max_mark: 1
       steps: !include A.01.01.yaml
-      result: null
+      result:
     - name: Link to PC.Type
       code: 2
       description: null
       skills: Physical
       max_mark: 1
       steps: !include A.01.02.yaml
-      result: null
+      result:
   - name: Miscellaneous
     code: 2
     aspects:
@@ -28,14 +28,14 @@ Criterions:
       skills: Physical
       max_mark: 1
       steps: !include A.02.01.yaml
-      result: null
+      result:
     - name: Power
       code: 2
       description: null
       skills: Physical
       max_mark: 1
       steps: !include A.02.02.yaml
-      result: null
+      result:
 - code: B
   name: '4321'
   subCriterions:
@@ -48,14 +48,14 @@ Criterions:
       skills: Physical
       max_mark: 1
       steps: !include B.01.01.yaml
-      result: null
+      result:
     - name: Power
       code: 2
       description: null
       skills: Physical
       max_mark: 1
       steps: !include B.01.02.yaml
-      result: null
+      result:
 - code: C
   name: Laptop
   subCriterions:
@@ -68,14 +68,14 @@ Criterions:
       skills: Physical
       max_mark: 1
       steps: !include C.01.01.yaml
-      result: null
+      result:
     - name: Power
       code: 2
       description: null
       skills: Physical
       max_mark: 1
       steps: !include C.01.02.yaml
-      result: null
+      result:
 - code: D
   name: PC
   subCriterions:
@@ -88,11 +88,11 @@ Criterions:
       skills: Physical
       max_mark: 1
       steps: !include D.01.01.yaml
-      result: null
+      result:
     - name: Power
       code: 2
       description: null
       skills: Physical
       max_mark: 1
       steps: !include D.01.02.yaml
-      result: null
+      result:
