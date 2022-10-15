@@ -6,7 +6,7 @@
   action_chain:
     - action: validate_web_response
       action_vars:
-        name: http://{pt-url}:{pt-api-port}
+        name: http://{pt_url}:{pt_api_port}
         assert_jmespath:
           path: '"assessment_items"."4321"."Physical Location"."status"'
           value: Correct

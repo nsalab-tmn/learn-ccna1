@@ -4,14 +4,14 @@ output "URL" {
   depends_on  = []
 }
 
-output "pt-url" {
+output "pt_url" {
   value       = "${azurerm_dns_a_record.a_record.name}.${azurerm_dns_a_record.a_record.zone_name}"
   description = "PT API address"
   depends_on  = []
 }
 
-output "pt-api-port" {
-  value       = "8080"
+output "pt_api_port" {
+  value       = 8080
   description = "PT API port"
   depends_on  = []
 }
