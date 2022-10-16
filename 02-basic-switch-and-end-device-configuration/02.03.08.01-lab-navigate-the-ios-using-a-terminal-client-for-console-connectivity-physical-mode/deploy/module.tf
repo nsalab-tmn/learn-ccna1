@@ -18,12 +18,12 @@ output "learn_user" {
   description = "Main User"
 }
 
-output "pt_url" {
-  value       = module.pt_lab[0].pt_url
+output "pt-url" {
+  value       = module.pt_lab[0].pt-url
   description = "PT API address"
 }
 
-output "pt_api_port" {
+output "pt-api-port" {
   value       = 8080
   description = "PT API port"
 }
