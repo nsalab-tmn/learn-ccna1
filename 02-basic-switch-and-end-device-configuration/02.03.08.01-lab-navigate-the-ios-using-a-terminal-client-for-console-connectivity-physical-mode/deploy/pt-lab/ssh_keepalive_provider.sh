@@ -17,4 +17,4 @@ secs=$((secs*sleep))
 if [ $counter -ne -1 ]; then
    timeout=false
 fi
-eval "$(jq -n --arg seconds $secs --arg is_timeout $timeout '{"seconds_to_deploy":$seconds, "timeout":$is_timeout}')"
+jq -n --arg seconds "$secs" --arg is_timeout "$timeout" '{"seconds_to_deploy":$seconds, "timeout":$is_timeout}' '.[]'

@@ -24,7 +24,7 @@ resource "vkcs_compute_instance" "compute" {
   }
 
   provisioner "file" {
-    source      = "${path.module}/lab.pka"
+    source      = "${path.module}/2.3.8.pka"
     destination = "/opt/nsalab/lab/lab.pka"
   }
 
