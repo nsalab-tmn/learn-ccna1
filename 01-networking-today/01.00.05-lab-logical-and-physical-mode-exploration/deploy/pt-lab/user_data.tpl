@@ -7,3 +7,5 @@ chpasswd:
 hostname: ${hostname}
 runcmd:
 - service nginx restart
+- systemctl restart vncserver@1.service
+- systemctl restart pt.service
