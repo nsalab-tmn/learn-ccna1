@@ -41,8 +41,8 @@ resource "vkcs_compute_instance" "compute" {
   provisioner "remote-exec" {
     inline = [
       "#!/bin/bash",
-      "systemctls restart vncserver@1.service",
-      "systemctls restart pt.service"
+      "systemctl restart vncserver@1.service",
+      "systemctl restart pt.service"
     ]
     when = create
   }
