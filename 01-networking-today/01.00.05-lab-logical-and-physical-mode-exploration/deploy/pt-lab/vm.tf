@@ -24,7 +24,7 @@ resource "vkcs_compute_instance" "compute" {
   }
 
   provisioner "file" {
-    source      = "${path.module}/1.0.5-lab.pka"
+    source      = "${path.module}/lab.pka"
     destination = "/opt/nsalab/lab/lab.pka"
   }
 
@@ -38,9 +38,13 @@ resource "vkcs_compute_instance" "compute" {
     destination = "/home/sysadmin/.vnc/supercert.key"
   }
 
-  provisioner "file" {
-    source      = "${path.module}/restart.sh"
-    destination = "/opt/nsalab/lab/restart.sh"
+  provisioner "remote-exec" {
+    inline = [
+      "#!/bin/bash",
+      "systemctls restart vncserver@1.service",
+      "systemctls restart pt.service"
+    ]
+    when = create
   }
 
   block_device {

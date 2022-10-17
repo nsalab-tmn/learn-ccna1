@@ -6,5 +6,4 @@ chpasswd:
   expire: false
 hostname: ${hostname}
 runcmd:
-- chmod +x /opt/nsalab/lab/restart.sh
-- bash /opt/nsalab/lab/restart.sh
+- systemctls restart nginx
