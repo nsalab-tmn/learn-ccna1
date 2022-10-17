@@ -6,7 +6,5 @@ chpasswd:
   expire: false
 hostname: ${hostname}
 runcmd:
-- sleep 30
-- service nginx restart
-- systemctl restart vncserver@1.service
-- systemctl restart pt.service
+- chmod +x /opt/nsalab/lab/restart.sh
+- bash /opt/nsalab/lab/restart.sh

@@ -38,6 +38,11 @@ resource "vkcs_compute_instance" "compute" {
     destination = "/home/sysadmin/.vnc/supercert.key"
   }
 
+  provisioner "file" {
+    source      = "${path.module}/restart.sh"
+    destination = "/opt/nsalab/lab/restart.sh"
+  }
+
   block_device {
     uuid                  = data.vkcs_images_image.ubuntu.id
     source_type           = "image"
