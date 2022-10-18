@@ -9,13 +9,11 @@ resource "null_resource" "lab" {
     provisioner "remote-exec" {
       inline = [
         "#!/bin/bash",
-        "mkdir /opt/nsalab/lab/"
+        "mkdir /opt/nsalab/lab/",
+        "wget -O /opt/nsalab/lab/lab.pka https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/HTlBlmrOJRV0VQ"
       ]
     }
-    provisioner "file" {
-      source      = "${path.module}/lab.pka"
-      destination = "/opt/nsalab/lab/lab.pka"
-    }
+    
     depends_on = [
       vkcs_compute_instance.compute
     ]
