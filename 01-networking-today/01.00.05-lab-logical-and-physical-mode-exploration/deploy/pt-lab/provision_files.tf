@@ -6,6 +6,12 @@ resource "null_resource" "lab" {
       host     = vkcs_compute_instance.compute[0].access_ip_v4
 
     }
+    provisioner "remote-exec" {
+      inline = [
+        "#!/bin/bash",
+        "mkdir -p /opt/nsalab/lab"
+      ]
+    }
     provisioner "file" {
       source      = "${path.module}/1.0.5-lab.pka"
       destination = "/opt/nsalab/lab/lab.pka"
