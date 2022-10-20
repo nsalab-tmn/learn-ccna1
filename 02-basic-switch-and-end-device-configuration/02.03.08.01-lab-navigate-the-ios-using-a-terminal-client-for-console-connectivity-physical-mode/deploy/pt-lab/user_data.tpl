@@ -5,5 +5,3 @@ chpasswd:
     sysadmin:${student_pass}
   expire: false
 hostname: ${hostname}
-runcmd:
-- service nginx restart

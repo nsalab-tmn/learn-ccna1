@@ -23,21 +23,6 @@ resource "vkcs_compute_instance" "compute" {
 
   }
 
-  provisioner "file" {
-    source      = "${path.module}/2.3.8.pka"
-    destination = "/opt/nsalab/lab/lab.pka"
-  }
-
-  provisioner "file" {
-    source      = "${path.module}/supercert.pem"
-    destination = "/home/sysadmin/.vnc/supercert.pem"
-  }
-
-  provisioner "file" {
-    source      = "${path.module}/supercert.key"
-    destination = "/home/sysadmin/.vnc/supercert.key"
-  }
-
   block_device {
     uuid                  = data.vkcs_images_image.ubuntu.id
     source_type           = "image"

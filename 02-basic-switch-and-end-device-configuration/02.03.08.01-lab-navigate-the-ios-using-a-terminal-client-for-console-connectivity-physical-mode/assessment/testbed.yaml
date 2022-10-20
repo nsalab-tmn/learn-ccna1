@@ -1,5 +1,5 @@
 testbed:
-  name: lab02.03.08
+  name: lab2.3.8
 
 devices:
   dummy:
