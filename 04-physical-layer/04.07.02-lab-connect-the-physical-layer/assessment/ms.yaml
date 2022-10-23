@@ -1,0 +1,1143 @@
+Criterions:
+- code: A
+  name: Access Point
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Port 0.Link to Switch2.Connects to GigabitEthernet3/1
+      code: 1
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Access Point"."Ports"."Port 0"."Link to Switch2"."Connects
+                to GigabitEthernet3/1"."status"'
+              value: Correct
+      result: null
+    - name: Port 0.Link to Switch2.Type
+      code: 2
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Access Point"."Ports"."Port 0"."Link to Switch2"."Type"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: East
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0/1/0.Link to PC1.Connects to FastEthernet0
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."FastEthernet0/1/0"."Link to
+                PC1"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1/0.Link to PC1.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."FastEthernet0/1/0"."Link to
+                PC1"."Type"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1/1.Link to PC2.Connects to FastEthernet0
+      code: 3
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."FastEthernet0/1/1"."Link to
+                PC2"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1/1.Link to PC2.Type
+      code: 4
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."FastEthernet0/1/1"."Link to
+                PC2"."Type"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1/2.Link to PC3.Connects to FastEthernet0
+      code: 5
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."FastEthernet0/1/2"."Link to
+                PC3"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1/2.Link to PC3.Type
+      code: 6
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."FastEthernet0/1/2"."Link to
+                PC3"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Link to Switch1.Connects to GigabitEthernet0/1
+      code: 7
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."GigabitEthernet0/0"."Link
+                to Switch1"."Connects to GigabitEthernet0/1"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Link to Switch1.Type
+      code: 8
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."GigabitEthernet0/0"."Link
+                to Switch1"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link to Switch4.Connects to GigabitEthernet0/1
+      code: 9
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."GigabitEthernet0/1"."Link
+                to Switch4"."Connects to GigabitEthernet0/1"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link to Switch4.Type
+      code: 10
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."GigabitEthernet0/1"."Link
+                to Switch4"."Type"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Link to West.Connects to Serial0/0/0
+      code: 11
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."East"."Ports"."Serial0/0/0"."Link to West"."Connects
+                to Serial0/0/0"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: Laptop
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Wireless0.Wireless Links
+      code: 1
+      description: null
+      skills: Other
+      max_mark: 0
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Laptop"."Ports"."Wireless0"."Wireless Links"."status"'
+              value: Correct
+      result: null
+- code: D
+  name: PC1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to East.Connects to FastEthernet0/1/0
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC1"."Ports"."FastEthernet0"."Link to East"."Connects
+                to FastEthernet0/1/0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Link to East.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC1"."Ports"."FastEthernet0"."Link to East"."Type"."status"'
+              value: Correct
+      result: null
+- code: E
+  name: PC2
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to East.Connects to FastEthernet0/1/1
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC2"."Ports"."FastEthernet0"."Link to East"."Connects
+                to FastEthernet0/1/1"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Link to East.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC2"."Ports"."FastEthernet0"."Link to East"."Type"."status"'
+              value: Correct
+      result: null
+- code: F
+  name: PC3
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to East.Connects to FastEthernet0/1/2
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC3"."Ports"."FastEthernet0"."Link to East"."Connects
+                to FastEthernet0/1/2"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Link to East.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC3"."Ports"."FastEthernet0"."Link to East"."Type"."status"'
+              value: Correct
+      result: null
+- code: G
+  name: PC4
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to Switch1.Connects to FastEthernet0/1
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC4"."Ports"."FastEthernet0"."Link to Switch1"."Connects
+                to FastEthernet0/1"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Link to Switch1.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC4"."Ports"."FastEthernet0"."Link to Switch1"."Type"."status"'
+              value: Correct
+      result: null
+- code: H
+  name: PC5
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to Switch1.Connects to FastEthernet0/2
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC5"."Ports"."FastEthernet0"."Link to Switch1"."Connects
+                to FastEthernet0/2"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Link to Switch1.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC5"."Ports"."FastEthernet0"."Link to Switch1"."Type"."status"'
+              value: Correct
+      result: null
+- code: I
+  name: PC6
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to Switch1.Connects to FastEthernet0/3
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC6"."Ports"."FastEthernet0"."Link to Switch1"."Connects
+                to FastEthernet0/3"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Link to Switch1.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC6"."Ports"."FastEthernet0"."Link to Switch1"."Type"."status"'
+              value: Correct
+      result: null
+- code: J
+  name: Switch1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0/1.Link to PC4.Connects to FastEthernet0
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."FastEthernet0/1"."Link
+                to PC4"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1.Link to PC4.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."FastEthernet0/1"."Link
+                to PC4"."Type"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/2.Link to PC5.Connects to FastEthernet0
+      code: 3
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."FastEthernet0/2"."Link
+                to PC5"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/2.Link to PC5.Type
+      code: 4
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."FastEthernet0/2"."Link
+                to PC5"."Type"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/3.Link to PC6.Connects to FastEthernet0
+      code: 5
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."FastEthernet0/3"."Link
+                to PC6"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/3.Link to PC6.Type
+      code: 6
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."FastEthernet0/3"."Link
+                to PC6"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link to East.Connects to GigabitEthernet0/0
+      code: 7
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."GigabitEthernet0/1"."Link
+                to East"."Connects to GigabitEthernet0/0"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link to East.Type
+      code: 8
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch1"."Ports"."GigabitEthernet0/1"."Link
+                to East"."Type"."status"'
+              value: Correct
+      result: null
+- code: K
+  name: Switch2
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0/1.Link to PC7.Connects to FastEthernet0
+      code: 1
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."FastEthernet0/1"."Link
+                to PC7"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1.Link to PC7.Type
+      code: 2
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."FastEthernet0/1"."Link
+                to PC7"."Type"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet1/1.Link to PC8.Connects to FastEthernet0
+      code: 3
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."FastEthernet1/1"."Link
+                to PC8"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet1/1.Link to PC8.Type
+      code: 4
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."FastEthernet1/1"."Link
+                to PC8"."Type"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet2/1.Link to PC9.Connects to FastEthernet0
+      code: 5
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."FastEthernet2/1"."Link
+                to PC9"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet2/1.Link to PC9.Type
+      code: 6
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."FastEthernet2/1"."Link
+                to PC9"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet3/1.Link to Access Point.Connects to Port 0
+      code: 7
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."GigabitEthernet3/1"."Link
+                to Access Point"."Connects to Port 0"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet3/1.Link to Access Point.Type
+      code: 8
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."GigabitEthernet3/1"."Link
+                to Access Point"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet5/1.Link to Switch3.Connects to GigabitEthernet5/1
+      code: 9
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."GigabitEthernet5/1"."Link
+                to Switch3"."Connects to GigabitEthernet5/1"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet5/1.Link to Switch3.Type
+      code: 10
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch2"."Ports"."GigabitEthernet5/1"."Link
+                to Switch3"."Type"."status"'
+              value: Correct
+      result: null
+- code: L
+  name: Switch3
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: GigabitEthernet3/1.Link to Switch4.Connects to GigabitEthernet0/2
+      code: 1
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch3"."Ports"."GigabitEthernet3/1"."Link
+                to Switch4"."Connects to GigabitEthernet0/2"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet3/1.Link to Switch4.Type
+      code: 2
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch3"."Ports"."GigabitEthernet3/1"."Link
+                to Switch4"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet5/1.Link to Switch2.Connects to GigabitEthernet5/1
+      code: 3
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch3"."Ports"."GigabitEthernet5/1"."Link
+                to Switch2"."Connects to GigabitEthernet5/1"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet5/1.Link to Switch2.Type
+      code: 4
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch3"."Ports"."GigabitEthernet5/1"."Link
+                to Switch2"."Type"."status"'
+              value: Correct
+      result: null
+- code: M
+  name: Switch4
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: GigabitEthernet0/1.Link to East.Connects to GigabitEthernet0/1
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch4"."Ports"."GigabitEthernet0/1"."Link
+                to East"."Connects to GigabitEthernet0/1"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link to East.Type
+      code: 2
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch4"."Ports"."GigabitEthernet0/1"."Link
+                to East"."Type"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/2.Link to Switch3.Connects to GigabitEthernet3/1
+      code: 3
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch4"."Ports"."GigabitEthernet0/2"."Link
+                to Switch3"."Connects to GigabitEthernet3/1"."status"'
+              value: Correct
+      result: null
+- code: N
+  name: TabletPC
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: 3G/4G Cell1.Wireless Links
+      code: 1
+      description: null
+      skills: Other
+      max_mark: 0
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."TabletPC"."Ports"."3G/4G Cell1"."Wireless
+                Links"."status"'
+              value: Correct
+      result: null
+- code: O
+  name: West
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Serial0/0/0.Link to East.Connects to Serial0/0/0
+      code: 1
+      description: null
+      skills: Connect Devices
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."West"."Ports"."Serial0/0/0"."Link to East"."Connects
+                to Serial0/0/0"."status"'
+              value: Correct
+      result: null

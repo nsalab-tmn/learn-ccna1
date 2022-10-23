@@ -1,0 +1,378 @@
+Criterions:
+- code: A
+  name: Cable Modem
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Port 0.Link to Cloud.Connects to Coaxial7
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Cable Modem"."Ports"."Port 0"."Link to Cloud"."Connects
+                to Coaxial7"."status"'
+              value: Correct
+      result: null
+    - name: Port 1.Link to Wireless Router.Connects to Internet
+      code: 2
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Cable Modem"."Ports"."Port 1"."Link to Wireless
+                Router"."Connects to Internet"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: Cloud
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Coaxial7.Link to Cable Modem.Connects to Port 0
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Cloud"."Ports"."Coaxial7"."Link to Cable
+                Modem"."Connects to Port 0"."status"'
+              value: Correct
+      result: null
+    - name: Ethernet6.Link to Router0.Connects to FastEthernet0/0
+      code: 2
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Cloud"."Ports"."Ethernet6"."Link to Router0"."Connects
+                to FastEthernet0/0"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: Configuration Terminal
+  subCriterions:
+  - name: RS 232
+    code: 1
+    aspects:
+    - name: Link to Router0.Connects to Console
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Configuration Terminal"."RS 232"."Link to
+                Router0"."Connects to Console"."status"'
+              value: Correct
+      result: null
+- code: D
+  name: Family PC
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to Wireless Router.Connects to Ethernet 1
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Family PC"."Ports"."FastEthernet0"."Link
+                to Wireless Router"."Connects to Ethernet 1"."status"'
+              value: Correct
+      result: null
+- code: E
+  name: Router0
+  subCriterions:
+  - name: Console
+    code: 1
+    aspects:
+    - name: Link to Configuration Terminal.Connects to RS 232
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Router0"."Console"."Link to Configuration
+                Terminal"."Connects to RS 232"."status"'
+              value: Correct
+      result: null
+  - name: Ports
+    code: 2
+    aspects:
+    - name: FastEthernet0/0.Link to Cloud.Connects to Ethernet6
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Router0"."Ports"."FastEthernet0/0"."Link
+                to Cloud"."Connects to Ethernet6"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/1.Link to netacad.pka.Connects to FastEthernet0
+      code: 2
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Router0"."Ports"."FastEthernet0/1"."Link
+                to netacad"."pka"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Link to Router1.Connects to Serial0/0
+      code: 3
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Router0"."Ports"."Serial0/0/0"."Link to Router1"."Connects
+                to Serial0/0"."status"'
+              value: Correct
+      result: null
+- code: F
+  name: Router1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet1/0.Link to Switch.Connects to FastEthernet0/1
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Router1"."Ports"."FastEthernet1/0"."Link
+                to Switch"."Connects to FastEthernet0/1"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0.Link to Router0.Connects to Serial0/0/0
+      code: 2
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Router1"."Ports"."Serial0/0"."Link to Router0"."Connects
+                to Serial0/0/0"."status"'
+              value: Correct
+      result: null
+- code: G
+  name: Switch
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0/1.Link to Router1.Connects to FastEthernet1/0
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Switch"."Ports"."FastEthernet0/1"."Link to
+                Router1"."Connects to FastEthernet1/0"."status"'
+              value: Correct
+      result: null
+- code: H
+  name: Wireless Router
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Ethernet 1.Link to Family PC.Connects to FastEthernet0
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Wireless Router"."Ports"."Ethernet 1"."Link
+                to Family PC"."Connects to FastEthernet0"."status"'
+              value: Correct
+      result: null
+    - name: Internet.Link to Cable Modem.Connects to Port 1
+      code: 2
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Wireless Router"."Ports"."Internet"."Link
+                to Cable Modem"."Connects to Port 1"."status"'
+              value: Correct
+      result: null
+- code: I
+  name: netacad.pka
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.Link to Router0.Connects to FastEthernet0/1
+      code: 1
+      description: null
+      skills: Device Connection
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."netacad"."pka"."Ports"."FastEthernet0"."Link
+                to Router0"."Connects to FastEthernet0/1"."status"'
+              value: Correct
+      result: null
