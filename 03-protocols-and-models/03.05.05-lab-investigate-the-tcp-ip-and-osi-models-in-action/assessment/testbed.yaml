@@ -1,0 +1,8 @@
+testbed:
+  name: lab3.5.5
+
+devices:
+  dummy:
+    connections:
+      a:
+        ip: localhost
