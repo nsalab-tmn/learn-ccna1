@@ -1,0 +1,8 @@
+testbed:
+  name: lab10.4.3
+
+devices:
+  dummy:
+    connections:
+      a:
+        ip: localhost

@@ -1,0 +1,101 @@
+Criterions:
+- code: A
+  name: PC1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IP Address
+      code: 1
+      description: null
+      skills: Default Gateway Troubleshooting
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC1"."Ports"."FastEthernet0"."IP Address"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: PC4
+  subCriterions:
+  - name: Miscellaneous
+    code: 1
+    aspects:
+    - name: Default Gateway
+      code: 1
+      description: null
+      skills: Default Gateway Troubleshooting
+      max_mark: 10
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC4"."Default Gateway"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: S1
+  subCriterions:
+  - name: Miscellaneous
+    code: 1
+    aspects:
+    - name: Default Gateway
+      code: 1
+      description: null
+      skills: Default Gateway Troubleshooting
+      max_mark: 10
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."S1"."Default Gateway"."status"'
+              value: Correct
+      result: null
+- code: D
+  name: S2
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: Vlan1.IP Address
+      code: 1
+      description: null
+      skills: Default Gateway Troubleshooting
+      max_mark: 10
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."S2"."Ports"."Vlan1"."IP Address"."status"'
+              value: Correct
+      result: null
