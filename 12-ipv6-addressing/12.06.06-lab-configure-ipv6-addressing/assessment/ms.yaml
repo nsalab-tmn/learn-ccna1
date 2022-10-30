@@ -1,0 +1,693 @@
+Criterions:
+- code: A
+  name: Accounting
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:1::4.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Accounting"."Ports"."FastEthernet0"."IPv6
+                Addresses"."2001:DB8:1:1::4"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:1::4.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Accounting"."Ports"."FastEthernet0"."IPv6
+                Addresses"."2001:DB8:1:1::4"."Prefix Length"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway IPv6
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Accounting"."Default Gateway IPv6"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: Billing
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:1::3.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Billing"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:1::3"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:1::3.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Billing"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:1::3"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway IPv6
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Billing"."Default Gateway IPv6"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: CAD
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:2::4.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."CAD"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:2::4"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:2::4.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."CAD"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:2::4"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway IPv6
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."CAD"."Default Gateway IPv6"."status"'
+              value: Correct
+      result: null
+- code: D
+  name: Design
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:2::2.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Design"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:2::2"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:2::2.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Design"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:2::2"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway IPv6
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Design"."Default Gateway IPv6"."status"'
+              value: Correct
+      result: null
+- code: E
+  name: Engineering
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:2::3.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Engineering"."Ports"."FastEthernet0"."IPv6
+                Addresses"."2001:DB8:1:2::3"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:2::3.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Engineering"."Ports"."FastEthernet0"."IPv6
+                Addresses"."2001:DB8:1:2::3"."Prefix Length"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway IPv6
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Engineering"."Default Gateway IPv6"."status"'
+              value: Correct
+      result: null
+- code: F
+  name: R1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: GigabitEthernet0/0.IPv6 Addresses.2001:DB8:1:1::1.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."IPv6 Addresses"."2001:DB8:1:1::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.IPv6 Addresses.2001:DB8:1:1::1.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."IPv6 Addresses"."2001:DB8:1:1::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Link Local
+      code: 3
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Port Status
+      code: 4
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.IPv6 Addresses.2001:DB8:1:2::1.IP Address
+      code: 5
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."IPv6 Addresses"."2001:DB8:1:2::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.IPv6 Addresses.2001:DB8:1:2::1.Prefix Length
+      code: 6
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."IPv6 Addresses"."2001:DB8:1:2::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link Local
+      code: 7
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Port Status
+      code: 8
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.IPv6 Addresses.2001:DB8:1:A001::2.IP Address
+      code: 9
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."IPv6 Addresses"."2001:DB8:1:A001::2"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.IPv6 Addresses.2001:DB8:1:A001::2.Prefix Length
+      code: 10
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."IPv6 Addresses"."2001:DB8:1:A001::2"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Link Local
+      code: 11
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Port Status
+      code: 12
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+  - name: Routesv6
+    code: 2
+    aspects:
+    - name: IPv6 Unicast Routing
+      code: 1
+      description: null
+      skills: Routing
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Routesv6"."IPv6 Unicast Routing"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 3
+    aspects:
+    - name: Startup Config
+      code: 1
+      description: null
+      skills: Other
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Startup Config"."status"'
+              value: Correct
+      result: null
+- code: G
+  name: Sales
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:1::2.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Sales"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:1::2"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IPv6 Addresses.2001:DB8:1:1::2.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Sales"."Ports"."FastEthernet0"."IPv6 Addresses"."2001:DB8:1:1::2"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway IPv6
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Sales"."Default Gateway IPv6"."status"'
+              value: Correct
+      result: null

@@ -1,0 +1,625 @@
+Criterions:
+- code: A
+  name: PC1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Auto Config
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC1"."Ports"."FastEthernet0"."IPv6 Auto Config"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: PC2
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Auto Config
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC2"."Ports"."FastEthernet0"."IPv6 Auto Config"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: PC3
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Auto Config
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC3"."Ports"."FastEthernet0"."IPv6 Auto Config"."status"'
+              value: Correct
+      result: null
+- code: D
+  name: PC4
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IPv6 Auto Config
+      code: 1
+      description: null
+      skills: IPv6 Address Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC4"."Ports"."FastEthernet0"."IPv6 Auto Config"."status"'
+              value: Correct
+      result: null
+- code: E
+  name: R1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: GigabitEthernet0/0.IPv6 Addresses.2001:DB8:ACAD:C8::1.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."IPv6 Addresses"."2001:DB8:ACAD:C8::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.IPv6 Addresses.2001:DB8:ACAD:C8::1.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."IPv6 Addresses"."2001:DB8:ACAD:C8::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Link Local
+      code: 3
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Port Status
+      code: 4
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.IPv6 Addresses.2001:DB8:ACAD:C9::1.IP Address
+      code: 5
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."IPv6 Addresses"."2001:DB8:ACAD:C9::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.IPv6 Addresses.2001:DB8:ACAD:C9::1.Prefix Length
+      code: 6
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."IPv6 Addresses"."2001:DB8:ACAD:C9::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link Local
+      code: 7
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Port Status
+      code: 8
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."GigabitEthernet0/1"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.IPv6 Addresses.2001:DB8:ACAD:CC::1.IP Address
+      code: 9
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."IPv6 Addresses"."2001:DB8:ACAD:CC::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.IPv6 Addresses.2001:DB8:ACAD:CC::1.Prefix Length
+      code: 10
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."IPv6 Addresses"."2001:DB8:ACAD:CC::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Link Local
+      code: 11
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Port Status
+      code: 12
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Ports"."Serial0/0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+  - name: Routesv6
+    code: 2
+    aspects:
+    - name: IPv6 Unicast Routing
+      code: 1
+      description: null
+      skills: Routing
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R1"."Routesv6"."IPv6 Unicast Routing"."status"'
+              value: Correct
+      result: null
+- code: F
+  name: R2
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: GigabitEthernet0/0.IPv6 Addresses.2001:DB8:ACAD:CA::1.IP Address
+      code: 1
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/0"."IPv6 Addresses"."2001:DB8:ACAD:CA::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.IPv6 Addresses.2001:DB8:ACAD:CA::1.Prefix Length
+      code: 2
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/0"."IPv6 Addresses"."2001:DB8:ACAD:CA::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Link Local
+      code: 3
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/0"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Port Status
+      code: 4
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.IPv6 Addresses.2001:DB8:ACAD:CB::1.IP Address
+      code: 5
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/1"."IPv6 Addresses"."2001:DB8:ACAD:CB::1"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.IPv6 Addresses.2001:DB8:ACAD:CB::1.Prefix Length
+      code: 6
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/1"."IPv6 Addresses"."2001:DB8:ACAD:CB::1"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Link Local
+      code: 7
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/1"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/1.Port Status
+      code: 8
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."GigabitEthernet0/1"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.IPv6 Addresses.2001:DB8:ACAD:CC::2.IP Address
+      code: 9
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 3
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."Serial0/0/0"."IPv6 Addresses"."2001:DB8:ACAD:CC::2"."IP
+                Address"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.IPv6 Addresses.2001:DB8:ACAD:CC::2.Prefix Length
+      code: 10
+      description: null
+      skills: IPv6 Host Address Calculation
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."Serial0/0/0"."IPv6 Addresses"."2001:DB8:ACAD:CC::2"."Prefix
+                Length"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Link Local
+      code: 11
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."Serial0/0/0"."Link Local"."status"'
+              value: Correct
+      result: null
+    - name: Serial0/0/0.Port Status
+      code: 12
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Ports"."Serial0/0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+  - name: Routesv6
+    code: 2
+    aspects:
+    - name: IPv6 Unicast Routing
+      code: 1
+      description: null
+      skills: Routing
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."R2"."Routesv6"."IPv6 Unicast Routing"."status"'
+              value: Correct
+      result: null
