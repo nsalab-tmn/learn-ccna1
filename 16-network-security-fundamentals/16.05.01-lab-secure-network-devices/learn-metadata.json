@@ -26,6 +26,8 @@
     "text": {
         "$ref": "./README.md"
     },
+    "assessment": { "$ref": "./assessment.json" },
+    "deploy": { "$ref": "./deploy" },
     "assets": {
         "$ref": "./assets"
     }

@@ -1,0 +1,1337 @@
+Criterions:
+- code: A
+  name: PCA
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.IP Address
+      code: 1
+      description: null
+      skills: IPv4 Host Address Configuration
+      max_mark: 8
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PCA"."Ports"."FastEthernet0"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Subnet Mask
+      code: 2
+      description: null
+      skills: IPv4 Host Address Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PCA"."Ports"."FastEthernet0"."Subnet Mask"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway
+      code: 1
+      description: null
+      skills: Default Gateway Configuration
+      max_mark: 10
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PCA"."Default Gateway"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: RTA
+  subCriterions:
+  - name: DNS
+    code: 1
+    aspects:
+    - name: IP Domain-Lookup
+      code: 1
+      description: null
+      skills: Configuration Management
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."DNS"."IP Domain-Lookup"."status"'
+              value: Correct
+      result: null
+  - name: Login Options
+    code: 2
+    aspects:
+    - name: Blocking.Attempts
+      code: 1
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Login Options"."Blocking"."Attempts"."status"'
+              value: Correct
+      result: null
+    - name: Blocking.Duration
+      code: 2
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Login Options"."Blocking"."Duration"."status"'
+              value: Correct
+      result: null
+    - name: Blocking.Enabled
+      code: 3
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Login Options"."Blocking"."Enabled"."status"'
+              value: Correct
+      result: null
+    - name: Blocking.Period
+      code: 4
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 2
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Login Options"."Blocking"."Period"."status"'
+              value: Correct
+      result: null
+  - name: Ports
+    code: 3
+    aspects:
+    - name: GigabitEthernet0/0.IP Address
+      code: 1
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Ports"."GigabitEthernet0/0"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Port Status
+      code: 2
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Ports"."GigabitEthernet0/0"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0.Subnet Mask
+      code: 3
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Ports"."GigabitEthernet0/0"."Subnet
+                Mask"."status"'
+              value: Correct
+      result: null
+  - name: Security
+    code: 4
+    aspects:
+    - name: Modulus Bits
+      code: 1
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 10
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Security"."Modulus Bits"."status"'
+              value: Correct
+      result: null
+  - name: User Names
+    code: 5
+    aspects:
+    - name: Username
+      code: 1
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."User Names"."Username"."status"'
+              value: Correct
+      result: null
+  - name: VTY Lines
+    code: 6
+    aspects:
+    - name: VTY Line 0.Login
+      code: 1
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."VTY Lines"."VTY Line 0"."Login"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 0.Terminal Line timed out
+      code: 2
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."VTY Lines"."VTY Line 0"."Terminal Line
+                timed out"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 0.Transport Input
+      code: 3
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."VTY Lines"."VTY Line 0"."Transport
+                Input"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 4.Login
+      code: 4
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."VTY Lines"."VTY Line 4"."Login"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 4.Terminal Line timed out
+      code: 5
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."VTY Lines"."VTY Line 4"."Terminal Line
+                timed out"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 4.Transport Input
+      code: 6
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."VTY Lines"."VTY Line 4"."Transport
+                Input"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 7
+    aspects:
+    - name: Enable Secret
+      code: 1
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Enable Secret"."status"'
+              value: Correct
+      result: null
+    - name: Host Name
+      code: 2
+      description: null
+      skills: Hostname Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Host Name"."status"'
+              value: Correct
+      result: null
+    - name: IP Domain Name
+      code: 3
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."IP Domain Name"."status"'
+              value: Correct
+      result: null
+    - name: Security Password Min-Length
+      code: 4
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Security Password Min-Length"."status"'
+              value: Correct
+      result: null
+    - name: Service Password Encryption
+      code: 5
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Service Password Encryption"."status"'
+              value: Correct
+      result: null
+    - name: Startup Config
+      code: 6
+      description: null
+      skills: Configuration Management
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTA"."Startup Config"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: SW1
+  subCriterions:
+  - name: DNS
+    code: 1
+    aspects:
+    - name: IP Domain-Lookup
+      code: 1
+      description: null
+      skills: Configuration Management
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."DNS"."IP Domain-Lookup"."status"'
+              value: Correct
+      result: null
+  - name: Ports
+    code: 2
+    aspects:
+    - name: FastEthernet0/10.Port Status
+      code: 1
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/10"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/11.Port Status
+      code: 2
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/11"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/12.Port Status
+      code: 3
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/12"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/13.Port Status
+      code: 4
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/13"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/14.Port Status
+      code: 5
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/14"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/15.Port Status
+      code: 6
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/15"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/16.Port Status
+      code: 7
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/16"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/17.Port Status
+      code: 8
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/17"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/18.Port Status
+      code: 9
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/18"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/19.Port Status
+      code: 10
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/19"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/2.Port Status
+      code: 11
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/2"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/20.Port Status
+      code: 12
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/20"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/21.Port Status
+      code: 13
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/21"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/22.Port Status
+      code: 14
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/22"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/23.Port Status
+      code: 15
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/23"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/24.Port Status
+      code: 16
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/24"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/3.Port Status
+      code: 17
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/3"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/4.Port Status
+      code: 18
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/4"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/5.Port Status
+      code: 19
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/5"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/6.Port Status
+      code: 20
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/6"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/7.Port Status
+      code: 21
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/7"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/8.Port Status
+      code: 22
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/8"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0/9.Port Status
+      code: 23
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."FastEthernet0/9"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/2.Port Status
+      code: 24
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."GigabitEthernet0/2"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: Vlan1.IP Address
+      code: 25
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."Vlan1"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: Vlan1.Port Status
+      code: 26
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 4
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."Vlan1"."Port Status"."status"'
+              value: Correct
+      result: null
+    - name: Vlan1.Subnet Mask
+      code: 27
+      description: null
+      skills: Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Ports"."Vlan1"."Subnet Mask"."status"'
+              value: Correct
+      result: null
+  - name: Security
+    code: 3
+    aspects:
+    - name: Modulus Bits
+      code: 1
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Security"."Modulus Bits"."status"'
+              value: Correct
+      result: null
+  - name: User Names
+    code: 4
+    aspects:
+    - name: Username
+      code: 1
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."User Names"."Username"."status"'
+              value: Correct
+      result: null
+  - name: VTY Lines
+    code: 5
+    aspects:
+    - name: VTY Line 0.Login
+      code: 1
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."VTY Lines"."VTY Line 0"."Login"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 0.Terminal Line timed out
+      code: 2
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."VTY Lines"."VTY Line 0"."Terminal Line
+                timed out"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 0.Transport Input
+      code: 3
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."VTY Lines"."VTY Line 0"."Transport
+                Input"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 15.Login
+      code: 4
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."VTY Lines"."VTY Line 15"."Login"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 15.Terminal Line timed out
+      code: 5
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."VTY Lines"."VTY Line 15"."Terminal
+                Line timed out"."status"'
+              value: Correct
+      result: null
+    - name: VTY Line 15.Transport Input
+      code: 6
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."VTY Lines"."VTY Line 15"."Transport
+                Input"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 6
+    aspects:
+    - name: Default Gateway
+      code: 1
+      description: null
+      skills: Default Gateway Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Default Gateway"."status"'
+              value: Correct
+      result: null
+    - name: Enable Secret
+      code: 2
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Enable Secret"."status"'
+              value: Correct
+      result: null
+    - name: Host Name
+      code: 3
+      description: null
+      skills: Hostname Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Host Name"."status"'
+              value: Correct
+      result: null
+    - name: IP Domain Name
+      code: 4
+      description: null
+      skills: Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."IP Domain Name"."status"'
+              value: Correct
+      result: null
+    - name: Service Password Encryption
+      code: 5
+      description: null
+      skills: Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Service Password Encryption"."status"'
+              value: Correct
+      result: null
+    - name: Startup Config
+      code: 6
+      description: null
+      skills: Configuration Management
+      max_mark: 5
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."SW1"."Startup Config"."status"'
+              value: Correct
+      result: null
