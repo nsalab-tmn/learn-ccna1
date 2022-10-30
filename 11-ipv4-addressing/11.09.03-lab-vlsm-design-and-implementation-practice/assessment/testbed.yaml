@@ -1,0 +1,8 @@
+testbed:
+  name: lab11.9.3
+
+devices:
+  dummy:
+    connections:
+      a:
+        ip: localhost
