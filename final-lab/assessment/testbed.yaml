@@ -1,0 +1,8 @@
+testbed:
+  name: final-lab-ccna1
+
+devices:
+  dummy:
+    connections:
+      a:
+        ip: localhost
