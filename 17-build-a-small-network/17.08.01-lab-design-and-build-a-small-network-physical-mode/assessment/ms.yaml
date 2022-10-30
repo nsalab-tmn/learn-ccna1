@@ -1,0 +1,23 @@
+Criterions:
+- code: A
+  name: Web response
+  subCriterions:
+  - name: Check response
+    code: 1
+    aspects:
+    - name: Lab started
+      code: 1
+      description: null
+      skills: Physical
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: 'https://{pt-url}'
+            assert_code: 200
