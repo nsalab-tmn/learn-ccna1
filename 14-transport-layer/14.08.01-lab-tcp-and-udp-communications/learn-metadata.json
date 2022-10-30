@@ -29,7 +29,8 @@
     "assets": {
         "$ref": "./assets"
     },
-    
+    "assessment": { "$ref": "./assessment.json" },
+    "deploy": { "$ref": "./deploy" },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,
