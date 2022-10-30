@@ -28,5 +28,7 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "assessment": { "$ref": "./assessment.json" },
+    "deploy": { "$ref": "./deploy" }
 }

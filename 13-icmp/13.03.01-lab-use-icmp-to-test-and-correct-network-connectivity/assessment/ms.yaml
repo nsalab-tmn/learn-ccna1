@@ -1,0 +1,159 @@
+Criterions:
+- code: A
+  name: PC-4
+  subCriterions:
+  - name: Miscellaneous
+    code: 1
+    aspects:
+    - name: Default Gateway
+      code: 1
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."PC-4"."Default Gateway"."status"'
+              value: Correct
+      result: null
+- code: B
+  name: RTR-3
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: GigabitEthernet0/0/1.IPv6 Addresses.2001:DB8:5::1.IP Address
+      code: 1
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTR-3"."Ports"."GigabitEthernet0/0/1"."IPv6
+                Addresses"."2001:DB8:5::1"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: GigabitEthernet0/0/1.IPv6 Addresses.2001:DB8:5::1.Prefix Length
+      code: 2
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."RTR-3"."Ports"."GigabitEthernet0/0/1"."IPv6
+                Addresses"."2001:DB8:5::1"."Prefix Length"."status"'
+              value: Correct
+      result: null
+- code: C
+  name: Server1
+  subCriterions:
+  - name: Ports
+    code: 1
+    aspects:
+    - name: FastEthernet0.DHCP client enable
+      code: 1
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Server1"."Ports"."FastEthernet0"."DHCP client
+                enable"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.IP Address
+      code: 2
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Server1"."Ports"."FastEthernet0"."IP Address"."status"'
+              value: Correct
+      result: null
+    - name: FastEthernet0.Subnet Mask
+      code: 3
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Server1"."Ports"."FastEthernet0"."Subnet
+                Mask"."status"'
+              value: Correct
+      result: null
+  - name: Miscellaneous
+    code: 2
+    aspects:
+    - name: Default Gateway
+      code: 1
+      description: null
+      skills: Ip
+      max_mark: 1
+      steps:
+      - name: Register packet tracer aspect mark
+        code: register
+        type: check
+        result: null
+        device: dummy
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{pt-url}:{pt-api-port}
+            assert_jmespath:
+              path: '"assessment_items"."Server1"."Default Gateway"."status"'
+              value: Correct
+      result: null
