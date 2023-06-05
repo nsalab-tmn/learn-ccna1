@@ -1,7 +1,7 @@
 {
     "title": "Подключение к Интернету",
     "materialType": "lecture",
-    "description": "",
+    "description": "С помощью каких средств мы подключаемся к Интернету? Что такое конвергентные сети и чем они отличаются от традиционных?",
     "difficulty": 3,
     "duration": "PT0H21M",
     "tags": { "$ref": "../../material-tags.json" },

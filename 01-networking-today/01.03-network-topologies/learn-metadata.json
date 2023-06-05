@@ -1,7 +1,7 @@
 {
     "title": "Представления и топологии сетей",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как разные компоненты сети представляются на схемах? Чем физическая топология сети отличается от логической?",
     "difficulty": 3,
     "duration": "PT0H3M",
     "tags": { "$ref": "../../material-tags.json" },
