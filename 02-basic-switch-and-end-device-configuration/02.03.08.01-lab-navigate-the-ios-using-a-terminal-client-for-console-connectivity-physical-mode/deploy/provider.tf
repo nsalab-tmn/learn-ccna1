@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "vkcs" {
-    username = "kfedotov@nsalab.org"
-    password = "TY123far"
-    project_id = "25106ddf1f324579b6b0f2507088dc32"
+    username = "your_username@domain.org"
+    password = "password"
+    project_id = "666"
     region = "RegionOne"
     
     auth_url = "https://infra.mail.ru:35357/v3/" 
