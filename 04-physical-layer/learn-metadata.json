@@ -1,13 +1,13 @@
 {
-    "title": "Физический уровень",
+    "title": "Физический уровень сети",
     "materialType": "course",
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./04.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./04.01-purpose-of-the-physical-layer/learn-metadata.json"
         },
