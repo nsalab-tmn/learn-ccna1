@@ -68,7 +68,7 @@ Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# line console 0 
 Sw-Floor-1(config-line)# password cisco 
 Sw-Floor-1(config-line)# login
-Sw-Floor-1(config-line)# login
+Sw-Floor-1(config-line)# end
 Sw-Floor-1#
 ```
 
