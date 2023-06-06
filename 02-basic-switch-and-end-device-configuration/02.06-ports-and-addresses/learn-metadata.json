@@ -1,7 +1,7 @@
 {
     "title": "Порты и адреса",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое IP-адрес и на какие устройства он назначается? Как и чем устройства подключаются друг к другу в сети?",
     "difficulty": 3,
     "duration": "PT0H5M",
     "tags": { "$ref": "../../material-tags.json" },

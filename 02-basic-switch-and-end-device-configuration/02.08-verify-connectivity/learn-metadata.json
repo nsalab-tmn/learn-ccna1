@@ -1,7 +1,7 @@
 {
     "title": "Проверка подключения",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как проверить правильное назначение IP-адресов и убедиться в том, что сетевая связность полностью работоспособна?",
     "difficulty": 3,
     "duration": "PT0H10M",
     "tags": { "$ref": "../../material-tags.json" },

@@ -1,7 +1,7 @@
 {
     "title": "Интерфейс командной строки",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое режим командной строки? Чем пользовательский режим отличается от привилегированного и как между ними переключаться?",
     "difficulty": 3,
     "duration": "PT0H14M",
     "tags": { "$ref": "../../material-tags.json" },

@@ -1,7 +1,7 @@
 {
     "title": "Настройка IP-адресации",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как настроить IP-адрес на компьютере под управлением Microsoft Windows? Как настроить IP-адрес на коммутаторе под управлением Cisco IOS?",
     "difficulty": 3,
     "duration": "PT0H22M",
     "tags": { "$ref": "../../material-tags.json" },
