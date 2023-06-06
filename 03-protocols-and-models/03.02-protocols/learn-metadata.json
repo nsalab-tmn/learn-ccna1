@@ -1,7 +1,7 @@
 {
-    "title": "Протоколы",
+    "title": "Сетевые протоколы",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое сетевой протокол и какие у него есть функции? Как устройства взаимодействуют между собой с помощью сетевых протоколов?",
     "difficulty": 3,
     "duration": "PT0H7M",
     "tags": { "$ref": "../../material-tags.json" },

@@ -1,7 +1,7 @@
 {
     "title": "Организации по стандартизации",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое организации по стандартизации и за какие стандарты они отвечают? Какие стандарты используются в сети Интернет?",
     "difficulty": 3,
     "duration": "PT0H18M",
     "tags": { "$ref": "../../material-tags.json" },

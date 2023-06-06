@@ -1,7 +1,7 @@
 {
     "title": "Доступ к данным",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какие типы адресов существуют у устройств в сети? Что такое адреса канального уровня в локальной сети и чем они отличаются от IP-адресов?",
     "difficulty": 3,
     "duration": "PT1H17M",
     "tags": { "$ref": "../../material-tags.json" },

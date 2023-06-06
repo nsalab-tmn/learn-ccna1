@@ -1,7 +1,7 @@
 {
     "title": "Наборы протоколов",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как сетевые протоколы эволюционировали с течением времени? Что такое стек сетевых протоколов? Что такое стек TCP/IP",
     "difficulty": 3,
     "duration": "PT0H13M",
     "tags": { "$ref": "../../material-tags.json" },
