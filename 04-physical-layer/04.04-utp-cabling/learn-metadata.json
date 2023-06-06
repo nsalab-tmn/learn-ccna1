@@ -1,7 +1,7 @@
 {
     "title": "UTP кабель",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое витая пара и какими свойствами она обладает? Какие существуют стандарты и категории UTP-кабелей? Чем отличаются прямые и перекрестные UTP-кабели?",
     "difficulty": 3,
     "duration": "PT0H9M",
     "tags": { "$ref": "../../material-tags.json" },
