@@ -1,7 +1,7 @@
 {
     "title": "Коммутация в сетях Ethernet: краткое изложение",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое Ethernet-кадр? Из чего состоит MAC-адрес? Для чего коммутаторам нужна таблица MAC-адресов? Какие бывают режимы пересылки кадров на коммутаторах?",
     "difficulty": 3,
     "duration": "PT0H4M",
     "tags": { "$ref": "../../material-tags.json" },

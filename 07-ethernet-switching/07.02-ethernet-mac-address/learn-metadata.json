@@ -1,7 +1,7 @@
 {
     "title": "MAC-адрес Ethernet",
     "materialType": "lecture",
-    "description": "",
+    "description": "Из чего состоит MAC-адрес в Ethernet-кадре? Как кадры обрабатываются конечными устройствами? Какие бывают типы MAC-адресов?",
     "difficulty": 3,
     "duration": "PT0H11M",
     "tags": { "$ref": "../../material-tags.json" },

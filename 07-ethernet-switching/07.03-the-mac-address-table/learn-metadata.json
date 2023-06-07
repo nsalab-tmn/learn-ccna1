@@ -1,7 +1,7 @@
 {
     "title": "Таблица MAC-адресов",
     "materialType": "lecture",
-    "description": "",
+    "description": "Зачем коммутаторам нужна таблица MAC-адресов? Как и чему обучаются коммутаторы?",
     "difficulty": 3,
     "duration": "PT0H14M",
     "tags": { "$ref": "../../material-tags.json" },
