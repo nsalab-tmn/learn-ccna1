@@ -1,13 +1,13 @@
 {
-    "title": "Канальный уровень",
+    "title": "Канальный уровень сети",
     "materialType": "course",
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./06.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./06.01-purpose-of-the-data-link-layer/learn-metadata.json"
         },
