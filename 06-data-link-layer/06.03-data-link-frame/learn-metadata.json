@@ -1,7 +1,7 @@
 {
     "title": "Кадр канала передачи данных",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое кадр и из чего он состоит? Чем отличаются кадры в локальных и глобальных сетях? Что такое адрес канального уровня?",
     "difficulty": 3,
     "duration": "PT0H11M",
     "tags": { "$ref": "../../material-tags.json" },
