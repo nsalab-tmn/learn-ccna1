@@ -1,7 +1,7 @@
 {
     "title": "Системы счисления: краткое изложение",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как двоичная и шестнадцатеричная системы счисления используются в сетевой адресации?",
     "difficulty": 3,
     "duration": "PT0H2M",
     "tags": { "$ref": "../../material-tags.json" },

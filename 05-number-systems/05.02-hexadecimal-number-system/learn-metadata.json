@@ -1,7 +1,7 @@
 {
     "title": "Шестнадцатеричная система счисления",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как научиться понимать IPv6 адреса? Как переводить числа из шестнадцатеричной системы счисления в десятичную и обратно?",
     "difficulty": 3,
     "duration": "PT0H11M",
     "tags": { "$ref": "../../material-tags.json" },
