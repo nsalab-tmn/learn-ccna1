@@ -15,10 +15,19 @@
             "$ref": "./07.01.05-ethernet-frame-quiz/learn-metadata.json"
         },
         {
+            "$ref": "./07.01.06-lab-use-wireshark-to-examine-ethernet-frames/learn-metadata.json"
+        },
+        {
             "$ref": "./07.02-ethernet-mac-address/learn-metadata.json"
         },
         {
+            "$ref": "./07.02.07-lab-view-network-device-mac-addresses/learn-metadata.json"
+        },
+        {
             "$ref": "./07.03-the-mac-address-table/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.03.07-lab-view-the-switch-mac-address-table/learn-metadata.json"
         },
         {
             "$ref": "./07.04-switch-speeds-and-forwarding-methods/learn-metadata.json"
