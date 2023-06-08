@@ -4,10 +4,10 @@
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./10.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./10.01-configure-initial-router-settings/learn-metadata.json"
         },
@@ -25,9 +25,6 @@
         },
         {
             "$ref": "./10.03.05-lab-troubleshoot-default-gateway-issues/learn-metadata.json"
-        },
-        {
-            "$ref": "./10.04-module-practice/learn-metadata.json"
         },
         {
             "$ref": "./10.04.03-lab-basic-device-configuration/learn-metadata.json"
