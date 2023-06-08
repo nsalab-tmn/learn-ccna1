@@ -1,7 +1,7 @@
 {
     "title": "Введение в маршрутизацию",
     "materialType": "lecture",
-    "description": "",
+    "description": "Чем таблицы маршрутизации отличаются у роутеров и оконечных устройств? Что такое статическая и динамическая маршрутизация?",
     "difficulty": 3,
     "duration": "PT0H19M",
     "tags": { "$ref": "../../material-tags.json" },

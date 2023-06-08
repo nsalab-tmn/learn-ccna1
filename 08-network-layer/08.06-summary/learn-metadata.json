@@ -1,7 +1,7 @@
 {
     "title": "Сетевой уровень: краткое изложение",
     "materialType": "lecture",
-    "description": "",
+    "description": "Для чего нужен сетевой уровень и какие характеристики он имеет? Чем отличаются пакеты IPv4 и IPv6? Как пакеты маршрутизаируются в сети?",
     "difficulty": 3,
     "duration": "PT0H6M",
     "tags": { "$ref": "../../material-tags.json" },
