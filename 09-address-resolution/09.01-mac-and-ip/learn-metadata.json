@@ -1,7 +1,7 @@
 {
-    "title": "MAC и IP",
+    "title": "Сопоставление MAC-адресов и IP-адресов",
     "materialType": "lecture",
-    "description": "",
+    "description": "Что такое разрешение адресов? Как происходит разрешение адресов для узлов, находящихся в одной сети?",
     "difficulty": 3,
     "duration": "PT0H29M",
     "tags": { "$ref": "../../material-tags.json" },

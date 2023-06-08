@@ -1,7 +1,7 @@
 {
     "title": "Разрешение адресов: краткое изложение",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как устройства сопоставляют MAC-адреса и IP-адреса? Как работает протокол ARP? Как осуществляется обнаружение соседей в IPv6-сетях?",
     "difficulty": 3,
     "duration": "PT0H4M",
     "tags": { "$ref": "../../material-tags.json" },

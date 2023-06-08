@@ -1,7 +1,7 @@
 {
-    "title": "Обнаружение соседних IPv6 устройств",
+    "title": "Обнаружение соседних IPv6-устройств",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как происходит обнаружение соседей и разрешение адресов в IPv6-сетях?",
     "difficulty": 3,
     "duration": "PT0H43M",
     "tags": { "$ref": "../../material-tags.json" },
