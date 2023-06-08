@@ -4,10 +4,10 @@
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./09.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./09.01-mac-and-ip/learn-metadata.json"
         },
