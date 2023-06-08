@@ -1,7 +1,7 @@
 {
     "title": "Настройка шлюза по умолчанию",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как сделать маршрутизатор шлюзом по умолчанию для устройств в сети? Чем коммутаторы отличаются от маршутизаторов?",
     "difficulty": 3,
     "duration": "PT0H57M",
     "tags": { "$ref": "../../material-tags.json" },

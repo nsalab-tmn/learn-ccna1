@@ -1,7 +1,7 @@
 {
     "title": "Первоначальная настройка маршрутизатора",
     "materialType": "lecture",
-    "description": "",
+    "description": "В чем заключается базовая настройка маршрутизатора?",
     "difficulty": 3,
     "duration": "PT0H25M",
     "tags": { "$ref": "../../material-tags.json" },

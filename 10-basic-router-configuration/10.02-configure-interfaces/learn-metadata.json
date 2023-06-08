@@ -1,7 +1,7 @@
 {
     "title": "Настройка интерфейсов",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как настроить интерфейсы маршрутизатора и как проверить правильность их насройки?",
     "difficulty": 3,
     "duration": "PT0H13M",
     "tags": { "$ref": "../../material-tags.json" },
