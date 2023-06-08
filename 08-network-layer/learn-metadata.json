@@ -1,13 +1,13 @@
 {
-    "title": "Сетевой уровень",
+    "title": "Сетевой уровень модели OSI",
     "materialType": "course",
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./08.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./08.01-network-layer-characteristics/learn-metadata.json"
         },
