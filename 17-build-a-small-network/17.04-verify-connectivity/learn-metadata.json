@@ -1,7 +1,7 @@
 {
     "title": "Проверка сетевой доступности",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как правильно пользоваться инструментами проверки связности между устройствами в сети?",
     "difficulty": 3,
     "duration": "PT0H44M",
     "tags": {
