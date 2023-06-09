@@ -1,7 +1,7 @@
 {
     "title": "Представление IPv6-адресов",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какие формы представлений бывают у IPv6-адресов?",
     "difficulty": 3,
     "duration": "PT0H10M",
     "tags": { "$ref": "../../material-tags.json" },

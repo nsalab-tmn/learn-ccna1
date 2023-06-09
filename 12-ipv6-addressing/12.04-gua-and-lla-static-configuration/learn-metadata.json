@@ -1,7 +1,7 @@
 {
-    "title": "Статическая настройка GUA и LLA.",
+    "title": "Статическая настройка GUA и LLA",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как настраивать GUA и LLA адреса для IPv6?",
     "difficulty": 3,
     "duration": "PT0H5M",
     "tags": { "$ref": "../../material-tags.json" },

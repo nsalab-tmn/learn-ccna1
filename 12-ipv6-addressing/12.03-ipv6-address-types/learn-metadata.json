@@ -1,7 +1,7 @@
 {
-    "title": "IPv6-адреса: типы",
+    "title": "Типы IPv6-адресов",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какими бывают типы IPv6-адресов? Какая длина префикса у IPv6-адреса?",
     "difficulty": 3,
     "duration": "PT0H13M",
     "tags": { "$ref": "../../material-tags.json" },

@@ -1,7 +1,7 @@
 {
-    "title": "Динамическая адресация LLA",
+    "title": "Динамическое назначение LLA",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как происходит динамическое назначение link-local IPv6-адресов?",
     "difficulty": 3,
     "duration": "PT0H26M",
     "tags": { "$ref": "../../material-tags.json" },
