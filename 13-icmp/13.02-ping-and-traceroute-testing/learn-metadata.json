@@ -1,7 +1,7 @@
 {
     "title": "Тестирование связности с помощью ping и traceroute",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как утилиты ping и traceroute помогают обнаружить проблемные участки в сети?",
     "difficulty": 3,
     "duration": "PT0H43M",
     "tags": {
