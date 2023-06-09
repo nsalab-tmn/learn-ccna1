@@ -1,13 +1,13 @@
 {
-    "title": "IPv6-адресация",
+    "title": "Адресация IPv6",
     "materialType": "course",
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./12.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./12.01-ipv4-issues/learn-metadata.json"
         },
