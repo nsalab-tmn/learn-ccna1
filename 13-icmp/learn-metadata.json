@@ -1,13 +1,13 @@
 {
-    "title": "ICMP",
+    "title": "Протокол ICMP",
     "materialType": "course",
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./13.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./13.01-icmp-messages/learn-metadata.json"
         },
