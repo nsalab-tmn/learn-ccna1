@@ -4,10 +4,10 @@
     "tags": {
         "$ref": "../material-tags.json"
     },
+    "description": {
+        "$ref": "./README.md"
+    },
     "materials": [
-        {
-            "$ref": "./14.00-introduction/learn-metadata.json"
-        },
         {
             "$ref": "./14.01-transportation-of-data/learn-metadata.json"
         },
