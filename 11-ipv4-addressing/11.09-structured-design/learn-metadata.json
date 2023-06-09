@@ -1,7 +1,7 @@
 {
     "title": "Структурированное проектирование",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как правильно планировать адресное пространство? Какие адреса лучше назначать для разных типов устройств?",
     "difficulty": 3,
     "duration": "PT0H21M",
     "tags": { "$ref": "../../material-tags.json" },

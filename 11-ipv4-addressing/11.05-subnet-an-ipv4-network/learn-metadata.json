@@ -1,7 +1,7 @@
 {
     "title": "Разделение сети IPv4 на подсети",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как делить сети на подсети на границе октетов и в пределах одного октета?",
     "difficulty": 3,
     "duration": "PT0H59M",
     "tags": { "$ref": "../../material-tags.json" },

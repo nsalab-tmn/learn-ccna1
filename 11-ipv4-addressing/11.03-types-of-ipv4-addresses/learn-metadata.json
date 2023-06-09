@@ -1,7 +1,7 @@
 {
     "title": "Типы адресов IPv4",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какие бывают типы IPv4-адресов? Чем частные адреса отличаются от общедоступных? Кто отвечает за назначение IP-адресов в Интернете?",
     "difficulty": 3,
     "duration": "PT0H10M",
     "tags": { "$ref": "../../material-tags.json" },

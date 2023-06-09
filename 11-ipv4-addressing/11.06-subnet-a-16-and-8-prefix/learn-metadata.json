@@ -1,7 +1,7 @@
 {
     "title": "Разделение на подсети префиксов /16 и /8",
     "materialType": "lecture",
-    "description": "",
+    "description": "Сколько подсетей можно создать в сети с маской длиной префикса /16 и /8?",
     "difficulty": 3,
     "duration": "PT0H25M",
     "tags": { "$ref": "../../material-tags.json" },

@@ -1,7 +1,7 @@
 {
     "title": "Структура IPv4-адреса",
     "materialType": "lecture",
-    "description": "",
+    "description": "На какие части делиться IPv4-адрес? Что такое маска подсети и длина префикса? Что такое широковещательный адрес и зачем он нужен в сети?",
     "difficulty": 3,
     "duration": "PT0H18M",
     "tags": { "$ref": "../../material-tags.json" },
