@@ -1,7 +1,7 @@
 {
     "title": "Одноранговые сети",
     "materialType": "lecture",
-    "description": "",
+    "description": "Чем клиент-серверные приложения отличаются от одноранговых приложений?",
     "difficulty": 3,
     "duration": "PT0H7M",
     "tags": {

@@ -1,7 +1,7 @@
 {
     "title": "Прикладные уровни модели OSI",
     "materialType": "lecture",
-    "description": "",
+    "description": "Как соотносится уровень приложений в моделях OSI и TCP/IP? Какие протоколы работают на прикладном уровне?",
     "difficulty": 3,
     "duration": "PT0H6M",
     "tags": {

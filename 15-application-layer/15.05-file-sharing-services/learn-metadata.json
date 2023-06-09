@@ -1,7 +1,7 @@
 {
     "title": "Сервисы совместного доступа к файлам",
     "materialType": "lecture",
-    "description": "",
+    "description": "С помощью каких прооколов происходит передача файлов по сети?",
     "difficulty": 3,
     "duration": "PT0H4M",
     "tags": {
