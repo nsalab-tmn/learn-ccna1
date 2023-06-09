@@ -1,7 +1,7 @@
 {
     "title": "Обзор протокола UDP",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какие функции исполняет протокол UDP и из чего состоит его заголовок?",
     "difficulty": 3,
     "duration": "PT0H4M",
     "tags": {

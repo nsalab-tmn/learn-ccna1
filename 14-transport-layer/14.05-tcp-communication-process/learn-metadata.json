@@ -1,7 +1,7 @@
 {
     "title": "Обмен данными по протоколу TCP",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какие процессы происходят при установлении и прекращении TCP-соединения?",
     "difficulty": 3,
     "duration": "PT0H15M",
     "tags": {

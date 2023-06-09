@@ -1,7 +1,7 @@
 {
     "title": "Обзор протокола TCP",
     "materialType": "lecture",
-    "description": "",
+    "description": "Какие функции исполняет протокол TCP и из чего состоит его заголовок?",
     "difficulty": 3,
     "duration": "PT0H5M",
     "tags": {

@@ -1,7 +1,7 @@
 {
     "title": "Обмен данными по протоколу UDP",
     "materialType": "lecture",
-    "description": "",
+    "description": "Зачем использовать UDP, если есть TCP? Как UDP-сервер и UDP-клиент взаимодействуют друг с другом?",
     "difficulty": 3,
     "duration": "PT0H4M",
     "tags": {
