@@ -2,7 +2,7 @@
     "title": "Работа в симуляторе: изучение моделей TCP/IP и OSI в действии",
     "shortName": "lab-3.5.5",
     "materialType": "lab",
-    "description": "**Цель лабораторной работы**: практическое исследование моделей TCP/IP и OSI",
+    "description": "Цель лабораторной работы: практическое исследование моделей TCP/IP и OSI",
     "difficulty": 1,
     "duration": "PT0H22M",
     "tags": { "$ref": "../../material-tags.json" },

@@ -2,7 +2,7 @@
     "title": "Работа в симуляторе: Изучение таблицы АRP",
     "shortName": "lab-9.2.9",
     "materialType": "lab",
-    "description": "**Цель лабораторной работы**: исследование процесса ARP.",
+    "description": "Цель лабораторной работы: исследование процесса ARP.",
     "difficulty": 1,
     "duration": "PT0H22M",
     "credentialsSchema": {

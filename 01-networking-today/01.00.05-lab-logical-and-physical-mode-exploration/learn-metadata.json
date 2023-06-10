@@ -2,7 +2,7 @@
     "title": "Работа в симуляторе: исследование логического и физического режима",
     "shortName": "lab-1.0.5",
     "materialType": "lab",
-    "description": "**Цель лабораторной работы**: познакомиться с режимами работы симулятора сети Cisco Packet Tracer.",
+    "description": "Цель лабораторной работы: познакомиться с режимами работы симулятора сети Cisco Packet Tracer.",
     "difficulty": 1,
     "duration": "PT0H22M",
     "tags": { "$ref": "../../material-tags.json" },
