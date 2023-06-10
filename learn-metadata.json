@@ -2,6 +2,7 @@
   "title": "Введение в сетевые технологии",
   "materialType": "learning-path",
   "tags": { "$ref": "./material-tags.json" },
+  "description": { "$ref": "./README.md" },
   "materials": [
     { "$ref": "./01-networking-today/learn-metadata.json" },
     { "$ref": "./02-basic-switch-and-end-device-configuration/learn-metadata.json" },
