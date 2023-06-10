@@ -224,4 +224,4 @@
     S1# clock set 15:00:00 32
     ```
 
-[Скачать файл Packet Tracer для локального запуска](./assets/2.3.7-lab.pka)
+<!-- [Скачать файл Packet Tracer для локального запуска](./assets/2.3.7-lab.pka) -->

@@ -18,4 +18,4 @@
 
 ![The topology has 2 PCs, two switches, and a router.PC1 is connected to SW1 with a console cable to the router. PC2 is connected to SW2 and both SW1 and SW2 are connected to different interfaces of the router.](./assets/topology.png)
 
-[Скачать файл Packet Tracer для локального запуска](./assets/17.8.1-lab.pka)
+<!-- [Скачать файл Packet Tracer для локального запуска](./assets/17.8.1-lab.pka) -->

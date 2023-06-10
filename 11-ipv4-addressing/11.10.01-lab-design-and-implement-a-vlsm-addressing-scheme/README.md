@@ -97,4 +97,4 @@
 
 ID:\[\[indexAdds\]\]\[\[indexNames\]\]\[\[indexTopos\]\]
 
-[Скачать файл Packet Tracer для локального запуска](./assets/11.10.1-lab.pka)
+<!-- [Скачать файл Packet Tracer для локального запуска](./assets/11.10.1-lab.pka) -->
