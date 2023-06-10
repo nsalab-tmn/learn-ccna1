@@ -60,10 +60,10 @@
             "$ref": "./17.08.03-lab-troubleshooting-challenge/learn-metadata.json"
         },
         {
-            "$ref": "./17.08.05-quiz/learn-metadata.json"
+            "$ref": "./17.09-summary/learn-metadata.json"
         },
         {
-            "$ref": "./17.09-summary/learn-metadata.json"
+            "$ref": "./17.08.05-quiz/learn-metadata.json"
         }
     ]
 }

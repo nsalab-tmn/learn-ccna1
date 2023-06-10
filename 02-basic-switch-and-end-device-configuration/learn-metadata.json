@@ -63,10 +63,10 @@
             "$ref": "./02.09.02-lab-basic-switch-and-end-device-configuration-physical-mode/learn-metadata.json"
         },
         {
-            "$ref": "./02.09.04-quiz/learn-metadata.json"
+            "$ref": "./02.10-summary/learn-metadata.json"
         },
         {
-            "$ref": "./02.10-summary/learn-metadata.json" 
+            "$ref": "./02.09.04-quiz/learn-metadata.json"
         }
     ]
 }

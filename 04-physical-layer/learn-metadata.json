@@ -51,10 +51,10 @@
             "$ref": "./04.07.02-lab-connect-the-physical-layer/learn-metadata.json"
         },
         {
-            "$ref": "./04.07.04-quiz/learn-metadata.json"
+            "$ref": "./04.08-summary/learn-metadata.json"
         },
         {
-            "$ref": "./04.08-summary/learn-metadata.json"
+            "$ref": "./04.07.04-quiz/learn-metadata.json"
         }
     ]
 }

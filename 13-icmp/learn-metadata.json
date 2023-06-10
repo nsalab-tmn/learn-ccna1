@@ -30,10 +30,10 @@
             "$ref": "./13.03.02-lab-use-ping-and-traceroute-to-test-network-connectivity-physical-mode/learn-metadata.json"
         },
         {
-            "$ref": "./13.03.04-quiz/learn-metadata.json"
+            "$ref": "./13.04-summary/learn-metadata.json"
         },
         {
-            "$ref": "./13.04-summary/learn-metadata.json"
+            "$ref": "./13.03.04-quiz/learn-metadata.json"
         }
     ]
 }

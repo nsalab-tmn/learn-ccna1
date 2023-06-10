@@ -54,10 +54,10 @@
             "$ref": "./12.09.02-lab-configure-ipv6-addresses-on-network-devices-physical-mode/learn-metadata.json"
         },
         {
-            "$ref": "./12.09.04-quiz/learn-metadata.json"
+            "$ref": "./12.10-summary/learn-metadata.json"
         },
         {
-            "$ref": "./12.10-summary/learn-metadata.json"
+            "$ref": "./12.09.04-quiz/learn-metadata.json"
         }
     ]
 }

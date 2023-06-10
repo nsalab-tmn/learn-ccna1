@@ -33,10 +33,10 @@
             "$ref": "./10.04.04-lab-build-a-switch-and-router-network-physical-mode/learn-metadata.json"
         },
         {
-            "$ref": "./10.04.06-quiz/learn-metadata.json"
+            "$ref": "./10.05-summary/learn-metadata.json"
         },
         {
-            "$ref": "./10.05-summary/learn-metadata.json"
+            "$ref": "./10.04.06-quiz/learn-metadata.json"
         }
     ]
 }
