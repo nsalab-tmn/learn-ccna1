@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Базовая конфигурация коммутатора и оконечного устройства\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H21M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

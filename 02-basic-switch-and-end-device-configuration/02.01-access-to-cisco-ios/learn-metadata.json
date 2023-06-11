@@ -4,8 +4,14 @@
     "description": "Что такое операционная система и зачем она нужна для работы устройств? Как получить доступ к управлению операционной системой сетевого оборудования?",
     "difficulty": 3,
     "duration": "PT0H7M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

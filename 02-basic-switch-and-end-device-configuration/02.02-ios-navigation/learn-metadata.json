@@ -4,8 +4,14 @@
     "description": "Что такое режим командной строки? Чем пользовательский режим отличается от привилегированного и как между ними переключаться?",
     "difficulty": 3,
     "duration": "PT0H14M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

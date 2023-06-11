@@ -4,8 +4,10 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: создание сети из двух коммутаторов и двух оконнечных устройств",
     "difficulty": 1,
-    "duration": "PT0H22M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H9M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -21,8 +23,16 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assessment": { "$ref": "./assessment.json" },
-    "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assessment": {
+        "$ref": "./assessment.json"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

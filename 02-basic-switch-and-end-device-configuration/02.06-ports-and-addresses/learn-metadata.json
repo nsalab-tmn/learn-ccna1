@@ -4,8 +4,14 @@
     "description": "Что такое IP-адрес и на какие устройства он назначается? Как и чем устройства подключаются друг к другу в сети?",
     "difficulty": 3,
     "duration": "PT0H5M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

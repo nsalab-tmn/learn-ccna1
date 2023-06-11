@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Как пользоваться командной строкой? Как работать в командной строке эффективно с помощью горячих клавиш? Как правильно давать команды и какая у них структура?",
     "difficulty": 3,
-    "duration": "PT1H24M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H19M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

@@ -4,8 +4,10 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: отработка навыков, необходимых для получения доступа к устройству Cisco через прямое подключение к порту консоли",
     "difficulty": 1,
-    "duration": "PT0H22M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H10M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -21,10 +23,18 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assessment": { "$ref": "./assessment.json" },
-    "assets": { "$ref": "./assets" },
-    "deploy": { "$ref": "./deploy" },
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assessment": {
+        "$ref": "./assessment.json"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,
