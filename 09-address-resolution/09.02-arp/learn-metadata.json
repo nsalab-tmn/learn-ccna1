@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Какие функции выполняет протокол ARP? Как выглядят ARP-таблицы? Что такое ARP-спуфинг?",
     "difficulty": 3,
-    "duration": "PT0H38M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H19M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

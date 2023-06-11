@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Что такое разрешение адресов? Как происходит разрешение адресов для узлов, находящихся в одной сети?",
     "difficulty": 3,
-    "duration": "PT0H29M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H4M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
