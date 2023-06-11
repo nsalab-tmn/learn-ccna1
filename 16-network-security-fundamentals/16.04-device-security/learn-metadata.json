@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Почему важно отключать неиспользуемые службы? Почемы важно использовать SSH вместо Telnet? Какие пароли считаются наиболее безопасными?",
     "difficulty": 3,
-    "duration": "PT0H31M",
+    "duration": "PT0H12M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

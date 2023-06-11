@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Угрозы безопасности и уязвимости\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H10M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
