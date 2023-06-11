@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Какими свойствами обладает беспроводное подключение? Какие актуальные стандарты беспроводных сетей используются сегодня?",
     "difficulty": 3,
-    "duration": "PT1H1M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H6M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
