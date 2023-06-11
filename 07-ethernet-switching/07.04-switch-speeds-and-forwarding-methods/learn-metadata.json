@@ -4,8 +4,14 @@
     "description": "Какие существуют способы пересылки кадров? Как дуплекс влияет на пересылку кадров?",
     "difficulty": 3,
     "duration": "PT0H11M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

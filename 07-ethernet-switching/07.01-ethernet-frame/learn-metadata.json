@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Как стандарт Ethernet соотносится с эталонной моделью OSI? Какие существуют подуровни канального уровня? Какие поля есть у Ethernet-кадра?",
     "difficulty": 3,
-    "duration": "PT0H57M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H56M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
