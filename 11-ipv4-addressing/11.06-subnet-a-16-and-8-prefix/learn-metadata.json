@@ -4,8 +4,14 @@
     "description": "Сколько подсетей можно создать в сети с маской длиной префикса /16 и /8?",
     "difficulty": 3,
     "duration": "PT0H25M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

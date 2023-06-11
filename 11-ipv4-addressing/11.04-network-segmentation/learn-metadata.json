@@ -4,8 +4,14 @@
     "description": "Что такое широковещательный домен в сети? В чем заключаются проблемы с большими широковещательными доменами? Зачем нужна сегментация сетей на подсети?",
     "difficulty": 3,
     "duration": "PT0H5M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

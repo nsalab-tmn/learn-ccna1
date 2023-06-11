@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "На какие части делиться IPv4-адрес? Что такое маска подсети и длина префикса? Что такое широковещательный адрес и зачем он нужен в сети?",
     "difficulty": 3,
-    "duration": "PT0H18M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H17M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
