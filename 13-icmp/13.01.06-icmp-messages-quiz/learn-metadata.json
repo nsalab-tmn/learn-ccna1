@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Сообщения ICMP\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H4M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

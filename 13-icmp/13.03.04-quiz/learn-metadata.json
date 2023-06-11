@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Протокол ICMP\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
