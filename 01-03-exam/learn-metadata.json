@@ -2,7 +2,7 @@
     "title": "Экзамен по основам связи и сетевой коммуникации",
     "description": "Проверьте свои знания по темам:\r\r* Современные сетевые технологии\r* Базовая конфигурация коммутатора и оконечного устройства\r* Протоколы и модели",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT1H54M",
     "materialType": "test-exam",
     "passingScore": 100,
     "questions": [
@@ -1891,7 +1891,11 @@
             "question": "На каком уровне OSI MAC-адрес назначения добавляется к PDU в процессе инкапсуляции?"
         }
     ],
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
     "skills": {},
-    "assets": { "$ref": "./assets" }
+    "assets": {
+        "$ref": "./assets"
+    }
 }

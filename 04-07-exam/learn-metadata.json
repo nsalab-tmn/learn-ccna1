@@ -2,7 +2,7 @@
     "title": "Экзамен по основам коммутации и системам счисления",
     "description": "Проверьте свои знания по темам:\r\r* Физический уровень сети\r* Системы счисления\r* Канальный уровень сети\r* Коммутация в сетях Ethernet",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT1H37M",
     "materialType": "test-exam",
     "passingScore": 100,
     "questions": [
@@ -1664,7 +1664,11 @@
             "question": "Какое действие произойдет, если хост получит кадр с MAC-адресом назначения FF:FF:FF:FF:FF:FF?"
         }
     ],
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
     "skills": {},
-    "assets": { "$ref": "./assets" }
+    "assets": {
+        "$ref": "./assets"
+    }
 }

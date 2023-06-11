@@ -2,7 +2,7 @@
     "title": "Экзамен по основам проектирования небольшой безопасной сети",
     "description": "Проверьте свои знания по темам:\r\r* Основы сетевой безопасности\r* Организация небольшой сети",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT1H36M",
     "materialType": "test-exam",
     "passingScore": 100,
     "questions": [
@@ -1617,7 +1617,11 @@
             "question": "Администратор решает проблемы подключения и должен определить IP-адрес сайта. Какую команду лучше всего использовать для выполнения задачи?"
         }
     ],
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
     "skills": {},
-    "assets": { "$ref": "./assets" }
+    "assets": {
+        "$ref": "./assets"
+    }
 }
