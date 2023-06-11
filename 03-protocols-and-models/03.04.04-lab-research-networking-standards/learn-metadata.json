@@ -4,8 +4,10 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: исследование деятельности организаций, разрабатывающих сетевые стандарты",
     "difficulty": 1,
-    "duration": "PT0H22M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H2M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -21,9 +23,12 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    
-    "assets": { "$ref": "./assets" },
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,

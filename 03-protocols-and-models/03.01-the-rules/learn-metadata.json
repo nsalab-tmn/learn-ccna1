@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "В чем заключаются основы коммуникации? Какие похожа между собой коммуникация людей и устройств в сети? Какие правила существуют в процессе коммуникации? Что такое кодирование, инкапсляция и форматирование сообщений?",
     "difficulty": 3,
-    "duration": "PT0H15M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H16M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

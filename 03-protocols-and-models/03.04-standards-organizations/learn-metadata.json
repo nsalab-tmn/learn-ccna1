@@ -4,8 +4,14 @@
     "description": "Что такое организации по стандартизации и за какие стандарты они отвечают? Какие стандарты используются в сети Интернет?",
     "difficulty": 3,
     "duration": "PT0H18M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
