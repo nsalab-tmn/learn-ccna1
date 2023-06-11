@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Что такое гарантированная и упорядоченная доставка? Что такое управление потоком, размер окна передачи и максимальный размер сегмента в рамках TCP-соединения?",
     "difficulty": 3,
-    "duration": "PT0H20M",
+    "duration": "PT0H19M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

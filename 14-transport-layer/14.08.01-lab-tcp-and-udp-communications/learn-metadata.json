@@ -4,7 +4,7 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: исследование функциональных особенностей протоколов TCP и UDP",
     "difficulty": 1,
-    "duration": "PT0H22M",
+    "duration": "PT0H27M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -29,8 +29,12 @@
     "assets": {
         "$ref": "./assets"
     },
-    "assessment": { "$ref": "./assessment.json" },
-    "deploy": { "$ref": "./deploy" },
+    "assessment": {
+        "$ref": "./assessment.json"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,

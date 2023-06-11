@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Транспортный уровень\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H22M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
