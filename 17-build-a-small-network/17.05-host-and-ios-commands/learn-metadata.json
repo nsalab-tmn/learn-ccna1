@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Как работать с IP-интерфейсами и проверять их конфигурацию на различных устройствах?",
     "difficulty": 3,
-    "duration": "PT0H43M",
+    "duration": "PT0H34M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

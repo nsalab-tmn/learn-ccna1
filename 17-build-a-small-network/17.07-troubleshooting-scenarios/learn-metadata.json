@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "На какие возможные неисправности стоит обращать внимание в первую очередь?",
     "difficulty": 3,
-    "duration": "PT0H48M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
