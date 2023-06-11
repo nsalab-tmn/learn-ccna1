@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Как происходит динамическое назначение link-local IPv6-адресов?",
     "difficulty": 3,
-    "duration": "PT0H26M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H8M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

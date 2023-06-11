@@ -4,8 +4,14 @@
     "description": "В чем заключаются основные проблемы адресации IPv4 и зачем нужна адресация IPv6? Какие бывают форматы IPv6-адресов? Как происходит статическое и динамическое назначение IPv6-адресов? Как правильно сегментировать IPv6-сеть?",
     "difficulty": 3,
     "duration": "PT0H9M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
