@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Зачем в сети нужны службы доменных имен и динамической конфигурации хостов?",
     "difficulty": 3,
-    "duration": "PT0H36M",
+    "duration": "PT0H35M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

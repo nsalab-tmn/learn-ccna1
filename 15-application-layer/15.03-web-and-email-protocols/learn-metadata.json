@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Что такое гипертекст и зачем его размечают? Какие бывают протоколоы передачи гипертекста и электронной почты?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H7M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

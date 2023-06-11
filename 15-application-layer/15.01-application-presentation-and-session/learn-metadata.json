@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Как соотносится уровень приложений в моделях OSI и TCP/IP? Какие протоколы работают на прикладном уровне?",
     "difficulty": 3,
-    "duration": "PT0H6M",
+    "duration": "PT0H5M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

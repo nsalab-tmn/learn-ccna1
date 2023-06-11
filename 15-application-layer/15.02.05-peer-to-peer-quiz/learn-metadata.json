@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Одноранговые сети\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H5M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

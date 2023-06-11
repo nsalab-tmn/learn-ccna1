@@ -4,8 +4,10 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: исследование процесса разрешения имён DNS",
     "difficulty": 1,
-    "duration": "PT0H22M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H8M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -21,6 +23,10 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

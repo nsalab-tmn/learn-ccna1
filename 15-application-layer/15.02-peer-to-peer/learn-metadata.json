@@ -3,7 +3,7 @@
     "materialType": "lecture",
     "description": "Чем клиент-серверные приложения отличаются от одноранговых приложений?",
     "difficulty": 3,
-    "duration": "PT0H7M",
+    "duration": "PT0H6M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
