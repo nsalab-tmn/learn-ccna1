@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Как сделать маршрутизатор шлюзом по умолчанию для устройств в сети? Чем коммутаторы отличаются от маршутизаторов?",
     "difficulty": 3,
-    "duration": "PT0H57M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H20M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

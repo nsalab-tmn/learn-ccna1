@@ -4,7 +4,7 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: отработка навыков, необходимых для устранения типовых неполадок в конфигурации маршрутизатора.",
     "difficulty": 1,
-    "duration": "PT0H22M",
+    "duration": "PT0H23M",
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -20,9 +20,19 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assessment": { "$ref": "./assessment.json" },
-    "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assessment": {
+        "$ref": "./assessment.json"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    }
 }

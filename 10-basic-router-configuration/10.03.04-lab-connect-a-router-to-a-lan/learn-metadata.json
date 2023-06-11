@@ -4,7 +4,7 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: отработка навыков, необходимых для настройки адресации на маршрутизаторе, а также проверки его текущего состояния.",
     "difficulty": 1,
-    "duration": "PT0H22M",
+    "duration": "PT0H19M",
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -20,11 +20,21 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assessment": { "$ref": "./assessment.json" },
-    "deploy": { "$ref": "./deploy" },
-    "assets": { "$ref": "./assets" },
-    "tags": { "$ref": "../../material-tags.json" },
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assessment": {
+        "$ref": "./assessment.json"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,
