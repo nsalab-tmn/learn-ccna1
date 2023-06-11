@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Для чего в сети нужен канальный уровень? Какими бывают топологии в локальных и глобальных сетях? Что такое кадр канального уровня?",
     "difficulty": 3,
-    "duration": "PT0H6M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H5M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

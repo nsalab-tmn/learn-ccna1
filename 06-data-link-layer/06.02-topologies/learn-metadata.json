@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Чем отличаются физическая и логическая топология? Какие бывают топологии локальных и глобальных сетей? Что такое полудуплексное и полнодуплексное соединение?",
     "difficulty": 3,
-    "duration": "PT0H15M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H14M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

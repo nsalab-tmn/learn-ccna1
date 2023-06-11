@@ -4,8 +4,14 @@
     "description": "Для чего в сети нужен канальный уровень? Из чего состоит канальный уровень? Какие существуют стандарты канального уровня?",
     "difficulty": 3,
     "duration": "PT0H7M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
