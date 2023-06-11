@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Двоичная система счисления\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H2M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -59,7 +59,7 @@
                 },
                 {
                     "answer": "10101100.00010000.00011111.00011110",
-                    "correct": true 
+                    "correct": true
                 }
             ]
         }

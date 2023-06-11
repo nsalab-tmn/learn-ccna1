@@ -4,8 +4,14 @@
     "description": "Как научиться понимать IPv6 адреса? Как переводить числа из шестнадцатеричной системы счисления в десятичную и обратно?",
     "difficulty": 3,
     "duration": "PT0H11M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

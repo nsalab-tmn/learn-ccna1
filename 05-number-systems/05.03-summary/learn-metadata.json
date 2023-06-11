@@ -4,8 +4,14 @@
     "description": "Как двоичная и шестнадцатеричная системы счисления используются в сетевой адресации?",
     "difficulty": 3,
     "duration": "PT0H2M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
