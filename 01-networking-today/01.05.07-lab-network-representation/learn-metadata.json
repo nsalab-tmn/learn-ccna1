@@ -4,8 +4,10 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: изучить возможности Packet Tracer как средства моделирования представлений сети.",
     "difficulty": 1,
-    "duration": "PT0H22M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H13M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -21,10 +23,18 @@
         }
     },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" },
-    "assessment": { "$ref": "./assessment.json" },
-    "deploy": { "$ref": "./deploy" },
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "assessment": {
+        "$ref": "./assessment.json"
+    },
+    "deploy": {
+        "$ref": "./deploy"
+    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,
@@ -111,4 +121,4 @@
             }
         }
     }
-}  
+}

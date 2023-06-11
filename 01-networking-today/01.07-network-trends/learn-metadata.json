@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Какие тренды к построению сетей задает удаленная работа и рост использования мобильных устройств? Что такое облачные вычисления и какие возможности они дают пользователям?",
     "difficulty": 3,
-    "duration": "PT0H14M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H13M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

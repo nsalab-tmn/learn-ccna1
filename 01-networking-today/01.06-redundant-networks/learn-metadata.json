@@ -4,8 +4,14 @@
     "description": "Как обеспечивается устойчивость к сбоям в сети? За счет чего сеть можно легко масштабировать? Что такое качество обслуживания и для чего оно нужно? За счет чего достигается безопасность в сети?",
     "difficulty": 3,
     "duration": "PT0H8M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

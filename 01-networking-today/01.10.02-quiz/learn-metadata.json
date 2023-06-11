@@ -3,7 +3,7 @@
     "materialType": "test",
     "description": "Проверьте свои знания по теме \"Современные сетевые технологии\"",
     "difficulty": 1,
-    "duration": "PT0H30M",
+    "duration": "PT0H23M",
     "tags": {
         "$ref": "../../material-tags.json"
     },

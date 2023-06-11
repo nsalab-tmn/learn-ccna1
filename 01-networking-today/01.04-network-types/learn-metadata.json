@@ -3,9 +3,15 @@
     "materialType": "lecture",
     "description": "Какая сеть считается маленькой, а какая сеть - большой? Чем локальная сеть отличается от глобальной сети? Что такое Интернет?",
     "difficulty": 3,
-    "duration": "PT0H10M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "duration": "PT0H9M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

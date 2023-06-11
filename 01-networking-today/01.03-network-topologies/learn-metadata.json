@@ -4,8 +4,14 @@
     "description": "Как разные компоненты сети представляются на схемах? Чем физическая топология сети отличается от логической?",
     "difficulty": 3,
     "duration": "PT0H3M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
