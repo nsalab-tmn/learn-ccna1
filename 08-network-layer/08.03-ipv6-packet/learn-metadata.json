@@ -4,8 +4,14 @@
     "description": "Какие ограничения имеет протокол IPv4? Чем IPv4 отличается от IPv6? Чем отличаются заголовки пакетов IPv4 и IPv6?",
     "difficulty": 3,
     "duration": "PT0H13M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }

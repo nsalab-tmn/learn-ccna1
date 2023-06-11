@@ -4,8 +4,14 @@
     "description": "Какие функции выполняет сетевой уровень модели OSI? Какими характеристиками обладает протокол IP? Какими механизмы доставки сообщений?",
     "difficulty": 3,
     "duration": "PT0H10M",
-    "tags": { "$ref": "../../material-tags.json" },
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
     "skills": {},
-    "text": { "$ref": "./README.md" },
-    "assets": { "$ref": "./assets" }
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    }
 }
