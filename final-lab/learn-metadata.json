@@ -4,7 +4,7 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: оценка практических навыков по курсу \"введение в сетевые технологии\".",
     "difficulty": 1,
-    "duration": "PT0H22M",
+    "duration": "PT1H30M",
     "tags": {
         "$ref": "../material-tags.json"
     },
