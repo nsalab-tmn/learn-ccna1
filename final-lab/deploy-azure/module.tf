@@ -21,12 +21,12 @@ output "learn_user" {
   description = "Main User"
 }
 
-variable "tp_learn_env" {
-    type        = string
-    default     = "dev"
+output "pt-url" {
+  value       = module.pt-lab[0].pt-url
+  description = "PT API address"
 }
 
-variable "tp_learn_user" {
-    type        = string
-    default     = "user01"
+output "pt-api-port" {
+  value       = 8080
+  description = "PT API port"
 }
