@@ -30,3 +30,13 @@ output "pt-api-port" {
   value       = 8080
   description = "PT API port"
 }
+
+variable "tp_learn_env" {
+    type        = string
+    default     = "dev"
+}
+
+variable "tp_learn_user" {
+    type        = string
+    default     = "user01"
+}
