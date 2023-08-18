@@ -3,7 +3,7 @@ variable prefix {
 }
 
 variable lab_instance {
-  default = "final-lab-1"
+  default = "pt-lab"
 }
 
 variable "location_01" {
