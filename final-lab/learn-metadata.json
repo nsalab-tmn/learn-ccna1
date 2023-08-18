@@ -27,7 +27,7 @@
         "$ref": "./README.md"
     },
     "assessment": { "$ref": "./assessment.json" },
-    "deploy": { "$ref": "./deploy" },
+    "deploy": { "$ref": "./deploy-azure" },
     "assets": {
         "$ref": "./assets"
     }
