@@ -4,7 +4,7 @@
     "materialType": "lab",
     "description": "Цель лабораторной работы: отработка комплексных навыков по поиску и устранению типовых неисправностей в сети.",
     "difficulty": 1,
-    "duration": "PT0H13M",
+    "duration": "PT1H30M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -30,7 +30,7 @@
         "$ref": "./assessment.json"
     },
     "deploy": {
-        "$ref": "./deploy"
+        "$ref": "./deploy-azure"
     },
     "assets": {
         "$ref": "./assets"
