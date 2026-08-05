@@ -523,8 +523,8 @@ R1#
 ```
 S1# show ip interface brief
 Interface              IP-Address      OK? Method Status                Protocol
-Vlanl                  192.168.254.250 YES manual up                    up
-FastEthernet0/l        unassigned      YES unset  down                  down
+Vlan1                  192.168.254.250 YES manual up                    up
+FastEthernet0/1        unassigned      YES unset  down                  down
 FastEthernet0/2        unassigned      YES unset  up                    up
 FastEthernet0/3        unassigned      YES unset  up                    up
 ```
