@@ -1798,7 +1798,7 @@
             "question": "Пользователь вводит команду `ping 2001:db8:FACE:39::10` и получает ответ, содержащий код 3. Что представляет этот код?"
         }
     ],
-    "tags": { "$ref": "../material-tags.json" },
+    "tags": { "$ref": "../../../material-tags.json" },
     "skills": {},
     "assets": { "$ref": "./assets" }
 }
