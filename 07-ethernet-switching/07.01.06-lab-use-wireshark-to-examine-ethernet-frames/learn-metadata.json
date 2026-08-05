@@ -1,8 +1,8 @@
 {
-    "title": "Лабораторная работа: просмотр MAC-адресов сетевых устройств",
-    "shortName": "lab-7.2,7",
+    "title": "Лабораторная работа: анализ кадров Ethernet с помощью программы Wireshark",
+    "shortName": "lab-7.1.6",
     "materialType": "lab",
-    "description": "Цель лабораторной работы: исследование и анализ МАС-адресов Ethernet",
+    "description": "Цель лабораторной работы: исследование кадров Ethernet",
     "difficulty": 1,
     "duration": "PT0H31M",
     "tags": {
