@@ -194,7 +194,7 @@
         },
         {
             "question": "Какие два сообщения ICMPv6 используются в процессе разрешения MAC-адреса Ethernet? (верны два варианта)",
-            "answerType": "singleChoice",
+            "answerType": "multiChoice",
             "answers": [
                 {
                     "answer": "neighbor advertisement (NA)",
