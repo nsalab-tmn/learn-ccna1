@@ -137,7 +137,7 @@ C:\> ipconfig
 Windows IP Configuration
 Ethernet adapter Local Area Connection:
    Connection-specific DNS Suffix . :
-   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:fc 99:47ff:fe75:cee0 
+   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:fc99:47ff:fe75:cee0 
    Link-local IPv6 Address . . . . . : fe80::fc99:47ff:fe75:cee0
    Default Gateway . . . . . . . . . : fe80::1
 ```
