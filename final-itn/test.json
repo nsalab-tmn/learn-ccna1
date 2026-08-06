@@ -642,9 +642,9 @@
             "answerType": "singleChoice",
             "answers": [
                 {"answer": "2001\\:\\:/64"}, 
-                {"answer": "2001\\:DA48። /64"}, 
-                {"answer": "2001\\:DA48\\:FC5\\:A4። /64", "correct": true},
-                {"answer": "2001\\:DA48\\:FC5። A4\\: /64"}
+                {"answer": "2001\\:DA48:: /64"}, 
+                {"answer": "2001\\:DA48\\:FC5\\:A4:: /64", "correct": true},
+                {"answer": "2001\\:DA48\\:FC5:: A4\\: /64"}
             ]
         },
         {

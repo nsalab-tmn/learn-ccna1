@@ -1,7 +1,7 @@
 <!-- verified: agorbachev 03.05.2022 -->
 
 <!-- 17.4.1 -->
-## Проверка доступости с помощью ``ping``
+## Проверка доступности с помощью ``ping``
 
 Независимо от того, является ли ваша сеть небольшой и новой, или вы масштабируете существующую сеть, вы всегда будете иметь возможность убедиться, что ваши компоненты правильно подключены друг к другу и к Интернету. В этом разделе рассматривается ряд служебных программ, которые можно использовать для проверки подключения к сети.
 
@@ -39,7 +39,7 @@ C:\Users\PC-A>
 
 Выходные данные подтверждают наличие сетевого взаимодействия между ПК A и ПК B.
 
-Выходные данные команды **ping** Cisco IOS зависят от хоста Windows. Например, комадна **ping** для IOS отправляет пять эхо-запросов ICMP, как показано в примере.
+Выходные данные команды **ping** в Cisco IOS отличаются от вывода на хосте Windows. Например, команда **ping** для IOS отправляет пять эхо-запросов ICMP, как показано в примере.
 
 ```
 R1# ping 10.1.1.10
@@ -104,7 +104,7 @@ Data pattern [0x0000ABCD]:
 Loose, Strict, Record, Timestamp, Verbose[none]:
 Sweep range of sizes [n]:
 Type escape sequence to abort.
-Sending 5, 100-byte ICMP Echos to 10.1.1.1, timeout is 2 seconds:
+Sending 5, 100-byte ICMP Echos to 10.1.1.10, timeout is 2 seconds:
 Packet sent with a source address of 192.168.10.1
 !!!!!
 Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
@@ -131,7 +131,7 @@ Traceroute может помочь найти проблемные област�
 
 ```
 C:\Users\PC-A> tracert 10.1.1.10
-Tracing route to 10.1.10 over a maximum of 30 hops:
+Tracing route to 10.1.1.10 over a maximum of 30 hops:
   1     2 ms     2 ms     2 ms  192.168.10.1
   2     *        *        *     Request timed out.
   3     *        *        *     Request timed out.

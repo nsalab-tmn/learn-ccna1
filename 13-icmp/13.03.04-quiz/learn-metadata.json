@@ -149,12 +149,11 @@
                 },
                 {
                     "answer": "Он использует сообщения ICMP Source Quench.",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "answer": "ICMP",
-                    "correct": false,
-                    "comment": "Тема 13.1.0 — ICMP используется IPv4 и IPv6 для обеспечения отправки сообщений в случае определенных ошибок и в информационных целях."
+                    "correct": true
                 },
                 {
                     "answer": "DHCP",

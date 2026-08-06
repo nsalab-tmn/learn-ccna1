@@ -122,7 +122,8 @@ Sw-Floor-1(config)# end
 Sw-Floor-1# show running-config 
 !
 !
-line con 0password 7 094F471A1A0A 
+line con 0
+ password 7 094F471A1A0A 
 login
 !
 line vty 0 4
@@ -130,7 +131,7 @@ password 7 03095A0F034F38435B49150A1819
 login
 !
 
-!end 
+end 
 ```
 
 <!-- 2.4.5 -->

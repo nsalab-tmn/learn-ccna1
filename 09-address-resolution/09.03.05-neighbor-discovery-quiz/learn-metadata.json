@@ -18,7 +18,7 @@
             "answerType": "multiChoice",
             "answers": [
                 {
-                    "answer": "ообщение «Ответ соседнего узла» (Neighbor Advertisement, NA)",
+                    "answer": "сообщение «Ответ соседнего узла» (Neighbor Advertisement, NA)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к роутеру» и «Ответ роутера»"
                 },
