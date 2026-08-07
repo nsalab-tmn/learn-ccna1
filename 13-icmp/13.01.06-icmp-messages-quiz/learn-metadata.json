@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Какие два типа ICMP сообщений — общие для ICMPv4 и ICMPv6? (Выберите два варианта.)",

@@ -1664,7 +1664,8 @@
             "question": "Какое действие произойдет, если хост получит кадр с MAC-адресом назначения FF:FF:FF:FF:FF:FF?"
         }
     ],
-    "tags": { "$ref": "../../../material-tags.json" },
-    "skills": {},
-    "assets": { "$ref": "./assets" }
+    "tags": {
+        "$ref": "../../../material-tags.json"
+    },
+    "skills": {}
 }

@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Узел A имеет IPv4-адрес и маску подсети 10.5.4.100 255.255.255.0. Какой сетевой адрес у Host-A?",

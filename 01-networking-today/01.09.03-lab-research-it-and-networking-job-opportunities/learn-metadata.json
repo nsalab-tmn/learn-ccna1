@@ -26,9 +26,6 @@
     "text": {
         "$ref": "./README.md"
     },
-    "assets": {
-        "$ref": "./assets"
-    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,
