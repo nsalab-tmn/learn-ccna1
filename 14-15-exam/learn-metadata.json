@@ -1592,8 +1592,5 @@
     "tags": {
         "$ref": "../material-tags.json"
     },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    "skills": {}
 }

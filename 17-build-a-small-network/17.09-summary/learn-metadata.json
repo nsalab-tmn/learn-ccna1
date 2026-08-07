@@ -10,8 +10,5 @@
     "skills": {},
     "text": {
         "$ref": "./README.md"
-    },
-    "assets": {
-        "$ref": "./assets"
     }
 }

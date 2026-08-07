@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Сколько соединений требуется FTP между клиентом и сервером?",

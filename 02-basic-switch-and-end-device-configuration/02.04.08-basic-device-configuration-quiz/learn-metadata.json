@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Какая команда испльзуется, чтобы назначить имя «Sw-Floor-2» коммутатору?",

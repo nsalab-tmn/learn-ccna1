@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Какие два сообщения ICMPv6 используются в SLAAC? (верны два варианта)",

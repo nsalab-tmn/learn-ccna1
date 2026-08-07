@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Каково другое имя для канального уровня связи данных OSI?",

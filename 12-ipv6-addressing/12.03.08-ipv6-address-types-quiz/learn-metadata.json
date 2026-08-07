@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Какая рекомендуемая длина префикса для большинства подсетей IPv6?",

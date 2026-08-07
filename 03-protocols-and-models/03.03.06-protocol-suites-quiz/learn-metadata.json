@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "К какому уровню протоколльной модели TCP/IP принадлежат UDP и TCP?",

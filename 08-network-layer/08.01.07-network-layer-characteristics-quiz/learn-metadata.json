@@ -9,9 +9,6 @@
     },
     "skills": {},
     "passingScore": 100,
-    "assets": {
-        "$ref": "./assets"
-    },
     "questions": [
         {
             "question": "Какой уровень OSI отправляет сегменты для инкапсуляции в пакет IPv4 или IPv6?",
