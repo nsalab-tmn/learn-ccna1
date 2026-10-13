@@ -73,7 +73,7 @@
     "fallback": "01-networking-today/01.02-network-components/assets/1.2.3.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-yq5tyz7/spec.json",
+   "tracks": "animations/ccna1-yq5tyz7/tracks.json",
    "provenance": {
     "legacy": "1.2.3.png"
    },
@@ -702,7 +702,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-1.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-xuppnfs/spec.json",
+   "tracks": "animations/ccna1-xuppnfs/tracks.json",
    "provenance": {
     "legacy": "3.1.3-1.png"
    },
@@ -728,7 +728,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-2.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-kwzn3ft/spec.json",
+   "tracks": "animations/ccna1-kwzn3ft/tracks.json",
    "provenance": {
     "legacy": "3.1.3-2.png"
    },
@@ -754,7 +754,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-1.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-dctapbu/spec.json",
+   "tracks": "animations/ccna1-dctapbu/tracks.json",
    "provenance": {
     "legacy": "3.1.6-1.png"
    },
@@ -780,7 +780,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-2.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-6dkjpfn/spec.json",
+   "tracks": "animations/ccna1-6dkjpfn/tracks.json",
    "provenance": {
     "legacy": "3.1.6-2.png"
    },
@@ -806,7 +806,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-1.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-tn7bmyj/spec.json",
+   "tracks": "animations/ccna1-tn7bmyj/tracks.json",
    "provenance": {
     "legacy": "3.1.7-1.png"
    },
@@ -857,7 +857,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-1.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-sr4q7s7/spec.json",
+   "tracks": "animations/ccna1-sr4q7s7/tracks.json",
    "provenance": {
     "legacy": "3.1.8-1.png"
    },
@@ -883,7 +883,7 @@
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-2.png"
    },
    "status": "pending",
-   "spec": "animations/ccna1-pkfeazd/spec.json",
+   "tracks": "animations/ccna1-pkfeazd/tracks.json",
    "provenance": {
     "legacy": "3.1.8-2.png"
    },
@@ -910,6 +910,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-mnbkep4/spec.json",
+   "tracks": "animations/ccna1-mnbkep4/tracks.json",
    "provenance": {
     "legacy": "3.1.9.png"
    },
@@ -936,6 +937,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-6zf4cqr/spec.json",
+   "tracks": "animations/ccna1-6zf4cqr/tracks.json",
    "provenance": {
     "legacy": "3.1.10-1.png"
    },
@@ -962,6 +964,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-k7krwnu/spec.json",
+   "tracks": "animations/ccna1-k7krwnu/tracks.json",
    "provenance": {
     "legacy": "3.1.10-2.png"
    },
@@ -1300,6 +1303,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-37ui7wq/spec.json",
+   "tracks": "animations/ccna1-37ui7wq/tracks.json",
    "provenance": {
     "legacy": "3.6.1.png"
    },
@@ -1375,6 +1379,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-5nhonyl/spec.json",
+   "tracks": "animations/ccna1-5nhonyl/tracks.json",
    "provenance": {
     "legacy": "3.6.4.png"
    },
@@ -1401,6 +1406,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-dmfz2vv/spec.json",
+   "tracks": "animations/ccna1-dmfz2vv/tracks.json",
    "provenance": {
     "legacy": "3.6.5.png"
    },
@@ -2696,6 +2702,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-4tmonyr/spec.json",
+   "tracks": "animations/ccna1-4tmonyr/tracks.json",
    "provenance": {
     "legacy": "6.1.3.png"
    },
@@ -2922,6 +2929,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-gksgzip/spec.json",
+   "tracks": "animations/ccna1-gksgzip/tracks.json",
    "provenance": {
     "legacy": "6.2.5-1.png"
    },
@@ -2948,6 +2956,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-s2luvg2/spec.json",
+   "tracks": "animations/ccna1-s2luvg2/tracks.json",
    "provenance": {
     "legacy": "6.2.5-2.png"
    },
@@ -3249,6 +3258,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-cvbpsf2/spec.json",
+   "tracks": "animations/ccna1-cvbpsf2/tracks.json",
    "provenance": {
     "legacy": "6.3.4.png"
    },
@@ -3475,6 +3485,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-x7awqoz/spec.json",
+   "tracks": "animations/ccna1-x7awqoz/tracks.json",
    "provenance": {
     "legacy": "7.2.3.png"
    },
@@ -3501,6 +3512,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-spzwt5r/spec.json",
+   "tracks": "animations/ccna1-spzwt5r/tracks.json",
    "provenance": {
     "legacy": "7.2.4.png"
    },
@@ -3527,6 +3539,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-achja7r/spec.json",
+   "tracks": "animations/ccna1-achja7r/tracks.json",
    "provenance": {
     "legacy": "7.2.5.png"
    },
@@ -3553,6 +3566,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-n7hv735/spec.json",
+   "tracks": "animations/ccna1-n7hv735/tracks.json",
    "provenance": {
     "legacy": "7.2.6.png"
    },
@@ -3729,6 +3743,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-o5yt2qb/spec.json",
+   "tracks": "animations/ccna1-o5yt2qb/tracks.json",
    "provenance": {
     "legacy": "7.4.1.png"
    },
@@ -3755,6 +3770,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-hei5nfr/spec.json",
+   "tracks": "animations/ccna1-hei5nfr/tracks.json",
    "provenance": {
     "legacy": "7.4.2.png"
    },
@@ -3881,6 +3897,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-pea7j72/spec.json",
+   "tracks": "animations/ccna1-pea7j72/tracks.json",
    "provenance": {
     "legacy": "8.1.1-2.png"
    },
@@ -4505,6 +4522,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-lvj5zsc/spec.json",
+   "tracks": "animations/ccna1-lvj5zsc/tracks.json",
    "provenance": {
     "legacy": "9.2.2.png"
    },
@@ -4929,6 +4947,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-yejcnw3/spec.json",
+   "tracks": "animations/ccna1-yejcnw3/tracks.json",
    "provenance": {
     "legacy": "11.2.1.png"
    },
@@ -4955,6 +4974,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-f5o3mpj/spec.json",
+   "tracks": "animations/ccna1-f5o3mpj/tracks.json",
    "provenance": {
     "legacy": "11.2.2.png"
    },
@@ -4981,6 +5001,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-2kzg5mc/spec.json",
+   "tracks": "animations/ccna1-2kzg5mc/tracks.json",
    "provenance": {
     "legacy": "11.2.3.png"
    },
@@ -6508,6 +6529,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-mrvot23/spec.json",
+   "tracks": "animations/ccna1-mrvot23/tracks.json",
    "provenance": {
     "legacy": "13.1.2.png"
    },
@@ -6658,6 +6680,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-3ydrimt/spec.json",
+   "tracks": "animations/ccna1-3ydrimt/tracks.json",
    "provenance": {
     "legacy": "13.2.4.png"
    },
@@ -6684,6 +6707,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-bimlx7m/spec.json",
+   "tracks": "animations/ccna1-bimlx7m/tracks.json",
    "provenance": {
     "legacy": "13.2.5.png"
    },
@@ -6885,6 +6909,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-pzpotew/spec.json",
+   "tracks": "animations/ccna1-pzpotew/tracks.json",
    "provenance": {
     "legacy": "14.1.5.png"
    },
@@ -8486,6 +8511,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-va2c7wd/spec.json",
+   "tracks": "animations/ccna1-va2c7wd/tracks.json",
    "provenance": {
     "legacy": "16.2.1.png"
    },
@@ -8512,6 +8538,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-t7zfonu/spec.json",
+   "tracks": "animations/ccna1-t7zfonu/tracks.json",
    "provenance": {
     "legacy": "16.2.2-1.png"
    },
@@ -8538,6 +8565,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-pmlcwap/spec.json",
+   "tracks": "animations/ccna1-pmlcwap/tracks.json",
    "provenance": {
     "legacy": "16.2.2-2.png"
    },
@@ -8564,6 +8592,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-xx7yje7/spec.json",
+   "tracks": "animations/ccna1-xx7yje7/tracks.json",
    "provenance": {
     "legacy": "16.2.2-3.png"
    },
@@ -8590,6 +8619,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-gkhac7w/spec.json",
+   "tracks": "animations/ccna1-gkhac7w/tracks.json",
    "provenance": {
     "legacy": "16.2.3-2.png"
    },
@@ -8666,6 +8696,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-3vokuos/spec.json",
+   "tracks": "animations/ccna1-3vokuos/tracks.json",
    "provenance": {
     "legacy": "16.2.4-1.png"
    },
@@ -8692,6 +8723,7 @@
    },
    "status": "pending",
    "spec": "animations/ccna1-cet7odq/spec.json",
+   "tracks": "animations/ccna1-cet7odq/tracks.json",
    "provenance": {
     "legacy": "16.2.4-2.png"
    },
