@@ -712,10 +712,10 @@
    "provenance": {
     "legacy": "3.1.3-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "b8a31a5fc6ad8a0fbe559640bfdea8f03c3a6b38e6c60cfc2f6ea044bb036465",
-     "tracksSha256": "b8f041dda6d6ee6918a6da7d5053a7c2fdc2ac4b22a5d0196508df13a03c5942"
+     "figmaVersion": "2409964777200941341",
+     "at": "2026-10-13T21:17:09Z",
+     "sha256": "a8287bb68b0c0ef4ca78d29831ba115218fccd6d70e6f1ce0262b1b4ca7b8a39",
+     "tracksSha256": "441f786ccaf79f2a716dc9bbd044a939c0fe695714e0783974f211b1964b4767"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -897,10 +897,10 @@
    "provenance": {
     "legacy": "3.1.8-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "ff210f64fc984d5b221f70e5ca64a7e0af031ba968247c36ca4726e1bcb0c112",
-     "tracksSha256": "b1c9aad4eaba30bbcfb870b4dd928b62240d9a3dae910112b723d609fa65fe41"
+     "figmaVersion": "2409964777200941341",
+     "at": "2026-10-13T21:17:09Z",
+     "sha256": "834b9a3e442f072be36be6655f7f6e35057e656146292af296b2d40173b8654f",
+     "tracksSha256": "01b51a9b8b4026aff8bf11450e1afa9483c6c4be3ddbc95e7dd93a0320e43359"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -929,10 +929,10 @@
    "provenance": {
     "legacy": "3.1.8-2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "1dab27c00dc2fd94dc7c6a1fc8988066d4fbcc8b2b36678dd4a0c1e8a01a7ded",
-     "tracksSha256": "dd5f1fa9a11f83bb0124149190ba691d4d136c1234771bd3f2fbb78eb91094e3"
+     "figmaVersion": "2409964777200941341",
+     "at": "2026-10-13T21:17:09Z",
+     "sha256": "27edb72deec594e11a9e0086eba0a0375ed0d6df1643783e5f8a5466fd18cf1b",
+     "tracksSha256": "b3c8b751959307080cf3c980fddc837e3b6a31d84dc4bb886145ecfa31c57cf1"
     }
    },
    "notes": "[APNG в git (анимация) · пара: слабо]"
@@ -962,11 +962,11 @@
    "provenance": {
     "legacy": "3.1.9.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "6370419acd94868d016ac96b4cc5acb5d52c18cfa078329159793079737bc48b",
+     "figmaVersion": "2409964777200941341",
+     "at": "2026-10-13T21:17:09Z",
+     "sha256": "2bfd89ea8a12c6c461716fb8d43509a61e501e18ea6991f26fa7531ca660b7ff",
      "specSha256": "ead41bf53bce9f187833d7760b5f7025a840c950263e24736eb441b767120e21",
-     "tracksSha256": "401b974a607b708bdab6fb471eb4979dafcb10653c74005aeaf12c715558efb1"
+     "tracksSha256": "97afb6af2a889629fa4ce043fd71cbf45966db7ea363d107bd42da779cea7a8f"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -2796,11 +2796,11 @@
    "provenance": {
     "legacy": "6.1.3.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "a9d47951704d36a51b5785788a034a67548254276de1963614b061473ab7d8c8",
+     "figmaVersion": "2409964777200941341",
+     "at": "2026-10-13T21:17:09Z",
+     "sha256": "ce134c8c3cac5cb3fb0be2787a21bbe20d37f1e1ed26273f699273611f6249e6",
      "specSha256": "5ad58147ec91dd3aa451db185bc8b9f4a45b1fdf3b78dc56705f24d85234435f",
-     "tracksSha256": "3cc5c399e0a36e8d413516db4f57285405f383b44c3664c7058f5742b3926f48"
+     "tracksSha256": "588bc864b1b3eb330d1999c26e17aed4c950c3bd42121c546d60c04e24587a7e"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -3030,11 +3030,11 @@
    "provenance": {
     "legacy": "6.2.5-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "292bc0dcc6577df9c8acf040f5690a02b68298f8880c66e43778cb6cb334ee52",
+     "figmaVersion": "2409964777200941341",
+     "at": "2026-10-13T21:17:09Z",
+     "sha256": "61df291fbe11249f98ab41d7346e89c986eaeacb82e01be6dcf56b951baf71fd",
      "specSha256": "0eb7913d9ca2663d04eaae6b9995e5d9b6e3cb32049d8201fcb7fd805ed59de6",
-     "tracksSha256": "2e28632fd3a328b0555b85fbe9b2d48ff36d835741cedd3c9b13f81373227767"
+     "tracksSha256": "6a9dd7229dd54ffb6575fbc26c0fcab119f3b4604e0d1a9fc5c25410a88ba917"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
