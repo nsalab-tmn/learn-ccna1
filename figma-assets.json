@@ -102,9 +102,9 @@
    "provenance": {
     "legacy": "1.2.4.svg",
     "synced": {
-     "figmaVersion": "2409760812938211403",
-     "at": "2026-10-13T08:34:32Z",
-     "sha256": "0c051a077c413538876194bd88bc2ae42829d6b2740f75aae1c2f620a97c4bfa"
+     "figmaVersion": "2409982948096622657",
+     "at": "2026-10-13T23:29:00Z",
+     "sha256": "6f3b585185c7f3fc65d8fc1a37a2932630edf77f1320c61720a380320fb1dcbc"
     }
    }
   },
@@ -3955,9 +3955,9 @@
    "provenance": {
     "legacy": "7.4.4-2.svg",
     "synced": {
-     "figmaVersion": "2409760812938211403",
-     "at": "2026-10-13T08:34:32Z",
-     "sha256": "d7763d9f69bf4ac5eaa3e169489bcb080e45bc421d627998fa6a8a530a761022"
+     "figmaVersion": "2409982948096622657",
+     "at": "2026-10-13T23:29:00Z",
+     "sha256": "022a90876fb383fda9599fa847a51280a5eefda2f721197fe3ac79f6f4814bff"
     }
    },
    "notes": "[svg в git · пара: текст]"
@@ -8648,9 +8648,9 @@
    "provenance": {
     "legacy": "16.1.1.svg",
     "synced": {
-     "figmaVersion": "2409760812938211403",
-     "at": "2026-10-13T08:34:32Z",
-     "sha256": "ab795579c5ffa00e7522195764f8adeaba4f276fc3a4d09deec8057ce05098b8"
+     "figmaVersion": "2409982948096622657",
+     "at": "2026-10-13T23:29:00Z",
+     "sha256": "095ba58fd64d5258ddc273fe0624e8beccd2e607fb0b7e962019cc7259c3bd57"
     }
    },
    "notes": "[svg в git · сводная: в оригинале Cisco это были 4 отдельные иллюстрации · пара: закреплена]"
@@ -8979,9 +8979,9 @@
    "provenance": {
     "legacy": "16.3.1.svg",
     "synced": {
-     "figmaVersion": "2409780153183859956",
-     "at": "2026-10-13T09:43:21Z",
-     "sha256": "6a174da4df00ac38e14c0b4461ed99248c0eaf4bc378104d8770674fae2663f3"
+     "figmaVersion": "2409982948096622657",
+     "at": "2026-10-13T23:29:00Z",
+     "sha256": "07e0afb8648f1e7780082bcf8dadd0a8db4d27e010f68f86b6159867e3463ec9"
     }
    },
    "notes": "[svg в git · пара: косвенно]"
