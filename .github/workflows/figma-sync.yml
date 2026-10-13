@@ -1,0 +1,100 @@
+# .github/workflows/figma-sync.yml — on-demand Figma → repo sync (D3), one copy per course repo.
+# Contract: learn-knowledge-base conventions/figma-git-asset-contract.md §5.
+# Needs the repo secret FIGMA_TOKEN (read-only PAT: File content Read, File metadata Read) and the script
+# vendored at .github/scripts/figma_sync.py.
+#
+# Safety model: the result is always a pull request on the fixed branch `figma-sync`, never a push to the
+# base branch. A run with nothing changed in Figma writes no file, makes no commit and opens no PR
+# (idempotent). If a sync PR is already open, the next run adds a commit to it and posts the new summary.
+# Only files named in figma-assets.json (`out.path`) and the manifest itself are ever written.
+name: figma-sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "pending = not yet synced (default) · all = re-export synced entries too"
+        type: choice
+        options: [pending, all]
+        default: pending
+      keys:
+        description: "Comma-separated figure numbers to sync, e.g. 10.4.6,10.4.7 (overrides scope)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: figma-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest   # public repo → hosted runners are free
+    env:
+      SYNC_BRANCH: figma-sync
+      BASE_BRANCH: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none   # full history metadata (so an open sync branch can be merged), blobs on demand
+
+      - name: Prepare the sync branch (continue an open sync PR, else start from the base)
+        run: |
+          git config user.name  "figma-sync[bot]"
+          git config user.email "figma-sync@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$SYNC_BRANCH" >/dev/null 2>&1; then
+            git fetch -q origin "$SYNC_BRANCH"
+            git checkout -q -B "$SYNC_BRANCH" "origin/$SYNC_BRANCH"
+            if ! git merge -q --no-edit "origin/$BASE_BRANCH"; then
+              git merge --abort
+              git checkout -q -B "$SYNC_BRANCH" "origin/$BASE_BRANCH"
+              echo "⚠ the open sync branch could not be merged with $BASE_BRANCH — rebuilt from $BASE_BRANCH" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          else
+            git checkout -q -B "$SYNC_BRANCH" "origin/$BASE_BRANCH"
+          fi
+
+      - name: Sync from Figma
+        id: sync
+        continue-on-error: true   # a `broken` entry exits 2; we still want the PR with the ⚠ list
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        run: |
+          python3 .github/scripts/figma_sync.py \
+            --scope "${{ inputs.scope }}" --keys "${{ inputs.keys }}" \
+            --summary "$RUNNER_TEMP/figma-sync.md"
+          cat "$RUNNER_TEMP/figma-sync.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and open / update the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "nothing changed — no commit, no PR" | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git add -A
+          git commit -q -m "chore(assets): sync figures from Figma (run ${{ github.run_id }})"
+          git push -q -u origin "$SYNC_BRANCH"
+          printf '%s\n\nRun: %s/%s/actions/runs/%s\n' \
+            "$(cat "$RUNNER_TEMP/figma-sync.md")" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" \
+            > "$RUNNER_TEMP/pr-body.md"
+          open=$(gh pr list --head "$SYNC_BRANCH" --base "$BASE_BRANCH" --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh pr comment "$open" --body-file "$RUNNER_TEMP/pr-body.md"
+            echo "updated open PR #$open" >> "$GITHUB_STEP_SUMMARY"
+          else
+            gh pr create --base "$BASE_BRANCH" --head "$SYNC_BRANCH" \
+              --title "chore(assets): Figma sync — ${{ inputs.keys != '' && inputs.keys || inputs.scope }}" \
+              --body-file "$RUNNER_TEMP/pr-body.md"
+          fi
+
+      - name: Fail the run if entries are broken
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo "::error::figma-sync reported broken entries or an error — see the step summary"
+          exit 1
