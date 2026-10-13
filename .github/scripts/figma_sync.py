@@ -302,6 +302,64 @@ def path_matches_format(a: dict) -> bool:
     return bool(ext) and a["out"]["path"].lower().endswith(ext)
 
 
+def image_paint_nodes(node: dict, visible: bool = True):
+    """Yield (node, n) for every visible node carrying n visible IMAGE paints (fills + strokes)."""
+    visible = visible and node.get("visible", True)
+    if visible:
+        n = sum(1 for p in node.get("fills", []) + node.get("strokes", [])
+                if p.get("type") == "IMAGE" and p.get("visible", True))
+        if n:
+            yield node, n
+    for c in node.get("children", []):
+        yield from image_paint_nodes(c, visible)
+
+
+def degraded(svg: bytes, doc: dict) -> tuple[int, int] | None:
+    """The REST exporter intermittently drops every image fill of a node — the element is there, its
+    `fill="url(#pattern…)"` and the <defs> image are not (11 of 325 figures in one run, 2026-10-13).
+    Checks each image-painted node that the export emitted (`data-node-id` present; nodes the
+    exporter leaves out altogether — clipped, empty — are not a fill loss): its own element and the
+    fill elements before the next node must reference a pattern per image paint. Returns
+    (got, expected) when short, else None."""
+    if not doc:
+        return None
+    text = svg.decode("utf-8", "replace")
+    expected = got = 0
+    for node, n in image_paint_nodes(doc):
+        i = text.find(f'data-node-id="{node["id"]}"')
+        if i < 0:
+            continue
+        j = text.find("data-node-id=", i + 14)
+        expected += n
+        got += min(n, text.count("url(#pattern", i, j if j > 0 else len(text)))
+    return (got, expected) if got < expected else None
+
+
+def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict) -> tuple[bytes, str | None, int]:
+    """Download one export; re-export once if its image fills are missing; re-inject the blend modes the
+    exporter dropped. Returns (data, skip_reason, blends_reinjected) — a skip means the committed file
+    is kept, so a flaky export can never replace a faithful one."""
+    data = download(url)
+    short = degraded(data, doc)
+    if short:
+        retry = export_svg(token, file_key, [node_id], include_node_id=True).get(node_id)
+        if retry:
+            data = download(retry)
+            short = degraded(data, doc)
+    if short:
+        return data, f"degraded export — {short[0]} of {short[1]} image fills came back, twice; committed file kept", 0
+    n = 0
+    blends, pblends = blend_map(doc), paint_blend_map(doc)
+    if blends or pblends:
+        text = data.decode("utf-8")
+        text, n1 = reinject_blend_modes(text, blends)
+        text, n2 = reinject_paint_blends(text, pblends)
+        n = n1 + n2
+        if n:
+            data = text.encode("utf-8")
+    return data, None, n
+
+
 def select(assets: list[dict], scope: str, keys: set[str], ids: set[str]) -> list[dict]:
     picked = []
     for a in assets:
@@ -380,16 +438,12 @@ def run(args: argparse.Namespace) -> int:
                 a["status"] = "broken"
                 report["broken"].append(a)
                 continue
-        data = download(url)
-        doc = docs.get(a["figma"]["nodeId"], {})
-        blends, pblends = blend_map(doc), paint_blend_map(doc)
-        if blends or pblends:
-            text = data.decode("utf-8")
-            text, n1 = reinject_blend_modes(text, blends)
-            text, n2 = reinject_paint_blends(text, pblends)
-            if n1 or n2:
-                data = text.encode("utf-8")
-                report.setdefault("blends", []).append((a, n1 + n2))
+        data, why, n = fetch_svg(token, file_key, url, a["figma"]["nodeId"], docs.get(a["figma"]["nodeId"], {}))
+        if why:
+            report["skipped"].append((a, why))
+            continue
+        if n:
+            report.setdefault("blends", []).append((a, n))
         record(a, data, version, stamp, report, root)
 
     # ---- animations: base export of the built scene frame + renderer
@@ -400,15 +454,24 @@ def run(args: argparse.Namespace) -> int:
         if not args.renderer:
             report["skipped"].append((a, "no --renderer (animation pilot pending)"))
             continue
-        if not anim_id or not spec or not spec.exists() or not tracks.exists():
-            report["skipped"].append((a, "needs figma.motion.animId, spec and tracks.json"))
+        # spec.json is the authored op list and exists only for builder-made animations; a Motion build
+        # made by hand has none — tracks.json (dumped from the build) is what the renderer needs.
+        if not anim_id or not tracks or not tracks.exists() or (spec and not spec.exists()):
+            report["skipped"].append((a, "needs figma.motion.animId and tracks.json (and spec.json when listed)"))
             continue
+        if not a.get("tracks"):
+            a["tracks"] = tracks.relative_to(root).as_posix()  # found next to the spec — record it (schema: synced ⇒ tracks)
         url = export_svg(token, file_key, [anim_id], include_node_id=True).get(anim_id)
         if url is None:
             a["status"] = "broken"
             report["broken"].append(a)
             continue
-        base = download(url)
+        base, why, n = fetch_svg(token, file_key, url, anim_id, node_docs(token, file_key, [anim_id]).get(anim_id, {}))
+        if why:
+            report["skipped"].append((a, why))
+            continue
+        if n:
+            report.setdefault("blends", []).append((a, n))
         with tempfile.TemporaryDirectory() as td:
             bp, op = Path(td) / "base.svg", Path(td) / "out.svg"
             bp.write_bytes(base)
@@ -419,7 +482,7 @@ def run(args: argparse.Namespace) -> int:
                 continue
             data = op.read_bytes()
         record(a, data, version, stamp, report, root,
-               spec_sha=sha256(spec.read_bytes()), tracks_sha=sha256(tracks.read_bytes()))
+               spec_sha=sha256(spec.read_bytes()) if spec else None, tracks_sha=sha256(tracks.read_bytes()))
 
     save_manifest(mpath, manifest, indent)
     return finish(args, manifest, report, version, wrote_manifest=True)

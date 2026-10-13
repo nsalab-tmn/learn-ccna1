@@ -66,6 +66,7 @@ jobs:
         run: |
           python3 .github/scripts/figma_sync.py \
             --scope "${{ inputs.scope }}" --keys "${{ inputs.keys }}" \
+            --renderer .github/scripts/render.py \
             --summary "$RUNNER_TEMP/figma-sync.md"
           cat "$RUNNER_TEMP/figma-sync.md" >> "$GITHUB_STEP_SUMMARY"
 
