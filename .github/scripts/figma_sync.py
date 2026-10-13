@@ -491,6 +491,42 @@ def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key:
     return svg, injected, hidden, None
 
 
+def ensure_window_clips(svg: str, doc: dict, tracked: list[str]) -> tuple[str, list[str]]:
+    """The exporter writes a clip-path for a clipping frame only when something overflows it at rest; a
+    window whose content slides out during the animation (the bit box of 3.6.4) comes back unclipped and
+    the layer rides over the scene. Give every clipping ancestor of a tracked node (below the root) that
+    the export left unclipped the frame's own rectangle as a clip. Returns (svg, window ids clipped)."""
+    import re
+    idx: dict[str, tuple[dict, dict | None]] = {}
+
+    def walk(n: dict, p: dict | None) -> None:
+        idx[n["id"]] = (n, p)
+        for c in n.get("children", []):
+            walk(c, n)
+    walk(doc, None)
+    fb = doc.get("absoluteBoundingBox") or {"x": 0, "y": 0}
+    done: list[str] = []
+    defs: list[str] = []
+    for t in tracked:
+        nid = idx[t][1]["id"] if t in idx and idx[t][1] else None
+        while nid and idx[nid][1] is not None:   # ancestors below the root
+            n = idx[nid][0]
+            b = n.get("absoluteBoundingBox")
+            if n.get("clipsContent") and n.get("type") != "INSTANCE" and nid not in done and b:
+                m = re.search(r'<g data-node-id="' + re.escape(nid) + r'"([^>]*)>', svg)
+                if m and "clip-path=" not in m.group(1):
+                    cid = "nsalab-clip-" + nid.replace(":", "-").replace(";", "-")
+                    defs.append(f'<clipPath id="{cid}"><rect x="{_num(b["x"] - fb["x"])}" y="{_num(b["y"] - fb["y"])}" '
+                                f'width="{_num(b["width"])}" height="{_num(b["height"])}"/></clipPath>')
+                    svg = svg[:m.start()] + f'<g data-node-id="{nid}" clip-path="url(#{cid})"' + m.group(1) + ">" + svg[m.end():]
+                    done.append(nid)
+            nid = idx[nid][1]["id"]
+    if defs:
+        block = "".join(defs)
+        svg = svg.replace("</defs>", block + "</defs>", 1) if "</defs>" in svg else svg.replace("</svg>", f"<defs>{block}</defs></svg>")
+    return svg, done
+
+
 def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, tracked: list[str] | None = None
               ) -> tuple[bytes, str | None, int, list[str]]:
     """Download one export; re-export once if its image fills are missing; put back tracked layers the
@@ -512,7 +548,8 @@ def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, trac
         text, injected, hidden, why = complete_base(text, doc, tracked, token, file_key)
         if why:
             return data, why, 0, injected
-        injected += [f"{h} (hidden)" for h in hidden]
+        text, clipped = ensure_window_clips(text, doc, tracked)
+        injected += [f"{h} (hidden)" for h in hidden] + [f"{w} (clip)" for w in clipped]
     n = 0
     blends, pblends = blend_map(doc), paint_blend_map(doc)
     if blends or pblends:
@@ -705,7 +742,7 @@ def finish(args: argparse.Namespace, manifest: dict, report: dict, version: str,
         lines += [f"- {a['display']['key']} `{a['id']}` — {why}" for a, why in report["skipped"]]
         lines.append("")
     if report.get("injected"):
-        lines += ["### Parked layers put back (culled by the frame export, exported standalone)", ""]
+        lines += ["### Parked layers put back (culled by the frame export, exported standalone; `(hidden)` = kept out on purpose, `(clip)` = a window the export left unclipped, now clipped)", ""]
         lines += [f"- {a['display']['key']} — " + ", ".join(f"`{i}`" for i in ids) for a, ids in report["injected"]]
         lines.append("")
     if not wrote_manifest:
