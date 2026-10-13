@@ -1139,7 +1139,7 @@
   },
   {
    "id": "ccna1-47jzlgz",
-   "kind": "illustration",
+   "kind": "animation",
    "display": {
     "key": "3.3.5-1"
    },
@@ -1148,23 +1148,20 @@
     "page": "CCNA1 · 03 protocols-and-models"
    },
    "out": {
-    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.gif",
-    "format": "svg"
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.gif"
    },
-   "status": "synced",
+   "status": "pending",
+   "spec": "animations/ccna1-47jzlgz/spec.json",
    "provenance": {
-    "legacy": "3.3.5-1.gif",
-    "synced": {
-     "figmaVersion": "2409713069561001410",
-     "at": "2026-10-13T06:18:21Z",
-     "sha256": "20faf691b93f2d597553a1599e956cc69c0872fcfe2462ebd341bd6c61332d51"
-    }
+    "legacy": "3.3.5-1.gif"
    },
-   "notes": "[GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF (128–155 frames), no Motion build yet — CI skips it until spec + tracks exist; the material keeps referencing the .gif (fallback) meanwhile · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-foep2qp",
-   "kind": "illustration",
+   "kind": "animation",
    "display": {
     "key": "3.3.5-2"
    },
@@ -1173,19 +1170,16 @@
     "page": "CCNA1 · 03 protocols-and-models"
    },
    "out": {
-    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.gif",
-    "format": "svg"
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.gif"
    },
-   "status": "synced",
+   "status": "pending",
+   "spec": "animations/ccna1-foep2qp/spec.json",
    "provenance": {
-    "legacy": "3.3.5-2.gif",
-    "synced": {
-     "figmaVersion": "2409713069561001410",
-     "at": "2026-10-13T06:18:21Z",
-     "sha256": "7d4019ce23c42bb4641f6ae719a59cb5b3000c809877f978d85c1861ad7693d4"
-    }
+    "legacy": "3.3.5-2.gif"
    },
-   "notes": "[GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF (128–155 frames), no Motion build yet — CI skips it until spec + tracks exist; the material keeps referencing the .gif (fallback) meanwhile · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-6on2exn",
@@ -1639,7 +1633,7 @@
   },
   {
    "id": "ccna1-uqbi2ad",
-   "kind": "illustration",
+   "kind": "animation",
    "display": {
     "key": "4.1.2"
    },
@@ -1648,19 +1642,16 @@
     "page": "CCNA1 · 04 physical-layer"
    },
    "out": {
-    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.gif",
-    "format": "svg"
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.svg",
+    "format": "animated-svg",
+    "fallback": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.gif"
    },
-   "status": "synced",
+   "status": "pending",
+   "spec": "animations/ccna1-uqbi2ad/spec.json",
    "provenance": {
-    "legacy": "4.1.2.gif",
-    "synced": {
-     "figmaVersion": "2409713069561001410",
-     "at": "2026-10-13T06:18:21Z",
-     "sha256": "9e78587f407cf9a72194912b21d6a56c6234ad5d3342b94d75cf6d8dea74307e"
-    }
+    "legacy": "4.1.2.gif"
    },
-   "notes": "[GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF (128–155 frames), no Motion build yet — CI skips it until spec + tracks exist; the material keeps referencing the .gif (fallback) meanwhile · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-bgkpbw6",
