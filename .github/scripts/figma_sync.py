@@ -163,6 +163,15 @@ def write_if_changed(root: Path, rel: str, data: bytes) -> bool:
     return True
 
 
+EXT_FOR_FORMAT = {"svg": ".svg", "animated-svg": ".svg", "apng": ".png"}
+
+
+def path_matches_format(a: dict) -> bool:
+    """Refuse to write bytes of one format into a file named for another (a seed defect did that once)."""
+    ext = EXT_FOR_FORMAT.get(a["out"].get("format", ""))
+    return bool(ext) and a["out"]["path"].lower().endswith(ext)
+
+
 def select(assets: list[dict], scope: str, keys: set[str], ids: set[str]) -> list[dict]:
     picked = []
     for a in assets:
@@ -198,6 +207,9 @@ def run(args: argparse.Namespace) -> int:
     todo = select(manifest["assets"], args.scope, keys, ids)
 
     report = {"written": [], "unchanged": [], "repaired": [], "broken": [], "skipped": []}
+    for a in [a for a in todo if not path_matches_format(a)]:
+        report["skipped"].append((a, f"out.path extension does not match out.format {a['out'].get('format')!r} — not written"))
+    todo = [a for a in todo if path_matches_format(a)]
     if args.dry_run:
         for a in todo:
             report["skipped"].append((a, "dry run"))
