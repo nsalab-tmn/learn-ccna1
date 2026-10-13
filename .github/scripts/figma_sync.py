@@ -139,6 +139,81 @@ def reinject_blend_modes(svg: str, blends: dict[str, str]) -> tuple[str, int]:
     return svg, added
 
 
+def paint_blend_map(node: dict) -> dict[str, list[tuple[int, str]]]:
+    """{nodeId: [(index among visible fills, css blend)]} for fills that carry their own blend mode
+    (e.g. a grey noise texture multiplied over a device face). The exporter emits one element per visible
+    fill, bottom first, inside the node's <g data-node-id>, and drops the paint's blend when the paint
+    has an opacity < 1 — that is what turns switch faces grey."""
+    out: dict[str, list[tuple[int, str]]] = {}
+    stack = [node]
+    while stack:
+        n = stack.pop()
+        fills = [f for f in (n.get("fills") or []) if f.get("visible", True)]
+        items = [(k, CSS_BLEND[f["blendMode"]]) for k, f in enumerate(fills) if CSS_BLEND.get(f.get("blendMode", "NORMAL"))]
+        if items:
+            out[n["id"]] = items
+        stack.extend(n.get("children", []))
+    return out
+
+
+def _element_span(svg: str, start: int) -> tuple[int, int]:
+    """[start, end) of the element whose '<' is at `start` (self-closing or with matching close tag)."""
+    import re
+    tag = re.match(r"<([a-zA-Z]+)", svg[start:]).group(1)
+    gt = svg.index(">", start)
+    if svg[gt - 1] == "/":
+        return start, gt + 1
+    pat = re.compile(r"<(/?)" + re.escape(tag) + r"\b[^>]*?(/?)>")
+    depth, pos = 1, gt + 1
+    while depth:
+        mm = pat.search(svg, pos)
+        if not mm:
+            return start, len(svg)
+        if mm.group(1):
+            depth -= 1
+        elif not mm.group(2):
+            depth += 1
+        pos = mm.end()
+    return start, pos
+
+
+def reinject_paint_blends(svg: str, pmap: dict[str, list[tuple[int, str]]]) -> tuple[str, int]:
+    """Wrap the k-th fill element of a node in <g style="mix-blend-mode:…"> when the paint's blend was
+    dropped — the same form the desktop export uses."""
+    import re
+    added = 0
+    for nid, items in pmap.items():
+        m = re.search(r'<([a-zA-Z]+)[^>]*\sdata-node-id="' + re.escape(nid) + r'"', svg)
+        if not m:
+            continue
+        s, e = _element_span(svg, m.start())
+        block = svg[s:e]
+        if m.group(1) == "g":
+            inner_start, inner_end = block.index(">") + 1, block.rfind("</g>")
+            kids, pos = [], inner_start
+            while True:
+                k = block.find("<", pos, inner_end)
+                if k < 0:
+                    break
+                ks, ke = _element_span(block, k)
+                kids.append((ks, ke))
+                pos = ke
+        else:
+            kids = [(0, len(block))]
+        new_block = block
+        for k, css in sorted(items, reverse=True):
+            if k >= len(kids):
+                continue
+            ks, ke = kids[k]
+            child = block[ks:ke]
+            if "mix-blend-mode" in child[: child.find(">") + 1]:
+                continue
+            new_block = new_block[:ks] + f'<g style="mix-blend-mode:{css}">' + child + "</g>" + new_block[ke:]
+            added += 1
+        svg = svg[:s] + new_block + svg[e:]
+    return svg, added
+
+
 def node_docs(token: str, file_key: str, node_ids: list[str]) -> dict[str, dict]:
     """Subtrees for the given nodes (one call per batch) — used for blend-mode re-injection."""
     out: dict[str, dict] = {}
@@ -306,12 +381,15 @@ def run(args: argparse.Namespace) -> int:
                 report["broken"].append(a)
                 continue
         data = download(url)
-        blends = blend_map(docs.get(a["figma"]["nodeId"], {}))
-        if blends:
-            text, n_added = reinject_blend_modes(data.decode("utf-8"), blends)
-            if n_added:
+        doc = docs.get(a["figma"]["nodeId"], {})
+        blends, pblends = blend_map(doc), paint_blend_map(doc)
+        if blends or pblends:
+            text = data.decode("utf-8")
+            text, n1 = reinject_blend_modes(text, blends)
+            text, n2 = reinject_paint_blends(text, pblends)
+            if n1 or n2:
                 data = text.encode("utf-8")
-                report.setdefault("blends", []).append((a, n_added))
+                report.setdefault("blends", []).append((a, n1 + n2))
         record(a, data, version, stamp, report, root)
 
     # ---- animations: base export of the built scene frame + renderer
