@@ -72,10 +72,16 @@
     "format": "animated-svg",
     "fallback": "01-networking-today/01.02-network-components/assets/1.2.3.png"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-yq5tyz7/tracks.json",
    "provenance": {
-    "legacy": "1.2.3.png"
+    "legacy": "1.2.3.png",
+    "synced": {
+     "figmaVersion": "2409798063181613241",
+     "at": "2026-10-13T11:00:21Z",
+     "sha256": "18de19465f6ddd9b8938eef4827faa9619f5a777bf38ab9ebcfa35972edaabca",
+     "tracksSha256": "4dbde5a91e76bf1fc5dd602c7862bf93cc380327d6f223d420ed544ba9048edc"
+    }
    },
    "notes": "· вариант 2   [APNG в git (анимация) · пара: закреплена]"
   },
@@ -805,10 +811,16 @@
     "format": "animated-svg",
     "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-1.png"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-tn7bmyj/tracks.json",
    "provenance": {
-    "legacy": "3.1.7-1.png"
+    "legacy": "3.1.7-1.png",
+    "synced": {
+     "figmaVersion": "2409798063181613241",
+     "at": "2026-10-13T11:00:21Z",
+     "sha256": "a29e6abb5bd7429d3e99d4cb9ea0784d14d476d23c1ded305fce00682403509d",
+     "tracksSha256": "f87ddb0d758ff18c162fc2ac2daf50675786a69f845568d4b65770da22397f7a"
+    }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
   },
@@ -2954,11 +2966,18 @@
     "format": "animated-svg",
     "fallback": "06-data-link-layer/06.02-topologies/assets/6.2.5-2.png"
    },
-   "status": "pending",
+   "status": "synced",
    "spec": "animations/ccna1-s2luvg2/spec.json",
    "tracks": "animations/ccna1-s2luvg2/tracks.json",
    "provenance": {
-    "legacy": "6.2.5-2.png"
+    "legacy": "6.2.5-2.png",
+    "synced": {
+     "figmaVersion": "2409798063181613241",
+     "at": "2026-10-13T11:00:21Z",
+     "sha256": "f51b30db87b943d3b9810a2abb49c25819661514702bf724ea6c37773a869bfa",
+     "specSha256": "49adaf975559f40831b42c419b7416144860b4b2951d3a1044cca80b84c636fe",
+     "tracksSha256": "eab35e02cbb8b247d4637bbec28b0788fd1be7e5a4ea375d08d6406b9f041e18"
+    }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
   },
@@ -8721,11 +8740,18 @@
     "format": "animated-svg",
     "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-2.png"
    },
-   "status": "pending",
+   "status": "synced",
    "spec": "animations/ccna1-cet7odq/spec.json",
    "tracks": "animations/ccna1-cet7odq/tracks.json",
    "provenance": {
-    "legacy": "16.2.4-2.png"
+    "legacy": "16.2.4-2.png",
+    "synced": {
+     "figmaVersion": "2409798063181613241",
+     "at": "2026-10-13T11:00:21Z",
+     "sha256": "0e877420f6eddf84de37c54da16e9ce924e5666354e48db561c3d551c11c9e2a",
+     "specSha256": "23f482d4a3297f3b963c697cbe6f38fd9a4c600d0ff59e95c669b1ead81b5225",
+     "tracksSha256": "5f2ee094e74d76bec829090d6d4ea3a18d2c2e5babf5d4f1ba41cd2ce071ec4e"
+    }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
   },
