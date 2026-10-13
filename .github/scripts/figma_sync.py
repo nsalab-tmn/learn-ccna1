@@ -328,6 +328,10 @@ def degraded(svg: bytes, doc: dict) -> tuple[int, int] | None:
     for node, n in image_paint_nodes(doc):
         i = text.find(f'data-node-id="{node["id"]}"')
         if i < 0:
+            # Absent from the export. Figma's own verdict decides: a node it renders (absoluteRenderBounds
+            # set) must be there; one it does not (null — no geometry, clipped away) is not a loss.
+            if node.get("absoluteRenderBounds"):
+                expected += n
             continue
         j = text.find("data-node-id=", i + 14)
         expected += n
