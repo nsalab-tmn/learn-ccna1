@@ -712,10 +712,10 @@
    "provenance": {
     "legacy": "3.1.3-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "2f7aaf51d411e1cec75a2b6563fa23c1b8dba445dc6772fff6629a36f314b360",
-     "tracksSha256": "a0f666ca136f55532c5e15fcebb715cb5b898b94f99930f01e7c13469234f1c5"
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "b8a31a5fc6ad8a0fbe559640bfdea8f03c3a6b38e6c60cfc2f6ea044bb036465",
+     "tracksSha256": "b8f041dda6d6ee6918a6da7d5053a7c2fdc2ac4b22a5d0196508df13a03c5942"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -744,10 +744,10 @@
    "provenance": {
     "legacy": "3.1.3-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "b4fc3ef0e4eccd6f3126004eaa417688767550fa674e4e69f07caf48db2bb05f",
-     "tracksSha256": "2b82d3b7e60d4f746729d768262945fb2b1cc5a250e75ed04d3b6d3393bf394a"
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "7b31042f4ce5e0918a48273b432172158c7a0ed214e6a9fc9ccb978d1c901052",
+     "tracksSha256": "6293c87e71cf246ba831cf244ab57ae78ada73eefe9fb69762a7a616738591e2"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -776,10 +776,10 @@
    "provenance": {
     "legacy": "3.1.6-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "3e8f0db459fdeb74c9f1721eb7ea8b63c375d45361b6148a7ac38ce4d774bdc9",
-     "tracksSha256": "e53b3f29997e2cbe17c1203178e2c1f8dcdfc89f9b43c604cdf916ee6e6210e5"
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "e36f08a03c2090b90380bde8a1fdb0bfbfc1ea4ac886595ebd757754eb905ef2",
+     "tracksSha256": "127fcbb14372599f1c3268a91e040dd88626da2c879eb2ecfb9333a29d3c82b4"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -808,10 +808,10 @@
    "provenance": {
     "legacy": "3.1.6-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "eaf13bcae25a07a8238ae0c292be27bd57707f4f624e8b5a80cd6c363863c3ae",
-     "tracksSha256": "6d0a8d708549b347b7e23612867b3903a3f85f817fcdd1b7c85e0422be06826a"
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "f3df94b85a51504516f9a83ee1c527cf4f3430183b334b9ac3c941032cc643b3",
+     "tracksSha256": "f121214a23335ec17ef6da7dbf4777a50103ba245a5fb0359b9fa2d047583e56"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -840,9 +840,9 @@
    "provenance": {
     "legacy": "3.1.7-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "d6c6110c1942d05dc322663f34165f6d66f30f8642a72ab0d62f4ed925fb87ab",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "9c8e3339224c93ad1be2570ffccd9ee954c09c4a6a59e9246ddaf927eb52c158",
      "tracksSha256": "f87ddb0d758ff18c162fc2ac2daf50675786a69f845568d4b65770da22397f7a"
     }
    },
@@ -897,10 +897,10 @@
    "provenance": {
     "legacy": "3.1.8-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "ec786bfe874e4ff122f4df400f4e1b5c15bb06c5451d22de1850728db7870b3d",
-     "tracksSha256": "64822af3feb1cc9ba18e9fc0a9e0b3b9c707aedde57c6da1d0df94da925e239b"
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "ff210f64fc984d5b221f70e5ca64a7e0af031ba968247c36ca4726e1bcb0c112",
+     "tracksSha256": "b1c9aad4eaba30bbcfb870b4dd928b62240d9a3dae910112b723d609fa65fe41"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -929,10 +929,10 @@
    "provenance": {
     "legacy": "3.1.8-2.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "b2587c60500858756e8b6f0037e7ba2a1896dd2735065268e755c4158db6e4ea",
-     "tracksSha256": "44c3146d6ea596d928bd9e6a3dc27b516ef886e64893cf7b51fa7a416bf99401"
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "1dab27c00dc2fd94dc7c6a1fc8988066d4fbcc8b2b36678dd4a0c1e8a01a7ded",
+     "tracksSha256": "dd5f1fa9a11f83bb0124149190ba691d4d136c1234771bd3f2fbb78eb91094e3"
     }
    },
    "notes": "[APNG в git (анимация) · пара: слабо]"
@@ -962,11 +962,11 @@
    "provenance": {
     "legacy": "3.1.9.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "f0ebfdf87d6fd1e01431974c2f0d3fcdc8c71fb6778102f47d23d73d55ed9506",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "6370419acd94868d016ac96b4cc5acb5d52c18cfa078329159793079737bc48b",
      "specSha256": "ead41bf53bce9f187833d7760b5f7025a840c950263e24736eb441b767120e21",
-     "tracksSha256": "7c17adc975762dac718e216ded1c16e04db657c8a4531502a9cfc1c6838205f5"
+     "tracksSha256": "401b974a607b708bdab6fb471eb4979dafcb10653c74005aeaf12c715558efb1"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -996,11 +996,11 @@
    "provenance": {
     "legacy": "3.1.10-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "33c9113f881e5a172874119d3782b3c7346f7ffc926127aee1796dbb369f9edb",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "9bde0d548aa1fba78e21415e0a9def1083457f8e7f46c7b0d80f625ea24cf732",
      "specSha256": "2eb1048df202f172d64e63653a8cdf38b517fe8fcfbb831736cb5919473b546a",
-     "tracksSha256": "737308ec9c0c319849bf7bccf3e786362ef7664dd9098c6ced2b43f21fdb8893"
+     "tracksSha256": "8ff600614c1e1a720800b26320cf5de7b3992152809345174bdaf5046c7eacc3"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -1459,11 +1459,11 @@
    "provenance": {
     "legacy": "3.6.4.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "5b677a0d8f965e381a81393ff4fed3193942ed920c381a6c933438695d75195f",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "e18ab2d9ad0e18a46bde68a06c5e71cbbff3680d4a4009035acbb2642426850e",
      "specSha256": "ba1e47498c679d0406e4b0ebb2ea863f28c6908836d18223828e42d83551a21a",
-     "tracksSha256": "e56c26b73d793593ce48e7dadd6a753823c4d3b72b8bfd82dd6214d7ac9b30b5"
+     "tracksSha256": "29e8ef3045233061b263923c51b68757f82a1d186ac1462755e2708a5e39163b"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -1493,11 +1493,11 @@
    "provenance": {
     "legacy": "3.6.5.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "26648870b4da6f67de0077a9448a0433aeacea10276779a8359715dcac9d60b1",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "332f6d4b5b8a726531906e042bc50e420d06a6ea60523e54cab83005ea2c3147",
      "specSha256": "57f0f8d8bfa8859c224f165242c5a5b497259175c443252e02bc279c1be463da",
-     "tracksSha256": "48f8f8b714417edb9be2f65e33882d3844034590cc3a7de2065a7445ddb99f16"
+     "tracksSha256": "2396b774c82f137463eb50ff2ebff3b225a562a9b3dde09a5441b2a49f197ca3"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -2796,11 +2796,11 @@
    "provenance": {
     "legacy": "6.1.3.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "eb299c139e2a405e9bf402968d443c0f1d8ffd7a6002abe513e5a94355963287",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "a9d47951704d36a51b5785788a034a67548254276de1963614b061473ab7d8c8",
      "specSha256": "5ad58147ec91dd3aa451db185bc8b9f4a45b1fdf3b78dc56705f24d85234435f",
-     "tracksSha256": "e21b27bcf0e19d78aec7aaeb5c1c297d6f5d432344848ed4f30468d7cfac89dd"
+     "tracksSha256": "3cc5c399e0a36e8d413516db4f57285405f383b44c3664c7058f5742b3926f48"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -3030,11 +3030,11 @@
    "provenance": {
     "legacy": "6.2.5-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "2c862b7925e7c245675526853bcf9ca204b2684bf844968afbda5cced5e42e58",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "292bc0dcc6577df9c8acf040f5690a02b68298f8880c66e43778cb6cb334ee52",
      "specSha256": "0eb7913d9ca2663d04eaae6b9995e5d9b6e3cb32049d8201fcb7fd805ed59de6",
-     "tracksSha256": "8ae34ea28ece4641410380bd6daf26e884400aed681dbc979c5d1cf6ad65c5d0"
+     "tracksSha256": "2e28632fd3a328b0555b85fbe9b2d48ff36d835741cedd3c9b13f81373227767"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -3641,11 +3641,11 @@
    "provenance": {
     "legacy": "7.2.4.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "d48dd5cfe179eb1371b2a07909f2340c6d0c3e2d56b20b6a59b692416a45767f",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "fb1a79bffa5ae8209354ac9a8579985b78fe3575f73aed69f03f91208b3f6369",
      "specSha256": "9fc69953f9bbc53a3ffc17e8b6a2ae38299fe7fe499dee004423363b97717f98",
-     "tracksSha256": "4a716f42f8168aa1ca2be92615ce1163301e2669b3f3e6730116dcb5b0d9c568"
+     "tracksSha256": "89ccdd201eb4730d41cf893d3abc13a839cb5a872142a4975437aa13253bf967"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -3675,11 +3675,11 @@
    "provenance": {
     "legacy": "7.2.5.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "e525c5b6984dd06fafbb1b084af7a90164f03c85c1593b846caef972b7757f15",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "a6185a6bff62e8ba7048cf5a17307d5ef0a8b3467d42ca6bca487c87116fe959",
      "specSha256": "490dfe365af9b488876c2e35dca4de85adc657e884198d4beccb236f6c7ba252",
-     "tracksSha256": "935897e45f6f0026061e1f7fa39928801a861ca160f413f81d8c83f1b4081652"
+     "tracksSha256": "50bb5aa7714fe9ab80227dbd2af5e4e1d446a002652ba8097db8cc48f4683c43"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -3709,11 +3709,11 @@
    "provenance": {
     "legacy": "7.2.6.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "a5debb188fb6a48d94fe9b83fb63366096febffbda22195190c503552ee604d1",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "a496931052228fae1bfb15a7465716de87a27073921668c51742aa2ad3a09713",
      "specSha256": "3cfb456c80610fbff36b593b8950b0a30e8a9f61dbda0262acfc5e88c079641a",
-     "tracksSha256": "fb581b5e8559f7eda54fdfa470ad8ea5c3aef13ce6d5244e17d169cbefd4e839"
+     "tracksSha256": "9c32184a65b8f0a54476f8361fc42eeb6f4eecef193195861e4ece7aec078341"
     }
    },
    "notes": "· вариант 2   [APNG в git (анимация) · пара: ПРОВЕРИТЬ]"
@@ -3893,11 +3893,11 @@
    "provenance": {
     "legacy": "7.4.1.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "6e3018e5ca4833493518ba35ac9a9195f31b4bb533ba2bc7eec6bfc458e917e1",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "65718e1be2d7320ec3afa911d8d5dc407c419f4b6decc4539906b1d72019478c",
      "specSha256": "10ee5b93ef9afcd384fd3ddec0a196b45352675513628efdb24331f7cd687469",
-     "tracksSha256": "7c09f8d11c0b010ecee08fc0c296d7bc112a5f5e103fc7b87275177ac14fb89d"
+     "tracksSha256": "dc9772bae9545ea0b2c4aaf9b19885512b4665940be8fbf2a6d35dadf9f3869a"
     }
    },
    "notes": "· вариант 2   [APNG в git (анимация) · ⚠ почти не отличается от 7.4.2 · пара: текст]"
@@ -3927,11 +3927,11 @@
    "provenance": {
     "legacy": "7.4.2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "66bc5147cd7bdeb9be23670cf061307bff031727ae310228c9ed6c27b3a59133",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "966d011eab8887d407048a0fe9737954d94d877d5183fbb98d96d5d7d9ff7089",
      "specSha256": "f5b1eacb91844c099bd5e8f32f6418b224859dfb04a1a9ee1eb15627f27936ae",
-     "tracksSha256": "2b7e44f8fee5a255e1a69262bc668149163e32973a08f5f493eb59ef8e1e099a"
+     "tracksSha256": "c63cfa0faf739ba38472bca60713dd391f9a91f3a833b7b8092665862c6b4bd1"
     }
    },
    "notes": "[APNG в git (анимация) · ⚠ почти не отличается от 7.4.1 · пара: текст]"
@@ -4693,11 +4693,11 @@
    "provenance": {
     "legacy": "9.2.2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "036f632ab2933bf679f5f6bbd6e08878e8d344f62804a320bd4aaec480fa031d",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "9a0f172aa4523c191b08d2e825037c389ae8bb7d2692021d1c76c6a52c78aa2d",
      "specSha256": "5eb43290fdd6c72351408da43412bf1006a0f9240703d5f4da0ae31728a07417",
-     "tracksSha256": "00cb78e9f9f9e5c9f12e5027a9516b0ccc1a1b21ce60de9f148714562a367d46"
+     "tracksSha256": "f9e02d24fa806bc66ba16115aa1f40985c56e89ebeb523b1a901f88361e5da87"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -5125,11 +5125,11 @@
    "provenance": {
     "legacy": "11.2.1.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "b911e0856a5f60a6487ce1d27f916c0d5c3a6f0754fbd88997f291ee87917769",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "03060e3081fdb66984082da4b8b8180453aaeea8f645f3a5c8f7ab47c6e37534",
      "specSha256": "d332e91772e5455a4fcca9b9db37db4ecf568e5efdb38f86f0700bbd2b5c99b9",
-     "tracksSha256": "c5f3884648cc72dbd3459aa0744915d16542835208bde12cea0cd8fa0818b66d"
+     "tracksSha256": "2b9fa25dcb8255666b613fb967f5567b344ef16a5fd0a200b32a46b5abb3ecec"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -5159,11 +5159,11 @@
    "provenance": {
     "legacy": "11.2.2.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "c93c4bee0fadf68cd6d3cb144f20904f57b67e5a5cc0af09f15824375fb11472",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "45b7f2c114acdcbe89c288c4756e609c2d8e2e5842accfae960613f7add3888f",
      "specSha256": "16d20c37de179129baa2a7ab8bf416c9b8127b0699912b11e6003d5f7b434635",
-     "tracksSha256": "f839b9548f724a7454fb44fc3f6770f24cb43935c404302678f4a0213e0276c3"
+     "tracksSha256": "175550eff45a617dca52a2cef3ce783d427843306d23b6d73ac703a8a794898d"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -5193,11 +5193,11 @@
    "provenance": {
     "legacy": "11.2.3.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "a3bfec938f438a2d019553bc2db7af43af295fcbf2753735e25bc90a98600169",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "926de5b3b1866ae7608478cc1975fcbab1bb402a7b6c14f3efe5936e4471a040",
      "specSha256": "00b400706d5fe8919b412e224214de5cbca5fdaa616cf09d22a8bd64a43dc064",
-     "tracksSha256": "aeb5be649e7f883a050bd79d9e72dbc18e6383215c5f11dfa7489d2b378c5a5f"
+     "tracksSha256": "e6fb58a5bd0834915f32a4102f5de67acd030185fc99351a7cd9fadc292caeaf"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -6728,11 +6728,11 @@
    "provenance": {
     "legacy": "13.1.2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "0c643c0943f77b301d2775fb51d8498802a1560e3039bc0ef874af65fb2a7d9d",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "db1f58e0019b787dfef49676c993ae421b23cd50a73a0402e4bdc53ca7e2008a",
      "specSha256": "f2e4ee44aeb2f0995c3f7713615f5d55e4129c5a2e05a8496542c3e468bec015",
-     "tracksSha256": "97e40c4840e70c4f22c57e97e1492f410f0316bccc5154f3586e6228b2a38d90"
+     "tracksSha256": "0a284103b6f12bcbecb755f1930d04c25ad6d9240b0e42794067e051ba5f57c7"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -8958,11 +8958,11 @@
    "provenance": {
     "legacy": "16.2.4-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "673b1cc09504a3cdb6a1e21808824d1709cf3f5ca3fee1e26b34e5ebe8c3f990",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "393e3f0acfe4b898c6d489f152c440ee77850865421e59afd191327719d1da64",
      "specSha256": "a0505e90100e7c628ffe21bb38ee50ee66e37d0bcd79b162169ac78b0efae062",
-     "tracksSha256": "fd1e13f291d434df7095a4cbdc13d5f73eb4ea79512a921c294f17841b964449"
+     "tracksSha256": "fb47f517d7675ac14a22dc7dd6d2135719884669b010982e04e3ec2950c6f741"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -8992,11 +8992,11 @@
    "provenance": {
     "legacy": "16.2.4-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "0e3fb3fc804ebb54017c0521db9d5b5ee365304a7040d4a3126bd8e815ffd787",
+     "figmaVersion": "2409927504370504155",
+     "at": "2026-10-13T20:52:27Z",
+     "sha256": "fd2836fc1f9f8718a7d077c8c7fc39a1a0178c4935d62ed04be689e2ff88fe40",
      "specSha256": "23f482d4a3297f3b963c697cbe6f38fd9a4c600d0ff59e95c669b1ead81b5225",
-     "tracksSha256": "5f2ee094e74d76bec829090d6d4ea3a18d2c2e5babf5d4f1ba41cd2ce071ec4e"
+     "tracksSha256": "f3ae82353fccfe6c38c4d2ea49f28242dff76d1ee5e65da649eb4314e7a58581"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
