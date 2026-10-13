@@ -96,6 +96,61 @@ def export_svg(token: str, file_key: str, node_ids: list[str], include_node_id: 
     return out
 
 
+CSS_BLEND = {"MULTIPLY": "multiply", "SCREEN": "screen", "OVERLAY": "overlay", "DARKEN": "darken", "LIGHTEN": "lighten",
+             "COLOR_DODGE": "color-dodge", "COLOR_BURN": "color-burn", "HARD_LIGHT": "hard-light", "SOFT_LIGHT": "soft-light",
+             "DIFFERENCE": "difference", "EXCLUSION": "exclusion", "HUE": "hue", "SATURATION": "saturation", "COLOR": "color",
+             "LUMINOSITY": "luminosity", "LINEAR_BURN": "multiply", "LINEAR_DODGE": "screen"}
+
+
+def blend_map(node: dict) -> dict[str, str]:
+    """{nodeId: css blend} for every node in the subtree whose layer blend mode is not normal."""
+    out: dict[str, str] = {}
+    stack = [node]
+    while stack:
+        n = stack.pop()
+        css = CSS_BLEND.get(n.get("blendMode", "NORMAL"))
+        if css:
+            out[n["id"]] = css
+        stack.extend(n.get("children", []))
+    return out
+
+
+def reinject_blend_modes(svg: str, blends: dict[str, str]) -> tuple[str, int]:
+    """Figma's REST SVG export drops `mix-blend-mode` on plain shapes (ellipses, vectors) while the
+    desktop export keeps it; the elements are still addressable via data-node-id (svg_include_node_id=true),
+    so put the layer's blend mode back as an inline style where it is missing."""
+    import re
+    added = 0
+    for nid, css in blends.items():
+        pat = re.compile(r'<([a-zA-Z]+)([^>]*\sdata-node-id="' + re.escape(nid) + r'")([^>]*?)(/?)>')
+        def fix(m: "re.Match[str]") -> str:
+            nonlocal added
+            head, mid, rest, close = m.group(1), m.group(2), m.group(3), m.group(4)
+            if "mix-blend-mode" in rest or "mix-blend-mode" in mid:
+                return m.group(0)
+            added += 1
+            sm = re.search(r'\sstyle="([^"]*)"', rest)
+            if sm:
+                rest = rest[:sm.start()] + f' style="{sm.group(1).rstrip(";")};mix-blend-mode:{css}"' + rest[sm.end():]
+            else:
+                rest = rest + f' style="mix-blend-mode:{css}"'
+            return f"<{head}{mid}{rest}{close}>"
+        svg = pat.sub(fix, svg, count=1)
+    return svg, added
+
+
+def node_docs(token: str, file_key: str, node_ids: list[str]) -> dict[str, dict]:
+    """Subtrees for the given nodes (one call per batch) — used for blend-mode re-injection."""
+    out: dict[str, dict] = {}
+    for i in range(0, len(node_ids), BATCH):
+        chunk = node_ids[i:i + BATCH]
+        res = api(f"/v1/files/{file_key}/nodes", token, {"ids": ",".join(chunk)})
+        for nid, v in (res.get("nodes") or {}).items():
+            if v and v.get("document"):
+                out[nid] = v["document"]
+    return out
+
+
 def file_version(token: str, file_key: str, probe_node: str) -> str:
     """The file's version id, read through the nodes endpoint (no whole-file fetch)."""
     res = api(f"/v1/files/{file_key}/nodes", token, {"ids": probe_node, "depth": 0})
@@ -226,9 +281,14 @@ def run(args: argparse.Namespace) -> int:
     stamp = now_iso()
     pages: list[tuple[str, str]] | None = None
 
-    # ---- illustrations: one batched export, then per-entry write
+    # ---- illustrations: one batched export, then per-entry write.
+    # Always with svg_include_node_id=true: besides making every layer addressable, it makes the exporter
+    # keep layer blend modes (mix-blend-mode wrappers) that it drops from a plain export — the desktop
+    # export keeps them, so this is what matches the hand-made renders. The re-injection below is the
+    # safety net for any blend the exporter still loses.
     ills = [a for a in todo if a["kind"] == "illustration"]
-    urls = export_svg(token, file_key, [a["figma"]["nodeId"] for a in ills]) if ills else {}
+    urls = export_svg(token, file_key, [a["figma"]["nodeId"] for a in ills], include_node_id=True) if ills else {}
+    docs = node_docs(token, file_key, [a["figma"]["nodeId"] for a in ills]) if ills else {}
     for a in ills:
         url = urls.get(a["figma"]["nodeId"])
         if url is None:
@@ -237,14 +297,21 @@ def run(args: argparse.Namespace) -> int:
             new_id = repair(token, file_key, a, pages)
             if new_id:
                 a["figma"]["nodeId"] = new_id
-                url = export_svg(token, file_key, [new_id]).get(new_id)
+                url = export_svg(token, file_key, [new_id], include_node_id=True).get(new_id)
                 if url:
                     report["repaired"].append(a)
+                    docs.update(node_docs(token, file_key, [new_id]))
             if url is None:
                 a["status"] = "broken"
                 report["broken"].append(a)
                 continue
         data = download(url)
+        blends = blend_map(docs.get(a["figma"]["nodeId"], {}))
+        if blends:
+            text, n_added = reinject_blend_modes(data.decode("utf-8"), blends)
+            if n_added:
+                data = text.encode("utf-8")
+                report.setdefault("blends", []).append((a, n_added))
         record(a, data, version, stamp, report, root)
 
     # ---- animations: base export of the built scene frame + renderer
