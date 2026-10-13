@@ -69,8 +69,7 @@
    },
    "out": {
     "path": "01-networking-today/01.02-network-components/assets/1.2.3.svg",
-    "format": "animated-svg",
-    "fallback": "01-networking-today/01.02-network-components/assets/1.2.3.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-yq5tyz7/tracks.json",
@@ -704,8 +703,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-xuppnfs/tracks.json",
@@ -736,8 +734,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-2.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-kwzn3ft/tracks.json",
@@ -768,8 +765,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-dctapbu/tracks.json",
@@ -800,8 +796,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-2.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-6dkjpfn/tracks.json",
@@ -832,8 +827,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-tn7bmyj/tracks.json",
@@ -889,8 +883,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-sr4q7s7/tracks.json",
@@ -921,8 +914,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-2.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-pkfeazd/tracks.json",
@@ -953,8 +945,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.9.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.9.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-mnbkep4/spec.json",
@@ -987,8 +978,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-6zf4cqr/spec.json",
@@ -1021,8 +1011,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-2.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-k7krwnu/spec.json",
@@ -1367,8 +1356,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-37ui7wq/spec.json",
@@ -1450,8 +1438,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.4.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.4.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-5nhonyl/spec.json",
@@ -1484,8 +1471,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.5.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.5.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-dmfz2vv/spec.json",
@@ -2787,8 +2773,7 @@
    },
    "out": {
     "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.3.svg",
-    "format": "animated-svg",
-    "fallback": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.3.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-4tmonyr/spec.json",
@@ -3021,8 +3006,7 @@
    },
    "out": {
     "path": "06-data-link-layer/06.02-topologies/assets/6.2.5-1.svg",
-    "format": "animated-svg",
-    "fallback": "06-data-link-layer/06.02-topologies/assets/6.2.5-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-gksgzip/spec.json",
@@ -3055,8 +3039,7 @@
    },
    "out": {
     "path": "06-data-link-layer/06.02-topologies/assets/6.2.5-2.svg",
-    "format": "animated-svg",
-    "fallback": "06-data-link-layer/06.02-topologies/assets/6.2.5-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-s2luvg2/spec.json",
@@ -3364,8 +3347,7 @@
    },
    "out": {
     "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.4.svg",
-    "format": "animated-svg",
-    "fallback": "06-data-link-layer/06.03-data-link-frame/assets/6.3.4.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-cvbpsf2/spec.json",
@@ -3598,8 +3580,7 @@
    },
    "out": {
     "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.3.svg",
-    "format": "animated-svg",
-    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.3.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-x7awqoz/spec.json",
@@ -3632,8 +3613,7 @@
    },
    "out": {
     "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.4.svg",
-    "format": "animated-svg",
-    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.4.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-spzwt5r/spec.json",
@@ -3666,8 +3646,7 @@
    },
    "out": {
     "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.5.svg",
-    "format": "animated-svg",
-    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.5.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-achja7r/spec.json",
@@ -3700,8 +3679,7 @@
    },
    "out": {
     "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.6.svg",
-    "format": "animated-svg",
-    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.6.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-n7hv735/spec.json",
@@ -3884,8 +3862,7 @@
    },
    "out": {
     "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.1.svg",
-    "format": "animated-svg",
-    "fallback": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-o5yt2qb/spec.json",
@@ -3918,8 +3895,7 @@
    },
    "out": {
     "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.2.svg",
-    "format": "animated-svg",
-    "fallback": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-hei5nfr/spec.json",
@@ -4052,8 +4028,7 @@
    },
    "out": {
     "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.1-2.svg",
-    "format": "animated-svg",
-    "fallback": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.1-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-pea7j72/spec.json",
@@ -4684,8 +4659,7 @@
    },
    "out": {
     "path": "09-address-resolution/09.02-arp/assets/9.2.2.svg",
-    "format": "animated-svg",
-    "fallback": "09-address-resolution/09.02-arp/assets/9.2.2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-lvj5zsc/spec.json",
@@ -5116,8 +5090,7 @@
    },
    "out": {
     "path": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.1.svg",
-    "format": "animated-svg",
-    "fallback": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-yejcnw3/spec.json",
@@ -5150,8 +5123,7 @@
    },
    "out": {
     "path": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.2.svg",
-    "format": "animated-svg",
-    "fallback": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-f5o3mpj/spec.json",
@@ -5184,8 +5156,7 @@
    },
    "out": {
     "path": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.3.svg",
-    "format": "animated-svg",
-    "fallback": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.3.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-2kzg5mc/spec.json",
@@ -6719,8 +6690,7 @@
    },
    "out": {
     "path": "13-icmp/13.01-icmp-messages/assets/13.1.2.svg",
-    "format": "animated-svg",
-    "fallback": "13-icmp/13.01-icmp-messages/assets/13.1.2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-mrvot23/spec.json",
@@ -6877,8 +6847,7 @@
    },
    "out": {
     "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.4.svg",
-    "format": "animated-svg",
-    "fallback": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.4.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-3ydrimt/spec.json",
@@ -6911,8 +6880,7 @@
    },
    "out": {
     "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.5.svg",
-    "format": "animated-svg",
-    "fallback": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.5.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-bimlx7m/spec.json",
@@ -7120,8 +7088,7 @@
    },
    "out": {
     "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.5.svg",
-    "format": "animated-svg",
-    "fallback": "14-transport-layer/14.01-transportation-of-data/assets/14.1.5.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-pzpotew/spec.json",
@@ -8729,8 +8696,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.1.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-va2c7wd/spec.json",
@@ -8763,8 +8729,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-1.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-t7zfonu/spec.json",
@@ -8797,8 +8762,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-2.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-pmlcwap/spec.json",
@@ -8831,8 +8795,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-3.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-3.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-xx7yje7/spec.json",
@@ -8865,8 +8828,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-2.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-gkhac7w/spec.json",
@@ -8949,8 +8911,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-1.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-1.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-3vokuos/spec.json",
@@ -8983,8 +8944,7 @@
    },
    "out": {
     "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-2.svg",
-    "format": "animated-svg",
-    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-2.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "spec": "animations/ccna1-cet7odq/spec.json",
