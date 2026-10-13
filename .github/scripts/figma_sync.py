@@ -79,14 +79,19 @@ def download(url: str, tries: int = 3) -> bytes:
     raise SyncError("download failed")
 
 
-def export_svg(token: str, file_key: str, node_ids: list[str], include_node_id: bool = False) -> dict[str, str | None]:
-    """Images endpoint: returns {nodeId: url|None} (None = Figma could not render / node gone)."""
+def export_svg(token: str, file_key: str, node_ids: list[str], include_node_id: bool = False,
+               absolute_bounds: bool = False) -> dict[str, str | None]:
+    """Images endpoint: returns {nodeId: url|None} (None = Figma could not render / node gone).
+    absolute_bounds: canvas = the node's own bounding box (content at bbox-relative coordinates), not
+    the cropped render bounds — what a standalone export needs to be placed back into its frame."""
     out: dict[str, str | None] = {}
     for i in range(0, len(node_ids), BATCH):
         chunk = node_ids[i:i + BATCH]
         params = {"ids": ",".join(chunk), "format": "svg", "svg_outline_text": "true"}
         if include_node_id:
             params["svg_include_node_id"] = "true"
+        if absolute_bounds:
+            params["use_absolute_bounds"] = "true"
         res = api(f"/v1/images/{file_key}", token, params)
         if res.get("err"):
             raise SyncError(f"images endpoint error: {res['err']}")
@@ -302,16 +307,18 @@ def path_matches_format(a: dict) -> bool:
     return bool(ext) and a["out"]["path"].lower().endswith(ext)
 
 
-def image_paint_nodes(node: dict, visible: bool = True):
-    """Yield (node, n) for every visible node carrying n visible IMAGE paints (fills + strokes)."""
+def image_paint_nodes(node: dict, visible: bool = True, clipped: bool = False, root: bool = True):
+    """Yield (node, n, clipped) for every visible node carrying n visible IMAGE paints (fills + strokes);
+    `clipped` = it sits under a clipping container other than the exported root (the exporter may cull it)."""
     visible = visible and node.get("visible", True)
     if visible:
         n = sum(1 for p in node.get("fills", []) + node.get("strokes", [])
                 if p.get("type") == "IMAGE" and p.get("visible", True))
         if n:
-            yield node, n
+            yield node, n, clipped
+    clipped = clipped or (not root and bool(node.get("clipsContent")))
     for c in node.get("children", []):
-        yield from image_paint_nodes(c, visible)
+        yield from image_paint_nodes(c, visible, clipped, root=False)
 
 
 def degraded(svg: bytes, doc: dict) -> tuple[int, int] | None:
@@ -325,12 +332,14 @@ def degraded(svg: bytes, doc: dict) -> tuple[int, int] | None:
         return None
     text = svg.decode("utf-8", "replace")
     expected = got = 0
-    for node, n in image_paint_nodes(doc):
+    for node, n, clipped in image_paint_nodes(doc):
         i = text.find(f'data-node-id="{node["id"]}"')
         if i < 0:
             # Absent from the export. Figma's own verdict decides: a node it renders (absoluteRenderBounds
-            # set) must be there; one it does not (null — no geometry, clipped away) is not a loss.
-            if node.get("absoluteRenderBounds"):
+            # set) must be there; one it does not (null — no geometry, clipped away) is not a loss. Under a
+            # clipping window the exporter also culls nodes that only graze the window (render bounds set,
+            # a few px wide) — those are parked animation layers, not a fill loss (complete_base handles them).
+            if node.get("absoluteRenderBounds") and not clipped:
                 expected += n
             continue
         j = text.find("data-node-id=", i + 14)
@@ -339,10 +348,143 @@ def degraded(svg: bytes, doc: dict) -> tuple[int, int] | None:
     return (got, expected) if got < expected else None
 
 
-def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict) -> tuple[bytes, str | None, int]:
-    """Download one export; re-export once if its image fills are missing; re-inject the blend modes the
-    exporter dropped. Returns (data, skip_reason, blends_reinjected) — a skip means the committed file
-    is kept, so a flaky export can never replace a faithful one."""
+def _num(v: float) -> str:
+    s = f"{v:.3f}".rstrip("0").rstrip(".")
+    return s if s not in ("", "-0") else "0"
+
+
+def _find_elem(svg: str, nid: str) -> tuple[int, int] | None:
+    import re
+    m = re.search(r'<[a-zA-Z]+[^>]*\sdata-node-id="' + re.escape(nid) + r'"', svg)
+    return _element_span(svg, m.start()) if m else None
+
+
+def _insert_child(svg: str, parent: dict, node: dict, fragment: str) -> str:
+    """Put `fragment` where `node` belongs among `parent`'s children (z-order): right after the last earlier
+    sibling the export emitted, else first — past the fills the exporter writes before a container's children
+    and inside the id-less clip group it opens for an instance."""
+    import re
+    s, e = _find_elem(svg, parent["id"])
+    kids = parent.get("children", [])
+    before = kids[:[k["id"] for k in kids].index(node["id"])]
+    for k in reversed(before):
+        ks = _find_elem(svg, k["id"])
+        if ks and s < ks[0] < e:
+            return svg[:ks[1]] + fragment + svg[ks[1]:]
+    pos = svg.index(">", s) + 1
+    head = re.compile(r"\s*<([a-zA-Z]+)([^>]*?)(/?)>")
+    while True:
+        m = head.match(svg, pos)
+        if not m or "data-node-id=" in m.group(2):
+            break
+        if m.group(1) == "g" and "clip-path=" in m.group(2) and not m.group(3):
+            pos = m.end()          # instance content lives inside its clip group
+        elif m.group(3):
+            pos = m.end()          # a leading fill of the container
+        else:
+            break
+    return svg[:pos] + fragment + svg[pos:]
+
+
+def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key: str
+                  ) -> tuple[str, list[str], list[str], str | None]:
+    """Put back the tracked layers the frame export left out. The exporter culls a layer that sits entirely
+    (or all but a few px) outside a clipping container at rest — exactly how a Motion build parks a wave,
+    an arrow or a label that slides into a window, and how an empty window itself disappears. Each such
+    layer is exported standalone (its own bounding box as canvas) and injected at its place in the tree
+    inside a `<g data-node-id=… data-export-origin="dx dy" transform="translate(dx dy)">`; a missing
+    clipping window is synthesised as a `<g clip-path>` with the window's rectangle; a hidden layer gets an
+    empty placeholder. Returns (svg, injected ids, hidden ids, skip_reason)."""
+    import re
+    idx: dict[str, tuple[dict, dict | None]] = {}
+
+    def walk(n: dict, p: dict | None) -> None:
+        idx[n["id"]] = (n, p)
+        for c in n.get("children", []):
+            walk(c, n)
+    walk(doc, None)
+    present = lambda nid: f'data-node-id="{nid}"' in svg  # noqa: E731
+    missing = [t for t in tracked if not present(t)]
+    if not missing:
+        return svg, [], [], None
+    unknown = [t for t in missing if t not in idx]
+    if unknown:
+        return svg, [], [], f"tracked nodes absent from the export and not in the scene: {unknown}"
+    fb = doc.get("absoluteBoundingBox") or {"x": 0, "y": 0}
+
+    def visible(nid: str) -> bool:
+        while nid in idx:
+            n, p = idx[nid]
+            if not n.get("visible", True):
+                return False
+            if p is None:
+                return True
+            nid = p["id"]
+        return True
+
+    def chain(nid: str) -> list[str]:  # absent ancestors (nearest the root first), then nid
+        out = []
+        while nid in idx and idx[nid][1] is not None and not present(nid):
+            out.append(nid)
+            nid = idx[nid][1]["id"]
+        return out[::-1]
+    cand = []
+    for t in missing:
+        for nid in chain(t):
+            n = idx[nid][0]
+            if nid not in cand and visible(nid) and not n.get("clipsContent"):
+                cand.append(nid)
+    urls = export_svg(token, file_key, cand, include_node_id=True, absolute_bounds=True) if cand else {}
+    injected, hidden, defs = [], [], []
+    for t in missing:
+        for nid in chain(t):
+            if present(nid):
+                continue  # came along with an ancestor's standalone export
+            n, p = idx[nid]
+            b = n.get("absoluteBoundingBox") or {"x": fb["x"], "y": fb["y"], "width": 0, "height": 0}
+            dx, dy = b["x"] - fb["x"], b["y"] - fb["y"]
+            op = f' opacity="{_num(n["opacity"])}"' if n.get("opacity", 1) < 1 else ""
+            if not visible(nid):
+                fragment, _ = f'<g data-node-id="{nid}"/>', hidden.append(nid)
+            elif n.get("clipsContent"):
+                cid = "nsalab-clip-" + nid.replace(":", "-").replace(";", "-")
+                defs.append(f'<clipPath id="{cid}"><rect x="{_num(dx)}" y="{_num(dy)}" width="{_num(b["width"])}" height="{_num(b["height"])}"/></clipPath>')
+                fragment = f'<g data-node-id="{nid}" clip-path="url(#{cid})"{op}></g>'
+                injected.append(nid)
+            elif not urls.get(nid):
+                fragment, _ = f'<g data-node-id="{nid}"/>', hidden.append(nid)  # Figma renders nothing for it
+            else:
+                data = download(urls[nid])
+                short = degraded(data, n)
+                if short:
+                    retry = export_svg(token, file_key, [nid], include_node_id=True, absolute_bounds=True).get(nid)
+                    if retry:
+                        data = download(retry)
+                        short = degraded(data, n)
+                if short:
+                    return svg, injected, hidden, f"degraded standalone export of {nid} — {short[0]} of {short[1]} image fills, twice; committed file kept"
+                text = data.decode("utf-8")
+                inner = text[text.index(">", text.index("<svg")) + 1:text.rindex("</svg>")]
+                for d in re.findall(r"<defs>.*?</defs>", inner, re.S):
+                    defs.append(d[6:-7])
+                    inner = inner.replace(d, "")
+                inner = inner.replace(f'data-node-id="{nid}"', f'data-export-root="{nid}"', 1)
+                fragment = (f'<g data-node-id="{nid}" data-export-origin="{_num(dx)} {_num(dy)}" '
+                            f'transform="translate({_num(dx)} {_num(dy)})"{op}>{inner}</g>')
+                injected.append(nid)
+            svg = _insert_child(svg, p, n, fragment)
+    if defs:
+        block = "".join(defs)
+        svg = svg.replace("</defs>", block + "</defs>", 1) if "</defs>" in svg else svg.replace("</svg>", f"<defs>{block}</defs></svg>")
+    return svg, injected, hidden, None
+
+
+def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, tracked: list[str] | None = None
+              ) -> tuple[bytes, str | None, int, list[str]]:
+    """Download one export; re-export once if its image fills are missing; put back tracked layers the
+    exporter culled (animations); re-inject the blend modes the exporter dropped. Returns (data,
+    skip_reason, blends_reinjected, injected_ids) — a skip means the committed file is kept, so a flaky
+    export can never replace a faithful one."""
     data = download(url)
     short = degraded(data, doc)
     if short:
@@ -351,17 +493,23 @@ def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict) -> t
             data = download(retry)
             short = degraded(data, doc)
     if short:
-        return data, f"degraded export — {short[0]} of {short[1]} image fills came back, twice; committed file kept", 0
+        return data, f"degraded export — {short[0]} of {short[1]} image fills came back, twice; committed file kept", 0, []
+    text = data.decode("utf-8")
+    injected: list[str] = []
+    if tracked:
+        text, injected, hidden, why = complete_base(text, doc, tracked, token, file_key)
+        if why:
+            return data, why, 0, injected
+        injected += [f"{h} (hidden)" for h in hidden]
     n = 0
     blends, pblends = blend_map(doc), paint_blend_map(doc)
     if blends or pblends:
-        text = data.decode("utf-8")
         text, n1 = reinject_blend_modes(text, blends)
         text, n2 = reinject_paint_blends(text, pblends)
         n = n1 + n2
-        if n:
-            data = text.encode("utf-8")
-    return data, None, n
+    if n or injected:
+        data = text.encode("utf-8")
+    return data, None, n, injected
 
 
 def select(assets: list[dict], scope: str, keys: set[str], ids: set[str]) -> list[dict]:
@@ -442,7 +590,7 @@ def run(args: argparse.Namespace) -> int:
                 a["status"] = "broken"
                 report["broken"].append(a)
                 continue
-        data, why, n = fetch_svg(token, file_key, url, a["figma"]["nodeId"], docs.get(a["figma"]["nodeId"], {}))
+        data, why, n, _ = fetch_svg(token, file_key, url, a["figma"]["nodeId"], docs.get(a["figma"]["nodeId"], {}))
         if why:
             report["skipped"].append((a, why))
             continue
@@ -470,16 +618,25 @@ def run(args: argparse.Namespace) -> int:
             a["status"] = "broken"
             report["broken"].append(a)
             continue
-        base, why, n = fetch_svg(token, file_key, url, anim_id, node_docs(token, file_key, [anim_id]).get(anim_id, {}))
+        doc = node_docs(token, file_key, [anim_id]).get(anim_id, {})
+        try:
+            tracked = [n["id"] for n in json.loads(tracks.read_text(encoding="utf-8")).get("nodes", [])]
+        except (ValueError, TypeError, AttributeError) as e:
+            report["skipped"].append((a, f"tracks.json unreadable: {e}"))
+            continue
+        base, why, n, injected = fetch_svg(token, file_key, url, anim_id, doc, tracked)
         if why:
             report["skipped"].append((a, why))
             continue
         if n:
             report.setdefault("blends", []).append((a, n))
+        if injected:
+            report.setdefault("injected", []).append((a, injected))
         with tempfile.TemporaryDirectory() as td:
-            bp, op = Path(td) / "base.svg", Path(td) / "out.svg"
+            bp, op, dp = Path(td) / "base.svg", Path(td) / "out.svg", Path(td) / "frame.json"
             bp.write_bytes(base)
-            r = subprocess.run([sys.executable, args.renderer, str(bp), str(tracks), str(op)],
+            dp.write_text(json.dumps(doc), encoding="utf-8")
+            r = subprocess.run([sys.executable, args.renderer, str(bp), str(tracks), str(op), "--doc", str(dp)],
                                capture_output=True, text=True)
             if r.returncode != 0 or not op.exists():
                 report["skipped"].append((a, f"renderer failed: {r.stderr.strip()[:200]}"))
@@ -534,6 +691,10 @@ def finish(args: argparse.Namespace, manifest: dict, report: dict, version: str,
     if report["skipped"]:
         lines += ["### Skipped", ""]
         lines += [f"- {a['display']['key']} `{a['id']}` — {why}" for a, why in report["skipped"]]
+        lines.append("")
+    if report.get("injected"):
+        lines += ["### Parked layers put back (culled by the frame export, exported standalone)", ""]
+        lines += [f"- {a['display']['key']} — " + ", ".join(f"`{i}`" for i in ids) for a, ids in report["injected"]]
         lines.append("")
     if not wrote_manifest:
         lines.append("_Manifest not modified._")
