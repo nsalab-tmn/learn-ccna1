@@ -10163,15 +10163,27 @@
   },
   {
    "id": "ccna1-yte6pgh",
-   "kind": "native",
+   "kind": "animation",
    "display": {
     "key": "14.1.4"
    },
    "out": {
-    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.png",
-    "format": "native"
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.svg",
+    "format": "animated-svg",
+    "fallback": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.png"
    },
-   "status": "manual"
+   "status": "pending",
+   "figma": {
+    "nodeId": "4522:3",
+    "page": "CCNA1 · 14 transport-layer",
+    "motion": {
+     "animId": "4522:3"
+    }
+   },
+   "tracks": "animations/ccna1-yte6pgh/tracks.json",
+   "provenance": {
+    "legacy": "14.1.4.png"
+   }
   },
   {
    "id": "ccna1-ezrs6qv",
