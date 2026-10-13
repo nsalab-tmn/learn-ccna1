@@ -10,7 +10,7 @@
 <g data-node-id="4489:8">
 <path data-node-id="4489:9" d="M636.91 420.034L1288.95 796.488" stroke="black" stroke-width="2"/>
 </g>
-<g data-anim-for="4489:302"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.254;0.254;0.266;0.267;0.278;0.278;0.29;0.291;0.301;0.301;0.313;0.314;0.319;0.319;0.331;0.332;0.338;0.338;0.35;0.351;0.359;0.359;0.371;0.372;0.375;0.375;0.387;0.388;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-302" xlink:href="#fx-4489-302"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.254;0.267;0.278;0.291;0.301;0.314;0.319;0.332;0.338;0.351;0.359;0.372;0.375;0.388;1" values="0 0;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;-141 -81" calcMode="linear"/><g id="fx-4489-302" data-node-id="4489:302" opacity="0.01">
+<g data-anim-for="4489:302"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.25395;0.254;0.266;0.267;0.27795;0.278;0.29;0.291;0.30095;0.301;0.313;0.314;0.31895;0.319;0.331;0.332;0.33795;0.338;0.35;0.351;0.35895;0.359;0.371;0.372;0.37495;0.375;0.387;0.388;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-302" xlink:href="#fx-4489-302"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.25395;0.254;0.267;0.27795;0.278;0.291;0.30095;0.301;0.314;0.31895;0.319;0.332;0.33795;0.338;0.351;0.35895;0.359;0.372;0.37495;0.375;0.388;1" values="0 0;0 0;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81" calcMode="linear"/><g id="fx-4489-302" data-node-id="4489:302" opacity="0.01">
 <g data-node-id="I4489:302;294:105906">
 <g clip-path="url(#clip0_4489_3)">
 <rect data-node-id="I4489:302;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 1173.27 670.122)" fill="#FFDF6E"/>
@@ -23,7 +23,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:312"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.264;0.264;0.276;0.277;0.288;0.288;0.3;0.301;0.311;0.311;0.323;0.324;0.329;0.329;0.341;0.342;0.348;0.348;0.36;0.361;0.369;0.369;0.381;0.382;0.384;0.384;0.396;0.397;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-312" xlink:href="#fx-4489-312"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.264;0.277;0.288;0.301;0.311;0.324;0.329;0.342;0.348;0.361;0.369;0.382;0.384;0.397;1" values="0 0;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;0 0;-141 -81;-141 -81" calcMode="linear"/><g id="fx-4489-312" data-node-id="4489:312" opacity="0.01">
+<g data-anim-for="4489:312"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.26395;0.264;0.276;0.277;0.28795;0.288;0.3;0.301;0.31095;0.311;0.323;0.324;0.32895;0.329;0.341;0.342;0.34795;0.348;0.36;0.361;0.36895;0.369;0.381;0.382;0.38395;0.384;0.396;0.397;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-312" xlink:href="#fx-4489-312"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.26395;0.264;0.277;0.28795;0.288;0.301;0.31095;0.311;0.324;0.32895;0.329;0.342;0.34795;0.348;0.361;0.36895;0.369;0.382;0.38395;0.384;0.397;1" values="0 0;0 0;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81;0 0;-141 -81;-141 -81" calcMode="linear"/><g id="fx-4489-312" data-node-id="4489:312" opacity="0.01">
 <g data-node-id="I4489:312;294:105906">
 <g clip-path="url(#clip1_4489_3)">
 <rect data-node-id="I4489:312;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 1173.27 670.122)" fill="#FFDF6E"/>
@@ -36,7 +36,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:322"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.276;0.276;0.277;0.29;0.291;0.323;0.323;0.324;0.338;0.338;0.36;0.36;0.361;0.374;0.376;0.397;0.397;0.398;0.412;0.412;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-322" xlink:href="#fx-4489-322"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.276;0.29;0.323;0.338;0.36;0.374;0.397;0.412;1" values="0 0;0 0;-148 -85;0 0;-148 -85;0 0;-148 -85;0 0;-148 -85;-148 -85" calcMode="linear"/><g id="fx-4489-322" data-node-id="4489:322" opacity="0.01">
+<g data-anim-for="4489:322"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.27595;0.276;0.277;0.2905;0.2915;0.32295;0.323;0.324;0.3375;0.3385;0.35995;0.36;0.361;0.3745;0.3755;0.39695;0.397;0.398;0.4115;0.4125;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-322" xlink:href="#fx-4489-322"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.27595;0.276;0.2905;0.32295;0.323;0.3375;0.35995;0.36;0.3745;0.39695;0.397;0.4115;1" values="0 0;0 0;0 0;-148 -85;-148 -85;0 0;-148 -85;-148 -85;0 0;-148 -85;-148 -85;0 0;-148 -85;-148 -85" calcMode="linear"/><g id="fx-4489-322" data-node-id="4489:322" opacity="0.01">
 <g data-node-id="I4489:322;294:105906">
 <g clip-path="url(#clip2_4489_3)">
 <rect data-node-id="I4489:322;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 942.266 537.122)" fill="#FFDF6E"/>
@@ -49,7 +49,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:332"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.286;0.286;0.287;0.3;0.301;0.333;0.333;0.334;0.348;0.348;0.37;0.37;0.371;0.385;0.386;0.407;0.407;0.408;0.421;0.422;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-332" xlink:href="#fx-4489-332"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.286;0.3;0.333;0.348;0.37;0.385;0.407;0.421;1" values="0 0;0 0;-148 -85;0 0;-148 -85;0 0;-148 -85;0 0;-148 -85;-148 -85" calcMode="linear"/><g id="fx-4489-332" data-node-id="4489:332" opacity="0.01">
+<g data-anim-for="4489:332"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.28595;0.286;0.287;0.3005;0.3015;0.33295;0.333;0.334;0.3475;0.3485;0.36995;0.37;0.371;0.3845;0.3855;0.40695;0.407;0.408;0.4215;0.4225;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-332" xlink:href="#fx-4489-332"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.28595;0.286;0.3005;0.33295;0.333;0.3475;0.36995;0.37;0.3845;0.40695;0.407;0.4215;1" values="0 0;0 0;0 0;-148 -85;-148 -85;0 0;-148 -85;-148 -85;0 0;-148 -85;-148 -85;0 0;-148 -85;-148 -85" calcMode="linear"/><g id="fx-4489-332" data-node-id="4489:332" opacity="0.01">
 <g data-node-id="I4489:332;294:105906">
 <g clip-path="url(#clip3_4489_3)">
 <rect data-node-id="I4489:332;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 942.266 537.122)" fill="#FFDF6E"/>
@@ -62,7 +62,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:342"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.3;0.3;0.301;0.327;0.328;0.336;0.336;0.337;0.363;0.364;0.374;0.374;0.375;0.401;0.402;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-342" xlink:href="#fx-4489-342"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.3;0.327;0.336;0.363;0.374;0.401;1" values="0 0;0 0;180 -103;0 0;180 -103;0 0;180 -103;180 -103" calcMode="linear"/><g id="fx-4489-342" data-node-id="4489:342" opacity="0.01">
+<g data-anim-for="4489:342"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.29995;0.3;0.301;0.327;0.328;0.33595;0.336;0.337;0.363;0.364;0.37395;0.374;0.375;0.401;0.402;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-342" xlink:href="#fx-4489-342"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.29995;0.3;0.327;0.33595;0.336;0.363;0.37395;0.374;0.401;1" values="0 0;0 0;0 0;180 -103;180 -103;0 0;180 -103;180 -103;0 0;180 -103;180 -103" calcMode="linear"/><g id="fx-4489-342" data-node-id="4489:342" opacity="0.01">
 <g data-node-id="I4489:342;294:105906">
 <g clip-path="url(#clip4_4489_3)">
 <rect data-node-id="I4489:342;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 957.734 552.121)" fill="#FFDF6E"/>
@@ -75,7 +75,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:352"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.31;0.31;0.311;0.337;0.338;0.346;0.346;0.347;0.373;0.374;0.384;0.384;0.385;0.411;0.412;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-352" xlink:href="#fx-4489-352"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.31;0.337;0.346;0.373;0.384;0.411;1" values="0 0;0 0;180 -103;0 0;180 -103;0 0;180 -103;180 -103" calcMode="linear"/><g id="fx-4489-352" data-node-id="4489:352" opacity="0.01">
+<g data-anim-for="4489:352"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.30995;0.31;0.311;0.337;0.338;0.34595;0.346;0.347;0.373;0.374;0.38395;0.384;0.385;0.411;0.412;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-352" xlink:href="#fx-4489-352"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.30995;0.31;0.337;0.34595;0.346;0.373;0.38395;0.384;0.411;1" values="0 0;0 0;0 0;180 -103;180 -103;0 0;180 -103;180 -103;0 0;180 -103;180 -103" calcMode="linear"/><g id="fx-4489-352" data-node-id="4489:352" opacity="0.01">
 <g data-node-id="I4489:352;294:105906">
 <g clip-path="url(#clip5_4489_3)">
 <rect data-node-id="I4489:352;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 957.734 552.121)" fill="#FFDF6E"/>
@@ -88,7 +88,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:362"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.622;0.622;0.644;0.645;0.659;0.659;0.681;0.682;0.696;0.696;0.718;0.72;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-362" xlink:href="#fx-4489-362"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.622;0.645;0.659;0.682;0.696;0.72;1" values="0 0;0 0;148 85;0 0;148 85;0 0;148 85;148 85" calcMode="linear"/><g id="fx-4489-362" data-node-id="4489:362" opacity="0.01">
+<g data-anim-for="4489:362"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.62195;0.622;0.644;0.6455;0.65895;0.659;0.681;0.6825;0.69595;0.696;0.718;0.7195;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-362" xlink:href="#fx-4489-362"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.62195;0.622;0.6455;0.65895;0.659;0.6825;0.69595;0.696;0.7195;1" values="0 0;0 0;0 0;148 85;148 85;0 0;148 85;148 85;0 0;148 85;148 85" calcMode="linear"/><g id="fx-4489-362" data-node-id="4489:362" opacity="0.01">
 <g data-node-id="I4489:362;294:105906">
 <g clip-path="url(#clip6_4489_3)">
 <rect data-node-id="I4489:362;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 794.266 452.122)" fill="#FFDF6E"/>
@@ -101,7 +101,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:372"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.632;0.632;0.654;0.655;0.669;0.669;0.691;0.693;0.706;0.706;0.728;0.73;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-372" xlink:href="#fx-4489-372"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.632;0.655;0.669;0.693;0.706;0.73;1" values="0 0;0 0;148 85;0 0;148 85;0 0;148 85;148 85" calcMode="linear"/><g id="fx-4489-372" data-node-id="4489:372" opacity="0.01">
+<g data-anim-for="4489:372"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.63195;0.632;0.654;0.6555;0.66895;0.669;0.691;0.6925;0.70595;0.706;0.728;0.7295;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-372" xlink:href="#fx-4489-372"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.63195;0.632;0.6555;0.66895;0.669;0.6925;0.70595;0.706;0.7295;1" values="0 0;0 0;0 0;148 85;148 85;0 0;148 85;148 85;0 0;148 85;148 85" calcMode="linear"/><g id="fx-4489-372" data-node-id="4489:372" opacity="0.01">
 <g data-node-id="I4489:372;294:105906">
 <g clip-path="url(#clip7_4489_3)">
 <rect data-node-id="I4489:372;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 794.266 452.122)" fill="#FFDF6E"/>
@@ -114,7 +114,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:382"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.61;0.611;0.625;0.626;0.648;0.648;0.663;0.664;0.685;0.685;0.7;0.701;0.732;0.732;0.747;0.748;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-382" xlink:href="#fx-4489-382"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.611;0.626;0.648;0.664;0.685;0.701;0.732;0.748;1" values="0 0;0 0;-180 103;0 0;-180 103;0 0;-180 103;0 0;-180 103;-180 103" calcMode="linear"/><g id="fx-4489-382" data-node-id="4489:382" opacity="0.01">
+<g data-anim-for="4489:382"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.61045;0.6105;0.6255;0.6265;0.64795;0.648;0.663;0.664;0.68495;0.685;0.7;0.701;0.73195;0.732;0.747;0.748;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-382" xlink:href="#fx-4489-382"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.61045;0.6105;0.6265;0.64795;0.648;0.664;0.68495;0.685;0.701;0.73195;0.732;0.748;1" values="0 0;0 0;0 0;-180 103;-180 103;0 0;-180 103;-180 103;0 0;-180 103;-180 103;0 0;-180 103;-180 103" calcMode="linear"/><g id="fx-4489-382" data-node-id="4489:382" opacity="0.01">
 <g data-node-id="I4489:382;294:105906">
 <g clip-path="url(#clip8_4489_3)">
 <rect data-node-id="I4489:382;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 1137.73 449.121)" fill="#FFDF6E"/>
@@ -127,7 +127,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:392"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.62;0.621;0.636;0.637;0.658;0.658;0.673;0.674;0.695;0.695;0.71;0.711;0.742;0.742;0.757;0.758;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-392" xlink:href="#fx-4489-392"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.621;0.637;0.658;0.674;0.695;0.711;0.742;0.758;1" values="0 0;0 0;-180 103;0 0;-180 103;0 0;-180 103;0 0;-180 103;-180 103" calcMode="linear"/><g id="fx-4489-392" data-node-id="4489:392" opacity="0.01">
+<g data-anim-for="4489:392"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.62045;0.6205;0.6355;0.6365;0.65795;0.658;0.673;0.674;0.69495;0.695;0.71;0.711;0.74195;0.742;0.757;0.758;1" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-392" xlink:href="#fx-4489-392"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.62045;0.6205;0.6365;0.65795;0.658;0.674;0.69495;0.695;0.711;0.74195;0.742;0.758;1" values="0 0;0 0;0 0;-180 103;-180 103;0 0;-180 103;-180 103;0 0;-180 103;-180 103;0 0;-180 103;-180 103" calcMode="linear"/><g id="fx-4489-392" data-node-id="4489:392" opacity="0.01">
 <g data-node-id="I4489:392;294:105906">
 <g clip-path="url(#clip9_4489_3)">
 <rect data-node-id="I4489:392;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 1137.73 449.121)" fill="#FFDF6E"/>
@@ -140,7 +140,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:402"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.628;0.628;0.63;0.648;0.649;0.654;0.654;0.656;0.674;0.675;0.684;0.684;0.686;0.704;0.705;0.712;0.712;0.714;0.732;0.733;0.749;0.749;0.751;0.769;0.77;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-402" xlink:href="#fx-4489-402"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.628;0.648;0.654;0.674;0.684;0.704;0.712;0.732;0.749;0.769;1" values="0 0;0 0;-165 96;0 0;-165 96;0 0;-165 96;0 0;-165 96;0 0;-165 96;-165 96" calcMode="linear"/><g id="fx-4489-402" data-node-id="4489:402" opacity="0.01">
+<g data-anim-for="4489:402"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.62795;0.628;0.63;0.648;0.649;0.65395;0.654;0.656;0.674;0.675;0.68395;0.684;0.686;0.704;0.705;0.71195;0.712;0.714;0.732;0.733;0.74895;0.749;0.751;0.769;0.77;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-402" xlink:href="#fx-4489-402"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.62795;0.628;0.648;0.65395;0.654;0.674;0.68395;0.684;0.704;0.71195;0.712;0.732;0.74895;0.749;0.769;1" values="0 0;0 0;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96" calcMode="linear"/><g id="fx-4489-402" data-node-id="4489:402" opacity="0.01">
 <g data-node-id="I4489:402;294:105906">
 <g clip-path="url(#clip10_4489_3)">
 <rect data-node-id="I4489:402;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 932.734 566.121)" fill="#FFDF6E"/>
@@ -153,7 +153,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:412"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.638;0.638;0.64;0.658;0.659;0.665;0.665;0.667;0.685;0.686;0.694;0.694;0.696;0.714;0.715;0.725;0.725;0.727;0.745;0.746;0.759;0.759;0.761;0.779;0.78;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-412" xlink:href="#fx-4489-412"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.638;0.658;0.665;0.685;0.694;0.714;0.725;0.745;0.759;0.779;1" values="0 0;0 0;-165 96;0 0;-165 96;0 0;-165 96;0 0;-165 96;0 0;-165 96;-165 96" calcMode="linear"/><g id="fx-4489-412" data-node-id="4489:412" opacity="0.01">
+<g data-anim-for="4489:412"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.63795;0.638;0.64;0.658;0.659;0.66495;0.665;0.667;0.685;0.686;0.69395;0.694;0.696;0.714;0.715;0.72495;0.725;0.727;0.745;0.746;0.75895;0.759;0.761;0.779;0.78;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-412" xlink:href="#fx-4489-412"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.63795;0.638;0.658;0.66495;0.665;0.685;0.69395;0.694;0.714;0.72495;0.725;0.745;0.75895;0.759;0.779;1" values="0 0;0 0;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96" calcMode="linear"/><g id="fx-4489-412" data-node-id="4489:412" opacity="0.01">
 <g data-node-id="I4489:412;294:105906">
 <g clip-path="url(#clip11_4489_3)">
 <rect data-node-id="I4489:412;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 932.734 566.121)" fill="#FFDF6E"/>
@@ -166,7 +166,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:422"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.644;0.644;0.646;0.664;0.665;0.675;0.675;0.677;0.695;0.696;0.702;0.702;0.704;0.722;0.723;0.735;0.735;0.737;0.755;0.756;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-422" xlink:href="#fx-4489-422"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.644;0.664;0.675;0.695;0.702;0.722;0.735;0.755;1" values="0 0;0 0;-165 96;0 0;-165 96;0 0;-165 96;0 0;-165 96;-165 96" calcMode="linear"/><g id="fx-4489-422" data-node-id="4489:422" opacity="0.01">
+<g data-anim-for="4489:422"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.64395;0.644;0.646;0.664;0.665;0.67495;0.675;0.677;0.695;0.696;0.70195;0.702;0.704;0.722;0.723;0.73495;0.735;0.737;0.755;0.756;1" values="0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0;0;1;1;0;0" calcMode="linear" href="#fx-4489-422" xlink:href="#fx-4489-422"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" keyTimes="0;0.64395;0.644;0.664;0.67495;0.675;0.695;0.70195;0.702;0.722;0.73495;0.735;0.755;1" values="0 0;0 0;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96;0 0;-165 96;-165 96" calcMode="linear"/><g id="fx-4489-422" data-node-id="4489:422" opacity="0.01">
 <g data-node-id="I4489:422;294:105906">
 <g clip-path="url(#clip12_4489_3)">
 <rect data-node-id="I4489:422;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 932.734 566.121)" fill="#FFDF6E"/>
@@ -920,7 +920,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:292"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.327;0.327;0.44;0.455;0.465;0.476;0.556;0.567;0.577;0.593;0.742;0.742;1" values="0;0;1;1;0.72;0.35;0;0;0.35;0.72;1;1;0;0" calcMode="linear" href="#fx-4489-292" xlink:href="#fx-4489-292"/><g id="fx-4489-292" data-node-id="4489:292" opacity="0.01">
+<g data-anim-for="4489:292"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.3265;0.327;0.44;0.455;0.465;0.476;0.556;0.567;0.577;0.593;0.742;0.7425;1" values="0;0;1;1;0.72;0.35;0;0;0.35;0.72;1;1;0;0" calcMode="linear" href="#fx-4489-292" xlink:href="#fx-4489-292"/><g id="fx-4489-292" data-node-id="4489:292" opacity="0.01">
 <g data-node-id="I4489:292;294:105906">
 <g clip-path="url(#clip17_4489_3)">
 <rect data-node-id="I4489:292;294:105907" width="51.1694" height="37.5473" transform="matrix(0.866025 -0.5 0 1 1137.73 449.121)" fill="#FFDF6E"/>
@@ -933,7 +933,7 @@
 </g>
 </g>
 </g></g>
-<g data-anim-for="4489:20"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.29;0.29;0.44;0.455;0.465;0.476;0.556;0.567;0.577;0.593;0.706;0.707;1" values="0;0;1;1;0.72;0.35;0;0;0.35;0.72;1;1;0;0" calcMode="linear" href="#fx-4489-20" xlink:href="#fx-4489-20"/><g id="fx-4489-20" data-node-id="4489:20" opacity="0.01">
+<g data-anim-for="4489:20"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" keyTimes="0;0.29;0.2905;0.44;0.455;0.465;0.476;0.556;0.567;0.577;0.593;0.706;0.7065;1" values="0;0;1;1;0.72;0.35;0;0;0.35;0.72;1;1;0;0" calcMode="linear" href="#fx-4489-20" xlink:href="#fx-4489-20"/><g id="fx-4489-20" data-node-id="4489:20" opacity="0.01">
 <g data-node-id="I4489:20;294:105906">
 <g clip-path="url(#clip18_4489_3)">
 <rect data-node-id="I4489:20;294:105907" width="51.1694" height="37.5473" transform="matrix(-0.866025 -0.5 0 1 794.266 452.121)" fill="#FFDF6E"/>
