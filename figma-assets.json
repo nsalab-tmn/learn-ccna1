@@ -1,0 +1,8481 @@
+{
+ "version": 1,
+ "course": "ccna1",
+ "figma": {
+  "fileKey": "3FtCg22qFubpLBPOetQU03"
+ },
+ "assets": [
+  {
+   "id": "ccna1-cpwlyl7",
+   "kind": "illustration",
+   "display": {
+    "key": "1.2.1"
+   },
+   "figma": {
+    "nodeId": "4715:7256",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.2.1.svg"
+   }
+  },
+  {
+   "id": "ccna1-dkjfdzd",
+   "kind": "illustration",
+   "display": {
+    "key": "1.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:417209",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.2.2.svg"
+   }
+  },
+  {
+   "id": "ccna1-yq5tyz7",
+   "kind": "animation",
+   "display": {
+    "key": "1.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:417231",
+    "page": "CCNA1 · 01 networking-today",
+    "motion": {
+     "sectionId": "4310:2",
+     "animId": "4310:3"
+    }
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.3.svg",
+    "format": "animated-svg",
+    "fallback": "01-networking-today/01.02-network-components/assets/1.2.3.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-yq5tyz7/spec.json",
+   "provenance": {
+    "legacy": "1.2.3.png"
+   },
+   "notes": "· вариант 2   [APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-txy4m6i",
+   "kind": "illustration",
+   "display": {
+    "key": "1.2.4"
+   },
+   "figma": {
+    "nodeId": "4715:7257",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.2.4.svg"
+   }
+  },
+  {
+   "id": "ccna1-2xiksv3",
+   "kind": "illustration",
+   "display": {
+    "key": "1.3.1"
+   },
+   "figma": {
+    "nodeId": "4715:7258",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.03-network-topologies/assets/1.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.3.1.svg"
+   }
+  },
+  {
+   "id": "ccna1-3a4epca",
+   "kind": "illustration",
+   "display": {
+    "key": "1.3.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:417366",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.03-network-topologies/assets/1.3.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.3.2-1.svg"
+   }
+  },
+  {
+   "id": "ccna1-faaz5yt",
+   "kind": "illustration",
+   "display": {
+    "key": "1.3.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:417438",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.03-network-topologies/assets/1.3.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.3.2-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-sqrvqtd",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:417535",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.1-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-zo3xh2e",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.1-3"
+   },
+   "figma": {
+    "nodeId": "4191:417552",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.1-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.1-3.svg"
+   }
+  },
+  {
+   "id": "ccna1-ukabg23",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.1-4"
+   },
+   "figma": {
+    "nodeId": "4191:417656",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.1-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.1-4.svg"
+   }
+  },
+  {
+   "id": "ccna1-eenumsh",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:417677",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.2-1.svg"
+   }
+  },
+  {
+   "id": "ccna1-3wirtqk",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.2-2"
+   },
+   "figma": {
+    "nodeId": "4715:7259",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.2-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-6gy7dzq",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.2-3"
+   },
+   "figma": {
+    "nodeId": "4715:7260",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.2-3.svg"
+   }
+  },
+  {
+   "id": "ccna1-4queckm",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.3"
+   },
+   "figma": {
+    "nodeId": "4715:7261",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.3.svg"
+   }
+  },
+  {
+   "id": "ccna1-b73ui7a",
+   "kind": "illustration",
+   "display": {
+    "key": "1.4.4"
+   },
+   "figma": {
+    "nodeId": "4191:417878",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.04-network-types/assets/1.4.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.4.4.svg"
+   }
+  },
+  {
+   "id": "ccna1-ods3mhg",
+   "kind": "illustration",
+   "display": {
+    "key": "1.5.2"
+   },
+   "figma": {
+    "nodeId": "4191:417889",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.05-internet-connection/assets/1.5.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.5.2.svg"
+   }
+  },
+  {
+   "id": "ccna1-coxj5uc",
+   "kind": "illustration",
+   "display": {
+    "key": "1.5.3"
+   },
+   "figma": {
+    "nodeId": "4191:417983",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.05-internet-connection/assets/1.5.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.5.3.svg"
+   }
+  },
+  {
+   "id": "ccna1-3qsoxor",
+   "kind": "illustration",
+   "display": {
+    "key": "1.5.4-1"
+   },
+   "figma": {
+    "nodeId": "4715:7262",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.05-internet-connection/assets/1.5.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.5.4-1.svg"
+   }
+  },
+  {
+   "id": "ccna1-q6rtrp7",
+   "kind": "illustration",
+   "display": {
+    "key": "1.5.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:418091",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.05-internet-connection/assets/1.5.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.5.4-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-jey63x3",
+   "kind": "illustration",
+   "display": {
+    "key": "1.6.2"
+   },
+   "figma": {
+    "nodeId": "4191:418130",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.06-redundant-networks/assets/1.6.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.6.2.svg"
+   }
+  },
+  {
+   "id": "ccna1-lqumzac",
+   "kind": "illustration",
+   "display": {
+    "key": "1.6.3"
+   },
+   "figma": {
+    "nodeId": "4191:418185",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.06-redundant-networks/assets/1.6.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.6.3.svg"
+   }
+  },
+  {
+   "id": "ccna1-4dwhciz",
+   "kind": "illustration",
+   "display": {
+    "key": "1.6.4"
+   },
+   "figma": {
+    "nodeId": "4191:418247",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.06-redundant-networks/assets/1.6.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.6.4.svg"
+   }
+  },
+  {
+   "id": "ccna1-ft7ytj3",
+   "kind": "illustration",
+   "display": {
+    "key": "1.6.5"
+   },
+   "figma": {
+    "nodeId": "4191:418321",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.06-redundant-networks/assets/1.6.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.6.5.svg"
+   }
+  },
+  {
+   "id": "ccna1-fuyhtif",
+   "kind": "illustration",
+   "display": {
+    "key": "1.7.7"
+   },
+   "figma": {
+    "nodeId": "4191:418388",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.07-network-trends/assets/1.7.7.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.7.7.svg"
+   }
+  },
+  {
+   "id": "ccna1-tki65vf",
+   "kind": "illustration",
+   "display": {
+    "key": "1.8.1"
+   },
+   "figma": {
+    "nodeId": "4191:418437",
+    "page": "CCNA1 · 01 networking-today"
+   },
+   "out": {
+    "path": "01-networking-today/01.08-network-security/assets/1.8.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.8.1.svg"
+   }
+  },
+  {
+   "id": "ccna1-zb6st5m",
+   "kind": "illustration",
+   "display": {
+    "key": "2.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:418509",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "2.1.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-2z2dol7",
+   "kind": "illustration",
+   "display": {
+    "key": "2.3.1"
+   },
+   "figma": {
+    "nodeId": "4191:418756",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.03-the-command-structure/assets/2.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "2.3.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-o3y7crk",
+   "kind": "illustration",
+   "display": {
+    "key": "2.4.1"
+   },
+   "figma": {
+    "nodeId": "4715:7486",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.04-basic-device-configuration/assets/2.4.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "2.4.1.svg"
+   },
+   "notes": "[svg в git · пара: НЕТ]"
+  },
+  {
+   "id": "ccna1-xuppnfs",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:418816",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4341:2",
+     "animId": "4341:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-xuppnfs/spec.json",
+   "provenance": {
+    "legacy": "3.1.3-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-kwzn3ft",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:418842",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4354:2",
+     "animId": "4354:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-2.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.3-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-kwzn3ft/spec.json",
+   "provenance": {
+    "legacy": "3.1.3-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-dctapbu",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.6-1"
+   },
+   "figma": {
+    "nodeId": "4191:418878",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4363:2",
+     "animId": "4363:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-dctapbu/spec.json",
+   "provenance": {
+    "legacy": "3.1.6-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-6dkjpfn",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.6-2"
+   },
+   "figma": {
+    "nodeId": "4191:418931",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4370:2",
+     "animId": "4370:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-2.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.6-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-6dkjpfn/spec.json",
+   "provenance": {
+    "legacy": "3.1.6-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-tn7bmyj",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.7-1"
+   },
+   "figma": {
+    "nodeId": "4191:418962",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4379:2",
+     "animId": "4379:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-tn7bmyj/spec.json",
+   "provenance": {
+    "legacy": "3.1.7-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-fykrbnx",
+   "kind": "illustration",
+   "display": {
+    "key": "3.1.7-2"
+   },
+   "figma": {
+    "nodeId": "4191:419075",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.7-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.1.7-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-sr4q7s7",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.8-1"
+   },
+   "figma": {
+    "nodeId": "4191:419147",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4384:2",
+     "animId": "4384:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-sr4q7s7/spec.json",
+   "provenance": {
+    "legacy": "3.1.8-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-pkfeazd",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.8-2"
+   },
+   "figma": {
+    "nodeId": "4191:419186",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4387:2",
+     "animId": "4387:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-2.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.8-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-pkfeazd/spec.json",
+   "provenance": {
+    "legacy": "3.1.8-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: слабо]"
+  },
+  {
+   "id": "ccna1-mnbkep4",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.9"
+   },
+   "figma": {
+    "nodeId": "4191:419199",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4407:2",
+     "animId": "4424:3"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.9.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.9.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-mnbkep4/spec.json",
+   "provenance": {
+    "legacy": "3.1.9.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-6zf4cqr",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.10-1"
+   },
+   "figma": {
+    "nodeId": "4191:419216",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4421:186256",
+     "animId": "4511:3"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-6zf4cqr/spec.json",
+   "provenance": {
+    "legacy": "3.1.10-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-k7krwnu",
+   "kind": "animation",
+   "display": {
+    "key": "3.1.10-2"
+   },
+   "figma": {
+    "nodeId": "4191:419245",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4421:2",
+     "animId": "4513:3"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-2.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.01-the-rules/assets/3.1.10-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-k7krwnu/spec.json",
+   "provenance": {
+    "legacy": "3.1.10-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: слабо]"
+  },
+  {
+   "id": "ccna1-spxjqbf",
+   "kind": "illustration",
+   "display": {
+    "key": "3.1.11"
+   },
+   "figma": {
+    "nodeId": "4191:419275",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.11.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.1.11.svg"
+   }
+  },
+  {
+   "id": "ccna1-jcpbire",
+   "kind": "illustration",
+   "display": {
+    "key": "3.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:419322",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.02-protocols/assets/3.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.2.2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-h5csxuw",
+   "kind": "illustration",
+   "display": {
+    "key": "3.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:419353",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.02-protocols/assets/3.2.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.2.3.svg"
+   }
+  },
+  {
+   "id": "ccna1-regctpe",
+   "kind": "illustration",
+   "display": {
+    "key": "3.3.1"
+   },
+   "figma": {
+    "nodeId": "4191:419382",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.3.1.svg"
+   }
+  },
+  {
+   "id": "ccna1-ebm76xo",
+   "kind": "illustration",
+   "display": {
+    "key": "3.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:419403",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.3.2.svg"
+   }
+  },
+  {
+   "id": "ccna1-xf7d4xw",
+   "kind": "illustration",
+   "display": {
+    "key": "3.3.3"
+   },
+   "figma": {
+    "nodeId": "4191:419452",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.3.3.svg"
+   }
+  },
+  {
+   "id": "ccna1-faozcle",
+   "kind": "illustration",
+   "display": {
+    "key": "3.3.4"
+   },
+   "figma": {
+    "nodeId": "4191:419501",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.3.4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-47jzlgz",
+   "kind": "illustration",
+   "display": {
+    "key": "3.3.5-1"
+   },
+   "figma": {
+    "nodeId": "4191:419599",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.gif",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.3.5-1.gif"
+   },
+   "notes": "[GIF в git (оригинал не заменён) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-foep2qp",
+   "kind": "illustration",
+   "display": {
+    "key": "3.3.5-2"
+   },
+   "figma": {
+    "nodeId": "4191:419631",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.gif",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.3.5-2.gif"
+   },
+   "notes": "[GIF в git (оригинал не заменён) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-6on2exn",
+   "kind": "illustration",
+   "display": {
+    "key": "3.4.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:419664",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.04-standards-organizations/assets/3.4.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.4.2-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-lwuzfct",
+   "kind": "illustration",
+   "display": {
+    "key": "3.4.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:419784",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.04-standards-organizations/assets/3.4.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.4.2-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-gd5xv6l",
+   "kind": "illustration",
+   "display": {
+    "key": "3.5.1"
+   },
+   "figma": {
+    "nodeId": "4191:419812",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.05-reference-models/assets/3.5.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.5.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-7yyhkws",
+   "kind": "illustration",
+   "display": {
+    "key": "3.5.4"
+   },
+   "figma": {
+    "nodeId": "4191:419912",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.05-reference-models/assets/3.5.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.5.4.svg"
+   }
+  },
+  {
+   "id": "ccna1-37ui7wq",
+   "kind": "animation",
+   "display": {
+    "key": "3.6.1"
+   },
+   "figma": {
+    "nodeId": "4191:419946",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4426:2",
+     "animId": "4468:3"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.1.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-37ui7wq/spec.json",
+   "provenance": {
+    "legacy": "3.6.1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: НЕТ]"
+  },
+  {
+   "id": "ccna1-a4ckeug",
+   "kind": "illustration",
+   "display": {
+    "key": "3.6.2"
+   },
+   "figma": {
+    "nodeId": "4191:419982",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.6.2.svg"
+   }
+  },
+  {
+   "id": "ccna1-rd5gnvy",
+   "kind": "illustration",
+   "display": {
+    "key": "3.6.3"
+   },
+   "figma": {
+    "nodeId": "4191:420028",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.6.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-5nhonyl",
+   "kind": "animation",
+   "display": {
+    "key": "3.6.4"
+   },
+   "figma": {
+    "nodeId": "4191:420095",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4427:2",
+     "animId": "4427:4"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.4.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.4.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-5nhonyl/spec.json",
+   "provenance": {
+    "legacy": "3.6.4.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-dmfz2vv",
+   "kind": "animation",
+   "display": {
+    "key": "3.6.5"
+   },
+   "figma": {
+    "nodeId": "4191:420127",
+    "page": "CCNA1 · 03 protocols-and-models",
+    "motion": {
+     "sectionId": "4429:2",
+     "animId": "4469:3"
+    }
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.5.svg",
+    "format": "animated-svg",
+    "fallback": "03-protocols-and-models/03.06-data-encapsulation/assets/3.6.5.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-dmfz2vv/spec.json",
+   "provenance": {
+    "legacy": "3.6.5.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-hfncy5x",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.1"
+   },
+   "figma": {
+    "nodeId": "4191:420160",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-wdh7zha",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.2"
+   },
+   "figma": {
+    "nodeId": "4191:420191",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-v66od3f",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.3"
+   },
+   "figma": {
+    "nodeId": "4191:420231",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-knis4cl",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.4"
+   },
+   "figma": {
+    "nodeId": "4191:420301",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.4.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-dubprpj",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.6"
+   },
+   "figma": {
+    "nodeId": "4191:420372",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.6.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-e5up35j",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.7"
+   },
+   "figma": {
+    "nodeId": "4191:420447",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.7.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.7.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-e6vhz45",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.8-1"
+   },
+   "figma": {
+    "nodeId": "4191:420523",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.8-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.8-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4n66eki",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.8-2"
+   },
+   "figma": {
+    "nodeId": "4191:420590",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.8-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.8-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-dbkb7bt",
+   "kind": "illustration",
+   "display": {
+    "key": "3.7.8-3"
+   },
+   "figma": {
+    "nodeId": "4191:420657",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07-data-access/assets/3.7.8-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.7.8-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-uqbi2ad",
+   "kind": "illustration",
+   "display": {
+    "key": "4.1.2"
+   },
+   "figma": {
+    "nodeId": "4191:420727",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.gif",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.1.2.gif"
+   },
+   "notes": "[GIF в git (оригинал не заменён) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-bgkpbw6",
+   "kind": "illustration",
+   "display": {
+    "key": "4.2.1"
+   },
+   "figma": {
+    "nodeId": "4191:420761",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.2.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-aecpzji",
+   "kind": "illustration",
+   "display": {
+    "key": "4.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:420786",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.2.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-mqcrdgv",
+   "kind": "illustration",
+   "display": {
+    "key": "4.2.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:420847",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.2.4-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-5duubap",
+   "kind": "illustration",
+   "display": {
+    "key": "4.2.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:420856",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.2.4-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-m2jj3ge",
+   "kind": "illustration",
+   "display": {
+    "key": "4.2.4-3"
+   },
+   "figma": {
+    "nodeId": "4191:420877",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.4-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.2.4-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-pq6kbvu",
+   "kind": "illustration",
+   "display": {
+    "key": "4.3.1"
+   },
+   "figma": {
+    "nodeId": "4191:421063",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.3.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-zovpfmr",
+   "kind": "illustration",
+   "display": {
+    "key": "4.3.3"
+   },
+   "figma": {
+    "nodeId": "4191:421245",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.3.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-2ufyz7v",
+   "kind": "illustration",
+   "display": {
+    "key": "4.3.4"
+   },
+   "figma": {
+    "nodeId": "4191:421501",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.3.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ideceeh",
+   "kind": "illustration",
+   "display": {
+    "key": "4.4.3"
+   },
+   "figma": {
+    "nodeId": "4191:421783",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.4.3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-6ltcoyk",
+   "kind": "illustration",
+   "display": {
+    "key": "4.5.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:421905",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.5.2-1.svg"
+   },
+   "notes": "[svg в git · пара: НЕТ]"
+  },
+  {
+   "id": "ccna1-7kmuo5b",
+   "kind": "illustration",
+   "display": {
+    "key": "4.5.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:421967",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.5.2-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-t4zy26g",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:422036",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.1-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-yhvcnpj",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.1-2"
+   },
+   "figma": {
+    "nodeId": "4715:7749",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.1-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-bxdb4eb",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-1"
+   },
+   "figma": {
+    "nodeId": "4191:422111",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-sxkesfq",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-2"
+   },
+   "figma": {
+    "nodeId": "4191:422168",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-vlmt5ek",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-3"
+   },
+   "figma": {
+    "nodeId": "4191:422174",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-fqbufpw",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-4"
+   },
+   "figma": {
+    "nodeId": "4191:422180",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-noq2gbz",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-5"
+   },
+   "figma": {
+    "nodeId": "4191:422238",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-5.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-olvbjr7",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-6"
+   },
+   "figma": {
+    "nodeId": "4191:422244",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-6.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-dqsro3c",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-7"
+   },
+   "figma": {
+    "nodeId": "4191:422250",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-7.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-7.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-7zgldop",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.7-8"
+   },
+   "figma": {
+    "nodeId": "4191:422256",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.7-8.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.7-8.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-4gdb6ur",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-1"
+   },
+   "figma": {
+    "nodeId": "4191:422263",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-ktkjmcb",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-2"
+   },
+   "figma": {
+    "nodeId": "4191:422319",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-nsmqsy6",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-3"
+   },
+   "figma": {
+    "nodeId": "4191:422376",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-s6mknbi",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-4"
+   },
+   "figma": {
+    "nodeId": "4191:422431",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-u5yikza",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-5"
+   },
+   "figma": {
+    "nodeId": "4191:422487",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-5.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-uajnemo",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-6"
+   },
+   "figma": {
+    "nodeId": "4191:422540",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-6.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-lyfuffy",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-7"
+   },
+   "figma": {
+    "nodeId": "4191:422598",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-7.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-7.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-m6hlzfm",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-8"
+   },
+   "figma": {
+    "nodeId": "4191:422653",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-8.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-8.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-kr4pkzj",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-9"
+   },
+   "figma": {
+    "nodeId": "4191:422710",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-9.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-9.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-yf2dl3x",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-10"
+   },
+   "figma": {
+    "nodeId": "4191:422764",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-10.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-10.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-4kxjg2p",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.8-11"
+   },
+   "figma": {
+    "nodeId": "4191:422821",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.8-11.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.8-11.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-im3yeoj",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.11-1"
+   },
+   "figma": {
+    "nodeId": "4191:422876",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.11-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.11-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-7rgdlsx",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.11-2"
+   },
+   "figma": {
+    "nodeId": "4191:422903",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.11-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.11-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-ma624nm",
+   "kind": "illustration",
+   "display": {
+    "key": "5.1.11-3"
+   },
+   "figma": {
+    "nodeId": "4191:422929",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.01-binary-number-system/assets/5.1.11-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.1.11-3.svg"
+   }
+  },
+  {
+   "id": "ccna1-k3zrqvj",
+   "kind": "illustration",
+   "display": {
+    "key": "5.2.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:422957",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.02-hexadecimal-number-system/assets/5.2.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.2.1-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-k6s233p",
+   "kind": "illustration",
+   "display": {
+    "key": "5.2.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:423118",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.02-hexadecimal-number-system/assets/5.2.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.2.1-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-kd62w2w",
+   "kind": "illustration",
+   "display": {
+    "key": "5.2.1-3"
+   },
+   "figma": {
+    "nodeId": "4715:7750",
+    "page": "CCNA1 · 05 number-systems"
+   },
+   "out": {
+    "path": "05-number-systems/05.02-hexadecimal-number-system/assets/5.2.1-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.2.1-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-pvut3rh",
+   "kind": "illustration",
+   "display": {
+    "key": "6.1.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:423195",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.1.1-1.svg"
+   }
+  },
+  {
+   "id": "ccna1-ath7yyu",
+   "kind": "illustration",
+   "display": {
+    "key": "6.1.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:423226",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.1.1-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-m7ecu56",
+   "kind": "illustration",
+   "display": {
+    "key": "6.1.2"
+   },
+   "figma": {
+    "nodeId": "4191:423270",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.1.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4tmonyr",
+   "kind": "animation",
+   "display": {
+    "key": "6.1.3"
+   },
+   "figma": {
+    "nodeId": "4191:423304",
+    "page": "CCNA1 · 06 data-link-layer",
+    "motion": {
+     "sectionId": "4430:2",
+     "animId": "4430:4"
+    }
+   },
+   "out": {
+    "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.3.svg",
+    "format": "animated-svg",
+    "fallback": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.3.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-4tmonyr/spec.json",
+   "provenance": {
+    "legacy": "6.1.3.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-7e6yj3r",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:423317",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.1-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-6bgyppp",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:423392",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.1-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-6gae3fp",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.2-1"
+   },
+   "figma": {
+    "nodeId": "4715:11121",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-brz6bm5",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.2-2"
+   },
+   "figma": {
+    "nodeId": "4715:11122",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.2-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-wid7u5y",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.2-3"
+   },
+   "figma": {
+    "nodeId": "4715:11123",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.2-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-7s46i6f",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.3-1"
+   },
+   "figma": {
+    "nodeId": "4715:11124",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.3-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-pex7u5i",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:423543",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.3-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-z7pfaev",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.4"
+   },
+   "figma": {
+    "nodeId": "4191:423605",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-gksgzip",
+   "kind": "animation",
+   "display": {
+    "key": "6.2.5-1"
+   },
+   "figma": {
+    "nodeId": "4191:423710",
+    "page": "CCNA1 · 06 data-link-layer",
+    "motion": {
+     "sectionId": "4431:2",
+     "animId": "4431:4"
+    }
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.5-1.svg",
+    "format": "animated-svg",
+    "fallback": "06-data-link-layer/06.02-topologies/assets/6.2.5-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-gksgzip/spec.json",
+   "provenance": {
+    "legacy": "6.2.5-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-s2luvg2",
+   "kind": "animation",
+   "display": {
+    "key": "6.2.5-2"
+   },
+   "figma": {
+    "nodeId": "4191:423723",
+    "page": "CCNA1 · 06 data-link-layer",
+    "motion": {
+     "sectionId": "4432:2",
+     "animId": "4435:3"
+    }
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.5-2.svg",
+    "format": "animated-svg",
+    "fallback": "06-data-link-layer/06.02-topologies/assets/6.2.5-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-s2luvg2/spec.json",
+   "provenance": {
+    "legacy": "6.2.5-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-dfqqogw",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.6-1"
+   },
+   "figma": {
+    "nodeId": "4191:423738",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.6-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.6-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-jxfxhsn",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.6-2"
+   },
+   "figma": {
+    "nodeId": "4191:423761",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.6-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.6-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-hcabjfx",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.7-1"
+   },
+   "figma": {
+    "nodeId": "4191:423776",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.7-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.7-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-2fh7bft",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.7-2"
+   },
+   "figma": {
+    "nodeId": "4191:423799",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.7-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.7-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-3uzcc4j",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.7-3"
+   },
+   "figma": {
+    "nodeId": "4191:423826",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.7-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.7-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-4dcroge",
+   "kind": "illustration",
+   "display": {
+    "key": "6.2.8"
+   },
+   "figma": {
+    "nodeId": "4191:423892",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.02-topologies/assets/6.2.8.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.2.8.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-3dzrow3",
+   "kind": "illustration",
+   "display": {
+    "key": "6.3.1"
+   },
+   "figma": {
+    "nodeId": "4191:423927",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.3.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-tyutj6n",
+   "kind": "illustration",
+   "display": {
+    "key": "6.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:423950",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.3.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-iswvpp2",
+   "kind": "illustration",
+   "display": {
+    "key": "6.3.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:423982",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.3.3-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-46wkqll",
+   "kind": "illustration",
+   "display": {
+    "key": "6.3.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:424049",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.3.3-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-gwee4dn",
+   "kind": "illustration",
+   "display": {
+    "key": "6.3.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:424116",
+    "page": "CCNA1 · 06 data-link-layer"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "6.3.3-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-cvbpsf2",
+   "kind": "animation",
+   "display": {
+    "key": "6.3.4"
+   },
+   "figma": {
+    "nodeId": "4191:424184",
+    "page": "CCNA1 · 06 data-link-layer",
+    "motion": {
+     "sectionId": "4433:2",
+     "animId": "4533:3"
+    }
+   },
+   "out": {
+    "path": "06-data-link-layer/06.03-data-link-frame/assets/6.3.4.svg",
+    "format": "animated-svg",
+    "fallback": "06-data-link-layer/06.03-data-link-frame/assets/6.3.4.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-cvbpsf2/spec.json",
+   "provenance": {
+    "legacy": "6.3.4.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: слабо]"
+  },
+  {
+   "id": "ccna1-fuhjnlu",
+   "kind": "illustration",
+   "display": {
+    "key": "7.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:424209",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01-ethernet-frame/assets/7.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.1.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-n7zkbxa",
+   "kind": "illustration",
+   "display": {
+    "key": "7.1.2"
+   },
+   "figma": {
+    "nodeId": "4191:424237",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01-ethernet-frame/assets/7.1.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.1.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ikushzw",
+   "kind": "illustration",
+   "display": {
+    "key": "7.1.3"
+   },
+   "figma": {
+    "nodeId": "4191:424271",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01-ethernet-frame/assets/7.1.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.1.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-44s7yqq",
+   "kind": "illustration",
+   "display": {
+    "key": "7.1.4"
+   },
+   "figma": {
+    "nodeId": "4191:424302",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01-ethernet-frame/assets/7.1.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.1.4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-yhkkyud",
+   "kind": "illustration",
+   "display": {
+    "key": "7.2.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:424335",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.2.1-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-soq7s3b",
+   "kind": "illustration",
+   "display": {
+    "key": "7.2.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:424496",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.2.1-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-7y6uqgw",
+   "kind": "illustration",
+   "display": {
+    "key": "7.2.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:424684",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.2.2-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4mtohbs",
+   "kind": "illustration",
+   "display": {
+    "key": "7.2.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:424804",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.2.2-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-x7awqoz",
+   "kind": "animation",
+   "display": {
+    "key": "7.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:424923",
+    "page": "CCNA1 · 07 ethernet-switching",
+    "motion": {
+     "sectionId": "4434:2",
+     "animId": "4434:4"
+    }
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.3.svg",
+    "format": "animated-svg",
+    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.3.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-x7awqoz/spec.json",
+   "provenance": {
+    "legacy": "7.2.3.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: НЕТ]"
+  },
+  {
+   "id": "ccna1-spzwt5r",
+   "kind": "animation",
+   "display": {
+    "key": "7.2.4"
+   },
+   "figma": {
+    "nodeId": "4191:424975",
+    "page": "CCNA1 · 07 ethernet-switching",
+    "motion": {
+     "sectionId": "4436:2",
+     "animId": "4514:3"
+    }
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.4.svg",
+    "format": "animated-svg",
+    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.4.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-spzwt5r/spec.json",
+   "provenance": {
+    "legacy": "7.2.4.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-achja7r",
+   "kind": "animation",
+   "display": {
+    "key": "7.2.5"
+   },
+   "figma": {
+    "nodeId": "4191:425326",
+    "page": "CCNA1 · 07 ethernet-switching",
+    "motion": {
+     "sectionId": "4436:187009",
+     "animId": "4515:3"
+    }
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.5.svg",
+    "format": "animated-svg",
+    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.5.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-achja7r/spec.json",
+   "provenance": {
+    "legacy": "7.2.5.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-n7hv735",
+   "kind": "animation",
+   "display": {
+    "key": "7.2.6"
+   },
+   "figma": {
+    "nodeId": "4191:425657",
+    "page": "CCNA1 · 07 ethernet-switching",
+    "motion": {
+     "sectionId": "4437:2",
+     "animId": "4516:3"
+    }
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.6.svg",
+    "format": "animated-svg",
+    "fallback": "07-ethernet-switching/07.02-ethernet-mac-address/assets/7.2.6.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-n7hv735/spec.json",
+   "provenance": {
+    "legacy": "7.2.6.png"
+   },
+   "notes": "· вариант 2   [APNG в git (анимация) · пара: ПРОВЕРИТЬ]"
+  },
+  {
+   "id": "ccna1-csxbryo",
+   "kind": "illustration",
+   "display": {
+    "key": "7.3.1"
+   },
+   "figma": {
+    "nodeId": "4191:425709",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.3.1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-3hrlviv",
+   "kind": "illustration",
+   "display": {
+    "key": "7.3.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:425767",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.3.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-53arrlo",
+   "kind": "illustration",
+   "display": {
+    "key": "7.3.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:425842",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.3.2-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-2q63oea",
+   "kind": "illustration",
+   "display": {
+    "key": "7.3.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:425919",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.3.3-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-izx4roz",
+   "kind": "illustration",
+   "display": {
+    "key": "7.3.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:425994",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.3.3-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-35xqwx2",
+   "kind": "illustration",
+   "display": {
+    "key": "7.3.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:426070",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.3.3-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-o5yt2qb",
+   "kind": "animation",
+   "display": {
+    "key": "7.4.1"
+   },
+   "figma": {
+    "nodeId": "4191:426147",
+    "page": "CCNA1 · 07 ethernet-switching",
+    "motion": {
+     "sectionId": "4442:187752",
+     "animId": "4443:700"
+    }
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.1.svg",
+    "format": "animated-svg",
+    "fallback": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-o5yt2qb/spec.json",
+   "provenance": {
+    "legacy": "7.4.1.png"
+   },
+   "notes": "· вариант 2   [APNG в git (анимация) · ⚠ почти не отличается от 7.4.2 · пара: текст]"
+  },
+  {
+   "id": "ccna1-hei5nfr",
+   "kind": "animation",
+   "display": {
+    "key": "7.4.2"
+   },
+   "figma": {
+    "nodeId": "4191:426162",
+    "page": "CCNA1 · 07 ethernet-switching",
+    "motion": {
+     "sectionId": "4442:187920",
+     "animId": "4443:541"
+    }
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.2.svg",
+    "format": "animated-svg",
+    "fallback": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-hei5nfr/spec.json",
+   "provenance": {
+    "legacy": "7.4.2.png"
+   },
+   "notes": "[APNG в git (анимация) · ⚠ почти не отличается от 7.4.1 · пара: текст]"
+  },
+  {
+   "id": "ccna1-vtqsyne",
+   "kind": "illustration",
+   "display": {
+    "key": "7.4.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:426177",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.4.4-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-wbgfzvi",
+   "kind": "illustration",
+   "display": {
+    "key": "7.4.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:426228",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.4.4-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-kisdebq",
+   "kind": "illustration",
+   "display": {
+    "key": "7.4.5"
+   },
+   "figma": {
+    "nodeId": "4715:16985",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.04-switch-speeds-and-forwarding-methods/assets/7.4.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "7.4.5.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-qquzbkl",
+   "kind": "illustration",
+   "display": {
+    "key": "8.1.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:427338",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.1.1-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-pea7j72",
+   "kind": "animation",
+   "display": {
+    "key": "8.1.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:427362",
+    "page": "CCNA1 · 08 network-layer",
+    "motion": {
+     "sectionId": "4443:2",
+     "animId": "4475:3"
+    }
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.1-2.svg",
+    "format": "animated-svg",
+    "fallback": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.1-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-pea7j72/spec.json",
+   "provenance": {
+    "legacy": "8.1.1-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-j2ziytt",
+   "kind": "illustration",
+   "display": {
+    "key": "8.1.2"
+   },
+   "figma": {
+    "nodeId": "4191:427438",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.1.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-yfpz2tk",
+   "kind": "illustration",
+   "display": {
+    "key": "8.1.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:427461",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.1.4-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-46gv7ie",
+   "kind": "illustration",
+   "display": {
+    "key": "8.1.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:427525",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.1.4-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-7v3dn2p",
+   "kind": "illustration",
+   "display": {
+    "key": "8.1.5"
+   },
+   "figma": {
+    "nodeId": "4191:427565",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.1.5.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-i2n2epz",
+   "kind": "illustration",
+   "display": {
+    "key": "8.1.6"
+   },
+   "figma": {
+    "nodeId": "4191:427606",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.01-network-layer-characteristics/assets/8.1.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.1.6.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ebfzqfb",
+   "kind": "illustration",
+   "display": {
+    "key": "8.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:427651",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.02-ipv4-packet/assets/8.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.2.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-d4rna6v",
+   "kind": "illustration",
+   "display": {
+    "key": "8.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:427750",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.03-ipv6-packet/assets/8.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.3.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-aynlur5",
+   "kind": "illustration",
+   "display": {
+    "key": "8.3.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:427851",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.03-ipv6-packet/assets/8.3.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.3.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-l4lelmd",
+   "kind": "illustration",
+   "display": {
+    "key": "8.3.4"
+   },
+   "figma": {
+    "nodeId": "4191:427961",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.03-ipv6-packet/assets/8.3.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.3.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-sv4aftm",
+   "kind": "illustration",
+   "display": {
+    "key": "8.4.1"
+   },
+   "figma": {
+    "nodeId": "4191:428034",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.04-how-a-host-routes/assets/8.4.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.4.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-kahpqaj",
+   "kind": "illustration",
+   "display": {
+    "key": "8.4.3"
+   },
+   "figma": {
+    "nodeId": "4715:18977",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.04-how-a-host-routes/assets/8.4.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.4.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-xcopgw3",
+   "kind": "illustration",
+   "display": {
+    "key": "8.4.4"
+   },
+   "figma": {
+    "nodeId": "4715:18978",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.04-how-a-host-routes/assets/8.4.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.4.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-h7a3kzl",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.1"
+   },
+   "figma": {
+    "nodeId": "4191:428138",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4g5rb63",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.2"
+   },
+   "figma": {
+    "nodeId": "4715:18979",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-mlvfod4",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:428251",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-qnbtp5f",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:428303",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.3-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-rkjzriv",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:428350",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.4-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-6weopw5",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:428391",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.4-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-jgtm6k7",
+   "kind": "illustration",
+   "display": {
+    "key": "8.5.6"
+   },
+   "figma": {
+    "nodeId": "4715:18980",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "8.5.6.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-v6sbav5",
+   "kind": "illustration",
+   "display": {
+    "key": "9.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:428490",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.01-mac-and-ip/assets/9.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.1.1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-42kn3ci",
+   "kind": "illustration",
+   "display": {
+    "key": "9.1.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:428526",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.01-mac-and-ip/assets/9.1.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.1.2-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-fnxcuv6",
+   "kind": "illustration",
+   "display": {
+    "key": "9.1.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:428603",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.01-mac-and-ip/assets/9.1.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.1.2-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-4jtfhjs",
+   "kind": "illustration",
+   "display": {
+    "key": "9.1.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:428680",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.01-mac-and-ip/assets/9.1.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.1.2-3.svg"
+   }
+  },
+  {
+   "id": "ccna1-o6tparw",
+   "kind": "illustration",
+   "display": {
+    "key": "9.2.1"
+   },
+   "figma": {
+    "nodeId": "4191:428758",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.02-arp/assets/9.2.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.2.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-lvj5zsc",
+   "kind": "animation",
+   "display": {
+    "key": "9.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:428790",
+    "page": "CCNA1 · 09 address-resolution",
+    "motion": {
+     "sectionId": "4444:188068",
+     "animId": "4517:3"
+    }
+   },
+   "out": {
+    "path": "09-address-resolution/09.02-arp/assets/9.2.2.svg",
+    "format": "animated-svg",
+    "fallback": "09-address-resolution/09.02-arp/assets/9.2.2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-lvj5zsc/spec.json",
+   "provenance": {
+    "legacy": "9.2.2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-qifkxjc",
+   "kind": "illustration",
+   "display": {
+    "key": "9.2.6"
+   },
+   "figma": {
+    "nodeId": "4191:428834",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.02-arp/assets/9.2.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.2.6.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-nenhfmz",
+   "kind": "illustration",
+   "display": {
+    "key": "9.2.8-1"
+   },
+   "figma": {
+    "nodeId": "4191:428886",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.02-arp/assets/9.2.8-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.2.8-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-vh5nev7",
+   "kind": "illustration",
+   "display": {
+    "key": "9.2.8-2"
+   },
+   "figma": {
+    "nodeId": "4191:428917",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.02-arp/assets/9.2.8-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.2.8-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-wryulc3",
+   "kind": "illustration",
+   "display": {
+    "key": "9.3.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:428965",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.03-neighbor-discovery/assets/9.3.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.3.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-a2ugmsw",
+   "kind": "illustration",
+   "display": {
+    "key": "9.3.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:428991",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.03-neighbor-discovery/assets/9.3.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.3.2-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-dhhcpjx",
+   "kind": "illustration",
+   "display": {
+    "key": "9.3.3"
+   },
+   "figma": {
+    "nodeId": "4191:429017",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.03-neighbor-discovery/assets/9.3.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "9.3.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-usd7teu",
+   "kind": "illustration",
+   "display": {
+    "key": "10.1.2"
+   },
+   "figma": {
+    "nodeId": "4715:19583",
+    "page": "CCNA1 · 10 basic-router-configuration"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.01-configure-initial-router-settings/assets/10.1.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "10.1.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-h4rq624",
+   "kind": "illustration",
+   "display": {
+    "key": "10.2.2"
+   },
+   "figma": {
+    "nodeId": "4715:19584",
+    "page": "CCNA1 · 10 basic-router-configuration"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.02-configure-interfaces/assets/10.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "10.2.2.svg"
+   },
+   "notes": "[тот же файл, что 10.1.2 (совпадает git-sha) — отдельного прототипа нет · переиспользование]"
+  },
+  {
+   "id": "ccna1-hklmhwh",
+   "kind": "illustration",
+   "display": {
+    "key": "10.3.1-1"
+   },
+   "figma": {
+    "nodeId": "4715:19585",
+    "page": "CCNA1 · 10 basic-router-configuration"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.03-configure-the-default-gateway/assets/10.3.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "10.3.1-1.svg"
+   }
+  },
+  {
+   "id": "ccna1-cka7dp6",
+   "kind": "illustration",
+   "display": {
+    "key": "10.3.1-2"
+   },
+   "figma": {
+    "nodeId": "4715:19586",
+    "page": "CCNA1 · 10 basic-router-configuration"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.03-configure-the-default-gateway/assets/10.3.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "10.3.1-2.svg"
+   }
+  },
+  {
+   "id": "ccna1-jocqz4p",
+   "kind": "illustration",
+   "display": {
+    "key": "10.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:429264",
+    "page": "CCNA1 · 10 basic-router-configuration"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.03-configure-the-default-gateway/assets/10.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "10.3.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-76baxd5",
+   "kind": "illustration",
+   "display": {
+    "key": "11.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:429313",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.1.1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-snoydlc",
+   "kind": "illustration",
+   "display": {
+    "key": "11.1.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:429331",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.1.2-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-iz6rbqy",
+   "kind": "illustration",
+   "display": {
+    "key": "11.1.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:429345",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.1.2-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-fqu3xyy",
+   "kind": "illustration",
+   "display": {
+    "key": "11.1.4"
+   },
+   "figma": {
+    "nodeId": "4191:429370",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.1.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-grjhrzf",
+   "kind": "illustration",
+   "display": {
+    "key": "11.1.6"
+   },
+   "figma": {
+    "nodeId": "4715:23478",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.1.6.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-yejcnw3",
+   "kind": "animation",
+   "display": {
+    "key": "11.2.1"
+   },
+   "figma": {
+    "nodeId": "4191:429456",
+    "page": "CCNA1 · 11 ipv4-addressing",
+    "motion": {
+     "sectionId": "4444:2",
+     "animId": "4471:3"
+    }
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.1.svg",
+    "format": "animated-svg",
+    "fallback": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-yejcnw3/spec.json",
+   "provenance": {
+    "legacy": "11.2.1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-f5o3mpj",
+   "kind": "animation",
+   "display": {
+    "key": "11.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:429482",
+    "page": "CCNA1 · 11 ipv4-addressing",
+    "motion": {
+     "sectionId": "4446:189395",
+     "animId": "4518:3"
+    }
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.2.svg",
+    "format": "animated-svg",
+    "fallback": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-f5o3mpj/spec.json",
+   "provenance": {
+    "legacy": "11.2.2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-2kzg5mc",
+   "kind": "animation",
+   "display": {
+    "key": "11.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:429513",
+    "page": "CCNA1 · 11 ipv4-addressing",
+    "motion": {
+     "sectionId": "4446:188512",
+     "animId": "4519:3"
+    }
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.3.svg",
+    "format": "animated-svg",
+    "fallback": "11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/assets/11.2.3.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-2kzg5mc/spec.json",
+   "provenance": {
+    "legacy": "11.2.3.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-npxhu7x",
+   "kind": "illustration",
+   "display": {
+    "key": "11.3.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:429548",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.03-types-of-ipv4-addresses/assets/11.3.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.3.2-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-c3xnh7m",
+   "kind": "illustration",
+   "display": {
+    "key": "11.3.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:429591",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.03-types-of-ipv4-addresses/assets/11.3.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.3.2-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ugtxo7v",
+   "kind": "illustration",
+   "display": {
+    "key": "11.3.5"
+   },
+   "figma": {
+    "nodeId": "4191:429625",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.03-types-of-ipv4-addresses/assets/11.3.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.3.5.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-hndgww6",
+   "kind": "illustration",
+   "display": {
+    "key": "11.3.6"
+   },
+   "figma": {
+    "nodeId": "4191:429659",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.03-types-of-ipv4-addresses/assets/11.3.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.3.6.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-2vvk7eh",
+   "kind": "illustration",
+   "display": {
+    "key": "11.4.1"
+   },
+   "figma": {
+    "nodeId": "4715:23479",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.04-network-segmentation/assets/11.4.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.4.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-fxmts6h",
+   "kind": "illustration",
+   "display": {
+    "key": "11.4.2-1"
+   },
+   "figma": {
+    "nodeId": "4715:23480",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.04-network-segmentation/assets/11.4.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.4.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-c6xnqgz",
+   "kind": "illustration",
+   "display": {
+    "key": "11.4.2-2"
+   },
+   "figma": {
+    "nodeId": "4715:23481",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.04-network-segmentation/assets/11.4.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.4.2-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-4xlxgz7",
+   "kind": "illustration",
+   "display": {
+    "key": "11.4.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:429992",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.04-network-segmentation/assets/11.4.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.4.3-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-vwphxut",
+   "kind": "illustration",
+   "display": {
+    "key": "11.4.3-2"
+   },
+   "figma": {
+    "nodeId": "4715:23482",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.04-network-segmentation/assets/11.4.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.4.3-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-yw66fo4",
+   "kind": "illustration",
+   "display": {
+    "key": "11.4.3-3"
+   },
+   "figma": {
+    "nodeId": "4715:23483",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.04-network-segmentation/assets/11.4.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.4.3-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-wboyvgm",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:430098",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-6xp4v62",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.2-2"
+   },
+   "figma": {
+    "nodeId": "4715:23484",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.2-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-3c25gct",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:430218",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.2-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-sa6m4tn",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.2-4"
+   },
+   "figma": {
+    "nodeId": "4191:430263",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.2-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.2-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-7w3g4w7",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:430310",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-pcf4jpf",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.3-2"
+   },
+   "figma": {
+    "nodeId": "4715:23485",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.3-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-mtl4nlv",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:430408",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.3-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-lxho5kt",
+   "kind": "illustration",
+   "display": {
+    "key": "11.6.3-4"
+   },
+   "figma": {
+    "nodeId": "4191:430463",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.3-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.6.3-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-k6u6oar",
+   "kind": "illustration",
+   "display": {
+    "key": "11.7.1"
+   },
+   "figma": {
+    "nodeId": "4191:430506",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.07-subnet-to-meet-requirements/assets/11.7.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.7.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-xyxtocx",
+   "kind": "illustration",
+   "display": {
+    "key": "11.7.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:430540",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.07-subnet-to-meet-requirements/assets/11.7.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.7.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-o45vyke",
+   "kind": "illustration",
+   "display": {
+    "key": "11.7.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:430557",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.07-subnet-to-meet-requirements/assets/11.7.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.7.3-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-7zuc7wc",
+   "kind": "illustration",
+   "display": {
+    "key": "11.7.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:430636",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.07-subnet-to-meet-requirements/assets/11.7.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.7.3-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-fvrrboy",
+   "kind": "illustration",
+   "display": {
+    "key": "11.7.3-4"
+   },
+   "figma": {
+    "nodeId": "4715:23486",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.07-subnet-to-meet-requirements/assets/11.7.3-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.7.3-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-vhid5pb",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:430839",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-42nrh6x",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.3-2",
+    "title": "Схема базового разделения на подсети"
+   },
+   "figma": {
+    "nodeId": "4191:430873",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.3-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-7wxgfy3",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:430968",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.3-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-kal5nmo",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.3-4"
+   },
+   "figma": {
+    "nodeId": "4191:431002",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.3-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.3-4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ozkurnu",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:431059",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.4-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-mkng3vh",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:431135",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.4-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-d6m63qj",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.4-3"
+   },
+   "figma": {
+    "nodeId": "4191:431169",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.4-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.4-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ncmygit",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.4-4"
+   },
+   "figma": {
+    "nodeId": "4191:431271",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.4-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.4-4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-yelfykl",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.4-5"
+   },
+   "figma": {
+    "nodeId": "4191:431381",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.4-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.4-5.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-auf6m2l",
+   "kind": "illustration",
+   "display": {
+    "key": "11.8.5"
+   },
+   "figma": {
+    "nodeId": "4191:431421",
+    "page": "CCNA1 · 11 ipv4-addressing"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.8.5.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-nmyu72j",
+   "kind": "illustration",
+   "display": {
+    "key": "12.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:431493",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.01-ipv4-issues/assets/12.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.1.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-z6n423k",
+   "kind": "illustration",
+   "display": {
+    "key": "12.1.2-1"
+   },
+   "figma": {
+    "nodeId": "4715:24570",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.01-ipv4-issues/assets/12.1.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.1.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-gerfzsk",
+   "kind": "illustration",
+   "display": {
+    "key": "12.1.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:431685",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.01-ipv4-issues/assets/12.1.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.1.2-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-lfnzk7j",
+   "kind": "illustration",
+   "display": {
+    "key": "12.1.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:431710",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.01-ipv4-issues/assets/12.1.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.1.2-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ct5todz",
+   "kind": "illustration",
+   "display": {
+    "key": "12.2.1"
+   },
+   "figma": {
+    "nodeId": "4191:431765",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.02-ipv6-addressing/assets/12.2.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.2.1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-edyxvtu",
+   "kind": "illustration",
+   "display": {
+    "key": "12.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:431794",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.03-ipv6-address-types/assets/12.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.3.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-4ahkou3",
+   "kind": "illustration",
+   "display": {
+    "key": "12.3.3"
+   },
+   "figma": {
+    "nodeId": "4191:431828",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.03-ipv6-address-types/assets/12.3.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.3.3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-zn2qvbe",
+   "kind": "illustration",
+   "display": {
+    "key": "12.3.5-1"
+   },
+   "figma": {
+    "nodeId": "4715:24571",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.03-ipv6-address-types/assets/12.3.5-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.3.5-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-huibemj",
+   "kind": "illustration",
+   "display": {
+    "key": "12.3.5-2"
+   },
+   "figma": {
+    "nodeId": "4191:431878",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.03-ipv6-address-types/assets/12.3.5-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.3.5-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-d66s6i4",
+   "kind": "illustration",
+   "display": {
+    "key": "12.3.7-1"
+   },
+   "figma": {
+    "nodeId": "4191:431897",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.03-ipv6-address-types/assets/12.3.7-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.3.7-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-bdl45xq",
+   "kind": "illustration",
+   "display": {
+    "key": "12.3.7-2"
+   },
+   "figma": {
+    "nodeId": "4191:431943",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.03-ipv6-address-types/assets/12.3.7-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.3.7-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-22wdvis",
+   "kind": "illustration",
+   "display": {
+    "key": "12.4.1"
+   },
+   "figma": {
+    "nodeId": "4715:24572",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.04-gua-and-lla-static-configuration/assets/12.4.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.4.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ywngofx",
+   "kind": "illustration",
+   "display": {
+    "key": "12.4.3"
+   },
+   "figma": {
+    "nodeId": "4715:24573",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.04-gua-and-lla-static-configuration/assets/12.4.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.4.3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ndmw4hm",
+   "kind": "illustration",
+   "display": {
+    "key": "12.5.1"
+   },
+   "figma": {
+    "nodeId": "4191:432075",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.05-dynamic-addresing-for-ipv6-guas/assets/12.5.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.5.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-wpoaqh6",
+   "kind": "illustration",
+   "display": {
+    "key": "12.5.2"
+   },
+   "figma": {
+    "nodeId": "4191:432103",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.05-dynamic-addresing-for-ipv6-guas/assets/12.5.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.5.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-3s3xx4x",
+   "kind": "illustration",
+   "display": {
+    "key": "12.5.3"
+   },
+   "figma": {
+    "nodeId": "4191:432142",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.05-dynamic-addresing-for-ipv6-guas/assets/12.5.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.5.3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-2j2ao5f",
+   "kind": "illustration",
+   "display": {
+    "key": "12.5.4"
+   },
+   "figma": {
+    "nodeId": "4191:432176",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.05-dynamic-addresing-for-ipv6-guas/assets/12.5.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.5.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-hywv7vr",
+   "kind": "illustration",
+   "display": {
+    "key": "12.5.5"
+   },
+   "figma": {
+    "nodeId": "4191:432210",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.05-dynamic-addresing-for-ipv6-guas/assets/12.5.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.5.5.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-jfzxc33",
+   "kind": "illustration",
+   "display": {
+    "key": "12.5.6"
+   },
+   "figma": {
+    "nodeId": "4191:432247",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.05-dynamic-addresing-for-ipv6-guas/assets/12.5.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.5.6.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4wnb3qy",
+   "kind": "illustration",
+   "display": {
+    "key": "12.6.1"
+   },
+   "figma": {
+    "nodeId": "4191:432365",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.06-dynamic-addresing-for-ipv6-llas/assets/12.6.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.6.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-wgn2cd3",
+   "kind": "illustration",
+   "display": {
+    "key": "12.6.4"
+   },
+   "figma": {
+    "nodeId": "4715:24574",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.06-dynamic-addresing-for-ipv6-llas/assets/12.6.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.6.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-syi675n",
+   "kind": "illustration",
+   "display": {
+    "key": "12.7.2"
+   },
+   "figma": {
+    "nodeId": "4191:432436",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.07-ipv6-multicast-addresses/assets/12.7.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.7.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-2cjs7qw",
+   "kind": "illustration",
+   "display": {
+    "key": "12.7.3"
+   },
+   "figma": {
+    "nodeId": "4191:432472",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.07-ipv6-multicast-addresses/assets/12.7.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.7.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-t6lqnqw",
+   "kind": "illustration",
+   "display": {
+    "key": "12.8.1"
+   },
+   "figma": {
+    "nodeId": "4191:432515",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.08-subnet-an-ipv6-network/assets/12.8.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.8.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-5apm3g4",
+   "kind": "illustration",
+   "display": {
+    "key": "12.8.2"
+   },
+   "figma": {
+    "nodeId": "4191:432556",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.08-subnet-an-ipv6-network/assets/12.8.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.8.2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-77ehezh",
+   "kind": "illustration",
+   "display": {
+    "key": "12.8.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:432581",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.08-subnet-an-ipv6-network/assets/12.8.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.8.3-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-hlxj2ml",
+   "kind": "illustration",
+   "display": {
+    "key": "12.8.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:432659",
+    "page": "CCNA1 · 12 ipv6-addressing"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.08-subnet-an-ipv6-network/assets/12.8.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.8.3-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-mrvot23",
+   "kind": "animation",
+   "display": {
+    "key": "13.1.2"
+   },
+   "figma": {
+    "nodeId": "4191:432778",
+    "page": "CCNA1 · 13 icmp",
+    "motion": {
+     "sectionId": "4447:2",
+     "animId": "4447:4"
+    }
+   },
+   "out": {
+    "path": "13-icmp/13.01-icmp-messages/assets/13.1.2.svg",
+    "format": "animated-svg",
+    "fallback": "13-icmp/13.01-icmp-messages/assets/13.1.2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-mrvot23/spec.json",
+   "provenance": {
+    "legacy": "13.1.2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-52an3cs",
+   "kind": "illustration",
+   "display": {
+    "key": "13.1.5-1"
+   },
+   "figma": {
+    "nodeId": "4191:432814",
+    "page": "CCNA1 · 13 icmp"
+   },
+   "out": {
+    "path": "13-icmp/13.01-icmp-messages/assets/13.1.5-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "13.1.5-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-obh7tgf",
+   "kind": "illustration",
+   "display": {
+    "key": "13.1.5-2"
+   },
+   "figma": {
+    "nodeId": "4191:432841",
+    "page": "CCNA1 · 13 icmp"
+   },
+   "out": {
+    "path": "13-icmp/13.01-icmp-messages/assets/13.1.5-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "13.1.5-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-jaq6sin",
+   "kind": "illustration",
+   "display": {
+    "key": "13.1.5-3"
+   },
+   "figma": {
+    "nodeId": "4191:432877",
+    "page": "CCNA1 · 13 icmp"
+   },
+   "out": {
+    "path": "13-icmp/13.01-icmp-messages/assets/13.1.5-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "13.1.5-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-egce7vc",
+   "kind": "illustration",
+   "display": {
+    "key": "13.1.5-4"
+   },
+   "figma": {
+    "nodeId": "4191:432903",
+    "page": "CCNA1 · 13 icmp"
+   },
+   "out": {
+    "path": "13-icmp/13.01-icmp-messages/assets/13.1.5-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "13.1.5-4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-pwb5ojs",
+   "kind": "illustration",
+   "display": {
+    "key": "13.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:432941",
+    "page": "CCNA1 · 13 icmp"
+   },
+   "out": {
+    "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "13.2.3.svg"
+   }
+  },
+  {
+   "id": "ccna1-3ydrimt",
+   "kind": "animation",
+   "display": {
+    "key": "13.2.4"
+   },
+   "figma": {
+    "nodeId": "4191:433001",
+    "page": "CCNA1 · 13 icmp",
+    "motion": {
+     "sectionId": "4448:2",
+     "animId": "4529:3"
+    }
+   },
+   "out": {
+    "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.4.svg",
+    "format": "animated-svg",
+    "fallback": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.4.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-3ydrimt/spec.json",
+   "provenance": {
+    "legacy": "13.2.4.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-bimlx7m",
+   "kind": "animation",
+   "display": {
+    "key": "13.2.5"
+   },
+   "figma": {
+    "nodeId": "4191:433082",
+    "page": "CCNA1 · 13 icmp",
+    "motion": {
+     "sectionId": "4449:2",
+     "animId": "4526:3"
+    }
+   },
+   "out": {
+    "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.5.svg",
+    "format": "animated-svg",
+    "fallback": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.5.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-bimlx7m/spec.json",
+   "provenance": {
+    "legacy": "13.2.5.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-upylwae",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:433131",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-bmpng4v",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:433198",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.2-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-dlz5fq6",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:433230",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.2-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-dnw6oq5",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:433297",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.2-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-z3cqv3f",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.2-4"
+   },
+   "figma": {
+    "nodeId": "4191:433387",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.2-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.2-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-5m37kgk",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.2-5"
+   },
+   "figma": {
+    "nodeId": "4191:433422",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.2-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.2-5.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-uzr2ion",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.3"
+   },
+   "figma": {
+    "nodeId": "4191:433491",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-pzpotew",
+   "kind": "animation",
+   "display": {
+    "key": "14.1.5"
+   },
+   "figma": {
+    "nodeId": "4191:433545",
+    "page": "CCNA1 · 14 transport-layer",
+    "motion": {
+     "sectionId": "4451:2",
+     "animId": "4528:3"
+    }
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.5.svg",
+    "format": "animated-svg",
+    "fallback": "14-transport-layer/14.01-transportation-of-data/assets/14.1.5.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-pzpotew/spec.json",
+   "provenance": {
+    "legacy": "14.1.5.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-36ku3uz",
+   "kind": "illustration",
+   "display": {
+    "key": "14.1.6"
+   },
+   "figma": {
+    "nodeId": "4191:433588",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.1.6.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-ote7qvb",
+   "kind": "illustration",
+   "display": {
+    "key": "14.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:433625",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.02-tcp-overview/assets/14.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.2.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ukm55qc",
+   "kind": "illustration",
+   "display": {
+    "key": "14.2.4"
+   },
+   "figma": {
+    "nodeId": "4191:433715",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.02-tcp-overview/assets/14.2.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.2.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ntjfw4d",
+   "kind": "illustration",
+   "display": {
+    "key": "14.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:433753",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.03-udp-overview/assets/14.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.3.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ulgjhoz",
+   "kind": "illustration",
+   "display": {
+    "key": "14.3.4"
+   },
+   "figma": {
+    "nodeId": "4191:433817",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.03-udp-overview/assets/14.3.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.3.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-z72rslx",
+   "kind": "illustration",
+   "display": {
+    "key": "14.4.1"
+   },
+   "figma": {
+    "nodeId": "4191:433867",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.04-port-numbers/assets/14.4.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.4.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4i6uwem",
+   "kind": "illustration",
+   "display": {
+    "key": "14.4.2"
+   },
+   "figma": {
+    "nodeId": "4191:433881",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.04-port-numbers/assets/14.4.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.4.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-cm7bo3v",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:433967",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.1-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-epaivdm",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:433993",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.1-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-6zg36g7",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.1-3"
+   },
+   "figma": {
+    "nodeId": "4191:434025",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.1-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.1-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-myvapub",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.1-4"
+   },
+   "figma": {
+    "nodeId": "4191:434057",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.1-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.1-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-djs4nm2",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.1-5"
+   },
+   "figma": {
+    "nodeId": "4191:434090",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.1-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.1-5.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-fs2ben4",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:434123",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.2-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-y2qfqow",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:434147",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.2-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-bpqtz6y",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:434179",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.2-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.2-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-g24fkym",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:434217",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-cbdbsyd",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:434242",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.3-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-xibzari",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:434274",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.3-3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-2v35nur",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.3-4"
+   },
+   "figma": {
+    "nodeId": "4191:434313",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.3-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.3-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-js2niet",
+   "kind": "illustration",
+   "display": {
+    "key": "14.5.4"
+   },
+   "figma": {
+    "nodeId": "4191:434359",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.5.4.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-btc2zg4",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.1"
+   },
+   "figma": {
+    "nodeId": "4191:434450",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-rrgxp2l",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:434560",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.3-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-g553hsl",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:434675",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.3-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-zyf66pz",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.5"
+   },
+   "figma": {
+    "nodeId": "4715:27360",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.5.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-zxcdh65",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.6-1"
+   },
+   "figma": {
+    "nodeId": "4715:27361",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.6-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.6-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-b5qj2fx",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.6-2"
+   },
+   "figma": {
+    "nodeId": "4191:434899",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.6-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.6-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-4tgftp5",
+   "kind": "illustration",
+   "display": {
+    "key": "14.6.7"
+   },
+   "figma": {
+    "nodeId": "4191:434942",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.7.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.6.7.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-wwdaelh",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.1"
+   },
+   "figma": {
+    "nodeId": "4191:434994",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-6gwt4dx",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.2"
+   },
+   "figma": {
+    "nodeId": "4191:435022",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-s3atdiu",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.3"
+   },
+   "figma": {
+    "nodeId": "4191:435107",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-63d56mg",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:435128",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.4-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ohnpqd4",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:435153",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.4-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-onnveuq",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.4-3"
+   },
+   "figma": {
+    "nodeId": "4191:435183",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.4-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.4-3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-w36wcob",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.4-4"
+   },
+   "figma": {
+    "nodeId": "4191:435213",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.4-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.4-4.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-q7ffnp2",
+   "kind": "illustration",
+   "display": {
+    "key": "14.7.4-5"
+   },
+   "figma": {
+    "nodeId": "4191:435249",
+    "page": "CCNA1 · 14 transport-layer"
+   },
+   "out": {
+    "path": "14-transport-layer/14.07-udp-communication/assets/14.7.4-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "14.7.4-5.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-gcz76sp",
+   "kind": "illustration",
+   "display": {
+    "key": "15.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:435284",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.01-application-presentation-and-session/assets/15.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.1.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-hgqdvng",
+   "kind": "illustration",
+   "display": {
+    "key": "15.1.2"
+   },
+   "figma": {
+    "nodeId": "4191:435321",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.01-application-presentation-and-session/assets/15.1.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.1.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ol5llcn",
+   "kind": "illustration",
+   "display": {
+    "key": "15.2.1"
+   },
+   "figma": {
+    "nodeId": "4191:435359",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.02-peer-to-peer/assets/15.2.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.2.1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-duliiam",
+   "kind": "illustration",
+   "display": {
+    "key": "15.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:435381",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.02-peer-to-peer/assets/15.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.2.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-aqjup4p",
+   "kind": "illustration",
+   "display": {
+    "key": "15.2.3"
+   },
+   "figma": {
+    "nodeId": "4191:435404",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.02-peer-to-peer/assets/15.2.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.2.3.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ii75lfg",
+   "kind": "illustration",
+   "display": {
+    "key": "15.2.4"
+   },
+   "figma": {
+    "nodeId": "4191:435432",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.02-peer-to-peer/assets/15.2.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.2.4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-gccroaa",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.1-1"
+   },
+   "figma": {
+    "nodeId": "4715:29236",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.1-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-olj3ehj",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:435487",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.1-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-ehxniz2",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.1-3"
+   },
+   "figma": {
+    "nodeId": "4191:435529",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.1-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.1-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-72rcgp7",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.1-4"
+   },
+   "figma": {
+    "nodeId": "4191:435551",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.1-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.1-4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-zhln7ut",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.2"
+   },
+   "figma": {
+    "nodeId": "4191:435573",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-riy6wku",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.3"
+   },
+   "figma": {
+    "nodeId": "4191:435621",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-bk5z6z4",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:435670",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.4-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.4-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-qmlfzll",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:435702",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.4-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.4-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-rw52crc",
+   "kind": "illustration",
+   "display": {
+    "key": "15.3.4-3"
+   },
+   "figma": {
+    "nodeId": "4191:435734",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.03-web-and-email-protocols/assets/15.3.4-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.3.4-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-6ncqkfn",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:435761",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.1-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-sd66ovh",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:435800",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.1-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-gxxnvu2",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.1-3"
+   },
+   "figma": {
+    "nodeId": "4191:435843",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.1-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.1-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-ai55xr7",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.1-4"
+   },
+   "figma": {
+    "nodeId": "4715:29237",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.1-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.1-4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-xdxualf",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.1-5"
+   },
+   "figma": {
+    "nodeId": "4191:435896",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.1-5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.1-5.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-yqyb42o",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.3"
+   },
+   "figma": {
+    "nodeId": "4191:435925",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-su2r2m6",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.6"
+   },
+   "figma": {
+    "nodeId": "4191:435967",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.6.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-bqa6l6r",
+   "kind": "illustration",
+   "display": {
+    "key": "15.4.7"
+   },
+   "figma": {
+    "nodeId": "4715:29238",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.04-ip-addressing-services/assets/15.4.7.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.4.7.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-t6th75x",
+   "kind": "illustration",
+   "display": {
+    "key": "15.5.1"
+   },
+   "figma": {
+    "nodeId": "4191:436078",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.05-file-sharing-services/assets/15.5.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.5.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-a3rc2t7",
+   "kind": "illustration",
+   "display": {
+    "key": "15.5.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:436125",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.05-file-sharing-services/assets/15.5.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.5.2-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-e3q4ddj",
+   "kind": "illustration",
+   "display": {
+    "key": "15.5.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:436153",
+    "page": "CCNA1 · 15 application-layer"
+   },
+   "out": {
+    "path": "15-application-layer/15.05-file-sharing-services/assets/15.5.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "15.5.2-2.svg"
+   },
+   "notes": "[svg в git · пара: НЕТ]"
+  },
+  {
+   "id": "ccna1-6q5nvbr",
+   "kind": "illustration",
+   "display": {
+    "key": "16.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:436171",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.01-security-threats-and-vulnerabilities/assets/16.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.1.1.svg"
+   },
+   "notes": "[svg в git · сводная: в оригинале Cisco это были 4 отдельные иллюстрации · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-4ksngpb",
+   "kind": "illustration",
+   "display": {
+    "key": "16.1.3"
+   },
+   "figma": {
+    "nodeId": "4191:436242",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.01-security-threats-and-vulnerabilities/assets/16.1.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.1.3.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-va2c7wd",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.1"
+   },
+   "figma": {
+    "nodeId": "4191:436306",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4452:191223",
+     "animId": "4452:191225"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.1.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-va2c7wd/spec.json",
+   "provenance": {
+    "legacy": "16.2.1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: закреплена]"
+  },
+  {
+   "id": "ccna1-t7zfonu",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:436323",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4455:191281",
+     "animId": "4458:205"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-1.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-t7zfonu/spec.json",
+   "provenance": {
+    "legacy": "16.2.2-1.png"
+   },
+   "notes": "· вариант 2   [APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-pmlcwap",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:436382",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4457:2",
+     "animId": "4457:4"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-2.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-pmlcwap/spec.json",
+   "provenance": {
+    "legacy": "16.2.2-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-xx7yje7",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.2-3"
+   },
+   "figma": {
+    "nodeId": "4191:436486",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4460:191404",
+     "animId": "4464:474"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-3.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.2-3.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-xx7yje7/spec.json",
+   "provenance": {
+    "legacy": "16.2.2-3.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-gkhac7w",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:436590",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4460:2",
+     "animId": "4524:3"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-2.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-gkhac7w/spec.json",
+   "provenance": {
+    "legacy": "16.2.3-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-jmoc4ni",
+   "kind": "illustration",
+   "display": {
+    "key": "16.2.3-3"
+   },
+   "figma": {
+    "nodeId": "4191:436630",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.2.3-3.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-ngydcy4",
+   "kind": "illustration",
+   "display": {
+    "key": "16.2.3-4"
+   },
+   "figma": {
+    "nodeId": "4191:436705",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.2.3-4.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-3vokuos",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.4-1"
+   },
+   "figma": {
+    "nodeId": "4191:436752",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4459:2",
+     "animId": "4464:3"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-1.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-1.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-3vokuos/spec.json",
+   "provenance": {
+    "legacy": "16.2.4-1.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: текст]"
+  },
+  {
+   "id": "ccna1-cet7odq",
+   "kind": "animation",
+   "display": {
+    "key": "16.2.4-2"
+   },
+   "figma": {
+    "nodeId": "4191:436791",
+    "page": "CCNA1 · 16 network-security-fundamentals",
+    "motion": {
+     "sectionId": "4465:2",
+     "animId": "4489:3"
+    }
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-2.svg",
+    "format": "animated-svg",
+    "fallback": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.4-2.png"
+   },
+   "status": "pending",
+   "spec": "animations/ccna1-cet7odq/spec.json",
+   "provenance": {
+    "legacy": "16.2.4-2.png"
+   },
+   "notes": "[APNG в git (анимация) · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-xta27tu",
+   "kind": "illustration",
+   "display": {
+    "key": "16.3.1"
+   },
+   "figma": {
+    "nodeId": "4191:436829",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.3.1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-27v5cns",
+   "kind": "illustration",
+   "display": {
+    "key": "16.3.5-1"
+   },
+   "figma": {
+    "nodeId": "4191:437457",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.5-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.3.5-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-6exc6fs",
+   "kind": "illustration",
+   "display": {
+    "key": "16.3.5-2"
+   },
+   "figma": {
+    "nodeId": "4715:34143",
+    "page": "CCNA1 · 16 network-security-fundamentals"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.5-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.3.5-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-nicptbh",
+   "kind": "illustration",
+   "display": {
+    "key": "17.1.1"
+   },
+   "figma": {
+    "nodeId": "4191:437788",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.01-devices-in-a-small-network/assets/17.1.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.1.1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-mvnatsd",
+   "kind": "illustration",
+   "display": {
+    "key": "17.1.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:437813",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.01-devices-in-a-small-network/assets/17.1.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.1.3-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-ckek5iv",
+   "kind": "illustration",
+   "display": {
+    "key": "17.1.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:437903",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.01-devices-in-a-small-network/assets/17.1.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.1.3-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-teafcqw",
+   "kind": "illustration",
+   "display": {
+    "key": "17.1.4"
+   },
+   "figma": {
+    "nodeId": "4191:437938",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.01-devices-in-a-small-network/assets/17.1.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.1.4.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-6vq5bml",
+   "kind": "illustration",
+   "display": {
+    "key": "17.1.5"
+   },
+   "figma": {
+    "nodeId": "4191:437975",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.01-devices-in-a-small-network/assets/17.1.5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.1.5.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-2aauom4",
+   "kind": "illustration",
+   "display": {
+    "key": "17.2.2"
+   },
+   "figma": {
+    "nodeId": "4191:438020",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.02-small-network-applications-and-protocols/assets/17.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.2.2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-24vtjxz",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.1-1"
+   },
+   "figma": {
+    "nodeId": "4191:438055",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.1-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-zuqodxh",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:438107",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.1-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-kcdmaud",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.2-1"
+   },
+   "figma": {
+    "nodeId": "4191:438155",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.2-1.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-vkjx553",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.2-2"
+   },
+   "figma": {
+    "nodeId": "4191:438206",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.2-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.2-2.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-3rtiwek",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.3-1"
+   },
+   "figma": {
+    "nodeId": "4191:438257",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.3-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.3-1.svg"
+   },
+   "notes": "[svg в git · пара: косвенно]"
+  },
+  {
+   "id": "ccna1-xyouvcl",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.3-2"
+   },
+   "figma": {
+    "nodeId": "4191:438300",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.3-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.3-2.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-ox76tx7",
+   "kind": "illustration",
+   "display": {
+    "key": "17.4.4"
+   },
+   "figma": {
+    "nodeId": "4191:438342",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04-verify-connectivity/assets/17.4.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.4.4.svg"
+   },
+   "notes": "[svg в git · пара: текст]"
+  },
+  {
+   "id": "ccna1-wql54zv",
+   "kind": "illustration",
+   "display": {
+    "key": "17.5.4"
+   },
+   "figma": {
+    "nodeId": "4191:438385",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.5.4.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-dumb6ev",
+   "kind": "illustration",
+   "display": {
+    "key": "17.5.6"
+   },
+   "figma": {
+    "nodeId": "4715:36388",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.6.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.5.6.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-vs6gfss",
+   "kind": "illustration",
+   "display": {
+    "key": "17.7.1-1"
+   },
+   "figma": {
+    "nodeId": "4715:36389",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.07-troubleshooting-scenarios/assets/17.7.1-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.7.1-1.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-brfdqly",
+   "kind": "illustration",
+   "display": {
+    "key": "17.7.1-2"
+   },
+   "figma": {
+    "nodeId": "4191:438462",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.07-troubleshooting-scenarios/assets/17.7.1-2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.7.1-2.svg"
+   },
+   "notes": "[svg в git · пара: слабо]"
+  },
+  {
+   "id": "ccna1-f6brnxb",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-gz7jfkc",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5-1"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-cwsot5o",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5-2"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-xso7oql",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5-3"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-3.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-epx2sze",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5-4"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-4.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ab5qbc2",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5-5"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-5.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-dosn5xa",
+   "kind": "native",
+   "display": {
+    "key": "1.2.5-6"
+   },
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-6.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-yubg7xz",
+   "kind": "native",
+   "display": {
+    "key": "1.7.2"
+   },
+   "out": {
+    "path": "01-networking-today/01.07-network-trends/assets/1.7.2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-mrkojno",
+   "kind": "native",
+   "display": {
+    "key": "1.7.3"
+   },
+   "out": {
+    "path": "01-networking-today/01.07-network-trends/assets/1.7.3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-loeqbxg",
+   "kind": "native",
+   "display": {
+    "key": "1.7.8"
+   },
+   "out": {
+    "path": "01-networking-today/01.07-network-trends/assets/1.7.8.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-j34l5i5",
+   "kind": "native",
+   "display": {
+    "key": "1.7.9"
+   },
+   "out": {
+    "path": "01-networking-today/01.07-network-trends/assets/1.7.9.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-z5gqhik",
+   "kind": "native",
+   "display": {
+    "key": "1.8.2"
+   },
+   "out": {
+    "path": "01-networking-today/01.08-network-security/assets/1.8.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-h5r7ilh",
+   "kind": "native",
+   "display": {
+    "key": "2.1.2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-dcaaa3v",
+   "kind": "native",
+   "display": {
+    "key": "2.1.3"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-bicqd6w",
+   "kind": "native",
+   "display": {
+    "key": "2.1.5-1"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-btrpst7",
+   "kind": "native",
+   "display": {
+    "key": "2.1.5-2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-fw2zal7",
+   "kind": "native",
+   "display": {
+    "key": "2.1.5-3"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-g56ph7a",
+   "kind": "native",
+   "display": {
+    "key": "2.5.4-1"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-qpnpkhk",
+   "kind": "native",
+   "display": {
+    "key": "2.5.4-2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-qp5oozr",
+   "kind": "native",
+   "display": {
+    "key": "2.5.4-3"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-nucf3ey",
+   "kind": "native",
+   "display": {
+    "key": "2.6.1-1"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-knkeogn",
+   "kind": "native",
+   "display": {
+    "key": "2.6.1-2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-bpz3hd2",
+   "kind": "native",
+   "display": {
+    "key": "2.6.2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-wj5mw56",
+   "kind": "native",
+   "display": {
+    "key": "2.7.1-1"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ifsiv47",
+   "kind": "native",
+   "display": {
+    "key": "2.7.1-2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-6dngai7",
+   "kind": "native",
+   "display": {
+    "key": "2.7.2"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-gofqsxl",
+   "kind": "native",
+   "display": {
+    "key": "3.4.1"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.04-standards-organizations/assets/3.4.1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-nab2qqf",
+   "kind": "native",
+   "display": {
+    "key": "3.7.10-1",
+    "title": "1"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07.10-lab-use-wireshark-to-view-network-traffic/assets/3.7.10-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-5jph2hf",
+   "kind": "native",
+   "display": {
+    "key": "3.7.10-2",
+    "title": "2"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.07.10-lab-use-wireshark-to-view-network-traffic/assets/3.7.10-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-y336qdk",
+   "kind": "native",
+   "display": {
+    "key": "4.1.1-1"
+   },
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ccps754",
+   "kind": "native",
+   "display": {
+    "key": "4.1.1-2"
+   },
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-3f4gdxk",
+   "kind": "native",
+   "display": {
+    "key": "4.1.1-3"
+   },
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-3.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-p5lr3b3",
+   "kind": "native",
+   "display": {
+    "key": "4.2.6"
+   },
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.6.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-iutgkin",
+   "kind": "native",
+   "display": {
+    "key": "4.3.2"
+   },
+   "out": {
+    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-7wgiylf",
+   "kind": "native",
+   "display": {
+    "key": "4.3.5"
+   },
+   "out": {
+    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.5.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ptbh5lw",
+   "kind": "native",
+   "display": {
+    "key": "4.4.1"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-kxplodp",
+   "kind": "native",
+   "display": {
+    "key": "4.4.2-1"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-tsyfrdq",
+   "kind": "native",
+   "display": {
+    "key": "4.4.2-2"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-m772rhq",
+   "kind": "native",
+   "display": {
+    "key": "4.4.2-3"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ivht2py",
+   "kind": "native",
+   "display": {
+    "key": "4.4.2-4"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-4.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ypodrqb",
+   "kind": "native",
+   "display": {
+    "key": "4.4.2-5"
+   },
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-5.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-dtvgu6p",
+   "kind": "native",
+   "display": {
+    "key": "4.5.1"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-a7hvqqr",
+   "kind": "native",
+   "display": {
+    "key": "4.5.4-1"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ywq5gdi",
+   "kind": "native",
+   "display": {
+    "key": "4.5.4-2"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-kvwhn4b",
+   "kind": "native",
+   "display": {
+    "key": "4.5.4-3"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-3.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-d5zmpe2",
+   "kind": "native",
+   "display": {
+    "key": "4.5.4-4"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-4.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-42msnpl",
+   "kind": "native",
+   "display": {
+    "key": "4.5.5-1"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-lfrcb5u",
+   "kind": "native",
+   "display": {
+    "key": "4.5.5-2"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-7hy5dyu",
+   "kind": "native",
+   "display": {
+    "key": "4.5.5-3"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-3.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-frtrius",
+   "kind": "native",
+   "display": {
+    "key": "4.5.5-4"
+   },
+   "out": {
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-4.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-h36nspa",
+   "kind": "native",
+   "display": {
+    "key": "4.6.3"
+   },
+   "out": {
+    "path": "04-physical-layer/04.06-wireless-media/assets/4.6.3.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-elrrqab",
+   "kind": "native",
+   "display": {
+    "key": "6.1.4"
+   },
+   "out": {
+    "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.4.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-3xpxy4c",
+   "kind": "native",
+   "display": {
+    "key": "7.1.6-1",
+    "title": "1"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01.06-lab-use-wireshark-to-examine-ethernet-frames/assets/7.1.6-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-kishtvv",
+   "kind": "native",
+   "display": {
+    "key": "7.1.6-2",
+    "title": "2"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01.06-lab-use-wireshark-to-examine-ethernet-frames/assets/7.1.6-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-we26wsr",
+   "kind": "native",
+   "display": {
+    "key": "7.1.6-3",
+    "title": "3"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.01.06-lab-use-wireshark-to-examine-ethernet-frames/assets/7.1.6-3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-nb77bgh",
+   "kind": "native",
+   "display": {
+    "key": "7.2.7-1",
+    "title": "topology"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.02.07-lab-view-network-device-mac-addresses/assets/7.2.7-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-to7otx2",
+   "kind": "native",
+   "display": {
+    "key": "7.3.7-1",
+    "title": "topology"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.03.07-lab-view-the-switch-mac-address-table/assets/7.3.7-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-332tkge",
+   "kind": "native",
+   "display": {
+    "key": "11.1.2-1"
+   },
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.2-1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-uirkeoi",
+   "kind": "native",
+   "display": {
+    "key": "12.4.2"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.04-gua-and-lla-static-configuration/assets/12.4.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-p7pvyyz",
+   "kind": "native",
+   "display": {
+    "key": "12.7.4-1",
+    "title": "topology"
+   },
+   "out": {
+    "path": "12-ipv6-addressing/12.07.04-lab-identify-ipv6-addresses/assets/12.7.4-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-3h3uurf",
+   "kind": "native",
+   "display": {
+    "key": "13.2.2"
+   },
+   "out": {
+    "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-yte6pgh",
+   "kind": "native",
+   "display": {
+    "key": "14.1.4"
+   },
+   "out": {
+    "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ezrs6qv",
+   "kind": "native",
+   "display": {
+    "key": "16.2.3-1"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-xuwo7pz",
+   "kind": "native",
+   "display": {
+    "key": "16.3.3"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.3.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-p3hq2xk",
+   "kind": "native",
+   "display": {
+    "key": "16.3.4"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.4.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-d7nducz",
+   "kind": "native",
+   "display": {
+    "key": "16.4.7-1",
+    "title": "topology"
+   },
+   "out": {
+    "path": "16-network-security-fundamentals/16.04.07-lab-configure-network-devices-with-ssh/assets/16.4.7-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-wwo23ap",
+   "kind": "native",
+   "display": {
+    "key": "17.2.1"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.02-small-network-applications-and-protocols/assets/17.2.1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-ym2ty7j",
+   "kind": "native",
+   "display": {
+    "key": "17.2.3"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.02-small-network-applications-and-protocols/assets/17.2.3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-y4wmyum",
+   "kind": "native",
+   "display": {
+    "key": "17.3.2"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-qhqi5op",
+   "kind": "native",
+   "display": {
+    "key": "17.3.3"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.3.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-mjpqy35",
+   "kind": "native",
+   "display": {
+    "key": "17.4.6-1",
+    "title": "topology"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04.06-lab-test-network-latency-with-ping-and-traceroute/assets/17.4.6-1.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-mgxne4i",
+   "kind": "native",
+   "display": {
+    "key": "17.4.6-2",
+    "title": "2"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.04.06-lab-test-network-latency-with-ping-and-traceroute/assets/17.4.6-2.png",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-uo3socf",
+   "kind": "native",
+   "display": {
+    "key": "17.5.1"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.1.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-tcksp6p",
+   "kind": "native",
+   "display": {
+    "key": "17.5.2"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.2.jpg",
+    "format": "native"
+   },
+   "status": "manual"
+  },
+  {
+   "id": "ccna1-tf4stvf",
+   "kind": "native",
+   "display": {
+    "key": "17.5.3"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.3.jpeg",
+    "format": "native"
+   },
+   "status": "manual"
+  }
+ ]
+}
