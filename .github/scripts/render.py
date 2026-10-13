@@ -43,7 +43,10 @@ def timeline(kf, dur, dims=1):
     if pts[0][0] > 0: pts.insert(0, (0.0, pts[0][1], "L"))
     if pts[-1][0] < dur: pts.append((dur, pts[-1][1], "L"))
     if pts[-1][0] > dur: pts = [p for p in pts if p[0] <= dur] + [(dur, pts[-1][1], "L")]
-    kt = ";".join(fmt(t / dur) for t, _, _ in pts)
+    for p in (3, 4, 5, 6, 7):  # the least precision that keeps keyTimes strictly increasing (a 1 ms step must survive rounding)
+        kts = [(f"{t / dur:.{p}f}".rstrip("0").rstrip(".") or "0") for t, _, _ in pts]
+        if all(float(a) < float(b) for a, b in zip(kts, kts[1:])): break
+    kt = ";".join(kts)
     vals = ";".join((fmt(v) if dims == 1 else " ".join(fmt(x) for x in v)) for _, v, _ in pts)
     eas = [e for _, _, e in pts][:-1]  # easing of the segment ENTERING the next key is stored on the next key in Figma; we attach per segment
     if all(e == "L" for e in eas):
@@ -69,16 +72,30 @@ def animate_tf(kind, kf, dur, dims):
     return f'<animateTransform attributeName="transform" type="{kind}" additive="sum" dur="{fmt(dur)}s" repeatCount="indefinite" keyTimes="{kt}" values="{vals}"{cm}/>'
 
 def merge_xy(tx, ty, dur, base=(0.0, 0.0)):
-    """two scalar tracks -> one 2-D track on the union of key times (piecewise-linear sampling)."""
-    def sample(kf, t, b):
-        if not kf: return b
-        pts = sorted((float(a), float(v)) for a, v, _ in kf)
-        if t <= pts[0][0]: return pts[0][1]
-        for (t0, v0), (t1, v1) in zip(pts, pts[1:]):
-            if t0 <= t <= t1: return v0 if t1 == t0 else v0 + (v1 - v0) * (t - t0) / (t1 - t0)
-        return pts[-1][1]
-    times = sorted({float(t) for kf in (tx, ty) for t, _, _ in (kf or [])} | {0.0, dur})
-    return [[t, (sample(tx, t, base[0]), sample(ty, t, base[1])), "L"] for t in times]
+    """two scalar tracks -> one 2-D track on the union of key times. A segment entering a HOLD key is a
+    step (the value stays until just before the key), as in timeline(); sampling it linearly made a
+    packet that should jump out and slide back drift the long way instead (learn-ccna1#25: 16.2.4-1).
+    A key's easing is kept when the other track has no key there (its segment is linear anyway)."""
+    def prep(kf): return sorted((float(a), float(v), e) for a, v, e in (kf or []))
+    def sample(pts, t, b):  # -> (value, easing of the key at t | None when interpolated)
+        if not pts: return b, None
+        if t <= pts[0][0]: return pts[0][1], (pts[0][2] if t == pts[0][0] else None)
+        for (t0, v0, _), (t1, v1, e1) in zip(pts, pts[1:]):
+            if t == t1: return v1, e1
+            if t0 <= t < t1: return (v0 if e1 == "HOLD" or t1 == t0 else v0 + (v1 - v0) * (t - t0) / (t1 - t0)), None
+        return pts[-1][1], None
+    px, py = prep(tx), prep(ty)
+    times = {0.0, dur}
+    for pts in (px, py):
+        for i, (t, _, e) in enumerate(pts):
+            times.add(t)
+            if e == "HOLD" and i > 0 and t - pts[i - 1][0] > 0.002: times.add(t - 0.001)
+    out = []
+    for t in sorted(times):
+        (vx, ex), (vy, ey) = sample(px, t, base[0]), sample(py, t, base[1])
+        eas = [e for e in (ex, ey) if e and e != "L"]
+        out.append([t, (vx, vy), "HOLD" if "HOLD" in eas else (eas[0] if eas else "L")])
+    return out
 
 def centre_from_dump(node):
     """Fallback: the dump's parent-relative matrix applied to the node's half size."""

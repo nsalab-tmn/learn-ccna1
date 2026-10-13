@@ -428,51 +428,63 @@ def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key:
             out.append(nid)
             nid = idx[nid][1]["id"]
         return out[::-1]
-    cand = []
+    def expand(nid: str) -> list[str]:
+        """nid, then — when it is a clipping container (synthesised empty below) — its visible absent
+        children, depth-first. The exporter culls a parked window together with everything in it, and
+        what it shows is usually an untracked instance (the arrow inside a tracked window frame): without
+        this the window comes back empty (learn-ccna1#25 review: 6.2.5-1, 16.2.3-2)."""
+        out = [nid]
+        n = idx[nid][0]
+        if n.get("clipsContent") and visible(nid):
+            for c in n.get("children", []):
+                if c.get("visible", True) and not present(c["id"]):
+                    out += expand(c["id"])
+        return out
+    todo: list[str] = []
     for t in missing:
         for nid in chain(t):
-            n = idx[nid][0]
-            if nid not in cand and visible(nid) and not n.get("clipsContent"):
-                cand.append(nid)
+            for x in expand(nid):
+                if x not in todo:
+                    todo.append(x)
+    cand = [nid for nid in todo if visible(nid) and not idx[nid][0].get("clipsContent")]
     urls = export_svg(token, file_key, cand, include_node_id=True, absolute_bounds=True) if cand else {}
     injected, hidden, defs = [], [], []
-    for t in missing:
-        for nid in chain(t):
-            if present(nid):
-                continue  # came along with an ancestor's standalone export
-            n, p = idx[nid]
-            b = n.get("absoluteBoundingBox") or {"x": fb["x"], "y": fb["y"], "width": 0, "height": 0}
-            dx, dy = b["x"] - fb["x"], b["y"] - fb["y"]
-            op = f' opacity="{_num(n["opacity"])}"' if n.get("opacity", 1) < 1 else ""
-            if not visible(nid):
-                fragment, _ = f'<g data-node-id="{nid}"/>', hidden.append(nid)
-            elif n.get("clipsContent"):
-                cid = "nsalab-clip-" + nid.replace(":", "-").replace(";", "-")
-                defs.append(f'<clipPath id="{cid}"><rect x="{_num(dx)}" y="{_num(dy)}" width="{_num(b["width"])}" height="{_num(b["height"])}"/></clipPath>')
-                fragment = f'<g data-node-id="{nid}" clip-path="url(#{cid})"{op}></g>'
-                injected.append(nid)
-            elif not urls.get(nid):
-                fragment, _ = f'<g data-node-id="{nid}"/>', hidden.append(nid)  # Figma renders nothing for it
-            else:
-                data = download(urls[nid])
-                short = degraded(data, n)
-                if short:
-                    retry = export_svg(token, file_key, [nid], include_node_id=True, absolute_bounds=True).get(nid)
-                    if retry:
-                        data = download(retry)
-                        short = degraded(data, n)
-                if short:
-                    return svg, injected, hidden, f"degraded standalone export of {nid} — {short[0]} of {short[1]} image fills, twice; committed file kept"
-                text = data.decode("utf-8")
-                inner = text[text.index(">", text.index("<svg")) + 1:text.rindex("</svg>")]
-                for d in re.findall(r"<defs>.*?</defs>", inner, re.S):
-                    defs.append(d[6:-7])
-                    inner = inner.replace(d, "")
-                inner = inner.replace(f'data-node-id="{nid}"', f'data-export-root="{nid}"', 1)
-                fragment = (f'<g data-node-id="{nid}" data-export-origin="{_num(dx)} {_num(dy)}" '
-                            f'transform="translate({_num(dx)} {_num(dy)})"{op}>{inner}</g>')
-                injected.append(nid)
-            svg = _insert_child(svg, p, n, fragment)
+    for nid in todo:
+        if present(nid):
+            continue  # came along with an ancestor's standalone export
+        n, p = idx[nid]
+        b = n.get("absoluteBoundingBox") or {"x": fb["x"], "y": fb["y"], "width": 0, "height": 0}
+        dx, dy = b["x"] - fb["x"], b["y"] - fb["y"]
+        op = f' opacity="{_num(n["opacity"])}"' if n.get("opacity", 1) < 1 else ""
+        if not visible(nid):
+            fragment, _ = f'<g data-node-id="{nid}"/>', hidden.append(nid)
+        elif n.get("clipsContent"):
+            cid = "nsalab-clip-" + nid.replace(":", "-").replace(";", "-")
+            defs.append(f'<clipPath id="{cid}"><rect x="{_num(dx)}" y="{_num(dy)}" width="{_num(b["width"])}" height="{_num(b["height"])}"/></clipPath>')
+            fragment = f'<g data-node-id="{nid}" clip-path="url(#{cid})"{op}></g>'
+            injected.append(nid)
+        elif not urls.get(nid):
+            fragment, _ = f'<g data-node-id="{nid}"/>', hidden.append(nid)  # Figma renders nothing for it
+        else:
+            data = download(urls[nid])
+            short = degraded(data, n)
+            if short:
+                retry = export_svg(token, file_key, [nid], include_node_id=True, absolute_bounds=True).get(nid)
+                if retry:
+                    data = download(retry)
+                    short = degraded(data, n)
+            if short:
+                return svg, injected, hidden, f"degraded standalone export of {nid} — {short[0]} of {short[1]} image fills, twice; committed file kept"
+            text = data.decode("utf-8")
+            inner = text[text.index(">", text.index("<svg")) + 1:text.rindex("</svg>")]
+            for d in re.findall(r"<defs>.*?</defs>", inner, re.S):
+                defs.append(d[6:-7])
+                inner = inner.replace(d, "")
+            inner = inner.replace(f'data-node-id="{nid}"', f'data-export-root="{nid}"', 1)
+            fragment = (f'<g data-node-id="{nid}" data-export-origin="{_num(dx)} {_num(dy)}" '
+                        f'transform="translate({_num(dx)} {_num(dy)})"{op}>{inner}</g>')
+            injected.append(nid)
+        svg = _insert_child(svg, p, n, fragment)
     if defs:
         block = "".join(defs)
         svg = svg.replace("</defs>", block + "</defs>", 1) if "</defs>" in svg else svg.replace("</svg>", f"<defs>{block}</defs></svg>")
