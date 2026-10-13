@@ -19,9 +19,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.1.svg"
+    "legacy": "1.2.1.svg",
+    "synced": {
+     "figmaVersion": "2409713069561001410",
+     "at": "2026-10-13T05:59:31Z",
+     "sha256": "d08dd02dfa2ea8f1503afbca054aa9c2842fecb9588b0be2c91b2790736a6e21"
+    }
    }
   },
   {
@@ -38,9 +43,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.2.svg"
+    "legacy": "1.2.2.svg",
+    "synced": {
+     "figmaVersion": "2409713069561001410",
+     "at": "2026-10-13T05:59:31Z",
+     "sha256": "6fa70dc317b14ac0d1ca618e1c149ceaebc6f6cec8b16929a8495e511978e924"
+    }
    }
   },
   {
@@ -83,9 +93,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.4.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.4.svg"
+    "legacy": "1.2.4.svg",
+    "synced": {
+     "figmaVersion": "2409713069561001410",
+     "at": "2026-10-13T05:59:31Z",
+     "sha256": "9222c7cb993f04caa9e8733d75167bd3357d00741eb106ad1bb7bf8f3d7fd5e9"
+    }
    }
   },
   {
