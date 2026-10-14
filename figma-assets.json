@@ -10193,8 +10193,7 @@
    },
    "out": {
     "path": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.svg",
-    "format": "animated-svg",
-    "fallback": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.png"
+    "format": "animated-svg"
    },
    "status": "synced",
    "figma": {
