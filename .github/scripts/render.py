@@ -17,9 +17,16 @@ sit inside a <g data-export-origin="dx dy" transform="translate(dx dy)"> wrapper
 is subtracted for tracked descendants. Without --doc the dump's parent-relative `m` is used,
 which is only right for direct children of the frame (the 2026-10-13 "arrow falls apart" defect).
 Every tracked node must be present in the base: a missing one is an error (exit 1), not a note.
+A TRANSLATION track is stored in the node's *parent's* axes (Figma Motion keys the relative transform),
+so it is mapped through the linear part of every ancestor below the frame before it becomes a canvas
+translate: the children of a 180°-rotated arrow frame (shaft + head, the detached "стрелка" build) moved
+the wrong way and the arrow grew out of the canvas (learn-ccna3 3.9.3, 10.4.6; 2026-10-14). A tracked
+ancestor contributes the dump's exact 2×2 (rotation, flips); an untracked one the REST `rotation`
+(radians, r = −plugin rotation) — hence --doc. A mirrored ancestor also mirrors a ROTATION track and a
+±90° one swaps the SCALE axes on the canvas.
 Usage: render.py base.svg tracks.json out.svg [--doc frame.json] [--width 1100]
 """
-import json, re, sys, xml.etree.ElementTree as ET
+import json, math, re, sys, xml.etree.ElementTree as ET
 
 SVG = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG)
@@ -103,22 +110,54 @@ def centre_from_dump(node):
     w, h = node["w"] / 2, node["h"] / 2
     return (m[0][0] * w + m[0][1] * h + m[0][2], m[1][0] * w + m[1][1] * h + m[1][2])
 
-def build_smil(node, dur, centre):
+IDENTITY = ((1.0, 0.0), (0.0, 1.0))
+
+def ancestor_linear(nid, parents, dump_m, rot_of, root_id):
+    """Product of the linear 2×2 parts of the node's ancestors below the frame, outermost first — the map
+    from the node's parent axes (where Motion keys its translation) to the canvas. A tracked ancestor
+    gives the dump's `m` (exact: rotation, flips, skews); an untracked one the REST `rotation` in
+    radians, which is minus the plugin's rotation: [[cos r, −sin r], [sin r, cos r]]."""
+    A = [[1.0, 0.0], [0.0, 1.0]]
+    p = parents.get(nid)
+    while p is not None and p != root_id:
+        if p in dump_m:
+            m = dump_m[p]; L = [[m[0][0], m[0][1]], [m[1][0], m[1][1]]]
+        else:
+            r = rot_of.get(p) or 0.0
+            L = [[math.cos(r), -math.sin(r)], [math.sin(r), math.cos(r)]] if abs(r) > 1e-9 else None
+        if L:
+            A = [[L[0][0] * A[0][0] + L[0][1] * A[1][0], L[0][0] * A[0][1] + L[0][1] * A[1][1]],
+                 [L[1][0] * A[0][0] + L[1][1] * A[1][0], L[1][0] * A[0][1] + L[1][1] * A[1][1]]]
+        p = parents.get(p)
+    return ((A[0][0], A[0][1]), (A[1][0], A[1][1]))
+
+def build_smil(node, dur, centre, lin=IDENTITY):
     tr = node["tracks"]; out = []
     if "OPACITY" in tr:
         eid = "fx-" + node["id"].replace(":", "-")
         out.append(animate("opacity", tr["OPACITY"]["kf"], dur, f' href="#{eid}" xlink:href="#{eid}"'))
     tx, ty = tr.get("TRANSLATION_X", {}).get("kf"), tr.get("TRANSLATION_Y", {}).get("kf")
     rot, sx, sy = tr.get("ROTATION", {}).get("kf"), tr.get("SCALE_X", {}).get("kf"), tr.get("SCALE_Y", {}).get("kf")
+    (a, b), (c, d) = lin
+    plain = all(abs(x - y) < 1e-9 for x, y in zip((a, b, c, d), (1.0, 0.0, 0.0, 1.0)))
     chain = []
-    if tx or ty: chain.append(animate_tf("translate", merge_xy(tx, ty, dur), dur, 2))
+    if tx or ty:
+        pts = merge_xy(tx, ty, dur)
+        if not plain:  # parent-axes translation -> canvas translation
+            pts = [[t, (a * vx + b * vy, c * vx + d * vy), e] for t, (vx, vy), e in pts]
+        chain.append(animate_tf("translate", pts, dur, 2))
     if rot or sx or sy:
         cx, cy = centre
         chain.append(f'<animateTransform attributeName="transform" type="translate" additive="sum" dur="{fmt(dur)}s" repeatCount="indefinite" values="{fmt(cx)} {fmt(cy)}"/>')
-        if rot: chain.append(animate_tf("rotate", [[t, -v, e] for t, v, e in rot], dur, 1))  # Figma rotation is CCW-positive; SVG rotate is CW-positive in y-down space
+        if rot:
+            sgn = -1.0 if a * d - b * c < 0 else 1.0  # a mirrored ancestor mirrors the spin
+            chain.append(animate_tf("rotate", [[t, -v * sgn, e] for t, v, e in rot], dur, 1))  # Figma rotation is CCW-positive; SVG rotate is CW-positive in y-down space
         if sx or sy:
             sxk = sx or [[0, tr.get("SCALE_X", {}).get("base", 1), "L"]]; syk = sy or [[0, tr.get("SCALE_Y", {}).get("base", 1), "L"]]
-            chain.append(animate_tf("scale", merge_xy(sxk, syk, dur, (1.0, 1.0)), dur, 2))
+            pts = merge_xy(sxk, syk, dur, (1.0, 1.0))
+            if abs(b) > abs(a):  # a ±90° ancestor: the node's x axis lies along the canvas y axis
+                pts = [[t, (vy, vx), e] for t, (vx, vy), e in pts]
+            chain.append(animate_tf("scale", pts, dur, 2))
         chain.append(f'<animateTransform attributeName="transform" type="translate" additive="sum" dur="{fmt(dur)}s" repeatCount="indefinite" values="{fmt(-cx)} {fmt(-cy)}"/>')
     return out, chain
 
@@ -142,21 +181,28 @@ def export_origin(text, pos):
     return best or (0.0, 0.0)
 
 def index_doc(doc):
-    """{id: absoluteBoundingBox} for the frame subtree, plus the frame origin."""
-    boxes = {}
-    stack = [doc]
+    """{id: absoluteBoundingBox} for the frame subtree, the frame origin, {id: parent id} and {id: REST rotation}."""
+    boxes, parents, rots = {}, {}, {}
+    stack = [(doc, None)]
     while stack:
-        n = stack.pop()
+        n, p = stack.pop()
         if n.get("absoluteBoundingBox"): boxes[n["id"]] = n["absoluteBoundingBox"]
-        stack.extend(n.get("children", []))
+        if p is not None: parents[n["id"]] = p
+        if n.get("rotation"): rots[n["id"]] = float(n["rotation"])
+        stack.extend((c, n["id"]) for c in n.get("children", []))
     fb = doc.get("absoluteBoundingBox") or {"x": 0, "y": 0}
-    return boxes, (fb["x"], fb["y"])
+    return boxes, (fb["x"], fb["y"]), parents, rots
 
 def render(base_svg, tracks, out_path, width=None, doc=None):
     dur = float(tracks["duration"])
     text = open(base_svg, encoding="utf-8").read()
     if "data-node-id" not in text: raise SystemExit("base SVG has no data-node-id attributes — export with svg_include_node_id=true")
-    boxes, (fx, fy) = index_doc(doc) if doc else ({}, (0.0, 0.0))
+    if doc:
+        boxes, (fx, fy), parents, rots = index_doc(doc); root_id = doc["id"]
+    else:  # no document: only tracked ancestors are known (the dump's `p` chain)
+        boxes, (fx, fy), rots = {}, (0.0, 0.0), {}
+        parents = {n["id"]: n["p"] for n in tracks["nodes"] if n.get("p")}; root_id = tracks.get("anim")
+    dump_m = {n["id"]: n["m"] for n in tracks["nodes"] if n.get("m")}
     missing, wrapped, fallback = [], 0, []
     for node in tracks["nodes"]:
         nid = node["id"]
@@ -170,7 +216,7 @@ def render(base_svg, tracks, out_path, width=None, doc=None):
         else:
             centre = centre_from_dump(node)
             if doc and any(k in node["tracks"] for k in ("ROTATION", "SCALE_X", "SCALE_Y")): fallback.append(nid)
-        anims, chain = build_smil(node, dur, centre)
+        anims, chain = build_smil(node, dur, centre, ancestor_linear(nid, parents, dump_m, rots, root_id))
         tag, attrs, start = m.group(1), m.group(2), m.start()
         elem = text[start:end]
         if anims:  # give the element an id so the opacity <animate> can target it directly
