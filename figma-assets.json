@@ -1205,10 +1205,16 @@
     "format": "animated-svg",
     "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.gif"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-47jzlgz/tracks.json",
    "provenance": {
-    "legacy": "3.3.5-1.gif"
+    "legacy": "3.3.5-1.gif",
+    "synced": {
+     "figmaVersion": "2410297705852300125",
+     "at": "2026-10-14T19:57:27Z",
+     "sha256": "7366c529766e302876beb21221e5a4a2f43ea1f806a509e23b997eda22837de6",
+     "tracksSha256": "39c230c39aa53662dcdd920052471522522dbb4fa96de634c8aa2da4c59af153"
+    }
    },
    "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
@@ -1230,10 +1236,16 @@
     "format": "animated-svg",
     "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.gif"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-foep2qp/tracks.json",
    "provenance": {
-    "legacy": "3.3.5-2.gif"
+    "legacy": "3.3.5-2.gif",
+    "synced": {
+     "figmaVersion": "2410297705852300125",
+     "at": "2026-10-14T19:57:27Z",
+     "sha256": "381b920740bddebe9ffcb78c3e6043db3291c9814809e4ae359da53231f620c0",
+     "tracksSha256": "1c49d92fb16ee717d609b7133147717f953a92ab14784494ee0eabec9415c7b7"
+    }
    },
    "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
@@ -1723,10 +1735,16 @@
     "format": "animated-svg",
     "fallback": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.gif"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-uqbi2ad/tracks.json",
    "provenance": {
-    "legacy": "4.1.2.gif"
+    "legacy": "4.1.2.gif",
+    "synced": {
+     "figmaVersion": "2410297705852300125",
+     "at": "2026-10-14T19:57:27Z",
+     "sha256": "e24ecddc40f6a9c410fa118d70237a3ddf9bd0df7a1473ccc481e97d1b70cac8",
+     "tracksSha256": "24ba2b90612d1c0157091eb379368294c68264e0587bcf6e994eeecc1684a285"
+    }
    },
    "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
