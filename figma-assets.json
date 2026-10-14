@@ -75,9 +75,9 @@
    "provenance": {
     "legacy": "1.2.3.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "a37a3c96d5bf75197c43a69240776ce3311f44c0590237e391cc2f49728112a0",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "c6e8468526001a4fcc3d5ad67e19541496c51ee4916a20a610fb4219756c6919",
      "tracksSha256": "4dbde5a91e76bf1fc5dd602c7862bf93cc380327d6f223d420ed544ba9048edc"
     }
    },
@@ -708,9 +708,9 @@
    "provenance": {
     "legacy": "3.1.3-1.png",
     "synced": {
-     "figmaVersion": "2409964777200941341",
-     "at": "2026-10-13T21:39:46Z",
-     "sha256": "d8a0e028177c33b72b5c172f62ee9e0157f5ca228b980a24979d3f522dbc852d",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "ae93a86e64545a33808605181cb3b53d848ecef66ace99b89868ec92e9af86db",
      "tracksSha256": "4fbac2d4053b007dc78e8040bd0e03d935cce5a2c97ee69eb5bbfbb481de07b9"
     }
    },
@@ -738,9 +738,9 @@
    "provenance": {
     "legacy": "3.1.3-2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "7b31042f4ce5e0918a48273b432172158c7a0ed214e6a9fc9ccb978d1c901052",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "fd7669b963395ef4739dadf571e3d2c1a7ef0cf546331b5a8369e9f4a09bb763",
      "tracksSha256": "6293c87e71cf246ba831cf244ab57ae78ada73eefe9fb69762a7a616738591e2"
     }
    },
@@ -768,9 +768,9 @@
    "provenance": {
     "legacy": "3.1.6-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "e36f08a03c2090b90380bde8a1fdb0bfbfc1ea4ac886595ebd757754eb905ef2",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "bec845a485bb40ab6b7bb3e3ac87165116275f2bec85a12d7d4551e325388138",
      "tracksSha256": "127fcbb14372599f1c3268a91e040dd88626da2c879eb2ecfb9333a29d3c82b4"
     }
    },
@@ -798,9 +798,9 @@
    "provenance": {
     "legacy": "3.1.6-2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "f3df94b85a51504516f9a83ee1c527cf4f3430183b334b9ac3c941032cc643b3",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "351970d58439041101748e92bf3d84bdc9a7409b6247695eb1fedf83e5726913",
      "tracksSha256": "f121214a23335ec17ef6da7dbf4777a50103ba245a5fb0359b9fa2d047583e56"
     }
    },
@@ -828,9 +828,9 @@
    "provenance": {
     "legacy": "3.1.7-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "9c8e3339224c93ad1be2570ffccd9ee954c09c4a6a59e9246ddaf927eb52c158",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "f5d6d9c13f2f53c62d194ae75757df36f5c90066fa338bec9e6c7ea4d60e7bcd",
      "tracksSha256": "f87ddb0d758ff18c162fc2ac2daf50675786a69f845568d4b65770da22397f7a"
     }
    },
@@ -883,9 +883,9 @@
    "provenance": {
     "legacy": "3.1.8-1.png",
     "synced": {
-     "figmaVersion": "2409964777200941341",
-     "at": "2026-10-13T21:39:46Z",
-     "sha256": "2a32fa40964198eaefaae398762fa337e4e742b0cdaae713c4a69e2607d820bf",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "4b47c29da9f6f230751d9bcc2f3a9456fdef97942bbe2b8a6f32eff7a3ed2875",
      "tracksSha256": "1608073633f0f6f02cd23020c033c0c5ceb058e772ff47c1314c41f738d88c87"
     }
    },
@@ -913,10 +913,10 @@
    "provenance": {
     "legacy": "3.1.8-2.png",
     "synced": {
-     "figmaVersion": "2409964777200941341",
-     "at": "2026-10-13T21:39:46Z",
-     "sha256": "73d2de8453ed077d1740b7e20137db5566207775c3d2cabe7b8821e92fab53ed",
-     "tracksSha256": "0e430ff9859c9ffbd8449fb8acd0477c5439117d427c3395856b17693e66e93c"
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "d57a5d2317c94525339952727ef664743d50e16f43d2a9bc53b0b48425732833",
+     "tracksSha256": "279d4df4afcf5ae9626a5a5ec02216c683b5b97aadf109c8ebdb39990ee3c65d"
     }
    },
    "notes": "[APNG в git (анимация) · пара: слабо]"
@@ -944,9 +944,9 @@
    "provenance": {
     "legacy": "3.1.9.png",
     "synced": {
-     "figmaVersion": "2409964777200941341",
-     "at": "2026-10-13T21:39:46Z",
-     "sha256": "0bac7ace87e296a35fe122537821696acfc6114e081a3b2610a6300866e13d04",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "78f103a1bd8b3e37252bbf9675c58d7d8b502b2f25cbbd0216ae82b3d83eacd9",
      "specSha256": "ead41bf53bce9f187833d7760b5f7025a840c950263e24736eb441b767120e21",
      "tracksSha256": "b6917dbea549bd10b764738a270836cf1660d35da52907831516b0005f7d18cc"
     }
@@ -976,9 +976,9 @@
    "provenance": {
     "legacy": "3.1.10-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "9bde0d548aa1fba78e21415e0a9def1083457f8e7f46c7b0d80f625ea24cf732",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "29d2982257c4bf48fa5d6995159e4e15ea44ec7bbdc8a1eff3d25ce3fb2058c5",
      "specSha256": "2eb1048df202f172d64e63653a8cdf38b517fe8fcfbb831736cb5919473b546a",
      "tracksSha256": "8ff600614c1e1a720800b26320cf5de7b3992152809345174bdaf5046c7eacc3"
     }
@@ -1008,9 +1008,9 @@
    "provenance": {
     "legacy": "3.1.10-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "9442fca3ca11cbd059558940c6e194782b8fba33c4d51fa481f6e7cf0d1b5ca3",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "0b6828bdab1b68a9237e6ead02bb1891918821881b1ab729dfdf2a673357e11c",
      "specSha256": "df6f09b66b83d556f95069cc849a1e60ef9c865a95b40f136f18d1a3d3f36f56",
      "tracksSha256": "bb4e33e036835ef679f7b6fff5807d35a8d126b2011263e9509e695ae2202c62"
     }
@@ -1352,9 +1352,9 @@
    "provenance": {
     "legacy": "3.6.1.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "c4a96cc3ba387aa308044c1cc3172e69aac83f6a5d5f4b66480534ecee2b0325",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "3dcd5c196b48e0505ce922d0061b6f1bfef004c6b5b0772ba94009b9d82367fe",
      "specSha256": "2a46fd8ff4cb37bdbe8194df83d3fddd1ef01899cfad06e52deb4af28727e1ce",
      "tracksSha256": "0bd0d6a983dd932714b38f3acdd778746d40b38511acd4ab08d2ae9381aa85b4"
     }
@@ -1433,9 +1433,9 @@
    "provenance": {
     "legacy": "3.6.4.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "e18ab2d9ad0e18a46bde68a06c5e71cbbff3680d4a4009035acbb2642426850e",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "6b2fe0d3388f488505dd96dfe814ba281fa9df85878f1b4eb7535dc5f62def3e",
      "specSha256": "ba1e47498c679d0406e4b0ebb2ea863f28c6908836d18223828e42d83551a21a",
      "tracksSha256": "29e8ef3045233061b263923c51b68757f82a1d186ac1462755e2708a5e39163b"
     }
@@ -1465,9 +1465,9 @@
    "provenance": {
     "legacy": "3.6.5.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "332f6d4b5b8a726531906e042bc50e420d06a6ea60523e54cab83005ea2c3147",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "f8e45b23b2ab0b11bed826c52f5b6ebd0b7de12d146ef650e2e31097c0d0b740",
      "specSha256": "57f0f8d8bfa8859c224f165242c5a5b497259175c443252e02bc279c1be463da",
      "tracksSha256": "2396b774c82f137463eb50ff2ebff3b225a562a9b3dde09a5441b2a49f197ca3"
     }
@@ -2766,9 +2766,9 @@
    "provenance": {
     "legacy": "6.1.3.png",
     "synced": {
-     "figmaVersion": "2409964948529403206",
-     "at": "2026-10-13T21:46:10Z",
-     "sha256": "477ffb618a2491e3fe3c3fe6419f2932af95651f6a48a27fcc5fc3344628b08c",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "963e52bdda6c9716c10748c718801edd62edc9267342011a08287d589c225881",
      "specSha256": "5ad58147ec91dd3aa451db185bc8b9f4a45b1fdf3b78dc56705f24d85234435f",
      "tracksSha256": "4afd1d05dc04a1a3ed3a1ee2c9f8c71617a995f2f94c96a02a9d461d77bc293f"
     }
@@ -2998,9 +2998,9 @@
    "provenance": {
     "legacy": "6.2.5-1.png",
     "synced": {
-     "figmaVersion": "2409964777200941341",
-     "at": "2026-10-13T21:17:09Z",
-     "sha256": "61df291fbe11249f98ab41d7346e89c986eaeacb82e01be6dcf56b951baf71fd",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "394cc9c8ad79a2ac15614f3de489f192e6ab4e958f2f850a2e09d6081022d878",
      "specSha256": "0eb7913d9ca2663d04eaae6b9995e5d9b6e3cb32049d8201fcb7fd805ed59de6",
      "tracksSha256": "6a9dd7229dd54ffb6575fbc26c0fcab119f3b4604e0d1a9fc5c25410a88ba917"
     }
@@ -3030,9 +3030,9 @@
    "provenance": {
     "legacy": "6.2.5-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "5bf910fd25a1f771a457ff604037c448ede0e3ff66cfcbdbe42c277ffe56a103",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "2795ab5e12b9d33560a88b9ae13792134fa522d5f6427e6214f58f8b78e2b9d6",
      "specSha256": "49adaf975559f40831b42c419b7416144860b4b2951d3a1044cca80b84c636fe",
      "tracksSha256": "3ce7fc1a0faa980e24dc59397d772a912303f4d591caa94d91c7aab3ca9dddc0"
     }
@@ -3337,9 +3337,9 @@
    "provenance": {
     "legacy": "6.3.4.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "4e71bc4109d08a70d76a1952f2cc37840499e8166ae725f6431bc4e65c9feef7",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "1c772756c819e8384978bc05a6d1e7d948c3e036ad33b0f39e2aa4a3004b6098",
      "specSha256": "ebc6ab88c612862e798db5f23077ec90d559ccc1a065a5b26e02bb85d9649fde",
      "tracksSha256": "28a41daaa9f504ee2ac10938beb94d14c0b36ffc4524544b66073be3474ed758"
     }
@@ -3569,9 +3569,9 @@
    "provenance": {
     "legacy": "7.2.3.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "56243a74ea3e14a54076e54a8cd29100895885062db223c8b943156351dc3075",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "e8c878bcb05967e8c581e3cf0a693b9ed7ad21fc24ed02b7b8fee2fd7af658a6",
      "specSha256": "9a9130101059219511561ef7803c7fab8e6ca80ce1e1afcc0db22b4820f62678",
      "tracksSha256": "a145d8721472a11928a0f4003b567b5bc54560387f92a5bd152fcdfac059864b"
     }
@@ -3601,9 +3601,9 @@
    "provenance": {
     "legacy": "7.2.4.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "fb1a79bffa5ae8209354ac9a8579985b78fe3575f73aed69f03f91208b3f6369",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "f18d1bb4f6ed711512b46b6f82ecb29f62ecfcbd33ee7113cd08cc59a0c3412b",
      "specSha256": "9fc69953f9bbc53a3ffc17e8b6a2ae38299fe7fe499dee004423363b97717f98",
      "tracksSha256": "89ccdd201eb4730d41cf893d3abc13a839cb5a872142a4975437aa13253bf967"
     }
@@ -3633,9 +3633,9 @@
    "provenance": {
     "legacy": "7.2.5.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "a6185a6bff62e8ba7048cf5a17307d5ef0a8b3467d42ca6bca487c87116fe959",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "3e00b936eabf212b07a698b86d460fa58d9b7103e52ada57350cebac2f2aa6cd",
      "specSha256": "490dfe365af9b488876c2e35dca4de85adc657e884198d4beccb236f6c7ba252",
      "tracksSha256": "50bb5aa7714fe9ab80227dbd2af5e4e1d446a002652ba8097db8cc48f4683c43"
     }
@@ -3665,9 +3665,9 @@
    "provenance": {
     "legacy": "7.2.6.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "a496931052228fae1bfb15a7465716de87a27073921668c51742aa2ad3a09713",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "a76cde87f44f7cef5a5743af1e787a0351a5830176b5f9b4b6c89a02c0d0cb20",
      "specSha256": "3cfb456c80610fbff36b593b8950b0a30e8a9f61dbda0262acfc5e88c079641a",
      "tracksSha256": "9c32184a65b8f0a54476f8361fc42eeb6f4eecef193195861e4ece7aec078341"
     }
@@ -3847,9 +3847,9 @@
    "provenance": {
     "legacy": "7.4.1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "65718e1be2d7320ec3afa911d8d5dc407c419f4b6decc4539906b1d72019478c",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "364d088c887b1a7fe7932d7935a2d8f32f459f3bd3f7a1719812f9088cf153d0",
      "specSha256": "10ee5b93ef9afcd384fd3ddec0a196b45352675513628efdb24331f7cd687469",
      "tracksSha256": "dc9772bae9545ea0b2c4aaf9b19885512b4665940be8fbf2a6d35dadf9f3869a"
     }
@@ -3879,9 +3879,9 @@
    "provenance": {
     "legacy": "7.4.2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "966d011eab8887d407048a0fe9737954d94d877d5183fbb98d96d5d7d9ff7089",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "29d66624c91cae4d20c6c5cab9c5fa44f3a88dfb9bd9eb474f0ac6e365017d8b",
      "specSha256": "f5b1eacb91844c099bd5e8f32f6418b224859dfb04a1a9ee1eb15627f27936ae",
      "tracksSha256": "c63cfa0faf739ba38472bca60713dd391f9a91f3a833b7b8092665862c6b4bd1"
     }
@@ -4011,9 +4011,9 @@
    "provenance": {
     "legacy": "8.1.1-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "cf9649eb31f18c0794d5198d0f34437e164b4e87922fda84c059e92cc2556ef9",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "9f4d932ce1c3891a2c9c72279de6c321ccb2f642204be25bda4e949c2a30871b",
      "specSha256": "825c6e59c0ebd95d83dc36362a8c279b4d3ac6c8ed85a49a41972c9b28a1e659",
      "tracksSha256": "1a85c0ef128bbe063ae65fc5a21642c1136f99952544995f073b62fc64c43d94"
     }
@@ -4641,9 +4641,9 @@
    "provenance": {
     "legacy": "9.2.2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "9a0f172aa4523c191b08d2e825037c389ae8bb7d2692021d1c76c6a52c78aa2d",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "c14b6a540320c388dca732bdb6a0e482da140d05a30f3ad0dc860553c11550a8",
      "specSha256": "5eb43290fdd6c72351408da43412bf1006a0f9240703d5f4da0ae31728a07417",
      "tracksSha256": "f9e02d24fa806bc66ba16115aa1f40985c56e89ebeb523b1a901f88361e5da87"
     }
@@ -5071,9 +5071,9 @@
    "provenance": {
     "legacy": "11.2.1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "03060e3081fdb66984082da4b8b8180453aaeea8f645f3a5c8f7ab47c6e37534",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "f91da4b2fdb4af3c34d78c644ba49db87ea34b40adc46a9a7fdc9a0a65b25c46",
      "specSha256": "d332e91772e5455a4fcca9b9db37db4ecf568e5efdb38f86f0700bbd2b5c99b9",
      "tracksSha256": "2b9fa25dcb8255666b613fb967f5567b344ef16a5fd0a200b32a46b5abb3ecec"
     }
@@ -5103,9 +5103,9 @@
    "provenance": {
     "legacy": "11.2.2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "45b7f2c114acdcbe89c288c4756e609c2d8e2e5842accfae960613f7add3888f",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "7d42b9f923eb846b9cc332be9d1954c1424170867e910de08d3b8807d5763655",
      "specSha256": "16d20c37de179129baa2a7ab8bf416c9b8127b0699912b11e6003d5f7b434635",
      "tracksSha256": "175550eff45a617dca52a2cef3ce783d427843306d23b6d73ac703a8a794898d"
     }
@@ -5135,9 +5135,9 @@
    "provenance": {
     "legacy": "11.2.3.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "926de5b3b1866ae7608478cc1975fcbab1bb402a7b6c14f3efe5936e4471a040",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "a561d3c6680e1c7f7844599e45356e4685f48bd88bb3ae38312295a6caf935d4",
      "specSha256": "00b400706d5fe8919b412e224214de5cbca5fdaa616cf09d22a8bd64a43dc064",
      "tracksSha256": "e6fb58a5bd0834915f32a4102f5de67acd030185fc99351a7cd9fadc292caeaf"
     }
@@ -6668,9 +6668,9 @@
    "provenance": {
     "legacy": "13.1.2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "db1f58e0019b787dfef49676c993ae421b23cd50a73a0402e4bdc53ca7e2008a",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "a06d407e23f739dd9db26e058f1f5cfb8d6c84e80c92166a38a73806558416b4",
      "specSha256": "f2e4ee44aeb2f0995c3f7713615f5d55e4129c5a2e05a8496542c3e468bec015",
      "tracksSha256": "0a284103b6f12bcbecb755f1930d04c25ad6d9240b0e42794067e051ba5f57c7"
     }
@@ -6824,9 +6824,9 @@
    "provenance": {
     "legacy": "13.2.4.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "1a5646b846754ad5e5a43249161b0137a54e2d7adf6a8dd629bab06dfbab7517",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "86171d7a033f96b494c8a2af84a2d161df7783b82dbecbcdbd5731802626d675",
      "specSha256": "0faf30ade2fdc2fab0fcc5f153411936847731813547b5ad526f2cab423ad675",
      "tracksSha256": "207d846b1dd6070939bc7cf1220b638429e81fc29178a123ea3b2abb4641d70c"
     }
@@ -6856,9 +6856,9 @@
    "provenance": {
     "legacy": "13.2.5.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "237872d3aa8f819921bf6e01f00e9a02c4bb2cebefc45819ae5a0bd90ba4d8da",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "d3a7d4434859188efdaf715ead0d8f1c06800ce68433b9245f97cafe5db73c2f",
      "specSha256": "3a2b08f68f1ddb6c9155053a29eb862f4ff7a3e6d42a35b0300f62e66169289d",
      "tracksSha256": "761da97fa93b2e276d79877c48c1f55c63a5059321cb91824c559f7fd8752ea7"
     }
@@ -7063,9 +7063,9 @@
    "provenance": {
     "legacy": "14.1.5.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "9f4a9b311258a0fef313adcc2803e33a652f6d4eb4b6b41c6acd477a45f9c552",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "a5157b0ad238cde3d21bb0a5b5a3c824bee382d77fc718fae767e79699b024a7",
      "specSha256": "165bdbac8af7d2c8f0daf84ad32420ba8e570ebf5b45b9d9beb0724b47a49f12",
      "tracksSha256": "2f6c1adf7526959a91574e98acd78a6d13d1f8674187293b9fa7504df3c25a3b"
     }
@@ -8670,9 +8670,9 @@
    "provenance": {
     "legacy": "16.2.1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "478200ae0fef368fe48674242c0cff8a81252853a3d0f4c32aa09b5c7bac4719",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "7eb1821b42383c3b40f5b211965415c5cbf6cb4be7c0731f8c991de0136aeab8",
      "specSha256": "5a8d1b960de7d42ea5df90ae1c487ce3b8bad92621be3f1e5661d8e833d0d144",
      "tracksSha256": "bbc1442e681c898a295dfbb013c29b07ca1bd98223119dbc888542c7808ed1d2"
     }
@@ -8702,9 +8702,9 @@
    "provenance": {
     "legacy": "16.2.2-1.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T14:53:48Z",
-     "sha256": "c0bd8c6dd0e2274a9e2e149a0c2fcd3b5cdedc2d89084b6b5a660fad93826952",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "8bd2f00e6525bee73740294fa89acdd68d89402774b75943d9a704860590fee4",
      "specSha256": "94089776549f814a27ad152ec878657a900afb9dc4a09e7718e45b80e7a288bd",
      "tracksSha256": "0f41595730e27c390c76d24975e844de9204f940613137193b1fb40d4dc9ff23"
     }
@@ -8734,9 +8734,9 @@
    "provenance": {
     "legacy": "16.2.2-2.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "dbbc6aa5214fcb531445c95f50de9f629ff2f9b6b1f4718b134ce0ef110af27c",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "53b092574c17c19156b6609935e79448690f7c7aa55243f3410e34a603104e98",
      "specSha256": "a9af6cf01434f37a9dd550bfec59c25913bec116696cedcdcfc7e55d10ba6699",
      "tracksSha256": "55cbcec944232a67be984ed0b3ede7348dec4bb0b789d3d7ceb490bc7fa0b899"
     }
@@ -8766,9 +8766,9 @@
    "provenance": {
     "legacy": "16.2.2-3.png",
     "synced": {
-     "figmaVersion": "2409810462782779827",
-     "at": "2026-10-13T11:39:55Z",
-     "sha256": "3f9857d5727b1b64745bc85b4c59f0f9940930508d1f7ac2b91969241fa50b19",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "2405be41ad699a8bcc6089689f895e8704e61a5b19f42e519885b9b4aebe9a2f",
      "specSha256": "6216f94edcb0af924218a2127a52bad9d354fa9bb3b584e8631b4016eeaad379",
      "tracksSha256": "b9207bc25dda3f268448542ec27180d1f5f5468a3bb513263d6c4d2af5010b4a"
     }
@@ -8798,9 +8798,9 @@
    "provenance": {
     "legacy": "16.2.3-2.png",
     "synced": {
-     "figmaVersion": "2409861413978031089",
-     "at": "2026-10-13T19:02:19Z",
-     "sha256": "61c5a5d397fb4f3e2f28334eea3cbc28389d5cc9877a223f43ce6fd628738f51",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "5eecd4ccf600323ef298ec3383be4eefa414ee4ddd9a01aff6ec502025b29013",
      "specSha256": "67a81d86ab03321b91a2d28ff3dfd454e72d1bcbc3e833d815d424524d6c55cb",
      "tracksSha256": "e21fe6cc34ca5000808d4b34a82aa903b9c4c1c9fc9305c50564d2ddeeb25c54"
     }
@@ -8880,9 +8880,9 @@
    "provenance": {
     "legacy": "16.2.4-1.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "393e3f0acfe4b898c6d489f152c440ee77850865421e59afd191327719d1da64",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "e8173fdcff9f6b227b77f99c18b31812b0416555c062827689ab794821a3e5fc",
      "specSha256": "a0505e90100e7c628ffe21bb38ee50ee66e37d0bcd79b162169ac78b0efae062",
      "tracksSha256": "fb47f517d7675ac14a22dc7dd6d2135719884669b010982e04e3ec2950c6f741"
     }
@@ -8912,9 +8912,9 @@
    "provenance": {
     "legacy": "16.2.4-2.png",
     "synced": {
-     "figmaVersion": "2409927504370504155",
-     "at": "2026-10-13T20:52:27Z",
-     "sha256": "fd2836fc1f9f8718a7d077c8c7fc39a1a0178c4935d62ed04be689e2ff88fe40",
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "53a07a382717368545f124474d2f38b2459547b86b32d92a68f901a709dd40bc",
      "specSha256": "23f482d4a3297f3b963c697cbe6f38fd9a4c600d0ff59e95c669b1ead81b5225",
      "tracksSha256": "f3ae82353fccfe6c38c4d2ea49f28242dff76d1ee5e65da649eb4314e7a58581"
     }
@@ -10172,7 +10172,7 @@
     "format": "animated-svg",
     "fallback": "14-transport-layer/14.01-transportation-of-data/assets/14.1.4.png"
    },
-   "status": "pending",
+   "status": "synced",
    "figma": {
     "nodeId": "4522:3",
     "page": "CCNA1 · 14 transport-layer",
@@ -10182,7 +10182,13 @@
    },
    "tracks": "animations/ccna1-yte6pgh/tracks.json",
    "provenance": {
-    "legacy": "14.1.4.png"
+    "legacy": "14.1.4.png",
+    "synced": {
+     "figmaVersion": "2409982897191414088",
+     "at": "2026-10-14T00:22:54Z",
+     "sha256": "6bf276580d2b243a989744b7078cc286356097e2914f64f13c0bba0ad3bfbf2d",
+     "tracksSha256": "b643dc3a2129e5ad839bda8388a79b2dcc041387fb016255fbb7462f6c487632"
+    }
    }
   },
   {
