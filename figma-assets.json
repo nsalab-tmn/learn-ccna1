@@ -1202,15 +1202,14 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.gif"
+    "format": "animated-svg"
    },
    "status": "pending",
    "tracks": "animations/ccna1-47jzlgz/tracks.json",
    "provenance": {
     "legacy": "3.3.5-1.gif"
    },
-   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14) · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-foep2qp",
@@ -1227,15 +1226,14 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.gif"
+    "format": "animated-svg"
    },
    "status": "pending",
    "tracks": "animations/ccna1-foep2qp/tracks.json",
    "provenance": {
     "legacy": "3.3.5-2.gif"
    },
-   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14) · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-6on2exn",
@@ -1720,15 +1718,14 @@
    },
    "out": {
     "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.svg",
-    "format": "animated-svg",
-    "fallback": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.gif"
+    "format": "animated-svg"
    },
    "status": "pending",
    "tracks": "animations/ccna1-uqbi2ad/tracks.json",
    "provenance": {
     "legacy": "4.1.2.gif"
    },
-   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14) · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-bgkpbw6",
