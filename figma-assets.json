@@ -1202,8 +1202,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-1.gif"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-47jzlgz/tracks.json",
@@ -1216,7 +1215,7 @@
      "tracksSha256": "39c230c39aa53662dcdd920052471522522dbb4fa96de634c8aa2da4c59af153"
     }
    },
-   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14) · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-foep2qp",
@@ -1233,8 +1232,7 @@
    },
    "out": {
     "path": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.svg",
-    "format": "animated-svg",
-    "fallback": "03-protocols-and-models/03.03-protocol-suites/assets/3.3.5-2.gif"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-foep2qp/tracks.json",
@@ -1247,7 +1245,7 @@
      "tracksSha256": "1c49d92fb16ee717d609b7133147717f953a92ab14784494ee0eabec9415c7b7"
     }
    },
-   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14) · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-6on2exn",
@@ -1732,8 +1730,7 @@
    },
    "out": {
     "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.svg",
-    "format": "animated-svg",
-    "fallback": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.2.gif"
+    "format": "animated-svg"
    },
    "status": "synced",
    "tracks": "animations/ccna1-uqbi2ad/tracks.json",
@@ -1746,7 +1743,7 @@
      "tracksSha256": "24ba2b90612d1c0157091eb379368294c68264e0587bcf6e994eeecc1684a285"
     }
    },
-   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14); the material keeps referencing the .gif (fallback) until the content switch · [GIF в git (оригинал не заменён) · пара: закреплена]"
+   "notes": "first-generation animated GIF replaced by a Motion build (learn-ccna1#11/#14) · [GIF в git (оригинал не заменён) · пара: закреплена]"
   },
   {
    "id": "ccna1-bgkpbw6",
