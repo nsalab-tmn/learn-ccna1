@@ -14,7 +14,7 @@
 
 Колонка «Видеоряд (Figma)» в таблице фиксирует прогресс пересборки: по каким видео собран и принят новый видеоряд — анимация Figma Motion на нашей дизайн-системе. Голосовая дорожка — отдельный трек, пока не начат ни для одного видео.
 
-**Готово: 4 из 36** (explainer — 4 из 17).
+**Готово: 5 из 36** (explainer — 5 из 17).
 
 | статус | значит |
 |---|---|
@@ -23,7 +23,7 @@
 | Motion | анимация собрана по принятой раскадровке и ждёт приёмки оператора; время и ссылка — как у «готов» |
 | **готов** | анимация Figma Motion принята оператором; время — её хронометраж (у оригинала — колонка «Длит.»), ссылка ведёт на кадр анимации |
 
-Всё лежит в рабочем файле Figma `3FtCg22qFubpLBPOetQU03` (CCNA Design): по листу на видео «Видео · ‹videoId› · ‹название› · прототип» с двумя секциями — «Motion · …» (анимация и набор-кит, из которого она собрана) и «Раскадровка · …» (базовая сцена и кадры раскадровки с описаниями). У этих листов нет курсового префикса и штампов `⟨id⟩`, поэтому синхронизация иллюстраций (`figma_sync.py`) их не читает. Метод сборки — `runbooks/video-motion-build.md` в learn-knowledge-base. Ролики одной серии (7.3.4 → 7.3.5, 9.2.3 → 9.2.4) продолжаются с состояния, на котором закончился предыдущий, без ссылок на другие видео в кадре. Подробности по каждому готовому видео — раздел «Видеоряд в Figma» в его документе.
+Всё лежит в рабочем файле Figma `3FtCg22qFubpLBPOetQU03` (CCNA Design): по листу на видео «Видео · ‹videoId› · ‹название› · прототип» с двумя секциями — «Motion · …» (анимация и набор-кит, из которого она собрана) и «Раскадровка · …» (базовая сцена и кадры раскадровки с описаниями). У этих листов нет курсового префикса и штампов `⟨id⟩`, поэтому синхронизация иллюстраций (`figma_sync.py`) их не читает. Метод сборки — `runbooks/video-motion-build.md` в learn-knowledge-base. Ролики одной серии (7.3.4 → 7.3.5, 9.2.3 → 9.2.4 → 9.2.5) продолжаются с состояния, на котором закончился предыдущий, без ссылок на другие видео в кадре. Подробности по каждому готовому видео — раздел «Видеоряд в Figma» в его документе.
 
 `fi7Ss-_9LvY` встроен и в CCNA2 (2.1.4) — там тот же видеоряд.
 
@@ -53,7 +53,7 @@
 | pt_Qw1Jfo5w | 08/08.05-router-routing-tables | IPv4 Router Routing Table | 5:42 | lab-demo | код-рендер ~3:00 (топология + show ip route) + сессия; согласовать листинг с текстом 8.5.6 | — | [doc](08-network-layer/08.05-router-routing-tables--pt_Qw1Jfo5w.md) |
 | tna6DaUeu5c | 09/09.02-arp | ARP Operation – ARP Request | 2:53 | explainer | анимация Figma ≤ 60 с (трек 1 общей сцены «ARP в LAN») | **готов** · 1:02 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4960-7850) | [doc](09-address-resolution/09.02-arp--tna6DaUeu5c.md) |
 | Ud1angOlxHE | 09/09.02-arp | ARP Operation – ARP Reply | 1:45 | explainer | анимация Figma ≤ 60 с (трек 2 той же сцены) | **готов** · 0:52 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4963-7761) | [doc](09-address-resolution/09.02-arp--Ud1angOlxHE.md) |
-| 1ZB2euss3YY | 09/09.02-arp | ARP Role in Remote Communications | 3:01 | explainer | анимация Figma ≤ 60 с (трек 3) + сессия `arp -a` / `show ip arp` для симулятора | — | [doc](09-address-resolution/09.02-arp--1ZB2euss3YY.md) |
+| 1ZB2euss3YY | 09/09.02-arp | ARP Role in Remote Communications | 3:01 | explainer | анимация Figma ≤ 60 с (трек 3) + сессия `arp -a` / `show ip arp` для симулятора | **готов** · 1:32 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4976-8282) | [doc](09-address-resolution/09.02-arp--1ZB2euss3YY.md) |
 | S0SyGKhCEV0 | 09/09.03-neighbor-discovery | IPv6 Neighbor Discovery | 6:07 | explainer | код-рендер с генер. голосом ~2:30–3:00 (или 2 анимации NS / NA) | — | [doc](09-address-resolution/09.03-neighbor-discovery--S0SyGKhCEV0.md) |
 | DNL4DPxjgNM | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 1 | 4:31 | **other** (обзор физического оборудования) | **убрать** как видео; текст + иллюстрация «имена интерфейсов по моделям» | — | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--DNL4DPxjgNM.md) |
 | RH_KIUdHZlE | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 2 | 10:16 | **lab-demo** (по содержанию cli-basics) | код-рендер терминала ~4:00 + полная сессия трёх роутеров для симулятора | — | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--RH_KIUdHZlE.md) |
