@@ -1,8 +1,50 @@
+# pyATS testbed for grading the netsim lab over SSH: one entry per simulated device,
+# each on its own port (ssh_port_<DEVICE> = 2200 + its topology id).
+# Host/port/credentials come from tf-dynamic-params.json (written by learn-lab-deploy),
+# exported into the environment as %ENV{...} (dashes->underscores). The address is the
+# container's learn-labs IP — never localhost.
 testbed:
   name: lab16.4.6
 
 devices:
-  dummy:
+  RTA:
+    os: iosxe
+    type: router
+    credentials:
+      default:
+        username: "%ENV{ssh_user}"
+        password: "%ENV{ssh_password}"  # ggignore - a placeholder, filled at grading time
     connections:
-      a:
-        ip: localhost
+      cli:
+        protocol: ssh
+        ip: "%ENV{lab_ip}"
+        port: "%ENV{ssh_port_RTA}"
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+        # Suppress Unicon's connect-time config init (it issues `line vty 0 4;
+        # exec-timeout 0`, which would overwrite the student's persistent line
+        # config before we read it). We grade persistent config, so the grader
+        # must not mutate it.
+        settings:
+          INIT_CONFIG_COMMANDS: []
+
+  SW1:
+    os: iosxe
+    type: switch
+    credentials:
+      default:
+        username: "%ENV{ssh_user}"
+        password: "%ENV{ssh_password}"  # ggignore - a placeholder, filled at grading time
+    connections:
+      cli:
+        protocol: ssh
+        ip: "%ENV{lab_ip}"
+        port: "%ENV{ssh_port_SW1}"
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+        settings:
+          INIT_CONFIG_COMMANDS: []

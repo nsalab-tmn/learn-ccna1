@@ -1,0 +1,55 @@
+# Lab topology as code — the devices and cables of the lab (learn-netsim #18, #23).
+#
+# Lives next to the Terraform because learn-lab-deploy only stages this
+# compute/local directory; main.tf uploads it into the lab container, where the
+# daemon reads it via NETSIM_TOPOLOGY.
+#
+# Schema (validated by learn_netsim/topology.py):
+#   name:     free-text title shown on the canvas
+#   devices:  list of
+#     name:       device label, unique (also the console URL: /ws/console/<name>)
+#     id:         optional; default = position in this list (0, 1, 2, ...). A simulated
+#                 device's SSH port is NETSIM_SSH_BASE_PORT + id (2200 + id).
+#     type:       router | switch | pc
+#     model:      hardware profile (simulated devices: NR01), else free text
+#     hostname:   optional boot hostname (default by type: Router, Switch)
+#     simulated:  true = it runs in the lab engine and its console can be opened
+#     canvas_console: optional, default true; false = the canvas does not open its
+#                 console - only a PC on its console cable can (`terminal`)
+#     position:   {x, y} layout hint in canvas units (the page scales to fit)
+#   links:    list of
+#     a / b:      {device, port} - the two ends; on a simulated device the port must
+#                 exist on its model (e.g. GigabitEthernet0/0)
+#     cable:      copper (a link: up/down on both ends) | console
+#
+# CCNA1 lab 16.4.6: PCA - SW1 - RTA, plus a
+# console cable from PCA to RTA. All three are simulated: RTA (id 0 -> SSH 2200),
+# SW1 (id 1 -> 2201) and PCA (id 2 -> 2202); both copper cables are live, frames
+# travel them (ARP, MAC learning, ping).
+name: "Configure Secure Passwords and SSH (16.4.6)"
+devices:
+  - name: RTA
+    type: router
+    model: NR01
+    simulated: true
+    position: {x: 490, y: 90}
+  - name: SW1
+    type: switch
+    model: NS01
+    simulated: true
+    position: {x: 300, y: 250}
+  - name: PCA
+    type: pc
+    model: NPC
+    simulated: true
+    position: {x: 110, y: 90}
+links:
+  - a: {device: PCA, port: FastEthernet0}
+    b: {device: SW1, port: FastEthernet0/1}
+    cable: copper
+  - a: {device: SW1, port: GigabitEthernet0/1}
+    b: {device: RTA, port: GigabitEthernet0/0}
+    cable: copper
+  - a: {device: PCA, port: RS232}
+    b: {device: RTA, port: Console}
+    cable: console

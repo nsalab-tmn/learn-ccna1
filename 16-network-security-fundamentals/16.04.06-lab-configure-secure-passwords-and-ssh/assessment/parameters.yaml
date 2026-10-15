@@ -1,2 +1,5 @@
-skip_connections:
-  - dummy
+# Static parameters for the marking scheme. This lab needs none (all checks are
+# self-contained show-command assertions); the file is present for the standard
+# assessment-folder shape. `config`-type steps would be listed under skiptype to
+# run only checks.
+skiptype: []
