@@ -14,7 +14,7 @@
 
 Колонка «Видеоряд (Figma)» в таблице фиксирует прогресс пересборки: по каким видео собран и принят новый видеоряд — анимация Figma Motion на нашей дизайн-системе. Голосовая дорожка — отдельный трек, пока не начат ни для одного видео.
 
-**Готово: 8 из 36** (explainer — 8 из 17).
+**Готово: 9 из 36** (explainer — 9 из 17).
 
 | статус | значит |
 |---|---|
@@ -54,7 +54,7 @@
 | tna6DaUeu5c | 09/09.02-arp | ARP Operation – ARP Request | 2:53 | explainer | анимация Figma ≤ 60 с (трек 1 общей сцены «ARP в LAN») | **готов** · 1:02 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4960-7850) | [doc](09-address-resolution/09.02-arp--tna6DaUeu5c.md) |
 | Ud1angOlxHE | 09/09.02-arp | ARP Operation – ARP Reply | 1:45 | explainer | анимация Figma ≤ 60 с (трек 2 той же сцены) | **готов** · 0:52 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4963-7761) | [doc](09-address-resolution/09.02-arp--Ud1angOlxHE.md) |
 | 1ZB2euss3YY | 09/09.02-arp | ARP Role in Remote Communications | 3:01 | explainer | анимация Figma ≤ 60 с (трек 3) + сессия `arp -a` / `show ip arp` для симулятора | **готов** · 1:32 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4976-8282) | [doc](09-address-resolution/09.02-arp--1ZB2euss3YY.md) |
-| S0SyGKhCEV0 | 09/09.03-neighbor-discovery | IPv6 Neighbor Discovery | 6:07 | explainer | код-рендер с генер. голосом ~2:30–3:00 (или 2 анимации NS / NA) | — | [doc](09-address-resolution/09.03-neighbor-discovery--S0SyGKhCEV0.md) |
+| S0SyGKhCEV0 | 09/09.03-neighbor-discovery | IPv6 Neighbor Discovery | 6:07 | explainer | код-рендер с генер. голосом ~2:30–3:00 (или 2 анимации NS / NA) | **готов** · 1:30 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5048-7572) | [doc](09-address-resolution/09.03-neighbor-discovery--S0SyGKhCEV0.md) |
 | DNL4DPxjgNM | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 1 | 4:31 | **other** (обзор физического оборудования) | **убрать** как видео; текст + иллюстрация «имена интерфейсов по моделям» | — | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--DNL4DPxjgNM.md) |
 | RH_KIUdHZlE | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 2 | 10:16 | **lab-demo** (по содержанию cli-basics) | код-рендер терминала ~4:00 + полная сессия трёх роутеров для симулятора | — | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--RH_KIUdHZlE.md) |
 | 7DoggTtOLN0 | 11/11.01-ipv4-address-structure | Network, Host and Broadcast Addresses | 6:22 | explainer | анимация Figma ≤ 60 с (побитовое И) / текст + иллюстрация | — | [doc](11-ipv4-addressing/11.01-ipv4-address-structure--7DoggTtOLN0.md) |
