@@ -14,7 +14,7 @@
 
 Колонка «Видеоряд (Figma)» в таблице фиксирует прогресс пересборки: по каким видео собран и принят новый видеоряд — анимация Figma Motion на нашей дизайн-системе. Голосовая дорожка — отдельный трек, пока не начат ни для одного видео.
 
-**Готово: 7 из 36** (explainer — 7 из 17).
+**Готово: 8 из 36** (explainer — 8 из 17).
 
 | статус | значит |
 |---|---|
@@ -45,7 +45,7 @@
 | gex3BaiuQiw | 02/02.08-verify-connectivity | Test End-to-End Connectivity | 2:40 | lab-demo | код-рендер ~1:45 + сессия ping (можно слить с 2.8.1) | — | [doc](02-basic-switch-and-end-device-configuration/02.08-verify-connectivity--gex3BaiuQiw.md) |
 | yWjd-4WN4hE | 03/03.01-the-rules | Devices in a Bubble | 3:44 | explainer | анимация Figma (≤ 60 с) или код-рендер ~2:00 | **готов** · 1:16 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4998-8863) | [doc](03-protocols-and-models/03.01-the-rules--yWjd-4WN4hE.md) |
 | lxeBvUOA9oE | 05/05.01-binary-number-system | Convert Between Binary and Decimal Numbering Systems | 8:22 | explainer | 2 анимации Figma (168 → биты; адрес → десятичный) или код-рендер ~3:00 | **готов** · 1:36 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5012-7035) | [doc](05-number-systems/05.01-binary-number-system--lxeBvUOA9oE.md) |
-| 50O7DGHEz6A | 05/05.02-hexadecimal-number-system | Convert Between Hexadecimal and Decimal Numbering Systems | 6:35 | explainer | 2 анимации Figma (197 → C5; 9F → 159) или код-рендер ~2:30 | — | [doc](05-number-systems/05.02-hexadecimal-number-system--50O7DGHEz6A.md) |
+| 50O7DGHEz6A | 05/05.02-hexadecimal-number-system | Convert Between Hexadecimal and Decimal Numbering Systems | 6:35 | explainer | 2 анимации Figma (197 → C5; 9F → 159) или код-рендер ~2:30 | **готов** · 1:24 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5018-7035) | [doc](05-number-systems/05.02-hexadecimal-number-system--50O7DGHEz6A.md) |
 | fi7Ss-_9LvY | 07/07.03-the-mac-address-table | MAC Address Tables on Connected Switches | 3:05 | explainer | анимация Figma (≤ 60 с) на общей схеме с 7.3.5 (+ опц. код-рендер ~2:00) | **готов** · 1:35 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4933-8671) | [doc](07-ethernet-switching/07.03-the-mac-address-table--fi7Ss-_9LvY.md) |
 | RXLercop7eU | 07/07.03-the-mac-address-table | Send a Frame to the Default Gateway | 2:58 | explainer | анимация Figma (≤ 60 с), продолжение 7.3.4 (или один ролик ≈ 3:30 на оба) | **готов** · 1:13 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4949-8265) | [doc](07-ethernet-switching/07.03-the-mac-address-table--RXLercop7eU.md) |
 | PArGE7H_eN8 | 08/08.02-ipv4-packet | Sample IPv4 Headers in Wireshark | 5:21 | lab-demo (скриншоты Wireshark) | код-рендер дерева диссектора ~3:00 (SYN / GET / ICMP) | — | [doc](08-network-layer/08.02-ipv4-packet--PArGE7H_eN8.md) |
