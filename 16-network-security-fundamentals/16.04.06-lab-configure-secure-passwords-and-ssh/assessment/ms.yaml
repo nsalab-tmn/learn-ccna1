@@ -289,7 +289,7 @@ Criterions:
       - Device Hardening Configuration
       max_mark: 5
       steps:
-      - name: 'show running-config: matches (?m)^username \S+ secret 5 '
+      - name: 'show running-config: matches (?m)^username \S+ (privilege \d+ )?secret 5 '
         code: check
         type: check
         device: RTA
@@ -297,7 +297,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: show running-config
-            expr: '(?m)^username \S+ secret 5 '
+            expr: '(?m)^username \S+ (privilege \d+ )?secret 5 '
             match: true
   - code: RTA.LOGIN
     name: Login Options
@@ -970,7 +970,7 @@ Criterions:
       - Device Hardening Configuration
       max_mark: 5
       steps:
-      - name: 'show running-config: matches (?m)^username \S+ secret 5 '
+      - name: 'show running-config: matches (?m)^username \S+ (privilege \d+ )?secret 5 '
         code: check
         type: check
         device: SW1
@@ -978,7 +978,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: show running-config
-            expr: '(?m)^username \S+ secret 5 '
+            expr: '(?m)^username \S+ (privilege \d+ )?secret 5 '
             match: true
   - code: SW1.VTY
     name: VTY Lines
