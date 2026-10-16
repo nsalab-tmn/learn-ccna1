@@ -1,0 +1,36 @@
+7E9ilk9dOOI	Installing Cisco Packet Tracer	other (установка ПО)	—
+uync1j2x6Ms	Quick start with Cisco Packet Tracer	lab-demo	—
+wcIP__5sa1o	Cisco Networking Academy	marketing	—
+e85Y71fsyyY	Cisco Webex Promo	marketing	—
+B269UlVAN40	IOS CLI Primary Command Modes	cli-basics	—
+Z-n1tO4Xg6w	Navigate between IOS Modes	cli-basics	—
+K_VEPe8aRUE	Context-Sensitive Help and Command Syntax Check	cli-basics	—
+YDXgJUjGjcw	Hot Keys and Shortcuts	cli-basics	—
+Ae9qSUlJ3a4	Secure Administrative Access to a Switch	cli-basics	—
+lQQ28pdSqfg	Alter the Running Configuration	cli-basics	—
+CkvRVRcOkls	Test the Interface Assignment	lab-demo	—
+gex3BaiuQiw	Test End-to-End Connectivity	lab-demo	—
+yWjd-4WN4hE	Devices in a Bubble	explainer	—
+lxeBvUOA9oE	Convert Between Binary and Decimal Numbering Systems	explainer	—
+50O7DGHEz6A	Convert Between Hexadecimal and Decimal Numbering Systems	explainer	—
+fi7Ss-_9LvY	MAC Address Tables on Connected Switches	explainer	готов · 1:35 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4933-8671)
+RXLercop7eU	Send a Frame to the Default Gateway	explainer	готов · 1:13 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4949-8265)
+PArGE7H_eN8	Sample IPv4 Headers in Wireshark	lab-demo (скриншоты Wireshark)	—
+aOwXEempJ4k	Sample IPv6 Headers in Wireshark	lab-demo (скриншоты Wireshark)	—
+pt_Qw1Jfo5w	IPv4 Router Routing Table	lab-demo	—
+tna6DaUeu5c	ARP Operation – ARP Request	explainer	готов · 1:02 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4960-7850)
+Ud1angOlxHE	ARP Operation – ARP Reply	explainer	готов · 0:52 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4963-7761)
+1ZB2euss3YY	ARP Role in Remote Communications	explainer	готов · 1:32 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4976-8282)
+S0SyGKhCEV0	IPv6 Neighbor Discovery	explainer	—
+DNL4DPxjgNM	Network Device Differences – Part 1	other (обзор физического оборудования)	—
+RH_KIUdHZlE	Network Device Differences – Part 2	lab-demo (по содержанию cli-basics)	—
+7DoggTtOLN0	Network, Host and Broadcast Addresses	explainer	—
+LKjCyGaiH4Q	The Subnet Mask	explainer	—
+A2P7i6ebSCE	Subnet with the Magic Number	explainer	—
+TJSWlSplC1Q	Subnet Across Multiple Octets	explainer	—
+R_Ti9y2AShc	VLSM Basics	explainer	—
+_V-YboU4Rq4	VLSM Example	explainer	—
+UbqcbYsPoss	TCP 3-Way Handshake (Wireshark)	lab-demo	—
+tz7eawYRHf0	TCP Reliability – Sequence Numbers and Acknowledgements	explainer	—
+3AzR-82OI7Q	TCP Reliability – Data Loss and Retransmission	explainer	—
+dFKfyJkuSqQ	The Show Version Command	cli-basics	—
