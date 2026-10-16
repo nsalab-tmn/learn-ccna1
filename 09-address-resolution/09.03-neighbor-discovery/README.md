@@ -16,7 +16,7 @@
 
 * сообщение «Запрос соседнего узла» (Neighbor Solicitation, NS);
 * сообщение «Ответ соседнего узла» (Neighbor Advertisement, NA);
-* сообщение «Запрос к роутер» (Router Solicitation, RS);
+* сообщение «Запрос к роутеру» (Router Solicitation, RS);
 * сообщение «Ответ роутера» (Router Advertisement, RA);
 * сообщение «Перенаправление» (Redirect Message).
 
