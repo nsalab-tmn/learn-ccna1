@@ -1,4 +1,4 @@
-# pyATS testbed for grading the netsim lab over SSH: one entry per simulated device,
+# pyATS testbed for grading the netsim lab over SSH: one entry per graded device,
 # each on its own port (ssh_port_<DEVICE> = 2200 + its topology id).
 # Host/port/credentials come from tf-dynamic-params.json (written by learn-lab-deploy),
 # exported into the environment as %ENV{...} (dashes->underscores). The address is the
@@ -7,6 +7,29 @@ testbed:
   name: lab16.4.6
 
 devices:
+  PCA:
+    os: iosxe
+    type: pc
+    credentials:
+      default:
+        username: "%ENV{ssh_user}"
+        password: "%ENV{ssh_password}"  # ggignore - a placeholder, filled at grading time
+    connections:
+      cli:
+        protocol: ssh
+        ip: "%ENV{lab_ip}"
+        port: "%ENV{ssh_port_PCA}"
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+          # A PC has no IOS init (enable, terminal length, configure): skip it.
+          # Over SSH from outside the lab its prompt is `PCA#` (learn-netsim #44),
+          # so Unicon can learn the hostname; the learner still sees `C:\>`.
+          mit: true
+        settings:
+          INIT_CONFIG_COMMANDS: []
+
   RTA:
     os: iosxe
     type: router

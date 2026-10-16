@@ -1,571 +1,819 @@
-# Marking scheme for the "Configure Secure Passwords and SSH" lab (ccna1 16.04.06),
-# devices RTA and SW1, graded on learn-netsim over SSH.
+# Marking scheme for CCNA1 lab 16.4.6 "Configure Secure Passwords and SSH",
+# graded on learn-netsim over SSH (learn-assessment): devices PCA, RTA and SW1.
 #
-# Per-aspect `verify_output` checks against the simulator's real `show` output
-# (learn-assessment over SSH). Aspect names follow the lab's original
-# assessment-item tree.
+# Per-aspect checks against the simulator's real output: `show` commands on RTA
+# and SW1, `ipconfig` on PCA. Aspect names follow the lab's original
+# assessment-item tree; the marks are the original ones (PCA 20, RTA 81, SW1 87).
+#
+# Codes are hierarchical and unique across the scheme: criterion = device
+# (`RTA`), sub-criterion = device.group (`RTA.VTY`), aspect = device.group.item
+# (`RTA.VTY.SSH-ONLY`). learn-assessment keys MarkSummary by the aspect code and
+# learn-core reports aspects by code, so an aspect code must be unique and
+# readable on its own. `description` is the learner-facing line in the report.
+#
+# The exec-timeout aspects read startup-config, not running-config: pyATS/Unicon
+# issues `line vty 0 4; exec-timeout 0` at connect time (as on real IOS), which
+# would overwrite the live value before it is read. The testbed also sets
+# INIT_CONFIG_COMMANDS: [] so the grader does not mutate the device.
 Criterions:
-  - code: B
-    name: RTA
-    subCriterions:
-      - code: 1
-        name: Miscellaneous
-        aspects:
-          - code: 1
-            name: Host Name
-            skills: [Hostname Configuration]
-            max_mark: 5
-            steps:
-              - name: hostname RTA in running-config
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["hostname RTA"]
-                      tags_are_present: true
-          - code: 2
-            name: Enable Secret
-            skills: [Basic Security Configuration]
-            max_mark: 5
-            steps:
-              - name: enable secret present (type 5)
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["enable secret 5"]
-                      tags_are_present: true
-          - code: 3
-            name: Service Password Encryption
-            skills: [Basic Security Configuration]
-            max_mark: 5
-            steps:
-              - name: service password-encryption present
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["service password-encryption"]
-                      tags_are_present: true
-          - code: 4
-            name: Security Password Min-Length
-            skills: [Basic Security Configuration]
-            max_mark: 1
-            steps:
-              - name: security passwords min-length 10
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["security passwords min-length 10"]
-                      tags_are_present: true
-          - code: 5
-            name: IP Domain Name
-            skills: [Device Hardening Configuration]
-            max_mark: 5
-            steps:
-              - name: ip domain-name CCNA.com
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["ip domain-name CCNA.com"]
-                      tags_are_present: true
-          - code: 6
-            name: Startup Config
-            skills: [Configuration Management]
-            max_mark: 5
-            steps:
-              - name: startup-config saved with hostname
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show startup-config
-                      assert_tags: ["hostname RTA"]
-                      tags_are_present: true
-      - code: 2
-        name: DNS
-        aspects:
-          - code: 1
-            name: IP Domain-Lookup
-            skills: [Configuration Management]
-            max_mark: 1
-            steps:
-              - name: DNS lookup disabled
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["no ip domain-lookup"]
-                      tags_are_present: true
-      - code: 3
-        name: Ports
-        aspects:
-          - code: 1
-            name: GigabitEthernet0/0.IP Address
-            skills: [Device Interface Configuration]
-            max_mark: 8
-            steps:
-              - name: G0/0 has 172.16.1.1 in brief
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output_regex
-                    action_vars:
-                      command: show ip interface brief
-                      expr: 'GigabitEthernet0/0\s+172\.16\.1\.1\s+YES'
-                      match: true
-          - code: 2
-            name: GigabitEthernet0/0.Subnet Mask
-            skills: [Device Interface Configuration]
-            max_mark: 8
-            steps:
-              - name: G0/0 address+mask in running-config
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["ip address 172.16.1.1 255.255.255.0"]
-                      tags_are_present: true
-          - code: 3
-            name: GigabitEthernet0/0.Port Status
-            skills: [Device Interface Configuration]
-            max_mark: 4
-            steps:
-              # Port is enabled (up/up) — independent of whether the IP is correct,
-              # so this aspect scores separately from the IP Address / Subnet Mask ones.
-              - name: G0/0 is up (not administratively down)
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output_regex
-                    action_vars:
-                      command: show ip interface brief
-                      expr: 'GigabitEthernet0/0\s+\S+\s+YES\s+\S+\s+up\s+up'
-                      match: true
-      - code: 4
-        name: Security
-        aspects:
-          - code: 1
-            name: Modulus Bits
-            skills: [Device Hardening Configuration]
-            max_mark: 10
-            steps:
-              - name: SSH enabled via 1024-bit RSA key
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show ip ssh
-                      assert_tags: ["SSH Enabled"]
-                      tags_are_present: true
-                  - action: verify_output
-                    action_vars:
-                      command: show crypto key mypubkey rsa
-                      assert_tags: ["1024 bits"]
-                      tags_are_present: true
-      - code: 5
-        name: User Names
-        aspects:
-          - code: 1
-            name: Username
-            skills: [Device Hardening Configuration]
-            max_mark: 5
-            steps:
-              - name: local username with secret
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output_regex
-                    action_vars:
-                      command: show running-config
-                      expr: 'username \S+ secret 5'
-                      match: true
-      - code: 6
-        name: Login Options
-        aspects:
-          - code: 1
-            name: Blocking.Enabled
-            skills: [Device Hardening Configuration]
-            max_mark: 4
-            steps:
-              - name: login block-for configured
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["login block-for 180 attempts 4 within 120"]
-                      tags_are_present: true
-      - code: 7
-        name: VTY Lines
-        aspects:
-          - code: 1
-            name: VTY Line 0-4.Transport Input
-            skills: [Device Hardening Configuration]
-            max_mark: 5
-            steps:
-              - name: transport input ssh on vty
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["transport input ssh"]
-                      tags_are_present: true
-          - code: 2
-            name: VTY Line 0-4.Login
-            skills: [Basic Security Configuration]
-            max_mark: 5
-            steps:
-              - name: login local on vty
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show running-config
-                      assert_tags: ["login local"]
-                      tags_are_present: true
-          - code: 3
-            name: VTY Line 0-4.Terminal Line timed out
-            skills: [Device Hardening Configuration]
-            max_mark: 5
-            steps:
-              # Graded from startup-config (the student's saved intent), not
-              # running-config: pyATS/Unicon issues `line vty 0 4; exec-timeout 0`
-              # at connect time, which overwrites the live running-config's
-              # exec-timeout before we can read it (this would also happen on a
-              # real IOS device). startup-config was snapshotted by `copy run
-              # start` and is immune to the grader's session mutations.
-              - name: exec-timeout on vty (from saved config)
-                code: check
-                type: check
-                device: RTA
-                action_chain:
-                  - action: verify_output
-                    action_vars:
-                      command: show startup-config
-                      assert_tags: ["exec-timeout 6"]
-                      tags_are_present: true
-  # SW1 — the switch half of the lab (graded over SSH on ssh_port_SW1).
-  - code: C
-    name: SW1
-    subCriterions:
-    - code: 1
-      name: Miscellaneous
-      aspects:
-      - code: 1
-        name: Host Name
-        skills: [Hostname Configuration]
-        max_mark: 5
-        steps:
-        - name: hostname SW1 in running-config
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [hostname SW1]
-              tags_are_present: true
-      - code: 2
-        name: Enable Secret
-        skills: [Basic Security Configuration]
-        max_mark: 5
-        steps:
-        - name: enable secret present (type 5)
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [enable secret 5]
-              tags_are_present: true
-      - code: 3
-        name: Service Password Encryption
-        skills: [Basic Security Configuration]
-        max_mark: 5
-        steps:
-        - name: service password-encryption
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [service password-encryption]
-              tags_are_present: true
-      - code: 4
-        name: IP Domain Name
-        skills: [Device Hardening Configuration]
-        max_mark: 5
-        steps:
-        - name: ip domain-name CCNA.com
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [ip domain-name CCNA.com]
-              tags_are_present: true
-      - code: 5
-        name: IP Domain-Lookup
-        skills: [Device Hardening Configuration]
-        max_mark: 1
-        steps:
-        - name: DNS lookup disabled
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [no ip domain-lookup]
-              tags_are_present: true
-      - code: 6
-        name: Default Gateway
-        skills: [Device Interface Configuration]
-        max_mark: 5
-        steps:
-        - name: ip default-gateway 172.16.1.1
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [ip default-gateway 172.16.1.1]
-              tags_are_present: true
-      - code: 7
-        name: Startup Config
-        skills: [Configuration Management]
-        max_mark: 5
-        steps:
-        - name: configuration saved
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show startup-config
-              assert_tags: [hostname SW1]
-              tags_are_present: true
-    - code: 2
-      name: Ports
-      aspects:
-      - code: 1
-        name: Vlan1.IP Address
-        skills: [Device Interface Configuration]
-        max_mark: 8
-        steps:
-        - name: Vlan1 has 172.16.1.2 in brief
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: Vlan1\s+172\.16\.1\.2\s+YES, match: true}
-      - code: 2
-        name: Vlan1.Subnet Mask
-        skills: [Device Interface Configuration]
-        max_mark: 8
-        steps:
-        - name: Vlan1 address+mask in running-config
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show running-config
-              assert_tags: [ip address 172.16.1.2 255.255.255.0]
-              tags_are_present: true
-      - code: 3
-        name: Vlan1.Port Status
-        skills: [Device Interface Configuration]
-        max_mark: 4
-        steps:
-        - name: Vlan1 is up/up
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: Vlan1\s+\S+\s+YES\s+\S+\s+up\s+up, match: true}
-      - code: 4
-        name: Unused Ports.Port Status
-        skills: [Device Hardening Configuration]
-        max_mark: 6
-        steps:
-        - name: F0/2-24 and G0/2 administratively down
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/2\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/3\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/4\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/5\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/6\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/7\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/8\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/9\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/10\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/11\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/12\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/13\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/14\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/15\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/16\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/17\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/18\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/19\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/20\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/21\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/22\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/23\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: FastEthernet0/24\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-          - action: verify_output_regex
-            action_vars: {command: show ip interface brief, expr: GigabitEthernet0/2\s+\S+\s+YES\s+\S+\s+administratively down\s+down, match: true}
-    - code: 3
-      name: Security
-      aspects:
-      - code: 1
-        name: Modulus Bits
-        skills: [Device Hardening Configuration]
-        max_mark: 10
-        steps:
-        - name: 1024-bit RSA key
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output
-            action_vars:
-              command: show crypto key mypubkey rsa
-              assert_tags: [1024 bits]
-              tags_are_present: true
-      - code: 2
-        name: Username
-        skills: [Device Hardening Configuration]
-        max_mark: 5
-        steps:
-        - name: local username with secret
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show running-config, expr: username \S+ secret 5, match: true}
-    - code: 4
-      name: VTY Lines
-      aspects:
-      - code: 1
-        name: VTY Line 0-15.Transport Input
-        skills: [Device Hardening Configuration]
-        max_mark: 5
-        steps:
-        - name: SSH only on vty 0-4 and 5-15
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show running-config, expr: 'line vty 0 4\r?\n(?: .*\n)*? transport input ssh', match: true}
-          - action: verify_output_regex
-            action_vars: {command: show running-config, expr: 'line vty 5 15\r?\n(?: .*\n)*? transport input ssh', match: true}
-      - code: 2
-        name: VTY Line 0-15.Login
-        skills: [Device Hardening Configuration]
-        max_mark: 5
-        steps:
-        - name: login local on vty 0-4 and 5-15
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show running-config, expr: 'line vty 0 4\r?\n(?: .*\n)*? login local', match: true}
-          - action: verify_output_regex
-            action_vars: {command: show running-config, expr: 'line vty 5 15\r?\n(?: .*\n)*? login local', match: true}
-      - code: 3
-        name: VTY Line 0-15.Terminal Line timed out
-        skills: [Device Hardening Configuration]
-        max_mark: 5
-        steps:
-        - name: exec-timeout 6 on vty 0-4 and 5-15 (from saved config)
-          code: check
-          type: check
-          device: SW1
-          action_chain:
-          - action: verify_output_regex
-            action_vars: {command: show startup-config, expr: 'line vty 0 4\r?\n(?: .*\n)*? exec-timeout 6 0', match: true}
-          - action: verify_output_regex
-            action_vars: {command: show startup-config, expr: 'line vty 5 15\r?\n(?: .*\n)*? exec-timeout 6 0', match: true}
+- code: PCA
+  name: PCA
+  subCriterions:
+  - code: PCA.PORTS
+    name: Ports
+    aspects:
+    - code: PCA.PORTS.F0-IP
+      name: FastEthernet0.IP Address
+      description: 'PCA: IP-адрес 172.16.1.10'
+      skills:
+      - IPv4 Host Address Configuration
+      max_mark: 8
+      steps:
+      - name: PCA has 172.16.1.10
+        code: check
+        type: check
+        device: PCA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ipconfig
+            expr: '(?m)IPv4 Address[. ]*: 172\.16\.1\.10\s*$'
+            match: true
+    - code: PCA.PORTS.F0-MASK
+      name: FastEthernet0.Subnet Mask
+      description: 'PCA: маска 255.255.255.0'
+      skills:
+      - IPv4 Host Address Configuration
+      max_mark: 2
+      steps:
+      - name: PCA mask 255.255.255.0
+        code: check
+        type: check
+        device: PCA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ipconfig
+            expr: '(?m)Subnet Mask[. ]*: 255\.255\.255\.0\s*$'
+            match: true
+  - code: PCA.MISC
+    name: Miscellaneous
+    aspects:
+    - code: PCA.MISC.DEFAULT-GW
+      name: Default Gateway
+      description: 'PCA: шлюз по умолчанию 172.16.1.1'
+      skills:
+      - IPv4 Host Address Configuration
+      max_mark: 10
+      steps:
+      - name: PCA gateway 172.16.1.1
+        code: check
+        type: check
+        device: PCA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ipconfig
+            expr: '(?m)Default Gateway[. ]*: 172\.16\.1\.1\s*$'
+            match: true
+- code: RTA
+  name: RTA
+  subCriterions:
+  - code: RTA.MISC
+    name: Miscellaneous
+    aspects:
+    - code: RTA.MISC.HOSTNAME
+      name: Host Name
+      description: Имя устройства задано
+      skills:
+      - Hostname Configuration
+      max_mark: 5
+      steps:
+      - name: hostname RTA in running-config
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - hostname RTA
+            tags_are_present: true
+    - code: RTA.MISC.ENABLE-SECRET
+      name: Enable Secret
+      description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: enable secret present (type 5)
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - enable secret 5
+            tags_are_present: true
+    - code: RTA.MISC.PWD-ENCRYPTION
+      name: Service Password Encryption
+      description: Включено шифрование паролей (service password-encryption)
+      skills:
+      - Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: service password-encryption present
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - service password-encryption
+            tags_are_present: true
+    - code: RTA.MISC.PWD-MIN-LENGTH
+      name: Security Password Min-Length
+      description: Минимальная длина пароля — 10 символов
+      skills:
+      - Basic Security Configuration
+      max_mark: 1
+      steps:
+      - name: security passwords min-length 10
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - security passwords min-length 10
+            tags_are_present: true
+    - code: RTA.MISC.DOMAIN-NAME
+      name: IP Domain Name
+      description: Доменное имя CCNA.com
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: ip domain-name CCNA.com
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - ip domain-name CCNA.com
+            tags_are_present: true
+    - code: RTA.MISC.STARTUP-CONFIG
+      name: Startup Config
+      description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
+      max_mark: 5
+      steps:
+      - name: startup-config saved with hostname
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show startup-config
+            assert_tags:
+            - hostname RTA
+            tags_are_present: true
+  - code: RTA.DNS
+    name: DNS
+    aspects:
+    - code: RTA.DNS.DOMAIN-LOOKUP
+      name: IP Domain-Lookup
+      description: Поиск DNS отключён
+      skills:
+      - Configuration Management
+      max_mark: 1
+      steps:
+      - name: DNS lookup disabled
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - no ip domain-lookup
+            tags_are_present: true
+  - code: RTA.PORTS
+    name: Ports
+    aspects:
+    - code: RTA.PORTS.G0-0-IP
+      name: GigabitEthernet0/0.IP Address
+      description: 'G0/0: IP-адрес 172.16.1.1'
+      skills:
+      - Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: G0/0 has 172.16.1.1 in brief
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'GigabitEthernet0/0\s+172\.16\.1\.1\s+YES'
+            match: true
+    - code: RTA.PORTS.G0-0-MASK
+      name: GigabitEthernet0/0.Subnet Mask
+      description: 'G0/0: маска 255.255.255.0'
+      skills:
+      - Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: G0/0 address+mask in running-config
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - ip address 172.16.1.1 255.255.255.0
+            tags_are_present: true
+    - code: RTA.PORTS.G0-0-STATUS
+      name: GigabitEthernet0/0.Port Status
+      description: G0/0 включён
+      skills:
+      - Device Interface Configuration
+      max_mark: 4
+      steps:
+      - name: G0/0 is up (not administratively down)
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'GigabitEthernet0/0\s+\S+\s+YES\s+\S+\s+up\s+up'
+            match: true
+  - code: RTA.SEC
+    name: Security
+    aspects:
+    - code: RTA.SEC.RSA-1024
+      name: Modulus Bits
+      description: Сгенерирован RSA-ключ 1024 бита, SSH включён
+      skills:
+      - Device Hardening Configuration
+      max_mark: 10
+      steps:
+      - name: SSH enabled via 1024-bit RSA key
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show ip ssh
+            assert_tags:
+            - SSH Enabled
+            tags_are_present: true
+        - action: verify_output
+          action_vars:
+            command: show crypto key mypubkey rsa
+            assert_tags:
+            - 1024 bits
+            tags_are_present: true
+  - code: RTA.USERS
+    name: User Names
+    aspects:
+    - code: RTA.USERS.LOCAL-USER
+      name: Username
+      description: Создан локальный пользователь с secret-паролем
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: local username with secret
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show running-config
+            expr: 'username \S+ secret 5'
+            match: true
+  - code: RTA.LOGIN
+    name: Login Options
+    aspects:
+    - code: RTA.LOGIN.BLOCK-FOR
+      name: Blocking.Enabled
+      description: 'Блокировка входа: 180 с после 4 неудачных попыток за 120 с'
+      skills:
+      - Device Hardening Configuration
+      max_mark: 4
+      steps:
+      - name: login block-for configured
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - login block-for 180 attempts 4 within 120
+            tags_are_present: true
+  - code: RTA.VTY
+    name: VTY Lines
+    aspects:
+    - code: RTA.VTY.SSH-ONLY
+      name: VTY Line 0-4.Transport Input
+      description: 'Линии VTY: только SSH'
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: transport input ssh on vty
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - transport input ssh
+            tags_are_present: true
+    - code: RTA.VTY.LOGIN-LOCAL
+      name: VTY Line 0-4.Login
+      description: 'Линии VTY: аутентификация по локальной базе'
+      skills:
+      - Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: login local on vty
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - login local
+            tags_are_present: true
+    - code: RTA.VTY.EXEC-TIMEOUT
+      name: VTY Line 0-4.Terminal Line timed out
+      description: 'Линии VTY: тайм-аут EXEC 6 минут'
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: exec-timeout on vty (from saved config)
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show startup-config
+            assert_tags:
+            - exec-timeout 6
+            tags_are_present: true
+- code: SW1
+  name: SW1
+  subCriterions:
+  - code: SW1.MISC
+    name: Miscellaneous
+    aspects:
+    - code: SW1.MISC.HOSTNAME
+      name: Host Name
+      description: Имя устройства задано
+      skills:
+      - Hostname Configuration
+      max_mark: 5
+      steps:
+      - name: hostname SW1 in running-config
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - hostname SW1
+            tags_are_present: true
+    - code: SW1.MISC.ENABLE-SECRET
+      name: Enable Secret
+      description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: enable secret present (type 5)
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - enable secret 5
+            tags_are_present: true
+    - code: SW1.MISC.PWD-ENCRYPTION
+      name: Service Password Encryption
+      description: Включено шифрование паролей (service password-encryption)
+      skills:
+      - Basic Security Configuration
+      max_mark: 5
+      steps:
+      - name: service password-encryption
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - service password-encryption
+            tags_are_present: true
+    - code: SW1.MISC.DOMAIN-NAME
+      name: IP Domain Name
+      description: Доменное имя CCNA.com
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: ip domain-name CCNA.com
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - ip domain-name CCNA.com
+            tags_are_present: true
+    - code: SW1.MISC.DOMAIN-LOOKUP
+      name: IP Domain-Lookup
+      description: Поиск DNS отключён
+      skills:
+      - Device Hardening Configuration
+      max_mark: 1
+      steps:
+      - name: DNS lookup disabled
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - no ip domain-lookup
+            tags_are_present: true
+    - code: SW1.MISC.DEFAULT-GW
+      name: Default Gateway
+      description: Шлюз по умолчанию 172.16.1.1
+      skills:
+      - Device Interface Configuration
+      max_mark: 5
+      steps:
+      - name: ip default-gateway 172.16.1.1
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - ip default-gateway 172.16.1.1
+            tags_are_present: true
+    - code: SW1.MISC.STARTUP-CONFIG
+      name: Startup Config
+      description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
+      max_mark: 5
+      steps:
+      - name: configuration saved
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show startup-config
+            assert_tags:
+            - hostname SW1
+            tags_are_present: true
+  - code: SW1.PORTS
+    name: Ports
+    aspects:
+    - code: SW1.PORTS.VLAN1-IP
+      name: Vlan1.IP Address
+      description: 'VLAN 1: IP-адрес 172.16.1.2'
+      skills:
+      - Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: Vlan1 has 172.16.1.2 in brief
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'Vlan1\s+172\.16\.1\.2\s+YES'
+            match: true
+    - code: SW1.PORTS.VLAN1-MASK
+      name: Vlan1.Subnet Mask
+      description: 'VLAN 1: маска 255.255.255.0'
+      skills:
+      - Device Interface Configuration
+      max_mark: 8
+      steps:
+      - name: Vlan1 address+mask in running-config
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show running-config
+            assert_tags:
+            - ip address 172.16.1.2 255.255.255.0
+            tags_are_present: true
+    - code: SW1.PORTS.VLAN1-STATUS
+      name: Vlan1.Port Status
+      description: Интерфейс VLAN 1 включён
+      skills:
+      - Device Interface Configuration
+      max_mark: 4
+      steps:
+      - name: Vlan1 is up/up
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'Vlan1\s+\S+\s+YES\s+\S+\s+up\s+up'
+            match: true
+    - code: SW1.PORTS.UNUSED-SHUT
+      name: Unused Ports.Port Status
+      description: Неиспользуемые порты F0/2–24 и G0/2 выключены
+      skills:
+      - Device Hardening Configuration
+      max_mark: 6
+      steps:
+      - name: F0/2-24 and G0/2 administratively down
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/2\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/3\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/4\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/5\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/6\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/7\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/8\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/9\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/10\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/11\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/12\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/13\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/14\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/15\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/16\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/17\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/18\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/19\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/20\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/21\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/22\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/23\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'FastEthernet0/24\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show ip interface brief
+            expr: 'GigabitEthernet0/2\s+\S+\s+YES\s+\S+\s+administratively down\s+down'
+            match: true
+  - code: SW1.SEC
+    name: Security
+    aspects:
+    - code: SW1.SEC.RSA-1024
+      name: Modulus Bits
+      description: Сгенерирован RSA-ключ 1024 бита, SSH включён
+      skills:
+      - Device Hardening Configuration
+      max_mark: 10
+      steps:
+      - name: 1024-bit RSA key
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: show crypto key mypubkey rsa
+            assert_tags:
+            - 1024 bits
+            tags_are_present: true
+    - code: SW1.SEC.LOCAL-USER
+      name: Username
+      description: Создан локальный пользователь с secret-паролем
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: local username with secret
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show running-config
+            expr: 'username \S+ secret 5'
+            match: true
+  - code: SW1.VTY
+    name: VTY Lines
+    aspects:
+    - code: SW1.VTY.SSH-ONLY
+      name: VTY Line 0-15.Transport Input
+      description: 'Линии VTY: только SSH'
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: SSH only on vty 0-4 and 5-15
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show running-config
+            expr: 'line vty 0 4\r?\n(?: .*\n)*? transport input ssh'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show running-config
+            expr: 'line vty 5 15\r?\n(?: .*\n)*? transport input ssh'
+            match: true
+    - code: SW1.VTY.LOGIN-LOCAL
+      name: VTY Line 0-15.Login
+      description: 'Линии VTY: аутентификация по локальной базе'
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: login local on vty 0-4 and 5-15
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show running-config
+            expr: 'line vty 0 4\r?\n(?: .*\n)*? login local'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show running-config
+            expr: 'line vty 5 15\r?\n(?: .*\n)*? login local'
+            match: true
+    - code: SW1.VTY.EXEC-TIMEOUT
+      name: VTY Line 0-15.Terminal Line timed out
+      description: 'Линии VTY: тайм-аут EXEC 6 минут'
+      skills:
+      - Device Hardening Configuration
+      max_mark: 5
+      steps:
+      - name: exec-timeout 6 on vty 0-4 and 5-15 (from saved config)
+        code: check
+        type: check
+        device: SW1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: 'line vty 0 4\r?\n(?: .*\n)*? exec-timeout 6 0'
+            match: true
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: 'line vty 5 15\r?\n(?: .*\n)*? exec-timeout 6 0'
+            match: true
