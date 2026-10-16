@@ -5,18 +5,18 @@
     "description": "Цель лабораторной работы: отработка навыков, необходимых для настройки адресации на маршрутизаторе, а также проверки его текущего состояния.",
     "difficulty": 1,
     "duration": "PT0H19M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -24,16 +24,9 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
-    },
-    "tags": {
-        "$ref": "../../material-tags.json"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "answerSchema": {
         "type": "object",
@@ -141,7 +134,7 @@
             },
             "q_21": {
                 "type": "string",
-                "title": "21. Сколько маршрутов OSPF (имеют код **O**) отображается на каждом маршрутизаторе?",
+                "title": "21. Сколько статических маршрутов (имеют код **S**) отображается на каждом маршрутизаторе?",
                 "placeholder": "Enter your answer here"
             },
             "q_22": {
@@ -151,7 +144,7 @@
             },
             "q_23": {
                 "type": "string",
-                "title": "23.  Соответствует ли это число количеству маршрутов C и O, показанных в таблице маршрутизации?",
+                "title": "23.  Соответствует ли это число количеству маршрутов C и S, показанных в таблице маршрутизации?",
                 "placeholder": "Enter your answer here"
             }
         }
