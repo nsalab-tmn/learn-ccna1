@@ -50,7 +50,7 @@ Criterions:
       - IPv4 Host Address Configuration
       max_mark: 10
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 172\.16\.1\.1\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?172\.16\.1\.1\s*$'
         code: check
         type: check
         device: PCA
@@ -58,7 +58,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 172\.16\.1\.1\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?172\.16\.1\.1\s*$'
             match: true
 - code: RTA
   name: RTA

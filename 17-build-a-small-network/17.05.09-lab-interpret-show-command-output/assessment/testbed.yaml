@@ -19,4 +19,4 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []

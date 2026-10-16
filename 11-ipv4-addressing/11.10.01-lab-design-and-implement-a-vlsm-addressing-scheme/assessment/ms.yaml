@@ -724,7 +724,7 @@ Criterions:
       - Default Gateway
       max_mark: 3
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 192\.168\.203\.97\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.97\s*$'
         code: check
         type: check
         device: WS116
@@ -732,7 +732,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 192\.168\.203\.97\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.97\s*$'
             match: true
 - code: WS145
   name: WS145
@@ -784,7 +784,7 @@ Criterions:
       - Default Gateway
       max_mark: 3
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 192\.168\.203\.1\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.1\s*$'
         code: check
         type: check
         device: WS145
@@ -792,7 +792,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 192\.168\.203\.1\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.1\s*$'
             match: true
 - code: WS203
   name: WS203
@@ -844,7 +844,7 @@ Criterions:
       - Default Gateway
       max_mark: 3
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 192\.168\.203\.129\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.129\s*$'
         code: check
         type: check
         device: WS203
@@ -852,7 +852,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 192\.168\.203\.129\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.129\s*$'
             match: true
 - code: WS234
   name: WS234
@@ -904,7 +904,7 @@ Criterions:
       - Default Gateway Configuration
       max_mark: 3
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 192\.168\.203\.65\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.65\s*$'
         code: check
         type: check
         device: WS234
@@ -912,5 +912,5 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 192\.168\.203\.65\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.65\s*$'
             match: true

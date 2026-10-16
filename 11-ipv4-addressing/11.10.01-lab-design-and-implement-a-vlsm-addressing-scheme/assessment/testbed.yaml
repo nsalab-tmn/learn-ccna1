@@ -19,7 +19,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   HQ-1:
     os: iosxe
     type: switch
@@ -37,7 +37,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   HQ-2:
     os: iosxe
     type: switch
@@ -55,7 +55,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   Remote:
     os: iosxe
     type: router
@@ -73,7 +73,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   Remote-1:
     os: iosxe
     type: switch
@@ -91,7 +91,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   Remote-2:
     os: iosxe
     type: switch
@@ -109,7 +109,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   WS116:
     os: iosxe
     type: pc
@@ -128,7 +128,7 @@ devices:
           learn_hostname: true
           mit: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   WS145:
     os: iosxe
     type: pc
@@ -147,7 +147,7 @@ devices:
           learn_hostname: true
           mit: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   WS203:
     os: iosxe
     type: pc
@@ -166,7 +166,7 @@ devices:
           learn_hostname: true
           mit: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   WS234:
     os: iosxe
     type: pc
@@ -185,4 +185,4 @@ devices:
           learn_hostname: true
           mit: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []

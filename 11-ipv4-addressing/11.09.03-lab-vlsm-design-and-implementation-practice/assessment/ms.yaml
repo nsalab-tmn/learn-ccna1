@@ -268,7 +268,7 @@ Criterions:
       - Default Gateway Configuration
       max_mark: 2
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 10\.11\.48\.1\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?10\.11\.48\.1\s*$'
         code: check
         type: check
         device: Host-D
@@ -276,5 +276,5 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 10\.11\.48\.1\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?10\.11\.48\.1\s*$'
             match: true

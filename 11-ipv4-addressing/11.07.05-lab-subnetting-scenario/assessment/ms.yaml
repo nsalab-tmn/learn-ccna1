@@ -50,7 +50,7 @@ Criterions:
       - Default Gateway Configuration
       max_mark: 2
       steps:
-      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: 192\.168\.100\.97\s*$'
+      - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.100\.97\s*$'
         code: check
         type: check
         device: PC4
@@ -58,7 +58,7 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)Default Gateway[. ]*: 192\.168\.100\.97\s*$'
+            expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.100\.97\s*$'
             match: true
 - code: R1
   name: R1

@@ -20,7 +20,7 @@ devices:
           learn_hostname: true
           mit: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   R1:
     os: iosxe
     type: router
@@ -38,7 +38,7 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
   S3:
     os: iosxe
     type: switch
@@ -56,4 +56,4 @@ devices:
           connection_timeout: 30
           learn_hostname: true
         settings:
-          INIT_CONFIG_COMMANDS: []
+          HA_INIT_CONFIG_COMMANDS: []
