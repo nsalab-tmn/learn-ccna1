@@ -14,7 +14,7 @@
 
 Колонка «Видеоряд (Figma)» в таблице фиксирует прогресс пересборки: по каким видео собран и принят новый видеоряд — анимация Figma Motion на нашей дизайн-системе. Голосовая дорожка — отдельный трек, пока не начат ни для одного видео.
 
-**Готово: 5 из 36** (explainer — 5 из 17).
+**Готово: 6 из 36** (explainer — 6 из 17).
 
 | статус | значит |
 |---|---|
@@ -43,7 +43,7 @@
 | lQQ28pdSqfg | 02/02.05-save-configurations | Alter the Running Configuration | 7:09 | cli-basics | код-рендер ~3:30 (схема RAM/NVRAM) + сессия (copy run start, dir nvram:, reload, erase, copy start run) | — | [doc](02-basic-switch-and-end-device-configuration/02.05-save-configurations--lQQ28pdSqfg.md) |
 | CkvRVRcOkls | 02/02.08-verify-connectivity | Test the Interface Assignment | 4:36 | lab-demo | код-рендер ~2:30 + сессия (show ip interface brief, no shutdown, ip address на SVI) | — | [doc](02-basic-switch-and-end-device-configuration/02.08-verify-connectivity--CkvRVRcOkls.md) |
 | gex3BaiuQiw | 02/02.08-verify-connectivity | Test End-to-End Connectivity | 2:40 | lab-demo | код-рендер ~1:45 + сессия ping (можно слить с 2.8.1) | — | [doc](02-basic-switch-and-end-device-configuration/02.08-verify-connectivity--gex3BaiuQiw.md) |
-| yWjd-4WN4hE | 03/03.01-the-rules | Devices in a Bubble | 3:44 | explainer | анимация Figma (≤ 60 с) или код-рендер ~2:00 | — | [doc](03-protocols-and-models/03.01-the-rules--yWjd-4WN4hE.md) |
+| yWjd-4WN4hE | 03/03.01-the-rules | Devices in a Bubble | 3:44 | explainer | анимация Figma (≤ 60 с) или код-рендер ~2:00 | **готов** · 1:16 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4998-8863) | [doc](03-protocols-and-models/03.01-the-rules--yWjd-4WN4hE.md) |
 | lxeBvUOA9oE | 05/05.01-binary-number-system | Convert Between Binary and Decimal Numbering Systems | 8:22 | explainer | 2 анимации Figma (168 → биты; адрес → десятичный) или код-рендер ~3:00 | — | [doc](05-number-systems/05.01-binary-number-system--lxeBvUOA9oE.md) |
 | 50O7DGHEz6A | 05/05.02-hexadecimal-number-system | Convert Between Hexadecimal and Decimal Numbering Systems | 6:35 | explainer | 2 анимации Figma (197 → C5; 9F → 159) или код-рендер ~2:30 | — | [doc](05-number-systems/05.02-hexadecimal-number-system--50O7DGHEz6A.md) |
 | fi7Ss-_9LvY | 07/07.03-the-mac-address-table | MAC Address Tables on Connected Switches | 3:05 | explainer | анимация Figma (≤ 60 с) на общей схеме с 7.3.5 (+ опц. код-рендер ~2:00) | **готов** · 1:35 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=4933-8671) | [doc](07-ethernet-switching/07.03-the-mac-address-table--fi7Ss-_9LvY.md) |
