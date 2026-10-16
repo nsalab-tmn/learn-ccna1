@@ -5,18 +5,18 @@
     "description": "Цель лабораторной работы: отработка навыков, необходимых для внедрения VLSM.",
     "difficulty": 1,
     "duration": "PT0H17M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -24,16 +24,9 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
-    },
-    "tags": {
-        "$ref": "../../material-tags.json"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "answerSchema": {
         "type": "object",
@@ -46,7 +39,7 @@
             },
             "q_2": {
                 "type": "string",
-                "title": "2. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S1Name\\]\\]**?",
+                "title": "2. Какая маска подсети обеспечит нужное количество IP-адресов для **ASW-1**?",
                 "placeholder": "Enter your answer here"
             },
             "q_3": {
@@ -56,7 +49,7 @@
             },
             "q_4": {
                 "type": "string",
-                "title": "4. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S2Name\\]\\]**?",
+                "title": "4. Какая маска подсети обеспечит нужное количество IP-адресов для **ASW-2**?",
                 "placeholder": "Enter your answer here"
             },
             "q_5": {
@@ -66,7 +59,7 @@
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S3Name\\]\\]**?",
+                "title": "6. Какая маска подсети обеспечит нужное количество IP-адресов для **ASW-3**?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
@@ -76,7 +69,7 @@
             },
             "q_8": {
                 "type": "string",
-                "title": "8. Какая маска подсети обеспечит нужное количество IP-адресов для **\\[\\[S4Name\\]\\]**?",
+                "title": "8. Какая маска подсети обеспечит нужное количество IP-адресов для **ASW-4**?",
                 "placeholder": "Enter your answer here"
             },
             "q_9": {
@@ -86,7 +79,7 @@
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Какая маска подсети обеспечит нужное количество IP-адресов для соединения **\\[\\[R1Name\\]\\]** и **\\[\\[R2Name\\]\\]**?",
+                "title": "10. Какая маска подсети обеспечит нужное количество IP-адресов для соединения **Building1** и **Building2**?",
                 "placeholder": "Enter your answer here"
             }
         }

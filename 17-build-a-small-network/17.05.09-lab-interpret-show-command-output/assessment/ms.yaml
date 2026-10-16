@@ -1,23 +1,28 @@
+# Not generated: learn-netsim builds 17.5.9 as an ungraded package (topology only).
+# PT scored this activity with a single "Lab started" item; this keeps that one item so
+# a completed lab grades 1/1 instead of failing for lack of a scheme. The answers go to
+# the question form. Replace with the generator's output if learn-netsim adds one.
 Criterions:
-- code: A
+- code: LAB
   name: Web response
   subCriterions:
-  - name: Check response
-    code: 1
+  - code: LAB.CHECK
+    name: Check response
     aspects:
-    - name: Lab started
-      code: 1
-      description: null
-      skills: Physical
+    - code: LAB.CHECK.STARTED
+      name: Lab started
+      description: 'Лабораторная работа запущена: ISPRouter отвечает'
+      skills:
+      - Physical
       max_mark: 1
       steps:
-      - name: Register packet tracer aspect mark
-        code: register
+      - name: 'show version: matches (?m)^ISPRouter uptime is '
+        code: check
         type: check
-        result: null
-        device: dummy
+        device: ISPRouter
         action_chain:
-        - action: validate_web_response
+        - action: verify_output_regex
           action_vars:
-            name: 'https://{pt-url}'
-            assert_code: 200
+            command: show version
+            expr: '(?m)^ISPRouter uptime is '
+            match: true

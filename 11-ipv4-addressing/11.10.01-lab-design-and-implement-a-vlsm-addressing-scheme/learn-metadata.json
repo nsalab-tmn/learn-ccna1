@@ -5,18 +5,18 @@
     "description": "Цель лабораторной работы: отработка навыков по разработке схемы IP-адресации и применению ее на сетевых устройствах.",
     "difficulty": 1,
     "duration": "PT0H13M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -24,15 +24,8 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
-    },
-    "tags": {
-        "$ref": "../../material-tags.json"
+        "local": {
+            "$ref": "./assessment"
+        }
     }
 }
