@@ -63,9 +63,11 @@ jobs:
         continue-on-error: true   # a `broken` entry exits 2; we still want the PR with the ⚠ list
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          SCOPE: ${{ inputs.scope }}   # inputs via env, never interpolated into the script
+          KEYS: ${{ inputs.keys }}
         run: |
           python3 .github/scripts/figma_sync.py \
-            --scope "${{ inputs.scope }}" --keys "${{ inputs.keys }}" \
+            --scope "$SCOPE" --keys "$KEYS" \
             --renderer .github/scripts/render.py \
             --summary "$RUNNER_TEMP/figma-sync.md"
           cat "$RUNNER_TEMP/figma-sync.md" >> "$GITHUB_STEP_SUMMARY"
@@ -73,6 +75,7 @@ jobs:
       - name: Commit and open / update the pull request
         env:
           GH_TOKEN: ${{ github.token }}
+          PR_LABEL: ${{ inputs.keys != '' && inputs.keys || inputs.scope }}
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "nothing changed — no commit, no PR" | tee -a "$GITHUB_STEP_SUMMARY"
@@ -90,7 +93,7 @@ jobs:
             echo "updated open PR #$open" >> "$GITHUB_STEP_SUMMARY"
           else
             gh pr create --base "$BASE_BRANCH" --head "$SYNC_BRANCH" \
-              --title "chore(assets): Figma sync — ${{ inputs.keys != '' && inputs.keys || inputs.scope }}" \
+              --title "chore(assets): Figma sync — $PR_LABEL" \
               --body-file "$RUNNER_TEMP/pr-body.md"
           fi
 
