@@ -1,2 +1,2 @@
-skip_connections:
-  - dummy
+# Not generated (see ms.yaml): no static parameters.
+skiptype: []
