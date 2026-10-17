@@ -92,7 +92,7 @@ Active Connections
   TCP    192.168.1.124:3159     207.138.126.169:http       ESTABLISHED
   TCP    192.168.1.124:3160     207.138.126.169:http       ESTABLISHED
   TCP    192.168.1.124:3161     sc.msn.com:http            ESTABLISHED
-  TCP    192.168.1.124:3166     www.cisco.com:http         ESTABLISHED
+  TCP    192.168.1.124:3166     ya.ru:http                 ESTABLISHED
 (output omitted)
 C:\>
 ```
