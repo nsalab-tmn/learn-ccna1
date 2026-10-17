@@ -1,0 +1,4 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+16-network-security-fundamentals/16.02-network-attacks/README.md,assets/16.2.2-1.svg,"анимация «разведка»: карточка WHOIS для cisco.com (регистрант Cisco Technology, Inc., адрес в Сан-Хосе) и форма поиска «cisco.com»","нейтральный домен и регистрант (ya.ru или вымышленная организация), общий компонент карточки WHOIS",анимация (audit P1-11)
+17-build-a-small-network/17.03-scale-to-larger-networks/README.md,assets/17.3.3.png,скриншот Windows «Использование данных»: в списке приложение CiscoCollabHost,компонент окна настроек с нейтральными именами приложений,изображение (audit P2-04)
+17-build-a-small-network/17.04-verify-connectivity/README.md,assets/17.4.3-1.svg; assets/17.4.3-2.svg; assets/17.4.4.svg,заголовок таблицы/схемы «Трассировка с маршрутизатора Cisco IOS»,«Трассировка с маршрутизатора» (текст лекции теперь: «Команды трассировки Windows и ОС маршрутизатора»),иллюстрации (audit P1-11)
