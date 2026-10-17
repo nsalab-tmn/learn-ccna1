@@ -1,0 +1,3 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+16-network-security-fundamentals/16.03-network-attack-mitigation/README.md,assets/16.3.1.svg,"схема средств защиты: подпись «ESA/WSA», значки безопасности","подпись «Шлюзы защиты почты и веб-трафика» (или короткая «Защита почты / веба»), как в тексте 16.3.1",иллюстрация (audit P1-11); текст лекции уже без ESA/WSA и ASA
+17-build-a-small-network/17.02-small-network-applications-and-protocols/README.md,assets/17.2.1.jpg,скриншот Диспетчера задач Windows: процессы Cisco Webex Service / Webex Teams,"компонент окна диспетчера задач с нейтральными именами процессов, или удалить",изображение (audit P1-08)
