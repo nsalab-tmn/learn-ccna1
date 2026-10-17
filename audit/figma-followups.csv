@@ -1,0 +1,3 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+01-networking-today/01.03-network-topologies/README.md,assets/1.3.1.svg (figma 4715:7258),подпись «Терминальное оборудование TelePresence» в легенде символов сети,"«Терминал видеоконференцсвязи», как в обновлённом тексте 1.3.1",иллюстрация (audit P1-11); текст исправлен в этом PR
+01-networking-today/01.07-network-trends/README.md,assets/1.7.3.png,"скриншот окна «Cisco Webex Meetings» с участниками, логотип Cisco в углу",нейтральная фигура «видеоконференция» без бренда (или удалить: текст ссылается на рисунок словами «см. рисунок»),изображение (audit P1-08); текст исправлен в этом PR
