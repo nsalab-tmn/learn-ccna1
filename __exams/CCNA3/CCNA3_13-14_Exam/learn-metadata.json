@@ -165,7 +165,7 @@
                     "correct": false
                 }
             ],
-            "question": "Что предварительно заполняет FIB на устройствах Cisco, обрабатывающих пакеты с помощью технологии CEF?"
+            "question": "Что предварительно заполняет FIB на устройствах, обрабатывающих пакеты с помощью технологии CEF?"
         },
         {
             "answerType": "singleChoice",
@@ -1161,7 +1161,6 @@
     ],
     "skills": {},
     "tags": [
-        "Cisco",
         "Network"
     ],
     "title": "Enterprise Networking, Security, and Automation (Version 7.00) - Экзамен по новым сетевым технологиям"
