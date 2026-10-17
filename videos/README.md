@@ -14,7 +14,7 @@
 
 Колонка «Видеоряд (Figma)» в таблице фиксирует прогресс пересборки: по каким видео собран и принят новый видеоряд — анимация Figma Motion на нашей дизайн-системе. Голосовая дорожка — отдельный трек, пока не начат ни для одного видео.
 
-**Готово: 11 из 36** (explainer — 11 из 17).
+**Готово: 12 из 36** (explainer — 12 из 17).
 
 | статус | значит |
 |---|---|
@@ -59,7 +59,7 @@
 | RH_KIUdHZlE | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 2 | 10:16 | **lab-demo** (по содержанию cli-basics) | код-рендер терминала ~4:00 + полная сессия трёх роутеров для симулятора | — | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--RH_KIUdHZlE.md) |
 | 7DoggTtOLN0 | 11/11.01-ipv4-address-structure | Network, Host and Broadcast Addresses | 6:22 | explainer | анимация Figma ≤ 60 с (побитовое И) / текст + иллюстрация | **готов** · 1:16 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5057-7150) | [doc](11-ipv4-addressing/11.01-ipv4-address-structure--7DoggTtOLN0.md) |
 | LKjCyGaiH4Q | 11/11.05-subnet-an-ipv4-network | The Subnet Mask | 8:09 | explainer | код-рендер ~2:30 (можно объединить с A2P7i6ebSCE) | **готов** · 1:24 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5069-7061) | [doc](11-ipv4-addressing/11.05-subnet-an-ipv4-network--LKjCyGaiH4Q.md) |
-| A2P7i6ebSCE | 11/11.05-subnet-an-ipv4-network | Subnet with the Magic Number | 14:50 | explainer | код-рендер ~4:00 + сводная таблица /25…/30 в текст | — | [doc](11-ipv4-addressing/11.05-subnet-an-ipv4-network--A2P7i6ebSCE.md) |
+| A2P7i6ebSCE | 11/11.05-subnet-an-ipv4-network | Subnet with the Magic Number | 14:50 | explainer | код-рендер ~4:00 + сводная таблица /25…/30 в текст | **готов** · 1:30 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5079-7009) | [doc](11-ipv4-addressing/11.05-subnet-an-ipv4-network--A2P7i6ebSCE.md) |
 | TJSWlSplC1Q | 11/11.06-subnet-a-16-and-8-prefix | Subnet Across Multiple Octets | 5:21 | explainer | анимация Figma ≤ 60 с / финал объединённого ролика «магическое число» | — | [doc](11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix--TJSWlSplC1Q.md) |
 | R_Ti9y2AShc | 11/11.08-variable-length-subnet-masking | VLSM Basics | 2:32 | explainer | текст + иллюстрация (или пролог ≤ 30 с к примеру VLSM) | — | [doc](11-ipv4-addressing/11.08-variable-length-subnet-masking--R_Ti9y2AShc.md) |
 | _V-YboU4Rq4 | 11/11.08-variable-length-subnet-masking | VLSM Example | 10:24 | explainer | код-рендер ~3:30 (дерево подсетей) | — | [doc](11-ipv4-addressing/11.08-variable-length-subnet-masking--_V-YboU4Rq4.md) |
