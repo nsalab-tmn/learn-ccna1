@@ -907,7 +907,7 @@
                     "correct": true
                 },
                 {
-                    "answer": "Cisco ACI",
+                    "answer": "Сетевая инфраструктура, ориентированная на приложения",
                     "comment": "",
                     "correct": false
                 },
@@ -985,12 +985,12 @@
                     "correct": true
                 },
                 {
-                    "answer": "APIC-EM",
+                    "answer": "Контроллер SDN",
                     "comment": "",
                     "correct": false
                 },
                 {
-                    "answer": "Cisco ACI",
+                    "answer": "Сетевая инфраструктура, ориентированная на приложения",
                     "comment": "",
                     "correct": false
                 },
@@ -1073,7 +1073,7 @@
                     "correct": false
                 },
                 {
-                    "answer": "Cisco ACI",
+                    "answer": "Сетевая инфраструктура, ориентированная на приложения",
                     "comment": "",
                     "correct": false
                 }
@@ -1094,7 +1094,7 @@
                     "correct": false
                 },
                 {
-                    "answer": "Cisco ACI",
+                    "answer": "Сетевая инфраструктура, ориентированная на приложения",
                     "comment": "",
                     "correct": false
                 },
