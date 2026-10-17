@@ -1,0 +1,4 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+04-physical-layer/04.01-purpose-of-the-physical-layer/README.md,assets/4.1.2.svg,анимация: окно браузера со скриншотом cisco.com и слоганом Cisco,нейтральная веб-страница (общий компонент «окно браузера»),анимация (audit P2-04)
+04-physical-layer/04.01-purpose-of-the-physical-layer/README.md,assets/4.1.1-1.jpg; assets/4.1.1-2.jpg,"фото домашнего роутера Linksys (выпуск времён Cisco), задняя панель и коллаж с ноутбуком; на 4.1.1-1 логотип не виден",решение локального агента: оставить или заменить библиотечным домашним роутером,"изображение (audit P2-06, decide)"
+04-physical-layer/04.06-wireless-media/README.md,assets/4.6.3.jpg,продуктовое фото Cisco Meraki MX64W с логотипом Cisco; заголовок над ним теперь «Беспроводной маршрутизатор»,библиотечный беспроводной роутер,изображение (audit P2-06)
