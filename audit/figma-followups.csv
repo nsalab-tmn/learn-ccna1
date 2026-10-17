@@ -1,0 +1,2 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+__exams/CCNA1/CCNA1_01-03_Exam/learn-metadata.json,assert/Assessment01.pka (последний вопрос банка),вопрос «Откройте упражнение в Packet Tracer… Каков IP-адрес SVI на коммутаторе 0?» со ссылкой на .pka,задание в симуляторе или снять вопрос,"вопрос оценивается через .pka, ссылка и .pka вне правил kb#271 §2/§6"
