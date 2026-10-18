@@ -1,0 +1,2 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+17-build-a-small-network/17.07-troubleshooting-scenarios/README.md,блок вывода nslookup (раздел 17.7.5),"настоящий вывод nslookup для cisco.com (2001:420:1101:1::185, 72.163.4.185)",новый настоящий вывод nslookup для ya.ru,текст 17.7.5 уже нейтральный (kb#282); вывод CLI не выдумывается — нужна живая съемка
