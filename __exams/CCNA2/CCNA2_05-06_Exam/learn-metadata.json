@@ -323,7 +323,7 @@
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answer": "Он включен на коммутаторах по умолчанию.",
+                    "answer": "Он по умолчанию включен на многих коммутаторах.",
                     "comment": "",
                     "correct": true
                 },
