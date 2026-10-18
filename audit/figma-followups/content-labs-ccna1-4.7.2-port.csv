@@ -1,0 +1,2 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+04-physical-layer/04.07.02-lab-connect-the-physical-layer/README.md,assets/topology.png,"снимок холста Packet Tracer: West, Cluster0 и Cell Tower0 (сотовая связь), TabletPC и Laptop (беспроводные), PC1–PC9, Switch1–Switch4, DHCP Server, Access Point",схема порта learn-netsim labs/ccna1/4.7.2 без беспроводных устройств и сотовой связи,"порт netsim убрал беспроводные шаги и 3G/4G (learn-netsim#181); рисунок показывает устройства, которых в лабораторной больше нет"
