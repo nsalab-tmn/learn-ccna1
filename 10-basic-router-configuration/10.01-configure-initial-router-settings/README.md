@@ -80,15 +80,15 @@ R1(config)#
 Следующие команды обеспечивают защиту привилегированного и пользовательского режимов EXEC, разрешают удаленный доступ Telnet и SSH, а также шифруют все пароли открытого текста (например, пользовательские EXEC и VTY line):
 
 ```
-R1(config)# enable secret class 
+R1(config)# enable secret netlab 
 R1(config)#
 R1(config)# line console 0 
-R1(config-line)# password cisco 
+R1(config-line)# password netlab 
 R1(config-line)# login 
 R1(config-line)# exit 
 R1(config)#
 R1(config)# line vty 0 4 
-R1(config-line)# password cisco 
+R1(config-line)# password netlab 
 R1(config-line)# login 
 R1(config-line)# transport input ssh telnet 
 R1(config-line)# exit 
