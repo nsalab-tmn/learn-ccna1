@@ -376,7 +376,7 @@
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answer": "транкинг",
+                    "answer": "конфигурация магистрального канала",
                     "comment": "По умолчанию все порты коммутатора назначаются для VLAN 1. Для реализации VLAN порты Fa0/1 и Fa0/2 должны быть назначены соответственно VLAN 10 и VLAN 20. На коммутаторе S1 отсутствуют следующие команды: switchport access vlan 10 и switchport access vlan 20.",
                     "correct": false
                 },
