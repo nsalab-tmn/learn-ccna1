@@ -90,23 +90,23 @@
             ]
         },
         {
-            "question": "Какую команду можно использовать на роутере Cisco для просмотра таблицы ARP?",
+            "question": "Какую команду можно использовать на роутере для просмотра таблицы ARP?",
             "answerType": "singleChoice",
             "answers": [
                 {
                     "answer": "arp -a",
                     "correct": false,
-                    "comment": "На роутерах Cisco для просмотра таблицы ARP используется команда show ip arp"
+                    "comment": "На роутерах для просмотра таблицы ARP используется команда show ip arp"
                 },
                 {
                     "answer": "arp -d",
                     "correct": false,
-                    "comment": "На роутерах Cisco для просмотра таблицы ARP используется команда show ip arp"
+                    "comment": "На роутерах для просмотра таблицы ARP используется команда show ip arp"
                 },
                 {
                     "answer": "show arp table",
                     "correct": false,
-                    "comment": "На роутерах Cisco для просмотра таблицы ARP используется команда show ip arp"
+                    "comment": "На роутерах для просмотра таблицы ARP используется команда show ip arp"
                 },
                 {
                     "answer": "show ip arp",
