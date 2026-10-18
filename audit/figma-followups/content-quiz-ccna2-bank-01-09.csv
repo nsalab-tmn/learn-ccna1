@@ -1,0 +1,3 @@
+path,asset_or_figure,what_is_shown,should_become,reason
+__exams/CCNA2/CCNA2_01-04_Exam/learn-metadata.json,__exams/CCNA2/CCNA2_01-04_Exam/assert/4.PNG (вопрос 25),"вопрос ссылается на ./assert/4.png, а файл называется 4.PNG: изображение не отображается",ссылка ./assert/4.PNG (или файл 4.png),"путь к изображению вне области kb#275; копия банка, само изображение совпадает с 01-04-exam"
+__exams/CCNA2/CCNA2_01-04_Exam/learn-metadata.json,__exams/CCNA2/CCNA2_01-04_Exam/assert/15.PNG (вопрос 45),"вопрос ссылается на ./assert/15.png, а файл называется 15.PNG: изображение не отображается",ссылка ./assert/15.PNG (или файл 15.png),"путь к изображению вне области kb#275; копия банка, само изображение совпадает с 01-04-exam"
