@@ -52,7 +52,7 @@
 Адреса loopback (127.0.0.0 /8 или от 127.0.0.1 до 127.255.255.254): чаще определяются как только один адрес 127.0.0.1. Это особые адреса, с помощью которых узлы направляют трафик самим себе. Например, узлы могут его использовать для проверки работоспособности конфигурации TCP/IP, как показано на рисунке. Посмотрите, как адрес loopback 127.0.0.1 отвечает на эхо-запрос **ping**. Также обратите внимание, как любой адрес в этом блоке адресов возвращает пакет на локальный узел (например, см. процесс отправки второй команды **ping** на рисунке).
 
 ```
-C:\Users\NetAcad> ping 127.0.0.1
+C:\Users\Student> ping 127.0.0.1
 Pinging 127.0.0.1 with 32 bytes of data:
 Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
 Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
@@ -62,7 +62,7 @@ Ping statistics for 127.0.0.1:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 0ms, Average = 0ms
-C:\Users\NetAcad> ping 127.1.1.1
+C:\Users\Student> ping 127.1.1.1
 Pinging 127.1.1.1 with 32 bytes of data:
 Reply from 127.1.1.1: bytes=32 time<1ms TTL=128
 Reply from 127.1.1.1: bytes=32 time<1ms TTL=128
@@ -72,7 +72,7 @@ Ping statistics for 127.1.1.1:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 0ms, Average = 0ms
-C:\Users\NetAcad>
+C:\Users\Student>
 ```
 
 **Локальные адреса канала**
