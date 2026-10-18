@@ -11,18 +11,18 @@
     "passingScore": 100,
     "questions": [
         {
-            "question": "Какая команда используется на роутере Cisco IOS для просмотра таблицы маршрутизации?",
+            "question": "Какая команда используется на роутере для просмотра таблицы маршрутизации?",
             "answerType": "singleChoice",
             "answers": [
                 {
                     "answer": "netstart -r",
                     "correct": false,
-                    "comment": "Для просмотра таблицы маршрутизации на роутере Cisco используется команда show ip route"
+                    "comment": "Для просмотра таблицы маршрутизации на роутере используется команда show ip route"
                 },
                 {
                     "answer": "route print",
                     "correct": false,
-                    "comment": "Для просмотра таблицы маршрутизации на роутере Cisco используется команда show ip route"
+                    "comment": "Для просмотра таблицы маршрутизации на роутере используется команда show ip route"
                 },
                 {
                     "answer": "show ip route",
@@ -31,7 +31,7 @@
                 {
                     "answer": "show routing table",
                     "correct": false,
-                    "comment": "Для просмотра таблицы маршрутизации на роутере Cisco используется команда show ip route"
+                    "comment": "Для просмотра таблицы маршрутизации на роутере используется команда show ip route"
                 }
             ]
         },
