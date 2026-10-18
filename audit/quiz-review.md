@@ -27,9 +27,10 @@ The quizzes and exams are translations of the vendor's question banks. The de-ma
 
 1. **Mechanical pass** over all files: answer counts against `answerType` and the stem, matching keys, image paths, Packet Tracer UI strings. In CCNA1 it found one item, bank 01-03 Q48, a Packet Tracer activity (`.pka`).
 2. **Review:** eight reviewers each took a block of modules or exams and wrote findings with evidence (`README.md:line`, RFC or IEEE) and a proposed minimal fix.
-3. **Verification:** every finding was checked again before it went into a PR. The coordinator checked the quiz findings. Second reviewers checked the exam findings and rewrote fixes where needed, then the coordinator spot-checked them. Fixes were checked against the glossary (`conventions/ru-glossary.md` in the knowledge base) for forbidden variants. Swaps of «роутер» / «маршрутизатор» and «хост» / «узел» were left to the kb#276 alignment.
+3. **Verification:** every finding was checked again before it went into a PR. The coordinator checked the quiz findings. Second reviewers checked the exam findings and rewrote fixes where needed, then the coordinator spot-checked them. Fixes were checked against the glossary (`conventions/ru-glossary.md` in the knowledge base, with the rows decided in kb#279) for forbidden variants. Standalone swaps of «роутер» / «маршрутизатор» and «хост» / «узел» were left to the kb#276 alignment. Sentences rewritten for other reasons use «маршрутизатор», as the glossary decides (kb#279) and as the bank copies already do.
 4. **Fix PRs:** one per module block, so no two open PRs share a line. The bank copies change in the same PR as their exam and get the same wording.
-5. **Doubtful items** are not changed. They go to the operator on kb#275: two defensible answers, content the course does not teach, or a course text that is itself wrong.
+5. **Review of the fix PRs:** kb read every changed string. Its fixes and the optional suggestions taken went into follow-up commits on the same PRs, and this report includes them.
+6. **Doubtful items** are not changed. They go to the operator on kb#275: two defensible answers, content the course does not teach, or a course text that is itself wrong.
 
 Severity follows kb#275:
 - `error`: a wrong key, a distractor that is actually right, a wrong statement in a question or comment, or a comment copied from another question;
@@ -67,12 +68,12 @@ Findings are counted per file. A bank copy's finding counts separately from its 
 | | quizzes | exams | bank copies | all |
 |---|---|---|---|---|
 | error | 32 | 122 | 120 | 274 |
-| style | 323 | 158 | 153 | 634 |
+| style | 326 | 160 | 155 | 641 |
 | unclear | 14 | 16 | 16 | 46 |
-| **fixed** | 349 | 280 | 273 | 902 |
-| **to the operator** | 18 | 16 | 16 | 50 |
+| **fixed** | 354 | 282 | 275 | 911 |
+| **to the operator** | 16 | 16 | 16 | 48 |
 | **rejected on verification** | 2 | 0 | 0 | 2 |
-| **total findings** | 369 | 296 | 289 | 954 |
+| **total findings** | 372 | 298 | 291 | 961 |
 
 The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with their reasons, in the kb#275 comment for the operator.
 
@@ -107,6 +108,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 01.10.02-quiz | 14 | style | Typo «технологи» for «технологии» | #111 → «сетевые технологии,» |
 | 02.01.06-access-to-cisco-ios-quiz | 3 | style | Broken government «будет наиболее подходящим внутриполосным доступом»: the access method is equated with the access | #111 → «будет наиболее подходящим для внутриполосного доступа к ОС» |
 | 02.02.08-ios-navigation-quiz | 1 | style | Comment calls global configuration mode and its sub-modes «Команды более высокого уровня»; they are modes, not commands | #111 → «EXEC. Режимы конфигурации более высокого» |
+| 02.02.08-ios-navigation-quiz | 1 | style | The comment has «режим» ×4 and «конфигурации» ×3 in one sentence, and «режимы дополнительной конфигурации» differs from the options («вложенный режим конфигурац… | #111 → «В режим глобальной конфигурации и во вложенные режимы конфигурации можно перейти только из привилегированного режима EXE…» |
 | 02.02.08-ios-navigation-quiz | 2 | style | The question mark sits inside the inline-code span, so the prompt is shown as «Switch(config)#?», which itself looks like a help command | #111 → «``Switch(config)#``?» |
 | 02.02.08-ios-navigation-quiz | 3 | style | The question mark sits inside the inline-code span, so the prompt is shown as «Switch>?», which is the help command typed at the prompt | #111 → «``Switch>``?» |
 | 02.02.08-ios-navigation-quiz | 4 | style | Calque «вернуться из любого режима, вплоть до привилегированного» ('all the way back to'); «вплоть до» does not express a destination | #111 → «Чтобы из любого режима конфигурации вернуться в привилегированный режим EXEC,» |
@@ -139,12 +141,13 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 03.06.06-data-encapsulation-quiz | 1 | style | Typo «назыывается» | #111 → «называется» |
 | 03.06.06-data-encapsulation-quiz | 4 | style | Agreement error «по мере его перемещения»: the antecedent «данные» is plural; also «стеку протокола» should be «стеку протоколов» | #111 → «по мере их перемещения вниз по стеку протоколов» |
 | 03.06.06-data-encapsulation-quiz | 4 | style | Clumsy repetition «данных ... данные протокола ... к исходным данным» and wrong direction «в стек» | #111 → «По мере перемещения данных вниз по стеку протоколов к ним добавляется служебная информация протоколов.» |
+| 03.06.06-data-encapsulation-quiz | 4 | style | «добавления информации протокола … стеку протоколов» repeats «протокол»; the comment calls it «служебная информация протоколов» (review suggestion) | #111 → «Как называется добавление служебной информации протоколов к данным по мере их перемещения вниз по стеку?» |
 | 03.07.11-data-access-quiz | 2 | style | Sentence fragment «Самая левая часть IP-адреса, которая идентифицирует сеть.» has no predicate | #111 → «Самая левая часть IP-адреса идентифицирует сеть.» |
 | 03.07.11-data-access-quiz | 3 | style | Wrong case «крайнюю левую часть» (accusative) among nominative options | #111 → «крайняя левая часть MAC-адреса» |
 | 03.08.02-quiz | 1 | style | «МАС» is typed in Cyrillic letters (U+041C U+0410 U+0421), unlike the Latin «MAC» used everywhere else | #111 → «Тема 3.4.0 - MAC-адрес» |
 | 03.08.02-quiz | 4 | style | Option «групповая» while its own comment calls the same delivery «многоадресной доставкой»; the module term is «многоадресная передача» (q2 and q11 of this file… | #111 → «"answer": "многоадресная"» |
-| 03.08.02-quiz | 5 | style | Calque «взаимодействие между каждым уровнем и протоколами между каждым уровнем» ('between each layer') | #111 → «помогает наглядно представить взаимодействие уровней и протоколов разных уровней» |
-| 03.08.02-quiz | 6 | style | Calque «Операционные системы не указываются протоколами, но обеспечивают внедрение протоколов» | #111 → «Протоколы не определяют операционные системы, а операционные системы реализуют протоколы» |
+| 03.08.02-quiz | 5 | style | Calque «взаимодействие между каждым уровнем и протоколами между каждым уровнем» ('between each layer') | #111 → «помогает наглядно представить, как взаимодействуют уровни и работающие на них протоколы» |
+| 03.08.02-quiz | 6 | style | Calque «Операционные системы не указываются протоколами, но обеспечивают внедрение протоколов» | #111 → «Протоколы не определяют, какая операционная система используется: ОС лишь реализует их» |
 | 03.08.02-quiz | 8 | style | Broken grammar «Каков общий термин используется ...» | #111 → «Какой общий термин используется» |
 | 03.08.02-quiz | 8 | style | «блок данных протокола (PDU)» differs from the module term «единица данных протокола (PDU)», also used in 03.06.06 q2 | #111 → «термин «единица данных протокола» (PDU)» |
 | 03.08.02-quiz | 12 | style | Calque and chain «Процесс получения передаваемых данных и реверсирование процесса кодирования для интерпретации информации» | #111 → «Получение переданных данных и их обратное преобразование для интерпретации информации — это декодирование» |
@@ -297,7 +300,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 10.04.06-quiz | 3 | style | Typo «безопасноый»; «exec» in lower case while the same stem and the course write EXEC. | #114 → «наиболее безопасный метод защиты доступа к привилегированному режиму EXEC» |
 | 10.04.06-quiz | 7 | error | Comment says that configure terminal gives access to configuration, management and troubleshooting commands. configure terminal only enters global configuration… | #114 → «Тема 10.1.0 — Привилегированный режим EXEC дает доступ ко всем командам устройства, в том числе к командам настройки, уп…» |
 | 10.04.06-quiz | 11 | style | Clumsy calques: «В рамках каждого типа доступа техник пытается ввести...», «Какой режим конфигурации должен быть введен для выполнения этой задачи?»; also «техн… | #114 → «Для каждого типа доступа специалист вводит команду login. В какой режим конфигурации для этого нужно перейти?» |
-| 10.04.06-quiz | 11 | unclear | Comment says login «используется для разрешения доступа»; in fact login turns on password checking on the line (it restricts rather than allows access) and the … | operator (kb#275) |
+| 10.04.06-quiz | 11 | unclear | Comment says login «используется для разрешения доступа»; login turns on password checking on the line (moved from the operator list after review) | #114 → «Тема 10.1.0 — Команда login включает проверку пароля при подключении через консольную линию, линии vty и aux; ее вводят …» |
 | 10.04.06-quiz | 12 | style | «В частности» is a non-sequitur: the RAM sentence is not a particular case of «ОС хранится во флэш-памяти». | #114 → «В оперативной памяти хранится» |
 | 10.04.06-quiz | 13 | style | Gender agreement: the option refers to «команда» (feminine) as «Он». | #114 → «Она шифрует только пароли режима линии.» |
 | 10.04.06-quiz | 13 | style | Gender agreement: «Он настроен» refers to «команда»; a command is entered, not «настроен». | #114 → «Она вводится в привилегированном режиме EXEC.» |
@@ -311,7 +314,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 11.10.04-quiz | 3 | style | Case error «у маска». | #114 → «у маски 255.255.255.240» |
 | 11.10.04-quiz | 5 | style | Archaic/typo form «Какою». | #114 → «Какую маску» |
 | 11.10.04-quiz | 6 | style | Term «маска подсети произвольной длины» differs from the stem and the module (переменной длины, VLSM). | #114 → «маска подсети переменной длины» |
-| 11.10.04-quiz | 8 | unclear | «Сколько IP-адресов доступно в сети 192.168.1.0/27?» can be read as 32 (total, also offered as a distractor) or 30 (usable hosts); the question's own comment ca… | operator (kb#275) |
+| 11.10.04-quiz | 8 | unclear | «Сколько IP-адресов доступно в сети 192.168.1.0/27?» can be read as 32 (also offered) or 30; the stem now asks for host addresses, as Q2, Q11 and Q13 do (moved … | #114 → «"question": "Сколько адресов узлов доступно в сети 192.168.1.0/27?"» |
 | 11.10.04-quiz | 9 | style | Numeral agreement: «4 бит» should be «4 бита». | #114 → «доступно 4 бита?» |
 | 11.10.04-quiz | 12 | style | Broken calque «Диапазон ... является: ...». | #114 → «Диапазон доступных адресов узлов в этой сети:» |
 | 11.10.04-quiz | 13 | style | Numeral agreement: «4 бит узлов» should be «4 бита узлов» (twice). | #114 → «остается 4 бита узлов. 4 бита узлов соответствуют» |
@@ -337,6 +340,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 13.01.06-icmp-messages-quiz | 2 | style | Neighbor Solicitation translated as «Обнаружение соседа»; solicitation means request, and the module calls it a request. | #114 → ««Запрос поиска соседей» (Neighbor Solicitation, NS)» |
 | 13.01.06-icmp-messages-quiz | 2 | style | Router Solicitation translated as «Обнаружение маршрутизатора»; the module calls it a request to the router. | #114 → ««Запрос к маршрутизатору» (Router Solicitation, RS)» |
 | 13.01.06-icmp-messages-quiz | 2 | style | Same RS mistranslation «обнаружение маршрутизатора (RS)» in the comment. | #114 → ««Запрос к маршрутизатору» (RS)» |
+| 13.01.06-icmp-messages-quiz | 2 | style | RA quoted with '…' while RS in the same comment and option 3 use «…» (review suggestion) | #114 → «Маршрутизатор с поддержкой IPv6 ответит сообщением «Объявление маршрутизатора» (RA)» |
 | 13.03.04-quiz | 1 | style | Typo «отбросывает». | #114 → «отбрасывает» |
 | 13.03.04-quiz | 2 | unclear | The key says pinging the default gateway checks whether the host can reach hosts in other networks, but the course says a gateway ping checks the host's ability… | operator (kb#275) |
 | 13.03.04-quiz | 4 | style | Mixed and wrong terms for hop limit within one comment: «ограничение перехода», «предел ... прыжка», plus «предел TTL ... равен 0». | #114 → «или предел переходов (IPv6) (1, 2, 3, 4...) для отправки последовательности команд ping. Когда маршрутизатор определяет,…» |
@@ -412,7 +416,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 16.03.08-network-attack-mitigation-quiz | 5 | style | Calque "конечных точек" (endpoints); the module term is "оконечные устройства" | #115 → «безопасности оконечных устройств?» |
 | 16.03.08-network-attack-mitigation-quiz | 5 | style | Same calque "конечная точка" in the comment | #115 → «Антивирусное программное обеспечение, работающее на оконечном устройстве (узле), — часть комплексного решения по защите …» |
 | 16.05.04-quiz | 1 | style | Calque "несанкционированной связи с компьютером и от него" (communications to and from a computer) | #115 → «Какой компонент защищает компьютер от несанкционированных входящих и исходящих подключений?» |
-| 16.05.04-quiz | 1 | style | Tautology from mistranslating "antivirus and antimalware software": "Антивирус и антивирусное программное обеспечение" | #115 → «Антивирусное программное обеспечение и средства защиты от вредоносных программ используются» |
+| 16.05.04-quiz | 1 | style | Tautology from mistranslating "antivirus and antimalware software": "Антивирус и антивирусное программное обеспечение" | #115 → «Антивирусное ПО и средства защиты от вредоносных программ предотвращают заражение компьютера.» |
 | 16.05.04-quiz | 2 | style | Question has no question mark | #115 → «выполнены две неудачные попытки входа?» |
 | 16.05.04-quiz | 2 | style | Leftover English placeholders in prose: "(number of seconds)", "(number of attempts)" | #115 → «(число секунд) attempts (число попыток) within (число секунд)» |
 | 16.05.04-quiz | 3 | style | Calque "для предоставления вопросов, связанных с вызовом и ответом" (challenge and response); also breaks the infinitive pattern of the other options | #115 → «задавать контрольные вопросы по схеме «запрос — ответ»» |
@@ -516,6 +520,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 04-07-exam | 16 | style | Same term problem in the comment: «не требует проверки среды». | #117 → «и, следовательно, не требует управления доступом к среде» |
 | 04-07-exam | 17 | style | Elliptical, ungrammatical option: «к центральному промежуточному, которое … к другим центральным промежуточным» (nouns missing). | #117 → «к центральному промежуточному устройству, которое, в свою очередь, подключается к другим центральным промежуточным устро…» |
 | 04-07-exam | 18 | style | Calque «LLC составляет информацию в блоки данных и определяет, какой протокол … используется в блоке данных». | #117 → «LLC помещает в кадр информацию о том, какой протокол сетевого уровня в нем используется» |
+| 04-07-exam | 18 | style | LLC named «управление логическим каналом»; the lecture term is «управление логическим соединением» (06.01 README:32), as in Q10 and Q36 | #117 → «Управление логическим соединением (LLC)» |
 | 04-07-exam | 19 | style | Garbled sentences: «…является детерминированным, а не доступом к сетям на основе конкуренции», «управляемые сети доступа, такие как устаревшие Token Ring». | #117 → «Контролируемый доступ является детерминированным, в отличие от конкурентного. Поскольку каждое устройство получает свое …» |
 | 04-07-exam | 20 | style | Calqued word order: «В поле контрольной последовательности кадра (Frame Check Sequence) окончание содержит значение CRC». | #117 → «Окончание кадра содержит поле контрольной последовательности кадра (FCS) со значением CRC» |
 | 04-07-exam | 22 | style | Wrong expansion of CSMA/CD: «Вероятностный сетевой протокол канального уровня с обнаружением коллизий». | #117 → «Множественный доступ с прослушиванием несущей и обнаружением коллизий (CSMA/CD)» |
@@ -585,7 +590,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 08-10-exam | 41 | error | Comment says the startup config is copied from RAM; it is the running config that is copied and saved as the startup config | #118 → «копирует файл текущей конфигурации из оперативной памяти в NVRAM и сохраняет его как файл загрузочной конфигурации» |
 | 08-10-exam | 42 | style | Calque «адрес кадра в канале передачи данных удалённого узла» (data-link frame address) | #118 → «адрес канального уровня (MAC-адрес) удалённого узла назначения» |
 | 08-10-exam | 43 | style | Clumsy calque «Для предотвращения, но не облегчения отравления…» | #118 → «Ручная настройка статических записей ARP помогает предотвратить отравление кэша ARP и спуфинг MAC-адресов, а не способст…» |
-| 08-10-exam | 44 | error | Comment is unrelated to the question (talks about show ip interface brief and R1/R2 interfaces) and has a typo «каждомроутере» | #118 → «Поле «Дифференцированные сервисы» (DS) — 8-битное поле, которое используется для определения приоритета каждого пакета. …» |
+| 08-10-exam | 44 | error | Comment is unrelated to the question (talks about show ip interface brief and R1/R2 interfaces) and has a typo «каждомроутере» | #118 → «Поле «Дифференцированные услуги» (DS) — 8-битное поле, которое используется для определения приоритета каждого пакета. I…» |
 | 08-10-exam | 45 | error | The same unrelated comment (show ip interface brief, R1/R2 interfaces) is attached to every wrong answer of Q45-Q66 (74 copies); fix blanks it, per-question exp… | #118 → «» |
 | 08-10-exam | 45 | error | No explanation after the copied comment was blanked; written from the module text | #118 comments rewritten: «Поле «IP-адрес источника» содержит 32-битный IPv4-адрес интерфейса устройства, отправившего пакет. IP-адрес назначения —…» |
 | 08-10-exam | 46 | error | No explanation after the copied comment was blanked; written from the module text | #118 comments rewritten: «Повреждение заголовка IPv4 обнаруживают по полю «Контрольная сумма заголовка»; маршрутизатор пересчитывает его при каждо…» |
@@ -612,6 +617,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 08-10-exam | 65 | error | No explanation after the copied comment was blanked; written from the module text | #118 comments rewritten: «В качестве шлюза по умолчанию узлы локальной сети Registrar используют адрес того интерфейса маршрутизатора, который под…» |
 | 08-10-exam | 66 | error | No explanation after the copied comment was blanked; written from the module text | #118 comments rewritten: «В качестве шлюза по умолчанию узлы локальной сети Payroll используют адрес того интерфейса маршрутизатора, который подкл…» |
 | 08-10-exam | 24, 26 | style | «МАС» typed in Cyrillic letters (found by the second reviewer) | #118 → «MAC-адрес» |
+| 08-10-exam | 52–56 | style | MT artefact: distractor «ответы ARP транслируются по сети» renders "broadcast" as «транслируются» (moved from the operator list after review) | #118 → «ответы ARP рассылаются широковещательно, когда узел получает запрос ARP» |
 | 11-13-exam | 3 | style | Calque «обеспечить роутер пятью соединёнными сетями» (provide a router with five connected networks) | #118 → «чтобы получить подсети для пяти сетей, подключенных к маршрутизатору» |
 | 11-13-exam | 3 | style | Lost superscript: the power renders as «2 n» | #118 → «Формула 2^n, где» |
 | 11-13-exam | 4 | style | Lost superscript: the power renders as «2 6 = 64» | #118 → «поскольку 2^6 = 64» |
@@ -696,7 +702,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 16-17-exam | 5 | style | Off-topic machine-translated IoT text ("SQLi (SQLi)", "ограниченными устройствами", "известные как атака воронки"); none of it is in the module. Replace with th… | #116 → «При атаке через посредника (MITM) злоумышленник располагается между двумя доверяемыми объектами, чтобы читать, изменять …» |
 | 16-17-exam | 7 | style | Wrong case: "фильтрации URL-адресов" (genitive) among nominative labels. | #116 → «фильтрация URL-адресов» |
 | 16-17-exam | 8 | style | Bureaucratic genitive chain "цель функции аутентификации сетевой безопасности". | #116 → «Какова цель аутентификации в системе сетевой безопасности?» |
-| 16-17-exam | 8 | style | Calque "чтобы определить пользователей, кем они являются"; the comment states the meaning: users must prove who they are. | #116 → «потребовать от пользователей доказать, кто они» |
+| 16-17-exam | 8 | style | Calque "чтобы определить пользователей, кем они являются"; the comment states the meaning: users must prove who they are. | #116 → «потребовать от пользователей подтвердить свою личность» |
 | 16-17-exam | 9 | style | Grammar error: "может используется". | #116 → «может использоваться» |
 | 16-17-exam | 10 | style | Clumsy stem: parenthetical "(при её применении на роутере)" repeats the device that the sentence names again ("на маршрутизаторе"). | #116 → «Какая команда поможет свести к минимуму риск взлома паролей маршрутизатора методом грубой силы?» |
 | 16-17-exam | 10 | style | Command name is truncated: the command is "service password-encryption" (as in answer 2). | #116 → «Команда service password-encryption шифрует» |
@@ -704,10 +710,10 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 16-17-exam | 11 | error | Keyed answer mistranslates "login information and data encryption" as "информация о попытках входа и шифрование данных"; SSH does not provide "information about… | #116 → «шифрование учетных данных для входа и передаваемых данных» |
 | 16-17-exam | 14 | style | Clumsy calque "функционирует с учетом особенностей используемого программного обеспечения" (from "application-aware"). | #116 → «который распознает приложения и снабжен системой обнаружения вторжений» |
 | 16-17-exam | 17 | style | Long bureaucratic chain ("цель небольшой компании, использующей утилиту анализатора протоколов для захвата сетевого трафика в сегментах сети, где компания рассм… | #116 → «Небольшая компания собирается модернизировать сеть и захватывает трафик анализатором протоколов в тех сегментах, которые…» |
-| 16-17-exam | 18 | style | MT garble "сообщение о невозможности достичь ICMP-протокола назначения" for ICMP Destination Unreachable. | #116 → «отправил источнику ICMP-сообщение «пункт назначения недоступен».» |
+| 16-17-exam | 18 | style | MT garble "сообщение о невозможности достичь ICMP-протокола назначения" for ICMP Destination Unreachable. | #116 → «отправил источнику ICMP-сообщение «Узел назначения недоступен».» |
 | 16-17-exam | 19 | style | Spelling: "не нужных" should be one word. | #116 → «ненужных интерфейсов» |
 | 16-17-exam | 20 | style | Stray space before the comma and agreement error ("на команду ping , отправленного"). | #116 → «на команду ping, отправленную» |
-| 16-17-exam | 21 | style | MT garble "сообщение о невозможности достичь ICMP-протокола назначения" and "сообщением о недоступности ICMP" (reads as "ICMP is unreachable"). | #116 → «а также на то, что ICMP-сообщение «пункт назначения недоступен» не было отправлено. Символ «U» указывает на то, что у ма…» |
+| 16-17-exam | 21 | style | MT garble "сообщение о невозможности достичь ICMP-протокола назначения" and "сообщением о недоступности ICMP" (reads as "ICMP is unreachable"). | #116 → «а также на то, что ICMP-сообщение «Узел назначения недоступен» не было отправлено. Символ «U» указывает на то, что у мар…» |
 | 16-17-exam | 22 | style | Typo: "Поверка связи". | #116 → «Проверка связи» |
 | 16-17-exam | 22 | style | Missing space after the period: "в сети.Необходимы". | #116 → «в сети. Необходимы» |
 | 16-17-exam | 28 | style | Missing space after the period: "журнала.Сообщения". | #116 → «журнала. Сообщения» |
@@ -718,7 +724,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 16-17-exam | 51 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Команда show ip interface brief выводит IP-адреса и состояние всех интерфейсов маршрутизатора. Команда nslookup отправля…» |
 | 16-17-exam | 52 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Команда show interfaces показывает состояние интерфейсов, в том числе режим дуплекса, скорость и счетчики ошибок. Команд…» |
 | 16-17-exam | 53 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «IP-адрес компьютера с Windows показывает команда ipconfig. Команды copy running-config startup-config, show interfaces и…» |
-| 16-17-exam | 54 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как начальную. Команды show interfaces…» |
+| 16-17-exam | 54 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfac…» |
 | 16-17-exam | 55 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «В macOS команда ipconfig getifaddr en0 выводит IP-адрес интерфейса en0. Команды copy running-config startup-config, show…» |
 | 16-17-exam | 55 | unclear | Keyed command "ipconfig getifaddr en0" is not in the module (macOS section covers ifconfig and networksetup only), and en0 is the wireless interface only on Mac… | operator (kb#275) |
 | 16-17-exam | 56 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние…» |
@@ -726,7 +732,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 16-17-exam | 58 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Включена ли маршрутизация IPv6, видно в текущей конфигурации (show running-config): в ней должна присутствовать команда …» |
 | 16-17-exam | 59 | error | Wrong-answer comments are the password rules copied from Q42–Q50 and do not explain the commands. | #116 comments rewritten: «Команда nslookup отправляет запрос DNS-серверу и возвращает IP-адрес для указанного доменного имени. Команды show ipv6 r…» |
 | final-exam | 1 | style | Clumsy stem: noun repeated ("Какие два устройства будут называться промежуточными устройствами"), calque of "would be described as". | #116 → «Какие устройства относятся к промежуточным?» |
-| final-exam | 3 | style | Case error: "отдавать приоритет трафика" (dative required). | #116 → «отдавать приоритет трафику» |
+| final-exam | 3 | style | Case error: "отдавать приоритет трафика" (dative required). | #116 → «отдавать приоритет трафику, чувствительному к задержке» |
 | final-exam | 4 | style | MT garble "Команду назначения ping" (from "ping destination command"). | #116 → «Команду ping с адресом назначения используют, чтобы проверить связь с устройством назначения» |
 | final-exam | 5 | style | Stray comma: "SVI не требует, включения". | #116 → «SVI не требует включения» |
 | final-exam | 5 | style | Missing spaces after periods: "(SVI).Такие", "оборудования.Виртуальный". | #116 → «(SVI). Такие интерфейсы называются виртуальными, поскольку на устройстве нет связанного с ними физического оборудования.…» |
@@ -754,7 +760,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 
 ## Findings: Bank copies (`__exams/CCNA1`)
 
-The bank copies repeat the exam questions in the same order (the 01-03 bank has one extra question at position 48). 276 of their 289 findings mirror an exam finding above and get the same fix, in the same PR, with the same wording; they are not repeated here. The table lists the 13 bank findings whose fix differs: the bank wording differs, or the problem exists only in the bank.
+The bank copies repeat the exam questions in the same order (the 01-03 bank has one extra question at position 48). 277 of their 291 findings mirror an exam finding above and get the same fix, in the same PR, with the same wording; they are not repeated here. The table lists the 14 bank findings whose fix differs: the bank wording differs, or the problem exists only in the bank.
 
 | File | Q | Sev | Issue | Fix |
 |---|---|---|---|---|
@@ -765,7 +771,8 @@ The bank copies repeat the exam questions in the same order (the 01-03 bank has 
 | bank 04-07 | 41 | style | Same term in the comment («Инверсный кабель (rollover)»); in the bank copy the sentence also starts with a lowercase letter. (bank copy, same problem) | #117 → «недоступен. Консольный кабель (rollover)» |
 | bank 08-10 | 5 | style | Bank comment says «декапсуляция» where the connected copy now says «деинкапсуляция» (glossary preferred term); same wording in both copies | #118 → «маршрутизация деинкапсуляция» |
 | bank 08-10 | 37 | error | Stem says «(Не все варианты используются.)», but all 4 options are matched to the 4 items (same problem in the bank copy) | #118 → «доступной в этом режиме.» |
-| bank 08-10 | 44 | error | Bank copy has no explanation after the copied comment was blanked; given the same text as connected Q44 | #118 comments rewritten: «Поле «Дифференцированные сервисы» (DS) — 8-битное поле, которое используется для определения приоритета каждого пакета. …» |
+| bank 08-10 | 44 | error | Bank copy has no explanation after the copied comment was blanked; given the same text as connected Q44 | #118 comments rewritten: «Поле «Дифференцированные услуги» (DS) — 8-битное поле, которое используется для определения приоритета каждого пакета. I…» |
+| bank 08-10 | 52–56 | style | MT artefact: distractor «ответы ARP транслируются по сети» renders "broadcast" as «транслируются» (moved from the operator list after review); same distractor i… | #118 → «Ответы ARP рассылаются широковещательно, когда узел получает запрос ARP.» |
 | bank 11-13 | 30 | style | Missing hyphen, as in the connected copy | #118 → «broadcast-адрес» |
 | bank 11-13 | 30 | style | Missing hyphen, as in the connected copy | #118 → «multicast-адрес» |
 | bank Practice Final | 13 | error | Distractor lost "multiple": "многомодовые оптоволоконные кабели передают сигналы от устройств-отправителей" is trivially true (every cable carries signals from … | #116 → «Многомодовые оптоволоконные кабели передают сигналы сразу от нескольких устройств-отправителей.» |
@@ -786,6 +793,7 @@ Errors in the lecture text that the review ran into. None of them is changed by 
 | `08-network-layer/08.01-network-layer-characteristics/README.md:85` | «электрических импульсов, например оптических сигналов» |
 | `11-ipv4-addressing/11.02-ipv4-unicast-broadcast-and-multicast/README.md:29` | directed broadcast called «прямая», while :37–43 call it «направленная» |
 | `13-icmp/13.01-icmp-messages/README.md:61` | RS, RA, NS and NA called «четыре новых протокола»; they are messages of ND |
+| `13-icmp/13.01-icmp-messages/README.md:16, :48` | Time Exceeded rendered «превышен интервал ожидания», which reads as a timeout (it is also the Windows wording for "Request timed out"); the exams follow the lecture, so the choice belongs to the lecture (noted by kb's review of learn-ccna1#118) |
 | `14-transport-layer/14.04-port-numbers/README.md:75` | DNS servers «всегда» talk to each other over TCP; zone transfers and large replies use TCP, ordinary queries between servers use UDP |
 | `15-application-layer/15.02-peer-to-peer/README.md:55` | µTorrent, BitComet, DC++ and Deluge listed as Gnutella clients |
 | `16-network-security-fundamentals/16.01-security-threats-and-vulnerabilities/README.md:17` | heading «Утечка данных и их неправомерное использование» for "data loss and manipulation"; the quiz options in 16.01.04 follow the source |
