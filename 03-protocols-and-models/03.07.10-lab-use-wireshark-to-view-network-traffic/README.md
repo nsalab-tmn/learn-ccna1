@@ -157,11 +157,11 @@ MAC-адрес для [www.yahoo.com](http://www.yahoo.com):
 
 **Введите ваш ответ здесь**
 
-IP-адрес для [www.cisco.com](http://www.cisco.com):
+IP-адрес для www.cisco.com:
 
 **Введите ваш ответ здесь**
 
-MAC-адрес для [www.cisco.com](http://www.cisco.com):
+MAC-адрес для www.cisco.com:
 
 **Введите ваш ответ здесь**
 

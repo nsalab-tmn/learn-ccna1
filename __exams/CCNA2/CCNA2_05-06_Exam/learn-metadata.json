@@ -1578,7 +1578,7 @@
                     "correct": false
                 }
             ],
-            "question": "![Упражнение](./assert/Assessment01.pka)\n\nКакой набор команд конфигурации на SW1 успешно установит канал EtherChannel между SW1 и SW2?"
+            "question": "Какой набор команд конфигурации на SW1 успешно установит канал EtherChannel между SW1 и SW2?"
         }
     ],
     "skills": {},
