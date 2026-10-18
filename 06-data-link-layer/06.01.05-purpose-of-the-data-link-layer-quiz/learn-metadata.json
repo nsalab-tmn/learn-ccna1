@@ -141,7 +141,7 @@
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answer": "Cisco",
+                    "answer": "W3C",
                     "correct": false,
                     "comment": "IEEE определяет стандарты для уровня доступа к сети TCP/IP, который представляет собой физический уровень OSI и канальный уровень передачи данных"
                 },
