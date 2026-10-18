@@ -68,12 +68,12 @@ Findings are counted per file. A bank copy's finding counts separately from its 
 | | quizzes | exams | bank copies | all |
 |---|---|---|---|---|
 | error | 32 | 122 | 120 | 274 |
-| style | 326 | 160 | 155 | 641 |
+| style | 326 | 161 | 156 | 643 |
 | unclear | 14 | 16 | 16 | 46 |
-| **fixed** | 354 | 282 | 275 | 911 |
+| **fixed** | 354 | 283 | 276 | 913 |
 | **to the operator** | 16 | 16 | 16 | 48 |
 | **rejected on verification** | 2 | 0 | 0 | 2 |
-| **total findings** | 372 | 298 | 291 | 961 |
+| **total findings** | 372 | 299 | 292 | 963 |
 
 The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with their reasons, in the kb#275 comment for the operator.
 
@@ -365,8 +365,8 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 14.05.06-tcp-communication-process-quiz | 3 | error | Same mistranslation in the option: counts sessions instead of exchanges (apply together with the stem fix) | #115 → «"три обмена"» |
 | 14.05.06-tcp-communication-process-quiz | 3 | error | Same mistranslation in the option: counts sessions instead of exchanges (apply together with the stem fix) | #115 → «"четыре обмена"» |
 | 14.05.06-tcp-communication-process-quiz | 3 | error | Same mistranslation in the option: counts sessions instead of exchanges (apply together with the stem fix) | #115 → «"пять обменов"» |
-| 14.05.06-tcp-communication-process-quiz | 3 | error | Comment repeats the mistranslation ("четыре сеанса обмена") | #115 → «Для завершения обоих сеансов между двумя хостами необходимы четыре обмена:» |
-| 14.05.06-tcp-communication-process-quiz | 3 | style | q3 comment mixes «Хост» and «Узел» for the same device in one list (glossary host row: one word per passage) | #115 → «2. Хост B отправляет ACK.» |
+| 14.05.06-tcp-communication-process-quiz | 3 | error | Comment repeats the mistranslation ("четыре сеанса обмена") | #115 → «Для завершения обоих сеансов между двумя узлами необходимы четыре обмена:» |
+| 14.05.06-tcp-communication-process-quiz | 3 | style | q3 comment mixes «Хост» and «Узел» for the same device in one list; unified on «узел» (glossary host row, kb#279) | #115 → «2. Узел B отправляет ACK.» |
 | 14.07.05-udp-communication-quiz | 1 | style | Calques "UDP желателен" (desirable) and "делают ... транзакции" (make transactions) | #115 → «Почему UDP предпочтителен для протоколов, которые выполняют простые транзакции запроса и ответа?» |
 | 14.07.05-udp-communication-quiz | 1 | style | Bureaucratic chain and overstatement ("делают его просто незаменимым, когда требуется протокол, осуществляющий лишь транзакции по отправке запросов и получению … | #115 → «Благодаря низким накладным расходам UDP хорошо подходит для протоколов, которые выполняют простые транзакции запроса и о…» |
 | 14.07.05-udp-communication-quiz | 2 | style | Calque: "выражение" for "statement", plus officialese "в отношении ... является истинным" | #115 → «Какое утверждение о повторной сборке датаграмм UDP верно?» |
@@ -550,6 +550,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 | 04-07-exam | 50 | error | All wrong-answer comments are a copy of q43's fiber-optic explanation and have nothing to do with this question. Replacement comment written from the module tex… | #117 comments rewritten: «По оптоволоконному кабелю сигналы передаются в виде световых импульсов, по медному — в виде электрических импульсов, а б…» |
 | 04-07-exam | 51 | error | All wrong-answer comments are a copy of q43's fiber-optic explanation and have nothing to do with this question. Replacement comment written from the module tex… | #117 comments rewritten: «Микроволновые сигналы передаются по беспроводной среде. По медному кабелю передаются электрические импульсы, по оптоволо…» |
 | 04-07-exam | 52 | error | All wrong-answer comments are a copy of q43's fiber-optic explanation and have nothing to do with this question. Replacement comment written from the module tex… | #117 comments rewritten: «Подуровень MAC управляет сетевой платой и другим оборудованием, отвечающим за отправку и получение данных, и добавляет к…» |
+| 04-07-exam | 52 | style | Answer 1 says «концевик», while the question's own comment and the 06.03 lecture say «окончание» (review suggestion) | #117 → «реализует окончание кадра для обнаружения ошибок передачи» |
 | 04-07-exam | 53 | error | All wrong-answer comments are a copy of q43's fiber-optic explanation and have nothing to do with this question. Replacement comment written from the module tex… | #117 comments rewritten: «Подуровень LLC помещает в кадр информацию о том, какой протокол сетевого уровня используется, и тем самым позволяет IPv4…» |
 | 04-07-exam | 54 | error | All wrong-answer comments are a copy of q43's fiber-optic explanation and have nothing to do with this question. Replacement comment written from the module tex… | #117 comments rewritten: «Подуровень MAC управляет сетевой платой, отвечающей за отправку и получение данных, и обеспечивает контроль доступа, поз…» |
 | 04-07-exam | 55 | style | Clumsy calque: «если коммутатор получает кадр и имеет MAC-адрес источника в таблице MAC-адресов». | #117 → «если коммутатор получит кадр, MAC-адрес источника которого уже есть в таблице MAC-адресов» |
@@ -760,7 +761,7 @@ The fix PRs are listed in *Fix PRs* above. Doubtful items are listed again, with
 
 ## Findings: Bank copies (`__exams/CCNA1`)
 
-The bank copies repeat the exam questions in the same order (the 01-03 bank has one extra question at position 48). 277 of their 291 findings mirror an exam finding above and get the same fix, in the same PR, with the same wording; they are not repeated here. The table lists the 14 bank findings whose fix differs: the bank wording differs, or the problem exists only in the bank.
+The bank copies repeat the exam questions in the same order (the 01-03 bank has one extra question at position 48). 278 of their 292 findings mirror an exam finding above and get the same fix, in the same PR, with the same wording; they are not repeated here. The table lists the 14 bank findings whose fix differs: the bank wording differs, or the problem exists only in the bank.
 
 | File | Q | Sev | Issue | Fix |
 |---|---|---|---|---|
