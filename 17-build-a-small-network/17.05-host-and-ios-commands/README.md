@@ -255,10 +255,10 @@ router ospf 10
 banner motd ^C Authorized access only! ^C
 !
 line con 0
- password 7 14141B180F0B
+ password 7 1419171F000528
  login
 line vty 0 4
- password 7 00071A150754
+ password 7 000A1612085A09
  login
  transport input telnet ssh
 !
