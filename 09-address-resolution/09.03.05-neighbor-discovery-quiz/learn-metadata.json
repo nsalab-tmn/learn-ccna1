@@ -17,19 +17,19 @@
                 {
                     "answer": "сообщение «Ответ соседнего узла» (Neighbor Advertisement, NA)",
                     "correct": false,
-                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к роутеру» и «Ответ роутера»"
+                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к маршрутизатору» и «Ответ маршрутизатора»"
                 },
                 {
                     "answer": "сообщение «Запрос соседнего узла» (Neighbor Solicitation, NS)",
                     "correct": false,
-                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к роутеру» и «Ответ роутера»"
+                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос к маршрутизатору» и «Ответ маршрутизатора»"
                 },
                 {
-                    "answer": "сообщение «Ответ роутера» (Router Advertisement, RA)",
+                    "answer": "сообщение «Ответ маршрутизатора» (Router Advertisement, RA)",
                     "correct": true
                 },
                 {
-                    "answer": "сообщение «Запрос к роутеру» (Router Solicitation, RS)",
+                    "answer": "сообщение «Запрос к маршрутизатору» (Router Solicitation, RS)",
                     "correct": true
                 }
             ]
@@ -47,12 +47,12 @@
                     "correct": true
                 },
                 {
-                    "answer": "сообщение «Ответ роутера» (Router Advertisement, RA)",
+                    "answer": "сообщение «Ответ маршрутизатора» (Router Advertisement, RA)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые для определения MAC-адреса известного IPv6 адреса, — это сообщение «Запрос соседнего узла» и «Ответ соседнего узла»"
                 },
                 {
-                    "answer": "сообщение «Запрос к роутеру» (Router Solicitation, RS)",
+                    "answer": "сообщение «Запрос к маршрутизатору» (Router Solicitation, RS)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые для определения MAC-адреса известного IPv6 адреса, — это сообщение «Запрос соседнего узла» и «Ответ соседнего узла»"
                 }
