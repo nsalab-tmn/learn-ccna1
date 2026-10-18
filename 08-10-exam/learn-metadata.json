@@ -359,12 +359,12 @@
             "answers": [
                 {
                     "answer": "маршруты с прямым подключением",
-                    "comment": "В таблицу маршрутизации для удаленных маршрутов заносится IP-адрес следующего транзитного устройства (перехода). IP-адрес следующего перехода — это адрес интерфейса роутера следующего устройства на пути к сети назначения. Маршруты с прямым подключением и локальные маршруты не имеют следующего транзитного устройства, поскольку для доступа к ним не требуется прохождение через еще один роутер",
+                    "comment": "В таблицу маршрутизации для удаленных маршрутов заносится IP-адрес следующего перехода. IP-адрес следующего перехода — это адрес интерфейса роутера следующего устройства на пути к сети назначения. Маршруты с прямым подключением и локальные маршруты не имеют следующего перехода, поскольку для доступа к ним не требуется прохождение через еще один роутер",
                     "correct": false
                 },
                 {
                     "answer": "локальные маршруты",
-                    "comment": "В таблицу маршрутизации для удаленных маршрутов заносится IP-адрес следующего транзитного устройства (перехода). IP-адрес следующего перехода — это адрес интерфейса роутера следующего устройства на пути к сети назначения. Маршруты с прямым подключением и локальные маршруты не имеют следующего транзитного устройства, поскольку для доступа к ним не требуется прохождение через еще один роутер",
+                    "comment": "В таблицу маршрутизации для удаленных маршрутов заносится IP-адрес следующего перехода. IP-адрес следующего перехода — это адрес интерфейса роутера следующего устройства на пути к сети назначения. Маршруты с прямым подключением и локальные маршруты не имеют следующего перехода, поскольку для доступа к ним не требуется прохождение через еще один роутер",
                     "correct": false
                 },
                 {
@@ -374,7 +374,7 @@
                 },
                 {
                     "answer": "маршруты с кодами C и L",
-                    "comment": "В таблицу маршрутизации для удаленных маршрутов заносится IP-адрес следующего транзитного устройства (перехода). IP-адрес следующего перехода — это адрес интерфейса роутера следующего устройства на пути к сети назначения. Маршруты с прямым подключением и локальные маршруты не имеют следующего транзитного устройства, поскольку для доступа к ним не требуется прохождение через еще один роутер",
+                    "comment": "В таблицу маршрутизации для удаленных маршрутов заносится IP-адрес следующего перехода. IP-адрес следующего перехода — это адрес интерфейса роутера следующего устройства на пути к сети назначения. Маршруты с прямым подключением и локальные маршруты не имеют следующего перехода, поскольку для доступа к ним не требуется прохождение через еще один роутер",
                     "correct": false
                 }
             ],
@@ -520,12 +520,12 @@
             "answers": [
                 {
                     "answer": "0.0.0.0",
-                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Хост с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный хост-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
+                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Узел с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный узел-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
                     "correct": false
                 },
                 {
                     "answer": "255.255.255.255",
-                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Хост с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный хост-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
+                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Узел с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный узел-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
                     "correct": false
                 },
                 {
@@ -535,12 +535,12 @@
                 },
                 {
                     "answer": "AAAA.AAAA.AAAA",
-                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Хост с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный хост-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
+                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Узел с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный узел-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
                     "correct": false
                 },
                 {
-                    "answer": "физический адрес хоста назначения",
-                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Хост с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный хост-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
+                    "answer": "физический адрес узла назначения",
+                    "comment": "Запрос ARP предназначен для поиска MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную передачу уровня 2 на все устройства в локальной сети Ethernet. Кадр содержит IP-адрес назначения и широковещательный MAC-адрес, FFFF.FFFF.FFFF. Узел с IP-адресом, совпадающим с IP-адресом в запросе ARP, ответит одноадресным кадром, содержащим его MAC-адрес. Так исходный узел-отправитель узнает, какой MAC-адрес соответствует IP-адресу назначения, и может продолжить инкапсуляцию данных",
                     "correct": false
                 }
             ],
@@ -644,12 +644,12 @@
             "answers": [
                 {
                     "answer": "лавинная широковещательная рассылка ARP-ответов в сети",
-                    "comment": "При атаке ARP-спуфинга вредоносный хост перехватывает ARP-запросы и отвечает на них, чтобы сетевые хосты сопоставили IP-адрес с MAC-адресом вредоносного хоста",
+                    "comment": "При атаке ARP-спуфинга вредоносный узел перехватывает ARP-запросы и отвечает на них, чтобы сетевые узлы сопоставили IP-адрес с MAC-адресом вредоносного узла",
                     "correct": false
                 },
                 {
                     "answer": "заполнение таблицы MAC-адресов коммутатора фиктивными адресами",
-                    "comment": "При атаке ARP-спуфинга вредоносный хост перехватывает ARP-запросы и отвечает на них, чтобы сетевые хосты сопоставили IP-адрес с MAC-адресом вредоносного хоста",
+                    "comment": "При атаке ARP-спуфинга вредоносный узел перехватывает ARP-запросы и отвечает на них, чтобы сетевые узлы сопоставили IP-адрес с MAC-адресом вредоносного узла",
                     "correct": false
                 },
                 {
@@ -658,8 +658,8 @@
                     "correct": true
                 },
                 {
-                    "answer": "перегрузка хостов сети ARP-запросами",
-                    "comment": "При атаке ARP-спуфинга вредоносный хост перехватывает ARP-запросы и отвечает на них, чтобы сетевые хосты сопоставили IP-адрес с MAC-адресом вредоносного хоста",
+                    "answer": "перегрузка узлов сети ARP-запросами",
+                    "comment": "При атаке ARP-спуфинга вредоносный узел перехватывает ARP-запросы и отвечает на них, чтобы сетевые узлы сопоставили IP-адрес с MAC-адресом вредоносного узла",
                     "correct": false
                 }
             ],
@@ -720,7 +720,7 @@
                     "correct": false
                 }
             ],
-            "question": "Где на хост-компьютере выполняется сопоставление IPv4-адреса с Ethernet-адресом уровня 2?"
+            "question": "Где на узле выполняется сопоставление IPv4-адреса с Ethernet-адресом уровня 2?"
         },
         {
             "answerType": "singleChoice",
@@ -1519,7 +1519,7 @@
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answer": "локальные хосты узнают MAC-адрес шлюза по умолчанию",
+                    "answer": "локальные узлы узнают MAC-адрес шлюза по умолчанию",
                     "comment": "",
                     "correct": true
                 },
@@ -1539,7 +1539,7 @@
                     "correct": false
                 }
             ],
-            "question": "Какое свойство ARP позволяет хостам локальной сети отправлять трафик в удаленные сети?"
+            "question": "Какое свойство ARP позволяет узлам локальной сети отправлять трафик в удаленные сети?"
         },
         {
             "answerType": "singleChoice",
@@ -1674,7 +1674,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nMain (config) # interface gi0/1\nMain (config-if) # description Connects to the Service LAN\nMain (config-if) # ip address 172.29.157.156 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # interface gi0/0\nMain (config-if) # description Connects to the Engineering LAN\nMain (config-if) # ip address 172.29.156.36 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # interface s0/0/0\nMain (config-if) # description Connects to the ISP\nMain (config-if) # ip address 10.156.157.254 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # interface s0/0/1\nMain (config-if) # description Connects to the Head Office WAN\nMain (config-if) # ip address 198.51.100.177 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Service. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nMain (config) # interface gi0/1\nMain (config-if) # description Connects to the Service LAN\nMain (config-if) # ip address 172.29.157.156 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # interface gi0/0\nMain (config-if) # description Connects to the Engineering LAN\nMain (config-if) # ip address 172.29.156.36 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # interface s0/0/0\nMain (config-if) # description Connects to the ISP\nMain (config-if) # ip address 10.156.157.254 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # interface s0/0/1\nMain (config-if) # description Connects to the Head Office WAN\nMain (config-if) # ip address 198.51.100.177 255.255.255.0\nMain (config-if) # no shutdown\nMain (config-if) # end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Service. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1705,7 +1705,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nBldgA (config) # interface gi0/1\nBldgA (config-if) # description Connects to the Medical LAN\nBldgA (config-if) # IP address 192.168.191.189 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # interface gi0/0\nBldgA (config-if) # description Connects to the Client LAN\nBldgA (config-if) # IP address 192.168.190.70 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # interface s0/0/0\nBldgA (config-if) # description Connects to the ISP\nBldgA (config-if) # IP address 10.190.191.254 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # interface s0/0/1\nBldgA (config-if) # description Connects to the Head Office WAN\nBldgA (config-if) # IP address 198.51.100.213 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Medical. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nBldgA (config) # interface gi0/1\nBldgA (config-if) # description Connects to the Medical LAN\nBldgA (config-if) # IP address 192.168.191.189 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # interface gi0/0\nBldgA (config-if) # description Connects to the Client LAN\nBldgA (config-if) # IP address 192.168.190.70 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # interface s0/0/0\nBldgA (config-if) # description Connects to the ISP\nBldgA (config-if) # IP address 10.190.191.254 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # interface s0/0/1\nBldgA (config-if) # description Connects to the Head Office WAN\nBldgA (config-if) # IP address 198.51.100.213 255.255.255.0\nBldgA (config-if) # no shutdown\nBldgA (config-if) # end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Medical. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1736,7 +1736,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.225.223 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.224.103 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.224.225.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.246 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Registrar. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.225.223 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.224.103 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.224.225.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.246 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Registrar. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1767,7 +1767,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 10.118.63.65 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 10.118.62.196 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.62.63.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 209.165.200.87 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Manager. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 10.118.63.65 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 10.118.62.196 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.62.63.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 209.165.200.87 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Manager. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1798,7 +1798,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nHQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.19.99.99 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.19.98.230 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.98.99.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 209.165.200.120 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Store. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nHQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.19.99.99 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.19.98.230 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.98.99.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 209.165.200.120 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Store. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1829,7 +1829,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nHQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.20.133.132 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.20.132.13 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.132.133.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 198.51.100.156 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Store. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nHQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.20.133.132 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.20.132.13 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.132.133.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 198.51.100.156 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Store. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1860,7 +1860,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nMain(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 192.168.167.166 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 192.168.166.46 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.166.167.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.189 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Service. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nMain(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 192.168.167.166 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 192.168.166.46 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.166.167.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.189 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Service. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1891,7 +1891,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nBldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.201.200 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface gi0/0\nBldgA(config-if)# description Connects to the Client LAN\nBldgA(config-if)# ip address 192.168.200.80 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/0\nBldgA(config-if)# description Connects to the ISP\nBldgA(config-if)# ip address 10.200.201.254 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/1\nBldgA(config-if)# description Connects to the Head Office WAN\nBldgA(config-if)# ip address 203.0.113.222 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Medical. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nBldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.201.200 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface gi0/0\nBldgA(config-if)# description Connects to the Client LAN\nBldgA(config-if)# ip address 192.168.200.80 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/0\nBldgA(config-if)# description Connects to the ISP\nBldgA(config-if)# ip address 10.200.201.254 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/1\nBldgA(config-if)# description Connects to the Head Office WAN\nBldgA(config-if)# ip address 203.0.113.222 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Medical. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1922,7 +1922,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Registrar. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Registrar. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         },
         {
             "answerType": "singleChoice",
@@ -1953,7 +1953,7 @@
                     "correct": false
                 }
             ],
-            "question": "```\nRTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый хост к LAN Payroll. Необходимо обеспечить этому хосту возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом хосте в качестве шлюза по умолчанию?"
+            "question": "```\nRTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Payroll. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         }
     ],
     "tags": {

@@ -21,12 +21,12 @@
                 {
                     "answer": "host name Sw-Floor-2",
                     "correct": false,
-                    "comment": "Командой глобальной конфигурации для установки имени хоста на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
+                    "comment": "Командой глобальной конфигурации для установки имени узла на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
                 },
                 {
                     "answer": "name Sw-Floor-2",
                     "correct": false,
-                    "comment": "Командой глобальной конфигурации для установки имени хоста на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
+                    "comment": "Командой глобальной конфигурации для установки имени узла на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
                 }
             ]
         },
