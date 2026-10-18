@@ -11,7 +11,7 @@
     "passingScore": 100,
     "questions": [
         {
-            "question": "Как происходит преобразование информации в правильную форму для передачи?",
+            "question": "Как называется преобразование информации в форму, пригодную для передачи?",
             "answerType": "singleChoice",
             "answers": [
                 {
@@ -55,7 +55,7 @@
             "answerType": "multiChoice",
             "answers": [
                 {
-                    "answer": "управление процессами",
+                    "answer": "управление потоком",
                     "correct": true
                 },
                 {

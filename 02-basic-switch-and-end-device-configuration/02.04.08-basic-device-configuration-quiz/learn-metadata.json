@@ -11,7 +11,7 @@
     "passingScore": 100,
     "questions": [
         {
-            "question": "Какая команда испльзуется, чтобы назначить имя «Sw-Floor-2» коммутатору?",
+            "question": "Какая команда используется, чтобы назначить имя «Sw-Floor-2» коммутатору?",
             "answerType": "singleChoice",
             "answers": [
                 {
@@ -37,12 +37,12 @@
                 {
                     "answer": "enable netlab",
                     "correct": false,
-                    "comment": "Защита доступа к режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
                 },
                 {
                     "answer": "secret netlab",
                     "correct": false,
-                    "comment": "Защита доступа к режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
                 },
                 {
                     "answer": "enable secret netlab",
@@ -51,7 +51,7 @@
                 {
                     "answer": "service password-encryption",
                     "correct": false,
-                    "comment": "Защита доступа к режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
                 }
             ]
         },
@@ -62,7 +62,7 @@
                 {
                     "answer": "enable secret",
                     "correct": false,
-                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме линии (Line mode). Например: Switch(config-line)# login"
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
                 },
                 {
                     "answer": "login",
@@ -71,12 +71,12 @@
                 {
                     "answer": "secret",
                     "correct": false,
-                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме линии (Line mode). Например: Switch(config-line)# login"
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
                 },
                 {
                     "answer": "service password-encryption",
                     "correct": false,
-                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме линии (Line mode). Например: Switch(config-line)# login"
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
                 }
             ]
         },
