@@ -9770,32 +9770,6 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-nab2qqf",
-   "kind": "native",
-   "display": {
-    "key": "3.7.10-1",
-    "title": "1"
-   },
-   "out": {
-    "path": "03-protocols-and-models/03.07.10-lab-use-wireshark-to-view-network-traffic/assets/3.7.10-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-5jph2hf",
-   "kind": "native",
-   "display": {
-    "key": "3.7.10-2",
-    "title": "2"
-   },
-   "out": {
-    "path": "03-protocols-and-models/03.07.10-lab-use-wireshark-to-view-network-traffic/assets/3.7.10-2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-y336qdk",
    "kind": "native",
    "display": {
@@ -10072,71 +10046,6 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-3xpxy4c",
-   "kind": "native",
-   "display": {
-    "key": "7.1.6-1",
-    "title": "1"
-   },
-   "out": {
-    "path": "07-ethernet-switching/07.01.06-lab-use-wireshark-to-examine-ethernet-frames/assets/7.1.6-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-kishtvv",
-   "kind": "native",
-   "display": {
-    "key": "7.1.6-2",
-    "title": "2"
-   },
-   "out": {
-    "path": "07-ethernet-switching/07.01.06-lab-use-wireshark-to-examine-ethernet-frames/assets/7.1.6-2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-we26wsr",
-   "kind": "native",
-   "display": {
-    "key": "7.1.6-3",
-    "title": "3"
-   },
-   "out": {
-    "path": "07-ethernet-switching/07.01.06-lab-use-wireshark-to-examine-ethernet-frames/assets/7.1.6-3.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-nb77bgh",
-   "kind": "native",
-   "display": {
-    "key": "7.2.7-1",
-    "title": "topology"
-   },
-   "out": {
-    "path": "07-ethernet-switching/07.02.07-lab-view-network-device-mac-addresses/assets/7.2.7-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-to7otx2",
-   "kind": "native",
-   "display": {
-    "key": "7.3.7-1",
-    "title": "topology"
-   },
-   "out": {
-    "path": "07-ethernet-switching/07.03.07-lab-view-the-switch-mac-address-table/assets/7.3.7-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-332tkge",
    "kind": "native",
    "display": {
@@ -10251,19 +10160,6 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-d7nducz",
-   "kind": "native",
-   "display": {
-    "key": "16.4.7-1",
-    "title": "topology"
-   },
-   "out": {
-    "path": "16-network-security-fundamentals/16.04.07-lab-configure-network-devices-with-ssh/assets/16.4.7-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-wwo23ap",
    "kind": "native",
    "display": {
@@ -10307,32 +10203,6 @@
    },
    "out": {
     "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.3.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-mjpqy35",
-   "kind": "native",
-   "display": {
-    "key": "17.4.6-1",
-    "title": "topology"
-   },
-   "out": {
-    "path": "17-build-a-small-network/17.04.06-lab-test-network-latency-with-ping-and-traceroute/assets/17.4.6-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-mgxne4i",
-   "kind": "native",
-   "display": {
-    "key": "17.4.6-2",
-    "title": "2"
-   },
-   "out": {
-    "path": "17-build-a-small-network/17.04.06-lab-test-network-latency-with-ping-and-traceroute/assets/17.4.6-2.png",
     "format": "native"
    },
    "status": "manual"

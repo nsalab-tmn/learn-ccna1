@@ -1,8 +1,0 @@
-testbed:
-  name: lab12.9.2
-
-devices:
-  dummy:
-    connections:
-      a:
-        ip: localhost
