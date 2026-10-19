@@ -1,9 +1,10 @@
 {
     "title": "Двоичная система счисления",
-    "materialType": "lecture",
+    "shortName": "ccna1.number-systems.binary-number-system",
+    "type": "scored-lecture",
     "description": "Как на самом деле выглядят IP-адреса? Как переводить числа из двоичной системы счисления в десятичную и обратно?",
     "difficulty": 3,
-    "duration": "PT0H28M",
+    "duration": "PT0H30M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,76 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.number-systems.binary-number-system",
+            "kind": "K",
+            "bloom": "apply",
+            "objective": "Convert an IPv4 address from dotted-decimal notation to binary, octet by octet."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.ports-and-addresses"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "apply",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): decimal-to-binary conversion of IPv4 addresses.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой двоичный эквивалент IP-адреса 192.168.11.10?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "11000000.11000000.00001011.00001010 ",
+                    "correct": false,
+                    "comment": "192.168.11.10 эквивалентно 11000000.10101000.00001011.00001010"
+                },
+                {
+                    "answer": "11000000.10101000.00001011.00001010",
+                    "correct": true
+                },
+                {
+                    "answer": "11000000.10101000.00001010.00001011 ",
+                    "correct": false,
+                    "comment": "192.168.11.10 эквивалентно 11000000.10101000.00001011.00001010"
+                },
+                {
+                    "answer": " 11000000.10101000.00001011.00010010",
+                    "correct": false,
+                    "comment": "192.168.11.10 эквивалентно 11000000.10101000.00001011.00001010"
+                }
+            ]
+        },
+        {
+            "question": "Что из перечисленного является двоичным эквивалентом IP-адреса 172.16.31.30? ",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "11000000.00010000.00011111.00011110",
+                    "correct": false,
+                    "comment": "172.16.31.30 эквивалентно 10101100.00010000.00011111.00011110"
+                },
+                {
+                    "answer": "10101000.00010000.00011111.00011110",
+                    "correct": false,
+                    "comment": "172.16.31.30 эквивалентно 10101100.00010000.00011111.00011110"
+                },
+                {
+                    "answer": "10101100.00010000.00011110.000111110",
+                    "correct": false,
+                    "comment": "172.16.31.30 эквивалентно 10101100.00010000.00011111.00011110"
+                },
+                {
+                    "answer": "10101100.00010000.00011111.00011110",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

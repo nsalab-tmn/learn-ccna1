@@ -1,9 +1,10 @@
 {
     "title": "Скорость и способы пересылки на коммутаторах",
-    "materialType": "lecture",
+    "shortName": "ccna1.ethernet-switching.switch-speeds-and-forwarding-methods",
+    "type": "scored-lecture",
     "description": "Какие существуют способы пересылки кадров? Как дуплекс влияет на пересылку кадров?",
     "difficulty": 3,
-    "duration": "PT0H11M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,131 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ethernet-switching.switch-speeds-and-forwarding-methods",
+            "kind": "K",
+            "bloom": "remember",
+            "objective": "Name the two switch forwarding methods (store-and-forward, cut-through) and the cut-through variants, the two memory-buffering methods (port-based, shared), and the feature that selects the best speed and duplex automatically (auto-negotiation)."
+        },
+        "requires": [
+            "ksa.ccna1.ethernet-switching.ethernet-frame",
+            "ksa.ccna1.ethernet-switching.the-mac-address-table",
+            "ksa.ccna1.physical-layer.utp-cabling"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "remember",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): forwarding methods, cut-through variants, memory buffering, auto-negotiation.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Каковы два способа пересылки данных между портами коммутатора? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "коммутация с отсечкой",
+                    "correct": false,
+                    "comment": "Два метода для пересылки данных между портами коммутатора — сквозная коммутация и коммутация с промежуточным хранением"
+                },
+                {
+                    "answer": "сквозная коммутация",
+                    "correct": true
+                },
+                {
+                    "answer": "коммутация с промежуточным хранением",
+                    "correct": true
+                },
+                {
+                    "answer": "коммутация с хранением и обеспечением",
+                    "correct": false,
+                    "comment": "Два метода для пересылки данных между портами коммутатора — сквозная коммутация и коммутация с промежуточным хранением"
+                },
+                {
+                    "answer": "коммутация с хранением и восстановлением",
+                    "correct": false,
+                    "comment": "Два метода для пересылки данных между портами коммутатора — сквозная коммутация и коммутация с промежуточным хранением"
+                }
+            ]
+        },
+        {
+            "question": "Какой метод коммутации может быть реализован в режиме быстрой пересылки или исключения фрагментов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "коммутация с отсечкой",
+                    "correct": false,
+                    "comment": "Сквозная коммутация реализуется в режиме быстрой пересылки или исключения фрагментов"
+                },
+                {
+                    "answer": "сквозная коммутация",
+                    "correct": true
+                },
+                {
+                    "answer": "коммутация с промежуточным хранением",
+                    "correct": false,
+                    "comment": "Сквозная коммутация реализуется в режиме быстрой пересылки или исключения фрагментов"
+                },
+                {
+                    "answer": "коммутация с хранением и восстановлением",
+                    "correct": false,
+                    "comment": "Сквозная коммутация реализуется в режиме быстрой пересылки или исключения фрагментов"
+                }
+            ]
+        },
+        {
+            "question": "Какие два типа методов буферизации памяти используются коммутаторами? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "долгосрочная буферизация памяти",
+                    "correct": false,
+                    "comment": "Коммутаторы используют два метода буферизации памяти: буферизация памяти на основе портов и буферизация общей памяти."
+                },
+                {
+                    "answer": "буферизация памяти на базе портов",
+                    "correct": true
+                },
+                {
+                    "answer": "буферизация совместно используемой памяти",
+                    "correct": true
+                },
+                {
+                    "answer": "краткосрочная буферизация памяти",
+                    "correct": false,
+                    "comment": "Коммутаторы используют два метода буферизации памяти: буферизация памяти на основе портов и буферизация общей памяти."
+                }
+            ]
+        },
+        {
+            "question": "Какая функция автоматически выбирает наилучшую скорость и дуплекс для подключенных устройств?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "auto-MDIX",
+                    "correct": false,
+                    "comment": "Auto-MDIX определяет тип подключенного кабеля (прямой или перекрестный) и настраивает интерфейс, но скорость и дуплекс не согласует"
+                },
+                {
+                    "answer": "автоботы",
+                    "correct": false,
+                    "comment": "Функции «автоботы» в Ethernet нет: скорость и дуплексный режим выбирает автосогласование"
+                },
+                {
+                    "answer": "автосогласование",
+                    "correct": true
+                },
+                {
+                    "answer": "автотюнинг",
+                    "correct": false,
+                    "comment": "Автотюнинг не входит в число функций порта Ethernet: о скорости и дуплексе устройства договариваются с помощью автосогласования"
+                }
+            ]
+        }
+    ]
 }

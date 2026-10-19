@@ -1,9 +1,10 @@
 {
     "title": "MAC-адрес Ethernet",
-    "materialType": "lecture",
+    "shortName": "ccna1.ethernet-switching.ethernet-mac-address",
+    "type": "scored-lecture",
     "description": "Из чего состоит MAC-адрес в Ethernet-кадре? Как кадры обрабатываются оконечными устройствами? Какие бывают типы MAC-адресов?",
     "difficulty": 3,
-    "duration": "PT0H11M",
+    "duration": "PT0H17M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,158 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ethernet-switching.ethernet-mac-address",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe the structure of an Ethernet MAC address (48 bits written as 12 hexadecimal digits: the vendor's OUI followed by a vendor-assigned value), explain why MAC-based filtering is unreliable, and state how broadcast frames are forwarded and how multicast addresses are used."
+        },
+        "requires": [
+            "ksa.ccna1.ethernet-switching.ethernet-frame",
+            "ksa.ccna1.protocols-and-models.the-rules",
+            "ksa.ccna1.protocols-and-models.standards-organizations",
+            "ksa.ccna1.number-systems.hexadecimal-number-system"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): MAC address structure and OUI, hexadecimal length, MAC addresses changed in software, broadcast forwarding, multicast addresses.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "IEEE присвоил производителю OUI 00-60-2F. Какой MAC-адрес этот производитель может назначить новому устройству?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "00-60-2F-3A-07-BC",
+                    "correct": true
+                },
+                {
+                    "answer": "3A-07-BC-00-60-2F",
+                    "correct": false,
+                    "comment": "OUI занимает первые 6 шестнадцатеричных цифр MAC-адреса, а уникальное значение производителя — последние 6. Подходит адрес 00-60-2F-3A-07-BC."
+                },
+                {
+                    "answer": "00-60-2F-3A-07",
+                    "correct": false,
+                    "comment": "MAC-адрес Ethernet состоит из 12 шестнадцатеричных цифр (48 бит), а здесь их только 10. Подходит адрес 00-60-2F-3A-07-BC."
+                },
+                {
+                    "answer": "FF-FF-FF-FF-FF-FF",
+                    "correct": false,
+                    "comment": "Это MAC-адрес широковещательной рассылки, а не уникальный адрес устройства. Первые 6 цифр MAC-адреса устройства — OUI производителя, поэтому подходит 00-60-2F-3A-07-BC."
+                }
+            ]
+        },
+        {
+            "question": "Сколько шестнадцатеричных цифр нужно, чтобы записать 48-битный MAC-адрес Ethernet?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "12",
+                    "correct": true
+                },
+                {
+                    "answer": "6",
+                    "correct": false,
+                    "comment": "Шесть шестнадцатеричных цифр занимает только OUI производителя. Одна шестнадцатеричная цифра представляет 4 бита, поэтому 48-битный MAC-адрес записывается 12 цифрами."
+                },
+                {
+                    "answer": "24",
+                    "correct": false,
+                    "comment": "24 бита занимает OUI. Одна шестнадцатеричная цифра представляет 4 бита, поэтому 48-битный MAC-адрес записывается 12 цифрами."
+                },
+                {
+                    "answer": "48",
+                    "correct": false,
+                    "comment": "48 — это число бит. Одна шестнадцатеричная цифра представляет 4 бита, поэтому 48-битный MAC-адрес записывается 12 цифрами."
+                }
+            ]
+        },
+        {
+            "question": "Почему фильтрация или отслеживание трафика по MAC-адресу больше не считается надежным способом?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ОС и сетевые адаптеры современных компьютеров позволяют изменить MAC-адрес программно",
+                    "correct": true
+                },
+                {
+                    "answer": "MAC-адрес меняется при каждом запуске компьютера",
+                    "correct": false,
+                    "comment": "При запуске сетевой адаптер только копирует свой MAC-адрес из ПЗУ в ОЗУ, и адрес не меняется. Фильтрация ненадежна потому, что MAC-адрес можно изменить программно."
+                },
+                {
+                    "answer": "MAC-адрес есть только у маршрутизаторов",
+                    "correct": false,
+                    "comment": "MAC-адрес есть у любого устройства с сетевым адаптером Ethernet: у рабочих станций, серверов, принтеров, мобильных устройств и маршрутизаторов. Фильтрация ненадежна потому, что MAC-адрес можно изменить программно."
+                },
+                {
+                    "answer": "IEEE назначает всем производителям один и тот же OUI",
+                    "correct": false,
+                    "comment": "Каждый производитель получает в IEEE свой уникальный OUI. Фильтрация ненадежна потому, что MAC-адрес можно изменить программно."
+                }
+            ]
+        },
+        {
+            "question": "Как обрабатывается широковещательный кадр Ethernet? (выберите два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Коммутатор пересылает его через все порты, кроме входящего",
+                    "correct": true
+                },
+                {
+                    "answer": "Маршрутизатор его не пересылает",
+                    "correct": true
+                },
+                {
+                    "answer": "Коммутатор пересылает его только через порт устройства назначения",
+                    "correct": false,
+                    "comment": "Широковещательный кадр принимает каждое устройство локальной сети, поэтому коммутатор пересылает его через все порты, кроме входящего. Маршрутизатор такой кадр не пересылает."
+                },
+                {
+                    "answer": "Маршрутизатор пересылает его во все подключенные сети",
+                    "correct": false,
+                    "comment": "Маршрутизатор не пересылает широковещательный кадр. Коммутатор пересылает его через все порты, кроме входящего."
+                },
+                {
+                    "answer": "Его принимает только одно устройство, которому назначен адрес FF-FF-FF-FF-FF-FF",
+                    "correct": false,
+                    "comment": "FF-FF-FF-FF-FF-FF — MAC-адрес широковещательной рассылки, а не адрес одного устройства: такой кадр принимает и обрабатывает каждое устройство локальной сети."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение об адресах многоадресной рассылки верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Они используются только как адреса назначения, а источник всегда имеет одноадресный адрес",
+                    "correct": true
+                },
+                {
+                    "answer": "Многоадресный MAC-адрес может быть адресом источника кадра",
+                    "correct": false,
+                    "comment": "MAC-адрес источника всегда должен быть одноадресным. Многоадресные адреса используются только как адреса назначения."
+                },
+                {
+                    "answer": "Многоадресный кадр принимают и обрабатывают все устройства локальной сети",
+                    "correct": false,
+                    "comment": "Все устройства локальной сети обрабатывают широковещательный кадр. Многоадресный кадр обрабатывают только устройства, входящие в группу многоадресной рассылки."
+                },
+                {
+                    "answer": "Маршрутизатор всегда пересылает многоадресные кадры",
+                    "correct": false,
+                    "comment": "Маршрутизатор не пересылает многоадресный кадр, если он не настроен на маршрутизацию многоадресных пакетов. Многоадресные адреса используются только как адреса назначения."
+                }
+            ]
+        }
+    ]
 }

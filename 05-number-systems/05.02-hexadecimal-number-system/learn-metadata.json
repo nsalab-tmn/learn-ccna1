@@ -1,9 +1,10 @@
 {
     "title": "Шестнадцатеричная система счисления",
-    "materialType": "lecture",
+    "shortName": "ccna1.number-systems.hexadecimal-number-system",
+    "type": "scored-lecture",
     "description": "Как научиться понимать IPv6 адреса? Как переводить числа из шестнадцатеричной системы счисления в десятичную и обратно?",
     "difficulty": 3,
-    "duration": "PT0H11M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,126 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.number-systems.hexadecimal-number-system",
+            "kind": "K",
+            "bloom": "apply",
+            "objective": "Convert a value between decimal (0 to 255) and two-digit hexadecimal in both directions."
+        },
+        "requires": [
+            "ksa.ccna1.number-systems.binary-number-system"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "apply",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): decimal-to-hexadecimal and hexadecimal-to-decimal conversion.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой шестнадцатеричный эквивалент для десятичного 202?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "B10",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 202 является CA."
+                },
+                {
+                    "answer": "BA",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 202 является CA."
+                },
+                {
+                    "answer": "C10",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 202 является CA."
+                },
+                {
+                    "answer": "CA",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой шестнадцатеричный эквивалент для десятичного 254?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "EA",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 254 является FE."
+                },
+                {
+                    "answer": "ED ",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 254 является FE."
+                },
+                {
+                    "answer": "FA",
+                    "correct": false,
+                    "comment": "Шестнадцатеричный эквивалент 254 является FE."
+                },
+                {
+                    "answer": "FE",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой десятичный эквивалент для шестнадцатеричного A9?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "168",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент A9 равен 169."
+                },
+                {
+                    "answer": "169 ",
+                    "correct": true
+                },
+                {
+                    "answer": "170",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент A9 равен 169."
+                },
+                {
+                    "answer": "171",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент A9 равен 169."
+                }
+            ]
+        },
+        {
+            "question": "Что из перечисленного является десятичным эквивалентом шестнадцатеричного 7D? ",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "124",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент 7D равен 125."
+                },
+                {
+                    "answer": "125",
+                    "correct": true
+                },
+                {
+                    "answer": "126",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент 7D равен 125."
+                },
+                {
+                    "answer": "127",
+                    "correct": false,
+                    "comment": "Десятичный эквивалент 7D равен 125."
+                }
+            ]
+        }
+    ]
 }
