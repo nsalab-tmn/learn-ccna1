@@ -184,3 +184,350 @@ links:
     device: S4
     port: FastEthernet0/1
   cable: copper
+scenario:
+  pages:
+    - title: "Топология и адресация"
+      body: |
+        | Кабель | Устройство | Порт | Устройство | Порт |
+        |---|---|---|---|---|
+        | Последовательный | R1 | S0/0/0 | R2 | S0/0/0 |
+        | Медный | R1 | G0/0 | S1 | G0/1 |
+        | Медный | R1 | G0/1 | S2 | G0/1 |
+        | Медный | R2 | G0/0 | S3 | G0/1 |
+        | Медный | R2 | G0/1 | S4 | G0/1 |
+        | Медный | PC1 | F0 | S1 | F0/1 |
+        | Медный | PC2 | F0 | S2 | F0/1 |
+        | Медный | PC3 | F0 | S3 | F0/1 |
+        | Медный | PC4 | F0 | S4 | F0/1 |
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | R1 | G0/0 | ? | ? | — |
+        | R1 | G0/1 | ? | ? | — |
+        | R1 | S0/0/0 | 192.168.100.129 | ? | — |
+        | R2 | G0/0 | 192.168.100.65 | ? | — |
+        | R2 | G0/1 | 192.168.100.97 | ? | — |
+        | R2 | S0/0/0 | 192.168.100.158 | ? | — |
+        | S1 | VLAN 1 | 192.168.100.2 | ? | 192.168.100.1 |
+        | S2 | VLAN 1 | 192.168.100.34 | ? | 192.168.100.33 |
+        | S3 | VLAN 1 | ? | ? | ? |
+        | S4 | VLAN 1 | 192.168.100.98 | ? | 192.168.100.97 |
+        | PC1 | NIC | 192.168.100.30 | ? | 192.168.100.1 |
+        | PC2 | NIC | 192.168.100.62 | ? | 192.168.100.33 |
+        | PC3 | NIC | 192.168.100.94 | ? | 192.168.100.65 |
+        | PC4 | NIC | ? | ? | ? |
+
+        Значения со знаком «?» вы вычислите на странице «Разработка схемы адресации». Маска подсети одна для всех подсетей схемы.
+    - title: "Начальное состояние"
+      body: |
+        - На маршрутизаторе R2 настроены все интерфейсы, на маршрутизаторе R1 — только интерфейс S0/0/0 канала WAN. Интерфейсы G0/0 и G0/1 маршрутизатора R1 не настроены и выключены.
+        - Маршрутизация между R1 и R2 уже настроена: на каждом маршрутизаторе заданы статические маршруты к локальным сетям другого маршрутизатора.
+        - На коммутаторах S1, S2 и S4 заданы адрес интерфейса VLAN 1 и шлюз по умолчанию, на компьютерах PC1–PC3 — адрес, маска подсети и шлюз по умолчанию по таблице адресации.
+        - На коммутаторе S3 задано только имя устройства, а на компьютере PC4 адрес не задан.
+
+        **Шаг 1.** Откройте окно компьютера PC1 и на вкладке «Рабочий стол» запустите приложение «Командная строка». Проверьте связь со шлюзом по умолчанию командой **ping 192.168.100.1**. Эхо-запросы не выполняются: сообщение «Destination host unreachable» выдает сам компьютер PC1 (192.168.100.30), потому что адрес 192.168.100.1 еще не назначен ни одному интерфейсу.
+
+        ```
+        C:\>ping 192.168.100.1
+
+        Pinging 192.168.100.1 with 32 bytes of data:
+
+        Reply from 192.168.100.30: Destination host unreachable.
+        Reply from 192.168.100.30: Destination host unreachable.
+        Reply from 192.168.100.30: Destination host unreachable.
+        Reply from 192.168.100.30: Destination host unreachable.
+
+        Ping statistics for 192.168.100.1:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Шаг 2.** Откройте консоль маршрутизатора R1 и нажмите Enter. Перейдите в привилегированный режим EXEC командой **enable**.
+
+        **Шаг 3.** Выведите состояние интерфейсов командой **show ip interface brief**. Интерфейсы G0/0 и G0/1 не имеют адресов (unassigned) и выключены (administratively down), а интерфейс S0/0/0 канала WAN работает.
+
+        ```
+        R1>enable
+        R1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         unassigned      YES unset  administratively down down
+        GigabitEthernet0/1         unassigned      YES unset  administratively down down
+        Serial0/0/0                192.168.100.129 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 4.** Откройте консоль коммутатора S3, нажмите Enter и перейдите в привилегированный режим EXEC командой **enable**.
+
+        **Шаг 5.** Выведите состояние интерфейсов командой **show ip interface brief**. У интерфейса управления Vlan1 нет адреса, и он выключен.
+
+        ```
+        S3>enable
+        S3#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        FastEthernet0/1            unassigned      YES unset  up                    up
+        …
+        GigabitEthernet0/1         unassigned      YES unset  up                    up
+        GigabitEthernet0/2         unassigned      YES unset  down                  down
+        Vlan1                      unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 6.** Откройте окно компьютера PC4 и в приложении «Командная строка» выведите его IP-настройки командой **ipconfig**. Адрес, маска подсети и шлюз по умолчанию не заданы (0.0.0.0).
+
+        ```
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:C5FF:FE22:CE01
+           IPv6 Address....................: ::
+           IPv4 Address....................: 0.0.0.0
+           Subnet Mask.....................: 0.0.0.0
+           Default Gateway.................: 0.0.0.0
+        ```
+    - title: "Разработка схемы адресации"
+      body: |
+        **Примечание.** Подсети получают, заимствуя старшие биты узловой части адреса. Если заимствовать n бит четвертого октета, получится 2^n подсетей, а в каждой подсети останется 2^(8 − n) − 2 адресов узлов: первый адрес подсети — ее сетевой адрес, а последний — широковещательный, и узлам их не назначают.
+
+        **Шаг 1.** Посчитайте, сколько подсетей нужно этой топологии: каждая локальная сеть за интерфейсом маршрутизатора — отдельная подсеть, и канал WAN между маршрутизаторами R1 и R2 — тоже.
+
+        **Шаг 2.** Ответьте на вопрос 1 в форме ответов.
+
+        **Шаг 3.** Определите, сколько бит нужно заимствовать: наименьшее число n, при котором 2^n не меньше нужного числа подсетей. Посчитайте, сколько подсетей при этом получится.
+
+        **Шаг 4.** Ответьте на вопросы 2 и 3 в форме ответов.
+
+        **Шаг 5.** Посчитайте, сколько адресов узлов будет в каждой подсети, и убедитесь, что их не меньше 25: столько адресов нужно каждой локальной сети. Если адресов меньше 25, вы заимствовали слишком много бит.
+
+        **Шаг 6.** Ответьте на вопрос 4 в форме ответов.
+
+        **Шаг 7.** Запишите новую маску подсети. К 24 единицам исходной маски /24 добавьте заимствованные биты: в четвертом октете маски единицы стоят в старших битах, а его десятичное значение равно сумме их весов (128, 64, 32, …).
+
+        **Шаг 8.** Составьте таблицу подсетей. Подсети идут подряд с шагом 256 минус десятичное значение четвертого октета маски, начиная с подсети 0 — 192.168.100.0. Для каждой подсети запишите сетевой адрес, первый и последний используемые адреса узлов и широковещательный адрес: он на единицу меньше сетевого адреса следующей подсети.
+
+        **Шаг 9.** Назначьте подсети сетям топологии по порядку: подсеть 0 — локальной сети интерфейса G0/0 маршрутизатора R1, подсеть 1 — локальной сети интерфейса G0/1 маршрутизатора R1, подсеть 2 — локальной сети интерфейса G0/0 маршрутизатора R2, подсеть 3 — локальной сети интерфейса G0/1 маршрутизатора R2, подсеть 4 — каналу WAN между маршрутизаторами.
+
+        **Шаг 10.** Вычислите значения таблицы адресации, отмеченные знаком «?», по правилам схемы:
+        - интерфейс маршрутизатора в локальной сети получает первый используемый адрес ее подсети;
+        - коммутатор получает второй используемый адрес, а компьютер — последний;
+        - шлюз по умолчанию коммутатора и компьютера — адрес интерфейса маршрутизатора в их подсети;
+        - в канале WAN маршрутизатор R1 получает первый используемый адрес подсети 4, а маршрутизатор R2 — последний.
+
+        Уже настроенные устройства следуют тем же правилам: сравните с ними свои значения.
+    - title: "Настройка маршрутизатора R1"
+      body: |
+        **Шаг 1.** На маршрутизаторе R1 перейдите в режим глобальной конфигурации командой **configure terminal**, а затем к настройке интерфейса G0/0 командой **interface g0/0**.
+
+        **Шаг 2.** Задайте интерфейсу первый используемый адрес подсети 0 и маску подсети командой **ip address 192.168.100.1 255.255.255.224** и включите интерфейс командой **no shutdown**.
+
+        **Шаг 3.** Аналогично настройте интерфейс G0/1 первым используемым адресом подсети 1: **interface g0/1**, **ip address 192.168.100.33 255.255.255.224**, **no shutdown**. Вернитесь в привилегированный режим EXEC командой **end**. После каждой команды **no shutdown** маршрутизатор сообщает, что интерфейс перешел в состояние up.
+
+        ```
+        R1#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        R1(config)#interface g0/0
+        R1(config-if)#ip address 192.168.100.1 255.255.255.224
+        R1(config-if)#no shutdown
+        R1(config-if)#
+        *Mar  1 00:01:01.020: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+        R1(config-if)#
+        *Mar  1 00:01:02.020: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+        R1(config-if)#interface g0/1
+        R1(config-if)#ip address 192.168.100.33 255.255.255.224
+        R1(config-if)#no shutdown
+        R1(config-if)#
+        *Mar  1 00:01:12.259: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        R1(config-if)#
+        *Mar  1 00:01:13.259: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        R1(config-if)#end
+        *Mar  1 00:01:16.278: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Шаг 4.** Убедитесь с помощью команды **show ip interface brief**, что интерфейсы G0/0 и G0/1 получили адреса и работают: в столбцах «Status» и «Protocol» — up.
+
+        ```
+        R1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         192.168.100.1   YES manual up                    up
+        GigabitEthernet0/1         192.168.100.33  YES manual up                    up
+        Serial0/0/0                192.168.100.129 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 5.** Дождитесь, когда индикаторы соединений R1 — S1 и R1 — S2 на схеме загорятся зеленым («Соединение активно» в условных обозначениях): после включения интерфейса на это уходит около 30 секунд. В приложении «Командная строка» компьютера PC1 снова проверьте связь со шлюзом по умолчанию командой **ping 192.168.100.1**. Теперь эхо-запросы выполняются успешно.
+
+        ```
+        C:\>ping 192.168.100.1
+
+        Pinging 192.168.100.1 with 32 bytes of data:
+
+        Reply from 192.168.100.1: bytes=32 time=1ms TTL=255
+        Reply from 192.168.100.1: bytes=32 time<1ms TTL=255
+        Reply from 192.168.100.1: bytes=32 time<1ms TTL=255
+        Reply from 192.168.100.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 192.168.100.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+    - title: "Настройка коммутатора S3 и компьютера PC4"
+      body: |
+        **Шаг 1.** На коммутаторе S3 перейдите в режим глобальной конфигурации командой **configure terminal**, а затем к настройке интерфейса управления командой **interface vlan 1**.
+
+        **Шаг 2.** Задайте интерфейсу второй используемый адрес подсети 2 и маску подсети командой **ip address 192.168.100.66 255.255.255.224** и включите его командой **no shutdown**.
+
+        **Шаг 3.** Вернитесь в режим глобальной конфигурации командой **exit** и задайте шлюз по умолчанию — адрес интерфейса G0/0 маршрутизатора R2 — командой **ip default-gateway 192.168.100.65**. Вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        S3#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        S3(config)#interface vlan 1
+        S3(config-if)#ip address 192.168.100.66 255.255.255.224
+        S3(config-if)#no shutdown
+        *Mar  1 00:02:13.483: %LINK-5-CHANGED: Interface Vlan1, changed state to up
+        *Mar  1 00:02:13.483: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+        S3(config-if)#exit
+        S3(config)#ip default-gateway 192.168.100.65
+        S3(config)#end
+        *Mar  1 00:02:22.821: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Примечание.** Коммутатор пересылает кадры и без IP-адреса. Адрес интерфейса VLAN 1 нужен, чтобы к коммутатору можно было подключиться по сети для управления, а шлюз по умолчанию — чтобы коммутатор мог отвечать узлам других подсетей.
+
+        **Шаг 4.** Убедитесь с помощью команды **show ip interface brief**, что интерфейс Vlan1 получил адрес 192.168.100.66 и работает.
+
+        ```
+        S3#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        FastEthernet0/1            unassigned      YES unset  up                    up
+        …
+        GigabitEthernet0/1         unassigned      YES unset  up                    up
+        GigabitEthernet0/2         unassigned      YES unset  down                  down
+        Vlan1                      192.168.100.66  YES manual up                    up
+        ```
+
+        **Шаг 5.** В приложении «Командная строка» компьютера PC4 задайте последний используемый адрес подсети 3, маску подсети и шлюз по умолчанию — адрес интерфейса G0/1 маршрутизатора R2 — командой **ipconfig 192.168.100.126 255.255.255.224 192.168.100.97**.
+
+        **Шаг 6.** Убедитесь с помощью команды **ipconfig**, что адрес, маска подсети и шлюз по умолчанию заданы.
+
+        ```
+        C:\>ipconfig 192.168.100.126 255.255.255.224 192.168.100.97
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:C5FF:FE22:CE01
+           IPv6 Address....................: ::
+           IPv4 Address....................: 192.168.100.126
+           Subnet Mask.....................: 255.255.255.224
+           Default Gateway.................: 192.168.100.97
+        ```
+    - title: "Проверка связи между подсетями"
+      body: |
+        **Шаг 1.** В приложении «Командная строка» компьютера PC4 проверьте связь со шлюзом по умолчанию командой **ping 192.168.100.97**. Эхо-запросы выполняются успешно.
+
+        ```
+        C:\>ping 192.168.100.97
+
+        Pinging 192.168.100.97 with 32 bytes of data:
+
+        Reply from 192.168.100.97: bytes=32 time=1ms TTL=255
+        Reply from 192.168.100.97: bytes=32 time<1ms TTL=255
+        Reply from 192.168.100.97: bytes=32 time<1ms TTL=255
+        Reply from 192.168.100.97: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 192.168.100.97:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 2.** Проверьте связь с коммутатором S3 командой **ping 192.168.100.66**. Эхо-запросы выполняются успешно. Первый запрос может остаться без ответа: в это время маршрутизатор R2 определяет MAC-адрес коммутатора по протоколу ARP.
+
+        ```
+        C:\>ping 192.168.100.66
+
+        Pinging 192.168.100.66 with 32 bytes of data:
+
+        Request timed out.
+        Reply from 192.168.100.66: bytes=32 time=1ms TTL=254
+        Reply from 192.168.100.66: bytes=32 time=1ms TTL=254
+        Reply from 192.168.100.66: bytes=32 time=1ms TTL=254
+
+        Ping statistics for 192.168.100.66:
+            Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 1ms, Maximum = 1ms, Average = 1ms
+        ```
+
+        **Шаг 3.** Проверьте связь с интерфейсом G0/0 маршрутизатора R1 командой **ping 192.168.100.1**. Эхо-запросы выполняются успешно: маршрутизатор R2 пересылает пакеты к локальным сетям R1 по статическому маршруту.
+
+        ```
+        C:\>ping 192.168.100.1
+
+        Pinging 192.168.100.1 with 32 bytes of data:
+
+        Reply from 192.168.100.1: bytes=32 time=1ms TTL=254
+        Reply from 192.168.100.1: bytes=32 time=1ms TTL=254
+        Reply from 192.168.100.1: bytes=32 time=1ms TTL=254
+        Reply from 192.168.100.1: bytes=32 time=1ms TTL=254
+
+        Ping statistics for 192.168.100.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 1ms, Maximum = 1ms, Average = 1ms
+        ```
+
+        **Шаг 4.** Проверьте связь с компьютером PC1 командой **ping 192.168.100.30**. Эхо-запросы выполняются успешно: пакеты проходят через оба маршрутизатора.
+
+        ```
+        C:\>ping 192.168.100.30
+
+        Pinging 192.168.100.30 with 32 bytes of data:
+
+        Reply from 192.168.100.30: bytes=32 time=2ms TTL=126
+        Reply from 192.168.100.30: bytes=32 time=2ms TTL=126
+        Reply from 192.168.100.30: bytes=32 time=2ms TTL=126
+        Reply from 192.168.100.30: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 192.168.100.30:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 5.** На коммутаторе S3 проверьте связь с интерфейсом G0/1 маршрутизатора R1 командой **ping 192.168.100.33**. Коммутатор получает ответы: шлюз по умолчанию позволяет ему обмениваться данными с узлами других подсетей.
+
+        ```
+        S3#ping 192.168.100.33
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 192.168.100.33, timeout is 2 seconds:
+        !!!!!
+        Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/4 ms
+        ```
+
+        **Шаг 6.** На маршрутизаторе R1 выведите таблицу маршрутизации командой **show ip route**. Подсети 192.168.100.0/27 и 192.168.100.32/27 теперь подключены к интерфейсам G0/0 и G0/1 (код C), а к локальным сетям маршрутизатора R2 ведут статические маршруты (код S).
+
+        ```
+        R1#show ip route
+        Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+               D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+               N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+               E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+               i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+               * - candidate default, U - per-user static route, o - ODR
+               P - periodic downloaded static route
+
+        Gateway of last resort is not set
+
+              192.168.100.0/24 is variably subnetted, 8 subnets, 2 masks
+        C        192.168.100.0/27 is directly connected, GigabitEthernet0/0
+        L        192.168.100.1/32 is directly connected, GigabitEthernet0/0
+        C        192.168.100.32/27 is directly connected, GigabitEthernet0/1
+        L        192.168.100.33/32 is directly connected, GigabitEthernet0/1
+        S        192.168.100.64/27 [1/0] via 192.168.100.158
+        S        192.168.100.96/27 [1/0] via 192.168.100.158
+        C        192.168.100.128/27 is directly connected, Serial0/0/0
+        L        192.168.100.129/32 is directly connected, Serial0/0/0
+        ```

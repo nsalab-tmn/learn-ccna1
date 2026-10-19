@@ -167,3 +167,385 @@ links:
     device: S4
     port: FastEthernet0/1
   cable: copper
+scenario:
+  pages:
+    - title: "Топология и адресация"
+      body: |
+        | Кабель | Устройство | Порт | Устройство | Порт |
+        |---|---|---|---|---|
+        | Последовательный | R1 | S0/0/0 | R2 | S0/0/0 |
+        | Медный | R1 | G0/0 | S1 | G0/1 |
+        | Медный | R1 | G0/1 | S2 | G0/1 |
+        | Медный | R2 | G0/0 | S3 | G0/1 |
+        | Медный | R2 | G0/1 | S4 | G0/1 |
+        | Медный | PC1 | F0 | S1 | F0/1 |
+        | Медный | PC2 | F0 | S2 | F0/1 |
+        | Медный | PC3 | F0 | S3 | F0/1 |
+        | Медный | PC4 | F0 | S4 | F0/1 |
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | R1 | G0/0 | 192.168.10.1 | 255.255.255.0 | — |
+        | R1 | G0/1 | 192.168.11.1 | 255.255.255.0 | — |
+        | R1 | S0/0/0 | 209.165.200.225 | 255.255.255.252 | — |
+        | R2 | G0/0 | 10.1.1.1 | 255.255.255.0 | — |
+        | R2 | G0/1 | 10.1.2.1 | 255.255.255.0 | — |
+        | R2 | S0/0/0 | 209.165.200.226 | 255.255.255.252 | — |
+        | PC1 | NIC | 192.168.10.10 | 255.255.255.0 | 192.168.10.1 |
+        | PC2 | NIC | 192.168.11.10 | 255.255.255.0 | 192.168.11.1 |
+        | PC3 | NIC | 10.1.1.10 | 255.255.255.0 | 10.1.1.1 |
+        | PC4 | NIC | 10.1.2.10 | 255.255.255.0 | 10.1.2.1 |
+    - title: "Начальное состояние"
+      body: |
+        - На маршрутизаторах R1 и R2 заданы имя устройства, пароль консоли cisco и пароль привилегированного режима EXEC class.
+        - Интерфейсы Serial0/0/0 маршрутизаторов настроены и включены: последовательный канал между R1 и R2 работает. Маршруты к локальным сетям соседнего маршрутизатора заданы статически, в таблице маршрутизации они отмечены кодом S.
+        - Интерфейсы GigabitEthernet маршрутизаторов не настроены и выключены.
+        - На компьютерах заданы IP-адреса, маски подсети и шлюзы по умолчанию по таблице адресации. Коммутаторы не настроены: у них нет IP-адресов, поэтому проверить связь с ними командой ping нельзя.
+
+        **Шаг 1.** Откройте окно компьютера PC1 и на вкладке «Рабочий стол» запустите приложение «Командная строка». Проверьте связь с компьютером PC4 командой **ping 10.1.2.10**. Эхо-запросы не выполняются: сообщение «Destination host unreachable» выдает сам компьютер PC1 (192.168.10.10). Его шлюз по умолчанию, интерфейс G0/0 маршрутизатора R1, выключен, поэтому PC1 не может отправить пакет в другую сеть.
+
+        ```
+        C:\>ping 10.1.2.10
+
+        Pinging 10.1.2.10 with 32 bytes of data:
+
+        Reply from 192.168.10.10: Destination host unreachable.
+        Reply from 192.168.10.10: Destination host unreachable.
+        Reply from 192.168.10.10: Destination host unreachable.
+        Reply from 192.168.10.10: Destination host unreachable.
+
+        Ping statistics for 10.1.2.10:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+    - title: "Изучение сведений о маршрутизаторе R1"
+      body: |
+        **Шаг 1.** Откройте консоль маршрутизатора R1 и нажмите Enter. На запрос Password введите пароль консоли cisco: символы пароля на экране не отображаются.
+
+        **Шаг 2.** Перейдите в привилегированный режим EXEC командой **enable** и на запрос Password введите пароль class.
+
+        ```
+        User Access Verification
+
+        Password: 
+        R1>enable
+        Password: 
+        ```
+
+        **Шаг 3.** Выведите статистику по интерфейсу Serial 0/0/0 командой **show interfaces serial 0/0/0**. Вывод длиннее экрана и останавливается на строке «--More--»: чтобы листать его, нажимайте пробел. Найдите в выводе IP-адрес интерфейса (строка «Internet address») и его пропускную способность (значение BW). Команда **show interfaces** без имени интерфейса выводит статистику по всем интерфейсам маршрутизатора.
+
+        ```
+        R1#show interfaces serial 0/0/0
+        Serial0/0/0 is up, line protocol is up
+          Hardware is NetOS serial
+          Internet address is 209.165.200.225/30
+          MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec,
+             reliability 255/255, txload 1/255, rxload 1/255
+          Encapsulation HDLC, crc 16, loopback not set
+        …
+        ```
+
+        **Шаг 4.** Ответьте на вопросы 1–4 в форме ответов.
+
+        **Шаг 5.** Выведите статистику по интерфейсу GigabitEthernet 0/0 командой **show interfaces gigabitethernet 0/0**. Интерфейс выключен администратором (administratively down). Найдите в выводе MAC-адрес интерфейса (строка «Hardware», слова «address is»), его IP-адрес и пропускную способность.
+
+        ```
+        R1#show interfaces gigabitethernet 0/0
+        GigabitEthernet0/0 is administratively down, line protocol is down
+          Hardware is Gigabit Ethernet, address is 00d0.55d8.d701 (bia 00d0.55d8.d701)
+          MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
+             reliability 255/255, txload 1/255, rxload 1/255
+          Encapsulation ARPA, loopback not set
+        …
+        ```
+
+        **Шаг 6.** Ответьте на вопросы 5–7 в форме ответов.
+
+        **Шаг 7.** Выведите сводный список интерфейсов маршрутизатора командой **show ip interface brief**. Для каждого интерфейса в нем указаны IP-адрес и состояние: столбец «Status» показывает, включен ли интерфейс, а столбец «Protocol» — работает ли на нем канальный уровень.
+
+        ```
+        R1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         unassigned      YES unset  administratively down down
+        GigabitEthernet0/1         unassigned      YES unset  administratively down down
+        Serial0/0/0                209.165.200.225 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 8.** Ответьте на вопросы 8–11 в форме ответов.
+
+        **Шаг 9.** Выведите таблицу маршрутизации командой **show ip route**. Маршруты к сетям 10.1.1.0 и 10.1.2.0 (код S) ведут через последовательный канал к маршрутизатору R2 (via 209.165.200.226). Маршрутов к локальным сетям самого маршрутизатора R1 пока нет: их интерфейсы выключены.
+
+        ```
+        R1#show ip route
+        Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+               D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+               N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+               E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+               i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+               * - candidate default, U - per-user static route, o - ODR
+               P - periodic downloaded static route
+
+        Gateway of last resort is not set
+
+              10.0.0.0/24 is subnetted, 2 subnets
+        S        10.1.1.0 [1/0] via 209.165.200.226
+        S        10.1.2.0 [1/0] via 209.165.200.226
+              209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        209.165.200.224/30 is directly connected, Serial0/0/0
+        L        209.165.200.225/32 is directly connected, Serial0/0/0
+        ```
+
+        **Примечание.** Строка «Gateway of last resort is not set» означает, что на маршрутизаторе не задан маршрут по умолчанию — маршрут, по которому отправляются пакеты в сети, которых нет в таблице маршрутизации.
+
+        **Шаг 10.** Ответьте на вопросы 12–15 в форме ответов.
+    - title: "Настройка интерфейсов маршрутизатора R1"
+      body: |
+        **Шаг 1.** На маршрутизаторе R1 перейдите в режим глобальной конфигурации командой **configure terminal**, а затем к настройке интерфейса GigabitEthernet 0/0 командой **interface gigabitethernet 0/0**.
+
+        **Шаг 2.** Задайте интерфейсу IP-адрес и маску подсети по таблице адресации командой **ip address 192.168.10.1 255.255.255.0** и включите его командой **no shutdown**. Интерфейс переходит в состояние up: на консоли появляются сообщения LINK-3-UPDOWN и LINEPROTO-5-UPDOWN.
+
+        **Шаг 3.** Задайте описание интерфейса, указав, к какому устройству он подключен, командой **description LAN connection to S1**. Вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        R1#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        R1(config)#interface gigabitethernet 0/0
+        R1(config-if)#ip address 192.168.10.1 255.255.255.0
+        R1(config-if)#no shutdown
+        R1(config-if)#
+        *Mar  1 00:01:04.903: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+        R1(config-if)#
+        *Mar  1 00:01:05.903: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+        R1(config-if)#description LAN connection to S1
+        R1(config-if)#end
+        *Mar  1 00:01:11.028: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Примечание.** Описание интерфейса не влияет на его работу, но документирует сеть прямо в конфигурации: по нему видно, куда ведет интерфейс, без поиска кабеля на схеме.
+
+        **Шаг 4.** Проверьте связь с компьютером PC1 командой **ping 192.168.10.10**. Сразу после включения интерфейса эхо-запросы не выполняются.
+
+        ```
+        R1#ping 192.168.10.10
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 192.168.10.10, timeout is 2 seconds:
+        .....
+        Success rate is 0 percent (0/5)
+        ```
+
+        **Примечание.** Порт G0/1 коммутатора S1, к которому подключен маршрутизатор, начинает передавать кадры не сразу после включения интерфейса: около 30 секунд протокол STP проверяет, не образует ли новое соединение петлю.
+
+        **Шаг 5.** Подождите около 30 секунд и повторите команду **ping 192.168.10.10**. Теперь эхо-запросы выполняются. Первый эхо-запрос может остаться без ответа: в это время маршрутизатор определяет MAC-адрес компьютера PC1 по протоколу ARP.
+
+        ```
+        R1#ping 192.168.10.10
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 192.168.10.10, timeout is 2 seconds:
+        .!!!!
+        Success rate is 80 percent (4/5), round-trip min/avg/max = 1/2/4 ms
+        ```
+
+        **Шаг 6.** Аналогично настройте интерфейс GigabitEthernet 0/1: **interface gigabitethernet 0/1**, IP-адрес 192.168.11.1 с маской 255.255.255.0, **no shutdown** и описание **description LAN connection to S2**. Вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        R1#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        R1(config)#interface gigabitethernet 0/1
+        R1(config-if)#ip address 192.168.11.1 255.255.255.0
+        R1(config-if)#no shutdown
+        R1(config-if)#
+        *Mar  1 00:02:14.654: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        R1(config-if)#
+        *Mar  1 00:02:15.654: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        R1(config-if)#description LAN connection to S2
+        R1(config-if)#end
+        *Mar  1 00:02:20.779: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+    - title: "Настройка интерфейсов маршрутизатора R2"
+      body: |
+        **Шаг 1.** Откройте консоль маршрутизатора R2, нажмите Enter и войдите так же, как на R1: пароль консоли cisco, затем команда **enable** и пароль class.
+
+        ```
+        User Access Verification
+
+        Password: 
+        R2>enable
+        Password: 
+        ```
+
+        **Шаг 2.** Аналогично R1 настройте интерфейс GigabitEthernet 0/0 по таблице адресации: **interface gigabitethernet 0/0**, IP-адрес 10.1.1.1 с маской 255.255.255.0, **no shutdown** и описание **description LAN connection to S3**.
+
+        **Шаг 3.** Аналогично настройте интерфейс GigabitEthernet 0/1: **interface gigabitethernet 0/1**, IP-адрес 10.1.2.1 с маской 255.255.255.0, **no shutdown** и описание **description LAN connection to S4**. Вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        R2#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        R2(config)#interface gigabitethernet 0/0
+        R2(config-if)#ip address 10.1.1.1 255.255.255.0
+        R2(config-if)#no shutdown
+        R2(config-if)#
+        *Mar  1 00:02:39.351: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+        R2(config-if)#
+        *Mar  1 00:02:40.351: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+        R2(config-if)#description LAN connection to S3
+        R2(config-if)#interface gigabitethernet 0/1
+        R2(config-if)#ip address 10.1.2.1 255.255.255.0
+        R2(config-if)#no shutdown
+        R2(config-if)#
+        *Mar  1 00:02:51.701: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        R2(config-if)#
+        *Mar  1 00:02:52.701: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        R2(config-if)#description LAN connection to S4
+        R2(config-if)#end
+        *Mar  1 00:02:57.828: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+    - title: "Сохранение конфигурации"
+      body: |
+        **Примечание.** Текущая конфигурация (running-config) хранится в оперативной памяти и пропадает при перезагрузке или выключении маршрутизатора. Загрузочная конфигурация (startup-config) хранится в энергонезависимой памяти NVRAM, и маршрутизатор применяет ее при загрузке.
+
+        **Шаг 1.** На маршрутизаторе R1 сохраните текущую конфигурацию в NVRAM командой **copy running-config startup-config**. На запрос имени файла нажмите Enter: имя startup-config предложено по умолчанию.
+
+        ```
+        R1#copy running-config startup-config
+        Destination filename [startup-config]? 
+        Building configuration...
+        [OK]
+        ```
+
+        **Шаг 2.** Ответьте на вопрос 16 в форме ответов.
+
+        **Шаг 3.** Аналогично сохраните текущую конфигурацию маршрутизатора R2.
+
+        ```
+        R2#copy running-config startup-config
+        Destination filename [startup-config]? 
+        Building configuration...
+        [OK]
+        ```
+    - title: "Проверка конфигурации и связи"
+      body: |
+        **Шаг 1.** На маршрутизаторе R1 выведите сводный список интерфейсов командой **show ip interface brief**. Интерфейсы GigabitEthernet0/0 и GigabitEthernet0/1 получили IP-адреса и находятся в состоянии up/up.
+
+        ```
+        R1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         192.168.10.1    YES manual up                    up
+        GigabitEthernet0/1         192.168.11.1    YES manual up                    up
+        Serial0/0/0                209.165.200.225 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 2.** Аналогично выведите сводный список интерфейсов маршрутизатора R2.
+
+        ```
+        R2#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         10.1.1.1        YES manual up                    up
+        GigabitEthernet0/1         10.1.2.1        YES manual up                    up
+        Serial0/0/0                209.165.200.226 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 3.** Ответьте на вопрос 17 в форме ответов.
+
+        **Шаг 4.** На маршрутизаторе R1 снова выведите статистику по интерфейсу GigabitEthernet 0/0 командой **show interfaces gigabitethernet 0/0** и сравните ее с выводом команды **show ip interface brief**. Найдите в выводе строки «Description» и «Internet address».
+
+        ```
+        R1#show interfaces gigabitethernet 0/0
+        GigabitEthernet0/0 is up, line protocol is up
+          Hardware is Gigabit Ethernet, address is 00d0.55d8.d701 (bia 00d0.55d8.d701)
+          Description: LAN connection to S1
+          Internet address is 192.168.10.1/24
+          MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
+             reliability 255/255, txload 1/255, rxload 1/255
+          Encapsulation ARPA, loopback not set
+        …
+        ```
+
+        **Шаг 5.** Ответьте на вопросы 18 и 19 в форме ответов.
+
+        **Шаг 6.** На маршрутизаторе R1 выведите таблицу маршрутизации командой **show ip route**. Теперь в ней есть напрямую подключенные маршруты (код C) к локальным сетям маршрутизатора.
+
+        ```
+        R1#show ip route
+        Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+               D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+               N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+               E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+               i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+               * - candidate default, U - per-user static route, o - ODR
+               P - periodic downloaded static route
+
+        Gateway of last resort is not set
+
+              10.0.0.0/24 is subnetted, 2 subnets
+        S        10.1.1.0 [1/0] via 209.165.200.226
+        S        10.1.2.0 [1/0] via 209.165.200.226
+              192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        192.168.10.0/24 is directly connected, GigabitEthernet0/0
+        L        192.168.10.1/32 is directly connected, GigabitEthernet0/0
+              192.168.11.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        192.168.11.0/24 is directly connected, GigabitEthernet0/1
+        L        192.168.11.1/32 is directly connected, GigabitEthernet0/1
+              209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        209.165.200.224/30 is directly connected, Serial0/0/0
+        L        209.165.200.225/32 is directly connected, Serial0/0/0
+        ```
+
+        **Шаг 7.** Аналогично выведите таблицу маршрутизации маршрутизатора R2.
+
+        ```
+        R2#show ip route
+        Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+               D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+               N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+               E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+               i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+               * - candidate default, U - per-user static route, o - ODR
+               P - periodic downloaded static route
+
+        Gateway of last resort is not set
+
+              10.0.0.0/8 is variably subnetted, 4 subnets, 2 masks
+        C        10.1.1.0/24 is directly connected, GigabitEthernet0/0
+        L        10.1.1.1/32 is directly connected, GigabitEthernet0/0
+        C        10.1.2.0/24 is directly connected, GigabitEthernet0/1
+        L        10.1.2.1/32 is directly connected, GigabitEthernet0/1
+        S     192.168.10.0/24 [1/0] via 209.165.200.225
+        S     192.168.11.0/24 [1/0] via 209.165.200.225
+              209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        209.165.200.224/30 is directly connected, Serial0/0/0
+        L        209.165.200.226/32 is directly connected, Serial0/0/0
+        ```
+
+        **Примечание.** Если маршрутизатор знает маршруты ко всем сетям топологии, число его напрямую подключенных (C) и статических (S) маршрутов равно общему числу локальных и глобальных сетей в топологии.
+
+        **Шаг 8.** Ответьте на вопросы 20–23 в форме ответов.
+
+        **Шаг 9.** В приложении «Командная строка» компьютера PC1 проверьте связь с компьютером PC4 командой **ping 10.1.2.10**. Эхо-запросы выполняются: пакеты проходят через маршрутизатор R1, последовательный канал и маршрутизатор R2. Если интерфейсы R2 включены меньше 30 секунд назад, подождите и повторите команду. Первый эхо-запрос может остаться без ответа, пока маршрутизаторы определяют MAC-адреса по протоколу ARP.
+
+        ```
+        C:\>ping 10.1.2.10
+
+        Pinging 10.1.2.10 with 32 bytes of data:
+
+        Request timed out.
+        Reply from 10.1.2.10: bytes=32 time=2ms TTL=126
+        Reply from 10.1.2.10: bytes=32 time=2ms TTL=126
+        Reply from 10.1.2.10: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 10.1.2.10:
+            Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 10.** В консоли маршрутизатора R2 проверьте связь с компьютером PC2 командой **ping 192.168.11.10**. Эхо-запросы выполняются.
+
+        ```
+        R2#ping 192.168.11.10
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 192.168.11.10, timeout is 2 seconds:
+        .!!!!
+        Success rate is 80 percent (4/5), round-trip min/avg/max = 2/3/5 ms
+        ```
