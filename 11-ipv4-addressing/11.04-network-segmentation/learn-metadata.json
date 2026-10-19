@@ -1,9 +1,10 @@
 {
     "title": "Сегментация сети",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv4-addressing.network-segmentation",
+    "type": "scored-lecture",
     "description": "Что такое широковещательный домен в сети? В чем заключаются проблемы с большими широковещательными доменами? Зачем нужна сегментация сетей на подсети?",
     "difficulty": 3,
-    "duration": "PT0H5M",
+    "duration": "PT0H8M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,76 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv4-addressing.network-segmentation",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the router as the device that does not forward IPv4 broadcasts by default, and name the effects of excessive broadcast traffic (slower network operations and slower devices)."
+        },
+        "requires": [
+            "ksa.ccna1.ipv4-addressing.ipv4-unicast-broadcast-and-multicast",
+            "ksa.ccna1.address-resolution.arp"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): routers and broadcasts, effects of excessive broadcast traffic.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие устройства по умолчанию не будут пересылать широковещательный пакет IPv4?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "коммутатор Ethernet.",
+                    "correct": false,
+                    "comment": "Маршрутизаторы по умолчанию не будут пересылать широковещательный пакет IPv4."
+                },
+                {
+                    "answer": "Маршрутизатор",
+                    "correct": true
+                },
+                {
+                    "answer": "ПК Windows",
+                    "correct": false,
+                    "comment": "Маршрутизаторы по умолчанию не будут пересылать широковещательный пакет IPv4."
+                },
+                {
+                    "answer": "Ничего из вышеперечисленного. Все устройства пересылают широковещательные пакеты IPv4 по умолчанию.",
+                    "correct": false,
+                    "comment": "Маршрутизаторы по умолчанию не будут пересылать широковещательный пакет IPv4."
+                }
+            ]
+        },
+        {
+            "question": "Какие две ситуации — результат чрезмерного широковещательного трафика? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "замедление сетевых операций",
+                    "correct": true
+                },
+                {
+                    "answer": "замедление работы устройства",
+                    "correct": true
+                },
+                {
+                    "answer": "затрагиваются устройства во всех соседних сетях",
+                    "correct": false,
+                    "comment": "Замедление работы сети и устройств — результат чрезмерного широковещательного трафика."
+                },
+                {
+                    "answer": "маршрутизатор должен переслать чрезмерное количество пакетов",
+                    "correct": false,
+                    "comment": "Замедление работы сети и устройств — результат чрезмерного широковещательного трафика."
+                }
+            ]
+        }
+    ]
 }

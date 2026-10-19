@@ -12,9 +12,6 @@
             "$ref": "./13.01-icmp-messages/learn-metadata.json"
         },
         {
-            "$ref": "./13.01.06-icmp-messages-quiz/learn-metadata.json"
-        },
-        {
             "$ref": "./13.02-ping-and-traceroute-testing/learn-metadata.json"
         },
         {
@@ -31,9 +28,6 @@
         },
         {
             "$ref": "./13.04-summary/learn-metadata.json"
-        },
-        {
-            "$ref": "./13.03.04-quiz/learn-metadata.json"
         }
     ]
 }

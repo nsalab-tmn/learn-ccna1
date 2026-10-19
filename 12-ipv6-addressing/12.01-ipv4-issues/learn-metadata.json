@@ -1,9 +1,10 @@
 {
     "title": "Проблемы с протоколом IPv4",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv6-addressing.ipv4-issues",
+    "type": "scored-lecture",
     "description": "В чем заключается подтребность использовать IPv6? Как IPv4 и IPv6 сосуществуют друг с другом?",
     "difficulty": 3,
-    "duration": "PT0H5M",
+    "duration": "PT0H9M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,92 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv6-addressing.ipv4-issues",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Name IPv4 address depletion as the main driver for IPv6, state how many RIRs have run out of IPv4 addresses, and identify dual stack as the transition method that uses native IPv6 connectivity, from tunneling and translation."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.ipv6-packet",
+            "ksa.ccna1.ipv4-addressing.types-of-ipv4-addresses"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): IPv4 address depletion, RIRs out of IPv4 addresses, dual stack.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой наиболее важный мотивирующий фактор для перехода на IPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "более высокая производительность с IPv6",
+                    "correct": false,
+                    "comment": "Наиболее важный фактор для IPv6 — истощение адресного пространства IPv4."
+                },
+                {
+                    "answer": "адреса IPv6, с которыми проще работать",
+                    "correct": false,
+                    "comment": "Наиболее важный фактор для IPv6 — истощение адресного пространства IPv4."
+                },
+                {
+                    "answer": "улучшенная безопасность с IPv6",
+                    "correct": false,
+                    "comment": "Наиболее важный фактор для IPv6 — истощение адресного пространства IPv4."
+                },
+                {
+                    "answer": "исчерпание адресного пространства IPv4",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Истина или Ложь: 4 из 5 RIR больше не имеют достаточного количества адресов IPv4 для выделения клиентам.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": true
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": false,
+                    "comment": "Правильный  ответ - Истина. Четыре из пяти RIR: ARIN, APNIC, LACNIC и RIPE NCC исчерпали свои пулы адресов IPv4. Только у AfriNIC осталось адресное пространство IPv4 для выделения клиентам."
+                }
+            ]
+        },
+        {
+            "question": "Какой из перечисленных ниже методов использует собственное подключение IPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "двойной стек",
+                    "correct": true
+                },
+                {
+                    "answer": "туннелирование",
+                    "correct": false,
+                    "comment": "Только двойной стек использует собственное подключение IPv6."
+                },
+                {
+                    "answer": "преобразование",
+                    "correct": false,
+                    "comment": "Только двойной стек использует собственное подключение IPv6."
+                },
+                {
+                    "answer": "все вышеперечисленное",
+                    "correct": false,
+                    "comment": "Только двойной стек использует собственное подключение IPv6."
+                }
+            ]
+        }
+    ]
 }

@@ -1,9 +1,10 @@
 {
     "title": "Типы адресов IPv4",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv4-addressing.types-of-ipv4-addresses",
+    "type": "scored-lecture",
     "description": "Какие бывают типы IPv4-адресов? Чем частные адреса отличаются от общедоступных? Кто отвечает за назначение IP-адресов в Интернете?",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H16M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,99 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv4-addressing.types-of-ipv4-addresses",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Distinguish private (RFC 1918) from public IPv4 addresses by their ranges and by where they may be used and routed, and identify the RIRs as the bodies that receive addresses from IANA and distribute them to providers and organizations."
+        },
+        "requires": [
+            "ksa.ccna1.ipv4-addressing.ipv4-address-structure"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): private address ranges and use, public addresses on the Internet, address depletion, RIRs.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие два утверждения верны в отношении частных IPv4 адресов? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Частные адреса IPv4 назначаются устройствам внутри интрасети организации (внутренней сети).",
+                    "correct": true
+                },
+                {
+                    "answer": "Маршрутизаторы в Интернете обычно пересылают любой пакет с адресом назначения, который является частным адресом IPv4.",
+                    "correct": false,
+                    "comment": "Частные адреса IPv4 назначаются устройствам в интрасети организации (внутренняя сеть), и любая организация (дом, школа, офис, компания) может использовать адрес 10.0.0.0/8."
+                },
+                {
+                    "answer": "172.99.1.1 частный адрес IPv4.",
+                    "correct": false,
+                    "comment": "Частные адреса IPv4 назначаются устройствам в интрасети организации (внутренняя сеть), и любая организация (дом, школа, офис, компания) может использовать адрес 10.0.0.0/8."
+                },
+                {
+                    "answer": "Любая организация (дом, школа, офис, компания) может использовать адрес 10.0.0.0/8.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие два утверждения про публичные IPv4-адреса верны? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Публичные IPv4-адреса не уникальны и могут повторяться в разных внутренних сетях.",
+                    "correct": false,
+                    "comment": "Это свойство частных адресов (RFC 1918). Публичный IPv4-адрес глобально маршрутизируется в Интернете, поэтому повторять его нельзя."
+                },
+                {
+                    "answer": "Чтобы получить доступ к устройству через Интернет, адрес назначения IPv4 должен быть публичным.",
+                    "correct": true
+                },
+                {
+                    "answer": "192.168.1.10 является публичным адресом IPv4.",
+                    "correct": false,
+                    "comment": "Адрес 192.168.1.10 входит в частный диапазон 192.168.0.0/16 (RFC 1918)."
+                },
+                {
+                    "answer": "Исчерпание публичных адресов IPv4 — причина, по которой появились частные адреса IPv4 и организации переходят на IPv6.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какая организация или группа организаций получает IP-адреса от IANA и отвечает за распределение этих адресов провайдерам и некоторым организациям?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "IETF",
+                    "correct": false,
+                    "comment": "RIR получают IP-адреса от IANA и несут ответственность за распределение этих адресов провайдерам и другим организациям."
+                },
+                {
+                    "answer": "IEEE",
+                    "correct": false,
+                    "comment": "RIR получают IP-адреса от IANA и несут ответственность за распределение этих адресов провайдерам и другим организациям."
+                },
+                {
+                    "answer": "RIR",
+                    "correct": true
+                },
+                {
+                    "answer": "Интернет-провайдеры уровня 1",
+                    "correct": false,
+                    "comment": "RIR получают IP-адреса от IANA и несут ответственность за распределение этих адресов провайдерам и другим организациям."
+                }
+            ]
+        }
+    ]
 }

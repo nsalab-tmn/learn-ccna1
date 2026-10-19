@@ -1,9 +1,10 @@
 {
     "title": "Разделение на подсети для соответствия требованиям",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv4-addressing.subnet-to-meet-requirements",
+    "type": "scored-lecture",
     "description": "Что аткое DMZ и какие в ней нужно использовать адреса? Как минимизировать количество неиспользуемых адресов?",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,117 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv4-addressing.subnet-to-meet-requirements",
+            "kind": "K",
+            "bloom": "apply",
+            "objective": "Calculate the fewest host bits for the largest required subnet and the prefix and mask that also yield enough subnets, and state which addresses the intranet and the DMZ use and why public address space is subnetted with VLSM."
+        },
+        "requires": [
+            "ksa.ccna1.ipv4-addressing.subnet-a-16-and-8-prefix",
+            "ksa.ccna1.ipv4-addressing.types-of-ipv4-addresses"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "apply",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): host bits for the largest subnet, prefix and mask for given subnet and host requirements, intranet and DMZ addressing, the purpose of VLSM.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Самой крупной подсети нужно 25 адресов узлов. Сколько бит, как минимум, нужно оставить в узловой части адреса?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "5 бит",
+                    "correct": true
+                },
+                {
+                    "answer": "4 бита",
+                    "correct": false,
+                    "comment": "4 бита дают только 2^4 − 2 = 14 адресов узлов. Нужно 5 бит: 2^5 − 2 = 30 адресов, этого хватит для 25 узлов."
+                },
+                {
+                    "answer": "6 бит",
+                    "correct": false,
+                    "comment": "6 бит дадут 2^6 − 2 = 62 адреса — хватит, но это больше минимума. Достаточно 5 бит: 2^5 − 2 = 30 адресов."
+                }
+            ]
+        },
+        {
+            "question": "Организации выделена сеть 172.16.0.0/22. Нужно не менее 6 подсетей, в самой крупной из них — 100 узлов. Какую длину префикса и маску получат подсети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/25, маска 255.255.255.128",
+                    "correct": true
+                },
+                {
+                    "answer": "/24, маска 255.255.255.0",
+                    "correct": false,
+                    "comment": "От /22 до /24 заимствуется 2 бита: это только 2^2 = 4 подсети, а нужно 6. Подходит /25: 2^3 = 8 подсетей, и 7 бит в узловой части дают 126 адресов узлов."
+                },
+                {
+                    "answer": "/26, маска 255.255.255.192",
+                    "correct": false,
+                    "comment": "В подсети /26 только 2^6 − 2 = 62 адреса узлов, а самой крупной нужно 100. Подходит /25: 126 адресов узлов и 8 подсетей."
+                },
+                {
+                    "answer": "/23, маска 255.255.254.0",
+                    "correct": false,
+                    "comment": "От /22 до /23 заимствуется 1 бит: только 2 подсети, а нужно 6. Подходит /25: 8 подсетей по 126 адресов узлов."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение об адресации в корпоративной сети верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Устройства в интрасети используют частные адреса IPv4, а устройства в DMZ — публичные",
+                    "correct": true
+                },
+                {
+                    "answer": "Устройства в DMZ используют частные адреса IPv4, чтобы сэкономить публичные",
+                    "correct": false,
+                    "comment": "Ресурсы DMZ, например веб-сервер, должны быть доступны из Интернета, поэтому им нужны публичные адреса IPv4. Частные адреса используют устройства интрасети."
+                },
+                {
+                    "answer": "Интрасеть использует публичные адреса IPv4, а DMZ — частные",
+                    "correct": false,
+                    "comment": "Наоборот: интрасеть доступна только внутри организации и использует частные адреса, а DMZ содержит ресурсы для Интернета и использует публичные."
+                }
+            ]
+        },
+        {
+            "question": "Зачем администратору делить публичное адресное пространство IPv4 на подсети с разными масками (VLSM)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Чтобы свести к минимуму количество неиспользуемых адресов узлов в каждой подсети",
+                    "correct": true
+                },
+                {
+                    "answer": "Чтобы все подсети содержали одинаковое число адресов узлов",
+                    "correct": false,
+                    "comment": "Одинаковые подсети дает разделение с одной маской. Разные маски (VLSM) используют, чтобы свести к минимуму количество неиспользуемых адресов узлов в каждой подсети."
+                },
+                {
+                    "answer": "Чтобы устройствам DMZ можно было назначать частные адреса",
+                    "correct": false,
+                    "comment": "Устройствам DMZ нужны публичные адреса. VLSM нужна, чтобы при нехватке публичных адресов свести к минимуму количество неиспользуемых адресов узлов в каждой подсети."
+                },
+                {
+                    "answer": "Чтобы получить больше 16 миллионов адресов узлов",
+                    "correct": false,
+                    "comment": "Столько адресов дает частная сеть 10.0.0.0/8 в интрасети. VLSM в публичном пространстве нужна, чтобы свести к минимуму количество неиспользуемых адресов узлов в каждой подсети."
+                }
+            ]
+        }
+    ]
 }

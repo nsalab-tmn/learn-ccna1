@@ -1,9 +1,10 @@
 {
     "title": "Динамическое назначение глобальных адресов",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas",
+    "type": "scored-lecture",
     "description": "Как ICMPv6 помогает динамически назначать IPv6-адреса? Чем SLAAC отличается от DHCPv6? Что такое EUI-64?",
     "difficulty": 3,
-    "duration": "PT0H13M",
+    "duration": "PT0H20M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,131 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Match the three RA methods (SLAAC, SLAAC with a stateless DHCPv6 server, stateful DHCPv6) to where a device gets its addressing, state that hosts send RS and routers send RA, and name EUI-64 and a random number as the ways a device creates its own interface ID."
+        },
+        "requires": [
+            "ksa.ccna1.ipv6-addressing.ipv6-address-types",
+            "ksa.ccna1.address-resolution.neighbor-discovery"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): who sends RS and RA, SLAAC, SLAAC with stateless DHCPv6, stateful DHCPv6, EUI-64 and random interface IDs.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Истина или Ложь: Сообщения RA на все маршрутизаторы IPv6 отправляют узлы, запрашивающие информацию об адресации.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": false,
+                    "comment": "Правильный  ответ — Ложь. Сообщения Router Advertisement (RA) отправляются на все узлы IPv6. Если используется метод 1 (только SLAAC), сообщение RA содержит сведения о префиксе сети, длине префикса и шлюзе по умолчанию."
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "При каком методе динамической адресации для GUA устройства полагаются исключительно на содержимое сообщения RA для своей адресации?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "SLAAC",
+                    "correct": true
+                },
+                {
+                    "answer": "SLAAC и DHCPv6-сервер без сохранения состояния адресов",
+                    "correct": false,
+                    "comment": "SLAAC — это метод, при котором устройства создают свой собственный GUA без сервисов DHCPv6. При использовании SLAAC устройства получают всю необходимую информацию от маршрутизатора из сообщений ICMPv6 Router Advertisement (RA)"
+                },
+                {
+                    "answer": "DHCPv6 с поддержкой состояния",
+                    "correct": false,
+                    "comment": "SLAAC — это метод, при котором устройства создают свой собственный GUA без сервисов DHCPv6. При использовании SLAAC устройства получают всю необходимую информацию от маршрутизатора из сообщений ICMPv6 Router Advertisement (RA)"
+                }
+            ]
+        },
+        {
+            "question": "При каком методе динамической адресации для GUA устройства полагаются исключительно на сервер DHCPv6 для получения информации об адресации?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "SLAAC",
+                    "correct": false,
+                    "comment": "С помощью служб DHCPv6-сервера с сохранением состояния адресов устройство может автоматически получать данные адреса, включая глобальный индивидуальный адрес, длину префикса и адреса DNS-серверов."
+                },
+                {
+                    "answer": "SLAAC и DHCPv6-сервер без сохранения состояния адресов",
+                    "correct": false,
+                    "comment": "С помощью служб DHCPv6-сервера с сохранением состояния адресов устройство может автоматически получать данные адреса, включая глобальный индивидуальный адрес, длину префикса и адреса DNS-серверов."
+                },
+                {
+                    "answer": "DHCPv6 с поддержкой состояния",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "При каком методе динамической адресации для GUA устройства получают конфигурацию IPv6 в сообщении RA и запрашивают информацию DNS с сервера DHCPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "SLAAC",
+                    "correct": false,
+                    "comment": "SLAAC и DHCPv6 без сохранения состояния — это метод, в котором устройства используют SLAAC для GUA и адреса шлюза по умолчанию. Устройства используют сервер DHCPv6 без сохранения состояния для получения адресов DNS-серверов и другой адресной информации."
+                },
+                {
+                    "answer": "SLAAC и DHCPv6-сервер без сохранения состояния",
+                    "correct": true
+                },
+                {
+                    "answer": "DHCPv6 с поддержкой состояния",
+                    "correct": false,
+                    "comment": "SLAAC и DHCPv6 без сохранения состояния — это метод, в котором устройства используют SLAAC для GUA и адреса шлюза по умолчанию. Устройства используют сервер DHCPv6 без сохранения состояния для получения адресов DNS-серверов и другой адресной информации."
+                }
+            ]
+        },
+        {
+            "question": "Какие два метода может использовать устройство для создания собственного идентификатора интерфейса IPv6?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "SLAAC",
+                    "correct": false,
+                    "comment": "Если сообщение RA  имеет тип SLAAC либо SLAAC с DHCPv6-сервером без сохранения состояния, клиент должен генерировать собственный идентификатор интерфейса с помощью метода EUI-64 или путём генерации случайного значения"
+                },
+                {
+                    "answer": "DHCPv6 без сохранения состояния",
+                    "correct": false,
+                    "comment": "Если сообщение RA  имеет тип SLAAC либо SLAAC с DHCPv6-сервером без сохранения состояния, клиент должен генерировать собственный идентификатор интерфейса с помощью метода EUI-64 или путём генерации случайного значения"
+                },
+                {
+                    "answer": "DHCPv6 с сохранением состояния",
+                    "correct": false,
+                    "comment": "Если сообщение RA  имеет тип SLAAC либо SLAAC с DHCPv6-сервером без сохранения состояния, клиент должен генерировать собственный идентификатор интерфейса с помощью метода EUI-64 или путём генерации случайного значения"
+                },
+                {
+                    "answer": "EUI-64",
+                    "correct": true
+                },
+                {
+                    "answer": "Случайным образом сгенерированный номер",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

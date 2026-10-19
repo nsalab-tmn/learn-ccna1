@@ -1,9 +1,10 @@
 {
     "title": "Групповые IPv6-адреса",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv6-addressing.ipv6-multicast-addresses",
+    "type": "scored-lecture",
     "description": "Какие типы многоадресной рассылки существуют в IPv6?",
     "difficulty": 3,
-    "duration": "PT0H21M",
+    "duration": "PT0H10M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,132 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv6-addressing.ipv6-multicast-addresses",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the IPv6 multicast prefix (FF00::/8), match ff02::1 and ff02::2 to the all-nodes and all-routers groups and to the RA and RS messages sent to them, state that a multicast address can only be a destination, and explain the benefit of a solicited-node multicast address."
+        },
+        "requires": [
+            "ksa.ccna1.ipv6-addressing.ipv6-address-types",
+            "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): FF00::/8, ff02::1 and RA, ff02::2 and RS, multicast only as a destination, the solicited-node multicast address.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой префикс имеют групповые адреса IPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "FF00::/8",
+                    "correct": true
+                },
+                {
+                    "answer": "FE80::/10",
+                    "correct": false,
+                    "comment": "Это префикс локальных адресов канала. Групповые адреса IPv6 имеют префикс FF00::/8."
+                },
+                {
+                    "answer": "FC00::/7",
+                    "correct": false,
+                    "comment": "Это диапазон уникальных локальных адресов. Групповые адреса IPv6 имеют префикс FF00::/8."
+                }
+            ]
+        },
+        {
+            "question": "На какой групповой адрес маршрутизатор IPv6 отправляет сообщения объявления маршрутизатора (RA) ICMPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ff02::1 — группа всех узлов",
+                    "correct": true
+                },
+                {
+                    "answer": "ff02::2 — группа всех маршрутизаторов",
+                    "correct": false,
+                    "comment": "На адрес ff02::2 узлы отправляют сообщения RS. Сообщения RA маршрутизатор отправляет группе всех узлов ff02::1."
+                },
+                {
+                    "answer": "На групповой адрес запрашиваемого узла",
+                    "correct": false,
+                    "comment": "Сообщения RA адресованы всем устройствам IPv6, поэтому маршрутизатор отправляет их группе всех узлов ff02::1."
+                }
+            ]
+        },
+        {
+            "question": "Узел только что подключился к сети IPv6 и запрашивает сообщение RA. На какой адрес он отправит сообщение запроса маршрутизатора (RS)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ff02::2",
+                    "correct": true
+                },
+                {
+                    "answer": "ff02::1",
+                    "correct": false,
+                    "comment": "ff02::1 — группа всех узлов, ей маршрутизатор отправляет сообщения RA. Сообщения RS узлы отправляют группе всех маршрутизаторов ff02::2."
+                },
+                {
+                    "answer": "FF00::/8",
+                    "correct": false,
+                    "comment": "Это префикс всех групповых адресов IPv6, а не адрес группы. Сообщения RS узлы отправляют группе всех маршрутизаторов ff02::2."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о групповых адресах IPv6 верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Групповой адрес может быть только адресом назначения, но не адресом источника",
+                    "correct": true
+                },
+                {
+                    "answer": "Групповой адрес можно указать как адрес источника пакета",
+                    "correct": false,
+                    "comment": "Групповые адреса могут быть только адресами назначения, а не адресами источника."
+                },
+                {
+                    "answer": "Маршрутизатор входит в группу ff02::2 без всякой настройки",
+                    "correct": false,
+                    "comment": "Маршрутизатор становится членом группы ff02::2, когда его включают как маршрутизатор IPv6 командой ipv6 unicast-routing. Верно другое: групповой адрес может быть только адресом назначения."
+                },
+                {
+                    "answer": "Пакет, отправленный группе ff02::1, обрабатывают только маршрутизаторы",
+                    "correct": false,
+                    "comment": "Пакет для группы ff02::1 принимают и обрабатывают все IPv6-интерфейсы в канале; только маршрутизаторам адресована группа ff02::2. Верно другое: групповой адрес может быть только адресом назначения."
+                }
+            ]
+        },
+        {
+            "question": "Чем полезен групповой адрес запрашиваемого узла?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Он соответствует специальному адресу многоадресной рассылки Ethernet, и сетевой адаптер может отфильтровать кадр по MAC-адресу назначения, не передавая его в процесс IPv6",
+                    "correct": true
+                },
+                {
+                    "answer": "Пакет на этот адрес принимают и обрабатывают все IPv6-интерфейсы канала",
+                    "correct": false,
+                    "comment": "Так работает группа всех узлов ff02::1. Групповой адрес запрашиваемого узла соответствует специальному адресу многоадресной рассылки Ethernet, поэтому сетевой адаптер может сам отфильтровать лишние кадры."
+                },
+                {
+                    "answer": "Его можно указать как адрес источника пакета",
+                    "correct": false,
+                    "comment": "Групповые адреса бывают только адресами назначения. Польза адреса запрашиваемого узла в том, что сетевой адаптер может отфильтровать кадр по MAC-адресу назначения, не передавая его в процесс IPv6."
+                }
+            ]
+        }
+    ]
 }

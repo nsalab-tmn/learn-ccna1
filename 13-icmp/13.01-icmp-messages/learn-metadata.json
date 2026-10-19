@@ -1,9 +1,10 @@
 {
     "title": "Сообщения ICMP",
-    "materialType": "lecture",
+    "shortName": "ccna1.icmp.icmp-messages",
+    "type": "scored-lecture",
     "description": "Какими бывают типы сообщений ICMPv4 и ICMPv6?",
     "difficulty": 3,
-    "duration": "PT0H9M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,81 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.icmp.icmp-messages",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify Destination Unreachable and Time Exceeded as ICMP message types common to ICMPv4 and ICMPv6, and the Router Solicitation as the ICMPv6 message a host sends at boot to get its IPv6 configuration, from NS, NA and RA."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.ipv6-packet",
+            "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): ICMP messages common to ICMPv4 and ICMPv6, the RS message at boot.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие два типа ICMP сообщений — общие для ICMPv4 и ICMPv6? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Узел назначения или сервис недоступен",
+                    "correct": true
+                },
+                {
+                    "answer": "Определение имени узла.",
+                    "correct": false,
+                    "comment": "Сообщения ICMP, общие для ICMPv4 и ICMPv6, включают доступность узла, узел назначения или службы недоступны и превышено время жизни."
+                },
+                {
+                    "answer": "Настройка IP",
+                    "correct": false,
+                    "comment": "Сообщения ICMP, общие для ICMPv4 и ICMPv6, включают доступность узла, узел назначения или службы недоступны и превышено время жизни."
+                },
+                {
+                    "answer": "Источник недоступен",
+                    "correct": false,
+                    "comment": "Сообщения ICMP, общие для ICMPv4 и ICMPv6, включают доступность узла, узел назначения или службы недоступны и превышено время жизни."
+                },
+                {
+                    "answer": "Превышено время жизни",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой тип сообщения ICMPv6 отправит узел для получения конфигурации IPv6 при загрузке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Сообщение «Объявление соседа» (Neighbor Advertisement, NA)",
+                    "correct": false,
+                    "comment": "При загрузке узла с поддержкой IPv6 будет отправлено сообщение ICMPv6 «Запрос маршрутизатора» (RS). Маршрутизатор с поддержкой IPv6 ответит сообщением «Объявление маршрутизатора» (RA)"
+                },
+                {
+                    "answer": "Сообщение «Запрос соседа» (Neighbor Solicitation, NS)",
+                    "correct": false,
+                    "comment": "При загрузке узла с поддержкой IPv6 будет отправлено сообщение ICMPv6 «Запрос маршрутизатора» (RS). Маршрутизатор с поддержкой IPv6 ответит сообщением «Объявление маршрутизатора» (RA)"
+                },
+                {
+                    "answer": "Сообщение «Объявление маршрутизатора» (Router Advertisement, RA)",
+                    "correct": false,
+                    "comment": "При загрузке узла с поддержкой IPv6 будет отправлено сообщение ICMPv6 «Запрос маршрутизатора» (RS). Маршрутизатор с поддержкой IPv6 ответит сообщением «Объявление маршрутизатора» (RA)"
+                },
+                {
+                    "answer": "Сообщение «Запрос маршрутизатора» (Router Solicitation, RS)",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

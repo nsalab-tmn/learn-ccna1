@@ -1,9 +1,10 @@
 {
     "title": "Типы IPv6-адресов",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv6-addressing.ipv6-address-types",
+    "type": "scored-lecture",
     "description": "Какими бывают типы IPv6-адресов? Какая длина префикса у IPv6-адреса?",
     "difficulty": 3,
-    "duration": "PT0H12M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,143 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv6-addressing.ipv6-address-types",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify /64 as the recommended IPv6 prefix length, the global routing prefix as the GUA part a provider assigns, and the link-local address (fe80) as the type that is not routed, and state that the subnet ID does not borrow bits from the interface ID."
+        },
+        "requires": [
+            "ksa.ccna1.ipv6-addressing.ipv6-addressing",
+            "ksa.ccna1.ipv4-addressing.ipv4-address-structure",
+            "ksa.ccna1.ipv4-addressing.types-of-ipv4-addresses"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): /64 prefix length, global routing prefix, link-local addresses and fe80, the subnet ID.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая рекомендуемая длина префикса для большинства подсетей IPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/32",
+                    "correct": false,
+                    "comment": "Большинство подсетей IPv6 имеют длину префикса /64."
+                },
+                {
+                    "answer": "/48",
+                    "correct": false,
+                    "comment": "Большинство подсетей IPv6 имеют длину префикса /64."
+                },
+                {
+                    "answer": "/64",
+                    "correct": true
+                },
+                {
+                    "answer": "/128",
+                    "correct": false,
+                    "comment": "Большинство подсетей IPv6 имеют длину префикса /64."
+                }
+            ]
+        },
+        {
+            "question": "Какая часть GUA назначается поставщиком услуг Интернета?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "префикс глобальной маршрутизации",
+                    "correct": true
+                },
+                {
+                    "answer": "префикс глобальной маршрутизации и идентификатор подсети",
+                    "correct": false,
+                    "comment": "Префикс глобальной маршрутизации является частью GUA, назначенной поставщиком услуг Интернета."
+                },
+                {
+                    "answer": "префикс",
+                    "correct": false,
+                    "comment": "Префикс глобальной маршрутизации является частью GUA, назначенной поставщиком услуг Интернета."
+                },
+                {
+                    "answer": "префикс RIR",
+                    "correct": false,
+                    "comment": "Префикс глобальной маршрутизации является частью GUA, назначенной поставщиком услуг Интернета."
+                }
+            ]
+        },
+        {
+            "question": "Какой тип адреса IPv6 не маршрутизируется между сетями?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уникальный локальный адрес",
+                    "correct": false,
+                    "comment": "Локальный адрес канала IPv6 предназначен только для связи на канале и не является маршрутизируемым."
+                },
+                {
+                    "answer": "глобальный индивидуальный адрес",
+                    "correct": false,
+                    "comment": "Локальный адрес канала IPv6 предназначен только для связи на канале и не является маршрутизируемым."
+                },
+                {
+                    "answer": "встроенный адрес IPv4",
+                    "correct": false,
+                    "comment": "Локальный адрес канала IPv6 предназначен только для связи на канале и не является маршрутизируемым."
+                },
+                {
+                    "answer": "локальный адрес канала",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Истина или Ложь: поле ID подсети в GUA должно заимствовать биты из идентификатора интерфейса.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": false,
+                    "comment": "Правильный ответ — Ложь. GUA не используют биты из идентификатора интерфейса для создания подсетей."
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой тип IPv6-адреса начинается с fe80?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "глобальный индивидуальный адрес",
+                    "correct": false,
+                    "comment": "Локальные адреса канала IPv6 начинаются с префикса fe80."
+                },
+                {
+                    "answer": "локальный адрес канала",
+                    "correct": true
+                },
+                {
+                    "answer": "групповой адрес",
+                    "correct": false,
+                    "comment": "Локальные адреса канала IPv6 начинаются с префикса fe80."
+                },
+                {
+                    "answer": "никакой, адрес IPv6 должен начинаться с 2001",
+                    "correct": false,
+                    "comment": "Локальные адреса канала IPv6 начинаются с префикса fe80."
+                }
+            ]
+        }
+    ]
 }
