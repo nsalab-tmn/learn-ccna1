@@ -20,7 +20,6 @@
             "objective": "Given a short scenario from any topic of the module, identify the device, network type, access option, architecture characteristic, trend, threat or security measure it describes."
         },
         "requires": [
-            "ksa.ccna1.networking-today.networks-affect-our-lives",
             "ksa.ccna1.networking-today.network-components",
             "ksa.ccna1.networking-today.network-topologies",
             "ksa.ccna1.networking-today.network-types",

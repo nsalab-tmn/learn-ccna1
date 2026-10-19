@@ -9,9 +9,6 @@
     },
     "materials": [
         {
-            "$ref": "./01.01-networks-affect-our-lives/learn-metadata.json"
-        },
-        {
             "$ref": "./01.02-network-components/learn-metadata.json"
         },
         {
