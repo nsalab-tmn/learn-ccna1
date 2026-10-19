@@ -28,9 +28,6 @@
             "$ref": "./assessment"
         }
     },
-    "assets": {
-        "$ref": "./assets"
-    },
     "answerSchema": {
         "type": "object",
         "additionalProperties": false,
@@ -62,32 +59,22 @@
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Сколько в маршрутизаторе **East** слотов расширения для установки дополнительных модулей?",
+                "title": "6. С помощью какого модуля можно подключить три ПК к маршрутизатору **East**?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Сколько у них слотов расширения?",
+                "title": "7. Сколько узлов можно подключить к маршрутизатору с помощью этого модуля?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
                 "type": "string",
-                "title": "8. С помощью какого модуля можно подключить три ПК к маршрутизатору **East**?",
+                "title": "8. Какой модуль можно вставить, чтобы обеспечить оптоволоконное подключение Gigabit к коммутатору **Switch3**?",
                 "placeholder": "Enter your answer here"
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Сколько узлов можно подключить к маршрутизатору с помощью этого модуля?",
-                "placeholder": "Enter your answer here"
-            },
-            "q_10": {
-                "type": "string",
-                "title": "10. Какой модуль можно вставить, чтобы обеспечить оптоволоконное подключение Gigabit к коммутатору **Switch3**?",
-                "placeholder": "Enter your answer here"
-            },
-            "q_11": {
-                "type": "string",
-                "title": "11. В какой слот был вставлен модуль?",
+                "title": "9. В какой слот был вставлен модуль?",
                 "placeholder": "Enter your answer here"
             }
         }
