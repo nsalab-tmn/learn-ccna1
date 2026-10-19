@@ -54,12 +54,12 @@
             },
             "q_5": {
                 "type": "string",
-                "title": "5. Есть ли разница между **In Layers** и **Out Layers** для уровня 2?",
+                "title": "5. Есть ли разница между столбцами «Вход» и «Выход» на вкладке «Модель OSI» для уровня 2?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Почему нет Out Layers?",
+                "title": "6. Почему на вкладке «Модель OSI» столбец «Выход» пуст?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
@@ -79,7 +79,7 @@
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Какой адрес используется для IP-адреса Src во входящем PDU?",
+                "title": "10. Какой адрес указан в поле «Источник» заголовка IPv6 на вкладке «Исходящий PDU»?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
@@ -89,7 +89,7 @@
             },
             "q_12": {
                 "type": "string",
-                "title": "12. Что отсутствует в исходящей информации уровня 2?",
+                "title": "12. Почему после эхо-запроса на PCB1 следуют события NDP, а не эхо-ответ?",
                 "placeholder": "Enter your answer here"
             },
             "q_13": {
