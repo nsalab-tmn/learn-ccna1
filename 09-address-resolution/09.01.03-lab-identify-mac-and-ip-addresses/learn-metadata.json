@@ -6,17 +6,9 @@
     "difficulty": 1,
     "duration": "PT0H17M",
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -24,16 +16,17 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "tags": {
         "$ref": "../../material-tags.json"
+    },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
     },
     "answerSchema": {
         "type": "object",
@@ -66,27 +59,27 @@
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Делает ли что-то **точка беспроводного доступа** с данными, которые на нее поступают?",
+                "title": "6. Делает ли что-то **точка доступа** (Access-Point) с данными, которые на нее поступают?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Теряются ли какие-либо MAC-адреса или IP-адреса при передаче по беспроводной сети?",
+                "title": "7. Теряются ли какие-либо MAC-адреса или IP-адреса при передаче через точку доступа?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
                 "type": "string",
-                "title": "8. Какой самый высокий уровень модели OSI используется в **Hub** (Концентратор) и **Access Point** (Точка доступа)?",
+                "title": "8. Какой самый высокий уровень модели OSI используется в **Hub** (Концентратор) и **Access-Point** (Точка доступа)?",
                 "placeholder": "Enter your answer here"
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Копировали ли **Hub** (Концентратор) или **Access Point** (Точка доступа) единицу протокола данных (PDU), которая была отклонена с красным значком «X»?",
+                "title": "9. Копировали ли **Hub** (Концентратор) или **Access-Point** (Точка доступа) единицу данных протокола (PDU), которую затем отбросил получатель (в столбце «Что происходит» — «отброшен»)?",
                 "placeholder": "Enter your answer here"
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Какой MAC-адрес при изучении вкладки **PDU Details** (Сведения о PDU) появился первым — адрес источника или адрес назначения?",
+                "title": "10. Какой MAC-адрес на вкладках «Входящий PDU» и «Исходящий PDU» указан первым — адрес источника или адрес назначения?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
@@ -101,7 +94,7 @@
             },
             "q_13": {
                 "type": "string",
-                "title": "13. Копировали ли коммутаторы единицу данных протокола (PDU), которая была отклонена с красным значком «X»?",
+                "title": "13. Копировали ли коммутаторы единицу данных протокола (PDU), которую затем отбросил получатель (в столбце «Что происходит» — «отброшен»)?",
                 "placeholder": "Enter your answer here"
             },
             "q_14": {
