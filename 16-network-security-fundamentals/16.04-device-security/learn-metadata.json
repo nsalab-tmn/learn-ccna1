@@ -1,14 +1,161 @@
 {
     "title": "Обеспечение безопасности устройств",
-    "materialType": "lecture",
+    "shortName": "ccna1.network-security-fundamentals.device-security",
+    "type": "scored-lecture",
     "description": "Почему важно отключать неиспользуемые службы? Почемы важно использовать SSH вместо Telnet? Какие пароли считаются наиболее безопасными?",
     "difficulty": 3,
-    "duration": "PT0H12M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
     "skills": {},
     "text": {
         "$ref": "./README.md"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.network-security-fundamentals.device-security",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the properties of strong passwords and passphrases, and choose the device commands that enforce a minimum password length, disconnect idle sessions and generate the SSH encryption key."
+        },
+        "requires": [
+            "ksa.ccna1.basic-router-configuration.configure-initial-router-settings"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): passphrases, spaces in passwords, minimum password length, idle session timeout, SSH key generation.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Как называется пароль из нескольких слов, разделенных пробелами, который проще запомнить и сложнее подобрать, чем обычный пароль?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Парольная фраза",
+                    "correct": true
+                },
+                {
+                    "answer": "Зашифрованный пароль",
+                    "correct": false,
+                    "comment": "Зашифрованным пароль становится после команды service password-encryption, которая скрывает открытые пароли в файле конфигурации. Пароль из нескольких слов, разделенных пробелами, называется парольной фразой."
+                },
+                {
+                    "answer": "Пароль по умолчанию",
+                    "correct": false,
+                    "comment": "Пароль по умолчанию нужно немедленно изменить, а не использовать. Пароль из нескольких слов, разделенных пробелами, называется парольной фразой."
+                },
+                {
+                    "answer": "Ключ RSA",
+                    "correct": false,
+                    "comment": "Ключ RSA для шифрования трафика SSH создается командой crypto key generate rsa, а не придумывается пользователем. Пароль из нескольких слов, разделенных пробелами, называется парольной фразой."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о пробелах в паролях, которые настраиваются в ОС маршрутизатора, верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Начальные пробелы игнорируются, а пробелы после первого символа учитываются",
+                    "correct": true
+                },
+                {
+                    "answer": "Все пробелы в пароле игнорируются",
+                    "correct": false,
+                    "comment": "ОС игнорирует только начальные пробелы, а пробелы после первого символа учитывает. Поэтому из нескольких слов через пробел можно составить парольную фразу."
+                },
+                {
+                    "answer": "Пароль с пробелом считается ненадежным",
+                    "correct": false,
+                    "comment": "Пробел, наоборот, делает пароль надежнее: среди примеров надежных паролей есть пароль с пробелом. ОС игнорирует только начальные пробелы, а пробелы после первого символа учитывает."
+                },
+                {
+                    "answer": "Пробелы допускаются только в начале пароля",
+                    "correct": false,
+                    "comment": "Начальные пробелы ОС как раз игнорирует. Учитываются пробелы после первого символа."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда режима глобальной конфигурации требует, чтобы каждый новый пароль на устройстве содержал не менее восьми символов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "security passwords min-length 8",
+                    "correct": true
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": false,
+                    "comment": "Эта команда шифрует пароли, которые хранятся в файле конфигурации в открытом виде, но не ограничивает их длину. Минимальную длину пароля задает команда security passwords min-length 8."
+                },
+                {
+                    "answer": "login block-for 120 attempts 3 within 60",
+                    "correct": false,
+                    "comment": "Эта команда блокирует попытки входа на 120 секунд после трех неудачных попыток за 60 секунд. Минимальную длину пароля задает команда security passwords min-length 8."
+                },
+                {
+                    "answer": "exec-timeout 8 0",
+                    "correct": false,
+                    "comment": "Команда exec-timeout задает время бездействия в минутах и секундах, после которого сеанс завершается. Минимальную длину пароля задает команда security passwords min-length 8."
+                }
+            ]
+        },
+        {
+            "question": "Администратор иногда оставляет на терминале открытый сеанс привилегированного режима EXEC. Какая команда на линиях vty автоматически отключит пользователя, который бездействует 5 минут 30 секунд?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "exec-timeout 5 30",
+                    "correct": true
+                },
+                {
+                    "answer": "exec-timeout 30 5",
+                    "correct": false,
+                    "comment": "В команде exec-timeout первым указывается число минут, вторым — секунд, поэтому эта команда задаст 30 минут 5 секунд. Нужна команда exec-timeout 5 30."
+                },
+                {
+                    "answer": "login block-for 330 attempts 3 within 60",
+                    "correct": false,
+                    "comment": "Команда login block-for блокирует попытки входа после нескольких неудачных попыток, а не отключает бездействующего пользователя. Его отключает команда exec-timeout 5 30."
+                },
+                {
+                    "answer": "security passwords min-length 5",
+                    "correct": false,
+                    "comment": "Эта команда задает минимальную длину пароля и не влияет на время бездействия. Бездействующего пользователя отключает команда exec-timeout 5 30."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда при настройке SSH создает ключ, с помощью которого шифруется трафик между источником и получателем?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "crypto key generate rsa general-keys modulus 1024",
+                    "correct": true
+                },
+                {
+                    "answer": "username Bob secret netlab",
+                    "correct": false,
+                    "comment": "Эта команда создает учетную запись пользователя в локальной базе данных. Ключ шифрования создает команда crypto key generate rsa general-keys modulus 1024."
+                },
+                {
+                    "answer": "login local",
+                    "correct": false,
+                    "comment": "Эта команда включает проверку подлинности на линиях vty по локальной базе данных. Ключ шифрования создает команда crypto key generate rsa general-keys modulus 1024."
+                },
+                {
+                    "answer": "transport input ssh",
+                    "correct": false,
+                    "comment": "Эта команда разрешает на линиях vty только входящие сеансы SSH. Ключ шифрования создает команда crypto key generate rsa general-keys modulus 1024."
+                }
+            ]
+        }
+    ]
 }

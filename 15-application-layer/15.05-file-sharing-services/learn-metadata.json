@@ -1,9 +1,10 @@
 {
     "title": "Сервисы совместного доступа к файлам",
-    "materialType": "lecture",
+    "shortName": "ccna1.application-layer.file-sharing-services",
+    "type": "scored-lecture",
     "description": "С помощью каких прооколов происходит передача файлов по сети?",
     "difficulty": 3,
-    "duration": "PT0H4M",
+    "duration": "PT0H10M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,106 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.application-layer.file-sharing-services",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe how FTP uses two TCP connections (ports 21 and 20) to move data in both directions, and identify which operating systems share resources over SMB."
+        },
+        "requires": [
+            "ksa.ccna1.application-layer.application-presentation-and-session",
+            "ksa.ccna1.application-layer.peer-to-peer"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): FTP connections and ports, push and pull transfers, SMB support across operating systems.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Сколько соединений требуется FTP между клиентом и сервером?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "1",
+                    "correct": false,
+                    "comment": "FTP требует два соединения между клиентом и сервером. Одно подключение через порт 21 для клиентских команд и ответов сервера. Другое подключение через порт 20 для передачи данных."
+                },
+                {
+                    "answer": "2",
+                    "correct": true
+                },
+                {
+                    "answer": "3",
+                    "correct": false,
+                    "comment": "FTP требует два соединения между клиентом и сервером. Одно подключение через порт 21 для клиентских команд и ответов сервера. Другое подключение через порт 20 для передачи данных."
+                },
+                {
+                    "answer": "4",
+                    "correct": false,
+                    "comment": "FTP требует два соединения между клиентом и сервером. Одно подключение через порт 21 для клиентских команд и ответов сервера. Другое подключение через порт 20 для передачи данных."
+                }
+            ]
+        },
+        {
+            "question": "Верно ли утверждение? Передача данных FTP происходит от клиента к серверу (push) и от сервера к клиенту (pull).",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": true
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": false,
+                    "comment": "Правильный ответ —  Истина. Передача данных по FTP может осуществляться в любом направлении: выгрузка с клиента на сервер или загрузка с сервера на клиент."
+                }
+            ]
+        },
+        {
+            "question": "Какие из этих портов используются FTP? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "20",
+                    "correct": true
+                },
+                {
+                    "answer": "21",
+                    "correct": true
+                },
+                {
+                    "answer": "25",
+                    "correct": false,
+                    "comment": "FTP использует порты 20 и 21."
+                },
+                {
+                    "answer": "110",
+                    "correct": false,
+                    "comment": "FTP использует порты 20 и 21."
+                }
+            ]
+        },
+        {
+            "question": "Верно ли утверждение? Совместное использование ресурсов через SMB поддерживается только в операционных системах Майкрософт.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": false,
+                    "comment": "Правильный ответ — Ложь. Совместное использование ресурсов через SMB также поддерживается Apple Macintosh. Операционные системы Linux и Unix используют версию SMB под названием SAMBA."
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

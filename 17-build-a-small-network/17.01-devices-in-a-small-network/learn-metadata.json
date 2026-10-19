@@ -1,9 +1,10 @@
 {
     "title": "Устройства в рамках небольшой сети",
-    "materialType": "lecture",
+    "shortName": "ccna1.build-a-small-network.devices-in-a-small-network",
+    "type": "scored-lecture",
     "description": "Как выглядит типовая топология небольшой сети? Что нужно учитывать при выборе сетевых устройств для небольшой сети? Какую адресацию лучше использовать для сети небольшого размера?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,147 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.build-a-small-network.devices-in-a-small-network",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify what characterizes a small network and the design considerations it needs: device selection factors, an IP addressing scheme, redundancy against single points of failure and QoS for traffic priority."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.redundant-networks",
+            "ksa.ccna1.ipv4-addressing.structured-design"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): small-network traits, device selection factors, IP addressing scheme, redundancy, QoS.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какое утверждение относится к небольшой сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "небольшие сети сложны",
+                    "correct": false,
+                    "comment": "Небольшие сети обычно встречаются на предприятиях малого бизнеса"
+                },
+                {
+                    "answer": "для обслуживания небольших сетей требуется IT-отдел",
+                    "correct": false,
+                    "comment": "Небольшие сети обычно встречаются на предприятиях малого бизнеса"
+                },
+                {
+                    "answer": "обычно встречаются на предприятиях малого бизнеса",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой фактор необходимо учитывать при выборе сетевых устройств?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "цвет",
+                    "correct": false,
+                    "comment": "К числу факторов, которые следует учитывать, относятся стоимость, скорость и типы портов/интерфейсов, расширяемость, а также функции и услуги операционной системы"
+                },
+                {
+                    "answer": "консольное соединение",
+                    "correct": false,
+                    "comment": "К числу факторов, которые следует учитывать, относятся стоимость, скорость и типы портов/интерфейсов, расширяемость, а также функции и услуги операционной системы"
+                },
+                {
+                    "answer": "стоимость",
+                    "correct": true
+                },
+                {
+                    "answer": "гибкость",
+                    "correct": false,
+                    "comment": "К числу факторов, которые следует учитывать, относятся стоимость, скорость и типы портов/интерфейсов, расширяемость, а также функции и услуги операционной системы"
+                }
+            ]
+        },
+        {
+            "question": "Что необходимо планировать и использовать при реализации сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "имена устройств",
+                    "correct": false,
+                    "comment": "При построении сети необходимо создать схему IP-адресации"
+                },
+                {
+                    "answer": "схему назначения IP-адресов",
+                    "correct": true
+                },
+                {
+                    "answer": "схему MAC-адресации",
+                    "correct": false,
+                    "comment": "При построении сети необходимо создать схему IP-адресации"
+                },
+                {
+                    "answer": "расположение принтера",
+                    "correct": false,
+                    "comment": "При построении сети необходимо создать схему IP-адресации"
+                }
+            ]
+        },
+        {
+            "question": "Что необходимо для поддержания высокой степени надежности и устранения единых точек отказа?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "доступность",
+                    "correct": false,
+                    "comment": "Резервирование требуется для поддержания высокой степени надежности и устранения единых точек отказа"
+                },
+                {
+                    "answer": "расширяемость",
+                    "correct": false,
+                    "comment": "Резервирование требуется для поддержания высокой степени надежности и устранения единых точек отказа"
+                },
+                {
+                    "answer": "целостность",
+                    "correct": false,
+                    "comment": "Резервирование требуется для поддержания высокой степени надежности и устранения единых точек отказа"
+                },
+                {
+                    "answer": "резервирование",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Что требуется для классификации трафика по приоритету?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "схема назначения IP-адресов",
+                    "correct": false,
+                    "comment": "Для классификации трафика в соответствии с приоритетом требуется QoS"
+                },
+                {
+                    "answer": "качество обслуживания (QoS)",
+                    "correct": true
+                },
+                {
+                    "answer": "маршрутизация",
+                    "correct": false,
+                    "comment": "Для классификации трафика в соответствии с приоритетом требуется QoS"
+                },
+                {
+                    "answer": "коммутация",
+                    "correct": false,
+                    "comment": "Для классификации трафика в соответствии с приоритетом требуется QoS"
+                }
+            ]
+        }
+    ]
 }

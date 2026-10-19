@@ -1,9 +1,10 @@
 {
     "title": "Прикладные уровни модели OSI",
-    "materialType": "lecture",
+    "shortName": "ccna1.application-layer.application-presentation-and-session",
+    "type": "scored-lecture",
     "description": "Как соотносится уровень приложений в моделях OSI и TCP/IP? Какие протоколы работают на прикладном уровне?",
     "difficulty": 3,
-    "duration": "PT0H5M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,159 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.application-layer.application-presentation-and-session",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Assign a function, file format or protocol to the OSI application, presentation or session layer, and map the three upper OSI layers to the TCP/IP application layer."
+        },
+        "requires": [
+            "ksa.ccna1.protocols-and-models.reference-models",
+            "ksa.ccna1.transport-layer.port-numbers"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): application-layer role, presentation formats, OSI-to-TCP/IP mapping, application protocols, session-layer function.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой уровень модели OSI связан с протоколами, которые обмениваются данными между программами, работающими на узлах?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уровень приложений",
+                    "correct": true
+                },
+                {
+                    "answer": "транспортный уровень",
+                    "correct": false,
+                    "comment": "Уровень приложений модели OSI находится ближе всего к конечному пользователю. Он обеспечивает интерфейс между протоколами приложений, которые обмениваются данными между узлами."
+                },
+                {
+                    "answer": "сетевой уровень",
+                    "correct": false,
+                    "comment": "Уровень приложений модели OSI находится ближе всего к конечному пользователю. Он обеспечивает интерфейс между протоколами приложений, которые обмениваются данными между узлами."
+                },
+                {
+                    "answer": "физический уровень",
+                    "correct": false,
+                    "comment": "Уровень приложений модели OSI находится ближе всего к конечному пользователю. Он обеспечивает интерфейс между протоколами приложений, которые обмениваются данными между узлами."
+                }
+            ]
+        },
+        {
+            "question": "С каким уровнем модели OSI связаны стандарты MKV, GIF и JPG?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уровень приложений",
+                    "correct": false,
+                    "comment": "Уровень представления связан с форматированием и представлением данных в совместимом с устройством назначения формате. Примеры стандартов уровня представления: MKV, GIF, JPG, MOV и PNG."
+                },
+                {
+                    "answer": "уровень представления",
+                    "correct": true
+                },
+                {
+                    "answer": "сеансовый уровень",
+                    "correct": false,
+                    "comment": "Уровень представления связан с форматированием и представлением данных в совместимом с устройством назначения формате. Примеры стандартов уровня представления: MKV, GIF, JPG, MOV и PNG."
+                },
+                {
+                    "answer": "транспортный уровень",
+                    "correct": false,
+                    "comment": "Уровень представления связан с форматированием и представлением данных в совместимом с устройством назначения формате. Примеры стандартов уровня представления: MKV, GIF, JPG, MOV и PNG."
+                }
+            ]
+        },
+        {
+            "question": "Какие три уровня модели OSI определяют те же функции, что и уровень приложений модели TCP/IP?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "уровень приложений",
+                    "correct": true
+                },
+                {
+                    "answer": "уровень представления",
+                    "correct": true
+                },
+                {
+                    "answer": "сеансовый уровень",
+                    "correct": true
+                },
+                {
+                    "answer": "транспортный уровень",
+                    "correct": false,
+                    "comment": "Верхние три уровня модели OSI (приложений, представления и сеансовый) определяют функции одного уровня приложений в модели TCP/IP."
+                },
+                {
+                    "answer": "сетевой уровень",
+                    "correct": false,
+                    "comment": "Верхние три уровня модели OSI (приложений, представления и сеансовый) определяют функции одного уровня приложений в модели TCP/IP."
+                },
+                {
+                    "answer": "канальный уровень",
+                    "correct": false,
+                    "comment": "Верхние три уровня модели OSI (приложений, представления и сеансовый) определяют функции одного уровня приложений в модели TCP/IP."
+                }
+            ]
+        },
+        {
+            "question": "Какие два протокола относятся к уровню приложений OSI?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "PNG",
+                    "correct": false,
+                    "comment": "Уровень приложения модели OSI обеспечивает интерфейс между протоколами приложений, которые обмениваются данными между узлами. Протоколы уровня приложений включают в себя:  HTTP, DNS, IMAP, FTP и SMTP."
+                },
+                {
+                    "answer": "DNS",
+                    "correct": true
+                },
+                {
+                    "answer": "SMTP",
+                    "correct": true
+                },
+                {
+                    "answer": "QuickTime",
+                    "correct": false,
+                    "comment": "Уровень приложения модели OSI обеспечивает интерфейс между протоколами приложений, которые обмениваются данными между узлами. Протоколы уровня приложений включают в себя:  HTTP, DNS, IMAP, FTP и SMTP."
+                }
+            ]
+        },
+        {
+            "question": "Какая функция относится к сеансовому уровню модели OSI?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "сжатие и распаковка данных",
+                    "correct": false,
+                    "comment": "Сеансовый уровень модели OSI создает и поддерживает диалоги (сеансы) между двумя узлами."
+                },
+                {
+                    "answer": "обеспечение интерфейса между приложениями",
+                    "correct": false,
+                    "comment": "Сеансовый уровень модели OSI создает и поддерживает диалоги (сеансы) между двумя узлами."
+                },
+                {
+                    "answer": "форматирование данных для прикладного уровня",
+                    "correct": false,
+                    "comment": "Сеансовый уровень модели OSI создает и поддерживает диалоги (сеансы) между двумя узлами."
+                },
+                {
+                    "answer": "обмен информацией для инициирования диалога между двумя узлами",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

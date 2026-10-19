@@ -1,9 +1,10 @@
 {
     "title": "Обмен данными по протоколу TCP",
-    "materialType": "lecture",
+    "shortName": "ccna1.transport-layer.tcp-communication-process",
+    "type": "scored-lecture",
     "description": "Какие процессы происходят при установлении и прекращении TCP-соединения?",
     "difficulty": 3,
-    "duration": "PT0H14M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,107 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.transport-layer.tcp-communication-process",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose valid source and destination ports for a client contacting a mail server, name the control flags of the TCP three-way handshake, and state how many exchanges terminate both sessions of a TCP connection."
+        },
+        "requires": [
+            "ksa.ccna1.transport-layer.tcp-overview",
+            "ksa.ccna1.transport-layer.port-numbers"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): client and server ports, three-way handshake flags, four-exchange session termination.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие порты источника и назначения допустимы для узла, подключающегося к почтовому серверу?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Источник: 25, назначение: 49152",
+                    "correct": false,
+                    "comment": "Портом назначения является общеизвестный порт для протокола Simple Mail Transfer Protocol — 25. Это порт, который будет прослушивать почтовый сервер. Порт источника динамически выбирается запрашивающим клиентом и может быть 49152."
+                },
+                {
+                    "answer": "Источник: 80, назначение: 49152",
+                    "correct": false,
+                    "comment": "Портом назначения является общеизвестный порт для протокола Simple Mail Transfer Protocol — 25. Это порт, который будет прослушивать почтовый сервер. Порт источника динамически выбирается запрашивающим клиентом и может быть 49152."
+                },
+                {
+                    "answer": "Источник: 49152, назначение: 25",
+                    "correct": true
+                },
+                {
+                    "answer": "Источник: 49152, назначение: 80",
+                    "correct": false,
+                    "comment": "Портом назначения является общеизвестный порт для протокола Simple Mail Transfer Protocol — 25. Это порт, который будет прослушивать почтовый сервер. Порт источника динамически выбирается запрашивающим клиентом и может быть 49152."
+                }
+            ]
+        },
+        {
+            "question": "Какие флаги управления используются во время трехстороннего рукопожатия?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ACK и FIN",
+                    "correct": false,
+                    "comment": "Трехстороннее рукопожатие состоит из трех обменов сообщениями со следующими флагами: SYN, SYN ACK и ACK."
+                },
+                {
+                    "answer": "FIN и RESET",
+                    "correct": false,
+                    "comment": "Трехстороннее рукопожатие состоит из трех обменов сообщениями со следующими флагами: SYN, SYN ACK и ACK."
+                },
+                {
+                    "answer": "RESET и SYN",
+                    "correct": false,
+                    "comment": "Трехстороннее рукопожатие состоит из трех обменов сообщениями со следующими флагами: SYN, SYN ACK и ACK."
+                },
+                {
+                    "answer": "SYN и ACK",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Сколько обменов необходимо для завершения обоих сеансов между двумя узлами?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "один обмен",
+                    "correct": false,
+                    "comment": "Для завершения обоих сеансов между двумя узлами необходимы четыре обмена:\n1. Узел A отправляет FIN.\n2. Узел B отправляет ACK.\n3. Узел B отправляет FIN.\n4. Узел A отправляет ACK."
+                },
+                {
+                    "answer": "два обмена",
+                    "correct": false,
+                    "comment": "Для завершения обоих сеансов между двумя узлами необходимы четыре обмена:\n1. Узел A отправляет FIN.\n2. Узел B отправляет ACK.\n3. Узел B отправляет FIN.\n4. Узел A отправляет ACK."
+                },
+                {
+                    "answer": "три обмена",
+                    "correct": false,
+                    "comment": "Для завершения обоих сеансов между двумя узлами необходимы четыре обмена:\n1. Узел A отправляет FIN.\n2. Узел B отправляет ACK.\n3. Узел B отправляет FIN.\n4. Узел A отправляет ACK."
+                },
+                {
+                    "answer": "четыре обмена",
+                    "correct": true
+                },
+                {
+                    "answer": "пять обменов",
+                    "correct": false,
+                    "comment": "Для завершения обоих сеансов между двумя узлами необходимы четыре обмена:\n1. Узел A отправляет FIN.\n2. Узел B отправляет ACK.\n3. Узел B отправляет FIN.\n4. Узел A отправляет ACK."
+                }
+            ]
+        }
+    ]
 }

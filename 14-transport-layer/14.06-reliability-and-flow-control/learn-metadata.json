@@ -1,9 +1,10 @@
 {
     "title": "Надежность и управление потоком передачи данных в TCP",
-    "materialType": "lecture",
+    "shortName": "ccna1.transport-layer.reliability-and-flow-control",
+    "type": "scored-lecture",
     "description": "Что такое гарантированная и упорядоченная доставка? Что такое управление потоком, размер окна передачи и максимальный размер сегмента в рамках TCP-соединения?",
     "difficulty": 3,
-    "duration": "PT0H19M",
+    "duration": "PT0H23M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,111 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.transport-layer.reliability-and-flow-control",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Name the TCP header fields used for in-order reassembly (sequence number) and for flow control (window size), and describe how a source reacts when it detects network congestion."
+        },
+        "requires": [
+            "ksa.ccna1.transport-layer.tcp-communication-process"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): sequence number, window size, source reaction to congestion.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какое поле используется узлом назначения для повторной сборки сегментов в исходном порядке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Управляющие биты",
+                    "correct": false,
+                    "comment": "Поле порядкового номера используется узлом назначения для повторной сборки сегментов в исходном порядке."
+                },
+                {
+                    "answer": "Порт назначения",
+                    "correct": false,
+                    "comment": "Поле порядкового номера используется узлом назначения для повторной сборки сегментов в исходном порядке."
+                },
+                {
+                    "answer": "Порядковый номер",
+                    "correct": true
+                },
+                {
+                    "answer": "Порт источника",
+                    "correct": false,
+                    "comment": "Поле порядкового номера используется узлом назначения для повторной сборки сегментов в исходном порядке."
+                },
+                {
+                    "answer": "Размер окна",
+                    "correct": false,
+                    "comment": "Поле порядкового номера используется узлом назначения для повторной сборки сегментов в исходном порядке."
+                }
+            ]
+        },
+        {
+            "question": "Какое поле используется для управления потоком?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Управляющие биты",
+                    "correct": false,
+                    "comment": "Поле Размер окна используется для управления потоком."
+                },
+                {
+                    "answer": "Порт назначения",
+                    "correct": false,
+                    "comment": "Поле Размер окна используется для управления потоком."
+                },
+                {
+                    "answer": "Порядковый номер",
+                    "correct": false,
+                    "comment": "Поле Размер окна используется для управления потоком."
+                },
+                {
+                    "answer": "Порт источника",
+                    "correct": false,
+                    "comment": "Поле Размер окна используется для управления потоком."
+                },
+                {
+                    "answer": "Размер окна",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Что происходит, когда отправляющий узел обнаруживает перегруженность?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Принимающий узел увеличивает количество байтов, которые он отправляет перед получением подтверждения от отправляющего узла.",
+                    "correct": false,
+                    "comment": "Когда отправляющий узел обнаруживает перегрузку, он уменьшает количество байтов, которые он отправляет перед получением подтверждения от узла назначения."
+                },
+                {
+                    "answer": "Принимающий узел уменьшает количество байтов, которые он отправляет перед получением подтверждения от отправляющего узла.",
+                    "correct": false,
+                    "comment": "Когда отправляющий узел обнаруживает перегрузку, он уменьшает количество байтов, которые он отправляет перед получением подтверждения от узла назначения."
+                },
+                {
+                    "answer": "Отправляющий узел увеличивает количество байтов, которые он отправляет перед получением подтверждения от узла назначения.",
+                    "correct": false,
+                    "comment": "Когда отправляющий узел обнаруживает перегрузку, он уменьшает количество байтов, которые он отправляет перед получением подтверждения от узла назначения."
+                },
+                {
+                    "answer": "Отправляющий узел уменьшает количество байтов, которые он отправляет перед получением подтверждения от узла назначения.",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

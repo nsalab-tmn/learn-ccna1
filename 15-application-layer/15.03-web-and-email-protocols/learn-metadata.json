@@ -1,9 +1,10 @@
 {
     "title": "Протоколы веб-трафика и электронной почты",
-    "materialType": "lecture",
+    "shortName": "ccna1.application-layer.web-and-email-protocols",
+    "type": "scored-lecture",
     "description": "Что такое гипертекст и зачем его размечают? Какие бывают протоколоы передачи гипертекста и электронной почты?",
     "difficulty": 3,
-    "duration": "PT0H7M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,132 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.application-layer.web-and-email-protocols",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Match HTTP message types (GET, POST, PUT) and email protocols (SMTP, POP, IMAP) to their functions, identify the protocol a browser uses to reach a web server, and state why HTTP is not secure."
+        },
+        "requires": [
+            "ksa.ccna1.application-layer.application-presentation-and-session",
+            "ksa.ccna1.application-layer.peer-to-peer"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): HTTP message types, browser-to-server protocol, SMTP for sending, IMAP copies, HTTP security.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой тип сообщения используется при загрузке файлов данных на веб-сервер?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "GET",
+                    "correct": false,
+                    "comment": "HTTP использует сообщение POST для загрузки файлов данных на веб-сервер. Сообщение GET используется клиентами для запроса данных, а сообщение PUT используется для загрузки содержимого, например изображений."
+                },
+                {
+                    "answer": "POST",
+                    "correct": true
+                },
+                {
+                    "answer": "PUT",
+                    "correct": false,
+                    "comment": "HTTP использует сообщение POST для загрузки файлов данных на веб-сервер. Сообщение GET используется клиентами для запроса данных, а сообщение PUT используется для загрузки содержимого, например изображений."
+                }
+            ]
+        },
+        {
+            "question": "Какой протокол использует веб-браузер для установления соединения с веб-сервером?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "HTTP",
+                    "correct": true
+                },
+                {
+                    "answer": "SSL",
+                    "correct": false,
+                    "comment": "Веб-браузеры подключаются к веб-серверам по протоколу HTTP. IMAP и SMTP ― это протоколы электронной почты. SSL — это протокол шифрования, используемый с HTTPS."
+                },
+                {
+                    "answer": "IMAP",
+                    "correct": false,
+                    "comment": "Веб-браузеры подключаются к веб-серверам по протоколу HTTP. IMAP и SMTP ― это протоколы электронной почты. SSL — это протокол шифрования, используемый с HTTPS."
+                },
+                {
+                    "answer": "SMTP",
+                    "correct": false,
+                    "comment": "Веб-браузеры подключаются к веб-серверам по протоколу HTTP. IMAP и SMTP ― это протоколы электронной почты. SSL — это протокол шифрования, используемый с HTTPS."
+                }
+            ]
+        },
+        {
+            "question": "Какой протокол использует клиент для отправки электронной почты на почтовый сервер?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "POP",
+                    "correct": false,
+                    "comment": "Почтовые клиенты подключаются к SMTP-серверам через порт 25 для отправки электронной почты. POP и IMAP используются клиентами для получения электронной почты. HTTP используется между веб-браузерами и веб-серверами."
+                },
+                {
+                    "answer": "SMTP",
+                    "correct": true
+                },
+                {
+                    "answer": "IMAP",
+                    "correct": false,
+                    "comment": "Почтовые клиенты подключаются к SMTP-серверам через порт 25 для отправки электронной почты. POP и IMAP используются клиентами для получения электронной почты. HTTP используется между веб-браузерами и веб-серверами."
+                },
+                {
+                    "answer": "HTTP",
+                    "correct": false,
+                    "comment": "Почтовые клиенты подключаются к SMTP-серверам через порт 25 для отправки электронной почты. POP и IMAP используются клиентами для получения электронной почты. HTTP используется между веб-браузерами и веб-серверами."
+                }
+            ]
+        },
+        {
+            "question": "Какую функцию выполняет протокол IMAP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Он загружает сообщения электронной почты на сервер.",
+                    "correct": false,
+                    "comment": "IMAP — протокол, с помощью которого клиенты получают копии электронных сообщений с сервера IMAP. Исходные сообщения остаются на сервере, пока не будут удалены вручную."
+                },
+                {
+                    "answer": "Он пассивно прослушивает порт 110 для клиентских запросов.",
+                    "correct": false,
+                    "comment": "IMAP — протокол, с помощью которого клиенты получают копии электронных сообщений с сервера IMAP. Исходные сообщения остаются на сервере, пока не будут удалены вручную."
+                },
+                {
+                    "answer": "Он загружает копию сообщений электронной почты, оставляя оригинал на сервере.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Верно ли утверждение? HTTP — это безопасный протокол.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": false,
+                    "comment": "Правильный ответ — Ложь. HTTP отправляет информацию в виде открытого текста и не считается безопасным. Если требуется безопасность, следует использовать протокол HTTP Secure (HTTPS)."
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }
