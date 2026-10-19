@@ -5,18 +5,15 @@
     "description": "Цель лабораторной работы: отработка навыков, необходимых для базовой конфигурации маршрутизатора.",
     "difficulty": 1,
     "duration": "PT0H17M",
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -24,13 +21,9 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "tags": {
         "$ref": "../../material-tags.json"
@@ -41,7 +34,7 @@
         "properties": {
             "q_1": {
                 "type": "string",
-                "title": "1. Как называется узел маршрутизатора?",
+                "title": "1. Какое имя устройства задано на маршрутизаторе по умолчанию?",
                 "placeholder": "Enter your answer here"
             },
             "q_2": {
@@ -61,17 +54,17 @@
             },
             "q_5": {
                 "type": "string",
-                "title": "5. Каков диапазон значений, отображаемых в vty-линиях?",
+                "title": "5. Какой диапазон номеров линий VTY указан в текущей конфигурации?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Почему маршрутизатор отвечает сообщением **startup-config is not present** (startup-config отсутствует)?",
+                "title": "6. Почему маршрутизатор отвечает сообщением startup-config is not present (startup-config отсутствует)?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Какую команду вы будете использовать?",
+                "title": "7. Какой командой можно проверить начальные параметры маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
@@ -86,7 +79,7 @@
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Почему пароль **enable secret** позволяет перейти в привилегированный режим EXEC, а пароль **enable password** больше не действителен?",
+                "title": "10. Почему пароль enable secret позволяет перейти в привилегированный режим EXEC, а пароль enable password больше не действителен?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
@@ -116,12 +109,12 @@
             },
             "q_16": {
                 "type": "string",
-                "title": "16. Какой из этих файлов, по вашему мнению, является образом IOS?",
+                "title": "16. Какой из этих файлов, по вашему мнению, является образом ОС маршрутизатора?",
                 "placeholder": "Enter your answer here"
             },
             "q_17": {
                 "type": "string",
-                "title": "17. Почему вы считаете, что этот файл — образ IOS?",
+                "title": "17. Почему вы считаете, что этот файл — образ ОС?",
                 "placeholder": "Enter your answer here"
             }
         }
