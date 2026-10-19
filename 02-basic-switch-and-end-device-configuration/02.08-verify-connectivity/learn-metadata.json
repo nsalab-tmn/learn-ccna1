@@ -1,9 +1,10 @@
 {
     "title": "Проверка подключения",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-switch-and-end-device-configuration.verify-connectivity",
+    "type": "scored-lecture",
     "description": "Как проверить правильное назначение IP-адресов и убедиться в том, что сетевая связность полностью работоспособна?",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,86 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-switch-and-end-device-configuration.verify-connectivity",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Match the verification tools ipconfig, show ip interface brief and ping to what each one checks: a host's network configuration, the status of switch interfaces, or connectivity to another device."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.configure-ip-addressing"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): ipconfig, show ip interface brief, ping.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая команда позволяет проверить состояние интерфейсов коммутатора?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "show ip interface brief",
+                    "correct": true
+                },
+                {
+                    "answer": "ping",
+                    "correct": false,
+                    "comment": "Команда ping проверяет подключение к другому устройству по сети. Состояние интерфейсов коммутатора проверяют командой show ip interface brief."
+                },
+                {
+                    "answer": "ipconfig",
+                    "correct": false,
+                    "comment": "Утилита ipconfig проверяет сетевую конфигурацию узла, например компьютера. Состояние интерфейсов коммутатора проверяют командой show ip interface brief."
+                }
+            ]
+        },
+        {
+            "question": "Пользователь хочет убедиться, что его компьютер может связаться с сайтом в Интернете. Какую команду ему следует использовать?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ping",
+                    "correct": true
+                },
+                {
+                    "answer": "show ip interface brief",
+                    "correct": false,
+                    "comment": "Эта команда показывает состояние интерфейсов коммутатора. Подключение к другому устройству или к сайту в Интернете проверяют командой ping."
+                },
+                {
+                    "answer": "ipconfig",
+                    "correct": false,
+                    "comment": "Утилита ipconfig показывает сетевую конфигурацию самого узла и не проверяет связь с другими устройствами. Подключение проверяют командой ping."
+                }
+            ]
+        },
+        {
+            "question": "Для чего на узле используют утилиту ipconfig?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Чтобы проверить сетевую конфигурацию узла",
+                    "correct": true
+                },
+                {
+                    "answer": "Чтобы проверить состояние интерфейсов коммутатора",
+                    "correct": false,
+                    "comment": "Для этого на коммутаторе используют команду show ip interface brief. Утилита ipconfig проверяет сетевую конфигурацию узла."
+                },
+                {
+                    "answer": "Чтобы проверить подключение к другому устройству по сети",
+                    "correct": false,
+                    "comment": "Подключение к другому устройству проверяют командой ping. Утилита ipconfig проверяет сетевую конфигурацию узла."
+                }
+            ]
+        }
+    ]
 }

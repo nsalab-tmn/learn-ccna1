@@ -1,9 +1,10 @@
 {
     "title": "Медный кабель",
-    "materialType": "lecture",
+    "shortName": "ccna1.physical-layer.copper-cabling",
+    "type": "scored-lecture",
     "description": "Какими характеристиками обладают медные кабели? Какие существуют типы медных кабелей? Чем экранированная витая пара отличается от неэкранированной? В каких системах используется коаксиальный кабель?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,106 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.physical-layer.copper-cabling",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Distinguish UTP, STP and coaxial cable by use, protection against interference, prevalence and connector types."
+        },
+        "requires": [
+            "ksa.ccna1.physical-layer.physical-layer-characteristics"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): coaxial cable use and connectors, STP shielding and twisting, UTP prevalence.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой из перечисленных ниже кабелей присоединяет антенны к беспроводным устройствам? Он также может быть связан с оптоволоконным кабелем для двусторонней передачи данных.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "UTP",
+                    "correct": false,
+                    "comment": "Для подключения антенн к беспроводным устройствам, а также для кабельного телевидения и интернет-соединения используется коаксиальный кабель"
+                },
+                {
+                    "answer": "STP",
+                    "correct": false,
+                    "comment": "Для подключения антенн к беспроводным устройствам, а также для кабельного телевидения и интернет-соединения используется коаксиальный кабель"
+                },
+                {
+                    "answer": "коаксиальный кабель",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой тип кабеля защищает сигнал от ЭМП и РЧП экраном, а от переходных помех — скручиванием проводников?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "UTP",
+                    "correct": false,
+                    "comment": "В кабеле UTP экрана нет: от помех его защищает только скручивание проводов в парах"
+                },
+                {
+                    "answer": "STP",
+                    "correct": true
+                },
+                {
+                    "answer": "коаксиальный кабель",
+                    "correct": false,
+                    "comment": "Коаксиальный кабель снижает внешние помехи экраном, но витых пар в нем нет: в центре проходит один медный проводник"
+                }
+            ]
+        },
+        {
+            "question": "Какое из перечисленных ниже средств подключения является наиболее распространенным?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "UTP",
+                    "correct": true
+                },
+                {
+                    "answer": "STP",
+                    "correct": false,
+                    "comment": "Кабели на основе неэкранированной витой пары (UTP) являются самым распространенным средством подключения"
+                },
+                {
+                    "answer": "коаксиальный кабель",
+                    "correct": false,
+                    "comment": "Кабели на основе неэкранированной витой пары (UTP) являются самым распространенным средством подключения"
+                }
+            ]
+        },
+        {
+            "question": "У какого из перечисленных ниже кабелей на концах используются разъемы типов BNC, N и F?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "UTP",
+                    "correct": false,
+                    "comment": "Коаксиальный кабель, который используется для кабельного телевидения и интернет-сервисов, а также для подключения антенн к беспроводным устройствам, использует несколько типов разъемов, включая разъемы типа  BNC, N и F"
+                },
+                {
+                    "answer": "STP",
+                    "correct": false,
+                    "comment": "Коаксиальный кабель, который используется для кабельного телевидения и интернет-сервисов, а также для подключения антенн к беспроводным устройствам, использует несколько типов разъемов, включая разъемы типа  BNC, N и F"
+                },
+                {
+                    "answer": "коаксиальный кабель",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }
