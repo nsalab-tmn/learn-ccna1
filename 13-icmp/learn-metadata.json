@@ -24,7 +24,7 @@
             "$ref": "./13.03.01-lab-use-icmp-to-test-and-correct-network-connectivity/learn-metadata.json"
         },
         {
-            "$ref": "./13.04-summary/learn-metadata.json"
+            "$ref": "./13.04-exam/learn-metadata.json"
         }
     ]
 }
