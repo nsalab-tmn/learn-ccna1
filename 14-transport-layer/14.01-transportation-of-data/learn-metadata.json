@@ -1,9 +1,10 @@
 {
     "title": "Передача данных на транспортном уровне",
-    "materialType": "lecture",
+    "shortName": "ccna1.transport-layer.transportation-of-data",
+    "type": "scored-lecture",
     "description": "В чем заключаются роль и функции транспортного уровня? Какие протоколы для различных типов приложений используются на транспортном уровне?",
     "difficulty": 3,
-    "duration": "PT0H12M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,135 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.transport-layer.transportation-of-data",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the transport layer by its role and its tasks (tracking conversations, segmentation and reassembly, multiplexing), and distinguish best-effort UDP from TCP, including the transport protocol a VoIP application uses."
+        },
+        "requires": [
+            "ksa.ccna1.protocols-and-models.reference-models",
+            "ksa.ccna1.protocols-and-models.data-encapsulation"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): role of the transport layer, its three tasks, best-effort UDP, transport protocol for VoIP.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой уровень отвечает за создание временного сеанса связи между приложениями на узлах источника и назначения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уровень приложений",
+                    "correct": false,
+                    "comment": "Транспортный уровень отвечает за создание временного сеанса связи между приложениями на узлах источника и назначения."
+                },
+                {
+                    "answer": "канальный уровень",
+                    "correct": false,
+                    "comment": "Транспортный уровень отвечает за создание временного сеанса связи между приложениями на узлах источника и назначения."
+                },
+                {
+                    "answer": "сетевой уровень",
+                    "correct": false,
+                    "comment": "Транспортный уровень отвечает за создание временного сеанса связи между приложениями на узлах источника и назначения."
+                },
+                {
+                    "answer": "физический уровень",
+                    "correct": false,
+                    "comment": "Транспортный уровень отвечает за создание временного сеанса связи между приложениями на узлах источника и назначения."
+                },
+                {
+                    "answer": "транспортный уровень",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие три задачи выполняет транспортный уровень? (Выберите три варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "мультиплексирование сеансов связи",
+                    "correct": true
+                },
+                {
+                    "answer": "идентификация кадров",
+                    "correct": false,
+                    "comment": "Транспортный уровень отвечает за мультиплексирование сеансов, сегментирование данных и повторную сборку сегментов, а также за отслеживание отдельных сеансов связи."
+                },
+                {
+                    "answer": "идентификация информации о маршруте",
+                    "correct": false,
+                    "comment": "Транспортный уровень отвечает за мультиплексирование сеансов, сегментирование данных и повторную сборку сегментов, а также за отслеживание отдельных сеансов связи."
+                },
+                {
+                    "answer": "сегментация данных и последующая сборка сегментов",
+                    "correct": true
+                },
+                {
+                    "answer": "отслеживание отдельных сеансов связи",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о транспортном уровне истинное?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "TCP имеет меньше полей, чем UDP.",
+                    "correct": false,
+                    "comment": "UDP — это протокол негарантированной доставки данных, в то время как TCP — надежный транспортный протокол."
+                },
+                {
+                    "answer": "TCP быстрее, чем UDP.",
+                    "correct": false,
+                    "comment": "UDP — это протокол негарантированной доставки данных, в то время как TCP — надежный транспортный протокол."
+                },
+                {
+                    "answer": "UDP известен как протокол негарантированной доставки данных.",
+                    "correct": true
+                },
+                {
+                    "answer": "UDP обеспечивает надежность.",
+                    "correct": false,
+                    "comment": "UDP — это протокол негарантированной доставки данных, в то время как TCP — надежный транспортный протокол."
+                }
+            ]
+        },
+        {
+            "question": "Какой протокол транспортного уровня будет использоваться для приложений VoIP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Протокол инициирования сеанса (SIP)",
+                    "correct": false,
+                    "comment": "Приложения VoIP чувствительны к задержкам, поэтому используют протокол UDP."
+                },
+                {
+                    "answer": "Протокол управления передачей (TCP)",
+                    "correct": false,
+                    "comment": "Приложения VoIP чувствительны к задержкам, поэтому используют протокол UDP."
+                },
+                {
+                    "answer": "Протокол пользовательских датаграмм (UDP)",
+                    "correct": true
+                },
+                {
+                    "answer": "Протокол передачи VoIP",
+                    "correct": false,
+                    "comment": "Приложения VoIP чувствительны к задержкам, поэтому используют протокол UDP."
+                }
+            ]
+        }
+    ]
 }

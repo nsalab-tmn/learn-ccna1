@@ -1,9 +1,10 @@
 {
     "title": "Обзор протокола TCP",
-    "materialType": "lecture",
+    "shortName": "ccna1.transport-layer.tcp-overview",
+    "type": "scored-lecture",
     "description": "Какие функции исполняет протокол TCP и из чего состоит его заголовок?",
     "difficulty": 3,
-    "duration": "PT0H5M",
+    "duration": "PT0H10M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,105 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.transport-layer.tcp-overview",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify TCP as the transport protocol with reliable in-order delivery, state the field count and size of its header, and pick applications (FTP, HTTP) that run over TCP."
+        },
+        "requires": [
+            "ksa.ccna1.transport-layer.transportation-of-data"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): reliable in-order delivery, TCP header fields and size, applications over TCP.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой протокол транспортного уровня обеспечивает надежную доставку с сохранением порядка?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ICMP",
+                    "correct": false,
+                    "comment": "Протокол транспортного уровня TCP обеспечивает надежную доставку с сохранением порядка."
+                },
+                {
+                    "answer": "IP",
+                    "correct": false,
+                    "comment": "Протокол транспортного уровня TCP обеспечивает надежную доставку с сохранением порядка."
+                },
+                {
+                    "answer": "TCP",
+                    "correct": true
+                },
+                {
+                    "answer": "UDP",
+                    "correct": false,
+                    "comment": "Протокол транспортного уровня TCP обеспечивает надежную доставку с сохранением порядка."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о заголовке TCP верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Он состоит из 4 полей в 8-байтовом заголовке.",
+                    "correct": false,
+                    "comment": "Заголовок TCP состоит из 10 полей в 20-байтном заголовке."
+                },
+                {
+                    "answer": "Он состоит из 8 полей в 10-байтовом заголовке.",
+                    "correct": false,
+                    "comment": "Заголовок TCP состоит из 10 полей в 20-байтном заголовке."
+                },
+                {
+                    "answer": "Он состоит из 10 полей в 20-байтном заголовке.",
+                    "correct": true
+                },
+                {
+                    "answer": "Он состоит из 20 полей в 40-байтном заголовке.",
+                    "correct": false,
+                    "comment": "Заголовок TCP состоит из 10 полей в 20-байтном заголовке."
+                }
+            ]
+        },
+        {
+            "question": "Какие два приложения будут использовать протокол транспортного уровня TCP? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "FTP",
+                    "correct": true
+                },
+                {
+                    "answer": "HTTP",
+                    "correct": true
+                },
+                {
+                    "answer": "ICMP",
+                    "correct": false,
+                    "comment": "FTP и HTTP требуют использования протокола транспортного уровня TCP."
+                },
+                {
+                    "answer": "TFTP",
+                    "correct": false,
+                    "comment": "FTP и HTTP требуют использования протокола транспортного уровня TCP."
+                },
+                {
+                    "answer": "VoIP",
+                    "correct": false,
+                    "comment": "FTP и HTTP требуют использования протокола транспортного уровня TCP."
+                }
+            ]
+        }
+    ]
 }

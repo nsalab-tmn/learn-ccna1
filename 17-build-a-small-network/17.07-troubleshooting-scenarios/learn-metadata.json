@@ -1,9 +1,10 @@
 {
     "title": "Сценарии поиска и устранения неполадок",
-    "materialType": "lecture",
+    "shortName": "ccna1.build-a-small-network.troubleshooting-scenarios",
+    "type": "scored-lecture",
     "description": "На какие возможные неисправности стоит обращать внимание в первую очередь?",
     "difficulty": 3,
-    "duration": "PT0H14M",
+    "duration": "PT0H20M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,152 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.build-a-small-network.troubleshooting-scenarios",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe the effect of a duplex mismatch, name the APIPA feature, state where a default gateway must reside, and choose the commands that show a Windows host's DNS servers and a router's default route."
+        },
+        "requires": [
+            "ksa.ccna1.build-a-small-network.troubleshooting-methodologies",
+            "ksa.ccna1.build-a-small-network.host-and-ios-commands"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): duplex mismatch, APIPA, default gateway placement, DNS servers of a host, default route of a router.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Что происходит, если одно из двух подключенных устройств работает в полнодуплексном режиме, а другое — в полудуплексном?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Данные передаются, но производительность канала сильно снижается",
+                    "correct": true
+                },
+                {
+                    "answer": "Канал полностью перестает передавать данные",
+                    "correct": false,
+                    "comment": "При несовпадении дуплексных режимов передача данных продолжается, поэтому проблему и сложно обнаружить. Но производительность канала сильно снижается."
+                },
+                {
+                    "answer": "Производительность канала растет, потому что одно из устройств передает и принимает данные одновременно",
+                    "correct": false,
+                    "comment": "Оптимальная производительность возможна, только когда оба интерфейса работают в одном режиме дуплекса. При несовпадении режимов производительность канала сильно снижается."
+                },
+                {
+                    "answer": "Устройства сразу сообщают о несовпадении, и проблему легко обнаружить",
+                    "correct": false,
+                    "comment": "Несовпадение дуплексных режимов довольно сложно обнаружить, потому что обмен данными продолжается. При этом производительность канала сильно снижается."
+                }
+            ]
+        },
+        {
+            "question": "Как называется функция Windows, которая назначает узлу адрес из диапазона 169.254.0.0/16, если узлу не удается связаться с сервером DHCP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Автоматическая частная IP-адресация (APIPA)",
+                    "correct": true
+                },
+                {
+                    "answer": "Протокол динамической настройки узла (DHCP)",
+                    "correct": false,
+                    "comment": "По протоколу DHCP адрес назначает сервер. Когда связаться с сервером DHCP не удается, Windows сама назначает адрес из диапазона 169.254.0.0/16: это функция APIPA."
+                },
+                {
+                    "answer": "Служба доменных имен (DNS)",
+                    "correct": false,
+                    "comment": "DNS сопоставляет имена с IP-адресами и не назначает адреса узлам. Адрес из диапазона 169.254.0.0/16 при недоступном сервере DHCP назначает функция APIPA."
+                },
+                {
+                    "answer": "Назначение адреса вручную",
+                    "correct": false,
+                    "comment": "Вручную адрес вводит администратор. Адрес из диапазона 169.254.0.0/16 Windows назначает автоматически, когда не может связаться с сервером DHCP: это функция APIPA."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о шлюзе по умолчанию оконечного устройства верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Шлюз по умолчанию должен находиться в той же сети, что и оконечное устройство",
+                    "correct": true
+                },
+                {
+                    "answer": "Шлюз по умолчанию должен находиться в удаленной сети, с которой связывается устройство",
+                    "correct": false,
+                    "comment": "Шлюз по умолчанию — это путь к удаленным сетям, поэтому он должен находиться в той же сети, что и оконечное устройство."
+                },
+                {
+                    "answer": "Адрес шлюза по умолчанию можно задать только вручную",
+                    "correct": false,
+                    "comment": "Адрес шлюза по умолчанию можно задать вручную или получить от сервера DHCP. Верно, что шлюз должен находиться в той же сети, что и оконечное устройство."
+                },
+                {
+                    "answer": "Шлюзом по умолчанию может быть любой узел сети, даже не способный пересылать трафик в другие сети",
+                    "correct": false,
+                    "comment": "Шлюз по умолчанию — ближайшее сетевое устройство, которое способно пересылать трафик в другие сети. Оно должно находиться в той же сети, что и оконечное устройство."
+                }
+            ]
+        },
+        {
+            "question": "Какую команду нужно выполнить на компьютере с Windows, чтобы узнать, какие серверы DNS он использует?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ipconfig /all",
+                    "correct": true
+                },
+                {
+                    "answer": "ipconfig",
+                    "correct": false,
+                    "comment": "Команда ipconfig без параметров показывает IP-адрес, маску подсети и шлюз по умолчанию, но не серверы DNS. Их выводит ipconfig /all."
+                },
+                {
+                    "answer": "show ip route",
+                    "correct": false,
+                    "comment": "Это команда ОС маршрутизатора: она выводит таблицу маршрутизации. Серверы DNS компьютера с Windows выводит ipconfig /all."
+                },
+                {
+                    "answer": "show ip interface brief",
+                    "correct": false,
+                    "comment": "Это команда ОС сетевого устройства: она выводит IP-адреса и состояние интерфейсов. Серверы DNS компьютера с Windows выводит ipconfig /all."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда позволяет убедиться, что на маршрутизаторе настроен шлюз по умолчанию (маршрут по умолчанию)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "show ip route",
+                    "correct": true
+                },
+                {
+                    "answer": "show ip interface brief",
+                    "correct": false,
+                    "comment": "Эта команда показывает IPv4-адреса и состояние интерфейсов, но не маршруты. Шлюз по умолчанию маршрутизатора виден в таблице маршрутизации, которую выводит show ip route."
+                },
+                {
+                    "answer": "ipconfig",
+                    "correct": false,
+                    "comment": "Это команда Windows: она показывает шлюз по умолчанию компьютера, а не маршрутизатора. На маршрутизаторе используют show ip route."
+                },
+                {
+                    "answer": "nslookup",
+                    "correct": false,
+                    "comment": "Команда nslookup отправляет запросы DNS и не показывает маршруты. Шлюз по умолчанию маршрутизатора выводит show ip route."
+                }
+            ]
+        }
+    ]
 }

@@ -1,9 +1,10 @@
 {
     "title": "Масштабирование до размеров более крупных сетей",
-    "materialType": "lecture",
+    "shortName": "ccna1.build-a-small-network.scale-to-larger-networks",
+    "type": "scored-lecture",
     "description": "Какие существуют предпосылки для масштабирования сети?",
     "difficulty": 3,
-    "duration": "PT0H5M",
+    "duration": "PT0H10M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,116 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.build-a-small-network.scale-to-larger-networks",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Name the elements needed to scale a network and the tools that reveal the traffic types on a network (a protocol analyzer) and the applications using network services on a host (the Windows data usage tool)."
+        },
+        "requires": [
+            "ksa.ccna1.build-a-small-network.small-network-applications-and-protocols",
+            "ksa.ccna1.networking-today.network-topologies"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): scaling elements, protocol analyzer, data usage tool.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие элементы необходимы для масштабирования сети? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "бюджет",
+                    "correct": true
+                },
+                {
+                    "answer": "конфигурации устройств",
+                    "correct": false,
+                    "comment": "Для масштабирования сети нужны бюджет, реестр устройств, сетевая документация и анализ трафика"
+                },
+                {
+                    "answer": "увеличение пропускной способности",
+                    "correct": false,
+                    "comment": "Для масштабирования сети нужны бюджет, реестр устройств, сетевая документация и анализ трафика"
+                },
+                {
+                    "answer": "документирование сети",
+                    "correct": true
+                },
+                {
+                    "answer": "узел под управлением Windows",
+                    "correct": false,
+                    "comment": "Для масштабирования сети нужны бюджет, реестр устройств, сетевая документация и анализ трафика"
+                }
+            ]
+        },
+        {
+            "question": "Какое программное обеспечение, установленное на ключевых узлах, может выявить типы сетевого трафика, проходящего через сеть?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Linux",
+                    "correct": false,
+                    "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
+                },
+                {
+                    "answer": "MacOS",
+                    "correct": false,
+                    "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
+                },
+                {
+                    "answer": "SSH",
+                    "correct": false,
+                    "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
+                },
+                {
+                    "answer": "ОС Windows",
+                    "correct": false,
+                    "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
+                },
+                {
+                    "answer": "Wireshark",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой инструмент Windows 10 полезен для определения приложений, использующих сетевые службы на узле?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "панель управления",
+                    "correct": false,
+                    "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
+                },
+                {
+                    "answer": "использование данных",
+                    "correct": true
+                },
+                {
+                    "answer": "менеджер файлов",
+                    "correct": false,
+                    "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
+                },
+                {
+                    "answer": "межсетевой экран Windows",
+                    "correct": false,
+                    "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
+                },
+                {
+                    "answer": "Windows Explorer",
+                    "correct": false,
+                    "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
+                }
+            ]
+        }
+    ]
 }

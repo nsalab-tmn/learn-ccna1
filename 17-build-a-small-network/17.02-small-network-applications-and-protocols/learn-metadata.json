@@ -1,9 +1,10 @@
 {
     "title": "Приложения и протоколы в небольшой сети",
-    "materialType": "lecture",
+    "shortName": "ccna1.build-a-small-network.small-network-applications-and-protocols",
+    "type": "scored-lecture",
     "description": "На работу каких протоколов и приложений стоит обращать внимание?",
     "difficulty": 3,
-    "duration": "PT0H7M",
+    "duration": "PT0H12M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,96 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.build-a-small-network.small-network-applications-and-protocols",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Name the two kinds of software that give access to the network (network applications and application-layer services) and the protocols used for remote access to a device (SSH, Telnet)."
+        },
+        "requires": [
+            "ksa.ccna1.build-a-small-network.devices-in-a-small-network",
+            "ksa.ccna1.application-layer.summary",
+            "ksa.ccna1.network-security-fundamentals.device-security"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): network applications and application-layer services, remote-access protocols.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие программы или процессы обеспечивают доступ к сети? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "антивирусное программное обеспечение",
+                    "correct": false,
+                    "comment": "Существует два вида программ или процессов, обеспечивающих доступ к сети: сетевые приложения и службы уровня приложений"
+                },
+                {
+                    "answer": "сервисы уровня приложений",
+                    "correct": true
+                },
+                {
+                    "answer": "игровое программное обеспечение",
+                    "correct": false,
+                    "comment": "Существует два вида программ или процессов, обеспечивающих доступ к сети: сетевые приложения и службы уровня приложений"
+                },
+                {
+                    "answer": "сетевые приложения",
+                    "correct": true
+                },
+                {
+                    "answer": "программное обеспечение для повышения производительности",
+                    "correct": false,
+                    "comment": "Существует два вида программ или процессов, обеспечивающих доступ к сети: сетевые приложения и службы уровня приложений"
+                },
+                {
+                    "answer": "виртуальные машины",
+                    "correct": false,
+                    "comment": "Существует два вида программ или процессов, обеспечивающих доступ к сети: сетевые приложения и службы уровня приложений"
+                }
+            ]
+        },
+        {
+            "question": "Какие сетевые протоколы используются для удаленного доступа к устройству? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "протокол FTP",
+                    "correct": false,
+                    "comment": "SSH и Telnet — это два сетевых протокола, которые используются для удаленного доступа к устройству"
+                },
+                {
+                    "answer": "протокол передачи гипертекста (HTTP)",
+                    "correct": false,
+                    "comment": "SSH и Telnet — это два сетевых протокола, которые используются для удаленного доступа к устройству"
+                },
+                {
+                    "answer": "удаленное подключение (RC)",
+                    "correct": false,
+                    "comment": "SSH и Telnet — это два сетевых протокола, которые используются для удаленного доступа к устройству"
+                },
+                {
+                    "answer": "протокол Secure Shell (SSH)",
+                    "correct": true
+                },
+                {
+                    "answer": "протокол простой передачи электронной почты (SMTP)",
+                    "correct": false,
+                    "comment": "SSH и Telnet — это два сетевых протокола, которые используются для удаленного доступа к устройству"
+                },
+                {
+                    "answer": "Telnet",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

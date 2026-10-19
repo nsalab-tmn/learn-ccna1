@@ -1,9 +1,10 @@
 {
     "title": "Номера портов TCP и UDP",
-    "materialType": "lecture",
+    "shortName": "ccna1.transport-layer.port-numbers",
+    "type": "scored-lecture",
     "description": "Какие номера портов имеют различные протоколы? Что такое сокет?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H12M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,103 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.transport-layer.port-numbers",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose the correct socket pair for a client's web request to a server, name the port group that holds the ports of FTP, HTTP and TFTP, and identify netstat as the Windows command that lists connections with their addresses, ports and states."
+        },
+        "requires": [
+            "ksa.ccna1.transport-layer.tcp-overview",
+            "ksa.ccna1.transport-layer.udp-overview",
+            "ksa.ccna1.protocols-and-models.data-access"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): socket pairs, the well-known port group, the netstat command.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Предположим, что узел с IP-адресом 10.1.1.10 хочет запросить веб-службы у сервера с адресом 10.1.1.254. Как будет выглядеть правильная пара сокетов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "1099:10.1.1.10, 80:10.1.1.254",
+                    "correct": false,
+                    "comment": "Пара сокетов для узла с IP-адресом 10.1.1.10, запрашивающего веб-службы с сервера в 10.1.1.254, будет 10.1.1.10:1099, 10.1.1.254:80."
+                },
+                {
+                    "answer": "10.1.1.10:80, 10.1.1.254:1099",
+                    "correct": false,
+                    "comment": "Пара сокетов для узла с IP-адресом 10.1.1.10, запрашивающего веб-службы с сервера в 10.1.1.254, будет 10.1.1.10:1099, 10.1.1.254:80."
+                },
+                {
+                    "answer": "10.1.1.10:1099, 10.1.1.254:80",
+                    "correct": true
+                },
+                {
+                    "answer": "80:10.1.1.10, 1099:10.1.1.254",
+                    "correct": false,
+                    "comment": "Пара сокетов для узла с IP-адресом 10.1.1.10, запрашивающего веб-службы с сервера в 10.1.1.254, будет 10.1.1.10:1099, 10.1.1.254:80."
+                }
+            ]
+        },
+        {
+            "question": "Какая группа портов включает номера для приложений FTP, HTTP и TFTP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "динамические порты",
+                    "correct": false,
+                    "comment": "Номера портов приложений FTP, HTTP и TFTP определяются в группе общеизвестных номеров портов."
+                },
+                {
+                    "answer": "частные порты",
+                    "correct": false,
+                    "comment": "Номера портов приложений FTP, HTTP и TFTP определяются в группе общеизвестных номеров портов."
+                },
+                {
+                    "answer": "зарегистрированные порты",
+                    "correct": false,
+                    "comment": "Номера портов приложений FTP, HTTP и TFTP определяются в группе общеизвестных номеров портов."
+                },
+                {
+                    "answer": "общеизвестные порты",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какая команда Windows будет отображать используемые протоколы, локальный адрес и номера портов, внешний адрес и номера портов, а также состояние соединения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ipconfig /all",
+                    "correct": false,
+                    "comment": "Команда netstat позволяет получить список используемых протоколов, локальных адресов и номеров портов, адрес и номер порта на удаленном узле, а также сообщает состояние соединений."
+                },
+                {
+                    "answer": "ping",
+                    "correct": false,
+                    "comment": "Команда netstat позволяет получить список используемых протоколов, локальных адресов и номеров портов, адрес и номер порта на удаленном узле, а также сообщает состояние соединений."
+                },
+                {
+                    "answer": "netstat",
+                    "correct": true
+                },
+                {
+                    "answer": "traceroute",
+                    "correct": false,
+                    "comment": "Команда netstat позволяет получить список используемых протоколов, локальных адресов и номеров портов, адрес и номер порта на удаленном узле, а также сообщает состояние соединений."
+                }
+            ]
+        }
+    ]
 }

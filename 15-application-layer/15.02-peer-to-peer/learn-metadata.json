@@ -1,9 +1,10 @@
 {
     "title": "Одноранговые сети",
-    "materialType": "lecture",
+    "shortName": "ccna1.application-layer.peer-to-peer",
+    "type": "scored-lecture",
     "description": "Чем клиент-серверные приложения отличаются от одноранговых приложений?",
     "difficulty": 3,
-    "duration": "PT0H6M",
+    "duration": "PT0H11M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,97 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.application-layer.peer-to-peer",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Distinguish the peer-to-peer model from the client-server model by the need for a dedicated server, and tell BitTorrent sharing of file parts from Gnutella sharing of whole files."
+        },
+        "requires": [
+            "ksa.ccna1.application-layer.application-presentation-and-session",
+            "ksa.ccna1.networking-today.network-components"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): dedicated server, peers acting as client and server, BitTorrent, Gnutella.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Верно ли утверждение? Модель одноранговой сети требует реализации выделенного сервера для доступа к данным.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": false,
+                    "comment": "Правильный ответ — Ложь. В одноранговой модели клиенты могут совместно использовать ресурсы без использования выделенного сервера."
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Верно ли утверждение? В среде одноранговой сети каждый одноранговый узел может функционировать и как клиент, и как сервер.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": true
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": false,
+                    "comment": "Правильный ответ — Истина. Одноранговая сеть не требует выделенного сервера, поскольку каждый одноранговый узел может функционировать как клиент и как сервер."
+                }
+            ]
+        },
+        {
+            "question": "Какое P2P-приложение позволяет пользователям одновременно использовать части множества файлов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Гибридное P2P-приложение",
+                    "correct": false,
+                    "comment": "Клиенты BitTorrent используют торрент-файл для поиска других клиентов, которые делятся фрагментами необходимых файлов. Таким образом, многие файлы могут совместно использоваться клиентами одновременно."
+                },
+                {
+                    "answer": "Gnutella",
+                    "correct": false,
+                    "comment": "Клиенты BitTorrent используют торрент-файл для поиска других клиентов, которые делятся фрагментами необходимых файлов. Таким образом, многие файлы могут совместно использоваться клиентами одновременно."
+                },
+                {
+                    "answer": "BitTorrent",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Что из перечисленного является особенностью протокола Gnutella?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Пользователи могут совместно использовать целые файлы с другими пользователями.",
+                    "correct": true
+                },
+                {
+                    "answer": "Пользователи могут обмениваться частями файлов с другими пользователями.",
+                    "correct": false,
+                    "comment": "Gnutella — это одноранговый протокол, который позволяет пользователям обмениваться целыми файлами с другими пользователями."
+                },
+                {
+                    "answer": "Пользователи могут получить доступ к серверу индексирования, чтобы узнать местоположение ресурсов, совместно используемых другими пользователями.",
+                    "correct": false,
+                    "comment": "Gnutella — это одноранговый протокол, который позволяет пользователям обмениваться целыми файлами с другими пользователями."
+                }
+            ]
+        }
+    ]
 }

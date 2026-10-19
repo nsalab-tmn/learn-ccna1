@@ -1,9 +1,10 @@
 {
     "title": "Обзор протокола UDP",
-    "materialType": "lecture",
+    "shortName": "ccna1.transport-layer.udp-overview",
+    "type": "scored-lecture",
     "description": "Какие функции исполняет протокол UDP и из чего состоит его заголовок?",
     "difficulty": 3,
-    "duration": "PT0H4M",
+    "duration": "PT0H11M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,135 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.transport-layer.udp-overview",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify UDP as the best-effort transport protocol, state the field count and size of its header, pick applications (TFTP, VoIP) that run over UDP, and name the header fields UDP shares with TCP."
+        },
+        "requires": [
+            "ksa.ccna1.transport-layer.transportation-of-data",
+            "ksa.ccna1.transport-layer.tcp-overview"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): best-effort delivery, UDP header fields and size, applications over UDP, fields common to TCP and UDP.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Что из перечисленного является протоколом транспортного уровня с негарантированной доставкой?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ICMP",
+                    "correct": false,
+                    "comment": "UDP — протокол транспортного уровня с негарантированной доставкой."
+                },
+                {
+                    "answer": "IP",
+                    "correct": false,
+                    "comment": "UDP — протокол транспортного уровня с негарантированной доставкой."
+                },
+                {
+                    "answer": "TCP",
+                    "correct": false,
+                    "comment": "UDP — протокол транспортного уровня с негарантированной доставкой."
+                },
+                {
+                    "answer": "UDP",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о заголовке UDP верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Он состоит из 4 полей в 8-байтовом заголовке.",
+                    "correct": true
+                },
+                {
+                    "answer": "Он состоит из 8 полей в 10-байтовом заголовке.",
+                    "correct": false,
+                    "comment": "Заголовок UDP состоит из 4 полей в 8-байтном заголовке."
+                },
+                {
+                    "answer": "Он состоит из 10 полей в 20-байтном заголовке.",
+                    "correct": false,
+                    "comment": "Заголовок UDP состоит из 4 полей в 8-байтном заголовке."
+                },
+                {
+                    "answer": "Он состоит из 20 полей в 40-байтном заголовке.",
+                    "correct": false,
+                    "comment": "Заголовок UDP состоит из 4 полей в 8-байтном заголовке."
+                }
+            ]
+        },
+        {
+            "question": "Какие два приложения будут использовать протокол транспортного уровня UDP? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "FTP",
+                    "correct": false,
+                    "comment": "TFTP и VoIP требуют использования протокола транспортного уровня UDP."
+                },
+                {
+                    "answer": "HTTP",
+                    "correct": false,
+                    "comment": "TFTP и VoIP требуют использования протокола транспортного уровня UDP."
+                },
+                {
+                    "answer": "ICMP",
+                    "correct": false,
+                    "comment": "TFTP и VoIP требуют использования протокола транспортного уровня UDP."
+                },
+                {
+                    "answer": "TFTP",
+                    "correct": true
+                },
+                {
+                    "answer": "VoIP",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие два поля одинаковы в заголовке TCP и UDP? (Выберите два варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Управляющие биты",
+                    "correct": false,
+                    "comment": "Заголовки TCP и UDP содержат поля с номерами портов источника и назначения."
+                },
+                {
+                    "answer": "Номер порта назначения",
+                    "correct": true
+                },
+                {
+                    "answer": "Порядковый номер",
+                    "correct": false,
+                    "comment": "Заголовки TCP и UDP содержат поля с номерами портов источника и назначения."
+                },
+                {
+                    "answer": "Номер порта источника",
+                    "correct": true
+                },
+                {
+                    "answer": "Общеизвестные номера портов",
+                    "correct": false,
+                    "comment": "Заголовки TCP и UDP содержат поля с номерами портов источника и назначения."
+                }
+            ]
+        }
+    ]
 }

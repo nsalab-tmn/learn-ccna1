@@ -1,9 +1,10 @@
 {
     "title": "Команды для работы с конфигурацией IP",
-    "materialType": "lecture",
+    "shortName": "ccna1.build-a-small-network.host-and-ios-commands",
+    "type": "scored-lecture",
     "description": "Как работать с IP-интерфейсами и проверять их конфигурацию на различных устройствах?",
     "difficulty": 3,
-    "duration": "PT0H34M",
+    "duration": "PT0H40M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,148 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.build-a-small-network.host-and-ios-commands",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose the host and device commands that display or renew IP configuration (ipconfig /all, ipconfig /release and /renew, show ip interface brief), and interpret the contents of an ARP cache and an interface status in their output."
+        },
+        "requires": [
+            "ksa.ccna1.address-resolution.arp",
+            "ksa.ccna1.application-layer.ip-addressing-services",
+            "ksa.ccna1.basic-router-configuration.configure-interfaces"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): ipconfig /all, renewing a DHCP configuration, ARP cache contents, show ip interface brief and the down status.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая команда Windows позволяет узнать MAC-адрес компьютера вместе со сведениями об адресации уровня 3?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ipconfig /all",
+                    "correct": true
+                },
+                {
+                    "answer": "ipconfig",
+                    "correct": false,
+                    "comment": "Команда ipconfig без параметров показывает IP-адрес, маску подсети и шлюз по умолчанию, но не MAC-адрес. MAC-адрес вместе со сведениями уровня 3 выводит ipconfig /all."
+                },
+                {
+                    "answer": "ipconfig /displaydns",
+                    "correct": false,
+                    "comment": "Эта команда выводит записи DNS из кэша. MAC-адрес компьютера вместе со сведениями уровня 3 выводит ipconfig /all."
+                },
+                {
+                    "answer": "arp -a",
+                    "correct": false,
+                    "comment": "Команда arp -a показывает кэш ARP: IPv4- и MAC-адреса устройств, к которым узел недавно обращался, а не MAC-адрес самого компьютера. Его выводит ipconfig /all."
+                }
+            ]
+        },
+        {
+            "question": "Узел Windows получает IP-конфигурацию от сервера DHCP. Какими командами администратор может обновить эту конфигурацию?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ipconfig /release, затем ipconfig /renew",
+                    "correct": true
+                },
+                {
+                    "answer": "ipconfig /all, затем ipconfig /displaydns",
+                    "correct": false,
+                    "comment": "Эти команды только выводят сведения: полную IP-конфигурацию и записи DNS из кэша. Обновить конфигурацию DHCP-клиента позволяют ipconfig /release и ipconfig /renew."
+                },
+                {
+                    "answer": "netsh interface ip delete arpcache",
+                    "correct": false,
+                    "comment": "Эта команда очищает кэш ARP, а не IP-конфигурацию узла. Обновить конфигурацию DHCP-клиента позволяют ipconfig /release и ipconfig /renew."
+                },
+                {
+                    "answer": "arp -a",
+                    "correct": false,
+                    "comment": "Команда arp -a выводит кэш ARP и не меняет IP-конфигурацию. Обновить конфигурацию DHCP-клиента позволяют ipconfig /release и ipconfig /renew."
+                }
+            ]
+        },
+        {
+            "question": "В сети есть узел 10.0.0.5, но команда arp -a на узле PC-A не показывает для него записи. Чем это объясняется?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Кэш ARP содержит записи только об устройствах, к которым узел недавно обращался",
+                    "correct": true
+                },
+                {
+                    "answer": "Команда arp -a показывает только статические записи",
+                    "correct": false,
+                    "comment": "Команда arp -a показывает и статические, и динамические записи: тип каждой указан в выводе. Записи для 10.0.0.5 нет, потому что кэш ARP содержит записи только об устройствах, к которым узел недавно обращался."
+                },
+                {
+                    "answer": "Узел 10.0.0.5 выключен",
+                    "correct": false,
+                    "comment": "Отсутствие записи не говорит о том, что узел выключен: кэш ARP содержит записи только об устройствах, к которым узел недавно обращался. Если PC-A отправит эхо-запрос на 10.0.0.5, запись для этого адреса появится."
+                },
+                {
+                    "answer": "Команда arp -a показывает только адреса маршрутизаторов",
+                    "correct": false,
+                    "comment": "Команда arp -a выводит записи обо всех устройствах из кэша ARP узла. Записи для 10.0.0.5 нет, потому что к этому узлу недавно не обращались."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда ОС маршрутизатора выводит в компактном виде все интерфейсы, назначенные им IP-адреса и их рабочее состояние?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "show ip interface brief",
+                    "correct": true
+                },
+                {
+                    "answer": "show ip route",
+                    "correct": false,
+                    "comment": "Эта команда выводит информацию маршрутизации уровня 3. Сводку по всем интерфейсам, их IP-адресам и состоянию выводит show ip interface brief."
+                },
+                {
+                    "answer": "show arp",
+                    "correct": false,
+                    "comment": "Эта команда выводит список известных узлов в локальных сетях Ethernet. Сводку по всем интерфейсам, их IP-адресам и состоянию выводит show ip interface brief."
+                },
+                {
+                    "answer": "show running-config",
+                    "correct": false,
+                    "comment": "Эта команда выводит текущую конфигурацию, а не рабочее состояние интерфейсов. Сводку по всем интерфейсам, их IP-адресам и состоянию выводит show ip interface brief."
+                }
+            ]
+        },
+        {
+            "question": "Команда show ip interface brief показывает, что интерфейс коммутатора находится в состоянии down. Что это означает?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "К интерфейсу не подключены устройства, или не работает сетевой интерфейс подключенного устройства",
+                    "correct": true
+                },
+                {
+                    "answer": "Интерфейс работает, но ему не назначен IP-адрес",
+                    "correct": false,
+                    "comment": "Так выглядят интерфейсы без адреса (unassigned) в состоянии up: они работают. Состояние down означает, что к интерфейсу не подключены устройства или не работает сетевой интерфейс подключенного устройства."
+                },
+                {
+                    "answer": "Интерфейс работает, и ему назначен IPv4-адрес",
+                    "correct": false,
+                    "comment": "Работающий интерфейс имеет состояние up в столбцах Status и Protocol. Состояние down означает, что к интерфейсу не подключены устройства или не работает сетевой интерфейс подключенного устройства."
+                }
+            ]
+        }
+    ]
 }
