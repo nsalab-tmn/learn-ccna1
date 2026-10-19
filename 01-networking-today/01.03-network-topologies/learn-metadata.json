@@ -1,9 +1,10 @@
 {
     "title": "Представления и топологии сетей",
-    "materialType": "lecture",
+    "shortName": "ccna1.networking-today.network-topologies",
+    "type": "scored-lecture",
     "description": "Как разные компоненты сети представляются на схемах? Чем физическая топология сети отличается от логической?",
     "difficulty": 3,
-    "duration": "PT0H3M",
+    "duration": "PT0H8M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,96 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.networking-today.network-topologies",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Tell a NIC, a physical port and an interface apart, and state whether a physical or a logical topology diagram shows a given detail of a network."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.network-components"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): NIC, port and interface; physical and logical topology diagrams.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какое соединение физически связывает оконечное устройство с сетью?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Порт",
+                    "correct": false,
+                    "comment": "Сетевая интерфейсная плата (NIC) физически подключает оконечное устройство к сети."
+                },
+                {
+                    "answer": "NIC",
+                    "correct": true
+                },
+                {
+                    "answer": "Интерфейс",
+                    "correct": false,
+                    "comment": "Сетевая интерфейсная плата (NIC) физически подключает оконечное устройство к сети."
+                }
+            ]
+        },
+        {
+            "question": "Какие соединения являются специализированными портами сетевого устройства, которые подключаются к отдельным сетям?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Порт",
+                    "correct": false,
+                    "comment": "Интерфейсы – специализированные порты в сетевом устройстве, которые подключаются к отдельным сетям."
+                },
+                {
+                    "answer": "NIC",
+                    "correct": false,
+                    "comment": "Интерфейсы – специализированные порты в сетевом устройстве, которые подключаются к отдельным сетям."
+                },
+                {
+                    "answer": "Интерфейс",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой  тип топологии сети позволяет увидеть, какие оконечные устройства подключены к каким промежуточным устройствам и какая среда передачи используется?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Физическая топология",
+                    "correct": false,
+                    "comment": "Увидеть, какие оконечные устройства подключены к каким промежуточным устройствам и какая среда передачи используется, позволяет логическая топология"
+                },
+                {
+                    "answer": "Логическая топология",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой тип топологии сети позволяет увидеть фактическое местоположение промежуточных устройств и кабелей?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Физическая топология",
+                    "correct": true
+                },
+                {
+                    "answer": "Логическая топология",
+                    "correct": false,
+                    "comment": "Физическое расположение промежуточных устройств и кабельных линий показывают схемы физической топологии"
+                }
+            ]
+        }
+    ]
 }

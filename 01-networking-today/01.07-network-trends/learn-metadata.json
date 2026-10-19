@@ -1,9 +1,10 @@
 {
     "title": "Тенденции развития сетей",
-    "materialType": "lecture",
+    "shortName": "ccna1.networking-today.network-trends",
+    "type": "scored-lecture",
     "description": "Какие тренды к построению сетей задает удаленная работа и рост использования мобильных устройств? Что такое облачные вычисления и какие возможности они дают пользователям?",
     "difficulty": 3,
-    "duration": "PT0H13M",
+    "duration": "PT0H19M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,127 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.networking-today.network-trends",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Match a usage scenario to the network trend that serves it: BYOD, video communication, a cloud type, powerline networking or wireless broadband."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.internet-connection",
+            "ksa.ccna1.networking-today.redundant-networks"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): BYOD, video, cloud types, powerline networking, wireless broadband.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая  функция является хорошим инструментом для проведения конференций с людьми, находящимися в другом городе или даже в другой стране?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "BYOD",
+                    "correct": false,
+                    "comment": "Для проведения конференций с людьми, находящимися в разных городах или странах лучше всего подходит видеосвязь"
+                },
+                {
+                    "answer": "Видеосвязь",
+                    "correct": true
+                },
+                {
+                    "answer": "Облачные вычисления",
+                    "correct": false,
+                    "comment": "Для проведения конференций с людьми, находящимися в разных городах или странах лучше всего подходит видеосвязь"
+                }
+            ]
+        },
+        {
+            "question": "Какая  функция описывает использование личных инструментов для доступа к информации и обмена данными через сеть организации или учебного заведения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "BYOD",
+                    "correct": true
+                },
+                {
+                    "answer": "Видеосвязь",
+                    "correct": false,
+                    "comment": "Согласно концепции BYOD конечные пользователи могут применять личные устройства для доступа к информации в корпоративной сети или сети комплекса зданий"
+                },
+                {
+                    "answer": "Облачные вычисления",
+                    "correct": false,
+                    "comment": "Согласно концепции BYOD конечные пользователи могут применять личные устройства для доступа к информации в корпоративной сети или сети комплекса зданий"
+                }
+            ]
+        },
+        {
+            "question": "Что из перечисленного подразделяется на такие типы, как «общедоступные», «частные», «коллективные» и «гибридные»?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "BYOD",
+                    "correct": false,
+                    "comment": "На такие типы подразделяются облачные вычисления"
+                },
+                {
+                    "answer": "Видеосвязь",
+                    "correct": false,
+                    "comment": "На такие типы подразделяются облачные вычисления."
+                },
+                {
+                    "answer": "Облачные вычисления",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какая функция используется при подключении устройства к сети с помощью розетки?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Технологии интеллектуального дома",
+                    "correct": false,
+                    "comment": "При подключении устройства к сети с помощью электрической розетки используется линия электропитания"
+                },
+                {
+                    "answer": "Линия электропитания",
+                    "correct": true
+                },
+                {
+                    "answer": "Беспроводная широкополосная сеть",
+                    "correct": false,
+                    "comment": "При подключении устройства к сети с помощью электрической розетки используется линия электропитания"
+                }
+            ]
+        },
+        {
+            "question": "Какая функция использует ту же сотовую технологию, что и смартфон?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Технологии интеллектуального дома",
+                    "correct": false,
+                    "comment": "Ту же сотовую технологию, что и смартфон, использует беспроводная широкополосная сеть"
+                },
+                {
+                    "answer": "Линия электропитания",
+                    "correct": false,
+                    "comment": "Ту же сотовую технологию, что и смартфон, использует беспроводная широкополосная сеть"
+                },
+                {
+                    "answer": "Беспроводная широкополосная сеть",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

@@ -1,9 +1,10 @@
 {
     "title": "Компоненты сети",
-    "materialType": "lecture",
+    "shortName": "ccna1.networking-today.network-components",
+    "type": "scored-lecture",
     "description": "Что подразумевается под оконечными устройствами в сети? Чем клиент отличается от сервера? Из каких промежуточных устройств может состоять сеть? Чем подключаются устройства в сети?",
     "difficulty": 3,
-    "duration": "PT0H11M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,93 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.networking-today.network-components",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Classify a network device as a host, an end device or an intermediary device, and match each media type (copper, fiber-optic, wireless) to the way it encodes data."
+        },
+        "requires": [],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): host roles, intermediary devices, media types.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Как называются все компьютеры, которые подключены к сети и непосредственно участвуют в сетевом взаимодействии?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Серверы",
+                    "correct": false,
+                    "comment": "Все компьютеры, подключенные к сети и непосредственно участвующие в обмене данными, считаются узлами"
+                },
+                {
+                    "answer": "Промежуточные устройства",
+                    "correct": false,
+                    "comment": "Все компьютеры, подключенные к сети и непосредственно участвующие в обмене данными, считаются узлами"
+                },
+                {
+                    "answer": "Узлы",
+                    "correct": true
+                },
+                {
+                    "answer": "Сети",
+                    "correct": false,
+                    "comment": "Все компьютеры, подключенные к сети и непосредственно участвующие в обмене данными, считаются узлами"
+                }
+            ]
+        },
+        {
+            "question": "Когда данные кодируются как импульсы света, какая среда передачи данных используется?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Беспроводная связь",
+                    "correct": false,
+                    "comment": "Для передачи данных, когда данные кодируются как импульсы света, используется оптоволоконный кабель"
+                },
+                {
+                    "answer": "Оптоволоконный кабель",
+                    "correct": true
+                },
+                {
+                    "answer": "Медный кабель",
+                    "correct": false,
+                    "comment": "Для передачи данных, когда данные кодируются как импульсы света, используется оптоволоконный кабель"
+                }
+            ]
+        },
+        {
+            "question": "Какие устройства являются промежуточными? (выберите два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Узлы",
+                    "correct": false,
+                    "comment": "Промежуточными устройствами являются маршрутизаторы и коммутаторы"
+                },
+                {
+                    "answer": "Маршрутизаторы",
+                    "correct": true
+                },
+                {
+                    "answer": "Серверы",
+                    "correct": false,
+                    "comment": "Промежуточными устройствами являются маршрутизаторы и коммутаторы"
+                },
+                {
+                    "answer": "Коммутаторы",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }
