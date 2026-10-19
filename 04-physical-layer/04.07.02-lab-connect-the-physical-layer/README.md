@@ -25,7 +25,7 @@
 
 ## Общие сведения
 
-В этом упражнении вы изучите различные параметры межсетевых устройств, определите, настройка каких параметров позволяет установить надежное соединение при подключении нескольких устройств, добавите соответствующие модули и подключите устройства.
+В этом упражнении вы изучите различные параметры межсетевых устройств, определите, настройка каких параметров позволяет установить надежное соединение при подключении нескольких устройств, выберете соответствующие модули и подключите устройства.
 
 **Примечание.** Работа оценивается по соединениям между устройствами и по вашим ответам на вопросы из инструкций.
 
@@ -33,11 +33,9 @@
 
 **Шаг 1. Определите порты управления маршрутизатора Cisco**
 
-1.  Нажмите на роутер **East.** Вкладка **Physical** (физический) должна быть активна.
+> **В симуляторе** нельзя осмотреть корпус устройства: вида с его портами, слотами и модулями здесь нет. На вопросы №1 и №8–10 ответьте по материалам тем 2.1 и 17.1; вопросы №6 и №7 о числе слотов расширения относятся к виду корпуса в Packet Tracer.
 
-2.  Увеличьте масштаб и разверните окно, чтобы видеть весь роутер.
-
-    - Ответьте на вопрос №1
+- Ответьте на вопрос №1
 
 **Шаг 2. Определите LAN и WAN-интерфейсы на роутере Cisco**
 
@@ -73,23 +71,19 @@
 
 - Ответьте на вопрос №6
 
-Нажмите коммутатор **Switch2**. 
-
 - Ответьте на вопрос №7
 
 ### Часть 2. Выбор подходящих модулей для подключения
 
 **Шаг 1. Определите модули, обеспечивающие необходимое подключение**
 
-1.  Нажмите на роутер **East** и откройте вкладку **Physical** (физический). Слева под меткой **Modules** (модули) отображаются доступные варианты расширения возможностей роутера. Щелкните каждый из них. Внизу будет показано его изображение и дано описание. Изучите эти варианты.
-
-1.  Вам нужно подключить компьютеры PC1, 2 и 3 к роутеру **East**, но у вас недостаточно средств для приобретения нового коммутатора. 
+1.  Вам нужно подключить компьютеры PC1, 2 и 3 к роутеру **East**, но у вас недостаточно средств для приобретения нового коммутатора.
     
     - Ответьте на вопрос №8
 
     - Ответьте на вопрос №9
 
-2.  Нажмите коммутатор **Switch2**.
+2.  Коммутатор **Switch2** нужно подключить к коммутатору **Switch3** по оптоволокну.
 
     - Ответьте на вопрос №10
 
@@ -109,27 +103,25 @@
 
 2.  Выберите тип кабеля и порты обоих устройств, указанные в таблице, и нажмите «Соединить».
 
-**Пример.** Чтобы подключить маршрутизатор **East** к коммутатору **Switch1**, наведите указатель на **East**, нажмите «Соединить» и щелкните **Switch1**. Выберите тип кабеля **Copper Straight-Through** (медный прямой), порт **GigabitEthernet0/0** на East и порт **GigabitEthernet0/1** на Switch1, затем нажмите «Соединить».
-
-**Примечание.** В данном упражнении световой индикатор сети отключен.
+**Пример.** Чтобы подключить маршрутизатор **East** к коммутатору **Switch1**, наведите указатель на **East**, нажмите «Соединить» и щелкните **Switch1**. Выберите тип кабеля **Медный прямой** (Copper Straight-Through), порт **GigabitEthernet0/0** на East и порт **GigabitEthernet0/1** на Switch1, затем нажмите «Соединить».
 
 | **Устройство** | **Интерфейс** | **Тип кабеля** | **Устройство** | **Интерфейс** |
 | - | - | - | - | - |
-| East | GigabitEthernet0/0 | Copper Straight-Through (Медный прямой) | Switch1 | GigabitEthernet0/1 |
-| East | GigabitEthernet0/1 | Copper Straight-Through (Медный прямой) | Switch4 | GigabitEthernet0/1 |
-| East | FastEthernet0/1/0 | Copper Straight-Through (Медный прямой) | PC1 | FastEthernet0 |
-| East | FastEthernet0/1/1 | Copper Straight-Through (Медный прямой) | PC2 | FastEthernet0 |
-| East | FastEthernet0/1/2 | Copper Straight-Through (Медный прямой) | PC3 | FastEthernet0 |
-| Switch1 | FastEthernet0/1 | Copper Straight-Through (Медный прямой) | PC4 | FastEthernet0 |
-| Switch1 | FastEthernet0/2 | Copper Straight-Through (Медный прямой) | PC5 | FastEthernet0 |
-| Switch1 | FastEthernet0/3 | Copper Straight-Through (Медный прямой) | PC6 | FastEthernet0 |
-| Switch4 | GigabitEthernet0/2 | Copper Cross-Over (Медный перекрестный) | Switch3 | GigabitEthernet3/1 |
-| Switch3 | GigabitEthernet5/1 | Fiber (Оптоволоконный) | Switch2 | GigabitEthernet5/1 |
-| Switch2 | FastEthernet0/1 | Copper Straight-Through (Медный прямой) | PC7 | FastEthernet0 |
-| Switch2 | FastEthernet1/1 | Copper Straight-Through (Медный прямой) | PC8 | FastEthernet0 |
-| Switch2 | FastEthernet2/1 | Copper Straight-Through (Медный прямой) | PC9 | FastEthernet0 |
-| Switch2 | Gigabit3/1 | Copper Straight-Through (Медный прямой) | AccessPoint | Port 0 |
-| East | Serial0/0/0 | Serial DCE (Последовательный DCE)<br />(подключается сначала к маршрутизатору East) | West | Serial0/0/0 |
+| East | GigabitEthernet0/0 | Медный прямой (Copper Straight-Through) | Switch1 | GigabitEthernet0/1 |
+| East | GigabitEthernet0/1 | Медный прямой (Copper Straight-Through) | Switch4 | GigabitEthernet0/1 |
+| East | FastEthernet0/1/0 | Медный прямой (Copper Straight-Through) | PC1 | FastEthernet0 |
+| East | FastEthernet0/1/1 | Медный прямой (Copper Straight-Through) | PC2 | FastEthernet0 |
+| East | FastEthernet0/1/2 | Медный прямой (Copper Straight-Through) | PC3 | FastEthernet0 |
+| Switch1 | FastEthernet0/1 | Медный прямой (Copper Straight-Through) | PC4 | FastEthernet0 |
+| Switch1 | FastEthernet0/2 | Медный прямой (Copper Straight-Through) | PC5 | FastEthernet0 |
+| Switch1 | FastEthernet0/3 | Медный прямой (Copper Straight-Through) | PC6 | FastEthernet0 |
+| Switch4 | GigabitEthernet0/2 | Медный перекрестный (Copper Cross-Over) | Switch3 | GigabitEthernet3/1 |
+| Switch3 | GigabitEthernet5/1 | Оптика (Fiber) | Switch2 | GigabitEthernet5/1 |
+| Switch2 | FastEthernet0/1 | Медный прямой (Copper Straight-Through) | PC7 | FastEthernet0 |
+| Switch2 | FastEthernet1/1 | Медный прямой (Copper Straight-Through) | PC8 | FastEthernet0 |
+| Switch2 | FastEthernet2/1 | Медный прямой (Copper Straight-Through) | PC9 | FastEthernet0 |
+| Switch2 | GigabitEthernet3/1 | Медный прямой (Copper Straight-Through) | AccessPoint | Port 0 |
+| East | Serial0/0/0 | Последовательный (Serial DCE)<br />(начните соединение с маршрутизатора East: его конец станет DCE) | West | Serial0/0/0 |
 
 ### Часть 4. Проверка подключения
 
@@ -148,7 +140,7 @@
     GigabitEthernet0/0 172.30.1.1 YES manual up up
     GigabitEthernet0/1 172.31.1.1 YES manual up up
     Serial0/0/0 10.10.10.1 YES manual up up
-    Serial0/0/1 unassigned YES unset down down
+    Serial0/0/1 unassigned YES unset administratively down down
     FastEthernet0/1/0 unassigned YES unset up up
     FastEthernet0/1/1 unassigned YES unset up up
     FastEthernet0/1/2 unassigned YES unset up up
@@ -160,6 +152,6 @@
 
 **Шаг 2. Проверьте возможность подключения других ПК**
 
-Все компьютеры должны подключаться друг к другу. Вы научитесь использовать тестирование подключения во многих будущих лабораторных работах.
+Все компьютеры должны обмениваться эхо-запросами друг с другом и с маршрутизатором **West** (10.10.10.2). Вы научитесь использовать тестирование подключения во многих будущих лабораторных работах.
 
 <!-- [Скачать файл Packet Tracer для локального запуска](./assets/4.7.1-lab.pka) -->
