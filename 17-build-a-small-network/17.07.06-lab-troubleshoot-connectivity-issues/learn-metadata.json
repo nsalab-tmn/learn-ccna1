@@ -1,5 +1,5 @@
 {
-    "title": "Работа в симуляторе: поиск и устранение неполадок сетевой связности (логический режим)",
+    "title": "Работа в симуляторе: поиск и устранение неполадок сетевой связности",
     "shortName": "lab-17.7.6",
     "materialType": "lab",
     "description": "Цель лабораторной работы: отработка навыков, необходимых для успешного поиска и устранения неполадок сетевой связности.",
@@ -34,147 +34,147 @@
         "properties": {
             "q_1": {
                 "type": "string",
-                "title": "1. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "title": "1. Отвечает ли шлюз по умолчанию (172.16.1.1) на эхо-запросы компьютера PC-01 после исправления его настроек?",
                 "placeholder": "Enter your answer here"
             },
             "q_2": {
                 "type": "string",
-                "title": "2. Ping-запрос на веб-сервер (209.165.201.2).",
+                "title": "2. Отвечает ли веб-сервер (209.165.201.2) на эхо-запросы компьютера PC-01?",
                 "placeholder": "Enter your answer here"
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Ping-запрос на PC-02?",
+                "title": "3. Отвечает ли компьютер PC-02 на эхо-запросы компьютера PC-01?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
                 "type": "string",
-                "title": "4. Ping-запрос на PC-A?",
+                "title": "4. Отвечает ли компьютер PC-A на эхо-запросы компьютера PC-01?",
                 "placeholder": "Enter your answer here"
             },
             "q_5": {
                 "type": "string",
-                "title": "5. Ping-запрос на PC-B?",
+                "title": "5. Отвечает ли компьютер PC-B на эхо-запросы компьютера PC-01?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Открывается ли в браузере узла PC-01 страница http://www.nsalab.local (по имени)?",
+                "title": "6. Открывается ли в браузере компьютера PC-01 страница http://www.nsalab.local (по имени)?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Открывается ли в браузере узла PC-01 страница http://209.165.201.2 (по IP-адресу)?",
+                "title": "7. Открывается ли в браузере компьютера PC-01 страница http://209.165.201.2 (по IP-адресу)?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
                 "type": "string",
-                "title": "8. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "title": "8. Отвечает ли шлюз по умолчанию (172.16.1.1) на эхо-запросы компьютера PC-02 после исправления его настроек?",
                 "placeholder": "Enter your answer here"
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Ping-запрос на веб-сервер (209.165.201.2).",
+                "title": "9. Отвечает ли веб-сервер (209.165.201.2) на эхо-запросы компьютера PC-02?",
                 "placeholder": "Enter your answer here"
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Ping-запрос на PC-01?",
+                "title": "10. Отвечает ли компьютер PC-01 на эхо-запросы компьютера PC-02?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
                 "type": "string",
-                "title": "11. Ping-запрос на PC-A?",
+                "title": "11. Отвечает ли компьютер PC-A на эхо-запросы компьютера PC-02?",
                 "placeholder": "Enter your answer here"
             },
             "q_12": {
                 "type": "string",
-                "title": "12. Ping-запрос на PC-B?",
+                "title": "12. Отвечает ли компьютер PC-B на эхо-запросы компьютера PC-02?",
                 "placeholder": "Enter your answer here"
             },
             "q_13": {
                 "type": "string",
-                "title": "13. Открывается ли в браузере узла PC-02 страница http://www.nsalab.local (по имени)?",
+                "title": "13. Открывается ли в браузере компьютера PC-02 страница http://www.nsalab.local (по имени)?",
                 "placeholder": "Enter your answer here"
             },
             "q_14": {
                 "type": "string",
-                "title": "14. Открывается ли в браузере узла PC-02 страница http://209.165.201.2 (по IP-адресу)?",
+                "title": "14. Открывается ли в браузере компьютера PC-02 страница http://209.165.201.2 (по IP-адресу)?",
                 "placeholder": "Enter your answer here"
             },
             "q_15": {
                 "type": "string",
-                "title": "15. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "title": "15. Отвечает ли шлюз по умолчанию (172.16.2.1) на эхо-запросы компьютера PC-A до исправления настроек маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_16": {
                 "type": "string",
-                "title": "16. Ping-запрос на веб-сервер (209.165.201.2).",
+                "title": "16. Отвечает ли веб-сервер (209.165.201.2) на эхо-запросы компьютера PC-A до исправления настроек маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_17": {
                 "type": "string",
-                "title": "17. Ping-запрос на PC-01?",
+                "title": "17. Отвечает ли компьютер PC-01 на эхо-запросы компьютера PC-A до исправления настроек маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_18": {
                 "type": "string",
-                "title": "18. Ping-запрос на PC-02?",
+                "title": "18. Отвечает ли компьютер PC-02 на эхо-запросы компьютера PC-A до исправления настроек маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_19": {
                 "type": "string",
-                "title": "19. Ping-запрос на PC-B?",
+                "title": "19. Отвечает ли компьютер PC-B на эхо-запросы компьютера PC-A?",
                 "placeholder": "Enter your answer here"
             },
             "q_20": {
                 "type": "string",
-                "title": "20. Открывается ли в браузере узла PC-A страница http://www.nsalab.local (по имени)?",
+                "title": "20. Открывается ли в браузере компьютера PC-A страница http://www.nsalab.local (по имени) до исправления настроек маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_21": {
                 "type": "string",
-                "title": "21. Открывается ли в браузере узла PC-A страница http://209.165.201.2 (по IP-адресу)?",
+                "title": "21. Открывается ли в браузере компьютера PC-A страница http://209.165.201.2 (по IP-адресу) до исправления настроек маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_22": {
                 "type": "string",
-                "title": "22. Ping-запрос на шлюз по умолчанию (172.16.1.1)?",
+                "title": "22. Отвечает ли шлюз по умолчанию (172.16.2.1) на эхо-запросы компьютера PC-B?",
                 "placeholder": "Enter your answer here"
             },
             "q_23": {
                 "type": "string",
-                "title": "23. Ping-запрос на веб-сервер (209.165.201.2).",
+                "title": "23. Отвечает ли веб-сервер (209.165.201.2) на эхо-запросы компьютера PC-B?",
                 "placeholder": "Enter your answer here"
             },
             "q_24": {
                 "type": "string",
-                "title": "24. Ping-запрос на PC-01?",
+                "title": "24. Отвечает ли компьютер PC-01 на эхо-запросы компьютера PC-B?",
                 "placeholder": "Enter your answer here"
             },
             "q_25": {
                 "type": "string",
-                "title": "25. Ping-запрос на PC-02?",
+                "title": "25. Отвечает ли компьютер PC-02 на эхо-запросы компьютера PC-B?",
                 "placeholder": "Enter your answer here"
             },
             "q_26": {
                 "type": "string",
-                "title": "26. Ping-запрос на PC-A?",
+                "title": "26. Отвечает ли компьютер PC-A на эхо-запросы компьютера PC-B?",
                 "placeholder": "Enter your answer here"
             },
             "q_27": {
                 "type": "string",
-                "title": "27. Открывается ли в браузере узла PC-B страница http://www.nsalab.local (по имени)?",
+                "title": "27. Открывается ли в браузере компьютера PC-B страница http://www.nsalab.local (по имени)?",
                 "placeholder": "Enter your answer here"
             },
             "q_28": {
                 "type": "string",
-                "title": "28. Открывается ли в браузере узла PC-B страница http://209.165.201.2 (по IP-адресу)?",
+                "title": "28. Открывается ли в браузере компьютера PC-B страница http://209.165.201.2 (по IP-адресу)?",
                 "placeholder": "Enter your answer here"
             },
             "q_29": {
                 "type": "string",
-                "title": "29. Можно ли устранить все неполадки узла PC-B, если он по-прежнему использует DNS2? Если нет, что нужно сделать?",
+                "title": "29. Компьютер PC-B использует добавленный при модернизации сервер DNS2 (209.165.201.4). Устранены ли все его неполадки без смены DNS-сервера? Если нет, что нужно сделать?",
                 "placeholder": "Enter your answer here"
             }
         }
