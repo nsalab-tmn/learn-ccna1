@@ -1,9 +1,10 @@
 {
     "title": "Разделение на подсети в IPv6",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv6-addressing.subnet-an-ipv6-network",
+    "type": "scored-lecture",
     "description": "Как правильно сегментировать IPv6-сеть на подсети?",
     "difficulty": 3,
-    "duration": "PT0H4M",
+    "duration": "PT0H9M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,132 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv6-addressing.subnet-an-ipv6-network",
+            "kind": "K",
+            "bloom": "apply",
+            "objective": "Identify the subnet ID as the GUA field used for IPv6 subnetting, locate it in an address with a /48 global routing prefix and a /64 prefix, and calculate its length in bits for a given global routing prefix."
+        },
+        "requires": [
+            "ksa.ccna1.ipv6-addressing.ipv6-address-types",
+            "ksa.ccna1.ipv4-addressing.subnet-an-ipv4-network"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "apply",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): IPv6 designed for subnetting, the subnet ID field, locating the subnet ID, subnet-ID bits for a /32 global routing prefix.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Верно или нет утверждение? IPv6 разработали с учетом подсетей.",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Истина",
+                    "correct": true
+                },
+                {
+                    "answer": "Ложь",
+                    "correct": false,
+                    "comment": "Правильный ответ — Истина. IPv6 имеет отдельное поле ID подсети в префиксной части адреса, которое можно использовать для создания подсетей."
+                }
+            ]
+        },
+        {
+            "question": "Какое поле GUA IPv6 используется для подсетей?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Префикс",
+                    "correct": false,
+                    "comment": "Поле 'ID подсети', которое находится между полем 'Префикс глобальной маршрутизации' и полем 'ID интерфейса', используется для определения подсетей."
+                },
+                {
+                    "answer": "Сеть",
+                    "correct": false,
+                    "comment": "Поле 'ID подсети', которое находится между полем 'Префикс глобальной маршрутизации' и полем 'ID интерфейса', используется для определения подсетей."
+                },
+                {
+                    "answer": "Префикс глобальной маршрутизации",
+                    "correct": false,
+                    "comment": "Поле 'ID подсети', которое находится между полем 'Префикс глобальной маршрутизации' и полем 'ID интерфейса', используется для определения подсетей."
+                },
+                {
+                    "answer": "Идентификатор подсети",
+                    "correct": true
+                },
+                {
+                    "answer": "Идентификатор интерфейса",
+                    "correct": false,
+                    "comment": "Поле 'ID подсети', которое находится между полем 'Префикс глобальной маршрутизации' и полем 'ID интерфейса', используется для определения подсетей."
+                }
+            ]
+        },
+        {
+            "question": "Учитывая  префикс глобальной маршрутизации /48 и префикс /64, какая часть идентифицирует подсеть следующего адреса: 2001:db8:cafe:1111:2222:3333:4444:5555",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cafe",
+                    "correct": false,
+                    "comment": "Часть адреса подсети — это 16 бит между префиксами /48 и /64, которые имеют значение 1111."
+                },
+                {
+                    "answer": "1111",
+                    "correct": true
+                },
+                {
+                    "answer": "2222",
+                    "correct": false,
+                    "comment": "Часть адреса подсети — это 16 бит между префиксами /48 и /64, которые имеют значение 1111."
+                },
+                {
+                    "answer": "3333",
+                    "correct": false,
+                    "comment": "Часть адреса подсети — это 16 бит между префиксами /48 и /64, которые имеют значение 1111."
+                },
+                {
+                    "answer": "4444",
+                    "correct": false,
+                    "comment": "Часть адреса подсети — это 16 бит между префиксами /48 и /64, которые имеют значение 1111."
+                }
+            ]
+        },
+        {
+            "question": "Учитывая префикс глобальной маршрутизации /32 и префикс /64, сколько битов будет выделено для идентификатора подсети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "8",
+                    "correct": false,
+                    "comment": "Часть адреса подсети состоит из 32 битов между префиксами /32 и /64."
+                },
+                {
+                    "answer": "16",
+                    "correct": false,
+                    "comment": "Часть адреса подсети состоит из 32 битов между префиксами /32 и /64."
+                },
+                {
+                    "answer": "32",
+                    "correct": true
+                },
+                {
+                    "answer": "48",
+                    "correct": false,
+                    "comment": "Часть адреса подсети состоит из 32 битов между префиксами /32 и /64."
+                },
+                {
+                    "answer": "64",
+                    "correct": false,
+                    "comment": "Часть адреса подсети состоит из 32 битов между префиксами /32 и /64."
+                }
+            ]
+        }
+    ]
 }

@@ -1,14 +1,126 @@
 {
     "title": "Структурированное проектирование",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv4-addressing.structured-design",
+    "type": "scored-lecture",
     "description": "Как правильно планировать адресное пространство? Какие адреса лучше назначать для разных типов устройств?",
     "difficulty": 3,
-    "duration": "PT0H5M",
+    "duration": "PT0H10M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
     "skills": {},
     "text": {
         "$ref": "./README.md"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv4-addressing.structured-design",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify where an addressing plan must conserve addresses (the DMZ) and where it is flexible (the intranet), choose dynamic (DHCP) or static addressing for a device type, and state why a fixed address-assignment pattern per device type helps."
+        },
+        "requires": [
+            "ksa.ccna1.ipv4-addressing.subnet-to-meet-requirements",
+            "ksa.ccna1.ipv4-addressing.variable-length-subnet-masking"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): conserving addresses in the DMZ, DHCP for end-user clients, static addresses for servers and intermediary devices, the address-assignment pattern.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Где при планировании адресов обычно нужно экономить адреса, а где есть большая гибкость?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Экономить — в DMZ с публичными адресами IPv4, гибкость — в интрасети с частными адресами",
+                    "correct": true
+                },
+                {
+                    "answer": "Экономить — в интрасети с частными адресами, гибкость — в DMZ",
+                    "correct": false,
+                    "comment": "Наоборот: в DMZ используется ограниченное публичное адресное пространство IPv4, а частные адреса интрасети, например 10.0.0.0/8 с более чем 16 миллионами адресов, дают большую гибкость."
+                },
+                {
+                    "answer": "Экономить нигде не нужно: частных адресов хватает любой организации",
+                    "correct": false,
+                    "comment": "В DMZ используется ограниченное публичное адресное пространство, и там адреса экономят, обычно с помощью VLSM. А крупным организациям и интернет-провайдерам не хватает даже частных адресов."
+                }
+            ]
+        },
+        {
+            "question": "Как в большинстве сетей назначают адреса клиентским устройствам конечных пользователей?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Динамически, по протоколу DHCP",
+                    "correct": true
+                },
+                {
+                    "answer": "Вручную, статическими адресами со сплошной нумерацией",
+                    "correct": false,
+                    "comment": "Статические адреса со сплошной нумерацией рекомендуют серверам и периферийным устройствам. Клиентам адреса выделяют динамически по DHCP: это снижает нагрузку на персонал и устраняет ошибки ввода."
+                },
+                {
+                    "answer": "Им назначают самый младший или самый старший адрес сети",
+                    "correct": false,
+                    "comment": "Так обычно адресуют интерфейс маршрутизатора, который служит шлюзом. Клиентам адреса выделяют динамически по DHCP."
+                },
+                {
+                    "answer": "Им назначают публичные адреса, к которым обращаются через NAT",
+                    "correct": false,
+                    "comment": "Публичные адреса нужны серверам, доступным из Интернета. Клиентам адреса выделяют динамически по DHCP."
+                }
+            ]
+        },
+        {
+            "question": "Каким устройствам нужны предсказуемые статически заданные IPv4-адреса? (выберите два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Серверам и периферийным устройствам",
+                    "correct": true
+                },
+                {
+                    "answer": "Промежуточным устройствам",
+                    "correct": true
+                },
+                {
+                    "answer": "Клиентским устройствам конечных пользователей",
+                    "correct": false,
+                    "comment": "Клиентам адреса обычно выделяют динамически по DHCP. Предсказуемые статические адреса нужны серверам, периферийным и промежуточным устройствам."
+                },
+                {
+                    "answer": "Беспроводным устройствам временных пользователей",
+                    "correct": false,
+                    "comment": "Временным пользователям и беспроводным устройствам адреса выдают по DHCP в аренду на определенный период. Предсказуемые статические адреса нужны серверам, периферийным и промежуточным устройствам."
+                }
+            ]
+        },
+        {
+            "question": "Зачем при проектировании схемы IP-адресации используют готовый шаблон назначения адресов каждому типу устройств?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Он упрощает добавление и удаление устройств, фильтрацию трафика по IP-адресам и документирование",
+                    "correct": true
+                },
+                {
+                    "answer": "Он позволяет обойтись без разделения сети на подсети",
+                    "correct": false,
+                    "comment": "Шаблон не заменяет разделение на подсети. Он упрощает добавление и удаление устройств, фильтрацию трафика по IP-адресам и документирование."
+                },
+                {
+                    "answer": "Он требует, чтобы все устройства получали адреса по DHCP",
+                    "correct": false,
+                    "comment": "Шаблон учитывает разные типы устройств: одним адреса выдает DHCP, другим назначают статические. Он упрощает добавление и удаление устройств, фильтрацию трафика и документирование."
+                }
+            ]
+        }
+    ]
 }

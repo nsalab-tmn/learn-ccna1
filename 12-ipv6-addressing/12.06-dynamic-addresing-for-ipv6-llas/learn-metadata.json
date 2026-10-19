@@ -1,9 +1,10 @@
 {
     "title": "Динамическое назначение LLA",
-    "materialType": "lecture",
+    "shortName": "ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-llas",
+    "type": "scored-lecture",
     "description": "Как происходит динамическое назначение link-local IPv6-адресов?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,132 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-llas",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe how a link-local address is created dynamically (FE80::/10 plus an EUI-64 or random interface ID) and when a router creates one, explain why a serial interface may share an Ethernet interface's LLA and why routers usually get static LLAs, and interpret the L code in show ipv6 route."
+        },
+        "requires": [
+            "ksa.ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-guas",
+            "ksa.ccna1.ipv6-addressing.gua-and-lla-static-configuration"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): dynamic LLA creation, the router's automatic LLA, a shared LLA on a serial interface, the L code, why router LLAs are set statically.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Как устройство динамически создает локальный адрес канала (LLA)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Объединяет префикс FE80::/10 с идентификатором интерфейса, полученным по EUI-64 или сгенерированным случайно",
+                    "correct": true
+                },
+                {
+                    "answer": "Получает готовый адрес от DHCPv6-сервера",
+                    "correct": false,
+                    "comment": "Динамический LLA устройство создает само: префикс FE80::/10 плюс идентификатор интерфейса, полученный по EUI-64 или сгенерированный случайно."
+                },
+                {
+                    "answer": "Берет префикс из сообщения RA и добавляет к нему MAC-адрес без изменений",
+                    "correct": false,
+                    "comment": "Префикс LLA всегда FE80::/10, а идентификатор интерфейса — 64-битный: он получен по EUI-64 или сгенерирован случайно."
+                }
+            ]
+        },
+        {
+            "question": "Когда маршрутизатор автоматически создает локальный IPv6-адрес канала на интерфейсе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Когда интерфейсу назначается глобальный индивидуальный адрес (GUA)",
+                    "correct": true
+                },
+                {
+                    "answer": "Только после команды ipv6 address с параметром link-local",
+                    "correct": false,
+                    "comment": "Эта команда задает LLA вручную. Автоматически маршрутизатор создает LLA, когда интерфейсу назначается GUA."
+                },
+                {
+                    "answer": "Только на последовательных интерфейсах",
+                    "correct": false,
+                    "comment": "Маршрутизатор создает LLA на каждом интерфейсе, которому назначается GUA. Последовательный интерфейс лишь берет для этого MAC-адрес интерфейса Ethernet."
+                }
+            ]
+        },
+        {
+            "question": "У интерфейса Serial0/1/0 маршрутизатора R1 динамический LLA совпадает с LLA интерфейса GigabitEthernet0/0/0. Почему так получается и почему это допустимо?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "У последовательного интерфейса нет MAC-адреса Ethernet, и он использует MAC-адрес первого интерфейса Ethernet, а LLA должен быть уникальным только в своем канале",
+                    "correct": true
+                },
+                {
+                    "answer": "Это ошибка конфигурации, и один из интерфейсов перестанет работать",
+                    "correct": false,
+                    "comment": "Совпадение допустимо: LLA должен быть уникальным только в своем канале. Последовательный интерфейс использует MAC-адрес первого доступного интерфейса Ethernet, потому что своего MAC-адреса Ethernet у него нет."
+                },
+                {
+                    "answer": "Оба интерфейса получили LLA от соседнего маршрутизатора",
+                    "correct": false,
+                    "comment": "Маршрутизатор создает LLA сам, по умолчанию с помощью EUI-64. Последовательный интерфейс использует MAC-адрес первого доступного интерфейса Ethernet, а совпадение допустимо, потому что LLA уникален только в своем канале."
+                },
+                {
+                    "answer": "Маршрутизатор различает такие LLA по таблице маршрутизации",
+                    "correct": false,
+                    "comment": "Локальные адреса канала не заносятся в таблицу маршрутизации, потому что их нельзя маршрутизировать. Совпадение допустимо, потому что LLA должен быть уникальным только в своем канале."
+                }
+            ]
+        },
+        {
+            "question": "Что означает код L у записи в выводе команды show ipv6 route?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Локальный маршрут — IPv6-адрес, назначенный интерфейсу маршрутизатора (для GUA — с префиксом /128)",
+                    "correct": true
+                },
+                {
+                    "answer": "Локальный адрес канала (LLA) интерфейса",
+                    "correct": false,
+                    "comment": "Код L — это не LLA: локальные адреса канала не включаются в таблицу маршрутизации. L обозначает локальный маршрут — адрес, назначенный интерфейсу, например GUA с префиксом /128."
+                },
+                {
+                    "answer": "Сеть с прямым подключением",
+                    "correct": false,
+                    "comment": "Сеть с прямым подключением обозначает код C. L обозначает локальный маршрут — адрес, назначенный интерфейсу, например GUA с префиксом /128."
+                }
+            ]
+        },
+        {
+            "question": "Почему на маршрутизаторах обычно задают LLA вручную, хотя они создаются автоматически?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "У динамического LLA слишком длинный идентификатор интерфейса, его трудно узнать и запомнить",
+                    "correct": true
+                },
+                {
+                    "answer": "Динамический LLA не уникален в своем канале",
+                    "correct": false,
+                    "comment": "Дело не в уникальности: LLA вручную задают потому, что длинный автоматический идентификатор интерфейса трудно узнать и запомнить."
+                },
+                {
+                    "answer": "Динамический LLA не отображается в выводе команды show ipv6 interface brief",
+                    "correct": false,
+                    "comment": "В выводе show ipv6 interface brief виден и динамический LLA, например FE80::7279:B3FF:FE92:3640. Вручную LLA задают потому, что длинный идентификатор интерфейса трудно узнать и запомнить."
+                }
+            ]
+        }
+    ]
 }

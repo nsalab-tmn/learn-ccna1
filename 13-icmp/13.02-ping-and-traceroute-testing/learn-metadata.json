@@ -1,9 +1,10 @@
 {
     "title": "Тестирование связности с помощью ping и traceroute",
-    "materialType": "lecture",
+    "shortName": "ccna1.icmp.ping-and-traceroute-testing",
+    "type": "scored-lecture",
     "description": "Как утилиты ping и traceroute помогают обнаружить проблемные участки в сети?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,137 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.icmp.ping-and-traceroute-testing",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Interpret the result of a ping to the loopback address and to the default gateway, and explain how traceroute uses increasing TTL values and Time Exceeded replies to list the hops, and what an asterisk or the last responding router in its output means."
+        },
+        "requires": [
+            "ksa.ccna1.icmp.icmp-messages",
+            "ksa.ccna1.network-layer.how-a-host-routes"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): ping to the loopback, ping to the default gateway, locating a fault with traceroute, TTL 1 and Time Exceeded, the asterisk in traceroute output.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Узел успешно получил ответы на эхо-запросы к адресу ::1. Что подтверждает этот результат?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "TCP/IP установлен и работает на локальном узле",
+                    "correct": true
+                },
+                {
+                    "answer": "Адрес, маска и шлюз на узле настроены верно",
+                    "correct": false,
+                    "comment": "Ответ от адреса loopback не значит, что адреса, маски или шлюзы настроены верно. Он подтверждает лишь, что TCP/IP установлен и работает на локальном узле."
+                },
+                {
+                    "answer": "Узел может обмениваться данными по локальной сети",
+                    "correct": false,
+                    "comment": "Эхо-запрос к ::1 узел отправляет самому себе. Обмен данными по локальной сети проверяют эхо-запросом к шлюзу по умолчанию."
+                },
+                {
+                    "answer": "Кабель узла подключен и исправен",
+                    "correct": false,
+                    "comment": "Ответ от адреса loopback ничего не говорит о нижних уровнях сетевого стека. Он подтверждает лишь, что TCP/IP установлен и работает на локальном узле."
+                }
+            ]
+        },
+        {
+            "question": "Эхо-запрос с узла на его шлюз по умолчанию остается без ответа, а другой узел той же локальной сети на эхо-запрос отвечает. Какая причина возможна?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "На узле настроен неверный адрес шлюза, или система безопасности не дает маршрутизатору отвечать на эхо-запросы",
+                    "correct": true
+                },
+                {
+                    "answer": "Протокол TCP/IP на узле не работает",
+                    "correct": false,
+                    "comment": "Другой узел локальной сети отвечает, значит, TCP/IP на узле работает. Проблема связана со шлюзом: на узле настроен неверный адрес шлюза, или система безопасности блокирует ответы."
+                },
+                {
+                    "answer": "Узел не подключен к локальной сети",
+                    "correct": false,
+                    "comment": "Другой узел локальной сети отвечает, значит, подключение к локальной сети есть. Проблема связана со шлюзом: на узле настроен неверный адрес шлюза, или система безопасности блокирует ответы."
+                },
+                {
+                    "answer": "Неисправен один из маршрутизаторов в удаленной сети",
+                    "correct": false,
+                    "comment": "Эхо-запрос к шлюзу по умолчанию не выходит за пределы локальной сети, поэтому удаленные маршрутизаторы тут ни при чем. Проблема связана со шлюзом: неверный адрес шлюза или блокировка ответов системой безопасности."
+                }
+            ]
+        },
+        {
+            "question": "Эхо-запросы к удаленному серверу остаются без ответа. Как утилита traceroute (tracert) поможет найти место неполадки?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Адрес последнего маршрутизатора, ответившего на трассировку, укажет, где находится проблема или ограничение системы безопасности",
+                    "correct": true
+                },
+                {
+                    "answer": "Она проверит, установлен ли TCP/IP на самом узле",
+                    "correct": false,
+                    "comment": "Это проверяют эхо-запросом к адресу loopback. traceroute составляет список переходов на пути к узлу назначения, и последний ответивший маршрутизатор указывает на место проблемы."
+                },
+                {
+                    "answer": "Она покажет, верно ли на узле настроены адрес и маска",
+                    "correct": false,
+                    "comment": "traceroute не проверяет настройки узла: она составляет список переходов на пути к узлу назначения, и последний ответивший маршрутизатор указывает на место проблемы."
+                }
+            ]
+        },
+        {
+            "question": "Первая серия сообщений traceroute отправляется со значением TTL, равным 1. Что произойдет на первом маршрутизаторе пути?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "TTL уменьшится до 0, маршрутизатор ответит сообщением ICMP «превышено время жизни» (Time Exceeded), и traceroute узнает адрес первого перехода",
+                    "correct": true
+                },
+                {
+                    "answer": "Маршрутизатор перешлет пакет дальше со значением TTL, равным 2",
+                    "correct": false,
+                    "comment": "Маршрутизатор уменьшает TTL, а не увеличивает. На первом маршрутизаторе TTL станет 0, и он ответит сообщением ICMP «превышено время жизни» (Time Exceeded)."
+                },
+                {
+                    "answer": "Маршрутизатор ответит эхо-ответом ICMP",
+                    "correct": false,
+                    "comment": "Эхо-ответом или сообщением о недоступности порта отвечает узел назначения. Первый маршрутизатор, на котором TTL дошел до 0, отвечает сообщением ICMP «превышено время жизни» (Time Exceeded)."
+                }
+            ]
+        },
+        {
+            "question": "Что обозначает символ звездочки (*) в выводе traceroute?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Потерянный пакет или отсутствие ответа на пакет",
+                    "correct": true
+                },
+                {
+                    "answer": "Что узел назначения достигнут",
+                    "correct": false,
+                    "comment": "О достижении узла назначения говорит его ответ: сообщение ICMP о недоступности порта или эхо-ответ. Звездочкой обозначают потерянный пакет или отсутствие ответа на пакет."
+                },
+                {
+                    "answer": "Время RTT для этого перехода",
+                    "correct": false,
+                    "comment": "RTT — это время доставки пакета и получения ответа, оно выводится для каждого перехода. Звездочкой обозначают потерянный пакет или отсутствие ответа на пакет."
+                }
+            ]
+        }
+    ]
 }
