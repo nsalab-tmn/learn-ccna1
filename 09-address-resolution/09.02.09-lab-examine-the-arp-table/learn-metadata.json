@@ -34,22 +34,22 @@
         "properties": {
             "q_1": {
                 "type": "string",
-                "title": "1. Этот адрес есть в таблице выше?",
+                "title": "1. Есть ли MAC-адрес назначения ARP-запроса в таблице адресации на странице «Топология и адресация»?",
                 "placeholder": "Enter your answer here"
             },
             "q_2": {
                 "type": "string",
-                "title": "2. Сколько копий единицы данных протокола (PDU) создал **Switch1**?",
+                "title": "2. Сколько копий ARP-запроса создал коммутатор Switch1?",
                 "placeholder": "Enter your answer here"
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Какой IP-адрес имеет устройство, которое приняло единицу данных протокола (PDU)?",
+                "title": "3. Какой IP-адрес у устройства, которое приняло ARP-запрос и ответило на него?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
                 "type": "string",
-                "title": "4. Что произошло с MAC-адресами источника и назначения?",
+                "title": "4. Как изменились MAC-адреса источника и назначения в ARP-ответе по сравнению с ARP-запросом?",
                 "placeholder": "Enter your answer here"
             },
             "q_5": {
@@ -64,7 +64,7 @@
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Какому IP-адресу соответствует запись MAC-адреса?",
+                "title": "7. Какому IP-адресу соответствует MAC-адрес в записи таблицы ARP компьютера PC-31-2?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
@@ -74,22 +74,22 @@
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Сколько ответов было отправлено и получено?",
+                "title": "9. Сколько эхо-запросов отправил ноутбук Laptop-10-2 и сколько ответов получил?",
                 "placeholder": "Enter your answer here"
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Совпадают ли записи с указанными в таблице выше?",
+                "title": "10. Совпадают ли записи таблицы MAC-адресов коммутатора Switch1 с MAC-адресами из таблицы адресации?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
                 "type": "string",
-                "title": "11. Совпадают ли записи с указанными в таблице выше?",
+                "title": "11. Совпадают ли записи таблицы MAC-адресов коммутатора Switch0 с MAC-адресами из таблицы адресации?",
                 "placeholder": "Enter your answer here"
             },
             "q_12": {
                 "type": "string",
-                "title": "12. Почему два MAC-адреса связаны с одним портом?",
+                "title": "12. Почему с портом F0/2 коммутатора Switch0 связаны два MAC-адреса?",
                 "placeholder": "Enter your answer here"
             },
             "q_13": {
@@ -114,12 +114,12 @@
             },
             "q_17": {
                 "type": "string",
-                "title": "17. Сколько MAC-адресов в таблице? Почему?",
+                "title": "17. Почему маршрутизатор Router1 не выполняет команду show mac address-table?",
                 "placeholder": "Enter your answer here"
             },
             "q_18": {
                 "type": "string",
-                "title": "18. Есть ли запись для **172.16.31.2**?",
+                "title": "18. Есть ли в таблице ARP маршрутизатора Router1 запись для адреса 172.16.31.2?",
                 "placeholder": "Enter your answer here"
             },
             "q_19": {
