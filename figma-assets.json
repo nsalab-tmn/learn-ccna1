@@ -10070,19 +10070,6 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-p7pvyyz",
-   "kind": "native",
-   "display": {
-    "key": "12.7.4-1",
-    "title": "topology"
-   },
-   "out": {
-    "path": "12-ipv6-addressing/12.07.04-lab-identify-ipv6-addresses/assets/12.7.4-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-3h3uurf",
    "kind": "native",
    "display": {

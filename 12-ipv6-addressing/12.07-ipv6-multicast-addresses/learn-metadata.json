@@ -4,7 +4,7 @@
     "type": "scored-lecture",
     "description": "Какие типы многоадресной рассылки существуют в IPv6?",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.ipv6-addressing.ipv6-multicast-addresses",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Identify the IPv6 multicast prefix (FF00::/8), match ff02::1 and ff02::2 to the all-nodes and all-routers groups and to the RA and RS messages sent to them, state that a multicast address can only be a destination, and explain the benefit of a solicited-node multicast address."
+            "objective": "Identify the IPv6 multicast prefix (FF00::/8), match ff02::1 and ff02::2 to the all-nodes and all-routers groups and to the RA and RS messages sent to them, state that a multicast address can only be a destination, explain the benefit of a solicited-node multicast address, and identify a loopback, unique local or global unicast address from its leading digits."
         },
         "requires": [
             "ksa.ccna1.ipv6-addressing.ipv6-address-types",
@@ -30,7 +30,7 @@
             "mode": "test",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): FF00::/8, ff02::1 and RA, ff02::2 and RS, multicast only as a destination, the solicited-node multicast address.",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): FF00::/8, ff02::1 and RA, ff02::2 and RS, multicast only as a destination, the solicited-node multicast address, the type of a loopback, ULA and GUA address.",
             "calibration": "operator-judge"
         }
     },
@@ -138,6 +138,81 @@
                     "answer": "Его можно указать как адрес источника пакета",
                     "correct": false,
                     "comment": "Групповые адреса бывают только адресами назначения. Польза адреса запрашиваемого узла в том, что сетевой адаптер может отфильтровать кадр по MAC-адресу назначения, не передавая его в процесс IPv6."
+                }
+            ]
+        },
+        {
+            "question": "Какой тип у IPv6-адреса ::1?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "адрес loopback",
+                    "correct": true
+                },
+                {
+                    "answer": "неопределенный адрес",
+                    "correct": false,
+                    "comment": "Неопределенный адрес записывается как :: — все 128 бит нулевые. В адресе ::1 единичен последний бит: это адрес loopback ::1/128."
+                },
+                {
+                    "answer": "локальный адрес канала (LLA)",
+                    "correct": false,
+                    "comment": "Локальные адреса канала начинаются с fe80. Адрес ::1, в котором все биты нулевые, кроме последнего, — это адрес loopback."
+                },
+                {
+                    "answer": "групповой адрес",
+                    "correct": false,
+                    "comment": "Групповые адреса входят в диапазон FF00::/8 и начинаются с ff. Адрес ::1 — это адрес loopback."
+                }
+            ]
+        },
+        {
+            "question": "Какой тип у IPv6-адреса fc00:22:a:2::cd4:23e4:76fa?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уникальный локальный адрес (ULA)",
+                    "correct": true
+                },
+                {
+                    "answer": "глобальный индивидуальный адрес (GUA)",
+                    "correct": false,
+                    "comment": "Сейчас назначаются GUA из диапазона 2000::/3: их первая шестнадцатеричная цифра — 2 или 3. Адрес начинается с fc00 и входит в диапазон уникальных локальных адресов fc00::/7."
+                },
+                {
+                    "answer": "локальный адрес канала (LLA)",
+                    "correct": false,
+                    "comment": "Локальные адреса канала начинаются с fe80. Адрес fc00:… входит в диапазон fc00::/7 — это уникальный локальный адрес."
+                },
+                {
+                    "answer": "групповой адрес",
+                    "correct": false,
+                    "comment": "Групповые адреса начинаются с ff (FF00::/8). Адрес fc00:… — уникальный локальный адрес из диапазона fc00::/7."
+                }
+            ]
+        },
+        {
+            "question": "Какой тип у IPv6-адреса 2033:db8:1:1:22:a33d:259a:21fe?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "глобальный индивидуальный адрес (GUA)",
+                    "correct": true
+                },
+                {
+                    "answer": "уникальный локальный адрес (ULA)",
+                    "correct": false,
+                    "comment": "Уникальные локальные адреса входят в диапазон fc00::/7 и начинаются с fc или fd. Первая цифра 2 означает диапазон 2000::/3 — это GUA."
+                },
+                {
+                    "answer": "локальный адрес канала (LLA)",
+                    "correct": false,
+                    "comment": "Локальные адреса канала начинаются с fe80. Адрес с первой цифрой 2 входит в диапазон 2000::/3 — это GUA."
+                },
+                {
+                    "answer": "групповой адрес",
+                    "correct": false,
+                    "comment": "Групповые адреса начинаются с ff (FF00::/8). Адрес с первой цифрой 2 входит в диапазон 2000::/3 — это GUA."
                 }
             ]
         }
