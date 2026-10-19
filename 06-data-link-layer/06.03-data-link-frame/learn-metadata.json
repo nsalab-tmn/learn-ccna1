@@ -1,9 +1,10 @@
 {
     "title": "Кадр канала передачи данных",
-    "materialType": "lecture",
+    "shortName": "ccna1.data-link-layer.data-link-frame",
+    "type": "scored-lecture",
     "description": "Что такое кадр и из чего он состоит? Чем отличаются кадры в локальных и глобальных сетях? Что такое адрес канального уровня?",
     "difficulty": 3,
-    "duration": "PT0H11M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,130 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.data-link-layer.data-link-frame",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify what the data link layer adds to a packet (header and trailer), the purpose of the trailer's error-detection field, the order of Layer 2 and Layer 3 address fields, and the Layer 2 protocols (Ethernet, 802.11, PPP) from IP and UDP."
+        },
+        "requires": [
+            "ksa.ccna1.data-link-layer.purpose-of-the-data-link-layer",
+            "ksa.ccna1.data-link-layer.topologies",
+            "ksa.ccna1.protocols-and-models.data-access"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): header and trailer, error detection, order of address fields, Layer 2 protocols.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Что добавляет канальный уровень к пакету третьего уровня для создания кадра? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "флаги",
+                    "correct": false,
+                    "comment": "Канальный уровень добавляет заголовок, содержащий адреса второго уровня источника и назначения, и окончание, содержащее контрольную последовательность кадра (FCS)"
+                },
+                {
+                    "answer": "порядковый номер",
+                    "correct": false,
+                    "comment": "Канальный уровень добавляет заголовок, содержащий адреса второго уровня источника и назначения, и окончание, содержащее контрольную последовательность кадра (FCS)"
+                },
+                {
+                    "answer": "заголовок",
+                    "correct": true
+                },
+                {
+                    "answer": "окончание",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какова функция последнего поля в кадре канального уровня?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "определяет наличие ошибок при передаче кадра",
+                    "correct": true
+                },
+                {
+                    "answer": "указывает особые службы управления потоком, например качество обслуживания (QoS).",
+                    "correct": false,
+                    "comment": "Последним полем кадра канального уровня является последовательность проверки кадров (FCS), которая используется для определения наличия ошибок передачи кадра"
+                },
+                {
+                    "answer": "определяет начальную и конечную границы кадра",
+                    "correct": false,
+                    "comment": "Последним полем кадра канального уровня является последовательность проверки кадров (FCS), которая используется для определения наличия ошибок передачи кадра"
+                },
+                {
+                    "answer": "указывает протокол третьего уровня в поле данных",
+                    "correct": false,
+                    "comment": "Последним полем кадра канального уровня является последовательность проверки кадров (FCS), которая используется для определения наличия ошибок передачи кадра"
+                }
+            ]
+        },
+        {
+            "question": "Какой вариант перечисляет поля адресов второго и третьего уровней в правильном порядке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "адрес NIC назначения, адрес NIC источника, IP-адрес источника, IP-адрес назначения",
+                    "correct": true
+                },
+                {
+                    "answer": "адрес NIC источника, адрес NIC назначения, IP-адрес источника, IP-адрес назначения",
+                    "correct": false,
+                    "comment": "Правильный порядок: адрес NIC назначения, адрес NIC источника, IP-адрес источника, IP-адрес назначения"
+                },
+                {
+                    "answer": "адрес NIC назначения, адрес NIC источника, IP-адрес назначения, IP-адрес источника",
+                    "correct": false,
+                    "comment": "Правильный порядок: адрес NIC назначения, адрес NIC источника, IP-адрес источника, IP-адрес назначения"
+                },
+                {
+                    "answer": "адрес NIC источника, адрес NIC назначения, IP-адрес назначения, IP-адрес источника",
+                    "correct": false,
+                    "comment": "Правильный порядок: адрес NIC назначения, адрес NIC источника, IP-адрес источника, IP-адрес назначения"
+                }
+            ]
+        },
+        {
+            "question": "Какие из перечисленных ниже протоколов относятся к канальному уровню? (верны три варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "802.11",
+                    "correct": true
+                },
+                {
+                    "answer": "Ethernet",
+                    "correct": true
+                },
+                {
+                    "answer": "IP",
+                    "correct": false,
+                    "comment": "802.11, Ethernet и PPP являются протоколами уровня 2, IP — уровня 3, UDP — уровня 4"
+                },
+                {
+                    "answer": "PPP",
+                    "correct": true
+                },
+                {
+                    "answer": "UDP",
+                    "correct": false,
+                    "comment": "802.11, Ethernet и PPP являются протоколами уровня 2, IP — уровня 3, UDP — уровня 4"
+                }
+            ]
+        }
+    ]
 }
