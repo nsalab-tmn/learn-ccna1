@@ -80,6 +80,10 @@ devices:
     ipconfig 64.100.0.3 255.255.255.248 64.100.0.1
     ipv6config 2001:db8:cafe::3/64 fe80::1
     ipv6config fe80::2 link-local
+    service dns on
+    dns record www.nsalab.local a 64.100.0.3
+    service http on
+    http file index.html <html><head><title>www.nsalab.local</title></head><body><h1>www.nsalab.local</h1><p>Сервер Web: страница открылась, значит, адресация и маршруты до него работают.</p></body></html>
 - name: S1
   type: switch
   model: NS01
