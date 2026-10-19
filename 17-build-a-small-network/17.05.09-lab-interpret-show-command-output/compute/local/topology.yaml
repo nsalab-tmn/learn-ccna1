@@ -94,3 +94,239 @@ links:
     device: ISPRouter
     port: Console
   cable: console
+scenario:
+  pages:
+    - title: "Топология и адресация"
+      body: |
+        | Кабель | Устройство | Порт | Устройство | Порт |
+        |---|---|---|---|---|
+        | Последовательный | Internet | S0/0/0 | ISPRouter | S0/0/0 |
+        | Медный | ISPRouter | G0/0 | Switch0 | G0/1 |
+        | Медный | ISP-PC | F0 | Switch0 | F0/1 |
+        | Медный | ISP-Server | F0 | Switch0 | F0/2 |
+        | Консольный | ISP-PC | RS232 | ISPRouter | Console |
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | ISPRouter | G0/0 | 209.165.201.1 | 255.255.255.224 | — |
+        | ISPRouter | S0/0/0 | 209.165.200.226 | 255.255.255.252 | — |
+        | ISP-PC | NIC | 209.165.201.10 | 255.255.255.224 | 209.165.201.1 |
+        | ISP-Server | NIC | 209.165.201.11 | 255.255.255.224 | 209.165.201.1 |
+    - title: "Начальное состояние"
+      body: |
+        - Маршрутизатор ISPRouter настроен: заданы имя устройства, пароль привилегированного режима EXEC **class** и локальный пользователь ISPadmin, а пароли хранятся в конфигурации в зашифрованном виде. Линии VTY допускают удаленный вход локальных пользователей по протоколам SSH и Telnet.
+        - На интерфейсах G0/0 (описание ISP LAN) и S0/0/0 (описание Link to the Internet) маршрутизатора заданы IPv4-адреса по таблице адресации, и интерфейсы включены. Маршрут по умолчанию ведет через интерфейс S0/0/0 в сторону облака Internet. Остальные интерфейсы маршрутизатора не настроены.
+        - Коммутатор Switch0 не настроен: все его параметры имеют значения по умолчанию.
+        - На компьютере ISP-PC и сервере ISP-Server заданы IP-адреса, маски подсети и шлюз по умолчанию по таблице адресации.
+        - Консольный кабель соединяет порт RS232 компьютера ISP-PC с консольным портом маршрутизатора ISPRouter. Консоль маршрутизатора открывается только по этому кабелю: щелчок по маршрутизатору на схеме ее не открывает, а выводит сообщение о том, что подключаться нужно с компьютера командой terminal.
+        - Облако Internet только изображает сеть вышестоящего провайдера: устройств за ним нет.
+
+        В этой лабораторной работе ничего настраивать не нужно: команды show только выводят сведения и не меняют конфигурацию маршрутизатора.
+
+        **Шаг 1.** Откройте окно компьютера ISP-PC и на вкладке «Рабочий стол» запустите приложение «Командная строка». Проверьте связь со шлюзом по умолчанию — интерфейсом G0/0 маршрутизатора ISPRouter — командой **ping 209.165.201.1**. Компьютер получает ответы на все четыре эхо-запроса. Сведения об этом обмене позже появятся в выводе команд show на маршрутизаторе.
+
+        ```
+        C:\>ping 209.165.201.1
+
+        Pinging 209.165.201.1 with 32 bytes of data:
+
+        Reply from 209.165.201.1: bytes=32 time=1ms TTL=255
+        Reply from 209.165.201.1: bytes=32 time<1ms TTL=255
+        Reply from 209.165.201.1: bytes=32 time<1ms TTL=255
+        Reply from 209.165.201.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 209.165.201.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+    - title: "Подключение к консоли маршрутизатора"
+      body: |
+        **Шаг 1.** В приложении «Командная строка» компьютера ISP-PC введите команду **terminal**: компьютер подключится к консоли маршрутизатора ISPRouter по консольному кабелю. Нажмите Enter, чтобы получить приглашение ISPRouter>.
+
+        ```
+        C:\>terminal
+        Connected to ISPRouter console (9600 8N1, no flow control). Press Ctrl+] to return to ISP-PC.
+        ```
+
+        **Примечание.** Та же консоль открывается приложением «Терминал» на вкладке «Рабочий стол» компьютера ISP-PC. Сочетание клавиш Ctrl+] закрывает консоль и возвращает в командную строку компьютера.
+
+        **Шаг 2.** Перейдите в привилегированный режим EXEC командой **enable** и введите пароль **class**: символы пароля на экране не отображаются. Приглашение сменится на ISPRouter#.
+
+        ```
+        ISPRouter>enable
+        Password: 
+        ```
+
+        **Примечание.** Длинный вывод команды останавливается после каждых 24 строк на строке --More--. Клавиша пробела выводит следующую страницу, клавиша Enter — следующую строку, а любая другая клавиша прерывает вывод.
+    - title: "Анализ сведений об интерфейсах"
+      body: |
+        **Шаг 1.** Выведите краткую сводку об интерфейсах маршрутизатора командой **show ip interface brief**. Каждому интерфейсу соответствует одна строка: его IPv4-адрес (столбец IP-Address), способ назначения адреса (столбец Method) и состояние (столбцы Status и Protocol).
+
+        ```
+        ISPRouter#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         209.165.201.1   YES manual up                    up
+        GigabitEthernet0/1         unassigned      YES unset  administratively down down
+        Serial0/0/0                209.165.200.226 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Примечание.** Столбец Status показывает состояние интерфейса на физическом уровне, а столбец Protocol — на канальном. Интерфейс работает, когда в обоих столбцах указано up. Состояние administratively down означает, что интерфейс выключен: интерфейсы маршрутизатора выключены, пока их не включат командой no shutdown. Значение manual в столбце Method означает, что адрес задан вручную.
+
+        **Шаг 2.** Ответьте на вопрос 10 в форме ответов.
+
+        **Шаг 3.** Выведите сведения о протоколах интерфейсов командой **show protocols**. Для каждого интерфейса команда выводит его состояние, а для интерфейса с IPv4-адресом — еще и строку Internet address.
+
+        ```
+        ISPRouter#show protocols
+        Global values:
+          Internet Protocol routing is enabled
+        GigabitEthernet0/0 is up, line protocol is up
+          Internet address is 209.165.201.1/27
+        GigabitEthernet0/1 is administratively down, line protocol is down
+        Serial0/0/0 is up, line protocol is up
+          Internet address is 209.165.200.226/30
+        Serial0/0/1 is administratively down, line protocol is down
+        ```
+
+        **Примечание.** Запись 209.165.201.1/27 — IPv4-адрес с длиной префикса: число после косой черты показывает, сколько первых битов адреса занимает сетевая часть. Длине префикса /27 соответствует маска подсети 255.255.255.224, а длине /30 — маска 255.255.255.252.
+
+        **Шаг 4.** Выведите подробные сведения об интерфейсах командой **show interfaces**. Вывод занимает несколько страниц: нажимайте пробел на строке --More--, пока снова не появится приглашение ISPRouter#. Ниже приведены сведения об интерфейсе GigabitEthernet0/0: его состояние, MAC-адрес (строка Hardware … address is), описание (Description), IPv4-адрес, полоса пропускания (BW), режим дуплекса и скорость, а затем счетчики. Сведения о других интерфейсах устроены так же.
+
+        ```
+        ISPRouter#show interfaces
+        GigabitEthernet0/0 is up, line protocol is up
+          Hardware is Gigabit Ethernet, address is 00d0.1125.3001 (bia 00d0.1125.3001)
+          Description: ISP LAN
+          Internet address is 209.165.201.1/27
+          MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
+             reliability 255/255, txload 1/255, rxload 1/255
+          Encapsulation ARPA, loopback not set
+          Keepalive set (10 sec)
+          Full Duplex, 1Gbps, media type is RJ45
+          output flow-control is unsupported, input flow-control is unsupported
+          ARP type: ARPA, ARP Timeout 04:00:00
+          Last input 00:00:15, output 00:00:15, output hang never
+          Last clearing of "show interface" counters never
+          Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+          Queueing strategy: fifo
+          Output queue: 0/40 (size/max)
+          5 minute input rate 0 bits/sec, 0 packets/sec
+          5 minute output rate 0 bits/sec, 0 packets/sec
+             5 packets input, 360 bytes, 0 no buffer
+             Received 1 broadcasts (0 IP multicasts)
+             0 runts, 0 giants, 0 throttles
+             0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+             0 watchdog, 0 multicast, 0 pause input
+             5 packets output, 360 bytes, 0 underruns
+             0 output errors, 0 collisions, 0 interface resets
+             0 unknown protocol drops
+             0 babbles, 0 late collision, 0 deferred
+             0 lost carrier, 0 no carrier, 0 pause output
+             0 output buffer failures, 0 output buffers swapped out
+        …
+        ```
+
+        **Примечание.** Строки packets input и packets output показывают, сколько пакетов интерфейс принял и отправил, а строки input errors и output errors — сколько из них пришли или ушли с ошибками. Пять принятых пакетов — это запрос ARP (строка Received 1 broadcasts) и четыре эхо-запроса компьютера ISP-PC со страницы «Начальное состояние», пять отправленных — ответ ARP и четыре эхо-ответа. Счетчики растут, пока через интерфейс проходит трафик.
+
+        **Шаг 5.** Ответьте на вопрос 8 в форме ответов.
+
+        **Шаг 6.** Выведите таблицу ARP маршрутизатора командой **show arp**. Каждая строка связывает IPv4-адрес с MAC-адресом (столбец Hardware Addr) и интерфейсом, через который этот адрес доступен.
+
+        ```
+        ISPRouter#show arp
+        Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+        Internet  209.165.201.1           -   00d0.1125.3001  ARPA   GigabitEthernet0/0
+        Internet  209.165.201.10          0   00d0.424b.5301  ARPA   GigabitEthernet0/0
+        ```
+
+        **Примечание.** Запись с прочерком в столбце Age (min) — адрес самого маршрутизатора на интерфейсе G0/0. Запись об адресе 209.165.201.10 маршрутизатор добавил, когда компьютер ISP-PC перед эхо-запросами отправил ему запрос ARP; число в столбце Age (min) — возраст записи в минутах.
+
+        **Шаг 7.** Сравните, какие сведения об интерфейсах выводят команды show ip interface brief, show protocols, show interfaces и show arp, и ответьте на вопросы 1, 2, 3 и 5 в форме ответов.
+    - title: "Анализ таблицы маршрутизации"
+      body: |
+        **Шаг 1.** Выведите таблицу маршрутизации командой **show ip route**. В начале вывода расшифрованы коды источников маршрутов, ниже указан шлюз последней надежды и перечислены маршруты: сети, которые знает маршрутизатор, и интерфейсы, через которые он передает трафик в эти сети.
+
+        ```
+        ISPRouter#show ip route
+        Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+               D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+               N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+               E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+               i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+               * - candidate default, U - per-user static route, o - ODR
+               P - periodic downloaded static route
+
+        Gateway of last resort is 0.0.0.0 to network 0.0.0.0
+
+        S*    0.0.0.0/0 is directly connected, Serial0/0/0
+              209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        209.165.200.224/30 is directly connected, Serial0/0/0
+        L        209.165.200.226/32 is directly connected, Serial0/0/0
+              209.165.201.0/24 is variably subnetted, 2 subnets, 2 masks
+        C        209.165.201.0/27 is directly connected, GigabitEthernet0/0
+        L        209.165.201.1/32 is directly connected, GigabitEthernet0/0
+        ```
+
+        **Примечание.** Код C обозначает сеть, напрямую подключенную к интерфейсу, а код L — адрес самого интерфейса (маршрут с длиной префикса /32). Код S обозначает статический маршрут, а звездочка — маршрут по умолчанию: маршрут 0.0.0.0/0 через интерфейс S0/0/0 ведет в сторону облака Internet трафик во все сети, которых нет в таблице. Строка Gateway of last resort называет этот маршрут шлюзом последней надежды.
+
+        **Шаг 2.** Ответьте на вопрос 9 в форме ответов.
+    - title: "Анализ сведений об ОС и флеш-памяти"
+      body: |
+        **Шаг 1.** Выведите сведения об ОС и оборудовании маршрутизатора командой **show version**. В первой строке указаны ОС и ее версия, ниже — время работы с момента включения (uptime), файл образа ОС (System image file), объем оперативной памяти и число интерфейсов.
+
+        ```
+        ISPRouter#show version
+        NSALAB NetOS Software, NR03 Software (NR03-NETOS-M), Version 0.1.0, RELEASE SOFTWARE
+        Copyright (c) 2026 NSALAB
+
+        ISPRouter uptime is 0 minutes
+        System returned to ROM by power-on
+        System image file is "flash0:nr03-netos-0.1.0.bin"
+
+        NSALAB NR03 (revision 1.0) with 524288K/65536K bytes of memory.
+        Processor board ID NSA00000001
+        2 Gigabit Ethernet interfaces
+        2 Serial(sync/async) interfaces
+        256K bytes of non-volatile configuration memory.
+
+        Configuration register is 0x2102
+        ```
+
+        **Шаг 2.** Ответьте на вопрос 4 в форме ответов.
+
+        **Шаг 3.** Выведите содержимое флеш-памяти командой **show flash:**. В таблице перечислены файлы с их размером в байтах (столбец Length), а в строке в квадратных скобках — занятый (used), свободный (available) и общий (total) объем флеш-памяти в байтах.
+
+        ```
+        ISPRouter#show flash:
+        System flash directory:
+        File  Length   Name/status
+          1   33591768 nr03-netos-0.1.0.bin
+        [33591768 bytes used, 222152232 available, 255744000 total]
+        249750K bytes of processor board System flash (Read/Write)
+        ```
+
+        **Примечание.** Во флеш-памяти хранится образ ОС: это тот же файл, что в строке System image file вывода команды show version. Новый образ ОС поместится во флеш-память, если его размер не превышает свободного объема.
+
+        **Шаг 4.** Ответьте на вопрос 6 в форме ответов.
+    - title: "Проверка подключений к маршрутизатору"
+      body: |
+        **Шаг 1.** Выведите сведения о пользователях, которые сейчас подключены к маршрутизатору, командой **show users**. Каждая строка вывода — один сеанс работы с маршрутизатором.
+
+        ```
+        ISPRouter#show users
+            Line       User       Host(s)              Idle       Location
+        *  0 con 0                idle                 00:00:00
+        ```
+
+        **Примечание.** Линия con 0 — консольный порт маршрутизатора, к которому подключен компьютер ISP-PC; звездочка отмечает сеанс, в котором выполнена команда. Удаленные сеансы по протоколам SSH и Telnet идут через линии VTY и выводятся строками vty с именем пользователя и адресом, с которого он подключился. Других строк в выводе нет: кроме вас, с маршрутизатором сейчас никто не работает.
+
+        **Шаг 2.** Ответьте на вопрос 7 в форме ответов.
+
+        **Шаг 3.** Закройте консоль маршрутизатора сочетанием клавиш Ctrl+]: компьютер ISP-PC вернется в командную строку с приглашением C:\>.
+
+        ```
+        ISPRouter#
+        [Console of ISPRouter closed]
+        ```
