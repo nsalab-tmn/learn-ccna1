@@ -1,37 +1,34 @@
 {
-    "title": "Системы счисления: краткое изложение",
-    "shortName": "ccna1.number-systems.summary",
-    "type": "scored-lecture",
-    "description": "Как двоичная и шестнадцатеричная системы счисления используются в сетевой адресации?",
-    "difficulty": 3,
-    "duration": "PT0H19M",
+    "title": "Системы счисления: экзамен",
+    "shortName": "ccna1.number-systems.exam",
+    "type": "exam",
+    "description": "Проверьте свои знания по темам модуля: двоичная система счисления, шестнадцатеричная система счисления.",
+    "difficulty": 1,
+    "duration": "PT0H17M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
     "skills": {},
-    "text": {
-        "$ref": "./README.md"
-    },
     "competency": {
         "produces": {
-            "id": "ksa.ccna1.number-systems.summary",
+            "id": "ksa.ccna1.number-systems.exam",
             "kind": "K",
             "bloom": "apply",
-            "objective": "Convert numbers and IPv4 addresses between decimal, binary and hexadecimal, and state the bit lengths and notations of IPv4 and IPv6 addresses and the valid hexadecimal digits."
+            "objective": "Convert a given value between binary, decimal and hexadecimal notation, including dotted-decimal IPv4 addresses, and state the bit lengths of IPv4 and IPv6 addresses."
         },
         "requires": [
             "ksa.ccna1.number-systems.binary-number-system",
             "ksa.ccna1.number-systems.hexadecimal-number-system"
         ],
         "measurement": {
-            "mode": "test",
+            "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): binary, decimal and hexadecimal conversions; IPv4 and IPv6 address length and notation.",
+            "passes_when": "Learner scores at least 80% on the exam's 14 questions covering module 5; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
-    "passingScore": 100,
+    "passingScore": 80,
     "questions": [
         {
             "question": "Какой из вариантов является двоичным представлением для десятичного числа 173?",
