@@ -86,6 +86,11 @@
                 "type": "string",
                 "title": "11. Как называется последний раздел **PDU**? Каков IP-адрес для имени **multiserver.nsalab.local**?",
                 "placeholder": "Enter your answer here"
+            },
+            "q_12": {
+                "type": "string",
+                "title": "12. Какой протокол электронной почты связан с портом 25 протокола TCP? Какой протокол связан с портом 110 протокола TCP?",
+                "placeholder": "Enter your answer here"
             }
         }
     }

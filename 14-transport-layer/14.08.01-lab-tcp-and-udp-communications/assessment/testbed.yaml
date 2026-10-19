@@ -4,7 +4,7 @@ testbed:
 devices:
   Switch:
     os: iosxe
-    type: router
+    type: switch
     credentials:
       default:
         username: '%ENV{ssh_user}'
