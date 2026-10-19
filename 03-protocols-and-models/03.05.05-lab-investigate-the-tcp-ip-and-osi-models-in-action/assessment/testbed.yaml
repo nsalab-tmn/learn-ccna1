@@ -1,8 +1,23 @@
+# Not generated (see ms.yaml): Web-Client over its per-device SSH port.
 testbed:
-  name: lab3.5.5
-
+  name: netsim-3.5.5
 devices:
-  dummy:
+  Web-Client:
+    os: iosxe
+    type: pc
+    credentials:
+      default:
+        username: '%ENV{ssh_user}'
+        password: '%ENV{ssh_password}'  # ggignore - a placeholder, filled at grading time
     connections:
-      a:
-        ip: localhost
+      cli:
+        protocol: ssh
+        ip: '%ENV{lab_ip}'
+        port: '%ENV{ssh_port_Web_Client}'
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+          mit: true
+        settings:
+          HA_INIT_CONFIG_COMMANDS: []
