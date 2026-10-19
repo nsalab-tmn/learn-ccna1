@@ -15,7 +15,7 @@
             "$ref": "./05.02-hexadecimal-number-system/learn-metadata.json"
         },
         {
-            "$ref": "./05.03-summary/learn-metadata.json"
+            "$ref": "./05.03-exam/learn-metadata.json"
         }
     ]
 }
