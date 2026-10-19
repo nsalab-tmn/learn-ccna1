@@ -4,7 +4,7 @@
     "type": "scored-lecture",
     "description": "Какие типы многоадресной рассылки существуют в IPv6?",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.ipv6-addressing.ipv6-multicast-addresses",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Identify the IPv6 multicast prefix (FF00::/8), match ff02::1 and ff02::2 to the all-nodes and all-routers groups and to the RA and RS messages sent to them, state that a multicast address can only be a destination, and explain the benefit of a solicited-node multicast address."
+            "objective": "Identify the IPv6 multicast prefix (FF00::/8), match ff02::1 and ff02::2 to the all-nodes and all-routers groups and to the RA and RS messages sent to them, state that a multicast address can only be a destination, explain the benefit of a solicited-node multicast address, and identify a loopback, unique local or global unicast address from its leading digits."
         },
         "requires": [
             "ksa.ccna1.ipv6-addressing.ipv6-address-types",

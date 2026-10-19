@@ -4,7 +4,7 @@
     "type": "scored-lecture",
     "description": "Сколько подсетей можно создать в сети с маской длиной префикса /16 и /8?",
     "difficulty": 3,
-    "duration": "PT0H19M",
+    "duration": "PT0H25M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.ipv4-addressing.subnet-a-16-and-8-prefix",
             "kind": "K",
             "bloom": "apply",
-            "objective": "Calculate the fewest bits to borrow from a /16 or /8 network for a required number of subnets, the resulting prefix and subnet mask, the hosts per subnet, and the last host address of a resulting subnet."
+            "objective": "Calculate the fewest bits to borrow from a /16 or /8 network for a required number of subnets, the resulting prefix and subnet mask, the hosts per subnet, and the last host address of a resulting subnet, and determine the subnet address, host range and broadcast address of a given host address and mask."
         },
         "requires": [
             "ksa.ccna1.ipv4-addressing.subnet-an-ipv4-network"
