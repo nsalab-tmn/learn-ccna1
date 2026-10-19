@@ -39,7 +39,7 @@
             "$ref": "./12.09.01-lab-implement-a-subnetted-ipv6-addressing-scheme/learn-metadata.json"
         },
         {
-            "$ref": "./12.10-summary/learn-metadata.json"
+            "$ref": "./12.10-exam/learn-metadata.json"
         }
     ]
 }
