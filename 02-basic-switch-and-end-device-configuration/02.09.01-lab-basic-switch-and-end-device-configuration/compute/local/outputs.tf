@@ -44,6 +44,17 @@ output "ssh_port_PC-B" {
   value       = local.ssh_base_port + local.device_ids["PC-B"]
 }
 
+output "ssh_user" {
+  description = "SSH username."
+  value       = "admin"
+}
+
+output "ssh_password" {
+  description = "Per-lab SSH password."
+  value       = random_password.ssh.result
+  sensitive   = true
+}
+
 output "URL" {
   description = "Student web canvas (topology + in-page device console) — the platform edge proxies this to the learner."
   value       = "http://${docker_container.lab.name}:7681/"
