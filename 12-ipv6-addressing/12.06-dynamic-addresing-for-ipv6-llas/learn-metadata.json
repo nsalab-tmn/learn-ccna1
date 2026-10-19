@@ -1,6 +1,6 @@
 {
     "title": "Динамическое назначение LLA",
-    "shortName": "ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-llas",
+    "shortName": "ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-llas",
     "type": "scored-lecture",
     "description": "Как происходит динамическое назначение link-local IPv6-адресов?",
     "difficulty": 3,
@@ -17,13 +17,13 @@
     },
     "competency": {
         "produces": {
-            "id": "ksa.ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-llas",
+            "id": "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-llas",
             "kind": "K",
             "bloom": "understand",
             "objective": "Describe how a link-local address is created dynamically (FE80::/10 plus an EUI-64 or random interface ID) and when a router creates one, explain why a serial interface may share an Ethernet interface's LLA and why routers usually get static LLAs, and interpret the L code in show ipv6 route."
         },
         "requires": [
-            "ksa.ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-guas",
+            "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas",
             "ksa.ccna1.ipv6-addressing.gua-and-lla-static-configuration"
         ],
         "measurement": {

@@ -1,6 +1,6 @@
 {
     "title": "Динамическое назначение глобальных адресов",
-    "shortName": "ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-guas",
+    "shortName": "ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas",
     "type": "scored-lecture",
     "description": "Как ICMPv6 помогает динамически назначать IPv6-адреса? Чем SLAAC отличается от DHCPv6? Что такое EUI-64?",
     "difficulty": 3,
@@ -17,7 +17,7 @@
     },
     "competency": {
         "produces": {
-            "id": "ksa.ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-guas",
+            "id": "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas",
             "kind": "K",
             "bloom": "understand",
             "objective": "Match the three RA methods (SLAAC, SLAAC with a stateless DHCPv6 server, stateful DHCPv6) to where a device gets its addressing, state that hosts send RS and routers send RA, and name EUI-64 and a random number as the ways a device creates its own interface ID."

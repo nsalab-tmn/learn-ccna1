@@ -24,7 +24,7 @@
         },
         "requires": [
             "ksa.ccna1.network-layer.ipv6-packet",
-            "ksa.ccna1.ipv6-addressing.dynamic-addresing-for-ipv6-guas"
+            "ksa.ccna1.ipv6-addressing.dynamic-addressing-for-ipv6-guas"
         ],
         "measurement": {
             "mode": "test",
