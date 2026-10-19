@@ -1,9 +1,10 @@
 {
     "title": "Пакет IPv6",
-    "materialType": "lecture",
+    "shortName": "ccna1.network-layer.ipv6-packet",
+    "type": "scored-lecture",
     "description": "Какие ограничения имеет протокол IPv4? Чем IPv4 отличается от IPv6? Чем отличаются заголовки пакетов IPv4 и IPv6?",
     "difficulty": 3,
-    "duration": "PT0H13M",
+    "duration": "PT0H21M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,137 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.network-layer.ipv6-packet",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Name the main IPv4 issues (address depletion, lack of end-to-end connectivity, network complexity) and the IPv6 benefits that answer them, and describe the IPv6 header: 40 octets, 8 fields, Hop Limit in place of TTL."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.ipv4-packet"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): IPv4 issues, IPv6 benefits, IPv6 header size and fields, Hop Limit versus TTL.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие варианты являются основными проблемами, связанными с IPv4? (верны три варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "нехватка IP-адресов",
+                    "correct": true
+                },
+                {
+                    "answer": "повышенная сложность сети и расширение таблицы маршрутизации Интернета",
+                    "correct": true
+                },
+                {
+                    "answer": "постоянное соединение",
+                    "correct": false,
+                    "comment": "IPv4 был стандартизирован в 1980-х годах и имеет ряд технологических ограничений, таких как отсутствие сквозной связи и истощение адресного пространства"
+                },
+                {
+                    "answer": "отсутствие сквозного подключения",
+                    "correct": true
+                },
+                {
+                    "answer": "глобальные и политические границы",
+                    "correct": false,
+                    "comment": "IPv4 был стандартизирован в 1980-х годах и имеет ряд технологических ограничений, таких как отсутствие сквозной связи и истощение адресного пространства"
+                },
+                {
+                    "answer": "слишком большое количество адресов IPv4",
+                    "correct": false,
+                    "comment": "IPv4 был стандартизирован в 1980-х годах и имеет ряд технологических ограничений, таких как отсутствие сквозной связи и истощение адресного пространства"
+                }
+            ]
+        },
+        {
+            "question": "Какие варианты являются преимуществами IPv6 по сравнению с IPv4? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "поддерживает дополнительные поля для сложных пакетов",
+                    "correct": false,
+                    "comment": "В IPv6 внесено несколько технических усовершенствований, два из которых — значительно больший пул IP-адресов и упрощенный заголовок протокола"
+                },
+                {
+                    "answer": "расширенное адресное пространство",
+                    "correct": true
+                },
+                {
+                    "answer": "стандартизирует использование NAT",
+                    "correct": false,
+                    "comment": "В IPv6 внесено несколько технических усовершенствований, два из которых — значительно больший пул IP-адресов и упрощенный заголовок протокола"
+                },
+                {
+                    "answer": "поддерживает сети на основе классов",
+                    "correct": false,
+                    "comment": "В IPv6 внесено несколько технических усовершенствований, два из которых — значительно больший пул IP-адресов и упрощенный заголовок протокола"
+                },
+                {
+                    "answer": "использует более простой заголовок для улучшения обработки пакетов",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Что верно для заголовка IPv6? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "состоит из 20 октетов",
+                    "correct": false,
+                    "comment": "Заголовок IPv6 имеет фиксированную длину 40 октетов и содержит 8 полей заголовка"
+                },
+                {
+                    "answer": "состоит из 40 октетов",
+                    "correct": true
+                },
+                {
+                    "answer": "содержит 8 полей заголовка",
+                    "correct": true
+                },
+                {
+                    "answer": "содержит 12 полей заголовка",
+                    "correct": false,
+                    "comment": "Заголовок IPv6 имеет фиксированную длину 40 октетов и содержит 8 полей заголовка"
+                }
+            ]
+        },
+        {
+            "question": "Какой из вариантов отличает заголовок IPv6-пакета от заголовка IPv4-пакета?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "поле «Предел перехода», заменяющее поле «Время жизни» (TTL) в IPv4",
+                    "correct": true
+                },
+                {
+                    "answer": "IPv6-адреса источника и получателя остаются неизменными",
+                    "correct": false,
+                    "comment": "Несколько полей в заголовке IPv6 заменили поля в заголовке IPv4. Поле «Предел перехода» заменило поле «Время жизни» (TTL) в IPv4"
+                },
+                {
+                    "answer": "поле «Время жизни» заменяет поле DiffServ",
+                    "correct": false,
+                    "comment": "Несколько полей в заголовке IPv6 заменили поля в заголовке IPv4. Поле «Предел перехода» заменило поле «Время жизни» (TTL) в IPv4"
+                },
+                {
+                    "answer": "поле «Версия» определяет версию IP",
+                    "correct": false,
+                    "comment": "Несколько полей в заголовке IPv6 заменили поля в заголовке IPv4. Поле «Предел перехода» заменило поле «Время жизни» (TTL) в IPv4"
+                }
+            ]
+        }
+    ]
 }

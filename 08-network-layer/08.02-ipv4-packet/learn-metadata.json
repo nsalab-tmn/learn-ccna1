@@ -1,9 +1,10 @@
 {
     "title": "Пакет IPv4",
-    "materialType": "lecture",
+    "shortName": "ccna1.network-layer.ipv4-packet",
+    "type": "scored-lecture",
     "description": "Из чего состоит заголовок пакета IPv4?",
     "difficulty": 3,
-    "duration": "PT0H9M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,130 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.network-layer.ipv4-packet",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the IPv4 header fields that give a packet's origin and destination, detect header corruption (Header Checksum) and name the upper-layer protocol (Protocol: ICMP 1, TCP 6, UDP 17), and state that the source and destination addresses stay unchanged in transit."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.network-layer-characteristics"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): source and destination address fields, header checksum, Protocol field values, addresses unchanged in transit.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие два поля в заголовке пакета IPv4 указывают, откуда он поступает и куда он направляется? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "IP-адрес назначения",
+                    "correct": true
+                },
+                {
+                    "answer": "протокол",
+                    "correct": false,
+                    "comment": "Поля IP-заголовка, определяющие, откуда пакет поступил и куда он направляется, — это IP-адрес источника и IP-адрес назначения"
+                },
+                {
+                    "answer": "время жизни",
+                    "correct": false,
+                    "comment": "Поля IP-заголовка, определяющие, откуда пакет поступил и куда он направляется, — это IP-адрес источника и IP-адрес назначения"
+                },
+                {
+                    "answer": "IP-адрес источника",
+                    "correct": true
+                },
+                {
+                    "answer": "дифференцированные сервисы (DS)",
+                    "correct": false,
+                    "comment": "Поля IP-заголовка, определяющие, откуда пакет поступил и куда он направляется, — это IP-адрес источника и IP-адрес назначения"
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о полях заголовка пакетов IPv4 верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "IPv4-адреса источника и получателя остаются неизменными при перемещении от источника к получателю",
+                    "correct": true
+                },
+                {
+                    "answer": "Поле ``Время жизни (TTL)`` используется для определения приоритета каждого пакета",
+                    "correct": false,
+                    "comment": "IP-адреса источника и назначения в IP-пакете не изменяются в маршруте от источника к месту назначения"
+                },
+                {
+                    "answer": "Поля ``Общая длина`` и ``Контрольная сумма заголовка`` используются для изменения порядка фрагментированного пакета",
+                    "correct": false,
+                    "comment": "IP-адреса источника и назначения в IP-пакете не изменяются в маршруте от источника к месту назначения"
+                },
+                {
+                    "answer": "Поле ``Версия`` определяет протокол следующего уровня",
+                    "correct": false,
+                    "comment": "IP-адреса источника и назначения в IP-пакете не изменяются в маршруте от источника к месту назначения"
+                }
+            ]
+        },
+        {
+            "question": "Какое поле используется для обнаружения повреждения в заголовке IPv4?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "контрольная сумма заголовка",
+                    "correct": true
+                },
+                {
+                    "answer": "время жизни",
+                    "correct": false,
+                    "comment": "Поле ``Контрольная сумма заголовка`` используется для обнаружения повреждений в заголовке IPv4"
+                },
+                {
+                    "answer": "протокол",
+                    "correct": false,
+                    "comment": "Поле ``Контрольная сумма заголовка`` используется для обнаружения повреждений в заголовке IPv4"
+                },
+                {
+                    "answer": "дифференцированные сервисы (DS)",
+                    "correct": false,
+                    "comment": "Поле ``Контрольная сумма заголовка`` используется для обнаружения повреждений в заголовке IPv4"
+                }
+            ]
+        },
+        {
+            "question": "В какое поле входят такие распространённые значения, как ICMP (1), TCP (6) и UDP (17)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "контрольная сумма заголовка",
+                    "correct": false,
+                    "comment": "Поле протокола определяет протокол верхнего уровня, который переносится внутри IP-пакета. Распространенными протоколами являются TCP, UDP и  ICMP"
+                },
+                {
+                    "answer": "время жизни",
+                    "correct": false,
+                    "comment": "Поле протокола определяет протокол верхнего уровня, который переносится внутри IP-пакета. Распространенными протоколами являются TCP, UDP и  ICMP"
+                },
+                {
+                    "answer": "Протокол",
+                    "correct": true
+                },
+                {
+                    "answer": "дифференцированные сервисы (DS)",
+                    "correct": false,
+                    "comment": "Поле протокола определяет протокол верхнего уровня, который переносится внутри IP-пакета. Распространенными протоколами являются TCP, UDP и  ICMP"
+                }
+            ]
+        }
+    ]
 }

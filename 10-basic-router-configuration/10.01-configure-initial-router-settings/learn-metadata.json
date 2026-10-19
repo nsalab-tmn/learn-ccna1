@@ -1,9 +1,10 @@
 {
     "title": "Первоначальная настройка маршрутизатора",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-router-configuration.configure-initial-router-settings",
+    "type": "scored-lecture",
     "description": "В чем заключается базовая настройка маршрутизатора?",
     "difficulty": 3,
-    "duration": "PT0H3M",
+    "duration": "PT0H8M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,122 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-router-configuration.configure-initial-router-settings",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose the command for an initial router-configuration task (securing privileged EXEC mode, opening the VTY lines for remote access) and explain why privileged EXEC mode needs protection most and what an unsaved configuration loses on a power failure."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.basic-device-configuration",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.save-configurations"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): protecting privileged EXEC mode, enable secret, line vty for remote access, saving the configuration to NVRAM.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой режим маршрутизатора важнее всего защитить паролем?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Привилегированный режим EXEC: он дает полный доступ к устройству и его конфигурации",
+                    "correct": true
+                },
+                {
+                    "answer": "Пользовательский режим EXEC: в него попадает каждый, кто подключается к консоли",
+                    "correct": false,
+                    "comment": "Доступ к пользовательскому режиму EXEC тоже защищают, но важнее всего защитить привилегированный режим EXEC: он дает полный доступ к устройству и его конфигурации."
+                },
+                {
+                    "answer": "Режим конфигурации линии: в нем задают пароли консоли и линий VTY",
+                    "correct": false,
+                    "comment": "В режиме конфигурации линии только задают пароли для доступа к устройству. Важнее всего защитить привилегированный режим EXEC: он дает полный доступ к устройству и его конфигурации."
+                }
+            ]
+        },
+        {
+            "question": "Какая команда защищает паролем доступ к привилегированному режиму EXEC маршрутизатора?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable secret netlab",
+                    "correct": true
+                },
+                {
+                    "answer": "line console 0, затем password netlab и login",
+                    "correct": false,
+                    "comment": "Эти команды защищают доступ к пользовательскому режиму EXEC через консоль. Привилегированный режим EXEC защищает команда enable secret."
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": false,
+                    "comment": "Эта команда шифрует пароли открытого текста в файле конфигурации, но сама пароль не задает. Привилегированный режим EXEC защищает команда enable secret."
+                },
+                {
+                    "answer": "banner motd # сообщение #",
+                    "correct": false,
+                    "comment": "Эта команда создает баннер с правовым уведомлением. Привилегированный режим EXEC защищает команда enable secret."
+                }
+            ]
+        },
+        {
+            "question": "Администратор хочет защитить паролем удаленный доступ к маршрутизатору по протоколу Telnet или SSH. С какой команды режима глобальной конфигурации он начнет эту настройку?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "line vty 0 4",
+                    "correct": true
+                },
+                {
+                    "answer": "line console 0",
+                    "correct": false,
+                    "comment": "Эта команда открывает настройку консольной линии, то есть доступа к пользовательскому режиму EXEC через консоль. Удаленный доступ по Telnet или SSH настраивают на линиях VTY: line vty 0 4."
+                },
+                {
+                    "answer": "enable secret netlab",
+                    "correct": false,
+                    "comment": "Эта команда защищает привилегированный режим EXEC. Удаленный доступ по Telnet или SSH настраивают на линиях VTY: line vty 0 4."
+                },
+                {
+                    "answer": "copy running-config startup-config",
+                    "correct": false,
+                    "comment": "Эта команда сохраняет конфигурацию в NVRAM. Удаленный доступ по Telnet или SSH настраивают на линиях VTY: line vty 0 4."
+                }
+            ]
+        },
+        {
+            "question": "Администратор задал на маршрутизаторе имя устройства и пароли, но не выполнил команду copy running-config startup-config. Что произойдет с этими настройками, если маршрутизатор случайно потеряет питание?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Все настроенные команды будут потеряны",
+                    "correct": true
+                },
+                {
+                    "answer": "Настройки сохранятся, потому что пароли зашифрованы командой service password-encryption",
+                    "correct": false,
+                    "comment": "Шифрование паролей не сохраняет конфигурацию. Без команды copy running-config startup-config, которая сохраняет конфигурацию в NVRAM, при потере питания все настроенные команды будут потеряны."
+                },
+                {
+                    "answer": "Потеряются только пароли, а имя устройства сохранится",
+                    "correct": false,
+                    "comment": "Потеряются все настроенные команды, в том числе имя устройства. Чтобы этого не случилось, конфигурацию сохраняют в NVRAM командой copy running-config startup-config."
+                },
+                {
+                    "answer": "Маршрутизатор сам сохранит конфигурацию в NVRAM при отключении питания",
+                    "correct": false,
+                    "comment": "Маршрутизатор не сохраняет конфигурацию сам: это делает команда copy running-config startup-config. Без нее при потере питания все настроенные команды будут потеряны."
+                }
+            ]
+        }
+    ]
 }

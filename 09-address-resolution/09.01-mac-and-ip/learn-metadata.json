@@ -1,9 +1,10 @@
 {
     "title": "Сопоставление MAC-адресов и IP-адресов",
-    "materialType": "lecture",
+    "shortName": "ccna1.address-resolution.mac-and-ip",
+    "type": "scored-lecture",
     "description": "Что такое разрешение адресов? Как происходит разрешение адресов для узлов, находящихся в одной сети?",
     "difficulty": 3,
-    "duration": "PT0H4M",
+    "duration": "PT0H9M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,91 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.address-resolution.mac-and-ip",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "State which destination MAC address a frame carries when the destination IP address is on the same network (the destination device) or on a remote network (the local router interface), and name ARP and ND as the protocols that find the MAC address for a known IPv4 or IPv6 address."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.how-a-host-routes",
+            "ksa.ccna1.ethernet-switching.ethernet-mac-address"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): destination MAC for local and remote destinations, ARP and ND.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой MAC-адрес назначения будет включен в кадр, отправляемый с исходного устройства на устройство назначения в той же локальной сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "широковещательный MAC-адрес FF-FF-FF-FF-FF-FF",
+                    "correct": false,
+                    "comment": "При отправке кадра другому устройству в той же локальной сети устройство, отправляющее этот кадр, будет использовать MAC-адрес устройства назначения"
+                },
+                {
+                    "answer": "MAC-адрес устройства назначения",
+                    "correct": true
+                },
+                {
+                    "answer": "MAC-адрес локального интерфейса маршрутизатора",
+                    "correct": false,
+                    "comment": "При отправке кадра другому устройству в той же локальной сети устройство, отправляющее этот кадр, будет использовать MAC-адрес устройства назначения"
+                }
+            ]
+        },
+        {
+            "question": "Какой MAC-адрес назначения будет включен в кадр, отправляемый с исходного устройства на устройство назначения в удаленной локальной сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "широковещательный MAC-адрес FF-FF-FF-FF-FF-FF",
+                    "correct": false,
+                    "comment": "При отправке кадра на другое устройство в удаленной сети устройство, отправляющее этот кадр, будет использовать MAC-адрес интерфейса локального маршрутизатора, который является шлюзом по умолчанию"
+                },
+                {
+                    "answer": "MAC-адрес устройства назначения",
+                    "correct": false,
+                    "comment": "При отправке кадра на другое устройство в удаленной сети устройство, отправляющее этот кадр, будет использовать MAC-адрес интерфейса локального маршрутизатора, который является шлюзом по умолчанию"
+                },
+                {
+                    "answer": "MAC-адрес локального интерфейса маршрутизатора",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие два протокола используются для определения MAC-адреса устройства назначения по известному IP-адресу (IPv4 и IPv6)?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "DHCP",
+                    "correct": false,
+                    "comment": "Протокол разрешения адресов (ARP) используется для определения MAC-адреса устройства с известным IPv4-адресом назначения. Обнаружение соседей (ND) используется для определения MAC-адреса устройства с известным IPv6-адресом назначения"
+                },
+                {
+                    "answer": "ARP",
+                    "correct": true
+                },
+                {
+                    "answer": "DNS",
+                    "correct": false,
+                    "comment": "Протокол разрешения адресов (ARP) используется для определения MAC-адреса устройства с известным IPv4-адресом назначения. Обнаружение соседей (ND) используется для определения MAC-адреса устройства с известным IPv6-адресом назначения"
+                },
+                {
+                    "answer": "ND",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

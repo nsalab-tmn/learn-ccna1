@@ -1,9 +1,10 @@
 {
     "title": "Настройка интерфейсов",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-router-configuration.configure-interfaces",
+    "type": "scored-lecture",
     "description": "Как настроить интерфейсы маршрутизатора и как проверить правильность их настройки?",
     "difficulty": 3,
-    "duration": "PT0H13M",
+    "duration": "PT0H19M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,152 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-router-configuration.configure-interfaces",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose the command that enables a router interface or lists its IPv6 addresses and status, interpret an up/up status in show ip interface brief, and state what the description command is for and what a direct router-to-router link needs to come up."
+        },
+        "requires": [
+            "ksa.ccna1.basic-router-configuration.configure-initial-router-settings",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.configure-ip-addressing"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): no shutdown, the description command, router-to-router links, the up/up status, show ipv6 interface brief.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая команда активирует интерфейс маршрутизатора?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "no shutdown",
+                    "correct": true
+                },
+                {
+                    "answer": "description Link to LAN",
+                    "correct": false,
+                    "comment": "Команда description добавляет описание интерфейса и для его включения не требуется. Интерфейс активирует команда no shutdown."
+                },
+                {
+                    "answer": "ip address 192.168.10.1 255.255.255.0",
+                    "correct": false,
+                    "comment": "Эта команда назначает интерфейсу IPv4-адрес и маску подсети, но не включает его. Интерфейс активирует команда no shutdown."
+                },
+                {
+                    "answer": "interface gigabitEthernet 0/0/0",
+                    "correct": false,
+                    "comment": "Эта команда только переводит в режим настройки интерфейса G0/0/0. Интерфейс активирует команда no shutdown."
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о команде description верно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Она не нужна для включения интерфейса, но помогает устранять неполадки, сообщая, к какой сети подключен интерфейс",
+                    "correct": true
+                },
+                {
+                    "answer": "Без нее интерфейс не перейдет в состояние up",
+                    "correct": false,
+                    "comment": "Команда description не требуется для включения интерфейса: его активирует команда no shutdown. Описание рекомендуют задавать, чтобы облегчить устранение неполадок."
+                },
+                {
+                    "answer": "Текст описания может быть любой длины",
+                    "correct": false,
+                    "comment": "Текст описания может содержать не более 240 символов. Команда description не нужна для включения интерфейса, но помогает устранять неполадки."
+                },
+                {
+                    "answer": "Она назначает интерфейсу IPv6-адрес",
+                    "correct": false,
+                    "comment": "IPv6-адрес назначает команда ipv6 address. Команда description добавляет текстовое описание, которое помогает устранять неполадки."
+                }
+            ]
+        },
+        {
+            "question": "Два маршрутизатора соединены напрямую, без коммутатора Ethernet. Что нужно сделать, чтобы канал между ними заработал?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Настроить и включить оба соединенных интерфейса",
+                    "correct": true
+                },
+                {
+                    "answer": "Настроить и включить интерфейс только на одном из маршрутизаторов",
+                    "correct": false,
+                    "comment": "Одного интерфейса недостаточно: в соединении двух маршрутизаторов без коммутатора оба соединенных интерфейса должны быть настроены и включены."
+                },
+                {
+                    "answer": "Задать на обоих интерфейсах описание командой description",
+                    "correct": false,
+                    "comment": "Команда description не требуется для включения интерфейса. В соединении двух маршрутизаторов без коммутатора оба соединенных интерфейса должны быть настроены и включены."
+                },
+                {
+                    "answer": "Подключить между ними коммутатор: напрямую маршрутизаторы не соединяют",
+                    "correct": false,
+                    "comment": "Маршрутизаторы можно соединить напрямую, без коммутатора Ethernet. В таком соединении оба соединенных интерфейса должны быть настроены и включены."
+                }
+            ]
+        },
+        {
+            "question": "В выводе команды show ip interface brief у интерфейса в столбцах «Status» и «Protocol» указано значение «up». Что это означает?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Интерфейс активен и работает",
+                    "correct": true
+                },
+                {
+                    "answer": "Есть проблема с настройками интерфейса или с подключением кабеля",
+                    "correct": false,
+                    "comment": "На проблему с настройками или кабелем указывает любое значение, кроме «up». Значение «up» в обоих столбцах означает, что интерфейс активен и работает."
+                },
+                {
+                    "answer": "Интерфейс отключен администратором",
+                    "correct": false,
+                    "comment": "Отключенный интерфейс отмечен в выводе как administratively down. Значение «up» в столбцах «Status» и «Protocol» означает, что интерфейс активен и работает."
+                },
+                {
+                    "answer": "Интерфейсу не назначен IP-адрес",
+                    "correct": false,
+                    "comment": "Назначенный адрес показан в столбце IP-Address, а интерфейс без адреса отмечен там как unassigned. Значение «up» в столбцах «Status» и «Protocol» означает, что интерфейс активен и работает."
+                }
+            ]
+        },
+        {
+            "question": "Администратору нужно в кратком виде увидеть IPv6-адреса всех интерфейсов маршрутизатора и их состояние. Какую команду он выполнит?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "show ipv6 interface brief",
+                    "correct": true
+                },
+                {
+                    "answer": "show ip interface brief",
+                    "correct": false,
+                    "comment": "Эта команда показывает IPv4-адреса интерфейсов. IPv6-адреса и состояние интерфейсов в кратком виде показывает команда show ipv6 interface brief."
+                },
+                {
+                    "answer": "show interfaces",
+                    "correct": false,
+                    "comment": "Эта команда выводит статистику по всем интерфейсам, но из адресации показывает только IPv4. IPv6-адреса и состояние интерфейсов в кратком виде показывает команда show ipv6 interface brief."
+                },
+                {
+                    "answer": "show ipv6 route",
+                    "correct": false,
+                    "comment": "Эта команда показывает таблицу маршрутизации IPv6. IPv6-адреса и состояние интерфейсов в кратком виде показывает команда show ipv6 interface brief."
+                }
+            ]
+        }
+    ]
 }
