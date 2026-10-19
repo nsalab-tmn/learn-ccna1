@@ -217,3 +217,886 @@ links:
     device: ISP-SW
     port: FastEthernet0/3
   cable: copper
+scenario:
+  pages:
+    - title: "Топология и адресация"
+      body: |
+        | Кабель | Устройство | Порт | Устройство | Порт |
+        |---|---|---|---|---|
+        | Последовательный | R2 | S0/0/0 (DCE) | R1 | S0/0/0 |
+        | Медный | R1 | G0/0 | S1 | G0/1 |
+        | Медный | R1 | G0/1 | S2 | G0/1 |
+        | Медный | R2 | G0/0 | ISP-SW | G0/1 |
+        | Медный | PC-01 | F0 | S1 | F0/1 |
+        | Медный | PC-02 | F0 | S1 | F0/2 |
+        | Медный | PC-A | F0 | S2 | F0/1 |
+        | Медный | PC-B | F0 | S2 | F0/2 |
+        | Медный | Web | F0 | ISP-SW | F0/1 |
+        | Медный | DNS1 | F0 | ISP-SW | F0/2 |
+        | Медный | DNS2 | F0 | ISP-SW | F0/3 |
+
+        Документация сети: таблица адресации.
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | R1 | G0/0 | 172.16.1.1 | 255.255.255.0 | — |
+        | R1 | G0/1 | 172.16.2.1 | 255.255.255.0 | — |
+        | R1 | S0/0/0 | 209.165.200.226 | 255.255.255.252 | — |
+        | R2 | G0/0 | 209.165.201.1 | 255.255.255.224 | — |
+        | R2 | S0/0/0 (DCE) | 209.165.200.225 | 255.255.255.252 | — |
+        | PC-01 | NIC | 172.16.1.3 | 255.255.255.0 | 172.16.1.1 |
+        | PC-02 | NIC | 172.16.1.4 | 255.255.255.0 | 172.16.1.1 |
+        | PC-A | NIC | 172.16.2.3 | 255.255.255.0 | 172.16.2.1 |
+        | PC-B | NIC | 172.16.2.4 | 255.255.255.0 | 172.16.2.1 |
+        | Web | NIC | 209.165.201.2 | 255.255.255.224 | 209.165.201.1 |
+        | DNS1 | NIC | 209.165.201.3 | 255.255.255.224 | 209.165.201.1 |
+        | DNS2 | NIC | 209.165.201.4 | 255.255.255.224 | 209.165.201.1 |
+
+        DNS-серверы компьютеров: оба сервера знают имя сайта www.nsalab.local (209.165.201.2).
+
+        | Компьютеры | DNS-сервер |
+        |---|---|
+        | PC-01, PC-02 | 209.165.201.3 (DNS1) |
+        | PC-A, PC-B | 209.165.201.4 (DNS2) |
+
+        С этими таблицами вы будете сравнивать настройки устройств.
+    - title: "Начальное состояние"
+      body: |
+        - Маршрутизатор R1 соединяет локальные сети 172.16.1.0/24 (коммутатор S1, компьютеры PC-01 и PC-02) и 172.16.2.0/24 (коммутатор S2, компьютеры PC-A и PC-B) и подключен последовательным каналом к маршрутизатору R2 поставщика услуг Интернета. Консоли R1 и R2 со схемы не открываются. К маршрутизатору R1 можно подключиться по протоколу SSH с любого компьютера, у которого есть с ним связь: имя пользователя Admin01, пароль cisco12345. Маршрутизатор R2 вам недоступен.
+        - В сети поставщика услуг работают веб-сервер Web (209.165.201.2, сайт www.nsalab.local) и два DNS-сервера, DNS1 и DNS2; второй добавлен при недавней модернизации. Серверы настроены, и доступа к ним у вас нет.
+        - На компьютерах заданы IP-настройки и DNS-серверы по таблицам, но при модернизации в настройках компьютеров и маршрутизатора R1 могли быть допущены ошибки. Сколько их и где — вам предстоит выяснить.
+        - Пользователи сообщают, что сайт www.nsalab.local не открывается.
+
+        **Шаг 1.** После запуска лабораторной работы дождитесь, когда индикаторы всех соединений на схеме загорятся зеленым («Соединение активно» в условных обозначениях).
+
+        **Шаг 2.** Откройте окно компьютера PC-01 и на вкладке «Рабочий стол» запустите приложение «Веб-браузер». Введите в поле «Адрес» http://www.nsalab.local и нажмите «Перейти». Вместо сайта браузер показывает «Страница не открылась» и код «имя не разрешено»: компьютер не смог превратить имя в IP-адрес.
+
+        **Шаг 3.** Запустите приложение «Командная строка» и проверьте связь с веб-сервером по IP-адресу командой **ping 209.165.201.2**. Компьютер не отправляет эхо-запросы и выводит «PING: transmit failed. General failure».
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        PING: transmit failed. General failure.
+        PING: transmit failed. General failure.
+        PING: transmit failed. General failure.
+        PING: transmit failed. General failure.
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Примечание.** Сообщение «General failure» означает, что у компьютера нет пути к получателю: по собственным IP-адресу и маске подсети компьютер считает получателя узлом другой сети, а его шлюз по умолчанию не входит в его сеть, поэтому передать пакет некому. Проверку начинают с настроек самого компьютера.
+
+        **Шаг 4.** Подготовьте документацию проверок: таблицу со столбцами «Проверка», «Успешно?», «Проблема», «Решение» и «Проверено» — на бумаге, в текстовом редакторе или в электронной таблице. В нее вы будете записывать каждую проверку связи, найденную проблему, выбранное решение и результат повторной проверки. Для каждой проблемы выбирают одно решение и сразу проверяют его.
+    - title: "Проверка компьютера PC-01"
+      body: |
+        **Шаг 1.** В приложении «Командная строка» компьютера PC-01 выведите его IP-настройки командой **ipconfig** и сравните их с таблицей адресации. IPv4-адрес компьютера — 172.16.11.3, а по таблице должен быть 172.16.1.3: адрес не входит в сеть 172.16.1.0/24, в которой находится шлюз по умолчанию 172.16.1.1. Маска подсети и шлюз совпадают с таблицей. Запишите проверку, проблему и решение — изменить IPv4-адрес компьютера PC-01 по таблице.
+
+        ```
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..:
+           Link-local IPv6 Address.........: FE80::2D0:DBFF:FE16:2E01
+           IPv6 Address....................: ::
+           IPv4 Address....................: 172.16.11.3
+           Subnet Mask.....................: 255.255.255.0
+           Default Gateway.................: 172.16.1.1
+        ```
+
+        **Шаг 2.** Задайте компьютеру PC-01 IPv4-адрес, маску подсети и шлюз по умолчанию по таблице командой **ipconfig 172.16.1.3 255.255.255.0 172.16.1.1**. Команда ничего не выводит.
+
+        ```
+        C:\>ipconfig 172.16.1.3 255.255.255.0 172.16.1.1
+        ```
+
+        **Примечание.** Те же параметры можно задать в приложении «IP-конфигурация» на вкладке «Рабочий стол»: в полях «IPv4-адрес», «Маска» и «Шлюз по умолчанию». Значение поля сохраняется сразу, как только вы нажмете Enter или перейдете к другому полю.
+
+        **Шаг 3.** Убедитесь, что DNS-сервер компьютера не изменился: команда **ipconfig /all** выводит полные настройки, в том числе строку «DNS Servers» — 209.165.201.3, сервер DNS1 по таблице.
+
+        ```
+        C:\>ipconfig /all
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..:
+           Physical Address................: 00-D0-DB-16-2E-01
+           DHCP Enabled....................: No
+           Link-local IPv6 Address.........: FE80::2D0:DBFF:FE16:2E01
+           IPv6 Address....................: ::
+           IPv4 Address....................: 172.16.1.3
+           Subnet Mask.....................: 255.255.255.0
+           Default Gateway.................: 172.16.1.1
+           DHCP Servers....................: 0.0.0.0
+           DNS Servers.....................: 209.165.201.3
+        ```
+
+        **Шаг 4.** Проверьте связь со шлюзом по умолчанию командой **ping 172.16.1.1**. Маршрутизатор R1 отвечает. Ответьте на вопрос 1 в форме ответов.
+
+        ```
+        C:\>ping 172.16.1.1
+
+        Pinging 172.16.1.1 with 32 bytes of data:
+
+        Reply from 172.16.1.1: bytes=32 time=1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 172.16.1.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 5.** Проверьте связь с веб-сервером командой **ping 209.165.201.2**. Сервер отвечает: пакеты проходят через маршрутизаторы R1 и R2 (TTL=126). Первый эхо-запрос может остаться без ответа: в это время устройства на пути определяют MAC-адреса друг друга по протоколу ARP. Ответьте на вопрос 2 в форме ответов.
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Request timed out.
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 6.** Проверьте связь с компьютером PC-02 своей локальной сети командой **ping 172.16.1.4**. Компьютер PC-02 отвечает. Ответьте на вопрос 3 в форме ответов.
+
+        ```
+        C:\>ping 172.16.1.4
+
+        Pinging 172.16.1.4 with 32 bytes of data:
+
+        Reply from 172.16.1.4: bytes=32 time=1ms TTL=128
+        Reply from 172.16.1.4: bytes=32 time<1ms TTL=128
+        Reply from 172.16.1.4: bytes=32 time<1ms TTL=128
+        Reply from 172.16.1.4: bytes=32 time<1ms TTL=128
+
+        Ping statistics for 172.16.1.4:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 7.** Проверьте связь с компьютером PC-A другой локальной сети командой **ping 172.16.2.3**. Ответов нет: «Request timed out». Ответьте на вопрос 4 в форме ответов.
+
+        ```
+        C:\>ping 172.16.2.3
+
+        Pinging 172.16.2.3 with 32 bytes of data:
+
+        Request timed out.
+        Request timed out.
+        Request timed out.
+        Request timed out.
+
+        Ping statistics for 172.16.2.3:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Примечание.** «Request timed out» означает, что компьютер отправил эхо-запрос шлюзу по умолчанию, но ответ не пришел за отведенное время. Настройки компьютера PC-01 верны, шлюз и сервер отвечают, поэтому проблема — не на этом компьютере: в другой локальной сети или на пути ответа. Запишите проверку; причину вы найдете при проверке компьютеров PC-A и PC-B.
+
+        **Шаг 8.** Аналогично проверьте связь с компьютером PC-B командой **ping 172.16.2.4**: ответов тоже нет. Ответьте на вопрос 5 в форме ответов.
+
+        **Шаг 9.** В приложении «Веб-браузер» откройте http://www.nsalab.local, а затем http://209.165.201.2. Оба раза открывается страница с заголовком «www.nsalab.local»: имя сервера разрешил DNS1, а путь к серверу работает. Ответьте на вопросы 6 и 7 в форме ответов. Отметьте решение в документации как проверенное.
+    - title: "Проверка компьютера PC-02"
+      body: |
+        **Шаг 1.** Откройте окно компьютера PC-02 и в приложении «Командная строка» выведите его настройки командой **ipconfig**. IPv4-адрес и маска подсети совпадают с таблицей, а шлюз по умолчанию — 172.16.1.254 вместо 172.16.1.1. Запишите проверку, проблему и решение — изменить шлюз по умолчанию компьютера PC-02 по таблице.
+
+        ```
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..:
+           Link-local IPv6 Address.........: FE80::2D0:10FF:FEE8:E301
+           IPv6 Address....................: ::
+           IPv4 Address....................: 172.16.1.4
+           Subnet Mask.....................: 255.255.255.0
+           Default Gateway.................: 172.16.1.254
+        ```
+
+        **Шаг 2.** Прежде чем исправлять, посмотрите, как проявляется эта ошибка: проверьте связь с веб-сервером командой **ping 209.165.201.2**. Ответ «Destination host unreachable» приходит от самого компьютера PC-02 (172.16.1.4).
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 172.16.1.4: Destination host unreachable.
+        Reply from 172.16.1.4: Destination host unreachable.
+        Reply from 172.16.1.4: Destination host unreachable.
+        Reply from 172.16.1.4: Destination host unreachable.
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Примечание.** Пакет в другую сеть компьютер передает шлюзу по умолчанию, а его MAC-адрес ищет по протоколу ARP. Адрес 172.16.1.254 в локальной сети никому не назначен, ответа на запрос ARP нет, и компьютер сам сообщает, что узел недоступен. Узлы своей сети компьютер при этом достигает без шлюза.
+
+        **Шаг 3.** Задайте компьютеру PC-02 параметры по таблице командой **ipconfig 172.16.1.4 255.255.255.0 172.16.1.1** или в приложении «IP-конфигурация», в поле «Шлюз по умолчанию». Команда ничего не выводит.
+
+        ```
+        C:\>ipconfig 172.16.1.4 255.255.255.0 172.16.1.1
+        ```
+
+        **Шаг 4.** Проверьте связь со шлюзом по умолчанию командой **ping 172.16.1.1**. Маршрутизатор R1 отвечает. Ответьте на вопрос 8 в форме ответов.
+
+        ```
+        C:\>ping 172.16.1.1
+
+        Pinging 172.16.1.1 with 32 bytes of data:
+
+        Reply from 172.16.1.1: bytes=32 time=1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 172.16.1.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 5.** Повторите проверку связи с веб-сервером командой **ping 209.165.201.2**. Сервер отвечает: проблема устранена. Отметьте решение в документации как проверенное. Ответьте на вопрос 9 в форме ответов.
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 6.** Проверьте связь с компьютером PC-01 командой **ping 172.16.1.3**. Компьютер PC-01 отвечает. Ответьте на вопрос 10 в форме ответов.
+
+        ```
+        C:\>ping 172.16.1.3
+
+        Pinging 172.16.1.3 with 32 bytes of data:
+
+        Reply from 172.16.1.3: bytes=32 time<1ms TTL=128
+        Reply from 172.16.1.3: bytes=32 time<1ms TTL=128
+        Reply from 172.16.1.3: bytes=32 time<1ms TTL=128
+        Reply from 172.16.1.3: bytes=32 time<1ms TTL=128
+
+        Ping statistics for 172.16.1.3:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 0ms, Average = 0ms
+        ```
+
+        **Шаг 7.** Проверьте связь с компьютером PC-A командой **ping 172.16.2.3**. Ответов нет, как и с компьютера PC-01. Аналогично проверьте связь с компьютером PC-B командой **ping 172.16.2.4**: ответов нет. Ответьте на вопросы 11 и 12 в форме ответов.
+
+        ```
+        C:\>ping 172.16.2.3
+
+        Pinging 172.16.2.3 with 32 bytes of data:
+
+        Request timed out.
+        Request timed out.
+        Request timed out.
+        Request timed out.
+
+        Ping statistics for 172.16.2.3:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Шаг 8.** Выведите путь к веб-серверу командой **tracert 209.165.201.2**. Пакеты проходят через маршрутизатор R1 (172.16.1.1) и маршрутизатор R2 (209.165.200.225) и достигают сервера за три перехода.
+
+        ```
+        C:\>tracert 209.165.201.2
+
+        Tracing route to 209.165.201.2 over a maximum of 30 hops:
+
+          1    <1 ms    <1 ms    <1 ms  172.16.1.1
+          2     1 ms     1 ms     1 ms  209.165.200.225
+          3     2 ms     2 ms     2 ms  209.165.201.2
+
+        Trace complete.
+        ```
+
+        **Примечание.** Трассировка показывает, на каком устройстве пути пропадают пакеты: последняя отвечающая строка — последний узел, который их получил. Если трассировка не доходит до получателя, ее можно прервать сочетанием клавиш Ctrl+C.
+
+        **Шаг 9.** В приложении «Веб-браузер» откройте http://www.nsalab.local, а затем http://209.165.201.2. Оба раза открывается страница «www.nsalab.local». Ответьте на вопросы 13 и 14 в форме ответов.
+    - title: "Проверка компьютера PC-A и маршрутизатора R1"
+      body: |
+        **Шаг 1.** Откройте окно компьютера PC-A и в приложении «Командная строка» выведите его настройки командой **ipconfig**. IPv4-адрес 172.16.2.3, маска 255.255.255.0 и шлюз по умолчанию 172.16.2.1 совпадают с таблицей: на этом компьютере ошибок нет.
+
+        ```
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..:
+           Link-local IPv6 Address.........: FE80::2D0:D1FF:FE20:9701
+           IPv6 Address....................: ::
+           IPv4 Address....................: 172.16.2.3
+           Subnet Mask.....................: 255.255.255.0
+           Default Gateway.................: 172.16.2.1
+        ```
+
+        **Шаг 2.** Проверьте связь со шлюзом по умолчанию командой **ping 172.16.2.1**. Ответ «Destination host unreachable» приходит от самого компьютера PC-A: в локальной сети 172.16.2.0/24 никто не ответил на запрос ARP об адресе 172.16.2.1. По таблице этот адрес принадлежит интерфейсу G0/1 маршрутизатора R1. Ответьте на вопрос 15 в форме ответов.
+
+        ```
+        C:\>ping 172.16.2.1
+
+        Pinging 172.16.2.1 with 32 bytes of data:
+
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+
+        Ping statistics for 172.16.2.1:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Шаг 3.** Проверьте связь с веб-сервером командой **ping 209.165.201.2**. Тот же ответ: без шлюза компьютер не может отправить пакет в другую сеть. Ответьте на вопрос 16 в форме ответов.
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Шаг 4.** Проверьте связь с компьютером PC-01 командой **ping 172.16.1.3** и аналогично с компьютером PC-02 командой **ping 172.16.1.4**. Узлы другой локальной сети недоступны по той же причине. Ответьте на вопросы 17 и 18 в форме ответов.
+
+        ```
+        C:\>ping 172.16.1.3
+
+        Pinging 172.16.1.3 with 32 bytes of data:
+
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+        Reply from 172.16.2.3: Destination host unreachable.
+
+        Ping statistics for 172.16.1.3:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+
+        **Шаг 5.** Проверьте связь с компьютером PC-B своей локальной сети командой **ping 172.16.2.4**. Компьютер PC-B отвечает: локальная сеть 172.16.2.0/24 и коммутатор S2 работают. Ответьте на вопрос 19 в форме ответов.
+
+        ```
+        C:\>ping 172.16.2.4
+
+        Pinging 172.16.2.4 with 32 bytes of data:
+
+        Reply from 172.16.2.4: bytes=32 time=1ms TTL=128
+        Reply from 172.16.2.4: bytes=32 time<1ms TTL=128
+        Reply from 172.16.2.4: bytes=32 time<1ms TTL=128
+        Reply from 172.16.2.4: bytes=32 time<1ms TTL=128
+
+        Ping statistics for 172.16.2.4:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 6.** В приложении «Веб-браузер» откройте http://www.nsalab.local: «Страница не открылась», код «имя не разрешено» — DNS-сервер компьютера PC-A (DNS2, 209.165.201.4) находится за шлюзом, и запрос к нему не уходит. Затем откройте http://209.165.201.2: «Страница не открылась», код «время ожидания истекло». Ответьте на вопросы 20 и 21 в форме ответов. Запишите проверки и проблему — шлюз по умолчанию 172.16.2.1 не отвечает — и решение: проверить настройку интерфейса G0/1 маршрутизатора R1.
+
+        **Шаг 7.** Консоль маршрутизатора R1 со схемы не открывается, но к нему можно подключиться по протоколу SSH из сети 172.16.1.0/24, с которой у маршрутизатора связь есть. В приложении «Командная строка» компьютера PC-01 выполните команду **ssh -l Admin01 172.16.1.1** и на запрос «Password:» введите пароль cisco12345 (он не отображается). Маршрутизатор сразу открывает привилегированный режим EXEC (приглашение R1#): учетной записи Admin01 назначен уровень привилегий 15. Выведите сводку интерфейсов командой **show ip interface brief**. У интерфейса GigabitEthernet0/1 адрес 172.16.2.10, а по таблице должен быть 172.16.2.1. Запишите проблему и решение — назначить интерфейсу адрес по таблице.
+
+        ```
+        C:\>ssh -l Admin01 172.16.1.1
+        Password:
+        R1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         172.16.1.1      YES manual up                    up
+        GigabitEthernet0/1         172.16.2.10     YES manual up                    up
+        Serial0/0/0                209.165.200.226 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 8.** Перейдите в режим глобальной конфигурации командой **configure terminal**, затем к интерфейсу командой **interface g0/1**, назначьте адрес командой **ip address 172.16.2.1 255.255.255.0** и вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        R1#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        R1(config)#interface g0/1
+        R1(config-if)#ip address 172.16.2.1 255.255.255.0
+        R1(config-if)#end
+        ```
+
+        **Примечание.** Сообщения журнала, например о примененной конфигурации (%SYS-5-CONFIG_I), маршрутизатор выводит в консоль, а не в сеанс SSH, поэтому здесь их нет.
+
+        **Шаг 9.** Снова выведите сводку командой **show ip interface brief** и убедитесь, что у GigabitEthernet0/1 адрес 172.16.2.1. Завершите сеанс SSH командой **exit**: командная строка компьютера PC-01 сообщает, что соединение закрыто.
+
+        ```
+        R1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         172.16.1.1      YES manual up                    up
+        GigabitEthernet0/1         172.16.2.1      YES manual up                    up
+        Serial0/0/0                209.165.200.226 YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        R1#exit
+
+
+        [Connection to 172.16.1.1 closed by foreign host]
+        ```
+
+        **Шаг 10.** Вернитесь в приложение «Командная строка» компьютера PC-A и повторите проверку связи со шлюзом по умолчанию командой **ping 172.16.2.1**. Маршрутизатор R1 отвечает: проблема устранена.
+
+        ```
+        C:\>ping 172.16.2.1
+
+        Pinging 172.16.2.1 with 32 bytes of data:
+
+        Reply from 172.16.2.1: bytes=32 time=1ms TTL=255
+        Reply from 172.16.2.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.2.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.2.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 172.16.2.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 11.** Повторите проверку связи с веб-сервером командой **ping 209.165.201.2**. Сервер отвечает (TTL=126).
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 12.** Повторите проверку связи с компьютером PC-01 командой **ping 172.16.1.3**. Компьютер PC-01 отвечает: пакеты проходят через маршрутизатор R1 (TTL=127).
+
+        ```
+        C:\>ping 172.16.1.3
+
+        Pinging 172.16.1.3 with 32 bytes of data:
+
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+
+        Ping statistics for 172.16.1.3:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 1ms, Maximum = 1ms, Average = 1ms
+        ```
+
+        **Шаг 13.** В приложении «Веб-браузер» откройте http://www.nsalab.local, а затем http://209.165.201.2. Оба раза открывается страница «www.nsalab.local»: имя разрешил DNS2. Отметьте решение в документации как проверенное.
+    - title: "Проверка компьютера PC-B"
+      body: |
+        **Шаг 1.** Откройте окно компьютера PC-B и в приложении «Командная строка» выведите его полные настройки командой **ipconfig /all**. IPv4-адрес 172.16.2.4, маска подсети, шлюз по умолчанию 172.16.2.1 и DNS-сервер 209.165.201.4 (DNS2) совпадают с таблицами.
+
+        ```
+        C:\>ipconfig /all
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..:
+           Physical Address................: 00-D0-BA-1C-19-01
+           DHCP Enabled....................: No
+           Link-local IPv6 Address.........: FE80::2D0:BAFF:FE1C:1901
+           IPv6 Address....................: ::
+           IPv4 Address....................: 172.16.2.4
+           Subnet Mask.....................: 255.255.255.0
+           Default Gateway.................: 172.16.2.1
+           DHCP Servers....................: 0.0.0.0
+           DNS Servers.....................: 209.165.201.4
+        ```
+
+        **Шаг 2.** Проверьте связь со шлюзом по умолчанию командой **ping 172.16.2.1**. Маршрутизатор R1 отвечает. Ответьте на вопрос 22 в форме ответов.
+
+        ```
+        C:\>ping 172.16.2.1
+
+        Pinging 172.16.2.1 with 32 bytes of data:
+
+        Reply from 172.16.2.1: bytes=32 time=1ms TTL=255
+        Reply from 172.16.2.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.2.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.2.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 172.16.2.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 3.** Проверьте связь с веб-сервером командой **ping 209.165.201.2**. Сервер отвечает. Ответьте на вопрос 23 в форме ответов.
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 4.** Проверьте связь с компьютером PC-01 командой **ping 172.16.1.3** и аналогично с компьютерами PC-02 (**ping 172.16.1.4**) и PC-A (**ping 172.16.2.3**). Все три компьютера отвечают. Ответьте на вопросы 24, 25 и 26 в форме ответов.
+
+        ```
+        C:\>ping 172.16.1.3
+
+        Pinging 172.16.1.3 with 32 bytes of data:
+
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=1ms TTL=127
+
+        Ping statistics for 172.16.1.3:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 1ms, Maximum = 1ms, Average = 1ms
+        ```
+
+        **Шаг 5.** Проверьте разрешение имени командой **ping www.nsalab.local**. Компьютер спрашивает адрес у своего DNS-сервера DNS2, получает 209.165.201.2 и отправляет эхо-запросы на него.
+
+        ```
+        C:\>ping www.nsalab.local
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 6.** В приложении «Веб-браузер» откройте http://www.nsalab.local, а затем http://209.165.201.2. Оба раза открывается страница «www.nsalab.local». Ответьте на вопросы 27, 28 и 29 в форме ответов.
+
+        **Примечание.** Добавленный при модернизации сервер DNS2 разрешает имя сайта так же, как DNS1: это показал шаг 5. Все неполадки, которые были у компьютеров, вы уже нашли на предыдущих страницах.
+    - title: "Несогласование дуплекса на канале S1—R1"
+      body: |
+        Не все неполадки связи — в адресах. Скорость и режим дуплекса порта Ethernet обычно согласуются автоматически. Если на одном конце канала их задали вручную, этот конец больше не участвует в автосогласовании, а другой конец, оставшийся в автоматическом режиме, определяет скорость по сигналу, но не может узнать режим дуплекса и переходит на полудуплекс. Такое несогласование дуплекса (duplex mismatch) коварно: канал поднимается и работает, но кадры сталкиваются, часть теряется, а остальные задерживаются — пользователи жалуются на медленную сеть. На этой странице вы создадите такую неполадку на канале между коммутатором S1 и маршрутизатором R1, увидите ее признаки и устраните ее.
+
+        **Шаг 1.** Откройте консоль коммутатора S1 на схеме и нажмите Enter (его имя устройства не задано, поэтому приглашение — Switch>), перейдите в привилегированный режим EXEC командой **enable** и выведите состояние портов командой **show interfaces status**. У порта Gi0/1, к которому подключен маршрутизатор R1, в столбцах Duplex и Speed стоят a-full и a-1000: префикс a- означает, что режим и скорость получены автосогласованием. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение Switch#.
+
+        ```
+        Switch>enable
+        Switch#show interfaces status
+        Port      Name               Status       Vlan       Duplex  Speed Type
+        Fa0/1                        connected    1          a-full  a-100 10/100BaseTX
+        Fa0/2                        connected    1          a-full  a-100 10/100BaseTX
+        Fa0/3                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/4                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/5                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/6                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/7                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/8                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/9                        notconnect   1            auto   auto 10/100BaseTX
+        Fa0/10                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/11                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/12                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/13                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/14                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/15                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/16                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/17                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/18                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/19                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/20                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/21                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/22                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/23                       notconnect   1            auto   auto 10/100BaseTX
+        Fa0/24                       notconnect   1            auto   auto 10/100BaseTX
+        Gi0/1                        connected    1          a-full a-1000 10/100/1000BaseTX
+        Gi0/2                        notconnect   1            auto   auto 10/100/1000BaseTX
+        ```
+
+        **Шаг 2.** Перейдите в режим глобальной конфигурации командой **configure terminal**, затем к порту командой **interface g0/1**. Задайте скорость вручную командой **speed 100**, затем режим дуплекса командой **duplex full** и вернитесь в привилегированный режим EXEC командой **end**. После каждой команды канал на пару секунд опускается и снова поднимается, а после второй коммутатор сообщает о несогласовании дуплекса (%CDP-4-DUPLEX_MISMATCH): его порт работает в полнодуплексном режиме, а порт GigabitEthernet0/0 маршрутизатора R1 — в полудуплексном.
+
+        ```
+        Switch#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        Switch(config)#interface g0/1
+        Switch(config-if)#speed 100
+        *Mar  1 00:15:05.150: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:15:05.150: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:15:06.150: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:15:07.150: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        Switch(config-if)#duplex full
+        *Mar  1 00:15:10.150: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:15:10.150: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:15:11.150: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:15:12.150: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:15:12.150: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/1 (not half duplex), with R1 GigabitEthernet0/0 (half duplex).
+        Switch(config-if)#end
+        *Mar  1 00:15:15.150: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Примечание.** Пока была задана только скорость, порт еще участвовал в автосогласовании и сообщал соседу режим дуплекса. Когда вручную заданы и скорость, и дуплекс, порт перестает согласовывать: маршрутизатор R1 определяет скорость 100 Мбит/с по сигналу, но режим дуплекса узнать не может и выбирает полудуплекс. О несогласовании сообщает протокол обнаружения соседей (CDP), по которому соседние маршрутизаторы и коммутаторы обмениваются сведениями о своих портах.
+
+        **Шаг 3.** В приложении «Командная строка» компьютера PC-01 проверьте связь с веб-сервером командой **ping 209.165.201.2**. Сервер отвечает, но время ответа выросло с 2 мс до десятков миллисекунд и меняется от запроса к запросу: кадры на канале S1—R1 сталкиваются и передаются повторно.
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=33ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=63ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=62ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=37ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 33ms, Maximum = 63ms, Average = 48ms
+        ```
+
+        **Шаг 4.** Откройте окно компьютера PC-A и проверьте связь с компьютером PC-01 командой **ping 172.16.1.3**. Этот путь тоже проходит через канал S1—R1, и ответы так же медленны. Связь внутри каждой локальной сети при этом не страдает.
+
+        ```
+        C:\>ping 172.16.1.3
+
+        Pinging 172.16.1.3 with 32 bytes of data:
+
+        Reply from 172.16.1.3: bytes=32 time=54ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=50ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=48ms TTL=127
+        Reply from 172.16.1.3: bytes=32 time=42ms TTL=127
+
+        Ping statistics for 172.16.1.3:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 42ms, Maximum = 54ms, Average = 48ms
+        ```
+
+        **Шаг 5.** Чтобы признаки проявились, создайте больше трафика: в приложении «Командная строка» компьютера PC-01 выполните команду **ping -n 20 209.165.201.2**. Часть эхо-запросов остается без ответа: кадры, потерянные в коллизиях, до сервера не доходят. Ниже показаны первые ответы и итог; строки между ними опущены.
+
+        ```
+        C:\>ping -n 20 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=33ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=72ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=29ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=53ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=32ms TTL=126
+        Request timed out.
+        …
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 20, Received = 19, Lost = 1 (5% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 17ms, Maximum = 72ms, Average = 43ms
+        ```
+
+        **Шаг 6.** В консоли коммутатора S1 выведите строку порта командой **show interfaces status | include Gi0/1**. Теперь в столбцах стоят full и 100 без префикса a-: значения заданы вручную.
+
+        ```
+        Switch#show interfaces status | include Gi0/1
+        Gi0/1                        connected    1            full    100 10/100/1000BaseTX
+        ```
+
+        **Шаг 7.** Выведите подробные сведения о порте командой **show interfaces g0/1**. Строка «Full-duplex, 100Mb/s» показывает, в каком режиме работает порт, а полоса пропускания BW стала 100000 Kbit/sec. Кадры, поврежденные коллизиями на другом конце канала, коммутатор считает в строках «input errors» и «CRC»: их счетчики уже не нулевые. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение Switch#.
+
+        ```
+        Switch#show interfaces g0/1
+        GigabitEthernet0/1 is up, line protocol is up (connected)
+          Hardware is Gigabit Ethernet, address is 00d0.3170.c101 (bia 00d0.3170.c101)
+          MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec,
+             reliability 255/255, txload 1/255, rxload 1/255
+          Encapsulation ARPA, loopback not set
+          Keepalive set (10 sec)
+          Full-duplex, 100Mb/s, media type is 10/100/1000BaseTX
+          output flow-control is unsupported, input flow-control is unsupported
+          ARP type: ARPA, ARP Timeout 04:00:00
+          Last input 00:00:22, output 00:00:22, output hang never
+          Last clearing of "show interface" counters never
+          Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+          Queueing strategy: fifo
+          Output queue: 0/40 (size/max)
+          5 minute input rate 0 bits/sec, 0 packets/sec
+          5 minute output rate 0 bits/sec, 0 packets/sec
+             102 packets input, 8140 bytes, 0 no buffer
+             Received 0 broadcasts (0 IP multicasts)
+             1 runts, 0 giants, 0 throttles
+             1 input errors, 1 CRC, 0 frame, 0 overrun, 0 ignored
+             0 watchdog, 0 multicast, 0 pause input
+             116 packets output, 8234 bytes, 0 underruns
+             0 output errors, 0 collisions, 0 interface resets
+             0 unknown protocol drops
+             0 babbles, 0 late collision, 0 deferred
+             0 lost carrier, 0 no carrier, 0 pause output
+             0 output buffer failures, 0 output buffers swapped out
+        ```
+
+        **Шаг 8.** Посмотрите на канал со стороны маршрутизатора R1. В приложении «Командная строка» компьютера PC-02 подключитесь к нему командой **ssh -l Admin01 172.16.1.1** с паролем cisco12345 и выведите сведения о порте командой **show interfaces g0/0**. Строка «Half Duplex, 100Mbps» показывает полудуплексный режим, а счетчики collisions и late collision уже не нулевые: в полудуплексном режиме маршрутизатор считает каждую коллизию, а позднюю коллизию — ту, что случилась уже после начала передачи кадра, — отдельно. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение R1#. Затем завершите сеанс командой **exit**.
+
+        ```
+        C:\>ssh -l Admin01 172.16.1.1
+        Password:
+        R1#show interfaces g0/0
+        GigabitEthernet0/0 is up, line protocol is up
+          Hardware is Gigabit Ethernet, address is 00d0.55d8.d701 (bia 00d0.55d8.d701)
+          Internet address is 172.16.1.1/24
+          MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec,
+             reliability 255/255, txload 1/255, rxload 1/255
+          Encapsulation ARPA, loopback not set
+          Keepalive set (10 sec)
+          Half Duplex, 100Mbps, media type is RJ45
+          output flow-control is unsupported, input flow-control is unsupported
+          ARP type: ARPA, ARP Timeout 04:00:00
+          Last input 00:02:06, output 00:02:06, output hang never
+          Last clearing of "show interface" counters never
+          Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+          Queueing strategy: fifo
+          Output queue: 0/40 (size/max)
+          5 minute input rate 0 bits/sec, 0 packets/sec
+          5 minute output rate 0 bits/sec, 0 packets/sec
+             117 packets input, 8288 bytes, 0 no buffer
+             Received 7 broadcasts (0 IP multicasts)
+             0 runts, 0 giants, 0 throttles
+             0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+             0 watchdog, 0 multicast, 0 pause input
+             104 packets output, 8268 bytes, 0 underruns
+             1 output errors, 58 collisions, 0 interface resets
+             0 unknown protocol drops
+             0 babbles, 1 late collision, 0 deferred
+             0 lost carrier, 0 no carrier, 0 pause output
+             0 output buffer failures, 0 output buffers swapped out
+        R1#exit
+
+
+        [Connection to 172.16.1.1 closed by foreign host]
+        ```
+
+        **Шаг 9.** В консоли коммутатора S1 верните порту автосогласование: перейдите в режим глобальной конфигурации командой **configure terminal**, затем к порту командой **interface g0/1**, выполните команды **duplex auto** и **speed auto** и вернитесь в привилегированный режим EXEC командой **end**. Канал дважды опускается и поднимается, а сообщения о несогласовании больше нет.
+
+        ```
+        Switch#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        Switch(config)#interface g0/1
+        Switch(config-if)#duplex auto
+        *Mar  1 00:19:20.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:20.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:21.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:19:22.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        Switch(config-if)#speed auto
+        *Mar  1 00:19:25.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:25.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:26.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:19:27.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        Switch(config-if)#end
+        *Mar  1 00:19:30.422: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Шаг 10.** Выведите строку порта командой **show interfaces status | include Gi0/1**. В столбцах снова a-full и a-1000.
+
+        ```
+        Switch#show interfaces status | include Gi0/1
+        Gi0/1                        connected    1          a-full a-1000 10/100/1000BaseTX
+        ```
+
+        **Шаг 11.** В приложении «Командная строка» компьютера PC-01 повторите проверку командой **ping 209.165.201.2**. Время ответа снова 2 мс. Запишите в документацию проверок эту неполадку, ее признаки и решение.
+
+        ```
+        C:\>ping 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Примечание.** В реальной сети несогласование дуплекса находят именно по этим признакам: медленные и неровные ответы при работающем канале, сообщение о несогласовании в журнале устройств, растущие счетчики коллизий на одном конце и ошибок приема на другом. Устраняют его так, чтобы оба конца работали одинаково: лучше всего оставить автосогласование на обоих, а если один конец настроен вручную — задать те же значения и на другом.
+    - title: "Проверка сквозного подключения и документация"
+      body: |
+        **Шаг 1.** В приложении «Веб-браузер» каждого из компьютеров PC-01, PC-02, PC-A и PC-B откройте http://www.nsalab.local. На всех четырех открывается страница «www.nsalab.local».
+
+        **Шаг 2.** В приложении «Командная строка» компьютера PC-01 проверьте связь с компьютером PC-B командой **ping 172.16.2.4** — проверку, которая не проходила на странице «Проверка компьютера PC-01». Компьютер PC-B отвечает (TTL=127).
+
+        ```
+        C:\>ping 172.16.2.4
+
+        Pinging 172.16.2.4 with 32 bytes of data:
+
+        Reply from 172.16.2.4: bytes=32 time=1ms TTL=127
+        Reply from 172.16.2.4: bytes=32 time=1ms TTL=127
+        Reply from 172.16.2.4: bytes=32 time=1ms TTL=127
+        Reply from 172.16.2.4: bytes=32 time=1ms TTL=127
+
+        Ping statistics for 172.16.2.4:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 1ms, Maximum = 1ms, Average = 1ms
+        ```
+
+        **Шаг 3.** На компьютере PC-B выведите путь к компьютеру PC-01 командой **tracert 172.16.1.3**: пакеты проходят через интерфейс G0/1 маршрутизатора R1 (172.16.2.1) и достигают компьютера за два перехода.
+
+        ```
+        C:\>tracert 172.16.1.3
+
+        Tracing route to 172.16.1.3 over a maximum of 30 hops:
+
+          1    <1 ms    <1 ms    <1 ms  172.16.2.1
+          2     1 ms     1 ms     1 ms  172.16.1.3
+
+        Trace complete.
+        ```
+
+        **Шаг 4.** Сравните свою документацию проверок с таблицей. Проверки, которые прошли успешно с первого раза, в таблице не повторяются.
+
+        | Проверка | Успешно? | Проблема | Решение | Проверено |
+        |---|---|---|---|---|
+        | PC-01 — Web | Нет | IPv4-адрес PC-01 172.16.11.3 вместо 172.16.1.3 | Изменить IPv4-адрес PC-01 | Да |
+        | PC-02 — Web | Нет | Шлюз по умолчанию PC-02 172.16.1.254 вместо 172.16.1.1 | Изменить шлюз по умолчанию PC-02 | Да |
+        | PC-A — шлюз 172.16.2.1 | Нет | Адрес интерфейса G0/1 маршрутизатора R1 172.16.2.10 вместо 172.16.2.1 | Назначить интерфейсу адрес 172.16.2.1 | Да |
+        | PC-01 — Web при несогласовании дуплекса | Да, но медленно | Скорость и дуплекс порта G0/1 коммутатора S1 заданы вручную, порт G0/0 маршрутизатора R1 перешел на полудуплекс | Вернуть порту G0/1 автосогласование | Да |
