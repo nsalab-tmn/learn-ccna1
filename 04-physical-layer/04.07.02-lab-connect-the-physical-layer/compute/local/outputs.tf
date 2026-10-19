@@ -54,6 +54,21 @@ output "ssh_port_Switch2" {
   value       = local.ssh_base_port + local.device_ids["Switch2"]
 }
 
+output "ssh_port_AccessPoint" {
+  description = "SSH port of AccessPoint (ssh_base_port + its topology id)."
+  value       = local.ssh_base_port + local.device_ids["AccessPoint"]
+}
+
+output "ssh_port_Laptop" {
+  description = "SSH port of Laptop (ssh_base_port + its topology id)."
+  value       = local.ssh_base_port + local.device_ids["Laptop"]
+}
+
+output "ssh_port_TabletPC" {
+  description = "SSH port of TabletPC (ssh_base_port + its topology id)."
+  value       = local.ssh_base_port + local.device_ids["TabletPC"]
+}
+
 output "ssh_port_PC1" {
   description = "SSH port of PC1 (ssh_base_port + its topology id)."
   value       = local.ssh_base_port + local.device_ids["PC1"]
