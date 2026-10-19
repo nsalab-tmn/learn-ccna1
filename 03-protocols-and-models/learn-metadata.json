@@ -33,7 +33,7 @@
             "$ref": "./03.07-data-access/learn-metadata.json"
         },
         {
-            "$ref": "./03.08-summary/learn-metadata.json"
+            "$ref": "./03.08-exam/learn-metadata.json"
         }
     ]
 }

@@ -20,7 +20,9 @@
             "objective": "Across all modules of the course, identify the network component, protocol, address or mechanism a scenario describes, and choose the addressing, device configuration or verification command it calls for."
         },
         "requires": [
-            "ksa.ccna1.01-03-exam",
+            "ksa.ccna1.networking-today.exam",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.exam",
+            "ksa.ccna1.protocols-and-models.exam",
             "ksa.ccna1.04-07-exam",
             "ksa.ccna1.08-10-exam",
             "ksa.ccna1.11-13-exam",

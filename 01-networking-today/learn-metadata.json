@@ -33,7 +33,7 @@
             "$ref": "./01.08-network-security/learn-metadata.json"
         },
         {
-            "$ref": "./01.10-summary/learn-metadata.json"
+            "$ref": "./01.10-exam/learn-metadata.json"
         }
     ]
 }
