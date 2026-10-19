@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.physical-layer.physical-layer-characteristics",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Match each media type to the signal that represents bits on it (electrical pulses, light, microwaves), and distinguish bandwidth from throughput and goodput."
+            "objective": "Match each media type to the signal that represents bits on it (electrical pulses, light, microwaves), and distinguish bandwidth from throughput."
         },
         "requires": [
             "ksa.ccna1.physical-layer.purpose-of-the-physical-layer",

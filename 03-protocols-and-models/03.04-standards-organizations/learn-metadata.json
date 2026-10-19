@@ -4,7 +4,7 @@
     "type": "scored-lecture",
     "description": "Что такое организации по стандартизации и за какие стандарты они отвечают? Какие стандарты используются в сети Интернет?",
     "difficulty": 3,
-    "duration": "PT0H23M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
