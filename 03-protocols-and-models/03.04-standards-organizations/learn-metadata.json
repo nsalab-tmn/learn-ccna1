@@ -1,9 +1,10 @@
 {
     "title": "Организации по стандартизации",
-    "materialType": "lecture",
+    "shortName": "ccna1.protocols-and-models.standards-organizations",
+    "type": "scored-lecture",
     "description": "Что такое организации по стандартизации и за какие стандарты они отвечают? Какие стандарты используются в сети Интернет?",
     "difficulty": 3,
-    "duration": "PT0H18M",
+    "duration": "PT0H23M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,116 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.protocols-and-models.standards-organizations",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Match standards organizations (IETF, IANA, EIA) to what they are responsible for, and state that standards organizations are usually vendor-neutral."
+        },
+        "requires": [
+            "ksa.ccna1.protocols-and-models.protocol-suites"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): vendor-neutral standards bodies, IETF and RFCs, IANA, EIA.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Верно или нет утверждение, что организации по стандартизации, как правило, независимы от поставщиков?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "верно",
+                    "correct": true
+                },
+                {
+                    "answer": "неверно",
+                    "correct": false,
+                    "comment": "Это утверждение верно, так как большинство организаций по стандартизации являются независимыми от поставщиков некоммерческими организациями, которые  разрабатывают и продвигают открытые стандарты"
+                }
+            ]
+        },
+        {
+            "question": "Какая организация по стандартизации занимается документами RFC, в которых указываются новые протоколы и обновляются существующие?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Общество Интернета (ISOC)",
+                    "correct": false,
+                    "comment": "IETF разрабатывает и поддерживает спецификации новых протоколов и обновляет существующие протоколы с помощью опубликованных документов под названием Request for Comments (RFC)"
+                },
+                {
+                    "answer": "Рабочая группа инженеров по интернет-технологиям (IETF)",
+                    "correct": true
+                },
+                {
+                    "answer": "Совет по архитектуре сети Интернет (IAB)",
+                    "correct": false,
+                    "comment": "IETF разрабатывает и поддерживает спецификации новых протоколов и обновляет существующие протоколы с помощью опубликованных документов под названием Request for Comments (RFC)"
+                },
+                {
+                    "answer": "Исследовательская группа по развитию Интернета (IRTF)",
+                    "correct": false,
+                    "comment": "IETF разрабатывает и поддерживает спецификации новых протоколов и обновляет существующие протоколы с помощью опубликованных документов под названием Request for Comments (RFC)"
+                }
+            ]
+        },
+        {
+            "question": "Какая организация отвечает за контроль и управление распределением IP-адресов, управление именами доменов и идентификаторами протокола?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Общество Интернета (ISOC)",
+                    "correct": false,
+                    "comment": "За контроль и управление распределением IP-адресов, управление именами доменов и идентификаторами протокола отвечает Администрация адресного пространства сети Интернет (IANA)"
+                },
+                {
+                    "answer": "Рабочая группа инженеров по интернет-технологиям (IETF)",
+                    "correct": false,
+                    "comment": "За контроль и управление распределением IP-адресов, управление именами доменов и идентификаторами протокола отвечает Администрация адресного пространства сети Интернет (IANA)"
+                },
+                {
+                    "answer": "Совет по архитектуре сети Интернет (IAB)",
+                    "correct": false,
+                    "comment": "За контроль и управление распределением IP-адресов, управление именами доменов и идентификаторами протокола отвечает Администрация адресного пространства сети Интернет (IANA)"
+                },
+                {
+                    "answer": "Администрация адресного пространства сети Интернет (IANA)",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие типы стандартов разрабатываются Альянсом электронной промышленности (EIA)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "электрическая проводка и разъемы",
+                    "correct": true
+                },
+                {
+                    "answer": "радиооборудование и вышки сотовой связи",
+                    "correct": false,
+                    "comment": "Альянс отраслей электронной промышленности (Electronic Industries Alliance, EIA) разрабатывает стандарты, относящиеся к электрической проводке, разъемам и сетевым стойкам"
+                },
+                {
+                    "answer": "сжатие видео и широкополосная связь",
+                    "correct": false,
+                    "comment": "Альянс отраслей электронной промышленности (Electronic Industries Alliance, EIA) разрабатывает стандарты, относящиеся к электрической проводке, разъемам и сетевым стойкам"
+                },
+                {
+                    "answer": "голосовая связь по IP (VoIP) и спутниковая связь",
+                    "correct": false,
+                    "comment": "Альянс отраслей электронной промышленности (Electronic Industries Alliance, EIA) разрабатывает стандарты, относящиеся к электрической проводке, разъемам и сетевым стойкам"
+                }
+            ]
+        }
+    ]
 }

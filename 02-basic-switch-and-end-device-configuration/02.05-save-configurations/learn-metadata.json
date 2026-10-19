@@ -1,9 +1,10 @@
 {
     "title": "Сохранение конфигураций",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-switch-and-end-device-configuration.save-configurations",
+    "type": "scored-lecture",
     "description": "Какими бывают файлы конфигурации? Как правильно манипулировать файлами конфигурации?",
     "difficulty": 3,
-    "duration": "PT0H12M",
+    "duration": "PT0H18M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,147 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-switch-and-end-device-configuration.save-configurations",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Explain why unsaved changes to the running configuration are lost on reload, and choose the command or procedure that saves the configuration, discards unsaved changes (and its drawback), returns a device to its default configuration or restores a configuration from a text file."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.ios-navigation",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.basic-device-configuration"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): running-config in RAM, saving to startup-config, discarding changes with reload, erasing the startup configuration, restoring from a text file.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Почему несохраненные изменения конфигурации коммутатора теряются при перезагрузке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Текущая конфигурация хранится в оперативной памяти (RAM), а это энергозависимая память",
+                    "correct": true
+                },
+                {
+                    "answer": "Содержимое NVRAM стирается при каждой перезагрузке",
+                    "correct": false,
+                    "comment": "Содержимое NVRAM не теряется при выключении питания: там хранится загрузочная конфигурация startup-config. Теряются изменения текущей конфигурации, потому что она хранится в энергозависимой RAM."
+                },
+                {
+                    "answer": "Изменения текущей конфигурации вступают в силу только после перезагрузки",
+                    "correct": false,
+                    "comment": "Изменения текущей конфигурации сразу влияют на работу устройства. При перезагрузке они теряются, потому что текущая конфигурация хранится в энергозависимой RAM."
+                }
+            ]
+        },
+        {
+            "question": "Администратор настроил коммутатор и хочет, чтобы настройки сохранились после перезагрузки. Какую команду ему следует ввести?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "copy running-config startup-config",
+                    "correct": true
+                },
+                {
+                    "answer": "show startup-config",
+                    "correct": false,
+                    "comment": "Эта команда только показывает загрузочную конфигурацию. Сохраняет изменения команда copy running-config startup-config."
+                },
+                {
+                    "answer": "erase startup-config",
+                    "correct": false,
+                    "comment": "Эта команда удаляет загрузочную конфигурацию из NVRAM. Сохраняет изменения команда copy running-config startup-config."
+                },
+                {
+                    "answer": "reload",
+                    "correct": false,
+                    "comment": "Команда reload перезагружает устройство, и несохраненные изменения теряются. Сохраняет изменения команда copy running-config startup-config."
+                }
+            ]
+        },
+        {
+            "question": "В чем недостаток отмены несохраненных изменений с помощью команды reload?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Устройство ненадолго переходит в автономный режим, и в сети возникает простой",
+                    "correct": true
+                },
+                {
+                    "answer": "Команда удаляет загрузочную конфигурацию из NVRAM",
+                    "correct": false,
+                    "comment": "Загрузочную конфигурацию удаляет команда erase startup-config. Недостаток reload в том, что устройство ненадолго переходит в автономный режим и в сети возникает простой."
+                },
+                {
+                    "answer": "Все несохраненные изменения сохраняются автоматически",
+                    "correct": false,
+                    "comment": "При перезагрузке ОС спрашивает, нужно ли сохранить изменения, и ответ n или no их отменяет. Недостаток reload в том, что устройство ненадолго переходит в автономный режим и в сети возникает простой."
+                },
+                {
+                    "answer": "Устройство всегда возвращается к конфигурации по умолчанию, с которой оно поставлялось",
+                    "correct": false,
+                    "comment": "Конфигурацию по умолчанию устройство применяет, только если перед перезагрузкой удалить загрузочную конфигурацию. Недостаток reload в том, что устройство ненадолго переходит в автономный режим и в сети возникает простой."
+                }
+            ]
+        },
+        {
+            "question": "В загрузочной конфигурации коммутатора уже сохранены нежелательные изменения. Как вернуть коммутатор к конфигурации по умолчанию, с которой он изначально поставлялся?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Удалить загрузочную конфигурацию командой erase startup-config и перезагрузить устройство",
+                    "correct": true
+                },
+                {
+                    "answer": "Перезагрузить устройство командой reload и ответить no на вопрос о сохранении",
+                    "correct": false,
+                    "comment": "Так отменяют только несохраненные изменения: после перезагрузки устройство снова применит сохраненную конфигурацию с нежелательными изменениями. Нужно удалить загрузочную конфигурацию командой erase startup-config и перезагрузить устройство."
+                },
+                {
+                    "answer": "Ввести команду copy running-config startup-config",
+                    "correct": false,
+                    "comment": "Эта команда сохраняет текущую конфигурацию в загрузочную, а не удаляет ее. Нужно удалить загрузочную конфигурацию командой erase startup-config и перезагрузить устройство."
+                },
+                {
+                    "answer": "Ввести команду show startup-config",
+                    "correct": false,
+                    "comment": "Эта команда только показывает загрузочную конфигурацию. Нужно удалить ее командой erase startup-config и перезагрузить устройство."
+                }
+            ]
+        },
+        {
+            "question": "Конфигурация коммутатора записана в текстовый файл с помощью журнала программы эмуляции терминала. Как восстановить ее на устройстве?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Войти в режим глобальной конфигурации и вставить текст файла в окно терминала, подключенного к коммутатору",
+                    "correct": true
+                },
+                {
+                    "answer": "Включить ведение журнала в программе эмуляции терминала и ввести show running-config",
+                    "correct": false,
+                    "comment": "Так конфигурацию записывают в текстовый файл. Чтобы восстановить ее, нужно войти в режим глобальной конфигурации и вставить текст файла в окно терминала."
+                },
+                {
+                    "answer": "Ввести команду erase startup-config",
+                    "correct": false,
+                    "comment": "Эта команда удаляет загрузочную конфигурацию из NVRAM. Чтобы восстановить конфигурацию из файла, нужно войти в режим глобальной конфигурации и вставить текст файла в окно терминала."
+                },
+                {
+                    "answer": "Перезагрузить коммутатор командой reload",
+                    "correct": false,
+                    "comment": "При перезагрузке коммутатор применяет загрузочную конфигурацию из NVRAM, а не текстовый файл. Чтобы восстановить конфигурацию из файла, нужно войти в режим глобальной конфигурации и вставить текст файла в окно терминала."
+                }
+            ]
+        }
+    ]
 }

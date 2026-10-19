@@ -1,9 +1,10 @@
 {
     "title": "Доступ к операционной системе",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-switch-and-end-device-configuration.access-to-cisco-ios",
+    "type": "scored-lecture",
     "description": "Что такое операционная система и зачем она нужна для работы устройств? Как получить доступ к управлению операционной системой сетевого оборудования?",
     "difficulty": 3,
-    "duration": "PT0H7M",
+    "duration": "PT0H12M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,106 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-switch-and-end-device-configuration.access-to-cisco-ios",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose the access method (console, Telnet/SSH or the auxiliary AUX port) that fits a given situation: a new unconfigured switch, a special console cable, in-band access over the network, or a connection over a telephone line."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.network-components"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): console, Telnet/SSH and AUX access in situations.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой метод доступа был бы наиболее подходящим, если бы вы находились в аппаратной с новым коммутатором, который необходимо настроить?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Консоль",
+                    "correct": true
+                },
+                {
+                    "answer": "Telnet/SSH",
+                    "correct": false,
+                    "comment": "Поскольку новый коммутатор не будет иметь никаких начальных конфигураций, его можно настроить только через консольный порт."
+                },
+                {
+                    "answer": "Aux",
+                    "correct": false,
+                    "comment": "Поскольку новый коммутатор не будет иметь никаких начальных конфигураций, его можно настроить только через консольный порт."
+                }
+            ]
+        },
+        {
+            "question": "Какой метод доступа был бы наиболее подходящим, если бы ваш менеджер дал вам специальный кабель и сказал, чтобы вы использовали его для настройки коммутатора?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Консоль",
+                    "correct": true
+                },
+                {
+                    "answer": "Telnet/SSH",
+                    "correct": false,
+                    "comment": "Для подключения компьютера к устройству через порт консоли требуется специальный консольный кабель."
+                },
+                {
+                    "answer": "Aux",
+                    "correct": false,
+                    "comment": "Для подключения компьютера к устройству через порт консоли требуется специальный консольный кабель."
+                }
+            ]
+        },
+        {
+            "question": "Какой метод доступа будет наиболее подходящим для внутриполосного доступа к ОС через сетевое подключение?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Консоль",
+                    "correct": false,
+                    "comment": "Telnet и SSH — это методы внутриполосного доступа, требующие активного сетевого подключения к устройству."
+                },
+                {
+                    "answer": "Telnet/SSH",
+                    "correct": true
+                },
+                {
+                    "answer": "Aux",
+                    "correct": false,
+                    "comment": "Telnet и SSH — это методы внутриполосного доступа, требующие активного сетевого подключения к устройству."
+                }
+            ]
+        },
+        {
+            "question": "Какой способ доступа будет наиболее подходящим, если вы позвоните своему менеджеру и скажете ему, что вы не можете получить доступ к маршрутизатору в другом городе через Интернет, и он предоставит вам информацию для доступа к маршрутизатору через телефонное соединение?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Консоль",
+                    "correct": false,
+                    "comment": "Порт AUX на устройстве обеспечивал внеполосные соединения по телефонной линии."
+                },
+                {
+                    "answer": "Telnet/SSH",
+                    "correct": false,
+                    "comment": "Порт AUX на устройстве обеспечивал внеполосные соединения по телефонной линии."
+                },
+                {
+                    "answer": "Aux",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

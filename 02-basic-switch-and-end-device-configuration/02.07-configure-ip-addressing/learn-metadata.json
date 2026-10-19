@@ -1,9 +1,10 @@
 {
     "title": "Настройка IP-адресации",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-switch-and-end-device-configuration.configure-ip-addressing",
+    "type": "scored-lecture",
     "description": "Как настроить IP-адрес на компьютере под управлением Microsoft Windows? Как настроить IP-адрес на коммутаторе?",
     "difficulty": 3,
-    "duration": "PT0H4M",
+    "duration": "PT0H9M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,121 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-switch-and-end-device-configuration.configure-ip-addressing",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Distinguish manual from DHCP-based address configuration of an end device, state what DNS server addresses are for and which methods IPv6 uses for dynamic addressing, and choose the command that enables a configured switch virtual interface."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.ios-navigation",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.ports-and-addresses"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): DNS server addresses, DHCP versus manual configuration, DHCPv6 and SLAAC, enabling the SVI.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Для чего в настройках оконечного устройства указывают адреса DNS-серверов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Чтобы преобразовывать доменные имена, например ya.ru, в IP-адреса",
+                    "correct": true
+                },
+                {
+                    "answer": "Чтобы автоматически получать IPv4-адрес, маску подсети и шлюз по умолчанию",
+                    "correct": false,
+                    "comment": "Эти параметры автоматически назначает DHCP. DNS-серверы используются для преобразования доменных имен, например ya.ru, в IP-адреса."
+                },
+                {
+                    "answer": "Чтобы удаленно управлять коммутатором по сети",
+                    "correct": false,
+                    "comment": "Для удаленного управления на коммутаторе настраивают виртуальный интерфейс (SVI). DNS-серверы используются для преобразования доменных имен в IP-адреса."
+                }
+            ]
+        },
+        {
+            "question": "Какое преимущество дает DHCP по сравнению с ручной настройкой IPv4-адресов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Адреса настраиваются автоматически, и снижается риск ошибок, например совпадения адресов разных устройств",
+                    "correct": true
+                },
+                {
+                    "answer": "Администратор сам вводит адрес на каждом устройстве и полностью контролирует настройку",
+                    "correct": false,
+                    "comment": "Так выглядит ручная настройка: она отнимает много времени и повышает вероятность ошибок. DHCP настраивает IPv4-адреса автоматически."
+                },
+                {
+                    "answer": "DHCP назначает адреса только серверам, а компьютеры настраиваются вручную",
+                    "correct": false,
+                    "comment": "DHCP автоматически настраивает IPv4-адреса для каждого оконечного устройства сети, на котором он включен; компьютеры обычно используют его по умолчанию."
+                },
+                {
+                    "answer": "DHCP используется только в сетях IPv6",
+                    "correct": false,
+                    "comment": "DHCP автоматически настраивает IPv4-адреса. Для динамического распределения IPv6-адресов используются DHCPv6 и SLAAC."
+                }
+            ]
+        },
+        {
+            "question": "Администратор ввел на коммутаторе команду interface vlan 1, а затем ip address 192.168.1.20 255.255.255.0. Какой командой конфигурации интерфейса он должен включить этот виртуальный интерфейс?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "no shutdown",
+                    "correct": true
+                },
+                {
+                    "answer": "ip default-gateway 192.168.1.1",
+                    "correct": false,
+                    "comment": "Это команда глобальной конфигурации, она задает коммутатору шлюз по умолчанию. Виртуальный интерфейс включают командой конфигурации интерфейса no shutdown."
+                },
+                {
+                    "answer": "interface vlan 1",
+                    "correct": false,
+                    "comment": "Эта команда только переводит в режим конфигурации интерфейса SVI. Включает интерфейс команда no shutdown."
+                },
+                {
+                    "answer": "configure terminal",
+                    "correct": false,
+                    "comment": "Эта команда переводит в режим глобальной конфигурации. Виртуальный интерфейс включают командой конфигурации интерфейса no shutdown."
+                }
+            ]
+        },
+        {
+            "question": "Что использует IPv6 для динамического распределения адресов? (выберите два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "DHCPv6",
+                    "correct": true
+                },
+                {
+                    "answer": "SLAAC",
+                    "correct": true
+                },
+                {
+                    "answer": "DNS",
+                    "correct": false,
+                    "comment": "DNS преобразует доменные имена в IP-адреса. Для динамического распределения IPv6-адресов используются DHCPv6 и SLAAC."
+                },
+                {
+                    "answer": "SVI",
+                    "correct": false,
+                    "comment": "SVI — виртуальный интерфейс коммутатора для удаленного управления. Для динамического распределения IPv6-адресов используются DHCPv6 и SLAAC."
+                }
+            ]
+        }
+    ]
 }

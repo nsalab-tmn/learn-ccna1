@@ -1,9 +1,10 @@
 {
     "title": "UTP кабель",
-    "materialType": "lecture",
+    "shortName": "ccna1.physical-layer.utp-cabling",
+    "type": "scored-lecture",
     "description": "Что такое витая пара и какими свойствами она обладает? Какие существуют стандарты и категории UTP-кабелей? Чем отличаются прямые и перекрестные UTP-кабели?",
     "difficulty": 3,
-    "duration": "PT0H9M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,146 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.physical-layer.utp-cabling",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe how UTP cable limits interference by cancellation, name the UTP category recommended for new installations and what the TIA/EIA-568A standard defines, and identify how a crossover cable is terminated and what happens when the wrong cable type joins two devices."
+        },
+        "requires": [
+            "ksa.ccna1.physical-layer.copper-cabling",
+            "ksa.ccna1.protocols-and-models.standards-organizations"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): cancellation in UTP, UTP categories, TIA/EIA-568A, crossover termination, wrong cable type.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Как кабель UTP защищен от искажений сигнала?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Только эффектом взаимоподавления: провода одной электрической цепи скручены в пары",
+                    "correct": true
+                },
+                {
+                    "answer": "Металлическим экраном вокруг каждой пары проводов",
+                    "correct": false,
+                    "comment": "В кабелях UTP нет экранирования от ЭМП и РЧП. Сигнал защищает только эффект взаимоподавления, который дает скручивание проводов одной цепи в пары."
+                },
+                {
+                    "answer": "Одинаковым шагом витков во всех парах кабеля",
+                    "correct": false,
+                    "comment": "Наоборот, в соседних парах используют разный шаг витков, чтобы усилить подавление помех. Сигнал защищает эффект взаимоподавления от скручивания проводов одной цепи в пары."
+                },
+                {
+                    "answer": "Толстой оболочкой большого диаметра",
+                    "correct": false,
+                    "comment": "Кабель UTP имеет небольшой диаметр и гибкую пластиковую оболочку. Сигнал защищает эффект взаимоподавления от скручивания проводов одной цепи в пары."
+                }
+            ]
+        },
+        {
+            "question": "Какую категорию кабеля UTP рекомендуется использовать при прокладке новых сетей?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Категорию 6",
+                    "correct": true
+                },
+                {
+                    "answer": "Категорию 5e",
+                    "correct": false,
+                    "comment": "Категория 5e — минимально допустимый тип кабеля для гигабитных сетей Ethernet. Для прокладки новых сетей рекомендуется категория 6."
+                },
+                {
+                    "answer": "Категорию 5",
+                    "correct": false,
+                    "comment": "Категория 5 поддерживает 100 Мбит/с и ниже минимально допустимой категории 5e. Для прокладки новых сетей рекомендуется категория 6."
+                },
+                {
+                    "answer": "Категорию 3",
+                    "correct": false,
+                    "comment": "Категория 3 первоначально использовалась для голосовой связи. Для прокладки новых сетей рекомендуется категория 6."
+                }
+            ]
+        },
+        {
+            "question": "Как оконцован перекрестный (кроссовый) кабель Ethernet?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Один конец — по стандарту T568A, другой — по стандарту T568B",
+                    "correct": true
+                },
+                {
+                    "answer": "Оба конца — по T568A или оба конца — по T568B",
+                    "correct": false,
+                    "comment": "Так оконцован прямой кабель Ethernet. У перекрестного кабеля один конец оконцован по T568A, а другой — по T568B."
+                },
+                {
+                    "answer": "По проприетарной схеме",
+                    "correct": false,
+                    "comment": "Проприетарная схема — у консольного (rollover) кабеля. У перекрестного кабеля один конец оконцован по T568A, а другой — по T568B."
+                }
+            ]
+        },
+        {
+            "question": "Два компьютера соединили прямым кабелем вместо перекрестного, а их сетевые адаптеры не поддерживают auto-MDIX. Что произойдет?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Устройства не повредятся, но связи между ними не будет",
+                    "correct": true
+                },
+                {
+                    "answer": "Сетевые адаптеры обоих компьютеров выйдут из строя",
+                    "correct": false,
+                    "comment": "Неправильный выбор прямого или перекрестного кабеля не повреждает устройства, но связь между ними становится невозможной."
+                },
+                {
+                    "answer": "Связь установится, но скорость передачи снизится",
+                    "correct": false,
+                    "comment": "При неправильном выборе кабеля связь и взаимодействие между устройствами невозможны. Сами устройства при этом не повреждаются."
+                },
+                {
+                    "answer": "Связь установится, потому что прямой кабель подходит для соединения любых устройств",
+                    "correct": false,
+                    "comment": "Прямой кабель подключает узел к коммутатору, а однотипные устройства, например два компьютера, соединяют перекрестным кабелем. Без auto-MDIX связи не будет, хотя устройства и не повредятся."
+                }
+            ]
+        },
+        {
+            "question": "Что определяет стандарт TIA/EIA-568A? (выберите два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Длину кабелей",
+                    "correct": true
+                },
+                {
+                    "answer": "Методы тестирования кабелей",
+                    "correct": true
+                },
+                {
+                    "answer": "Электрические характеристики медных кабелей",
+                    "correct": false,
+                    "comment": "Электрические характеристики медных кабелей определяет IEEE. Стандарт TIA/EIA-568A описывает типы и длину кабелей, разъемы, оконцовку и методы тестирования."
+                },
+                {
+                    "answer": "Схему IP-адресации узлов локальной сети",
+                    "correct": false,
+                    "comment": "IP-адресация не относится к прокладке кабелей. Стандарт TIA/EIA-568A описывает типы и длину кабелей, разъемы, оконцовку и методы тестирования."
+                }
+            ]
+        }
+    ]
 }

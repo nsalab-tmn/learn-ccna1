@@ -1,9 +1,10 @@
 {
     "title": "Базовая настройка устройств",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-switch-and-end-device-configuration.basic-device-configuration",
+    "type": "scored-lecture",
     "description": "Как правильно именовать устройства? Как правильно выбрать пароль и как правильно его скрыть внутри конфигурации? Как правильно сообщить посетителям устройства, что их здесь не ждут?",
     "difficulty": 3,
-    "duration": "PT0H17M",
+    "duration": "PT0H23M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,147 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-switch-and-end-device-configuration.basic-device-configuration",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Choose the configuration command that names a device, secures privileged EXEC mode, enables password checking on a line, encrypts plain-text passwords or sets a message-of-the-day banner."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.access-to-cisco-ios",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.ios-navigation"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): hostname, enable secret, login, service password-encryption, banner motd.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая команда используется, чтобы назначить имя «Sw-Floor-2» коммутатору?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "hostname Sw-Floor-2",
+                    "correct": true
+                },
+                {
+                    "answer": "host name Sw-Floor-2",
+                    "correct": false,
+                    "comment": "Командой глобальной конфигурации для установки имени узла на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
+                },
+                {
+                    "answer": "name Sw-Floor-2",
+                    "correct": false,
+                    "comment": "Командой глобальной конфигурации для установки имени узла на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
+                }
+            ]
+        },
+        {
+            "question": "Как обеспечить безопасный доступ к привилегированному режиму EXEC на коммутаторе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable netlab",
+                    "correct": false,
+                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                },
+                {
+                    "answer": "secret netlab",
+                    "correct": false,
+                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                },
+                {
+                    "answer": "enable secret netlab",
+                    "correct": true
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": false,
+                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                }
+            ]
+        },
+        {
+            "question": "Какая команда включает аутентификацию по паролю для доступа пользователя в режиме EXEC на коммутаторе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable secret",
+                    "correct": false,
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
+                },
+                {
+                    "answer": "login",
+                    "correct": true
+                },
+                {
+                    "answer": "secret",
+                    "correct": false,
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": false,
+                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
+                }
+            ]
+        },
+        {
+            "question": "Какая команда шифрует все незашифрованные пароли доступа на коммутаторе?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "enable secret",
+                    "correct": false,
+                    "comment": "Команда service password-encryption, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли"
+                },
+                {
+                    "answer": "login",
+                    "correct": false,
+                    "comment": "Команда service password-encryption, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли"
+                },
+                {
+                    "answer": "secret",
+                    "correct": false,
+                    "comment": "Команда service password-encryption, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли"
+                },
+                {
+                    "answer": "service password-encryption",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какая команда предназначена для настройки баннера, который будет отображаться при подключении к коммутатору?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "banner $ Keep out $",
+                    "correct": false,
+                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору: Switch(config)# banner motd $ Keep out $"
+                },
+                {
+                    "answer": "banner motd $ Keep out $",
+                    "correct": true
+                },
+                {
+                    "answer": "display $ Keep out $",
+                    "correct": false,
+                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору: Switch(config)# banner motd $ Keep out $"
+                },
+                {
+                    "answer": "login banner $ Keep out $",
+                    "correct": false,
+                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору: Switch(config)# banner motd $ Keep out $"
+                }
+            ]
+        }
+    ]
 }

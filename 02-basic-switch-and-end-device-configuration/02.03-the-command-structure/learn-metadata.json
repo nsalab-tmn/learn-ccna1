@@ -1,9 +1,10 @@
 {
     "title": "Структура команд ОС",
-    "materialType": "lecture",
+    "shortName": "ccna1.basic-switch-and-end-device-configuration.the-command-structure",
+    "type": "scored-lecture",
     "description": "Как пользоваться командной строкой? Как работать в командной строке эффективно с помощью горячих клавиш? Как правильно давать команды и какая у них структура?",
     "difficulty": 3,
-    "duration": "PT0H19M",
+    "duration": "PT0H25M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,141 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.basic-switch-and-end-device-configuration.the-command-structure",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the argument of a command and the meaning of square brackets in syntax notation, explain when a command may be abbreviated, and choose the symbol or key that calls context-sensitive help or pages through output at the --More-- prompt."
+        },
+        "requires": [
+            "ksa.ccna1.basic-switch-and-end-device-configuration.ios-navigation"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): command, keyword and argument; syntax notation; abbreviations; context-sensitive help; keys at the --More-- prompt.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "В команде ping 192.168.10.5 чем является значение 192.168.10.5?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Аргументом — значением, которое задает пользователь",
+                    "correct": true
+                },
+                {
+                    "answer": "Ключевым словом — параметром, определенным в операционной системе",
+                    "correct": false,
+                    "comment": "Ключевое слово — параметр, определенный в ОС, например ip protocols в команде show ip protocols. Значение 192.168.10.5 задает пользователь, поэтому это аргумент."
+                },
+                {
+                    "answer": "Командой",
+                    "correct": false,
+                    "comment": "Команда здесь — ping. Значение 192.168.10.5, которое задает пользователь, является аргументом."
+                },
+                {
+                    "answer": "Приглашением командной строки",
+                    "correct": false,
+                    "comment": "Приглашение — это Switch> перед командой. Значение 192.168.10.5, которое задает пользователь, является аргументом."
+                }
+            ]
+        },
+        {
+            "question": "Что означают квадратные скобки [x] в описании синтаксиса команды?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Дополнительный (необязательный) элемент — ключевое слово или аргумент",
+                    "correct": true
+                },
+                {
+                    "answer": "Обязательный элемент",
+                    "correct": false,
+                    "comment": "Обязательные элементы отображаются в фигурных скобках {x}. В квадратных скобках отображаются дополнительные элементы."
+                },
+                {
+                    "answer": "Аргумент, для которого пользователь указывает значение",
+                    "correct": false,
+                    "comment": "Аргументы, для которых нужно указать значение, выделяются курсивом. В квадратных скобках отображаются дополнительные элементы."
+                },
+                {
+                    "answer": "Команда или ключевое слово, которое вводится как есть",
+                    "correct": false,
+                    "comment": "Команды и ключевые слова, которые вводятся как есть, выделяются полужирным шрифтом. В квадратных скобках отображаются дополнительные элементы."
+                }
+            ]
+        },
+        {
+            "question": "Почему команду configure можно сократить до conf, но нельзя сократить до con?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "С символов con начинается несколько команд, а с символов conf — только configure",
+                    "correct": true
+                },
+                {
+                    "answer": "Сокращение должно содержать не меньше четырех символов",
+                    "correct": false,
+                    "comment": "Такого правила нет: команду сокращают до минимального числа символов, которое однозначно ее определяет. С символов con начинается несколько команд, поэтому сокращение con неоднозначно."
+                },
+                {
+                    "answer": "Сокращать можно только ключевые слова, а команды — нельзя",
+                    "correct": false,
+                    "comment": "Сокращать можно и команды, и ключевые слова. Сокращение con нельзя использовать потому, что с этих символов начинается несколько команд."
+                }
+            ]
+        },
+        {
+            "question": "Администратор не помнит, какие ключевые слова и аргументы доступны для команды. Что ему следует сделать в командной строке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Ввести вопросительный знак (?)",
+                    "correct": true
+                },
+                {
+                    "answer": "Нажать клавишу Tab",
+                    "correct": false,
+                    "comment": "Клавиша Tab завершает частично введенную команду. Доступные команды, ключевые слова и аргументы показывает контекстная справка, которую вызывает вопросительный знак (?)."
+                },
+                {
+                    "answer": "Нажать сочетание клавиш Ctrl-Shift-6",
+                    "correct": false,
+                    "comment": "Ctrl-Shift-6 — универсальная последовательность прерывания, например для ping или трассировки маршрута. Контекстную справку вызывает вопросительный знак (?)."
+                },
+                {
+                    "answer": "Нажать сочетание клавиш Ctrl-Z",
+                    "correct": false,
+                    "comment": "Ctrl-Z завершает режим конфигурации и возвращает в привилегированный режим EXEC. Контекстную справку вызывает вопросительный знак (?)."
+                }
+            ]
+        },
+        {
+            "question": "Вывод команды не поместился в окне терминала, и ОС показала приглашение --More--. Какая клавиша покажет следующий экран?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Пробел",
+                    "correct": true
+                },
+                {
+                    "answer": "Клавиша Enter",
+                    "correct": false,
+                    "comment": "Клавиша Enter показывает только следующую строку. Следующий экран показывает пробел."
+                },
+                {
+                    "answer": "Клавиша Tab",
+                    "correct": false,
+                    "comment": "При приглашении --More-- любая клавиша, кроме Enter и пробела, закрывает вывод и возвращает в привилегированный режим EXEC. Следующий экран показывает пробел."
+                }
+            ]
+        }
+    ]
 }

@@ -1,9 +1,10 @@
 {
     "title": "Наборы протоколов",
-    "materialType": "lecture",
+    "shortName": "ccna1.protocols-and-models.protocol-suites",
+    "type": "scored-lecture",
     "description": "Как сетевые протоколы эволюционировали с течением времени? Что такое стек сетевых протоколов? Что такое стек TCP/IP",
     "difficulty": 3,
-    "duration": "PT0H12M",
+    "duration": "PT0H22M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,202 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.protocols-and-models.protocol-suites",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Assign common protocols (TCP, UDP, DNS, DHCP, IP, ICMP, Ethernet) and services (routing, messaging) to the layers of the TCP/IP model, and trace which layer processes a received frame's contents after the Ethernet information is removed."
+        },
+        "requires": [
+            "ksa.ccna1.protocols-and-models.protocols"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): TCP/IP layers and their protocols, ICMP error feedback, de-encapsulation order.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "К какому уровню протокольной модели TCP/IP принадлежат UDP и TCP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уровень приложений",
+                    "correct": false,
+                    "comment": "TCP и UDP являются протоколами транспортного уровня"
+                },
+                {
+                    "answer": "транспортный",
+                    "correct": true
+                },
+                {
+                    "answer": "межсетевой",
+                    "correct": false,
+                    "comment": "TCP и UDP являются протоколами транспортного уровня"
+                },
+                {
+                    "answer": "уровень доступа к сети",
+                    "correct": false,
+                    "comment": "TCP и UDP являются протоколами транспортного уровня"
+                }
+            ]
+        },
+        {
+            "question": "Какие два протокола принадлежат уровню приложений модели TCP/IP?",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "EIGRP",
+                    "correct": false,
+                    "comment": "DHCP и DNS являются протоколами уровня приложений"
+                },
+                {
+                    "answer": "DNS",
+                    "correct": true
+                },
+                {
+                    "answer": "OSPF",
+                    "correct": false,
+                    "comment": "DHCP и DNS являются протоколами уровня приложений"
+                },
+                {
+                    "answer": "ICMP",
+                    "correct": false,
+                    "comment": "DHCP и DNS являются протоколами уровня приложений"
+                },
+                {
+                    "answer": "DHCP",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой протокол работает на уровне доступа к сети модели TCP/IP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "HTTP",
+                    "correct": false,
+                    "comment": "Протокол уровня доступа к сети — это Ethernet"
+                },
+                {
+                    "answer": "IP",
+                    "correct": false,
+                    "comment": "Протокол уровня доступа к сети — это Ethernet"
+                },
+                {
+                    "answer": "DNS",
+                    "correct": false,
+                    "comment": "Протокол уровня доступа к сети — это Ethernet"
+                },
+                {
+                    "answer": "Ethernet",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие из перечисленных ниже протоколов обеспечивают обратную связь от узла назначения к исходному узлу относительно ошибок при доставке пакетов? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "IPv4",
+                    "correct": false,
+                    "comment": "Обратную связь при возникновении ошибок обеспечивают ICMPv4 и ICMPv6"
+                },
+                {
+                    "answer": "TCP",
+                    "correct": false,
+                    "comment": "Обратную связь при возникновении ошибок обеспечивают ICMPv4 и ICMPv6"
+                },
+                {
+                    "answer": "ICMPv4",
+                    "correct": true
+                },
+                {
+                    "answer": "IPv6",
+                    "correct": false,
+                    "comment": "Обратную связь при возникновении ошибок обеспечивают ICMPv4 и ICMPv6"
+                },
+                {
+                    "answer": "UDP",
+                    "correct": false,
+                    "comment": "Обратную связь при возникновении ошибок обеспечивают ICMPv4 и ICMPv6"
+                },
+                {
+                    "answer": "ICMPv6",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Устройство получает кадр канального уровня с данными, обрабатывает его и удаляет информацию Ethernet. Какая информация будет дальше обрабатываться принимающим устройством?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "HTTP на уровне приложения",
+                    "correct": false,
+                    "comment": "Данные деинкапсулируются, поэтому следующим уровнем для получения данных будет межсетевой уровень"
+                },
+                {
+                    "answer": "HTML на уровне приложения",
+                    "correct": false,
+                    "comment": "Данные деинкапсулируются, поэтому следующим уровнем для получения данных будет межсетевой уровень"
+                },
+                {
+                    "answer": "IP на межсетевом уровне",
+                    "correct": true
+                },
+                {
+                    "answer": "UDP на межсетевом уровне",
+                    "correct": false,
+                    "comment": "Данные деинкапсулируются, поэтому следующим уровнем для получения данных будет межсетевой уровень"
+                },
+                {
+                    "answer": "TCP на транспортном уровне",
+                    "correct": false,
+                    "comment": "Данные деинкапсулируются, поэтому следующим уровнем для получения данных будет межсетевой уровень"
+                }
+            ]
+        },
+        {
+            "question": "Какие услуги предоставляет межсетевой уровень стека протоколов TCP/IP? (Выберите три варианта.)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "передача файлов",
+                    "correct": false,
+                    "comment": "IP (Internet Protocol), ICMP (обмен сообщениями) и протоколы маршрутизации — это сервисы, предоставляемые на межсетевом уровне"
+                },
+                {
+                    "answer": "разрешение адресов",
+                    "correct": false,
+                    "comment": "IP (Internet Protocol), ICMP (обмен сообщениями) и протоколы маршрутизации — это сервисы, предоставляемые на межсетевом уровне."
+                },
+                {
+                    "answer": "протоколы маршрутизации",
+                    "correct": true
+                },
+                {
+                    "answer": "обмен сообщениями",
+                    "correct": true
+                },
+                {
+                    "answer": "Ethernet",
+                    "correct": false,
+                    "comment": "IP (Internet Protocol), ICMP (обмен сообщениями) и протоколы маршрутизации — это сервисы, предоставляемые на межсетевом уровне."
+                },
+                {
+                    "answer": "IP (Internet Protocol)",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

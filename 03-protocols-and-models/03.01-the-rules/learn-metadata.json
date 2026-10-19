@@ -1,9 +1,10 @@
 {
     "title": "Правила коммуникации",
-    "materialType": "lecture",
+    "shortName": "ccna1.protocols-and-models.the-rules",
+    "type": "scored-lecture",
     "description": "В чем заключаются основы коммуникации? Какие похожа между собой коммуникация людей и устройств в сети? Какие правила существуют в процессе коммуникации? Что такое кодирование, инкапсляция и форматирование сообщений?",
     "difficulty": 3,
-    "duration": "PT0H16M",
+    "duration": "PT0H22M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,114 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.protocols-and-models.the-rules",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Name the message rule a description refers to (encoding, formatting that identifies source and destination, timing with its flow control, response timeout and access method), and identify multicast as delivery to one or more but not all end devices, from unicast and broadcast."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.network-components"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): encoding, formatting, message timing, delivery options.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Как называется преобразование информации в форму, пригодную для передачи?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "форматирование",
+                    "correct": false,
+                    "comment": "Один из первых этапов отправки сообщения — кодирование. В процессе кодирования информация преобразуется из исходной формы в приемлемую для передачи"
+                },
+                {
+                    "answer": "кодирование",
+                    "correct": true
+                },
+                {
+                    "answer": "инкапсуляция",
+                    "correct": false,
+                    "comment": "Один из первых этапов отправки сообщения — кодирование. В процессе кодирования информация преобразуется из исходной формы в приемлемую для передачи"
+                }
+            ]
+        },
+        {
+            "question": "Какой этап коммуникационного процесса связан с правильной идентификацией адреса отправителя и получателя?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "форматирование",
+                    "correct": true
+                },
+                {
+                    "answer": "кодирование",
+                    "correct": false,
+                    "comment": "Сообщения, отправляемые по компьютерной сети, должны быть в правильном формате для их доставки и обработки. Частью процесса форматирования является правильное определение источника сообщения и его назначения"
+                },
+                {
+                    "answer": "инкапсуляция",
+                    "correct": false,
+                    "comment": "Сообщения, отправляемые по компьютерной сети, должны быть в правильном формате для их доставки и обработки. Частью процесса форматирования является правильное определение источника сообщения и его назначения"
+                }
+            ]
+        },
+        {
+            "question": "Какие 3 компонента являются составляющими синхронизации сообщений? (верны 3 варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "управление потоком",
+                    "correct": true
+                },
+                {
+                    "answer": "порядковые номера",
+                    "correct": false,
+                    "comment": "Управление потоком — это управление скоростью передачи. Тайм-аут ответа — это время ожидания ответов. Методы доступа определяют, когда кто-то может отправить сообщение. Это три компонента синхронизации сообщений"
+                },
+                {
+                    "answer": "способ доступа",
+                    "correct": true
+                },
+                {
+                    "answer": "время повторной передачи",
+                    "correct": false,
+                    "comment": "Управление потоком — это управление скоростью передачи. Тайм-аут ответа — это время ожидания ответов. Методы доступа определяют, когда кто-то может отправить сообщение. Это три компонента синхронизации сообщений"
+                },
+                {
+                    "answer": "Тайм-аут ответа",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой способ доставки используется для передачи информации одному или нескольким оконечным устройствам, но не всем устройствам в сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "одноадресная рассылка",
+                    "correct": false,
+                    "comment": "Одноадресные сообщения адресованы для передачи на одно устройство в сети"
+                },
+                {
+                    "answer": "многоадресная рассылка",
+                    "correct": true
+                },
+                {
+                    "answer": "широковещательная рассылка",
+                    "correct": false,
+                    "comment": "Широковещательные сообщения адресованы для передачи на все устройства в сети"
+                }
+            ]
+        }
+    ]
 }

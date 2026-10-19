@@ -1,9 +1,10 @@
 {
     "title": "Прокладка оптоволоконных кабелей",
-    "materialType": "lecture",
+    "shortName": "ccna1.physical-layer.fiber-optic-cabling",
+    "type": "scored-lecture",
     "description": "Что такое оптическое волокно и какими свойствами оно обладает? Какие существуют типы и категории оптоволоконных кабелей и оптических разъемов?",
     "difficulty": 3,
-    "duration": "PT0H9M",
+    "duration": "PT0H16M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,117 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.physical-layer.fiber-optic-cabling",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Distinguish single-mode from multimode fiber by light source (laser or LED), typical distance and use (long-haul telephony and cable TV versus campus networks)."
+        },
+        "requires": [
+            "ksa.ccna1.physical-layer.physical-layer-characteristics",
+            "ksa.ccna1.physical-layer.copper-cabling"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): single-mode and multimode fiber by light source, distance and use.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой тип оптоволоконного кабеля обычно используется для передачи данных на расстояние около 500 метров?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "многомодовый кабель",
+                    "correct": true
+                },
+                {
+                    "answer": "одномодовый кабель",
+                    "correct": false,
+                    "comment": "Многомодовое волокно (MMF) более ограничено по расстоянию, чем одномодовое (SMF). Обычно применяется на расстояниях в несколько сотен метров, но возможно и до 2 км"
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих типов оптоволоконных кабелей используют светоизлучающие диоды (LED) в качестве источника света?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "многомодовый кабель",
+                    "correct": true
+                },
+                {
+                    "answer": "одномодовый кабель",
+                    "correct": false,
+                    "comment": "Многомодовый оптоволоконный кабель (MMF) использует светодиоды в качестве источника света"
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих типов оптоволоконных кабелей используют лазер в качестве источника света?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "многомодовый кабель",
+                    "correct": false,
+                    "comment": "Одномодовый оптоволоконный кабель (SMF) в качестве источника света использует лазер"
+                },
+                {
+                    "answer": "одномодовый кабель",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих типов оптоволоконных кабелей используются для создания телефонных соединений на больших расстояниях, а также в кабельном телевидении?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "многомодовый кабель",
+                    "correct": false,
+                    "comment": "Одномодовое волокно (SMF) обычно используется для дальнемагистральных каналов телевидения и телефонии"
+                },
+                {
+                    "answer": "одномодовый кабель",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой тип оптоволоконного кабеля используется для передачи данных на расстояние около 100 км?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "многомодовый кабель",
+                    "correct": false,
+                    "comment": "Одномодовое волокно (SMF) используется на линиях дальней связи протяженностью до 100 км"
+                },
+                {
+                    "answer": "одномодовый кабель",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих типов оптоволоконных кабелей используются в сети кампуса?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "многомодовый кабель",
+                    "correct": true
+                },
+                {
+                    "answer": "одномодовый кабель",
+                    "correct": false,
+                    "comment": "Многомодовое волокно (MMF) более ограничено по расстоянию, чем одномодовое (SMF). Обычно используется в локальных сетях, например в сети кампуса"
+                }
+            ]
+        }
+    ]
 }

@@ -1,9 +1,10 @@
 {
     "title": "Назначение физического уровня",
-    "materialType": "lecture",
+    "shortName": "ccna1.physical-layer.purpose-of-the-physical-layer",
+    "type": "scored-lecture",
     "description": "За что отвечает физический уровень сети? Какие существуют способы подключения к домашнему маршрутизатору?",
     "difficulty": 3,
-    "duration": "PT0H4M",
+    "duration": "PT0H8M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,102 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.physical-layer.purpose-of-the-physical-layer",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe the physical layer's role: it takes frames from the data link layer, sends their bits one at a time over wired or wireless media, and passes received bits up to the data link layer."
+        },
+        "requires": [
+            "ksa.ccna1.protocols-and-models.reference-models",
+            "ksa.ccna1.protocols-and-models.data-encapsulation"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): wired and wireless media, bit-by-bit transmission, frames from and bits to the data link layer.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Верно ли утверждение, что физический уровень касается только проводных сетевых подключений?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "верно",
+                    "correct": false,
+                    "comment": "Физический уровень предоставляет средства для передачи битов по сети независимо от того, является ли она проводной или беспроводной"
+                },
+                {
+                    "answer": "неверно",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Верно ли утверждение, что когда кадр кодируется физическим уровнем, все биты отправляются по среде передачи одновременно?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "верно",
+                    "correct": false,
+                    "comment": "При кодировании биты, составляющие кадр, передаются по среде передачи по одному"
+                },
+                {
+                    "answer": "неверно",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "На какой более высокий уровень физический уровень приемного устройства передает биты?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "уровень приложений",
+                    "correct": false,
+                    "comment": "Физический уровень получает кадры от канального уровня и преобразует их в биты для передачи. На принимающем устройстве физический уровень передает принятые биты на канальный уровень в виде полного кадра"
+                },
+                {
+                    "answer": "уровень представления",
+                    "correct": false,
+                    "comment": "Физический уровень получает кадры от канального уровня и преобразует их в биты для передачи. На принимающем устройстве физический уровень передает принятые биты на канальный уровень в виде полного кадра"
+                },
+                {
+                    "answer": "сетевой",
+                    "correct": false,
+                    "comment": "Физический уровень получает кадры от канального уровня и преобразует их в биты для передачи. На принимающем устройстве физический уровень передает принятые биты на канальный уровень в виде полного кадра"
+                },
+                {
+                    "answer": "канальный",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой PDU получает физический уровень для кодирования и передачи?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "кадр",
+                    "correct": true
+                },
+                {
+                    "answer": "сегмент",
+                    "correct": false,
+                    "comment": "Физический уровень получает кадры от канального уровня для кодирования и передачи"
+                },
+                {
+                    "answer": "пакет",
+                    "correct": false,
+                    "comment": "Физический уровень получает кадры от канального уровня для кодирования и передачи"
+                }
+            ]
+        }
+    ]
 }
