@@ -184,3 +184,339 @@ links:
     device: ASW-4
     port: FastEthernet0/1
   cable: copper
+scenario:
+  pages:
+    - title: "Топология и адресация"
+      body: |
+        | Кабель | Устройство | Порт | Устройство | Порт |
+        |---|---|---|---|---|
+        | Последовательный | Building1 | S0/0/0 | Building2 | S0/0/0 |
+        | Медный | Building1 | G0/0 | ASW-1 | G0/1 |
+        | Медный | Building1 | G0/1 | ASW-2 | G0/1 |
+        | Медный | Building2 | G0/0 | ASW-3 | G0/1 |
+        | Медный | Building2 | G0/1 | ASW-4 | G0/1 |
+        | Медный | Host-A | F0 | ASW-1 | F0/1 |
+        | Медный | Host-B | F0 | ASW-2 | F0/1 |
+        | Медный | Host-C | F0 | ASW-3 | F0/1 |
+        | Медный | Host-D | F0 | ASW-4 | F0/1 |
+
+        Блок адресов сети — 10.11.48.0/24. Требования к подсетям:
+
+        | Подсеть | Здание | Нужно адресов узлов |
+        |---|---|---|
+        | Локальная сеть ASW-1 | Building1 | 14 |
+        | Локальная сеть ASW-2 | Building1 | 30 |
+        | Локальная сеть ASW-3 | Building2 | 6 |
+        | Локальная сеть ASW-4 | Building2 | 60 |
+        | Соединение Building1 — Building2 | — | 2 |
+
+        Адреса, маски и шлюзы, отмеченные знаком «?», вы рассчитаете на страницах «Расчет подсетей VLSM» и «Составление схемы адресации»: там же приведена заполненная таблица для проверки.
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | Building1 | G0/0 | ? | ? | — |
+        | Building1 | G0/1 | ? | ? | — |
+        | Building1 | S0/0/0 | ? | ? | — |
+        | Building2 | G0/0 | ? | ? | — |
+        | Building2 | G0/1 | ? | ? | — |
+        | Building2 | S0/0/0 | ? | ? | — |
+        | ASW-1 | VLAN 1 | ? | ? | ? |
+        | ASW-2 | VLAN 1 | ? | ? | ? |
+        | ASW-3 | VLAN 1 | ? | ? | ? |
+        | ASW-4 | VLAN 1 | ? | ? | ? |
+        | Host-A | NIC | ? | ? | ? |
+        | Host-B | NIC | ? | ? | ? |
+        | Host-C | NIC | ? | ? | ? |
+        | Host-D | NIC | ? | ? | ? |
+    - title: "Начальное состояние"
+      body: |
+        - На маршрутизаторе Building2 настроены все интерфейсы, а на маршрутизаторе Building1 — только последовательный интерфейс S0/0/0. На обоих маршрутизаторах заданы статические маршруты к локальным сетям другого здания (код S в таблице маршрутизации).
+        - На коммутаторах ASW-1, ASW-2 и ASW-4 настроены интерфейс VLAN 1 и шлюз по умолчанию, на компьютерах Host-A, Host-B и Host-C — IP-адрес, маска подсети и шлюз по умолчанию.
+        - Не настроены интерфейсы G0/0 и G0/1 маршрутизатора Building1, интерфейс VLAN 1 и шлюз по умолчанию коммутатора ASW-3 и IP-адресация компьютера Host-D.
+
+        **Шаг 1.** Откройте консоль маршрутизатора Building1 и нажмите Enter. Перейдите в привилегированный режим EXEC командой **enable**.
+
+        **Шаг 2.** Выведите состояние интерфейсов командой **show ip interface brief**. Интерфейс S0/0/0 имеет адрес 10.11.48.121 и работает (up), а у интерфейсов G0/0 и G0/1 адресов нет, и они выключены (administratively down).
+
+        ```
+        Building1>enable
+        Building1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         unassigned      YES unset  administratively down down
+        GigabitEthernet0/1         unassigned      YES unset  administratively down down
+        Serial0/0/0                10.11.48.121    YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 3.** Откройте консоль коммутатора ASW-3, нажмите Enter и перейдите в привилегированный режим EXEC командой **enable**. Выведите строку интерфейса VLAN 1 командой **show ip interface brief | include Vlan**: у интерфейса нет адреса, и он выключен.
+
+        ```
+        ASW-3>enable
+        ASW-3#show ip interface brief | include Vlan
+        Vlan1                      unassigned      YES unset  administratively down down
+        ```
+
+        **Шаг 4.** Откройте окно компьютера Host-D и на вкладке «Рабочий стол» запустите приложение «Командная строка». Выведите IP-настройки командой **ipconfig**: IPv4-адрес, маска подсети и шлюз по умолчанию равны 0.0.0.0.
+
+        ```
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:13FF:FE14:A301
+           IPv6 Address....................: ::
+           IPv4 Address....................: 0.0.0.0
+           Subnet Mask.....................: 0.0.0.0
+           Default Gateway.................: 0.0.0.0
+        ```
+    - title: "Расчет подсетей VLSM"
+      body: |
+        **Шаг 1.** Определите, сколько подсетей нужно этой сети: по одной на каждую локальную сеть и одна на соединение маршрутизаторов Building1 и Building2.
+
+        **Шаг 2.** Ответьте на вопрос 1 в форме ответов.
+
+        **Примечание.** В подсети с n битами в узловой части 2ⁿ адресов, и узлам из них можно назначить 2ⁿ − 2: первый адрес — адрес самой подсети, последний — широковещательный. Маска подсети с префиксом /p оставляет в узловой части 32 − p бит. Для каждой подсети выбирают наименьшее n, при котором 2ⁿ − 2 не меньше нужного числа адресов узлов.
+
+        **Шаг 3.** Рассчитайте маску подсети для локальной сети ASW-1, которой нужно 14 адресов узлов, и число адресов узлов в подсети с этой маской.
+
+        **Шаг 4.** Ответьте на вопросы 2 и 3 в форме ответов.
+
+        **Шаг 5.** Аналогично рассчитайте маски подсетей и число адресов узлов для локальных сетей ASW-2 (30 адресов узлов), ASW-3 (6) и ASW-4 (60).
+
+        **Шаг 6.** Ответьте на вопросы 4–9 в форме ответов.
+
+        **Шаг 7.** Рассчитайте маску подсети для соединения маршрутизаторов Building1 и Building2: в нем нужны два адреса, по одному на последовательный интерфейс каждого маршрутизатора.
+
+        **Шаг 8.** Ответьте на вопрос 10 в форме ответов.
+    - title: "Составление схемы адресации"
+      body: |
+        **Примечание.** Подсети VLSM выделяют по порядку, от самой большой к самой маленькой, начиная с первого адреса сети. Тогда каждая подсеть начинается с адреса, кратного ее размеру, а следующая — сразу за широковещательным адресом предыдущей, и подсети не перекрываются.
+
+        **Шаг 1.** Разделите сеть 10.11.48.0/24: первую подсеть отдайте самой крупной локальной сети, вторую — второй по размеру, третью и четвертую — следующим по размеру, а пятую — соединению маршрутизаторов Building1 и Building2. Для каждой подсети запишите адрес сети с длиной префикса, первый и последний адреса узлов и широковещательный адрес.
+
+        **Шаг 2.** Сверьте свою таблицу подсетей с таблицей ниже.
+
+        | Подсеть | Нужно адресов узлов | Адрес сети | Первый адрес узла | Последний адрес узла | Широковещательный адрес |
+        |---|---|---|---|---|---|
+        | Локальная сеть ASW-4 | 60 | 10.11.48.0/26 | 10.11.48.1 | 10.11.48.62 | 10.11.48.63 |
+        | Локальная сеть ASW-2 | 30 | 10.11.48.64/27 | 10.11.48.65 | 10.11.48.94 | 10.11.48.95 |
+        | Локальная сеть ASW-1 | 14 | 10.11.48.96/28 | 10.11.48.97 | 10.11.48.110 | 10.11.48.111 |
+        | Локальная сеть ASW-3 | 6 | 10.11.48.112/29 | 10.11.48.113 | 10.11.48.118 | 10.11.48.119 |
+        | Соединение Building1 — Building2 | 2 | 10.11.48.120/30 | 10.11.48.121 | 10.11.48.122 | 10.11.48.123 |
+
+        **Шаг 3.** Распределите адреса по правилам схемы. Интерфейсы маршрутизаторов в локальных сетях и интерфейс S0/0/0 маршрутизатора Building1 получают первый адрес узла своей подсети, а интерфейс S0/0/0 маршрутизатора Building2 — последний. Коммутаторы получают второй адрес узла своей подсети, компьютеры — последний. Шлюз по умолчанию коммутатора и компьютера — интерфейс маршрутизатора в их подсети.
+
+        **Шаг 4.** Сверьте свою схему с таблицей адресации ниже.
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | Building1 | G0/0 | 10.11.48.97 | 255.255.255.240 | — |
+        | Building1 | G0/1 | 10.11.48.65 | 255.255.255.224 | — |
+        | Building1 | S0/0/0 | 10.11.48.121 | 255.255.255.252 | — |
+        | Building2 | G0/0 | 10.11.48.113 | 255.255.255.248 | — |
+        | Building2 | G0/1 | 10.11.48.1 | 255.255.255.192 | — |
+        | Building2 | S0/0/0 | 10.11.48.122 | 255.255.255.252 | — |
+        | ASW-1 | VLAN 1 | 10.11.48.98 | 255.255.255.240 | 10.11.48.97 |
+        | ASW-2 | VLAN 1 | 10.11.48.66 | 255.255.255.224 | 10.11.48.65 |
+        | ASW-3 | VLAN 1 | 10.11.48.114 | 255.255.255.248 | 10.11.48.113 |
+        | ASW-4 | VLAN 1 | 10.11.48.2 | 255.255.255.192 | 10.11.48.1 |
+        | Host-A | NIC | 10.11.48.110 | 255.255.255.240 | 10.11.48.97 |
+        | Host-B | NIC | 10.11.48.94 | 255.255.255.224 | 10.11.48.65 |
+        | Host-C | NIC | 10.11.48.118 | 255.255.255.248 | 10.11.48.113 |
+        | Host-D | NIC | 10.11.48.62 | 255.255.255.192 | 10.11.48.1 |
+
+        **Шаг 5.** Откройте консоль маршрутизатора Building2, нажмите Enter и перейдите в привилегированный режим EXEC командой **enable**.
+
+        **Шаг 6.** Убедитесь с помощью команды **show ip interface brief**, что настроенные адреса маршрутизатора Building2 совпадают со схемой: у интерфейсов G0/0 и G0/1 — первые адреса узлов подсетей ASW-3 и ASW-4, у интерфейса S0/0/0 — последний адрес узла подсети соединения.
+
+        ```
+        Building2>enable
+        Building2#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         10.11.48.113    YES manual up                    up
+        GigabitEthernet0/1         10.11.48.1      YES manual up                    up
+        Serial0/0/0                10.11.48.122    YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+    - title: "Настройка маршрутизатора Building1"
+      body: |
+        **Шаг 1.** На маршрутизаторе Building1 перейдите в режим глобальной конфигурации командой **configure terminal**, а затем к настройке интерфейса G0/0, к которому подключен коммутатор ASW-1, командой **interface g0/0**.
+
+        **Шаг 2.** Назначьте интерфейсу первый адрес узла подсети ASW-1 командой **ip address 10.11.48.97 255.255.255.240** и включите интерфейс командой **no shutdown**.
+
+        **Шаг 3.** Аналогично настройте интерфейс G0/1, к которому подключен коммутатор ASW-2: **interface g0/1**, **ip address 10.11.48.65 255.255.255.224**, **no shutdown**. Вернитесь в привилегированный режим EXEC командой **end**. После включения каждого интерфейса в консоли появляются сообщения о том, что интерфейс и протокол канала перешли в состояние up.
+
+        ```
+        Building1#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        Building1(config)#interface g0/0
+        Building1(config-if)#ip address 10.11.48.97 255.255.255.240
+        Building1(config-if)#no shutdown
+        Building1(config-if)#
+        *Mar  1 00:01:11.665: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+        Building1(config-if)#
+        *Mar  1 00:01:12.665: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+        Building1(config-if)#interface g0/1
+        Building1(config-if)#ip address 10.11.48.65 255.255.255.224
+        Building1(config-if)#no shutdown
+        Building1(config-if)#
+        *Mar  1 00:01:22.910: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        Building1(config-if)#
+        *Mar  1 00:01:23.910: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        Building1(config-if)#end
+        *Mar  1 00:01:26.928: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Шаг 4.** Убедитесь с помощью команды **show ip interface brief**, что интерфейсы G0/0 и G0/1 получили адреса 10.11.48.97 и 10.11.48.65 и работают (up в столбцах «Status» и «Protocol»).
+
+        ```
+        Building1#show ip interface brief
+        Interface                  IP-Address      OK? Method Status                Protocol
+        GigabitEthernet0/0         10.11.48.97     YES manual up                    up
+        GigabitEthernet0/1         10.11.48.65     YES manual up                    up
+        Serial0/0/0                10.11.48.121    YES manual up                    up
+        Serial0/0/1                unassigned      YES unset  administratively down down
+        ```
+
+        **Примечание.** Индикаторы новых соединений Building1 — ASW-1 и Building1 — ASW-2 загораются зеленым примерно через 30 секунд после включения интерфейсов. В это время порты коммутаторов по протоколу STP проверяют, не образует ли соединение петлю, и еще не пересылают кадры.
+    - title: "Настройка коммутатора ASW-3 и компьютера Host-D"
+      body: |
+        **Шаг 1.** На коммутаторе ASW-3 перейдите в режим глобальной конфигурации командой **configure terminal**, а затем к настройке интерфейса VLAN 1 командой **interface vlan 1**.
+
+        **Шаг 2.** Назначьте интерфейсу второй адрес узла подсети ASW-3 командой **ip address 10.11.48.114 255.255.255.248** и включите его командой **no shutdown**. Вернитесь в режим глобальной конфигурации командой **exit**.
+
+        **Шаг 3.** Задайте шлюз по умолчанию — интерфейс G0/0 маршрутизатора Building2 — командой **ip default-gateway 10.11.48.113** и вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        ASW-3#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        ASW-3(config)#interface vlan 1
+        ASW-3(config-if)#ip address 10.11.48.114 255.255.255.248
+        ASW-3(config-if)#no shutdown
+        *Mar  1 00:01:40.080: %LINK-5-CHANGED: Interface Vlan1, changed state to up
+        *Mar  1 00:01:40.080: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+        ASW-3(config-if)#exit
+        ASW-3(config)#ip default-gateway 10.11.48.113
+        ASW-3(config)#end
+        *Mar  1 00:01:49.413: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Примечание.** Кадры узлов коммутатор пересылает независимо от своего IP-адреса. Адрес интерфейса VLAN 1 и шлюз по умолчанию нужны для управления: к коммутатору можно подключиться по сети, в том числе из других подсетей.
+
+        **Шаг 4.** В приложении «Командная строка» компьютера Host-D задайте последний адрес узла подсети ASW-4, маску подсети и шлюз по умолчанию — интерфейс G0/1 маршрутизатора Building2 — командой **ipconfig 10.11.48.62 255.255.255.192 10.11.48.1**.
+
+        **Шаг 5.** Убедитесь с помощью команды **ipconfig**, что IPv4-адрес, маска подсети и шлюз по умолчанию заданы.
+
+        ```
+        C:\>ipconfig 10.11.48.62 255.255.255.192 10.11.48.1
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:13FF:FE14:A301
+           IPv6 Address....................: ::
+           IPv4 Address....................: 10.11.48.62
+           Subnet Mask.....................: 255.255.255.192
+           Default Gateway.................: 10.11.48.1
+        ```
+    - title: "Проверка связи"
+      body: |
+        **Шаг 1.** Убедитесь, что индикаторы всех соединений на схеме горят зеленым («Соединение активно» в условных обозначениях).
+
+        **Шаг 2.** В приложении «Командная строка» компьютера Host-D проверьте связь с компьютером Host-A командой **ping 10.11.48.110**. Эхо-запросы выполняются: пакеты проходят через маршрутизаторы Building2 и Building1. Первый эхо-запрос может остаться без ответа: в это время устройства определяют MAC-адреса по протоколу ARP.
+
+        ```
+        C:\>ping 10.11.48.110
+
+        Pinging 10.11.48.110 with 32 bytes of data:
+
+        Request timed out.
+        Reply from 10.11.48.110: bytes=32 time=2ms TTL=126
+        Reply from 10.11.48.110: bytes=32 time=2ms TTL=126
+        Reply from 10.11.48.110: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 10.11.48.110:
+            Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 3.** Проверьте связь с компьютером Host-B командой **ping 10.11.48.94**. Эхо-запросы выполняются.
+
+        ```
+        C:\>ping 10.11.48.94
+
+        Pinging 10.11.48.94 with 32 bytes of data:
+
+        Request timed out.
+        Reply from 10.11.48.94: bytes=32 time=2ms TTL=126
+        Reply from 10.11.48.94: bytes=32 time=2ms TTL=126
+        Reply from 10.11.48.94: bytes=32 time=2ms TTL=126
+
+        Ping statistics for 10.11.48.94:
+            Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 2ms, Maximum = 2ms, Average = 2ms
+        ```
+
+        **Шаг 4.** Проверьте связь с компьютером Host-C командой **ping 10.11.48.118**. Эхо-запросы выполняются.
+
+        ```
+        C:\>ping 10.11.48.118
+
+        Pinging 10.11.48.118 with 32 bytes of data:
+
+        Request timed out.
+        Reply from 10.11.48.118: bytes=32 time=1ms TTL=127
+        Reply from 10.11.48.118: bytes=32 time=1ms TTL=127
+        Reply from 10.11.48.118: bytes=32 time=1ms TTL=127
+
+        Ping statistics for 10.11.48.118:
+            Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 1ms, Maximum = 1ms, Average = 1ms
+        ```
+
+        **Шаг 5.** На коммутаторе ASW-3 проверьте связь с интерфейсом G0/0 маршрутизатора Building1 командой **ping 10.11.48.97** и с компьютером Host-A командой **ping 10.11.48.110**. Коммутатор получает ответы: пакеты в другие подсети он отправляет своему шлюзу по умолчанию. В выводе команды **ping** символ «!» означает полученный ответ, а «.» — запрос без ответа.
+
+        ```
+        ASW-3#ping 10.11.48.97
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 10.11.48.97, timeout is 2 seconds:
+        .!!!!
+        Success rate is 80 percent (4/5), round-trip min/avg/max = 1/2/4 ms
+        ASW-3#ping 10.11.48.110
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 10.11.48.110, timeout is 2 seconds:
+        !!!!!
+        Success rate is 100 percent (5/5), round-trip min/avg/max = 2/3/5 ms
+        ```
+
+        **Шаг 6.** На маршрутизаторе Building1 проверьте связь с компьютером Host-D (**ping 10.11.48.62**), коммутатором ASW-3 (**ping 10.11.48.114**) и коммутаторами ASW-1 (**ping 10.11.48.98**) и ASW-2 (**ping 10.11.48.66**).
+
+        ```
+        Building1#ping 10.11.48.62
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 10.11.48.62, timeout is 2 seconds:
+        !!!!!
+        Success rate is 100 percent (5/5), round-trip min/avg/max = 2/3/5 ms
+        Building1#ping 10.11.48.114
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 10.11.48.114, timeout is 2 seconds:
+        !!!!!
+        Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/4 ms
+        Building1#ping 10.11.48.98
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 10.11.48.98, timeout is 2 seconds:
+        .!!!!
+        Success rate is 80 percent (4/5), round-trip min/avg/max = 1/2/4 ms
+        Building1#ping 10.11.48.66
+        Type escape sequence to abort.
+        Sending 5, 100-byte ICMP Echos to 10.11.48.66, timeout is 2 seconds:
+        .!!!!
+        Success rate is 80 percent (4/5), round-trip min/avg/max = 1/2/4 ms
+        ```
+
+        **Шаг 7.** Аналогично проверьте с устройств Building1, ASW-3 и Host-D связь с остальными адресами таблицы адресации. Отвечают все адреса.
