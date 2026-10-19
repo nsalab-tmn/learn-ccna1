@@ -8,18 +8,15 @@
     "tags": {
         "$ref": "../../material-tags.json"
     },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -27,13 +24,9 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "answerSchema": {
         "type": "object",
@@ -46,12 +39,12 @@
             },
             "q_2": {
                 "type": "string",
-                "title": "2. Какую команду необходимо для этого выполнить?",
+                "title": "2. Какую команду нужно выполнить, чтобы сохранить текущую конфигурацию коммутатора в загрузочную?",
                 "placeholder": "Enter your answer here"
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Успешны ли основные подключения между устройствами (ping)? Дайте пояснение.",
+                "title": "3. Получает ли компьютер PC1 ответы на эхо-запросы от коммутатора S1 и от компьютера PC2? Почему?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
@@ -61,7 +54,7 @@
             },
             "q_5": {
                 "type": "string",
-                "title": "5. Зачем вы вводите команду **no shutdown**?",
+                "title": "5. Зачем вы вводите команду no shutdown на интерфейсе VLAN 1?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {

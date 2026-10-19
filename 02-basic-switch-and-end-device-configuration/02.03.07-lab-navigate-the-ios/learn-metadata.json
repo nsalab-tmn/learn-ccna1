@@ -8,18 +8,15 @@
     "tags": {
         "$ref": "../../material-tags.json"
     },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -27,13 +24,9 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "answerSchema": {
         "type": "object",
@@ -41,82 +34,82 @@
         "properties": {
             "q_1": {
                 "type": "string",
-                "title": "1. Каково значение параметра в битах в секунду?",
+                "title": "1. Какая скорость консольного соединения в битах в секунду указана в сообщении о подключении к консоли коммутатора S1?",
                 "placeholder": "Enter your answer here"
             },
             "q_2": {
                 "type": "string",
-                "title": "2. Какое приглашение появляется на экране?",
+                "title": "2. Какое приглашение появляется на экране после нажатия клавиши Enter?",
                 "placeholder": "Enter your answer here"
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Какая команда начинается с буквы «с»?",
+                "title": "3. Сколько команд, начинающихся с буквы «c», показывает справка в пользовательском режиме EXEC?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
                 "type": "string",
-                "title": "4. Какие отображаются команды?",
+                "title": "4. Какие команды показывает справка, если ввести t и вопросительный знак?",
                 "placeholder": "Enter your answer here"
             },
             "q_5": {
                 "type": "string",
-                "title": "5. Какие отображаются команды?",
+                "title": "5. Какие команды показывает справка, если ввести te и вопросительный знак?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Какие из показанных данных описывают команду **enable**? (запишите текст описания)",
+                "title": "6. Как справка описывает команду enable? (запишите текст описания)",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Что отображается после нажатия клавиши **TAB**?",
+                "title": "7. Что отображается в строке после ввода en и нажатия клавиши Tab?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
                 "type": "string",
-                "title": "8. Что произойдет, если ввести **te`TAB`** в командной строке?",
+                "title": "8. Что произойдет, если ввести te и нажать клавишу Tab?",
                 "placeholder": "Enter your answer here"
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Как изменилась командная строка? (в ответ введите приглашение к вводу)",
+                "title": "9. Как изменилось приглашение после выполнения команды enable? (в ответ введите новое приглашение)",
                 "placeholder": "Enter your answer here"
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Сколько команд, начинающихся на «с», показано теперь, когда включен привилегированный режим EXEC?",
+                "title": "10. Сколько команд, начинающихся с буквы «c», показывает справка в привилегированном режиме EXEC?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
                 "type": "string",
-                "title": "11.  Какое появилось сообщение?",
+                "title": "11. Какое сообщение появилось после ввода команды configure?",
                 "placeholder": "Enter your answer here"
             },
             "q_12": {
                 "type": "string",
-                "title": "12. Как изменилась командная строка? (в ответ введите приглашение к вводу)",
+                "title": "12. Как изменилось приглашение после того, как вы приняли вариант terminal? (в ответ введите новое приглашение)",
                 "placeholder": "Enter your answer here"
             },
             "q_13": {
                 "type": "string",
-                "title": "13. Какая информация отображена? Какой год отображается?",
+                "title": "13. Какую информацию показывает команда show clock? Какой год отображается?",
                 "placeholder": "Enter your answer here"
             },
             "q_14": {
                 "type": "string",
-                "title": "14. Какая информация отображена?",
+                "title": "14. Какое сообщение выводит коммутатор после ввода команды clock без параметров?",
                 "placeholder": "Enter your answer here"
             },
             "q_15": {
                 "type": "string",
-                "title": "15. Какая информация отображена?",
+                "title": "15. Какой параметр команды clock показывает справка и как она его описывает?",
                 "placeholder": "Enter your answer here"
             },
             "q_16": {
                 "type": "string",
-                "title": "16. Какие отобразятся сведения, если ввести только команду **clock set**, не запрашивая справку с помощью вопросительного знака?",
+                "title": "16. Какие сведения отобразятся, если ввести команду clock set без параметров, не запрашивая справку?",
                 "placeholder": "Enter your answer here"
             }
         }

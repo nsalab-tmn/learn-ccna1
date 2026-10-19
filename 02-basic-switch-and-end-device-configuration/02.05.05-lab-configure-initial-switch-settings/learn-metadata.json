@@ -8,18 +8,15 @@
     "tags": {
         "$ref": "../../material-tags.json"
     },
+    "compute": {
+        "local": {
+            "$ref": "./compute/local"
+        }
+    },
     "credentialsSchema": {
-        "userName": {
-            "title": "Имя пользователя",
-            "source": "learn_user"
-        },
-        "password": {
-            "title": "Пароль",
-            "source": "learn_password"
-        },
         "consoleURL": {
-            "title": "Адрес портала",
-            "value": "https://portal.skillscloud.company"
+            "title": "Адрес лаборатории",
+            "source": "URL"
         }
     },
     "skills": {},
@@ -27,13 +24,9 @@
         "$ref": "./README.md"
     },
     "assessment": {
-        "$ref": "./assessment.json"
-    },
-    "deploy": {
-        "$ref": "./deploy"
-    },
-    "assets": {
-        "$ref": "./assets"
+        "local": {
+            "$ref": "./assessment"
+        }
     },
     "answerSchema": {
         "type": "object",
@@ -51,7 +44,7 @@
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Каков диапазон значений, отображаемых в vty-линиях?",
+                "title": "3. Каков диапазон номеров линий VTY в конфигурации коммутатора?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
@@ -66,7 +59,7 @@
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Для чего нужна команда **login**?",
+                "title": "6. Для чего нужна команда login?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
@@ -96,7 +89,7 @@
             },
             "q_12": {
                 "type": "string",
-                "title": "12. Какова самая короткая версия команды **copy running-config startup-config**?",
+                "title": "12. Какова самая короткая версия команды copy running-config startup-config?",
                 "placeholder": "Enter your answer here"
             },
             "q_13": {
