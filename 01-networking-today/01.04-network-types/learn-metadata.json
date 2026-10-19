@@ -1,9 +1,10 @@
 {
     "title": "Основные типы сетей",
-    "materialType": "lecture",
+    "shortName": "ccna1.networking-today.network-types",
+    "type": "scored-lecture",
     "description": "Какая сеть считается маленькой, а какая сеть - большой? Чем локальная сеть отличается от глобальной сети? Что такое Интернет?",
     "difficulty": 3,
-    "duration": "PT0H9M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,101 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.networking-today.network-types",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Classify a network as a LAN, a WAN, an intranet or an extranet by its geographic reach and by who is allowed to use it."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.network-components"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): LAN, WAN, intranet and extranet.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какая сетевая инфраструктура обеспечивает доступ пользователям и оконечным устройствам в небольшой географической зоне, например в отделе предприятия, дома или в небольшой компании?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Экстранет",
+                    "correct": false,
+                    "comment": "Доступ пользователям и оконечным устройствам в небольшой географической зоне обеспечивает LAN"
+                },
+                {
+                    "answer": "Интранет",
+                    "correct": false,
+                    "comment": "Доступ пользователям и оконечным устройствам в небольшой географической зоне обеспечивает LAN"
+                },
+                {
+                    "answer": "Локальная сеть (LAN)",
+                    "correct": true
+                },
+                {
+                    "answer": "Глобальная сеть (WAN)",
+                    "correct": false,
+                    "comment": "Доступ пользователям и оконечным устройствам в небольшой географической зоне обеспечивает LAN"
+                }
+            ]
+        },
+        {
+            "question": "Какую сетевую инфраструктуру может использовать организация для обеспечения безопасного и надежного доступа лицам, которые работают в другой  организации, но нуждаются в доступе к данным этой организации?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Экстранет",
+                    "correct": true
+                },
+                {
+                    "answer": "Интранет",
+                    "correct": false,
+                    "comment": "Организация может использовать Экстранет для защищенного и безопасного доступа сотрудников, которые работают в других организациях, но которым необходим доступ к данным компании."
+                },
+                {
+                    "answer": "Локальная сеть (LAN)",
+                    "correct": false,
+                    "comment": "Организация может использовать Экстранет для защищенного и безопасного доступа сотрудников, которые работают в других организациях, но которым необходим доступ к данным компании."
+                },
+                {
+                    "answer": "Глобальная сеть (WAN)",
+                    "correct": false,
+                    "comment": "Организация может использовать Экстранет для защищенного и безопасного доступа  сотрудников, которые работают в других организациях, но которым  необходим доступ к данным компании."
+                }
+            ]
+        },
+        {
+            "question": "Какая сетевая инфраструктура обеспечивает доступ к другим сетям в большой географической зоне и часто принадлежит поставщику телекоммуникационных услуг, который ею управляет?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Экстранет",
+                    "correct": false,
+                    "comment": "Доступ к другим сетям в обширной географической области предоставляет глобальная сеть (WAN)"
+                },
+                {
+                    "answer": "Интранет",
+                    "correct": false,
+                    "comment": "Доступ к другим сетям в обширной географической области предоставляет глобальная сеть (WAN)"
+                },
+                {
+                    "answer": "Локальная сеть (LAN)",
+                    "correct": false,
+                    "comment": "Доступ к другим сетям в обширной географической области предоставляет глобальная сеть (WAN)"
+                },
+                {
+                    "answer": "Глобальная сеть (WAN)",
+                    "correct": true
+                }
+            ]
+        }
+    ]
 }

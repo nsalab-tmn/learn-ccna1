@@ -1,9 +1,10 @@
 {
     "title": "Обеспечение надежности сети",
-    "materialType": "lecture",
+    "shortName": "ccna1.networking-today.redundant-networks",
+    "type": "scored-lecture",
     "description": "Как обеспечивается устойчивость к сбоям в сети? За счет чего сеть можно легко масштабировать? Что такое качество обслуживания и для чего оно нужно? За счет чего достигается безопасность в сети?",
     "difficulty": 3,
-    "duration": "PT0H8M",
+    "duration": "PT0H13M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,127 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.networking-today.redundant-networks",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify which of the four network-architecture characteristics (fault tolerance, scalability, quality of service, security) a given design measure provides."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.network-components",
+            "ksa.ccna1.networking-today.internet-connection"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): fault tolerance, scalability, QoS and security, each from a design measure.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Когда разработчики следуют принятым стандартам и протоколам, какая из четырех основных характеристик сетевой архитектуры достигается?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "устойчивость к сбоям",
+                    "correct": false,
+                    "comment": "Когда проектировщики следуют принятым стандартам и протоколам, достигается масштабируемость"
+                },
+                {
+                    "answer": "масштабируемость",
+                    "correct": true
+                },
+                {
+                    "answer": "QoS",
+                    "correct": false,
+                    "comment": "Когда проектировщики следуют принятым стандартам и протоколам, достигается масштабируемость"
+                },
+                {
+                    "answer": "безопасность",
+                    "correct": false,
+                    "comment": "Когда проектировщики следуют принятым стандартам и протоколам, достигается масштабируемость"
+                }
+            ]
+        },
+        {
+            "question": "К какой из четырех основных характеристик сетевой архитектуры относятся конфиденциальность, целостность и доступность?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "устойчивость к сбоям",
+                    "correct": false,
+                    "comment": "Конфиденциальность, целостность и доступность являются требованиями безопасности."
+                },
+                {
+                    "answer": "масштабируемость",
+                    "correct": false,
+                    "comment": "Конфиденциальность, целостность и доступность являются требованиями безопасности."
+                },
+                {
+                    "answer": "QoS",
+                    "correct": false,
+                    "comment": "Конфиденциальность, целостность и доступность являются требованиями безопасности."
+                },
+                {
+                    "answer": "безопасность",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "С  помощью какого типа политики маршрутизатор может управлять потоком данных и голосовым трафиком, отдавая приоритет голосовой связи, если сеть испытывает перегрузку?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "устойчивость к сбоям",
+                    "correct": false,
+                    "comment": "QoS означает, что маршрутизатор будет управлять потоком данных и голосового трафика, отдавая приоритет голосовой связи"
+                },
+                {
+                    "answer": "масштабируемость",
+                    "correct": false,
+                    "comment": "QoS означает, что маршрутизатор будет управлять потоком данных и голосового трафика, отдавая приоритет голосовой связи"
+                },
+                {
+                    "answer": "QoS",
+                    "correct": true
+                },
+                {
+                    "answer": "безопасность",
+                    "correct": false,
+                    "comment": "QoS означает, что маршрутизатор будет управлять потоком данных и голосового трафика, отдавая приоритет голосовой связи"
+                }
+            ]
+        },
+        {
+            "question": "Наличие нескольких путей к месту назначения называется резервированием. Это пример какой характеристики сетевой архитектуры?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "устойчивость к сбоям",
+                    "correct": true
+                },
+                {
+                    "answer": "Масштабируемость",
+                    "correct": false,
+                    "comment": "Резервирование — пример устойчивости сетевой архитектуры к сбоям"
+                },
+                {
+                    "answer": "QoS",
+                    "correct": false,
+                    "comment": "Резервирование — пример устойчивости сетевой архитектуры к сбоям"
+                },
+                {
+                    "answer": "безопасность",
+                    "correct": false,
+                    "comment": "Резервирование — пример устойчивости сетевой архитектуры к сбоям"
+                }
+            ]
+        }
+    ]
 }
