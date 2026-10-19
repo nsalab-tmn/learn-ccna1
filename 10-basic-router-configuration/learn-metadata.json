@@ -30,7 +30,7 @@
             "$ref": "./10.04.03-lab-basic-device-configuration/learn-metadata.json"
         },
         {
-            "$ref": "./10.05-summary/learn-metadata.json"
+            "$ref": "./10.05-exam/learn-metadata.json"
         }
     ]
 }

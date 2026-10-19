@@ -27,7 +27,9 @@
             "ksa.ccna1.number-systems.exam",
             "ksa.ccna1.data-link-layer.exam",
             "ksa.ccna1.ethernet-switching.exam",
-            "ksa.ccna1.08-10-exam",
+            "ksa.ccna1.network-layer.exam",
+            "ksa.ccna1.address-resolution.exam",
+            "ksa.ccna1.basic-router-configuration.exam",
             "ksa.ccna1.11-13-exam",
             "ksa.ccna1.14-15-exam",
             "ksa.ccna1.16-17-exam"

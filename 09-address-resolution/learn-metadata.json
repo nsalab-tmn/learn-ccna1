@@ -27,7 +27,7 @@
             "$ref": "./09.03.04-lab-ipv6-neighbor-discovery/learn-metadata.json"
         },
         {
-            "$ref": "./09.04-summary/learn-metadata.json"
+            "$ref": "./09.04-exam/learn-metadata.json"
         }
     ]
 }
