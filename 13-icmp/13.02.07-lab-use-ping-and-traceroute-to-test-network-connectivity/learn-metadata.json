@@ -34,67 +34,67 @@
         "properties": {
             "q_1": {
                 "type": "string",
-                "title": "1. Какой последний IPv4-адрес успешно ответил на запрос?",
+                "title": "1. Какой последний IPv4-адрес ответил при трассировке маршрута от PC1 к PC3?",
                 "placeholder": "Enter your answer here"
             },
             "q_2": {
                 "type": "string",
-                "title": "2. Какой последний IPv4-адрес успешно ответил на запрос?",
+                "title": "2. Какой последний IPv4-адрес ответил при трассировке маршрута от PC3 к PC1?",
                 "placeholder": "Enter your answer here"
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Какой второй адрес?",
+                "title": "3. Какой второй IPv4-адрес, кроме 10.10.1.97, есть у маршрутизатора R1?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
                 "type": "string",
-                "title": "4. Что собой представляют сети подключенные к интерфейсу **Serial0/0/1**?",
+                "title": "4. Что означают две записи для интерфейса Serial0/0/1 в таблице маршрутизации R1 — с кодом C и с кодом L?",
                 "placeholder": "Enter your answer here"
             },
             "q_5": {
                 "type": "string",
-                "title": "5. В чем заключается ошибка?",
+                "title": "5. В чем заключается ошибка, из-за которой не работает IPv4-подключение между PC1 и PC3?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Как можно устранить проблему?",
+                "title": "6. Как можно устранить эту ошибку?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
                 "type": "string",
-                "title": "7. Удалось ли устранить проблему?",
+                "title": "7. Удалось ли восстановить IPv4-подключение между PC1 и PC3?",
                 "placeholder": "Enter your answer here"
             },
             "q_8": {
                 "type": "string",
-                "title": "8. Какой последний IPv6-адрес успешно ответил на запрос?",
+                "title": "8. Какой последний IPv6-адрес ответил при трассировке маршрута от PC2 к PC4?",
                 "placeholder": "Enter your answer here"
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Какой последний IPv6-адрес успешно ответил на запрос?",
+                "title": "9. Какой адрес сообщает о недоступности получателя при трассировке маршрута от PC4 к PC2 и какому устройству он принадлежит?",
                 "placeholder": "Enter your answer here"
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Имеется ли несоответствие этих адресов?",
+                "title": "10. Совпадает ли адрес шлюза по умолчанию компьютера PC4 с локальным адресом канала интерфейса G0/0 маршрутизатора R3?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
                 "type": "string",
-                "title": "11. В чем заключается ошибка?",
+                "title": "11. В чем заключается ошибка, из-за которой не работает IPv6-подключение между PC2 и PC4?",
                 "placeholder": "Enter your answer here"
             },
             "q_12": {
                 "type": "string",
-                "title": "12. Как можно устранить проблему?",
+                "title": "12. Как можно устранить эту ошибку?",
                 "placeholder": "Enter your answer here"
             },
             "q_13": {
                 "type": "string",
-                "title": "13. Удалось ли устранить проблему?",
+                "title": "13. Удалось ли восстановить IPv6-подключение между PC2 и PC4?",
                 "placeholder": "Enter your answer here"
             }
         }
