@@ -1,10 +1,38 @@
 {
     "title": "Экзамен по основам IP-адресации",
+    "shortName": "ccna1.11-13-exam",
+    "type": "exam",
     "description": "Проверьте свои знания по темам:\r\r* Адресация IPv4\r* Адресация IPv6\r* Протокол ICMP",
     "difficulty": 1,
     "duration": "PT1H36M",
-    "materialType": "test-exam",
-    "passingScore": 100,
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "skills": {},
+    "assets": {
+        "$ref": "./assets"
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.11-13-exam",
+            "kind": "K",
+            "bloom": "apply",
+            "objective": "Across modules 11–13, calculate IPv4 subnets, masks and host counts, compress and classify IPv6 addresses and work out their prefixes, and choose the ICMP-based test (ping or traceroute) and interpret its result."
+        },
+        "requires": [
+            "ksa.ccna1.ipv4-addressing.summary",
+            "ksa.ccna1.ipv6-addressing.summary",
+            "ksa.ccna1.icmp.summary"
+        ],
+        "measurement": {
+            "mode": "exam",
+            "grader": "test-auto",
+            "aligned_bloom": "apply",
+            "passes_when": "Learner scores at least 80% on the exam's 61 questions covering modules 11–13, including the subnetting and IPv6 address calculations; attempts unlimited.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "matching",
@@ -1796,12 +1824,5 @@
             ],
             "question": "Пользователь вводит команду `ping 2001:db8:FACE:39::10` и получает ответ, содержащий код 3. Что означает этот код?"
         }
-    ],
-    "tags": {
-        "$ref": "../material-tags.json"
-    },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    ]
 }

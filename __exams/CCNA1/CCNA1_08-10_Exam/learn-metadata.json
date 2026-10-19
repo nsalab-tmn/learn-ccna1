@@ -3,8 +3,9 @@
     "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
     "difficulty": 1,
     "duration": "PT0H30M",
-    "materialType": "test",
-    "passingScore": 100,
+    "type": "exam",
+    "materialType": "test-exam",
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "singleChoice",
@@ -1956,8 +1957,11 @@
             "question": "```\nRTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end\n```\n\nПосмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Payroll. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         }
     ],
-    "tags": { "$ref": "../../../material-tags.json" },
+    "tags": {
+        "$ref": "../../../material-tags.json"
+    },
     "skills": {},
-    "assets": { "$ref": "./assets" }
-    
+    "assets": {
+        "$ref": "./assets"
+    }
 }

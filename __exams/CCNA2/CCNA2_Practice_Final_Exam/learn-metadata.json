@@ -3,8 +3,9 @@
     "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
     "difficulty": 1,
     "duration": "PT0H30M",
-    "materialType": "test",
-    "passingScore": 100,
+    "type": "exam",
+    "materialType": "test-exam",
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "singleChoice",
@@ -1232,7 +1233,7 @@
                 {
                     "option": "алгоритм",
                     "match": "3"
-                }                                 
+                }
             ],
             "answers": [
                 {
@@ -1253,7 +1254,7 @@
                 }
             ],
             "question": "Сопоставьте компоненты протокола динамической маршрутизации с соответствующими характеристиками. (Используются не все варианты.)"
-        },        
+        },
         {
             "answerType": "singleChoice",
             "answers": [

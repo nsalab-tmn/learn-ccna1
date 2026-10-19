@@ -1,10 +1,38 @@
 {
     "title": "Экзамен по основам межсетевого взаимодействия",
+    "shortName": "ccna1.08-10-exam",
+    "type": "exam",
     "description": "Проверьте свои знания по темам:\r\r* Сетевой уровень модели OSI\r* Разрешение адресов\r* Базовая конфигурация маршрутизатора",
     "difficulty": 1,
     "duration": "PT2H0M",
-    "materialType": "test-exam",
-    "passingScore": 100,
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "skills": {},
+    "assets": {
+        "$ref": "./assets"
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.08-10-exam",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Across modules 8–10, identify the IPv4 and IPv6 header fields and the host and router forwarding decisions, what ARP and neighbor discovery resolve, and choose the router commands for initial settings, interfaces and the default gateway."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.summary",
+            "ksa.ccna1.address-resolution.summary",
+            "ksa.ccna1.basic-router-configuration.summary"
+        ],
+        "measurement": {
+            "mode": "exam",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "Learner scores at least 80% on the exam's 66 questions covering modules 8–10; attempts unlimited.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "singleChoice",
@@ -1955,12 +1983,5 @@
             ],
             "question": "```\nRTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end\n``` Посмотрите на конфигурацию. Администратор сети подключает новый узел к LAN Payroll. Необходимо обеспечить этому узлу возможность обмена данными с удаленными сетями. Какой IP-адрес нужно настроить на новом узле в качестве шлюза по умолчанию?"
         }
-    ],
-    "tags": {
-        "$ref": "../material-tags.json"
-    },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    ]
 }

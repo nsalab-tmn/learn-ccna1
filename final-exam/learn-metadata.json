@@ -1,10 +1,41 @@
 {
     "title": "Экзамен по основам сетевых технологий",
+    "shortName": "ccna1.final-exam",
+    "type": "exam",
     "description": "Проверьте свои знания по темам:\r\r* Современные сетевые технологии\r* Базовая конфигурация коммутатора и оконечного устройства\r* Протоколы и модели\r* Физический уровень сети\r* Системы счисления\r* Канальный уровень сети\r* Коммутация в сетях Ethernet\r* Сетевой уровень модели OSI\r* Разрешение адресов\r* Базовая конфигурация маршрутизатора\r* Адресация IPv4\r* Адресация IPv6\r* Протокол ICMP\r* Транспортный уровень\r* Уровень приложений\r* Основы сетевой безопасности\r* Организация небольшой сети",
     "difficulty": 1,
     "duration": "PT1H34M",
-    "materialType": "test-exam",
-    "passingScore": 100,
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "skills": {},
+    "assets": {
+        "$ref": "./assets"
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.final-exam",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Across all modules of the course, identify the network component, protocol, address or mechanism a scenario describes, and choose the addressing, device configuration or verification command it calls for."
+        },
+        "requires": [
+            "ksa.ccna1.01-03-exam",
+            "ksa.ccna1.04-07-exam",
+            "ksa.ccna1.08-10-exam",
+            "ksa.ccna1.11-13-exam",
+            "ksa.ccna1.14-15-exam",
+            "ksa.ccna1.16-17-exam"
+        ],
+        "measurement": {
+            "mode": "exam",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "Learner scores at least 80% on the exam's 54 questions covering the whole course; attempts unlimited.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "multiChoice",
@@ -1617,12 +1648,5 @@
             ],
             "question": "Небольшая рекламная компания имеет сервер, который предоставляет критически важные бизнес-услуги. Компания подключается к Интернету через арендованную линию сервис-провайдера. Какой подход лучше всего с экономической точки зрения обеспечит избыточность для подключения к Интернету?"
         }
-    ],
-    "tags": {
-        "$ref": "../material-tags.json"
-    },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    ]
 }

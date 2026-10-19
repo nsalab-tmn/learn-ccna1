@@ -3,6 +3,11 @@
   "materialType": "learning-path",
   "tags": { "$ref": "./material-tags.json" },
   "description": { "$ref": "./README.md" },
+  "path": {
+    "goal": "Учащийся описывает, как устроены и работают компьютерные сети, выполняет базовую настройку коммутаторов, маршрутизаторов и оконечных устройств, рассчитывает схемы адресации IPv4 и IPv6 и проверяет связь в небольшой сети.",
+    "prerequisites": [],
+    "targets": [ "ksa.ccna1.final-exam" ]
+  },
   "materials": [
     { "$ref": "./01-networking-today/learn-metadata.json" },
     { "$ref": "./02-basic-switch-and-end-device-configuration/learn-metadata.json" },

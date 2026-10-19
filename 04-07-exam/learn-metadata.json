@@ -1,10 +1,39 @@
 {
     "title": "Экзамен по основам коммутации и системам счисления",
+    "shortName": "ccna1.04-07-exam",
+    "type": "exam",
     "description": "Проверьте свои знания по темам:\r\r* Физический уровень сети\r* Системы счисления\r* Канальный уровень сети\r* Коммутация в сетях Ethernet",
     "difficulty": 1,
     "duration": "PT1H37M",
-    "materialType": "test-exam",
-    "passingScore": 100,
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "skills": {},
+    "assets": {
+        "$ref": "./assets"
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.04-07-exam",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Across modules 4–7, identify the physical-layer media, cabling and signalling properties, the data link sublayers, topologies and media access methods, and the Ethernet frame, MAC address and switch forwarding behaviour a scenario describes."
+        },
+        "requires": [
+            "ksa.ccna1.physical-layer.summary",
+            "ksa.ccna1.number-systems.summary",
+            "ksa.ccna1.data-link-layer.summary",
+            "ksa.ccna1.ethernet-switching.summary"
+        ],
+        "measurement": {
+            "mode": "exam",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "Learner scores at least 80% on the exam's 59 questions covering modules 4–7; attempts unlimited.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "matching",
@@ -1663,12 +1692,5 @@
             ],
             "question": "Какое действие произойдет, если узел получит кадр с MAC-адресом назначения FF:FF:FF:FF:FF:FF?"
         }
-    ],
-    "tags": {
-        "$ref": "../material-tags.json"
-    },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    ]
 }
