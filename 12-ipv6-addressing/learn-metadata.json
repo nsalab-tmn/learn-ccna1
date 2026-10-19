@@ -39,9 +39,6 @@
             "$ref": "./12.09.01-lab-implement-a-subnetted-ipv6-addressing-scheme/learn-metadata.json"
         },
         {
-            "$ref": "./12.09.02-lab-configure-ipv6-addresses-on-network-devices-physical-mode/learn-metadata.json"
-        },
-        {
             "$ref": "./12.10-summary/learn-metadata.json"
         }
     ]

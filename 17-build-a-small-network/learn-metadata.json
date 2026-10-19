@@ -39,9 +39,6 @@
             "$ref": "./17.07.07-lab-troubleshoot-connectivity-issues-physical-mode/learn-metadata.json"
         },
         {
-            "$ref": "./17.08.01-lab-design-and-build-a-small-network-physical-mode/learn-metadata.json"
-        },
-        {
             "$ref": "./17.08.02-lab-skills-integration-challenge/learn-metadata.json"
         },
         {

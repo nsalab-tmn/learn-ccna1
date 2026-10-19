@@ -21,9 +21,6 @@
             "$ref": "./02.03.07-lab-navigate-the-ios/learn-metadata.json"
         },
         {
-            "$ref": "./02.03.08.01-lab-navigate-the-ios-using-a-terminal-client-for-console-connectivity-physical-mode/learn-metadata.json"
-        },
-        {
             "$ref": "./02.04-basic-device-configuration/learn-metadata.json"
         },
         {
@@ -46,9 +43,6 @@
         },
         {
             "$ref": "./02.09.01-lab-basic-switch-and-end-device-configuration/learn-metadata.json"
-        },
-        {
-            "$ref": "./02.09.02-lab-basic-switch-and-end-device-configuration-physical-mode/learn-metadata.json"
         },
         {
             "$ref": "./02.10-summary/learn-metadata.json"

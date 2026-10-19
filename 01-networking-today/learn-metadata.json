@@ -21,9 +21,6 @@
             "$ref": "./01.05-internet-connection/learn-metadata.json"
         },
         {
-            "$ref": "./01.00.05-lab-logical-and-physical-mode-exploration/learn-metadata.json"
-        },
-        {
             "$ref": "./01.05.07-lab-network-representation/learn-metadata.json"
         },
         {
