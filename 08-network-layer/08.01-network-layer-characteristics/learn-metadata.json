@@ -1,9 +1,10 @@
 {
     "title": "Характеристики сетевого уровня",
-    "materialType": "lecture",
+    "shortName": "ccna1.network-layer.network-layer-characteristics",
+    "type": "scored-lecture",
     "description": "Какие функции выполняет сетевой уровень модели OSI? Какими характеристиками обладает протокол IP? Какими механизмы доставки сообщений?",
     "difficulty": 3,
-    "duration": "PT0H10M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,122 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.network-layer.network-layer-characteristics",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Identify the OSI layers on either side of IP (the transport layer hands it segments, the data link layer prepares packets for the medium), name packet fragmentation, and distinguish IP's best-effort delivery from its connectionless and media-independent operation."
+        },
+        "requires": [
+            "ksa.ccna1.protocols-and-models.reference-models",
+            "ksa.ccna1.protocols-and-models.data-encapsulation"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): transport and data link layers around IP, fragmentation, best-effort delivery.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какой уровень OSI отправляет сегменты для инкапсуляции в пакет IPv4 или IPv6?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "канальный уровень",
+                    "correct": false,
+                    "comment": "PDU транспортного уровня, называемые сегментами, инкапсулируются на сетевом уровне в IPv4 и IPv6 пакеты"
+                },
+                {
+                    "answer": "сетевой уровень",
+                    "correct": false,
+                    "comment": "PDU транспортного уровня, называемые сегментами, инкапсулируются на сетевом уровне в IPv4 и IPv6 пакеты"
+                },
+                {
+                    "answer": "транспортный уровень",
+                    "correct": true
+                },
+                {
+                    "answer": "сеансовый уровень",
+                    "correct": false,
+                    "comment": "PDU транспортного уровня, называемые сегментами, инкапсулируются на сетевом уровне в IPv4 и IPv6 пакеты"
+                }
+            ]
+        },
+        {
+            "question": "Какой уровень в модели OSI отвечает за прием IP-пакета и его подготовку к транспортировке по среде передачи данных?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "физический уровень",
+                    "correct": false,
+                    "comment": "Канальный уровень получает IP-пакеты от сетевого уровня и инкапсулирует их для передачи по среде"
+                },
+                {
+                    "answer": "сетевой уровень",
+                    "correct": false,
+                    "comment": "Канальный уровень получает IP-пакеты от сетевого уровня и инкапсулирует их для передачи по среде"
+                },
+                {
+                    "answer": "канальный уровень",
+                    "correct": true
+                },
+                {
+                    "answer": "транспортный уровень",
+                    "correct": false,
+                    "comment": "Канальный уровень получает IP-пакеты от сетевого уровня и инкапсулирует их для передачи по среде"
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает процесс разделения IP-пакета при пересылке его из одной среды передачи данных в другую, с меньшим MTU?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "инкапсуляция",
+                    "correct": false,
+                    "comment": "Процесс разделения IP-пакетов для перемещения по среде с меньшим MTU — это фрагментация"
+                },
+                {
+                    "answer": "фрагментация",
+                    "correct": true
+                },
+                {
+                    "answer": "сегментация",
+                    "correct": false,
+                    "comment": "Процесс разделения IP-пакетов для перемещения по среде с меньшим MTU — это фрагментация"
+                },
+                {
+                    "answer": "сериализация",
+                    "correct": false,
+                    "comment": "Процесс разделения IP-пакетов для перемещения по среде с меньшим MTU — это фрагментация"
+                }
+            ]
+        },
+        {
+            "question": "Какой способ доставки не гарантирует, что пакет будет доставлен полностью без ошибок?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "без установления соединения",
+                    "correct": false,
+                    "comment": "Негарантированная доставка не гарантирует, что пакеты будут доставлены в пункт назначения"
+                },
+                {
+                    "answer": "негарантированная доставка",
+                    "correct": true
+                },
+                {
+                    "answer": "независимый от среды передачи данных",
+                    "correct": false,
+                    "comment": "Негарантированная доставка не гарантирует, что пакеты будут доставлены в пункт назначения"
+                }
+            ]
+        }
+    ]
 }

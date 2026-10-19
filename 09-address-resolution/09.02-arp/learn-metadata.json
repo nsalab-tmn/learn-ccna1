@@ -1,9 +1,10 @@
 {
     "title": "Протокол ARP",
-    "materialType": "lecture",
+    "shortName": "ccna1.address-resolution.arp",
+    "type": "scored-lecture",
     "description": "Какие функции выполняет протокол ARP? Как выглядят ARP-таблицы? Что такое ARP-спуфинг?",
     "difficulty": 3,
-    "duration": "PT0H19M",
+    "duration": "PT0H26M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,155 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.address-resolution.arp",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe the two ARP functions, where the ARP table is kept and that its entries are cached temporarily, name the router command that displays it (show ip arp), and identify ARP spoofing as the attack that abuses ARP."
+        },
+        "requires": [
+            "ksa.ccna1.address-resolution.mac-and-ip"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): ARP functions, ARP table in RAM, temporary entries, show ip arp, ARP spoofing.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие две функции обеспечивает ARP? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "ведет таблицу сопоставлений IPv4-адресов и доменных имен",
+                    "correct": false,
+                    "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
+                },
+                {
+                    "answer": "ведет таблицу сопоставлений IPv4-MAC-адресов",
+                    "correct": true
+                },
+                {
+                    "answer": "ведет таблицу сопоставлений IPv6-MAC-адресов",
+                    "correct": false,
+                    "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
+                },
+                {
+                    "answer": "преобразует IP-адреса в доменные имена",
+                    "correct": false,
+                    "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
+                },
+                {
+                    "answer": "преобразует IPv4-адреса в MAC-адреса",
+                    "correct": true
+                },
+                {
+                    "answer": "преобразует IPv6-адреса в MAC-адреса",
+                    "correct": false,
+                    "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
+                }
+            ]
+        },
+        {
+            "question": "Где хранится таблица ARP на устройстве?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ПЗУ",
+                    "correct": false,
+                    "comment": "Таблица ARP временно кэшируется в ОЗУ"
+                },
+                {
+                    "answer": "флеш-память",
+                    "correct": false,
+                    "comment": "Таблица ARP временно кэшируется в ОЗУ"
+                },
+                {
+                    "answer": "NVRAM",
+                    "correct": false,
+                    "comment": "Таблица ARP временно кэшируется в ОЗУ"
+                },
+                {
+                    "answer": "ОЗУ",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о протоколе ARP является верным?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "кэш ARP не может быть удален вручную",
+                    "correct": false,
+                    "comment": "Таблица ARP временно кэшируется в ОЗУ"
+                },
+                {
+                    "answer": "записи ARP кэшируются постоянно",
+                    "correct": false,
+                    "comment": "Таблица ARP временно кэшируется в ОЗУ"
+                },
+                {
+                    "answer": "записи ARP кэшируются временно",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какую команду можно использовать на маршрутизаторе для просмотра таблицы ARP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "arp -a",
+                    "correct": false,
+                    "comment": "На маршрутизаторах для просмотра таблицы ARP используется команда show ip arp"
+                },
+                {
+                    "answer": "arp -d",
+                    "correct": false,
+                    "comment": "На маршрутизаторах для просмотра таблицы ARP используется команда show ip arp"
+                },
+                {
+                    "answer": "show arp table",
+                    "correct": false,
+                    "comment": "На маршрутизаторах для просмотра таблицы ARP используется команда show ip arp"
+                },
+                {
+                    "answer": "show ip arp",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Что такое атака с использованием ARP?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "широковещательные рассылки ARP",
+                    "correct": false,
+                    "comment": "Две проблемы безопасности, связанные с запросами ARP, заключаются в том, что сообщения ARP отправляются как широковещательные рассылки и могут быть подделаны"
+                },
+                {
+                    "answer": "атака VLAN Hopping",
+                    "correct": false,
+                    "comment": "Две проблемы безопасности, связанные с запросами ARP, заключаются в том, что сообщения ARP отправляются как широковещательные рассылки и могут быть подделаны"
+                },
+                {
+                    "answer": "атаки путем подделки ARP",
+                    "correct": true
+                },
+                {
+                    "answer": "атака истощения ресурсов ARP",
+                    "correct": false,
+                    "comment": "Две проблемы безопасности, связанные с запросами ARP, заключаются в том, что сообщения ARP отправляются как широковещательные рассылки и могут быть подделаны"
+                }
+            ]
+        }
+    ]
 }

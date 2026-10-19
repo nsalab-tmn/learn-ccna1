@@ -1,9 +1,10 @@
 {
     "title": "Обнаружение соседних IPv6-устройств",
-    "materialType": "lecture",
+    "shortName": "ccna1.address-resolution.neighbor-discovery",
+    "type": "scored-lecture",
     "description": "Как происходит обнаружение соседей и разрешение адресов в IPv6-сетях?",
     "difficulty": 3,
-    "duration": "PT0H9M",
+    "duration": "PT0H15M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,95 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.address-resolution.neighbor-discovery",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Match the ICMPv6 Neighbor Discovery messages to their uses (NS and NA for address resolution, RS and RA for SLAAC) and state that a Neighbor Solicitation is sent as multicast."
+        },
+        "requires": [
+            "ksa.ccna1.address-resolution.arp",
+            "ksa.ccna1.ethernet-switching.ethernet-mac-address"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): NS and NA for address resolution, RS and RA for SLAAC, NS sent as multicast.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какие два сообщения ICMPv6 используются в SLAAC? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "сообщение «Объявление соседа» (Neighbor Advertisement, NA)",
+                    "correct": false,
+                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос маршрутизатора» и «Объявление маршрутизатора»"
+                },
+                {
+                    "answer": "сообщение «Запрос соседа» (Neighbor Solicitation, NS)",
+                    "correct": false,
+                    "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос маршрутизатора» и «Объявление маршрутизатора»"
+                },
+                {
+                    "answer": "сообщение «Объявление маршрутизатора» (Router Advertisement, RA)",
+                    "correct": true
+                },
+                {
+                    "answer": "сообщение «Запрос маршрутизатора» (Router Solicitation, RS)",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие два сообщения ICMPv6 используются для определения MAC-адреса известного IPv6 адреса? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "сообщение «Объявление соседа» (Neighbor Advertisement, NA)",
+                    "correct": true
+                },
+                {
+                    "answer": "сообщение «Запрос соседа» (Neighbor Solicitation, NS)",
+                    "correct": true
+                },
+                {
+                    "answer": "сообщение «Объявление маршрутизатора» (Router Advertisement, RA)",
+                    "correct": false,
+                    "comment": "Два сообщения ICMPv6, используемые для определения MAC-адреса известного IPv6 адреса, — это сообщение «Запрос соседа» и «Объявление соседа»"
+                },
+                {
+                    "answer": "сообщение «Запрос маршрутизатора» (Router Solicitation, RS)",
+                    "correct": false,
+                    "comment": "Два сообщения ICMPv6, используемые для определения MAC-адреса известного IPv6 адреса, — это сообщение «Запрос соседа» и «Объявление соседа»"
+                }
+            ]
+        },
+        {
+            "question": "Какой тип рассылки используется для отправки сообщения ICMPv6 «Запрос соседа»?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "одноадресная рассылка",
+                    "correct": false,
+                    "comment": "Сообщения ICMPv6 «Запрос соседа» отправляются в виде многоадресной рассылки"
+                },
+                {
+                    "answer": "многоадресная",
+                    "correct": true
+                },
+                {
+                    "answer": "широковещательная",
+                    "correct": false,
+                    "comment": "Сообщения ICMPv6 «Запрос соседа» отправляются в виде многоадресной рассылки"
+                }
+            ]
+        }
+    ]
 }

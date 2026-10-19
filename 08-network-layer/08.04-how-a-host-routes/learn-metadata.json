@@ -1,9 +1,10 @@
 {
     "title": "Маршрутизация на оконечных устройствах",
-    "materialType": "lecture",
+    "shortName": "ccna1.network-layer.how-a-host-routes",
+    "type": "scored-lecture",
     "description": "Как работают таблицы маршрутизации? Куда отправляются пакеты, если адреса нет в таблице маршрутизации? Что такое шлюз по умолчанию?",
     "difficulty": 3,
-    "duration": "PT0H7M",
+    "duration": "PT0H12M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -13,5 +14,106 @@
     },
     "assets": {
         "$ref": "./assets"
-    }
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.network-layer.how-a-host-routes",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Describe how a host delivers a packet to a local host (directly, without a router) or to a remote network (through the default gateway, a router interface on the local network), and name the Windows commands that display a host's routing table."
+        },
+        "requires": [
+            "ksa.ccna1.network-layer.network-layer-characteristics",
+            "ksa.ccna1.protocols-and-models.data-access"
+        ],
+        "measurement": {
+            "mode": "test",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): local and remote delivery, the default gateway, netstat -r and route print.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 100,
+    "questions": [
+        {
+            "question": "Какое утверждение о решениях узла по пересылке трафика является верным?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "узел не может отправлять эхо-запрос сам себе",
+                    "correct": false,
+                    "comment": "Для пересылки пакетов между локальными узлами в сети маршрутизатор не требуется"
+                },
+                {
+                    "answer": "узел назначения всегда должен находиться в той же локальной сети, что и узел-отправитель",
+                    "correct": false,
+                    "comment": "Для пересылки пакетов между локальными узлами в сети маршрутизатор не требуется"
+                },
+                {
+                    "answer": "локальные узлы могут связаться друг с другом без необходимости использования маршрутизатора",
+                    "correct": true
+                },
+                {
+                    "answer": "на коммутаторах должна быть включена маршрутизация для поиска наилучшего пути к месту назначения",
+                    "correct": false,
+                    "comment": "Для пересылки пакетов между локальными узлами в сети маршрутизатор не требуется"
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о шлюзе по умолчанию является истинным?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "шлюз по умолчанию необходим для отправки пакетов другим узлам локальной сети",
+                    "correct": false,
+                    "comment": "Адрес шлюза по умолчанию — это IP-адрес маршрутизатора в локальной сети"
+                },
+                {
+                    "answer": "адрес шлюза по умолчанию — это IP-адрес коммутатора в удаленной сети",
+                    "correct": false,
+                    "comment": "Адрес шлюза по умолчанию — это IP-адрес маршрутизатора в локальной сети"
+                },
+                {
+                    "answer": "Адрес шлюза по умолчанию — это IP-адрес маршрутизатора в локальной сети",
+                    "correct": true
+                },
+                {
+                    "answer": "трафик можно перенаправлять за пределы локальной сети, только если нет шлюза по умолчанию",
+                    "correct": false,
+                    "comment": "Адрес шлюза по умолчанию — это IP-адрес маршрутизатора в локальной сети"
+                }
+            ]
+        },
+        {
+            "question": "Какие две команды можно ввести на узле Windows для просмотра таблицы маршрутизации IPv4 и IPv6? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "netroute -l",
+                    "correct": false,
+                    "comment": "Отображать таблицу маршрутизации узла Windows будут команды netstat -r и route print"
+                },
+                {
+                    "answer": "netstat -r",
+                    "correct": true
+                },
+                {
+                    "answer": "print route",
+                    "correct": false,
+                    "comment": "Отображать таблицу маршрутизации узла Windows будут команды netstat -r и route print"
+                },
+                {
+                    "answer": "route print",
+                    "correct": true
+                },
+                {
+                    "answer": "print net",
+                    "correct": false,
+                    "comment": "Отображать таблицу маршрутизации узла Windows будут команды netstat -r и route print"
+                }
+            ]
+        }
+    ]
 }
