@@ -49,7 +49,7 @@
             },
             "q_4": {
                 "type": "string",
-                "title": "4. Ping-запрос на PC-А?",
+                "title": "4. Ping-запрос на PC-A?",
                 "placeholder": "Enter your answer here"
             },
             "q_5": {
@@ -84,7 +84,7 @@
             },
             "q_11": {
                 "type": "string",
-                "title": "11. Ping-запрос на PC-А?",
+                "title": "11. Ping-запрос на PC-A?",
                 "placeholder": "Enter your answer here"
             },
             "q_12": {
@@ -129,12 +129,12 @@
             },
             "q_20": {
                 "type": "string",
-                "title": "20. Открывается ли в браузере узла PC-А страница http://www.nsalab.local (по имени)?",
+                "title": "20. Открывается ли в браузере узла PC-A страница http://www.nsalab.local (по имени)?",
                 "placeholder": "Enter your answer here"
             },
             "q_21": {
                 "type": "string",
-                "title": "21. Открывается ли в браузере узла PC-А страница http://209.165.201.2 (по IP-адресу)?",
+                "title": "21. Открывается ли в браузере узла PC-A страница http://209.165.201.2 (по IP-адресу)?",
                 "placeholder": "Enter your answer here"
             },
             "q_22": {
@@ -159,7 +159,7 @@
             },
             "q_26": {
                 "type": "string",
-                "title": "26. Ping-запрос на PC-А?",
+                "title": "26. Ping-запрос на PC-A?",
                 "placeholder": "Enter your answer here"
             },
             "q_27": {
@@ -174,7 +174,7 @@
             },
             "q_29": {
                 "type": "string",
-                "title": "29. Какие неполадки нельзя было устранить на самих компьютерах? Что и на каком устройстве вам пришлось исправить?",
+                "title": "29. Можно ли устранить все неполадки узла PC-B, если он по-прежнему использует DNS2? Если нет, что нужно сделать?",
                 "placeholder": "Enter your answer here"
             }
         }
