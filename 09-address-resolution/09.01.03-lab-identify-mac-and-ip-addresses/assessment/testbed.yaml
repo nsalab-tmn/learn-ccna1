@@ -1,8 +1,22 @@
+# Not generated (see ms.yaml): Router over its per-device SSH port.
 testbed:
-  name: lab9.1.3
-
+  name: netsim-9.1.3
 devices:
-  dummy:
+  Router:
+    os: iosxe
+    type: router
+    credentials:
+      default:
+        username: '%ENV{ssh_user}'
+        password: '%ENV{ssh_password}'  # ggignore - a placeholder, filled at grading time
     connections:
-      a:
-        ip: localhost
+      cli:
+        protocol: ssh
+        ip: '%ENV{lab_ip}'
+        port: '%ENV{ssh_port_Router}'
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+        settings:
+          HA_INIT_CONFIG_COMMANDS: []
