@@ -2,7 +2,7 @@
     "title": "Коммутация в сетях Ethernet: экзамен",
     "shortName": "ccna1.ethernet-switching.exam",
     "type": "exam",
-    "description": "Проверьте свои знания по темам модуля: кадры Ethernet, mAC-адрес Ethernet, таблица MAC-адресов, скорость и способы пересылки на коммутаторах.",
+    "description": "Проверьте свои знания по темам модуля: кадры Ethernet, MAC-адрес Ethernet, таблица MAC-адресов, скорость и способы пересылки на коммутаторах.",
     "difficulty": 1,
     "duration": "PT0H56M",
     "tags": {
