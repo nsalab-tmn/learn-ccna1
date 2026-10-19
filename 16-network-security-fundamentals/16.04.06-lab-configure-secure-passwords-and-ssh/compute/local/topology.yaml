@@ -44,3 +44,354 @@ links:
     device: RTA
     port: Console
   cable: console
+scenario:
+  pages:
+    - title: "Топология и адресация"
+      body: |
+        | Кабель | Устройство | Порт | Устройство | Порт |
+        |---|---|---|---|---|
+        | Медный | PCA | F0 | SW1 | F0/1 |
+        | Медный | SW1 | G0/1 | RTA | G0/0 |
+        | Консольный | PCA | RS232 | RTA | Console |
+
+        | Устройство | Интерфейс | IP-адрес | Маска подсети | Шлюз по умолчанию |
+        |---|---|---|---|---|
+        | RTA | G0/0 | 172.16.1.1 | 255.255.255.0 | — |
+        | SW1 | VLAN 1 | 172.16.1.2 | 255.255.255.0 | 172.16.1.1 |
+        | PCA | NIC | 172.16.1.10 | 255.255.255.0 | 172.16.1.1 |
+
+        | Параметр | Значение |
+        |---|---|
+        | Доменное имя | CCNA.com |
+        | Пароль enable secret | NetlabSecret1 |
+        | Пользователь SSH | admin |
+        | Пароль пользователя | NetlabAdmin1 |
+    - title: "Начальное состояние"
+      body: |
+        - Маршрутизатор RTA и коммутатор SW1 не настроены: все их параметры имеют значения по умолчанию, в том числе имя устройства (приглашения Router> и Switch>). Интерфейсы маршрутизатора выключены.
+        - На компьютере PCA IP-адрес не задан.
+        - Консольный кабель соединяет порт RS232 компьютера PCA с консольным портом маршрутизатора RTA.
+
+        **Шаг 1.** Откройте окно компьютера PCA и на вкладке «Рабочий стол» запустите приложение «Командная строка». Выведите IP-настройки компьютера командой **ipconfig**. IPv4-адрес, маска подсети и шлюз по умолчанию равны 0.0.0.0: адрес компьютеру еще не назначен.
+
+        ```
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:1AFF:FE90:9501
+           IPv6 Address....................: ::
+           IPv4 Address....................: 0.0.0.0
+           Subnet Mask.....................: 0.0.0.0
+           Default Gateway.................: 0.0.0.0
+        ```
+
+        **Шаг 2.** Проверьте связь с маршрутизатором RTA командой **ping 172.16.1.1**. Эхо-запросы не выполняются: без IPv4-адреса компьютер не может отправить пакет (сообщение «General failure»).
+
+        ```
+        C:\>ping 172.16.1.1
+
+        Pinging 172.16.1.1 with 32 bytes of data:
+
+        PING: transmit failed. General failure.
+        PING: transmit failed. General failure.
+        PING: transmit failed. General failure.
+        PING: transmit failed. General failure.
+
+        Ping statistics for 172.16.1.1:
+            Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+        ```
+    - title: "Настройка адресации компьютера PCA"
+      body: |
+        **Шаг 1.** В приложении «Командная строка» компьютера PCA задайте IP-адрес, маску подсети и шлюз по умолчанию командой **ipconfig 172.16.1.10 255.255.255.0 172.16.1.1**.
+
+        **Шаг 2.** Убедитесь с помощью команды **ipconfig**, что настройки применены: строки «IPv4 Address», «Subnet Mask» и «Default Gateway» показывают значения из таблицы адресации.
+
+        ```
+        C:\>ipconfig 172.16.1.10 255.255.255.0 172.16.1.1
+        C:\>ipconfig
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:1AFF:FE90:9501
+           IPv6 Address....................: ::
+           IPv4 Address....................: 172.16.1.10
+           Subnet Mask.....................: 255.255.255.0
+           Default Gateway.................: 172.16.1.1
+        ```
+    - title: "Настройка безопасности маршрутизатора RTA"
+      body: |
+        **Шаг 1.** В приложении «Командная строка» компьютера PCA введите команду **terminal**: компьютер подключится к консоли маршрутизатора RTA по консольному кабелю. Нажмите Enter, чтобы получить приглашение Router>.
+
+        ```
+        C:\>terminal
+        Connected to RTA console (9600 8N1, no flow control). Press Ctrl+] to return to PCA.
+        ```
+
+        **Примечание.** Консоль маршрутизатора открывается и щелчком по нему на схеме, а на компьютере PCA — приложением «Терминал» на вкладке «Рабочий стол». Сочетание клавиш Ctrl+] закрывает консоль и возвращает в командную строку компьютера.
+
+        **Шаг 2.** Перейдите в привилегированный режим EXEC командой **enable** и в режим глобальной конфигурации командой **configure terminal**. Задайте имя устройства командой **hostname RTA**.
+
+        **Шаг 3.** Перейдите к настройке интерфейса G0/0 командой **interface g0/0**, задайте ему IP-адрес командой **ip address 172.16.1.1 255.255.255.0** и включите его командой **no shutdown**. Вернитесь в режим глобальной конфигурации командой **exit**.
+
+        ```
+        Router>enable
+        Router#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        Router(config)#hostname RTA
+        RTA(config)#interface g0/0
+        RTA(config-if)#ip address 172.16.1.1 255.255.255.0
+        RTA(config-if)#no shutdown
+        RTA(config-if)#
+        *Mar  1 00:01:59.781: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+        RTA(config-if)#
+        *Mar  1 00:02:00.781: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+        RTA(config-if)#exit
+        ```
+
+        **Шаг 4.** Включите шифрование паролей, которые хранятся в конфигурации открытым текстом, командой **service password-encryption**. Задайте минимальную длину пароля 10 символов командой **security passwords min-length 10**.
+
+        ```
+        RTA(config)#service password-encryption
+        RTA(config)#security passwords min-length 10
+        ```
+
+        **Шаг 5.** Проверьте ограничение длины: попробуйте задать короткий пароль привилегированного режима командой **enable secret netlab**. Маршрутизатор отклоняет пароль из шести символов.
+
+        ```
+        RTA(config)#enable secret netlab
+        % Password too short - must be at least 10 characters. Password configuration failed
+        ```
+
+        **Шаг 6.** Задайте пароль привилегированного режима EXEC командой **enable secret NetlabSecret1** и отключите поиск DNS командой **no ip domain-lookup**.
+
+        ```
+        RTA(config)#enable secret NetlabSecret1
+        RTA(config)#no ip domain-lookup
+        ```
+
+        **Примечание.** Пароль, заданный командой enable secret, хранится в конфигурации в виде хеша, а не открытым текстом. В этой лабораторной работе используются пароли из таблицы на странице «Топология и адресация», а в рабочей сети администратор выбирает собственный надежный пароль. Без поиска DNS опечатка в команде не превращается в долгую попытку найти узел с таким именем.
+    - title: "Настройка доступа к маршрутизатору RTA по SSH"
+      body: |
+        **Примечание.** Протокол SSH шифрует весь сеанс удаленного управления, включая пароль, а Telnet передает их открытым текстом. Для SSH маршрутизатору нужны имя устройства и доменное имя (из них составляется имя ключей RSA), пара ключей RSA и учетная запись пользователя, под которой выполняется вход.
+
+        **Шаг 1.** Задайте доменное имя командой **ip domain-name CCNA.com**. Регистр букв важен: проверка ожидает именно CCNA.com.
+
+        **Шаг 2.** Создайте локального пользователя командой **username admin secret NetlabAdmin1**.
+
+        **Шаг 3.** Создайте ключи RSA командой **crypto key generate rsa** и на запрос размера ключа введите **1024**. После создания ключей на консоли появляется сообщение о том, что SSH включен.
+
+        ```
+        RTA(config)#ip domain-name CCNA.com
+        RTA(config)#username admin secret NetlabAdmin1
+        RTA(config)#crypto key generate rsa
+        The name for the keys will be: RTA.CCNA.com
+        Choose the size of the key modulus in the range of 360 to 4096 for your
+          General Purpose Keys. Choosing a key modulus greater than 512 may take
+          a few minutes.
+
+        How many bits in the modulus [512]: 1024
+        % Generating 1024 bit RSA keys, keys will be non-exportable...
+        [OK]
+        *Mar  1 00:02:15.746: %SSH-5-ENABLED: SSH 1.99 has been enabled
+        ```
+
+        **Шаг 4.** Заблокируйте вход на 180 секунд после четырех неудачных попыток за 120 секунд командой **login block-for 180 attempts 4 within 120**.
+
+        **Шаг 5.** Перейдите к настройке линий виртуальных терминалов VTY 0–4 командой **line vty 0 4**. Разрешите на них только протокол SSH командой **transport input ssh** и вход по локальным учетным записям командой **login local**.
+
+        **Шаг 6.** Задайте тайм-аут неактивного сеанса 6 минут командой **exec-timeout 6** и вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        RTA(config)#login block-for 180 attempts 4 within 120
+        RTA(config)#line vty 0 4
+        RTA(config-line)#transport input ssh
+        RTA(config-line)#login local
+        RTA(config-line)#exec-timeout 6
+        RTA(config-line)#end
+        *Mar  1 00:02:21.373: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Шаг 7.** Сохраните текущую конфигурацию в загрузочную командой **copy running-config startup-config** и подтвердите имя файла клавишей Enter.
+
+        ```
+        RTA#copy running-config startup-config
+        Destination filename [startup-config]? 
+        Building configuration...
+        [OK]
+        ```
+
+        **Шаг 8.** Убедитесь с помощью команды **show running-config | section line vty**, что линии VTY 0–4 настроены. Команда exec-timeout 6 записана в конфигурации как exec-timeout 6 0: 6 минут 0 секунд.
+
+        ```
+        RTA#show running-config | section line vty
+        line vty 0 4
+         exec-timeout 6 0
+         login local
+         transport input ssh
+        ```
+
+        **Шаг 9.** Закройте консоль маршрутизатора сочетанием клавиш Ctrl+] и вернитесь в командную строку компьютера PCA.
+
+        ```
+        RTA#
+        [Console of RTA closed]
+        ```
+    - title: "Настройка безопасности коммутатора SW1"
+      body: |
+        **Шаг 1.** Откройте консоль коммутатора SW1 щелчком по нему на схеме и нажмите Enter. Перейдите в привилегированный режим EXEC командой **enable** и в режим глобальной конфигурации командой **configure terminal**. Задайте имя устройства командой **hostname SW1**.
+
+        **Шаг 2.** Перейдите к настройке интерфейса VLAN 1 командой **interface vlan 1**, задайте ему IP-адрес командой **ip address 172.16.1.2 255.255.255.0** и включите его командой **no shutdown**. Вернитесь в режим глобальной конфигурации командой **exit**.
+
+        **Шаг 3.** Задайте шлюз по умолчанию коммутатора командой **ip default-gateway 172.16.1.1**.
+
+        ```
+        Switch>enable
+        Switch#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        Switch(config)#hostname SW1
+        SW1(config)#interface vlan 1
+        SW1(config-if)#ip address 172.16.1.2 255.255.255.0
+        SW1(config-if)#no shutdown
+        *Mar  1 00:02:43.056: %LINK-5-CHANGED: Interface Vlan1, changed state to up
+        *Mar  1 00:02:43.056: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+        SW1(config-if)#exit
+        SW1(config)#ip default-gateway 172.16.1.1
+        ```
+
+        **Шаг 4.** Выключите все неиспользуемые порты коммутатора: перейдите к настройке портов F0/2–F0/24 и G0/2 командой **interface range f0/2 - 24 , g0/2**, выключите их командой **shutdown** и вернитесь в режим глобальной конфигурации командой **exit**. Включенными остаются только порт F0/1, к которому подключен компьютер PCA, и порт G0/1, к которому подключен маршрутизатор RTA.
+
+        ```
+        SW1(config)#interface range f0/2 - 24 , g0/2
+        SW1(config-if-range)#shutdown
+        *Mar  1 00:02:52.991: %LINK-5-CHANGED: Interface FastEthernet0/2, changed state to administratively down
+        …
+        *Mar  1 00:02:52.991: %LINK-5-CHANGED: Interface FastEthernet0/24, changed state to administratively down
+        *Mar  1 00:02:52.991: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+        SW1(config-if-range)#exit
+        ```
+
+        **Примечание.** Неиспользуемые порты выключают, чтобы к сети нельзя было подключить постороннее устройство, просто вставив кабель в свободный порт коммутатора.
+
+        **Шаг 5.** Как на маршрутизаторе, включите шифрование паролей командой **service password-encryption**, задайте пароль привилегированного режима EXEC командой **enable secret NetlabSecret1** и отключите поиск DNS командой **no ip domain-lookup**.
+
+        ```
+        SW1(config)#service password-encryption
+        SW1(config)#enable secret NetlabSecret1
+        SW1(config)#no ip domain-lookup
+        ```
+    - title: "Настройка доступа к коммутатору SW1 по SSH"
+      body: |
+        **Шаг 1.** Задайте доменное имя командой **ip domain-name CCNA.com** и создайте локального пользователя командой **username admin secret NetlabAdmin1**.
+
+        **Шаг 2.** Создайте ключи RSA командой **crypto key generate rsa** с размером ключа **1024**.
+
+        ```
+        SW1(config)#ip domain-name CCNA.com
+        SW1(config)#username admin secret NetlabAdmin1
+        SW1(config)#crypto key generate rsa
+        The name for the keys will be: SW1.CCNA.com
+        Choose the size of the key modulus in the range of 360 to 4096 for your
+          General Purpose Keys. Choosing a key modulus greater than 512 may take
+          a few minutes.
+
+        How many bits in the modulus [512]: 1024
+        % Generating 1024 bit RSA keys, keys will be non-exportable...
+        [OK]
+        *Mar  1 00:03:05.637: %SSH-5-ENABLED: SSH 1.99 has been enabled
+        ```
+
+        **Шаг 3.** Перейдите к настройке всех линий VTY коммутатора командой **line vty 0 15**: у коммутатора их 16. Разрешите на них только протокол SSH командой **transport input ssh**, вход по локальным учетным записям командой **login local** и задайте тайм-аут неактивного сеанса командой **exec-timeout 6**. Вернитесь в привилегированный режим EXEC командой **end**.
+
+        ```
+        SW1(config)#line vty 0 15
+        SW1(config-line)#transport input ssh
+        SW1(config-line)#login local
+        SW1(config-line)#exec-timeout 6
+        SW1(config-line)#end
+        *Mar  1 00:03:10.558: %SYS-5-CONFIG_I: Configured from console by console
+        ```
+
+        **Шаг 4.** Сохраните текущую конфигурацию в загрузочную командой **copy running-config startup-config** и подтвердите имя файла клавишей Enter.
+
+        ```
+        SW1#copy running-config startup-config
+        Destination filename [startup-config]? 
+        Building configuration...
+        [OK]
+        ```
+    - title: "Проверка связи и подключения по SSH"
+      body: |
+        **Шаг 1.** В приложении «Командная строка» компьютера PCA проверьте связь с маршрутизатором RTA командой **ping 172.16.1.1**. Эхо-запросы выполняются успешно.
+
+        ```
+        C:\>ping 172.16.1.1
+
+        Pinging 172.16.1.1 with 32 bytes of data:
+
+        Reply from 172.16.1.1: bytes=32 time=1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.1: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 172.16.1.1:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 1ms, Average = 0ms
+        ```
+
+        **Шаг 2.** Проверьте связь с коммутатором SW1 командой **ping 172.16.1.2**. Эхо-запросы выполняются успешно.
+
+        ```
+        C:\>ping 172.16.1.2
+
+        Pinging 172.16.1.2 with 32 bytes of data:
+
+        Reply from 172.16.1.2: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.2: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.2: bytes=32 time<1ms TTL=255
+        Reply from 172.16.1.2: bytes=32 time<1ms TTL=255
+
+        Ping statistics for 172.16.1.2:
+            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 0ms, Maximum = 0ms, Average = 0ms
+        ```
+
+        **Шаг 3.** Подключитесь к маршрутизатору RTA по протоколу SSH под пользователем admin командой **ssh -l admin 172.16.1.1** и введите пароль NetlabAdmin1: при вводе он не отображается. Выведите список сеансов командой **show users**: ваш сеанс работает на линии vty 0 с адреса 172.16.1.10. Закройте сеанс командой **exit**.
+
+        ```
+        C:\>ssh -l admin 172.16.1.1
+        Password: 
+        RTA>show users
+            Line       User       Host(s)              Idle       Location
+        *  2 vty 0     admin      idle                 00:00:02 172.16.1.10
+        RTA>exit
+
+
+        [Connection to 172.16.1.1 closed by foreign host]
+        ```
+
+        **Шаг 4.** Попробуйте подключиться к маршрутизатору по протоколу Telnet командой **telnet 172.16.1.1**. Маршрутизатор отклоняет подключение: на линиях VTY разрешен только SSH.
+
+        ```
+        C:\>telnet 172.16.1.1
+        Trying 172.16.1.1 ... 
+        % Connection refused by remote host
+        ```
+
+        **Шаг 5.** Аналогично подключитесь к коммутатору SW1 командой **ssh -l admin 172.16.1.2**, выведите список сеансов командой **show users** и закройте сеанс командой **exit**.
+
+        ```
+        C:\>ssh -l admin 172.16.1.2
+        Password: 
+        SW1>show users
+            Line       User       Host(s)              Idle       Location
+        *  2 vty 0     admin      idle                 00:00:02 172.16.1.10
+        SW1>exit
+
+
+        [Connection to 172.16.1.2 closed by foreign host]
+        ```
