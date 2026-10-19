@@ -45,7 +45,7 @@
             "$ref": "./02.09.01-lab-basic-switch-and-end-device-configuration/learn-metadata.json"
         },
         {
-            "$ref": "./02.10-summary/learn-metadata.json"
+            "$ref": "./02.10-exam/learn-metadata.json"
         }
     ]
 }
