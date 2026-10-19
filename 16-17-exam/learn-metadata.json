@@ -1,10 +1,37 @@
 {
     "title": "Экзамен по основам проектирования небольшой безопасной сети",
+    "shortName": "ccna1.16-17-exam",
+    "type": "exam",
     "description": "Проверьте свои знания по темам:\r\r* Основы сетевой безопасности\r* Организация небольшой сети",
     "difficulty": 1,
     "duration": "PT1H36M",
-    "materialType": "test-exam",
-    "passingScore": 100,
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "skills": {},
+    "assets": {
+        "$ref": "./assets"
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.16-17-exam",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Across modules 16–17, identify the threat, attack or device-hardening measure a scenario involves, and choose the design consideration, verification command or troubleshooting step for a small network."
+        },
+        "requires": [
+            "ksa.ccna1.network-security-fundamentals.summary",
+            "ksa.ccna1.build-a-small-network.summary"
+        ],
+        "measurement": {
+            "mode": "exam",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "Learner scores at least 80% on the exam's 59 questions covering modules 16–17; attempts unlimited.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "matching",
@@ -1616,12 +1643,5 @@
             ],
             "question": "Администратор решает проблемы подключения и должен определить IP-адрес сайта. Какую команду лучше всего использовать для выполнения задачи?"
         }
-    ],
-    "tags": {
-        "$ref": "../material-tags.json"
-    },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    ]
 }

@@ -1,10 +1,38 @@
 {
     "title": "Экзамен по основам связи и сетевой коммуникации",
+    "shortName": "ccna1.01-03-exam",
+    "type": "exam",
     "description": "Проверьте свои знания по темам:\r\r* Современные сетевые технологии\r* Базовая конфигурация коммутатора и оконечного устройства\r* Протоколы и модели",
     "difficulty": 1,
     "duration": "PT1H54M",
-    "materialType": "test-exam",
-    "passingScore": 100,
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "skills": {},
+    "assets": {
+        "$ref": "./assets"
+    },
+    "competency": {
+        "produces": {
+            "id": "ksa.ccna1.01-03-exam",
+            "kind": "K",
+            "bloom": "understand",
+            "objective": "Across modules 1–3, identify network components, topologies, access options and security measures, choose the command, mode or file for a basic device-configuration task, and match a protocol, model layer, standards body or PDU to its role in network communication."
+        },
+        "requires": [
+            "ksa.ccna1.networking-today.summary",
+            "ksa.ccna1.basic-switch-and-end-device-configuration.summary",
+            "ksa.ccna1.protocols-and-models.summary"
+        ],
+        "measurement": {
+            "mode": "exam",
+            "grader": "test-auto",
+            "aligned_bloom": "understand",
+            "passes_when": "Learner scores at least 80% on the exam's 65 questions covering modules 1–3; attempts unlimited.",
+            "calibration": "operator-judge"
+        }
+    },
+    "passingScore": 80,
     "questions": [
         {
             "answerType": "matching",
@@ -1890,12 +1918,5 @@
             ],
             "question": "На каком уровне OSI MAC-адрес назначения добавляется к PDU в процессе инкапсуляции?"
         }
-    ],
-    "tags": {
-        "$ref": "../material-tags.json"
-    },
-    "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    }
+    ]
 }
