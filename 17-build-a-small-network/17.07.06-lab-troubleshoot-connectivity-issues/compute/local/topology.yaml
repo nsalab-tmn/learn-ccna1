@@ -444,7 +444,7 @@ scenario:
 
         **Примечание.** Пакет в другую сеть компьютер передает шлюзу по умолчанию, а его MAC-адрес ищет по протоколу ARP. Адрес 172.16.1.254 в локальной сети никому не назначен, ответа на запрос ARP нет, и компьютер сам сообщает, что узел недоступен. Узлы своей сети компьютер при этом достигает без шлюза.
 
-        **Шаг 3.** Задайте компьютеру PC-02 параметры по таблице командой **ipconfig 172.16.1.4 255.255.255.0 172.16.1.1** или в приложении «IP-конфигурация», в поле «Шлюз по умолчанию».
+        **Шаг 3.** Задайте компьютеру PC-02 параметры по таблице командой **ipconfig 172.16.1.4 255.255.255.0 172.16.1.1** или в приложении «IP-конфигурация», в поле «Шлюз по умолчанию». Команда ничего не выводит.
 
         ```
         C:\>ipconfig 172.16.1.4 255.255.255.0 172.16.1.1
@@ -817,7 +817,7 @@ scenario:
       body: |
         Не все неполадки связи — в адресах. Скорость и режим дуплекса порта Ethernet обычно согласуются автоматически. Если на одном конце канала их задали вручную, этот конец больше не участвует в автосогласовании, а другой конец, оставшийся в автоматическом режиме, определяет скорость по сигналу, но не может узнать режим дуплекса и переходит на полудуплекс. Такое несогласование дуплекса (duplex mismatch) коварно: канал поднимается и работает, но кадры сталкиваются, часть теряется, а остальные задерживаются — пользователи жалуются на медленную сеть. На этой странице вы создадите такую неполадку на канале между коммутатором S1 и маршрутизатором R1, увидите ее признаки и устраните ее.
 
-        **Шаг 1.** Откройте консоль коммутатора S1 на схеме (его имя устройства не задано, поэтому приглашение — Switch>), перейдите в привилегированный режим EXEC командой **enable** и выведите состояние портов командой **show interfaces status**. У порта Gi0/1, к которому подключен маршрутизатор R1, в столбцах Duplex и Speed стоят a-full и a-1000: префикс a- означает, что режим и скорость получены автосогласованием. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение Switch#.
+        **Шаг 1.** Откройте консоль коммутатора S1 на схеме и нажмите Enter (его имя устройства не задано, поэтому приглашение — Switch>), перейдите в привилегированный режим EXEC командой **enable** и выведите состояние портов командой **show interfaces status**. У порта Gi0/1, к которому подключен маршрутизатор R1, в столбцах Duplex и Speed стоят a-full и a-1000: префикс a- означает, что режим и скорость получены автосогласованием. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение Switch#.
 
         ```
         Switch>enable
@@ -910,14 +910,35 @@ scenario:
             Minimum = 42ms, Maximum = 54ms, Average = 48ms
         ```
 
-        **Шаг 5.** В консоли коммутатора S1 выведите строку порта командой **show interfaces status | include Gi0/1**. Теперь в столбцах стоят full и 100 без префикса a-: значения заданы вручную.
+        **Шаг 5.** Чтобы признаки проявились, создайте больше трафика: в приложении «Командная строка» компьютера PC-01 выполните команду **ping -n 20 209.165.201.2**. Часть эхо-запросов остается без ответа: кадры, потерянные в коллизиях, до сервера не доходят. Ниже показаны первые ответы и итог; строки между ними опущены.
+
+        ```
+        C:\>ping -n 20 209.165.201.2
+
+        Pinging 209.165.201.2 with 32 bytes of data:
+
+        Reply from 209.165.201.2: bytes=32 time=33ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=72ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=29ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=53ms TTL=126
+        Reply from 209.165.201.2: bytes=32 time=32ms TTL=126
+        Request timed out.
+        …
+
+        Ping statistics for 209.165.201.2:
+            Packets: Sent = 20, Received = 19, Lost = 1 (5% loss),
+        Approximate round trip times in milli-seconds:
+            Minimum = 17ms, Maximum = 72ms, Average = 43ms
+        ```
+
+        **Шаг 6.** В консоли коммутатора S1 выведите строку порта командой **show interfaces status | include Gi0/1**. Теперь в столбцах стоят full и 100 без префикса a-: значения заданы вручную.
 
         ```
         Switch#show interfaces status | include Gi0/1
         Gi0/1                        connected    1            full    100 10/100/1000BaseTX
         ```
 
-        **Шаг 6.** Выведите подробные сведения о порте командой **show interfaces g0/1**. Строка «Full-duplex, 100Mb/s» показывает, в каком режиме работает порт, а полоса пропускания BW стала 100000 Kbit/sec. Кадры, поврежденные коллизиями на другом конце канала, коммутатор считал бы в строках «input errors» и «CRC»; в этой проверке потерянных кадров не было, и счетчики остались нулевыми. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение Switch#.
+        **Шаг 7.** Выведите подробные сведения о порте командой **show interfaces g0/1**. Строка «Full-duplex, 100Mb/s» показывает, в каком режиме работает порт, а полоса пропускания BW стала 100000 Kbit/sec. Кадры, поврежденные коллизиями на другом конце канала, коммутатор считает в строках «input errors» и «CRC»: их счетчики уже не нулевые. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение Switch#.
 
         ```
         Switch#show interfaces g0/1
@@ -937,12 +958,12 @@ scenario:
           Output queue: 0/40 (size/max)
           5 minute input rate 0 bits/sec, 0 packets/sec
           5 minute output rate 0 bits/sec, 0 packets/sec
-             83 packets input, 6734 bytes, 0 no buffer
+             102 packets input, 8140 bytes, 0 no buffer
              Received 0 broadcasts (0 IP multicasts)
-             0 runts, 0 giants, 0 throttles
-             0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+             1 runts, 0 giants, 0 throttles
+             1 input errors, 1 CRC, 0 frame, 0 overrun, 0 ignored
              0 watchdog, 0 multicast, 0 pause input
-             96 packets output, 6754 bytes, 0 underruns
+             116 packets output, 8234 bytes, 0 underruns
              0 output errors, 0 collisions, 0 interface resets
              0 unknown protocol drops
              0 babbles, 0 late collision, 0 deferred
@@ -950,7 +971,7 @@ scenario:
              0 output buffer failures, 0 output buffers swapped out
         ```
 
-        **Шаг 7.** Посмотрите на канал со стороны маршрутизатора R1. В приложении «Командная строка» компьютера PC-02 подключитесь к нему командой **ssh -l Admin01 172.16.1.1** с паролем cisco12345 и выведите сведения о порте командой **show interfaces g0/0**. Строка «Half Duplex, 100Mbps» показывает полудуплексный режим, а счетчик collisions уже не нулевой: в полудуплексном режиме маршрутизатор считает каждую коллизию. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение R1#. Затем завершите сеанс командой **exit**.
+        **Шаг 8.** Посмотрите на канал со стороны маршрутизатора R1. В приложении «Командная строка» компьютера PC-02 подключитесь к нему командой **ssh -l Admin01 172.16.1.1** с паролем cisco12345 и выведите сведения о порте командой **show interfaces g0/0**. Строка «Half Duplex, 100Mbps» показывает полудуплексный режим, а счетчики collisions и late collision уже не нулевые: в полудуплексном режиме маршрутизатор считает каждую коллизию, а позднюю коллизию — ту, что случилась уже после начала передачи кадра, — отдельно. Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение R1#. Затем завершите сеанс командой **exit**.
 
         ```
         C:\>ssh -l Admin01 172.16.1.1
@@ -973,15 +994,15 @@ scenario:
           Output queue: 0/40 (size/max)
           5 minute input rate 0 bits/sec, 0 packets/sec
           5 minute output rate 0 bits/sec, 0 packets/sec
-             97 packets input, 6808 bytes, 0 no buffer
+             117 packets input, 8288 bytes, 0 no buffer
              Received 7 broadcasts (0 IP multicasts)
              0 runts, 0 giants, 0 throttles
              0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
              0 watchdog, 0 multicast, 0 pause input
-             84 packets output, 6788 bytes, 0 underruns
-             0 output errors, 18 collisions, 0 interface resets
+             104 packets output, 8268 bytes, 0 underruns
+             1 output errors, 58 collisions, 0 interface resets
              0 unknown protocol drops
-             0 babbles, 0 late collision, 0 deferred
+             0 babbles, 1 late collision, 0 deferred
              0 lost carrier, 0 no carrier, 0 pause output
              0 output buffer failures, 0 output buffers swapped out
         R1#exit
@@ -990,34 +1011,34 @@ scenario:
         [Connection to 172.16.1.1 closed by foreign host]
         ```
 
-        **Шаг 8.** В консоли коммутатора S1 верните порту автосогласование: перейдите в режим глобальной конфигурации командой **configure terminal**, затем к порту командой **interface g0/1**, выполните команды **duplex auto** и **speed auto** и вернитесь в привилегированный режим EXEC командой **end**. Канал дважды опускается и поднимается, а сообщения о несогласовании больше нет.
+        **Шаг 9.** В консоли коммутатора S1 верните порту автосогласование: перейдите в режим глобальной конфигурации командой **configure terminal**, затем к порту командой **interface g0/1**, выполните команды **duplex auto** и **speed auto** и вернитесь в привилегированный режим EXEC командой **end**. Канал дважды опускается и поднимается, а сообщения о несогласовании больше нет.
 
         ```
         Switch#configure terminal
         Enter configuration commands, one per line.  End with CNTL/Z.
         Switch(config)#interface g0/1
         Switch(config-if)#duplex auto
-        *Mar  1 00:18:46.575: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
-        *Mar  1 00:18:46.575: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
-        *Mar  1 00:18:47.575: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
-        *Mar  1 00:18:48.575: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:19:20.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:20.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:21.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:19:22.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
         Switch(config-if)#speed auto
-        *Mar  1 00:18:51.575: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
-        *Mar  1 00:18:51.575: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
-        *Mar  1 00:18:52.575: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
-        *Mar  1 00:18:53.575: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:19:25.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:25.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+        *Mar  1 00:19:26.422: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+        *Mar  1 00:19:27.422: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
         Switch(config-if)#end
-        *Mar  1 00:18:56.575: %SYS-5-CONFIG_I: Configured from console by console
+        *Mar  1 00:19:30.422: %SYS-5-CONFIG_I: Configured from console by console
         ```
 
-        **Шаг 9.** Выведите строку порта командой **show interfaces status | include Gi0/1**. В столбцах снова a-full и a-1000.
+        **Шаг 10.** Выведите строку порта командой **show interfaces status | include Gi0/1**. В столбцах снова a-full и a-1000.
 
         ```
         Switch#show interfaces status | include Gi0/1
         Gi0/1                        connected    1          a-full a-1000 10/100/1000BaseTX
         ```
 
-        **Шаг 10.** В приложении «Командная строка» компьютера PC-01 повторите проверку командой **ping 209.165.201.2**. Время ответа снова 2 мс. Запишите в документацию проверок эту неполадку, ее признаки и решение.
+        **Шаг 11.** В приложении «Командная строка» компьютера PC-01 повторите проверку командой **ping 209.165.201.2**. Время ответа снова 2 мс. Запишите в документацию проверок эту неполадку, ее признаки и решение.
 
         ```
         C:\>ping 209.165.201.2
