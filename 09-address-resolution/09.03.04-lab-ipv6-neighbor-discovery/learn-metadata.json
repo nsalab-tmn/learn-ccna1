@@ -34,7 +34,7 @@
         "properties": {
             "q_1": {
                 "type": "string",
-                "title": "1. Почему присутствуют ND PDU?",
+                "title": "1. Почему в списке событий есть сообщения NDP?",
                 "placeholder": "Enter your answer here"
             },
             "q_2": {
@@ -44,7 +44,7 @@
             },
             "q_3": {
                 "type": "string",
-                "title": "3. Что изменилось в адресации уровня 3?",
+                "title": "3. Что изменилось в адресации уровня 3 по сравнению с эхо-запросом?",
                 "placeholder": "Enter your answer here"
             },
             "q_4": {
@@ -54,12 +54,12 @@
             },
             "q_5": {
                 "type": "string",
-                "title": "5. Есть ли разница между столбцами «Вход» и «Выход» на вкладке «Модель OSI» для уровня 2?",
+                "title": "5. Есть ли разница между уровнем 2 в столбцах «Вход ↑» и «Выход ↓» на вкладке «Модель OSI» для события NDP на коммутаторе SwitchA?",
                 "placeholder": "Enter your answer here"
             },
             "q_6": {
                 "type": "string",
-                "title": "6. Почему на вкладке «Модель OSI» столбец «Выход» пуст?",
+                "title": "6. Почему на вкладке «Модель OSI» события NDP на маршрутизаторе RTA столбец «Выход ↓» пуст?",
                 "placeholder": "Enter your answer here"
             },
             "q_7": {
@@ -74,17 +74,17 @@
             },
             "q_9": {
                 "type": "string",
-                "title": "9. Почему не было событий NDP?",
+                "title": "9. Почему при повторном эхо-запросе к PCA2 не было событий NDP?",
                 "placeholder": "Enter your answer here"
             },
             "q_10": {
                 "type": "string",
-                "title": "10. Какой адрес указан в поле «Источник» заголовка IPv6 на вкладке «Исходящий PDU»?",
+                "title": "10. Какой адрес указан в поле «Источник» заголовка IPv6 первого события NDP на PCA1 (вкладка «Исходящий PDU»)?",
                 "placeholder": "Enter your answer here"
             },
             "q_11": {
                 "type": "string",
-                "title": "11. Какой MAC-адрес используется для MAC-адреса назначения?",
+                "title": "11. Какой MAC-адрес указан в поле «MAC назначения» эхо-запроса, который PCA1 отправил компьютеру PCB1?",
                 "placeholder": "Enter your answer here"
             },
             "q_12": {
@@ -94,12 +94,12 @@
             },
             "q_13": {
                 "type": "string",
-                "title": "13. Почему не было событий NDP?",
+                "title": "13. Почему при повторном эхо-запросе к PCB1 не было событий NDP?",
                 "placeholder": "Enter your answer here"
             },
             "q_14": {
                 "type": "string",
-                "title": "14. Что соответствует MAC-адресу назначения?",
+                "title": "14. Какому устройству и интерфейсу принадлежит MAC-адрес назначения эхо-ответа, который отправил PCB1?",
                 "placeholder": "Enter your answer here"
             },
             "q_15": {
@@ -124,7 +124,7 @@
             },
             "q_19": {
                 "type": "string",
-                "title": "19. Существуют ли записи для PCA2?",
+                "title": "19. Есть ли запись для PCA2 в выводе команды show lldp neighbors?",
                 "placeholder": "Enter your answer here"
             },
             "q_20": {
