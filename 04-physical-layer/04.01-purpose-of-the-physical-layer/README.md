@@ -11,7 +11,7 @@
 
 ### Беспроводной маршрутизатор
 
-![](./assets/4.1.1-1.jpg)
+![](./assets/4.1.1-1.svg)
 
 Компоненты точки доступа:
 
@@ -27,7 +27,7 @@ back of a wireless router showing four Ethernet switchports and an Internet port
 
 ### Проводное подключение к беспроводному маршрутизатору
 
-![](./assets/4.1.1-2.jpg)
+![](./assets/4.1.1-2.svg)
 
 <!--
 a laptop with a wired connection into an Ethernet switchport on a wireless router
@@ -39,7 +39,7 @@ a laptop with a wired connection into an Ethernet switchport on a wireless route
 
 ### Проводное подключение с использованием сетевой интерфейсной платы Ethernet
 
-![](./assets/4.1.1-3.jpg)
+![](./assets/4.1.1-3.svg)
 
 <!--
 someone plugging an Ethernet cable into a laptop RJ45 port
