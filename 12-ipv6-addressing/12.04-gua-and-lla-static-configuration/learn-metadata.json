@@ -37,24 +37,29 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какой командой настроить на интерфейсе маршрутизатора глобальный индивидуальный адрес (GUA) 2001:db8:acad:1::1 с длиной префикса /64?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "ipv6 address 2001:db8:acad:1::1/64",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "ip address 2001:db8:acad:1::1/64",
                     "correct": false,
                     "comment": "Команда ip address настраивает адрес IPv4. Для IPv6 в команде пишут ipv6: ipv6 address 2001:db8:acad:1::1/64."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "ipv6 address 2001:db8:acad:1::1 /64",
                     "correct": false,
                     "comment": "Между адресом и длиной префикса не должно быть пробела: ipv6 address 2001:db8:acad:1::1/64."
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "ipv6 address 2001:db8:acad:1::1/64 link-local",
                     "correct": false,
                     "comment": "Параметр link-local указывают для локального адреса канала, который начинается с гекстета от FE80 до FEBF. GUA настраивают без него: ipv6 address 2001:db8:acad:1::1/64."
@@ -62,24 +67,29 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Какой командой вручную задать на интерфейсе маршрутизатора локальный адрес канала (LLA) fe80::1:1?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "ipv6 address fe80::1:1 link-local",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "ipv6 address fe80::1:1/64",
                     "correct": false,
                     "comment": "Если адрес начинается с гекстета от FE80 до FEBF, за адресом должен следовать параметр link-local: ipv6 address fe80::1:1 link-local."
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "ipv6 address link-local fe80::1:1",
                     "correct": false,
                     "comment": "Параметр link-local должен следовать за адресом, а не стоять перед ним: ipv6 address fe80::1:1 link-local."
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "ip address fe80::1:1 link-local",
                     "correct": false,
                     "comment": "Команда ip address настраивает адрес IPv4. Для IPv6 используют ipv6 address: ipv6 address fe80::1:1 link-local."
@@ -87,19 +97,23 @@
             ]
         },
         {
+            "questionId": "q03",
             "question": "Узел получает IPv6-адрес по SLAAC или DHCPv6. Какой адрес будет указан у него как шлюз по умолчанию?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "Локальный адрес канала локального маршрутизатора, указанный автоматически",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "GUA интерфейса маршрутизатора, который администратор вводит на узле вручную",
                     "correct": false,
                     "comment": "При SLAAC или DHCPv6 шлюз вручную не вводят: автоматически указывается локальный адрес канала локального маршрутизатора."
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "Собственный локальный адрес канала узла",
                     "correct": false,
                     "comment": "Шлюз по умолчанию — это интерфейс маршрутизатора, а не сам узел. При SLAAC или DHCPv6 автоматически указывается локальный адрес канала локального маршрутизатора."
@@ -107,19 +121,23 @@
             ]
         },
         {
+            "questionId": "q04",
             "question": "Почему на маршрутизаторах обычно вручную задают узнаваемые локальные адреса канала, например fe80::1:1?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q04-a1",
                     "answer": "Локальные адреса маршрутизаторов используются как адреса шлюза по умолчанию и в объявлениях маршрутизации, поэтому удобно, чтобы их было легко узнать",
                     "correct": true
                 },
                 {
+                    "answerId": "q04-a2",
                     "answer": "Один и тот же локальный адрес канала нельзя использовать на разных каналах",
                     "correct": false,
                     "comment": "Можно: LLA должен быть уникальным только в своем канале. Узнаваемые LLA задают потому, что адреса маршрутизаторов используются как адреса шлюза по умолчанию и в объявлениях маршрутизации."
                 },
                 {
+                    "answerId": "q04-a3",
                     "answer": "Только заданные вручную локальные адреса канала маршрутизируются через Интернет",
                     "correct": false,
                     "comment": "LLA служат для обмена данными по одному каналу. Узнаваемые LLA задают потому, что адреса маршрутизаторов используются как адреса шлюза по умолчанию и в объявлениях маршрутизации."

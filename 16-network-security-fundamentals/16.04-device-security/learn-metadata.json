@@ -33,24 +33,29 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Как называется пароль из нескольких слов, разделенных пробелами, который проще запомнить и сложнее подобрать, чем обычный пароль?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "Парольная фраза",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "Зашифрованный пароль",
                     "correct": false,
                     "comment": "Зашифрованным пароль становится после команды service password-encryption, которая скрывает открытые пароли в файле конфигурации. Пароль из нескольких слов, разделенных пробелами, называется парольной фразой."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "Пароль по умолчанию",
                     "correct": false,
                     "comment": "Пароль по умолчанию нужно немедленно изменить, а не использовать. Пароль из нескольких слов, разделенных пробелами, называется парольной фразой."
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "Ключ RSA",
                     "correct": false,
                     "comment": "Ключ RSA для шифрования трафика SSH создается командой crypto key generate rsa, а не придумывается пользователем. Пароль из нескольких слов, разделенных пробелами, называется парольной фразой."
@@ -58,24 +63,29 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Какое утверждение о пробелах в паролях, которые настраиваются в ОС маршрутизатора, верно?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "Начальные пробелы игнорируются, а пробелы после первого символа учитываются",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "Все пробелы в пароле игнорируются",
                     "correct": false,
                     "comment": "ОС игнорирует только начальные пробелы, а пробелы после первого символа учитывает. Поэтому из нескольких слов через пробел можно составить парольную фразу."
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "Пароль с пробелом считается ненадежным",
                     "correct": false,
                     "comment": "Пробел, наоборот, делает пароль надежнее: среди примеров надежных паролей есть пароль с пробелом. ОС игнорирует только начальные пробелы, а пробелы после первого символа учитывает."
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "Пробелы допускаются только в начале пароля",
                     "correct": false,
                     "comment": "Начальные пробелы ОС как раз игнорирует. Учитываются пробелы после первого символа."
@@ -83,24 +93,29 @@
             ]
         },
         {
+            "questionId": "q03",
             "question": "Какая команда режима глобальной конфигурации требует, чтобы каждый новый пароль на устройстве содержал не менее восьми символов?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "security passwords min-length 8",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "service password-encryption",
                     "correct": false,
                     "comment": "Эта команда шифрует пароли, которые хранятся в файле конфигурации в открытом виде, но не ограничивает их длину. Минимальную длину пароля задает команда security passwords min-length 8."
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "login block-for 120 attempts 3 within 60",
                     "correct": false,
                     "comment": "Эта команда блокирует попытки входа на 120 секунд после трех неудачных попыток за 60 секунд. Минимальную длину пароля задает команда security passwords min-length 8."
                 },
                 {
+                    "answerId": "q03-a4",
                     "answer": "exec-timeout 8 0",
                     "correct": false,
                     "comment": "Команда exec-timeout задает время бездействия в минутах и секундах, после которого сеанс завершается. Минимальную длину пароля задает команда security passwords min-length 8."
@@ -108,24 +123,29 @@
             ]
         },
         {
+            "questionId": "q04",
             "question": "Администратор иногда оставляет на терминале открытый сеанс привилегированного режима EXEC. Какая команда на линиях vty автоматически отключит пользователя, который бездействует 5 минут 30 секунд?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q04-a1",
                     "answer": "exec-timeout 5 30",
                     "correct": true
                 },
                 {
+                    "answerId": "q04-a2",
                     "answer": "exec-timeout 30 5",
                     "correct": false,
                     "comment": "В команде exec-timeout первым указывается число минут, вторым — секунд, поэтому эта команда задаст 30 минут 5 секунд. Нужна команда exec-timeout 5 30."
                 },
                 {
+                    "answerId": "q04-a3",
                     "answer": "login block-for 330 attempts 3 within 60",
                     "correct": false,
                     "comment": "Команда login block-for блокирует попытки входа после нескольких неудачных попыток, а не отключает бездействующего пользователя. Его отключает команда exec-timeout 5 30."
                 },
                 {
+                    "answerId": "q04-a4",
                     "answer": "security passwords min-length 5",
                     "correct": false,
                     "comment": "Эта команда задает минимальную длину пароля и не влияет на время бездействия. Бездействующего пользователя отключает команда exec-timeout 5 30."
@@ -133,24 +153,29 @@
             ]
         },
         {
+            "questionId": "q05",
             "question": "Какая команда при настройке SSH создает ключ, с помощью которого шифруется трафик между источником и получателем?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q05-a1",
                     "answer": "crypto key generate rsa general-keys modulus 1024",
                     "correct": true
                 },
                 {
+                    "answerId": "q05-a2",
                     "answer": "username Bob secret netlab",
                     "correct": false,
                     "comment": "Эта команда создает учетную запись пользователя в локальной базе данных. Ключ шифрования создает команда crypto key generate rsa general-keys modulus 1024."
                 },
                 {
+                    "answerId": "q05-a3",
                     "answer": "login local",
                     "correct": false,
                     "comment": "Эта команда включает проверку подлинности на линиях vty по локальной базе данных. Ключ шифрования создает команда crypto key generate rsa general-keys modulus 1024."
                 },
                 {
+                    "answerId": "q05-a4",
                     "answer": "transport input ssh",
                     "correct": false,
                     "comment": "Эта команда разрешает на линиях vty только входящие сеансы SSH. Ключ шифрования создает команда crypto key generate rsa general-keys modulus 1024."

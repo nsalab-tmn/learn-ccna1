@@ -36,19 +36,23 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какая команда позволяет проверить состояние интерфейсов коммутатора?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "show ip interface brief",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "ping",
                     "correct": false,
                     "comment": "Команда ping проверяет подключение к другому устройству по сети. Состояние интерфейсов коммутатора проверяют командой show ip interface brief."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "ipconfig",
                     "correct": false,
                     "comment": "Утилита ipconfig проверяет сетевую конфигурацию узла, например компьютера. Состояние интерфейсов коммутатора проверяют командой show ip interface brief."
@@ -56,19 +60,23 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Пользователь хочет убедиться, что его компьютер может связаться с сайтом в Интернете. Какую команду ему следует использовать?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "ping",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "show ip interface brief",
                     "correct": false,
                     "comment": "Эта команда показывает состояние интерфейсов коммутатора. Подключение к другому устройству или к сайту в Интернете проверяют командой ping."
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "ipconfig",
                     "correct": false,
                     "comment": "Утилита ipconfig показывает сетевую конфигурацию самого узла и не проверяет связь с другими устройствами. Подключение проверяют командой ping."
@@ -76,19 +84,23 @@
             ]
         },
         {
+            "questionId": "q03",
             "question": "Для чего на узле используют утилиту ipconfig?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "Чтобы проверить сетевую конфигурацию узла",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "Чтобы проверить состояние интерфейсов коммутатора",
                     "correct": false,
                     "comment": "Для этого на коммутаторе используют команду show ip interface brief. Утилита ipconfig проверяет сетевую конфигурацию узла."
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "Чтобы проверить подключение к другому устройству по сети",
                     "correct": false,
                     "comment": "Подключение к другому устройству проверяют командой ping. Утилита ipconfig проверяет сетевую конфигурацию узла."

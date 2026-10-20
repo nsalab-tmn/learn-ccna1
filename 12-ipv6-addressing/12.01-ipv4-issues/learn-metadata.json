@@ -37,39 +37,47 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какой наиболее важный мотивирующий фактор для перехода на IPv6?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "более высокая производительность с IPv6",
                     "correct": false,
                     "comment": "Наиболее важный фактор для IPv6 — истощение адресного пространства IPv4."
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "адреса IPv6, с которыми проще работать",
                     "correct": false,
                     "comment": "Наиболее важный фактор для IPv6 — истощение адресного пространства IPv4."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "улучшенная безопасность с IPv6",
                     "correct": false,
                     "comment": "Наиболее важный фактор для IPv6 — истощение адресного пространства IPv4."
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "исчерпание адресного пространства IPv4",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q02",
             "question": "Истина или Ложь: 4 из 5 RIR больше не имеют достаточного количества адресов IPv4 для выделения клиентам.",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "Истина",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "Ложь",
                     "correct": false,
                     "comment": "Правильный  ответ - Истина. Четыре из пяти RIR: ARIN, APNIC, LACNIC и RIPE NCC исчерпали свои пулы адресов IPv4. Только у AfriNIC осталось адресное пространство IPv4 для выделения клиентам."
@@ -77,24 +85,29 @@
             ]
         },
         {
+            "questionId": "q03",
             "question": "Какой из перечисленных ниже методов использует собственное подключение IPv6?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "двойной стек",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "туннелирование",
                     "correct": false,
                     "comment": "Только двойной стек использует собственное подключение IPv6."
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "преобразование",
                     "correct": false,
                     "comment": "Только двойной стек использует собственное подключение IPv6."
                 },
                 {
+                    "answerId": "q03-a4",
                     "answer": "все вышеперечисленное",
                     "correct": false,
                     "comment": "Только двойной стек использует собственное подключение IPv6."
