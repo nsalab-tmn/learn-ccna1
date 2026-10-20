@@ -197,9 +197,9 @@
    "provenance": {
     "legacy": "1.4.1-2.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "0e00cd456d9bdbd41267f26bbba03868ab0707d7ebb9c2ee721f39f613faf17e"
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "22d48f9884011862d0c9f4f21eb1a310558c29c35ff4a6caaa1c9c9877c6241e"
     }
    }
   },
@@ -9446,112 +9446,148 @@
    "notes": "[svg в git · пара: слабо]"
   },
   {
-   "id": "ccna1-f6brnxb",
-   "kind": "native",
-   "display": {
-    "key": "1.2.5"
-   },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-gz7jfkc",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.2.5-1"
    },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5-1.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5504:6985",
+    "page": "CCNA1 · 01 networking-today"
    },
-   "status": "manual"
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.2.5-1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "5eaa06be68ec3d3429f48c0e2b7264474843eb26b307e7ad93347646971b4844"
+    }
+   }
   },
   {
    "id": "ccna1-cwsot5o",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.2.5-2"
    },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5-2.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5504:7425",
+    "page": "CCNA1 · 01 networking-today"
    },
-   "status": "manual"
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.2.5-2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "b962c581b9de4b636323c91991fcf4679e6633d8a48f2d58590526f70cfe5c96"
+    }
+   }
   },
   {
    "id": "ccna1-xso7oql",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.2.5-3"
    },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5-3.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5504:7576",
+    "page": "CCNA1 · 01 networking-today"
    },
-   "status": "manual"
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-3.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.2.5-3.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "e774431ca981a89c90af0ea2f1bedaea0a0a859ec3b2fddad023946b6d29f576"
+    }
+   }
   },
   {
    "id": "ccna1-epx2sze",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.2.5-4"
    },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5-4.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5504:7620",
+    "page": "CCNA1 · 01 networking-today"
    },
-   "status": "manual"
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-4.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.2.5-4.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "707ceea4f774eaadc7b368703cab8379724e567ee9df698302bb0cf17fcf7ae6"
+    }
+   }
   },
   {
    "id": "ccna1-ab5qbc2",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.2.5-5"
    },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5-5.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5504:7653",
+    "page": "CCNA1 · 01 networking-today"
    },
-   "status": "manual"
+   "out": {
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-5.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.2.5-5.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "497d584c70c287c0268b7e0921bf9af4dc32a43a4945490661b5a0a1e7fd3ef1"
+    }
+   }
   },
   {
    "id": "ccna1-dosn5xa",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.2.5-6"
    },
-   "out": {
-    "path": "01-networking-today/01.02-network-components/assets/1.2.5-6.jpg",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-yubg7xz",
-   "kind": "native",
-   "display": {
-    "key": "1.7.2"
+   "figma": {
+    "nodeId": "5504:7673",
+    "page": "CCNA1 · 01 networking-today"
    },
    "out": {
-    "path": "01-networking-today/01.07-network-trends/assets/1.7.2.jpg",
-    "format": "native"
+    "path": "01-networking-today/01.02-network-components/assets/1.2.5-6.svg",
+    "format": "svg"
    },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-mrkojno",
-   "kind": "native",
-   "display": {
-    "key": "1.7.3"
-   },
-   "out": {
-    "path": "01-networking-today/01.07-network-trends/assets/1.7.3.png",
-    "format": "native"
-   },
-   "status": "manual"
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.2.5-6.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "33e318c82b4e04432e4b6d85891f573d55f97636a7cfda7f72d4bc617c0210df"
+    }
+   }
   },
   {
    "id": "ccna1-loeqbxg",
@@ -9579,27 +9615,27 @@
   },
   {
    "id": "ccna1-z5gqhik",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "1.8.2"
    },
-   "out": {
-    "path": "01-networking-today/01.08-network-security/assets/1.8.2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-h5r7ilh",
-   "kind": "native",
-   "display": {
-    "key": "2.1.2"
+   "figma": {
+    "nodeId": "5508:8142",
+    "page": "CCNA1 · 01 networking-today"
    },
    "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.2.png",
-    "format": "native"
+    "path": "01-networking-today/01.08-network-security/assets/1.8.2.svg",
+    "format": "svg"
    },
-   "status": "manual"
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.8.2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "9044eb92391b3bbb48afcd51bba898c13f377061799478cb9243caa5f4d52fe8"
+    }
+   }
   },
   {
    "id": "ccna1-dcaaa3v",
@@ -9626,208 +9662,292 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-btrpst7",
-   "kind": "native",
-   "display": {
-    "key": "2.1.5-2"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-fw2zal7",
-   "kind": "native",
-   "display": {
-    "key": "2.1.5-3"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-3.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-g56ph7a",
-   "kind": "native",
-   "display": {
-    "key": "2.5.4-1"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-qpnpkhk",
-   "kind": "native",
-   "display": {
-    "key": "2.5.4-2"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-qp5oozr",
-   "kind": "native",
-   "display": {
-    "key": "2.5.4-3"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-3.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-nucf3ey",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "2.6.1-1"
    },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-1.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5431:7208",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
-   "status": "manual"
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.6.1-1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:50:02Z",
+     "sha256": "eead38a2416e8b62e54266800a412914dee2fcb4bdcceb93ac55a189b90c8cb3"
+    }
+   }
   },
   {
    "id": "ccna1-knkeogn",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "2.6.1-2"
    },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5511:8726",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
-   "status": "manual"
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.6.1-2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:50:02Z",
+     "sha256": "3029fd695aa4bf37e7f335bb23400d969eb03dffd2b52394124fe1d1ef3c6062"
+    }
+   }
   },
   {
    "id": "ccna1-bpz3hd2",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "2.6.2"
    },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5511:8792",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
-   "status": "manual"
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.6.2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "c4e054c8c79d044a1f334c9d53a38aaace63d8e4a66bb556c52552336838cfa6"
+    }
+   }
   },
   {
    "id": "ccna1-wj5mw56",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "2.7.1-1"
    },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-1.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5511:9239",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
-   "status": "manual"
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.7.1-1.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:50:02Z",
+     "sha256": "906e87e405cc6a3738614916e0652f21ee6fc0cd399c96605d394ad1c4046c42"
+    }
+   }
   },
   {
    "id": "ccna1-ifsiv47",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "2.7.1-2"
    },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-2.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5511:9343",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
-   "status": "manual"
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.7.1-2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:50:02Z",
+     "sha256": "536f41540321208cf79462c103663c060dd3f88029415726bb59060ff7df2671"
+    }
+   }
   },
   {
    "id": "ccna1-6dngai7",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "2.7.2"
    },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.2.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5511:9406",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
-   "status": "manual"
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.7.2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:50:02Z",
+     "sha256": "8432266226f21cee358e5bcad390a9971eac2ee02bdee6480e5c014dbc5b1f9b"
+    }
+   }
   },
   {
    "id": "ccna1-gofqsxl",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "3.4.1"
    },
-   "out": {
-    "path": "03-protocols-and-models/03.04-standards-organizations/assets/3.4.1.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5516:11081",
+    "page": "CCNA1 · 03 protocols-and-models"
    },
-   "status": "manual"
+   "out": {
+    "path": "03-protocols-and-models/03.04-standards-organizations/assets/3.4.1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "3.4.1.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "33e9170ba44b5cde39b462a14625e2819ce8c1ecfbfb9892a44dd8425b60f825"
+    }
+   }
   },
   {
    "id": "ccna1-y336qdk",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.1.1-1"
    },
-   "out": {
-    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-1.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5474:7369",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.1.1-1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "8c3738b68ab9867b7d035f10aefb6073ce7d49337943b161b5b4df5fb283c517"
+    }
+   }
   },
   {
    "id": "ccna1-ccps754",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.1.1-2"
    },
-   "out": {
-    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-2.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5474:7495",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.1.1-2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "721e57d232336ed347064ab98ce4e83be9eecc1673d0c36d383b1779fa72890b"
+    }
+   }
   },
   {
    "id": "ccna1-3f4gdxk",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.1.1-3"
    },
-   "out": {
-    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-3.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5474:7657",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-3.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.1.1-3.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "7f1defcac50ceb649a8ce695df39c6cc14fa8f22e0b4b5dee0546be99b9bce08"
+    }
+   }
   },
   {
    "id": "ccna1-p5lr3b3",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.2.6"
    },
-   "out": {
-    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.6.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5474:7769",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.6.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.2.6.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "296c96f0e81c1d069e42a4e0e3a0e973461d2e6295fab134543c643e1cc5d3b8"
+    }
+   }
   },
   {
    "id": "ccna1-iutgkin",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.3.2"
    },
-   "out": {
-    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5470:121457",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.3.2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "fd887ac7d57f4acf64d8fa25b1d58946152f5034fdb8156b0dea1833680d3d5e"
+    }
+   }
   },
   {
    "id": "ccna1-7wgiylf",
@@ -9843,27 +9963,51 @@
   },
   {
    "id": "ccna1-ptbh5lw",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.4.1"
    },
-   "out": {
-    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.1.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5470:122090",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.4.1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "5fbb767a303cb08518206bb294331f5f3cb0460b5156755b3f83fe0e0aa1fb5d"
+    }
+   }
   },
   {
    "id": "ccna1-kxplodp",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.4.2-1"
    },
-   "out": {
-    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-1.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5470:122433",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.4.2-1.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "a6acace6880dcae57db67b13ea7ad307eadb99840a2b9c991b4a2b41e72f9569"
+    }
+   }
   },
   {
    "id": "ccna1-tsyfrdq",
@@ -9879,15 +10023,27 @@
   },
   {
    "id": "ccna1-m772rhq",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.4.2-3"
    },
-   "out": {
-    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-3.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5472:7155",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-3.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.4.2-3.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "23967dd3294218e3c1c7c6651de745fdd849916831f315f3359d5c2038d23bfd"
+    }
+   }
   },
   {
    "id": "ccna1-ivht2py",
@@ -9914,18 +10070,6 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-dtvgu6p",
-   "kind": "native",
-   "display": {
-    "key": "4.5.1"
-   },
-   "out": {
-    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-a7hvqqr",
    "kind": "native",
    "display": {
@@ -9935,7 +10079,8 @@
     "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-1.jpg",
     "format": "native"
    },
-   "status": "manual"
+   "status": "manual",
+   "notes": "keep — photo"
   },
   {
    "id": "ccna1-ywq5gdi",
@@ -9947,7 +10092,8 @@
     "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-2.jpg",
     "format": "native"
    },
-   "status": "manual"
+   "status": "manual",
+   "notes": "keep — photo"
   },
   {
    "id": "ccna1-kvwhn4b",
@@ -9959,7 +10105,8 @@
     "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-3.jpg",
     "format": "native"
    },
-   "status": "manual"
+   "status": "manual",
+   "notes": "keep — photo"
   },
   {
    "id": "ccna1-d5zmpe2",
@@ -9971,7 +10118,8 @@
     "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.4-4.jpg",
     "format": "native"
    },
-   "status": "manual"
+   "status": "manual",
+   "notes": "keep — photo"
   },
   {
    "id": "ccna1-42msnpl",
@@ -10029,18 +10177,6 @@
    },
    "out": {
     "path": "04-physical-layer/04.06-wireless-media/assets/4.6.3.jpg",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-elrrqab",
-   "kind": "native",
-   "display": {
-    "key": "6.1.4"
-   },
-   "out": {
-    "path": "06-data-link-layer/06.01-purpose-of-the-data-link-layer/assets/6.1.4.png",
     "format": "native"
    },
    "status": "manual"
