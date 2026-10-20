@@ -9627,9 +9627,14 @@
     "path": "01-networking-today/01.07-network-trends/assets/1.7.8.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.7.8.png"
+    "legacy": "1.7.8.png",
+    "synced": {
+     "figmaVersion": "2412487069755165532",
+     "at": "2026-10-20T17:15:08Z",
+     "sha256": "3de5dae792a6edd9bb1724a38806dca13fe3741d49c85e6c4fab11c444b4f085"
+    }
    }
   },
   {
@@ -9646,9 +9651,14 @@
     "path": "01-networking-today/01.07-network-trends/assets/1.7.9.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.7.9.jpg"
+    "legacy": "1.7.9.jpg",
+    "synced": {
+     "figmaVersion": "2412487069755165532",
+     "at": "2026-10-20T17:15:08Z",
+     "sha256": "fc2154264ebefb8463791079a84dcf0d860b2fb8b27637b4966271490eea9bbe"
+    }
    }
   },
   {
@@ -9701,9 +9711,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.1.5-1.png"
+    "legacy": "2.1.5-1.png",
+    "synced": {
+     "figmaVersion": "2412487069755165532",
+     "at": "2026-10-20T17:15:08Z",
+     "sha256": "627bf65b615fc2be46791301bcdfb541918692bc6c67211c26fb2ac938e06031"
+    }
    }
   },
   {
@@ -10008,9 +10023,14 @@
     "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.5.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.3.5.png"
+    "legacy": "4.3.5.png",
+    "synced": {
+     "figmaVersion": "2412487069755165532",
+     "at": "2026-10-20T17:15:08Z",
+     "sha256": "0657828a7c7bb1b5f293a825f083a1dd81ee775a5abfeba912375f2da76c32cd"
+    }
    }
   },
   {
@@ -10248,9 +10268,14 @@
     "path": "04-physical-layer/04.06-wireless-media/assets/4.6.3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.6.3.jpg"
+    "legacy": "4.6.3.jpg",
+    "synced": {
+     "figmaVersion": "2412487069755165532",
+     "at": "2026-10-20T17:15:08Z",
+     "sha256": "15bba10e0efc4db00870921a6010f7d80137735e49cd11c61973a5928b5b061e"
+    }
    }
   },
   {
@@ -10392,9 +10417,14 @@
     "path": "17-build-a-small-network/17.02-small-network-applications-and-protocols/assets/17.2.3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "17.2.3.png"
+    "legacy": "17.2.3.png",
+    "synced": {
+     "figmaVersion": "2412487069755165532",
+     "at": "2026-10-20T17:15:08Z",
+     "sha256": "ba22f2342d043b7133cbf320ee87a34c4f3d717b3e18d33ed153f4da99cd53fe"
+    }
    }
   },
   {
