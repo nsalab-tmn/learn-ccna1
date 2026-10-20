@@ -37,47 +37,57 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какие два сообщения ICMPv6 используются в SLAAC? (верны два варианта)",
             "answerType": "multiChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "сообщение «Объявление соседа» (Neighbor Advertisement, NA)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос маршрутизатора» и «Объявление маршрутизатора»"
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "сообщение «Запрос соседа» (Neighbor Solicitation, NS)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые в SLAAC, — это «Запрос маршрутизатора» и «Объявление маршрутизатора»"
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "сообщение «Объявление маршрутизатора» (Router Advertisement, RA)",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "сообщение «Запрос маршрутизатора» (Router Solicitation, RS)",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q02",
             "question": "Какие два сообщения ICMPv6 используются для определения MAC-адреса известного IPv6 адреса? (верны два варианта)",
             "answerType": "multiChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "сообщение «Объявление соседа» (Neighbor Advertisement, NA)",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "сообщение «Запрос соседа» (Neighbor Solicitation, NS)",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "сообщение «Объявление маршрутизатора» (Router Advertisement, RA)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые для определения MAC-адреса известного IPv6 адреса, — это сообщение «Запрос соседа» и «Объявление соседа»"
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "сообщение «Запрос маршрутизатора» (Router Solicitation, RS)",
                     "correct": false,
                     "comment": "Два сообщения ICMPv6, используемые для определения MAC-адреса известного IPv6 адреса, — это сообщение «Запрос соседа» и «Объявление соседа»"
@@ -85,19 +95,23 @@
             ]
         },
         {
+            "questionId": "q03",
             "question": "Какой тип рассылки используется для отправки сообщения ICMPv6 «Запрос соседа»?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "одноадресная рассылка",
                     "correct": false,
                     "comment": "Сообщения ICMPv6 «Запрос соседа» отправляются в виде многоадресной рассылки"
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "многоадресная",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "широковещательная",
                     "correct": false,
                     "comment": "Сообщения ICMPv6 «Запрос соседа» отправляются в виде многоадресной рассылки"

@@ -38,24 +38,29 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какая команда Windows позволяет узнать MAC-адрес компьютера вместе со сведениями об адресации уровня 3?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "ipconfig /all",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "ipconfig",
                     "correct": false,
                     "comment": "Команда ipconfig без параметров показывает IP-адрес, маску подсети и шлюз по умолчанию, но не MAC-адрес. MAC-адрес вместе со сведениями уровня 3 выводит ipconfig /all."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "ipconfig /displaydns",
                     "correct": false,
                     "comment": "Эта команда выводит записи DNS из кэша. MAC-адрес компьютера вместе со сведениями уровня 3 выводит ipconfig /all."
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "arp -a",
                     "correct": false,
                     "comment": "Команда arp -a показывает кэш ARP: IPv4- и MAC-адреса устройств, к которым узел недавно обращался, а не MAC-адрес самого компьютера. Его выводит ipconfig /all."
@@ -63,24 +68,29 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Узел Windows получает IP-конфигурацию от сервера DHCP. Какими командами администратор может обновить эту конфигурацию?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "ipconfig /release, затем ipconfig /renew",
                     "correct": true
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "ipconfig /all, затем ipconfig /displaydns",
                     "correct": false,
                     "comment": "Эти команды только выводят сведения: полную IP-конфигурацию и записи DNS из кэша. Обновить конфигурацию DHCP-клиента позволяют ipconfig /release и ipconfig /renew."
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "netsh interface ip delete arpcache",
                     "correct": false,
                     "comment": "Эта команда очищает кэш ARP, а не IP-конфигурацию узла. Обновить конфигурацию DHCP-клиента позволяют ipconfig /release и ipconfig /renew."
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "arp -a",
                     "correct": false,
                     "comment": "Команда arp -a выводит кэш ARP и не меняет IP-конфигурацию. Обновить конфигурацию DHCP-клиента позволяют ipconfig /release и ipconfig /renew."
@@ -88,24 +98,29 @@
             ]
         },
         {
+            "questionId": "q03",
             "question": "В сети есть узел 10.0.0.5, но команда arp -a на узле PC-A не показывает для него записи. Чем это объясняется?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "Кэш ARP содержит записи только об устройствах, к которым узел недавно обращался",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "Команда arp -a показывает только статические записи",
                     "correct": false,
                     "comment": "Команда arp -a показывает и статические, и динамические записи: тип каждой указан в выводе. Записи для 10.0.0.5 нет, потому что кэш ARP содержит записи только об устройствах, к которым узел недавно обращался."
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "Узел 10.0.0.5 выключен",
                     "correct": false,
                     "comment": "Отсутствие записи не говорит о том, что узел выключен: кэш ARP содержит записи только об устройствах, к которым узел недавно обращался. Если PC-A отправит эхо-запрос на 10.0.0.5, запись для этого адреса появится."
                 },
                 {
+                    "answerId": "q03-a4",
                     "answer": "Команда arp -a показывает только адреса маршрутизаторов",
                     "correct": false,
                     "comment": "Команда arp -a выводит записи обо всех устройствах из кэша ARP узла. Записи для 10.0.0.5 нет, потому что к этому узлу недавно не обращались."
@@ -113,24 +128,29 @@
             ]
         },
         {
+            "questionId": "q04",
             "question": "Какая команда ОС маршрутизатора выводит в компактном виде все интерфейсы, назначенные им IP-адреса и их рабочее состояние?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q04-a1",
                     "answer": "show ip interface brief",
                     "correct": true
                 },
                 {
+                    "answerId": "q04-a2",
                     "answer": "show ip route",
                     "correct": false,
                     "comment": "Эта команда выводит информацию маршрутизации уровня 3. Сводку по всем интерфейсам, их IP-адресам и состоянию выводит show ip interface brief."
                 },
                 {
+                    "answerId": "q04-a3",
                     "answer": "show arp",
                     "correct": false,
                     "comment": "Эта команда выводит список известных узлов в локальных сетях Ethernet. Сводку по всем интерфейсам, их IP-адресам и состоянию выводит show ip interface brief."
                 },
                 {
+                    "answerId": "q04-a4",
                     "answer": "show running-config",
                     "correct": false,
                     "comment": "Эта команда выводит текущую конфигурацию, а не рабочее состояние интерфейсов. Сводку по всем интерфейсам, их IP-адресам и состоянию выводит show ip interface brief."
@@ -138,19 +158,23 @@
             ]
         },
         {
+            "questionId": "q05",
             "question": "Команда show ip interface brief показывает, что интерфейс коммутатора находится в состоянии down. Что это означает?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q05-a1",
                     "answer": "К интерфейсу не подключены устройства, или не работает сетевой интерфейс подключенного устройства",
                     "correct": true
                 },
                 {
+                    "answerId": "q05-a2",
                     "answer": "Интерфейс работает, но ему не назначен IP-адрес",
                     "correct": false,
                     "comment": "Так выглядят интерфейсы без адреса (unassigned) в состоянии up: они работают. Состояние down означает, что к интерфейсу не подключены устройства или не работает сетевой интерфейс подключенного устройства."
                 },
                 {
+                    "answerId": "q05-a3",
                     "answer": "Интерфейс работает, и ему назначен IPv4-адрес",
                     "correct": false,
                     "comment": "Работающий интерфейс имеет состояние up в столбцах Status и Protocol. Состояние down означает, что к интерфейсу не подключены устройства или не работает сетевой интерфейс подключенного устройства."

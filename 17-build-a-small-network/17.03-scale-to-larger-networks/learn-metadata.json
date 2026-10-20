@@ -37,28 +37,34 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какие элементы необходимы для масштабирования сети? (верны два варианта)",
             "answerType": "multiChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "бюджет",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "конфигурации устройств",
                     "correct": false,
                     "comment": "Для масштабирования сети нужны бюджет, реестр устройств, сетевая документация и анализ трафика"
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "увеличение пропускной способности",
                     "correct": false,
                     "comment": "Для масштабирования сети нужны бюджет, реестр устройств, сетевая документация и анализ трафика"
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "документирование сети",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a5",
                     "answer": "узел под управлением Windows",
                     "correct": false,
                     "comment": "Для масштабирования сети нужны бюджет, реестр устройств, сетевая документация и анализ трафика"
@@ -66,59 +72,71 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Какое программное обеспечение, установленное на ключевых узлах, может выявить типы сетевого трафика, проходящего через сеть?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "Linux",
                     "correct": false,
                     "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "MacOS",
                     "correct": false,
                     "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "SSH",
                     "correct": false,
                     "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "ОС Windows",
                     "correct": false,
                     "comment": "Типы сетевого трафика, проходящего через сеть, может выявить Wireshark"
                 },
                 {
+                    "answerId": "q02-a5",
                     "answer": "Wireshark",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q03",
             "question": "Какой инструмент Windows 10 полезен для определения приложений, использующих сетевые службы на узле?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "панель управления",
                     "correct": false,
                     "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "использование данных",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "менеджер файлов",
                     "correct": false,
                     "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
                 },
                 {
+                    "answerId": "q03-a4",
                     "answer": "межсетевой экран Windows",
                     "correct": false,
                     "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
                 },
                 {
+                    "answerId": "q03-a5",
                     "answer": "Windows Explorer",
                     "correct": false,
                     "comment": "Для определения приложений, использующих сетевые службы на узле, особенно полезно средство использования данных в ОС Windows 10"
