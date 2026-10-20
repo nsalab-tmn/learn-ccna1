@@ -4669,7 +4669,7 @@
      "at": "2026-10-20T20:24:34Z",
      "sha256": "a89117681751cbf5018eadf8c331123c42d1b510001e37b67c579861f272b3e9",
      "specSha256": "5eb43290fdd6c72351408da43412bf1006a0f9240703d5f4da0ae31728a07417",
-     "tracksSha256": "f9e02d24fa806bc66ba16115aa1f40985c56e89ebeb523b1a901f88361e5da87"
+     "tracksSha256": "9fe14c2bac21e1b0650525455e6ef28d83c641d97db114e2465da6aecda00782"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
@@ -8932,7 +8932,7 @@
      "at": "2026-10-20T20:24:34Z",
      "sha256": "e203a8f3952929ba7fca2ac5f2c8ebdc081ee67720b7e4b27d091cfb58ef01ce",
      "specSha256": "a0505e90100e7c628ffe21bb38ee50ee66e37d0bcd79b162169ac78b0efae062",
-     "tracksSha256": "fb47f517d7675ac14a22dc7dd6d2135719884669b010982e04e3ec2950c6f741"
+     "tracksSha256": "71e72360db1d3309c924acbd7f22679a32aeed23219925d3b973dcf957b3869f"
     }
    },
    "notes": "[APNG в git (анимация) · пара: текст]"
@@ -8964,7 +8964,7 @@
      "at": "2026-10-20T20:24:34Z",
      "sha256": "7234864633352b71fd287f11cf3bf389f4a38e4662dd6167f8382a268290bf03",
      "specSha256": "23f482d4a3297f3b963c697cbe6f38fd9a4c600d0ff59e95c669b1ead81b5225",
-     "tracksSha256": "8894919d97fd2bf88fa7f37137ab640eb2abad137b0ed24c14d3cff73106c8f1"
+     "tracksSha256": "99471e6456f94cbfe3ef79f572ce5229d64fb10f07b2c6c3b5dd0d44ee93b63b"
     }
    },
    "notes": "[APNG в git (анимация) · пара: косвенно]"
