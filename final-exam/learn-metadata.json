@@ -35,7 +35,8 @@
             "ksa.ccna1.icmp.exam",
             "ksa.ccna1.transport-layer.exam",
             "ksa.ccna1.application-layer.exam",
-            "ksa.ccna1.16-17-exam"
+            "ksa.ccna1.network-security-fundamentals.exam",
+            "ksa.ccna1.build-a-small-network.exam"
         ],
         "measurement": {
             "mode": "exam",
