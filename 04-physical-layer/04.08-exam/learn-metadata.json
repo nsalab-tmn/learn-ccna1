@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: назначение физического уровня, характеристики физического уровня, медный кабель, UTP кабель, прокладка оптоволоконных кабелей, средства беспроводного подключения.",
     "difficulty": 3,
-    "duration": "PT0H58M",
+    "duration": "PT1H0M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -31,7 +31,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 38 questions covering module 4; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 39 questions covering module 4; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1063,6 +1063,28 @@
                 },
                 {
                     "answer": "ослабление светового сигнала на больших расстояниях",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Как рассчитывается сетевая передача данных?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "производительность + полезная нагрузка = пропускная способность (throughput + goodput = bandwidth)",
+                    "correct": false
+                },
+                {
+                    "answer": "полезная нагрузка + накладные расходы на трафик = пропускная способность (goodput + traffic overhead = throughput)",
+                    "correct": true
+                },
+                {
+                    "answer": "полезная нагрузка + задержка = пропускная способность (goodput + latency = bandwidth)",
+                    "correct": false
+                },
+                {
+                    "answer": "производительность + задержка = полезная нагрузка (throughput + latency = goodput)",
                     "correct": false
                 }
             ]

@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: компоненты сети, представления и топологии сетей, основные типы сетей, подключение к Интернету, обеспечение надежности сети, тенденции развития сетей, обеспечение сетевой безопасности.",
     "difficulty": 3,
-    "duration": "PT0H55M",
+    "duration": "PT0H58M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -29,7 +29,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 33 questions covering module 1; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 35 questions covering module 1; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -934,6 +934,50 @@
                 },
                 {
                     "answer": "сети по линиям электропитания",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Сотрудник входит в свою учетную запись компании, а другой сотрудник стоит таким образом, чтобы увидеть идентификатор логина и пароль. Что это за угроза?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "рекламное ПО",
+                    "correct": false
+                },
+                {
+                    "answer": "перехват и хищение данных",
+                    "correct": false
+                },
+                {
+                    "answer": "кража персональных данных",
+                    "correct": true
+                },
+                {
+                    "answer": "шпионское ПО",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что такое шпионская угроза?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "злоумышленник атакует пользовательские устройства или сетевые ресурсы",
+                    "correct": false
+                },
+                {
+                    "answer": "учетные данные пользователя украдены и используются для доступа к личным данным",
+                    "correct": false
+                },
+                {
+                    "answer": "программное обеспечение, устанавливаемое на пользовательское устройство и тайно собирающее сведения о пользователе",
+                    "correct": true
+                },
+                {
+                    "answer": "частная информация собирается из сети организации",
                     "correct": false
                 }
             ]

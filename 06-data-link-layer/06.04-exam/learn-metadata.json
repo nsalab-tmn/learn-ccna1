@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: назначение канального уровня, топологии локальных и глобальных сетей, кадр канала передачи данных.",
     "difficulty": 3,
-    "duration": "PT0H50M",
+    "duration": "PT0H52M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -25,7 +25,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 32 questions covering module 6; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 33 questions covering module 6; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -915,6 +915,28 @@
                 },
                 {
                     "answer": "обеспечивает доставку данных между двумя приложениями",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Студенты, обучающиеся по сети данных, изучают материалы в рамках подготовки к викторине. Какое утверждение описывает работу метода контроля доступа для общих сетевых сред передачи данных?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "в сети с множественным доступом на основе конкуренции каждый узел имеет свое время для использования среды передачи",
+                    "correct": false
+                },
+                {
+                    "answer": "метод управляемого доступа, используемый в традиционных сетевых сетях Ethernet с топологией шины, определил порядок передачи каждого устройства",
+                    "correct": false
+                },
+                {
+                    "answer": "метод CSMA/CA пытается избежать столкновений, предоставляя каждому устройству информацию о том, как долго среда передачи данных будет недоступна",
+                    "correct": true
+                },
+                {
+                    "answer": "в методе CSMA/CD, когда два устройства передают одновременно, обнаруживается столкновение и данные немедленно передаются повторно",
                     "correct": false
                 }
             ]
