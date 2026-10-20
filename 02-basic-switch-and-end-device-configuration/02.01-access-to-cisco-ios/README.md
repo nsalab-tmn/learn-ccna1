@@ -79,13 +79,5 @@ Desktop Downloads lab.support.files second_drive
 
 ![](./assets/2.1.5-1.png)
 
-**Tera Term**
-
-![](./assets/2.1.5-2.png)
-
-**SecureCRT**
-
-![](./assets/2.1.5-3.png)
-
 <!-- 2.1.6 -->
 <!-- quiz -->

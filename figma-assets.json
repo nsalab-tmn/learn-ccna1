@@ -9662,54 +9662,6 @@
    "status": "manual"
   },
   {
-   "id": "ccna1-btrpst7",
-   "kind": "native",
-   "display": {
-    "key": "2.1.5-2"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-fw2zal7",
-   "kind": "native",
-   "display": {
-    "key": "2.1.5-3"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios/assets/2.1.5-3.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-qpnpkhk",
-   "kind": "native",
-   "display": {
-    "key": "2.5.4-2"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-2.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-qp5oozr",
-   "kind": "native",
-   "display": {
-    "key": "2.5.4-3"
-   },
-   "out": {
-    "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.4-3.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-nucf3ey",
    "kind": "illustration",
    "display": {
