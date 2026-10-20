@@ -377,7 +377,7 @@
 <g data-node-id="I4387:6;138:16589">
 <circle data-node-id="I4387:6;138:16590" cx="19.0616" cy="19.0616" r="19.0616" transform="matrix(0.866025 0.5 -2.20305e-08 1 241.027 269.199)" fill="black"/>
 <circle data-node-id="I4387:6;138:16591" cx="3.97512" cy="3.97512" r="3.97512" transform="matrix(0.866025 0.5 -2.20305e-08 1 243.887 278.552)" fill="white"/>
-<ellipse data-node-id="I4387:6;138:16592" cx="10.4171" cy="10.8458" rx="10.4171" ry="10.8458" transform="matrix(0.866025 0.5 -2.20305e-08 1 253.522 289.679)" fill="#549EF7"/>
+<ellipse data-node-id="I4387:6;138:16592" cx="10.4171" cy="10.8458" rx="10.4171" ry="10.8458" transform="matrix(0.866025 0.5 -2.20305e-08 1 253.522 289.679)" fill="url(#paint0_linear_4387_4)"/>
 </g>
 </g>
 </g>
@@ -438,6 +438,10 @@
 <pattern id="pattern11_4387_4" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image3_4387_4" transform="matrix(0.00212883 0 0 0.0026452 0.0143504 -0.407722)"/>
 </pattern>
+<linearGradient id="paint0_linear_4387_4" x1="2.87128" y1="-6.88652" x2="8.9068" y2="22.0071" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8C97F9"/>
+<stop offset="1" stop-color="#0B0C10" stop-opacity="0"/>
+</linearGradient>
 <clipPath id="clip0_4387_4">
 <rect x="426.307" y="528.363" width="148.459" height="110.147" rx="11.0817" fill="white"/>
 </clipPath>

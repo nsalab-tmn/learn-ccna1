@@ -799,8 +799,8 @@
     "legacy": "3.1.6-2.png",
     "synced": {
      "figmaVersion": "2412448642141413075",
-     "at": "2026-10-20T14:27:56Z",
-     "sha256": "ec63b0757ae0772d39f90881488ade0e76f5e4257f54879472d62ce630f97edf",
+     "at": "2026-10-20T14:38:12Z",
+     "sha256": "1d1e317e6f75df3e7489b78f36f24ebd3d0e9ac4ec04af644ab38131ae55df38",
      "tracksSha256": "f121214a23335ec17ef6da7dbf4777a50103ba245a5fb0359b9fa2d047583e56"
     }
    },
@@ -914,8 +914,8 @@
     "legacy": "3.1.8-2.png",
     "synced": {
      "figmaVersion": "2412448642141413075",
-     "at": "2026-10-20T14:27:56Z",
-     "sha256": "30db6e5b6cb1e1667fd5628098b2bbe75d6fdc40d5bbb489dd173937f7e50014",
+     "at": "2026-10-20T14:38:12Z",
+     "sha256": "90774b5b8f0e18480f643aee868d6dccafae69129a3feaf18af7137a314a7323",
      "tracksSha256": "279d4df4afcf5ae9626a5a5ec02216c683b5b97aadf109c8ebdb39990ee3c65d"
     }
    },
@@ -3981,8 +3981,8 @@
     "legacy": "7.4.5.svg",
     "synced": {
      "figmaVersion": "2412448642141413075",
-     "at": "2026-10-20T14:27:56Z",
-     "sha256": "6bd8084c0224fd9802317c099a4f854f66af15af5d2f19b5690e598acf2c0aeb"
+     "at": "2026-10-20T14:38:12Z",
+     "sha256": "295f1cc8d89116e6ad6830fb8176669ece78d6249c57c0d379c7bf6d1aaf8a88"
     }
    },
    "notes": "[svg в git · пара: слабо]"
@@ -7814,8 +7814,8 @@
     "legacy": "14.7.1.svg",
     "synced": {
      "figmaVersion": "2412448642141413075",
-     "at": "2026-10-20T14:27:56Z",
-     "sha256": "11361d8172849b072e23b29e3c4e7bf06b6cab0966eaf66ec749c90267e89ae8"
+     "at": "2026-10-20T14:38:12Z",
+     "sha256": "c0b49969847f99efe05d41bfba0f49bcee97c1cbf608558f43e8e6a4f2da8abc"
     }
    },
    "notes": "[svg в git · пара: текст]"
