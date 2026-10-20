@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: первоначальная настройка маршрутизатора, настройка интерфейсов, настройка шлюза по умолчанию.",
     "difficulty": 1,
-    "duration": "PT1H4M",
+    "duration": "PT1H7M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -28,7 +28,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 39 questions covering module 10; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 41 questions covering module 10; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1188,6 +1188,58 @@
                     "comment": "Тема 10.1.0 — Команда service password-encryption используется для шифрования всех паролей с открытым текстом в файле текущей конфигурации."
                 }
             ]
+        },
+        {
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "copy running-config startup-config",
+                    "comment": "",
+                    "correct": true
+                },
+                {
+                    "answer": "show interfaces",
+                    "comment": "Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfaces, show ip nat translations и show ip route только выводят сведения и ничего не сохраняют.",
+                    "correct": false
+                },
+                {
+                    "answer": "show ip nat translations",
+                    "comment": "Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfaces, show ip nat translations и show ip route только выводят сведения и ничего не сохраняют.",
+                    "correct": false
+                },
+                {
+                    "answer": "show ip route",
+                    "comment": "Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfaces, show ip nat translations и show ip route только выводят сведения и ничего не сохраняют.",
+                    "correct": false
+                }
+            ],
+            "question": "Студент хочет сохранить конфигурацию маршрутизатора в NVRAM. Какую команду лучше всего использовать для выполнения задачи?"
+        },
+        {
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "show ipv6 interface",
+                    "comment": "",
+                    "correct": true
+                },
+                {
+                    "answer": "show interfaces",
+                    "comment": "Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние интерфейсов, show ip nat translations — таблицу трансляций NAT, а show ip route — таблицу маршрутизации IPv4.",
+                    "correct": false
+                },
+                {
+                    "answer": "show ip nat translations",
+                    "comment": "Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние интерфейсов, show ip nat translations — таблицу трансляций NAT, а show ip route — таблицу маршрутизации IPv4.",
+                    "correct": false
+                },
+                {
+                    "answer": "show ip route",
+                    "comment": "Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние интерфейсов, show ip nat translations — таблицу трансляций NAT, а show ip route — таблицу маршрутизации IPv4.",
+                    "correct": false
+                }
+            ],
+            "question": "Сетевой техник решает проблему и должен проверить все адреса интерфейса IPv6 на маршрутизаторе. Какую команду лучше всего использовать для выполнения задачи?"
         }
     ]
 }
