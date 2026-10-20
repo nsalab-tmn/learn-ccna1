@@ -9,6 +9,8 @@ Criterions:
     - code: SW-1.PORTS.F0-1-SHUT
       name: FastEthernet0/1.Port Status
       description: 'F0/1: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/1( |$): matches (?m)^ shutdown\s*$'
@@ -24,6 +26,8 @@ Criterions:
     - code: SW-1.PORTS.F0-3-SHUT
       name: FastEthernet0/3.Port Status
       description: 'F0/3: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/3( |$): matches (?m)^ shutdown\s*$'
@@ -39,6 +43,8 @@ Criterions:
     - code: SW-1.PORTS.F0-4-SHUT
       name: FastEthernet0/4.Port Status
       description: 'F0/4: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/4( |$): matches (?m)^ shutdown\s*$'
@@ -54,6 +60,8 @@ Criterions:
     - code: SW-1.PORTS.F0-5-SHUT
       name: FastEthernet0/5.Port Status
       description: 'F0/5: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/5( |$): matches (?m)^ shutdown\s*$'
@@ -69,6 +77,8 @@ Criterions:
     - code: SW-1.PORTS.F0-6-SHUT
       name: FastEthernet0/6.Port Status
       description: 'F0/6: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/6( |$): matches (?m)^ shutdown\s*$'
@@ -84,6 +94,8 @@ Criterions:
     - code: SW-1.PORTS.F0-7-SHUT
       name: FastEthernet0/7.Port Status
       description: 'F0/7: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/7( |$): matches (?m)^ shutdown\s*$'
@@ -99,6 +111,8 @@ Criterions:
     - code: SW-1.PORTS.F0-8-SHUT
       name: FastEthernet0/8.Port Status
       description: 'F0/8: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/8( |$): matches (?m)^ shutdown\s*$'
@@ -114,6 +128,8 @@ Criterions:
     - code: SW-1.PORTS.F0-9-SHUT
       name: FastEthernet0/9.Port Status
       description: 'F0/9: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/9( |$): matches (?m)^ shutdown\s*$'
@@ -129,6 +145,8 @@ Criterions:
     - code: SW-1.PORTS.F0-11-SHUT
       name: FastEthernet0/11.Port Status
       description: 'F0/11: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/11( |$): matches (?m)^ shutdown\s*$'
@@ -144,6 +162,8 @@ Criterions:
     - code: SW-1.PORTS.F0-12-SHUT
       name: FastEthernet0/12.Port Status
       description: 'F0/12: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/12( |$): matches (?m)^ shutdown\s*$'
@@ -159,6 +179,8 @@ Criterions:
     - code: SW-1.PORTS.F0-13-SHUT
       name: FastEthernet0/13.Port Status
       description: 'F0/13: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/13( |$): matches (?m)^ shutdown\s*$'
@@ -174,6 +196,8 @@ Criterions:
     - code: SW-1.PORTS.F0-14-SHUT
       name: FastEthernet0/14.Port Status
       description: 'F0/14: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/14( |$): matches (?m)^ shutdown\s*$'
@@ -189,6 +213,8 @@ Criterions:
     - code: SW-1.PORTS.F0-15-SHUT
       name: FastEthernet0/15.Port Status
       description: 'F0/15: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/15( |$): matches (?m)^ shutdown\s*$'
@@ -204,6 +230,8 @@ Criterions:
     - code: SW-1.PORTS.F0-16-SHUT
       name: FastEthernet0/16.Port Status
       description: 'F0/16: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/16( |$): matches (?m)^ shutdown\s*$'
@@ -219,6 +247,8 @@ Criterions:
     - code: SW-1.PORTS.F0-17-SHUT
       name: FastEthernet0/17.Port Status
       description: 'F0/17: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/17( |$): matches (?m)^ shutdown\s*$'
@@ -234,6 +264,8 @@ Criterions:
     - code: SW-1.PORTS.F0-18-SHUT
       name: FastEthernet0/18.Port Status
       description: 'F0/18: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/18( |$): matches (?m)^ shutdown\s*$'
@@ -249,6 +281,8 @@ Criterions:
     - code: SW-1.PORTS.F0-19-SHUT
       name: FastEthernet0/19.Port Status
       description: 'F0/19: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/19( |$): matches (?m)^ shutdown\s*$'
@@ -264,6 +298,8 @@ Criterions:
     - code: SW-1.PORTS.F0-20-SHUT
       name: FastEthernet0/20.Port Status
       description: 'F0/20: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/20( |$): matches (?m)^ shutdown\s*$'
@@ -279,6 +315,8 @@ Criterions:
     - code: SW-1.PORTS.F0-21-SHUT
       name: FastEthernet0/21.Port Status
       description: 'F0/21: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/21( |$): matches (?m)^ shutdown\s*$'
@@ -294,6 +332,8 @@ Criterions:
     - code: SW-1.PORTS.F0-22-SHUT
       name: FastEthernet0/22.Port Status
       description: 'F0/22: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/22( |$): matches (?m)^ shutdown\s*$'
@@ -309,6 +349,8 @@ Criterions:
     - code: SW-1.PORTS.F0-23-SHUT
       name: FastEthernet0/23.Port Status
       description: 'F0/23: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/23( |$): matches (?m)^ shutdown\s*$'
@@ -324,6 +366,8 @@ Criterions:
     - code: SW-1.PORTS.F0-24-SHUT
       name: FastEthernet0/24.Port Status
       description: 'F0/24: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface FastEthernet0/24( |$): matches (?m)^ shutdown\s*$'
@@ -339,6 +383,8 @@ Criterions:
     - code: SW-1.PORTS.G0-2-SHUT
       name: GigabitEthernet0/2.Port Status
       description: 'G0/2: неиспользуемый порт выключен (shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/2( |$): matches (?m)^ shutdown\s*$'
@@ -354,6 +400,8 @@ Criterions:
     - code: SW-1.PORTS.VLAN1-IP
       name: Vlan1.IP Address
       description: 'Vlan1: IP-адрес 192.168.1.254'
+      skills:
+      - Basic Switch Configuration
       max_mark: 3
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address 192\.168\.1\.254 '
@@ -369,6 +417,8 @@ Criterions:
     - code: SW-1.PORTS.VLAN1-UP
       name: Vlan1.Port Status
       description: 'Vlan1: интерфейс включён (no shutdown)'
+      skills:
+      - Basic Switch Configuration
       max_mark: 2
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): has interface Vlan1'
@@ -395,6 +445,8 @@ Criterions:
     - code: SW-1.PORTS.VLAN1-MASK
       name: Vlan1.Subnet Mask
       description: 'Vlan1: маска 255.255.255.0'
+      skills:
+      - Basic Switch Configuration
       max_mark: 2
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address \S+ 255\.255\.255\.0\s*$'
@@ -413,6 +465,8 @@ Criterions:
     - code: SW-1.SECURITY.RSA-MODULUS
       name: Modulus Bits
       description: Создан ключ RSA длиной 1024 бит
+      skills:
+      - SSH Configuration
       max_mark: 4
       steps:
       - name: 'show crypto key mypubkey rsa: has (modulus 1024 bits)'
@@ -432,6 +486,8 @@ Criterions:
     - code: SW-1.USERS.USERNAME
       name: Username
       description: Создан локальный пользователь NETadmin
+      skills:
+      - SSH Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: matches (?m)^username NETadmin '
@@ -450,6 +506,8 @@ Criterions:
     - code: SW-1.VTY.VTY0-LOGIN-LOCAL
       name: VTY Line 0.Login
       description: 'Линия VTY 0: вход по локальным учётным записям (login local)'
+      skills:
+      - SSH Configuration
       max_mark: 2
       steps:
       - name: 'show running-config | section ^line vty (0 1|0 2|0 3|0 4|0)$: matches (?m)^ login local\s*$'
@@ -465,6 +523,8 @@ Criterions:
     - code: SW-1.VTY.VTY0-SSH-ONLY
       name: VTY Line 0.Transport Input
       description: 'Линия VTY 0: доступ только SSH (transport input ssh)'
+      skills:
+      - SSH Configuration
       max_mark: 2
       steps:
       - name: 'show running-config | section ^line vty (0 1|0 2|0 3|0 4|0)$: matches (?m)^ transport input ssh\s*$'
@@ -483,6 +543,8 @@ Criterions:
     - code: SW-1.MISC.DEFAULT-GW
       name: Default Gateway
       description: Шлюз по умолчанию 192.168.1.1
+      skills:
+      - Basic Switch Configuration
       max_mark: 5
       steps:
       - name: 'show running-config: matches (?m)^ip default-gateway 192\.168\.1\.1\s*$'
@@ -498,6 +560,8 @@ Criterions:
     - code: SW-1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — SW-1
+      skills:
+      - Basic Switch Configuration
       max_mark: 2
       steps:
       - name: 'show running-config: matches (?m)^hostname SW\-1\s*$'
@@ -513,6 +577,8 @@ Criterions:
     - code: SW-1.MISC.DOMAIN-NAME
       name: IP Domain Name
       description: Доменное имя security.com
+      skills:
+      - SSH Configuration
       max_mark: 2
       steps:
       - name: 'show running-config: matches (?m)^ip domain-name security\.com\s*$'
