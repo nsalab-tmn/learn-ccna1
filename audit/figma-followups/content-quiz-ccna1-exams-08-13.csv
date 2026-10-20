@@ -1,3 +1,2 @@
 path,asset_or_figure,what_is_shown,should_become,reason
-08-10-exam/learn-metadata.json,08-10-exam/assets/4.png (вопрос 36),"скриншот командной строки: «PC>tracert www.cisco.com» и маршрут до 172.24.2.1 (8 переходов)",«PC>tracert www.ya.ru»; адреса и переходы без изменений,"имя вендора на изображении; вопрос (без www.cisco.com) исправлен в этом PR, kb#275"
 __exams/CCNA1/CCNA1_08-10_Exam/learn-metadata.json,__exams/CCNA1/CCNA1_08-10_Exam/assets/4.png (вопрос 36),то же изображение (копия банка),то же,"копия банка; меняется вместе с 08-10-exam/assets/4.png"
