@@ -10,16 +10,18 @@
 # PR is ignored, never merged — and the bot-owned branch is pushed with --force-with-lease (the lease guards
 # against a concurrent writer; `concurrency` serialises runs). figma-sync-cleanup.yml deletes the branch when
 # its PR is merged. See learn-knowledge-base runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
-# Only files named in figma-assets.json (`out.path`) and the manifest itself are ever written.
+# Only files named in figma-assets.json (`out.path`, an animation referrer's `tracks`) and the manifest itself are
+# ever written. A `ref` entry (a shared figure, contract §2) gets its owner's frame; an owner in a sibling course is
+# read from that course's figma-assets.json on its main with the workflow's own token (read-only; the repos are public).
 name: figma-sync
 
 on:
   workflow_dispatch:
     inputs:
       scope:
-        description: "pending = not yet synced (default) · all = re-export synced entries too"
+        description: "pending = not yet synced (default) · all = re-export synced entries too · refs = only the shared figures (ref entries)"
         type: choice
-        options: [pending, all]
+        options: [pending, all, refs]
         default: pending
       keys:
         description: "Comma-separated figure numbers to sync, e.g. 10.4.6,10.4.7 (overrides scope)"
@@ -75,6 +77,7 @@ jobs:
         continue-on-error: true   # a `broken` entry exits 2; we still want the PR with the ⚠ list
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          GH_TOKEN: ${{ github.token }}   # read-only GETs of a sibling course's manifest (cross-course ref owners)
           SCOPE: ${{ inputs.scope }}   # inputs via env, never interpolated into the script
           KEYS: ${{ inputs.keys }}
         run: |
