@@ -1,4 +1,0 @@
-path,asset_or_figure,what_is_shown,should_become,reason
-__exams/CCNA3/CCNA3_Practice_Final_Exam/learn-metadata.json,__exams/CCNA3/CCNA3_Practice_Final_Exam/assert/7.png (вопрос 21),приглашение «CiscoVille» (копия банка),то же,копия банка; меняется вместе с final-exam/assets/7.png
-__exams/CCNA3/CCNA3_Practice_Final_Exam/learn-metadata.json,__exams/CCNA3/CCNA3_Practice_Final_Exam/assert/8.JPG (вопрос 22),адрес 209.265.200.200 (копия банка),то же,копия банка; меняется вместе с final-exam/assets/8.JPG
-__exams/CCNA3/CCNA3_Practice_Final_Exam/learn-metadata.json,__exams/CCNA3/CCNA3_Practice_Final_Exam/assert/9.png (вопрос 25),подписи Outside Local / Inside Global (копия банка),то же,копия банка; меняется вместе с final-exam/assets/9.png
