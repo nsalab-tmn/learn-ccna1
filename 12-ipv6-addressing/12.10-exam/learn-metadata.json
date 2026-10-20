@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: проблемы с протоколом IPv4, представление IPv6-адресов, типы IPv6-адресов, статическая настройка GUA и LLA, динамическое назначение глобальных адресов, динамическое назначение LLA, групповые IPv6-адреса, разделение на подсети в IPv6.",
     "difficulty": 3,
-    "duration": "PT0H56M",
+    "duration": "PT1H0M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -33,7 +33,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 39 questions covering module 12; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 42 questions covering module 12; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1097,6 +1097,72 @@
                 },
                 {
                     "answer": "0C6F:65FF:FEC2:BDF8",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Преподаватель изучает ответы студентов на предыдущем экзамене, чтобы подготовиться к лекции по IPv6. Что является для преподавателя хорошим объяснением GUA IPv6 (глобальный одноадресный адрес)?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "глобальные индивидуальные адреса могут быть настроены статически или присвоены динамически",
+                    "correct": false
+                },
+                {
+                    "answer": "рекомендуется использовать IPv6 GUA-адрес маршрутизатора в качестве адреса шлюза по умолчанию для узлов Windows",
+                    "correct": false
+                },
+                {
+                    "answer": "его можно настроить только статически на интерфейсе узла с помощью команды ipv6 address",
+                    "correct": false
+                },
+                {
+                    "answer": "он маршрутизируемый в Интернете IPv6",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Группа сетевых техников обсуждает процессы многоадресной рассылки IPv6. Что такое особенность одного типа IPv6 многоадресного адреса, который следует обсудить?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "он имеет префикс fe00::/8.",
+                    "correct": false
+                },
+                {
+                    "answer": "это может быть адрес источника или назначения",
+                    "correct": false
+                },
+                {
+                    "answer": "групповой адрес запрашиваемых узлов аналогичен групповому адресу для всех узлов",
+                    "correct": false
+                },
+                {
+                    "answer": "многоадресная группа всех узлов имеет тот же эффект, что и широковещательный адрес IPv4",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Специалисту по сети было предложено подготовить маршрутизатор и убедиться, что он может маршрутизировать пакеты IPv6. Какую команду сетевой инженер должен ввести на устройстве?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ipv6 enable",
+                    "correct": false
+                },
+                {
+                    "answer": "ipv6 route",
+                    "correct": false
+                },
+                {
+                    "answer": "ipv6 unicast-routing",
+                    "correct": true
+                },
+                {
+                    "answer": "ipv6 address",
                     "correct": false
                 }
             ]

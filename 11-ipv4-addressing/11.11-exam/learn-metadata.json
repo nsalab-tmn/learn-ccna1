@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: структура IPv4-адреса, одноадресная, широковещательная и многоадресная рассылка IPv4, типы адресов IPv4, сегментация сети, разделение IPv4-сети на подсети, разделение на подсети префиксов /16 и /8, разделение на подсети для соответствия требованиям, маски подсети переменной длины (VLSM), структурированное проектирование.",
     "difficulty": 3,
-    "duration": "PT0H54M",
+    "duration": "PT0H55M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -34,7 +34,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 37 questions covering module 11; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 38 questions covering module 11; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1191,6 +1191,28 @@
                     "answer": "2",
                     "correct": false,
                     "comment": "Тема 11.8.0 — Маска подсети 255.255.255.224 эквивалентна префиксу /27. Это оставляет 5 битов для узлов, обеспечивая в общей сложности 30 используемых IP-адресов  (2^5 - 2 = 32 - 2 = 30)."
+                }
+            ]
+        },
+        {
+            "question": "Специалист должен разместить не менее 500 подсетей в диапазоне адресов 172.16.0.0/16. Выберите подходящую маску подсети и соответствующее количество доступных IP-адресов узлов для каждой подсети для выполнения этого требования?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "255.255.255.0 и 128 узлов",
+                    "correct": false
+                },
+                {
+                    "answer": "255.255.255.192 и 126 узлов",
+                    "correct": false
+                },
+                {
+                    "answer": "255.255.255.128 и 126 узлов",
+                    "correct": true
+                },
+                {
+                    "answer": "255.255.255.224 и 128 узлов",
+                    "correct": false
                 }
             ]
         }
