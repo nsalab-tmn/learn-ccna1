@@ -3,8 +3,8 @@
     "shortName": "ccna1.build-a-small-network.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: устройства в рамках небольшой сети, приложения и протоколы в небольшой сети, масштабирование до размеров более крупных сетей, проверка сетевой доступности, команды для работы с конфигурацией IP, методики поиска и устранения неполадок, сценарии поиска и устранения неполадок.",
-    "difficulty": 1,
-    "duration": "PT1H9M",
+    "difficulty": 3,
+    "duration": "PT1H14M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -32,7 +32,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 45 questions covering module 17; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 48 questions covering module 17; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1209,6 +1209,76 @@
                     "answer": "поставщик услуг Интернета",
                     "correct": false,
                     "comment": "Тема 17.1.0 - Факторы, которые следует учитывать при проектировании сети, включают стоимость устройств, скорость, модульность и масштабируемость, а также простоту управления сетью"
+                }
+            ]
+        },
+        {
+            "question": "Какова цель небольшой компании, использующей утилиту анализатора протоколов для захвата сетевого трафика в сегментах сети, где компания рассматривает возможность ее обновления?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "определение источника и назначения трафика локальной сети",
+                    "correct": false
+                },
+                {
+                    "answer": "запись требования к пропускной способности подключения к Интернет",
+                    "correct": false
+                },
+                {
+                    "answer": "документирование и анализ требований к сетевому трафику для каждого сегмента сети",
+                    "correct": true
+                },
+                {
+                    "answer": "установка базового уровня для анализа безопасности после обновления сети",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие типы трафика используют транспортный протокол реального времени (RTP)? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "голос",
+                    "correct": true
+                },
+                {
+                    "answer": "видео",
+                    "correct": true
+                },
+                {
+                    "answer": "веб-данные",
+                    "correct": false
+                },
+                {
+                    "answer": "одноранговый трафик",
+                    "correct": false
+                },
+                {
+                    "answer": "передача файла",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Пользователь жалуется, что загрузка внешней веб-страницы занимает больше времени, чем обычно. Страница в конечном итоге загружается на его ПК. Какой инструмент должен использовать техник с правами администратора, чтобы найти место проблемы в сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ipconfig /displaydns",
+                    "correct": false
+                },
+                {
+                    "answer": "ping",
+                    "correct": false
+                },
+                {
+                    "answer": "tracert",
+                    "correct": true
+                },
+                {
+                    "answer": "nslookup",
+                    "correct": false
                 }
             ]
         }

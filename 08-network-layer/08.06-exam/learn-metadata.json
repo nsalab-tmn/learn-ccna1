@@ -3,8 +3,8 @@
     "shortName": "ccna1.network-layer.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: характеристики сетевого уровня, пакет IPv4, пакет IPv6, маршрутизация на оконечных устройствах, введение в маршрутизацию.",
-    "difficulty": 1,
-    "duration": "PT0H52M",
+    "difficulty": 3,
+    "duration": "PT0H54M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -30,7 +30,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 32 questions covering module 8; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 33 questions covering module 8; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -894,6 +894,28 @@
                 {
                     "answer": "предел переходов",
                     "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какой механизм использует маршрутизатор для предотвращения бесконечного перемещения полученного пакета IPv4 по сети?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "проверяет значение поля TTL и, если оно равно 0, отбрасывает пакет и отправляет сообщение о недоступности назначения на узел-источник",
+                    "correct": false
+                },
+                {
+                    "answer": "проверяет значение поля TTL и, если оно равно 100, отбрасывает пакет и отправляет сообщение о недоступности назначения на узел-источник",
+                    "correct": false
+                },
+                {
+                    "answer": "уменьшает значение поля TTL на 1, а если результат равен 0, он отбрасывает пакет и отправляет сообщение «Превышено время» исходному узлу",
+                    "correct": true
+                },
+                {
+                    "answer": "увеличивает значение поля TTL на 1, а если результат равен 100, он отбрасывает пакет и отправляет сообщение о проблеме с параметром узлу-источнику",
+                    "correct": false
                 }
             ]
         }

@@ -3,8 +3,8 @@
     "shortName": "ccna1.icmp.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: сообщения ICMP, тестирование связности с помощью ping и traceroute.",
-    "difficulty": 1,
-    "duration": "PT0H45M",
+    "difficulty": 3,
+    "duration": "PT0H46M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -27,7 +27,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 30 questions covering module 13; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 31 questions covering module 13; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -810,6 +810,36 @@
                 {
                     "answer": "Сообщение «Запрос соседа» (Neighbor Solicitation, NS)",
                     "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие два типа сообщения ICMPv6, которые отсутствуют в ICMP для IPv4? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "адрес назначения недоступен",
+                    "correct": false
+                },
+                {
+                    "answer": "подтверждение узла",
+                    "correct": false
+                },
+                {
+                    "answer": "сообщение «Запрос соседнего узла» (Neighbor Solicitation, NS)",
+                    "correct": true
+                },
+                {
+                    "answer": "сообщение «Ответ маршрутизатора» (Router Advertisement, RA)",
+                    "correct": true
+                },
+                {
+                    "answer": "переадресация маршрута",
+                    "correct": false
+                },
+                {
+                    "answer": "превышен интервал ожидания",
+                    "correct": false
                 }
             ]
         }

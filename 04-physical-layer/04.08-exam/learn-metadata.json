@@ -3,8 +3,8 @@
     "shortName": "ccna1.physical-layer.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: назначение физического уровня, характеристики физического уровня, медный кабель, UTP кабель, прокладка оптоволоконных кабелей, средства беспроводного подключения.",
-    "difficulty": 1,
-    "duration": "PT0H55M",
+    "difficulty": 3,
+    "duration": "PT0H58M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -31,7 +31,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 36 questions covering module 4; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 38 questions covering module 4; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1008,6 +1008,62 @@
                     "answer": "ISO",
                     "correct": false,
                     "comment": "Тема 4.2.0 - ISO является крупнейшим разработчиком международных сетевых стандартов и славится моделью Open Systems Interconnection (OSI). Стандарты IEEE 802 многочисленны, но теми, которые влияют на профессиональные сети начального уровня, являются Ethernet (802.3), беспроводные локальные сети (802.11) и беспроводные персональные сети (802.15)"
+                }
+            ]
+        },
+        {
+            "question": "Какие стандарты обычно соблюдаются при строительстве и монтаже кабелей? (верны три варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "назначение контактов",
+                    "correct": true
+                },
+                {
+                    "answer": "длина кабелей",
+                    "correct": true
+                },
+                {
+                    "answer": "цвет пар",
+                    "correct": false
+                },
+                {
+                    "answer": "тип разъема",
+                    "correct": true
+                },
+                {
+                    "answer": "стоимость за метр (фут)",
+                    "correct": false
+                },
+                {
+                    "answer": "прочность на растяжение пластикового изолятора",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каковы общие причины ослабления сигнала при использовании кабелей UTP? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "ненадлежащая оконцовка",
+                    "correct": true
+                },
+                {
+                    "answer": "низкокачественное экранирование в кабеле",
+                    "correct": false
+                },
+                {
+                    "answer": "установка кабелей слишком плотно",
+                    "correct": false
+                },
+                {
+                    "answer": "кабель или разъемы низкого качества",
+                    "correct": true
+                },
+                {
+                    "answer": "ослабление светового сигнала на больших расстояниях",
+                    "correct": false
                 }
             ]
         }

@@ -3,7 +3,7 @@
     "shortName": "ccna1.number-systems.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: двоичная система счисления, шестнадцатеричная система счисления.",
-    "difficulty": 1,
+    "difficulty": 3,
     "duration": "PT0H17M",
     "tags": {
         "$ref": "../../material-tags.json"
