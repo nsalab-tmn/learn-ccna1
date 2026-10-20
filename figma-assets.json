@@ -8718,11 +8718,11 @@
    "provenance": {
     "legacy": "16.2.1.png",
     "synced": {
-     "figmaVersion": "2409982897191414088",
-     "at": "2026-10-14T00:22:54Z",
-     "sha256": "7eb1821b42383c3b40f5b211965415c5cbf6cb4be7c0731f8c991de0136aeab8",
-     "specSha256": "5a8d1b960de7d42ea5df90ae1c487ce3b8bad92621be3f1e5661d8e833d0d144",
-     "tracksSha256": "bbc1442e681c898a295dfbb013c29b07ca1bd98223119dbc888542c7808ed1d2"
+     "figmaVersion": "2412530599256273279",
+     "at": "2026-10-20T19:40:55Z",
+     "sha256": "bc590001c0041f9fb84daf1ec823294ef539a2ce50b597d4f488ba145ba7bdb1",
+     "specSha256": "2265dc4986b3d02b42aaf96c0d77c27bd9a68a4ce3908997d11d985dd7c4671d",
+     "tracksSha256": "c11a31fe11ef9662124c337d7990ce92cbd9ae98935d58e42f38b0fe7572186e"
     }
    },
    "notes": "[APNG в git (анимация) · пара: закреплена]"
@@ -10096,15 +10096,27 @@
   },
   {
    "id": "ccna1-tsyfrdq",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.4.2-2"
    },
-   "out": {
-    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5846:10179",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.4.2-2.png",
+    "synced": {
+     "figmaVersion": "2412530599256273279",
+     "at": "2026-10-20T19:40:55Z",
+     "sha256": "f5e3e1488a1bad48d44dc829786517691e0b5b048075ede371d6d641baca7203"
+    }
+   }
   },
   {
    "id": "ccna1-m772rhq",
@@ -10132,27 +10144,51 @@
   },
   {
    "id": "ccna1-ivht2py",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.4.2-4"
    },
-   "out": {
-    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-4.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5846:10345",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-4.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.4.2-4.png",
+    "synced": {
+     "figmaVersion": "2412530599256273279",
+     "at": "2026-10-20T19:40:55Z",
+     "sha256": "d578e993252415648094d1af89db97db7274ca991566710fd72500d3cf464be3"
+    }
+   }
   },
   {
    "id": "ccna1-ypodrqb",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "4.4.2-5"
    },
-   "out": {
-    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-5.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5846:10259",
+    "page": "CCNA1 · 04 physical-layer"
    },
-   "status": "manual"
+   "out": {
+    "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-5.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.4.2-5.png",
+    "synced": {
+     "figmaVersion": "2412530599256273279",
+     "at": "2026-10-20T19:40:55Z",
+     "sha256": "d2aeeadea7f24a6901bba7ce41eb654ebb25debe67e9133c753de57ca4541c97"
+    }
+   }
   },
   {
    "id": "ccna1-a7hvqqr",
@@ -10207,52 +10243,29 @@
    "notes": "keep — photo"
   },
   {
-   "id": "ccna1-42msnpl",
-   "kind": "native",
+   "id": "ccna1-ploavew",
+   "kind": "illustration",
    "display": {
-    "key": "4.5.5-1"
+    "key": "4.5.5"
+   },
+   "figma": {
+    "nodeId": "5863:9904",
+    "page": "CCNA1 · 04 physical-layer"
    },
    "out": {
-    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-1.jpg",
-    "format": "native"
+    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5.svg",
+    "format": "svg"
    },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-lfrcb5u",
-   "kind": "native",
-   "display": {
-    "key": "4.5.5-2"
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.5.5-1.jpg, 4.5.5-2.jpg, 4.5.5-3.jpg, 4.5.5-4.jpg",
+    "synced": {
+     "figmaVersion": "2412530599256273279",
+     "at": "2026-10-20T19:40:55Z",
+     "sha256": "7ca7639c107c186c27f89af654370c3a68f4447f6ad21403a38946165e41fb46"
+    }
    },
-   "out": {
-    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-2.jpg",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-7hy5dyu",
-   "kind": "native",
-   "display": {
-    "key": "4.5.5-3"
-   },
-   "out": {
-    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-3.jpg",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-frtrius",
-   "kind": "native",
-   "display": {
-    "key": "4.5.5-4"
-   },
-   "out": {
-    "path": "04-physical-layer/04.05-fiber-optic-cabling/assets/4.5.5-4.jpg",
-    "format": "native"
-   },
-   "status": "manual"
+   "notes": "replaces the four photo entries ccna1-42msnpl, ccna1-lfrcb5u, ccna1-7hy5dyu, ccna1-frtrius (4.5.5-1…-4), kb#320"
   },
   {
    "id": "ccna1-h36nspa",
