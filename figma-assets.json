@@ -4948,6 +4948,25 @@
    "notes": "[svg в git · пара: косвенно]"
   },
   {
+   "id": "ccna1-4qbeefr",
+   "kind": "illustration",
+   "display": {
+    "key": "10.5.4"
+   },
+   "figma": {
+    "nodeId": "5557:10201",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.05-exam/assets/4.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "4.png"
+   }
+  },
+  {
    "id": "ccna1-76baxd5",
    "kind": "illustration",
    "display": {
@@ -10183,39 +10202,60 @@
   },
   {
    "id": "ccna1-332tkge",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "11.1.2-1"
    },
-   "out": {
-    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.2-1.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5517:11619",
+    "page": "CCNA1 · 11 ipv4-addressing"
    },
-   "status": "manual"
+   "out": {
+    "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.2-1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "11.1.2-1.jpg"
+   }
   },
   {
    "id": "ccna1-uirkeoi",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "12.4.2"
    },
-   "out": {
-    "path": "12-ipv6-addressing/12.04-gua-and-lla-static-configuration/assets/12.4.2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5517:12770",
+    "page": "CCNA1 · 12 ipv6-addressing"
    },
-   "status": "manual"
+   "out": {
+    "path": "12-ipv6-addressing/12.04-gua-and-lla-static-configuration/assets/12.4.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "12.4.2.png"
+   }
   },
   {
    "id": "ccna1-3h3uurf",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "13.2.2"
    },
-   "out": {
-    "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5518:9393",
+    "page": "CCNA1 · 13 icmp"
    },
-   "status": "manual"
+   "out": {
+    "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "13.2.2.png"
+   }
   },
   {
    "id": "ccna1-yte6pgh",
@@ -10247,52 +10287,23 @@
    }
   },
   {
-   "id": "ccna1-ezrs6qv",
-   "kind": "native",
-   "display": {
-    "key": "16.2.3-1"
-   },
-   "out": {
-    "path": "16-network-security-fundamentals/16.02-network-attacks/assets/16.2.3-1.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-xuwo7pz",
-   "kind": "native",
-   "display": {
-    "key": "16.3.3"
-   },
-   "out": {
-    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.3.jpg",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
    "id": "ccna1-p3hq2xk",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "16.3.4"
    },
-   "out": {
-    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.4.png",
-    "format": "native"
-   },
-   "status": "manual"
-  },
-  {
-   "id": "ccna1-wwo23ap",
-   "kind": "native",
-   "display": {
-    "key": "17.2.1"
+   "figma": {
+    "nodeId": "5755:165869",
+    "page": "CCNA1 · 16 network-security-fundamentals"
    },
    "out": {
-    "path": "17-build-a-small-network/17.02-small-network-applications-and-protocols/assets/17.2.1.jpg",
-    "format": "native"
+    "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.4.svg",
+    "format": "svg"
    },
-   "status": "manual"
+   "status": "pending",
+   "provenance": {
+    "legacy": "16.3.4.png"
+   }
   },
   {
    "id": "ccna1-ym2ty7j",
@@ -10308,63 +10319,98 @@
   },
   {
    "id": "ccna1-y4wmyum",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "17.3.2"
    },
-   "out": {
-    "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.2.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5519:10617",
+    "page": "CCNA1 · 17 build-a-small-network"
    },
-   "status": "manual"
+   "out": {
+    "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.3.2.png"
+   }
   },
   {
    "id": "ccna1-qhqi5op",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "17.3.3"
    },
-   "out": {
-    "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.3.png",
-    "format": "native"
+   "figma": {
+    "nodeId": "5519:10865",
+    "page": "CCNA1 · 17 build-a-small-network"
    },
-   "status": "manual"
+   "out": {
+    "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.3.3.png"
+   }
   },
   {
    "id": "ccna1-uo3socf",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "17.5.1"
    },
-   "out": {
-    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.1.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5520:10626",
+    "page": "CCNA1 · 17 build-a-small-network"
    },
-   "status": "manual"
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.5.1.jpg"
+   }
   },
   {
    "id": "ccna1-tcksp6p",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "17.5.2"
    },
-   "out": {
-    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.2.jpg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5520:10727",
+    "page": "CCNA1 · 17 build-a-small-network"
    },
-   "status": "manual"
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.5.2.jpg"
+   }
   },
   {
    "id": "ccna1-tf4stvf",
-   "kind": "native",
+   "kind": "illustration",
    "display": {
     "key": "17.5.3"
    },
-   "out": {
-    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.3.jpeg",
-    "format": "native"
+   "figma": {
+    "nodeId": "5520:10797",
+    "page": "CCNA1 · 17 build-a-small-network"
    },
-   "status": "manual"
+   "out": {
+    "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "17.5.3.jpeg"
+   }
   }
  ]
 }
