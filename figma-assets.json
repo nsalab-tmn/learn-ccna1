@@ -10684,6 +10684,106 @@
      "sha256": "5a7905918ac5491abb625bcfc6f5e06eb9644a39f2a39117192b1d1a0fcd8c85"
     }
    }
+  },
+  {
+   "id": "ccna1-wry24ww",
+   "kind": "illustration",
+   "display": {
+    "key": "7.5.3"
+   },
+   "claim": "ПК1 и веб-сервер находятся в разных сетях, соединенных двумя маршрутизаторами через последовательный канал; у узлов и у интерфейсов Fa0/0 маршрутизаторов подписаны IP- и MAC-адреса.",
+   "figma": {
+    "nodeId": "5928:10866",
+    "page": "CCNA1 · 07 ethernet-switching"
+   },
+   "out": {
+    "path": "07-ethernet-switching/07.05-exam/assets/3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.png"
+   }
+  },
+  {
+   "id": "ccna1-xtjidca",
+   "kind": "illustration",
+   "display": {
+    "key": "8.6.1"
+   },
+   "claim": "Таблица маршрутизации маршрутизатора: подключенные сети на интерфейсах FastEthernet и Serial0/0/0, маршруты OSPF к трем сетям 172.17.0.0/24 и маршрут по умолчанию через Serial0/0/0.",
+   "figma": {
+    "nodeId": "5930:10588",
+    "page": "CCNA1 · 08 network-layer"
+   },
+   "out": {
+    "path": "08-network-layer/08.06-exam/assets/1.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "1.png"
+   }
+  },
+  {
+   "id": "ccna1-fimdlg3",
+   "kind": "illustration",
+   "display": {
+    "key": "9.4.2"
+   },
+   "claim": "К портам 1–4 коммутатора подключены PC4, PC3, PC2 и PC1; в таблице MAC-адресов коммутатора есть записи только для портов 1 и 3.",
+   "figma": {
+    "nodeId": "5931:10164",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.04-exam/assets/2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "2.png"
+   }
+  },
+  {
+   "id": "ccna1-5gw2xxl",
+   "kind": "illustration",
+   "display": {
+    "key": "9.4.3"
+   },
+   "claim": "PC1 и File_server1 находятся в разных сетях: PC1 подключен через S1 к интерфейсу G0/0 маршрутизатора R1, R1 и R2 соединены последовательным каналом, File_server1 подключен через S2 к R2.",
+   "figma": {
+    "nodeId": "5931:10268",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "09-address-resolution/09.04-exam/assets/3.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "3.gif"
+   }
+  },
+  {
+   "id": "ccna1-l5mtrch",
+   "kind": "illustration",
+   "display": {
+    "key": "10.5.5"
+   },
+   "claim": "Настройки IP узла PC1 (адрес 192.168.1.95, маска 255.255.255.0, шлюз по умолчанию 192.168.1.254); локальная сеть PC1 подключена через Switch1 к Router1, Router1 и Router2 соединены через облако.",
+   "figma": {
+    "nodeId": "5932:9350",
+    "page": "CCNA1 · 10 basic-router-configuration"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.05-exam/assets/5.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "provenance": {
+    "legacy": "5.png"
+   }
   }
  ]
 }
