@@ -9,6 +9,8 @@ Criterions:
     - code: S1.CON.LOGIN
       name: Login
       description: 'Консоль: пароль запрашивается при входе (login)'
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ login\s*$'
@@ -24,6 +26,8 @@ Criterions:
     - code: S1.CON.PASSWORD
       name: Password
       description: 'Консоль: пароль задан'
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ password (?:letmein|7 00081612095E0208)\s*$'
@@ -42,6 +46,8 @@ Criterions:
     - code: S1.MISC.BANNER-MOTD
       name: Banner MOTD
       description: Задан баннер MOTD
+      skills:
+      - Basic Security Configuration
       max_mark: 6
       steps:
       - name: 'show running-config: has banner motd'
@@ -58,6 +64,8 @@ Criterions:
     - code: S1.MISC.ENABLE-PASSWORD
       name: Enable Password
       description: Пароль привилегированного режима задан (enable password)
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: matches (?m)^enable password (?:c1\$c0|7 00074242070B)\s*$'
@@ -73,6 +81,8 @@ Criterions:
     - code: S1.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: has enable secret 5 $1$mERr$aaFgycF7RyVFzB8m'
@@ -89,6 +99,8 @@ Criterions:
     - code: S1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S1
+      skills:
+      - Hostname Configuration
       max_mark: 5
       steps:
       - name: 'show running-config: matches (?m)^hostname S1\s*$'
@@ -104,6 +116,8 @@ Criterions:
     - code: S1.MISC.PWD-ENCRYPTION
       name: Service Password Encryption
       description: Включено шифрование паролей (service password-encryption)
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: has service password-encryption'
@@ -120,6 +134,8 @@ Criterions:
     - code: S1.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
       max_mark: 5
       steps:
       - name: 'show startup-config: has hostname S1, banner motd'
@@ -143,6 +159,8 @@ Criterions:
     - code: S2.CON.LOGIN
       name: Login
       description: 'Консоль: пароль запрашивается при входе (login)'
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ login\s*$'
@@ -158,6 +176,8 @@ Criterions:
     - code: S2.CON.PASSWORD
       name: Password
       description: 'Консоль: пароль задан'
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ password (?:letmein|7 00081612095E0208)\s*$'
@@ -176,6 +196,8 @@ Criterions:
     - code: S2.MISC.BANNER-MOTD
       name: Banner MOTD
       description: Задан баннер MOTD
+      skills:
+      - Basic Security Configuration
       max_mark: 6
       steps:
       - name: 'show running-config: has banner motd'
@@ -192,6 +214,8 @@ Criterions:
     - code: S2.MISC.ENABLE-PASSWORD
       name: Enable Password
       description: Пароль привилегированного режима задан (enable password)
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: matches (?m)^enable password (?:c1\$c0|7 00074242070B)\s*$'
@@ -207,6 +231,8 @@ Criterions:
     - code: S2.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: has enable secret 5 $1$mERr$aaFgycF7RyVFzB8m'
@@ -223,6 +249,8 @@ Criterions:
     - code: S2.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S2
+      skills:
+      - Hostname Configuration
       max_mark: 5
       steps:
       - name: 'show running-config: matches (?m)^hostname S2\s*$'
@@ -238,6 +266,8 @@ Criterions:
     - code: S2.MISC.PWD-ENCRYPTION
       name: Service Password Encryption
       description: Включено шифрование паролей (service password-encryption)
+      skills:
+      - Basic Security Configuration
       max_mark: 4
       steps:
       - name: 'show running-config: has service password-encryption'
@@ -254,6 +284,8 @@ Criterions:
     - code: S2.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
       max_mark: 5
       steps:
       - name: 'show startup-config: has hostname S2, banner motd'

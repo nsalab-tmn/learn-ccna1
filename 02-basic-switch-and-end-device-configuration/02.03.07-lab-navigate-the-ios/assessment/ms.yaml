@@ -9,6 +9,8 @@ Criterions:
     - code: S1.MISC.CLOCK
       name: Clock
       description: Часы установлены командой clock set (Jan 31 2035)
+      skills:
+      - Basic Device Configuration
       max_mark: 1
       steps:
       - name: 'show clock: matches (?m)^\d.* Jan\ 31\ 2035'

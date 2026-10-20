@@ -9,6 +9,8 @@ Criterions:
     - code: R1.CON.LOGIN
       name: Login
       description: 'Консоль: пароль запрашивается при входе (login)'
+      skills:
+      - Basic Security Configuration
       max_mark: 8
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ login\s*$'
@@ -24,6 +26,8 @@ Criterions:
     - code: R1.CON.PASSWORD
       name: Password
       description: 'Консоль: пароль задан'
+      skills:
+      - Basic Security Configuration
       max_mark: 8
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ password (?:letmein|7 00081612095E0208)\s*$'
@@ -42,6 +46,8 @@ Criterions:
     - code: R1.MISC.BANNER-MOTD
       name: Banner MOTD
       description: Задан баннер MOTD
+      skills:
+      - Basic Security Configuration
       max_mark: 8
       steps:
       - name: 'show running-config: has banner motd'
@@ -58,6 +64,8 @@ Criterions:
     - code: R1.MISC.ENABLE-PASSWORD
       name: Enable Password
       description: Пароль привилегированного режима задан (enable password)
+      skills:
+      - Basic Security Configuration
       max_mark: 8
       steps:
       - name: 'show running-config: matches (?m)^enable password (?:cisco|7 00071A150754)\s*$'
@@ -73,6 +81,8 @@ Criterions:
     - code: R1.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
       max_mark: 8
       steps:
       - name: 'show running-config: has enable secret 5 $1$mERr$aaFgycF7RyVFzB8m'
@@ -89,6 +99,8 @@ Criterions:
     - code: R1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — R1
+      skills:
+      - Hostname Configuration
       max_mark: 8
       steps:
       - name: 'show running-config: matches (?m)^hostname R1\s*$'
@@ -104,6 +116,8 @@ Criterions:
     - code: R1.MISC.PWD-ENCRYPTION
       name: Service Password Encryption
       description: Включено шифрование паролей (service password-encryption)
+      skills:
+      - Basic Security Configuration
       max_mark: 8
       steps:
       - name: 'show running-config: has service password-encryption'
@@ -120,6 +134,8 @@ Criterions:
     - code: R1.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
       max_mark: 8
       steps:
       - name: 'show startup-config: has hostname R1, banner motd'

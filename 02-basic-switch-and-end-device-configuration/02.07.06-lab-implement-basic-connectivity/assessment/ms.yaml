@@ -9,6 +9,8 @@ Criterions:
     - code: PC1.PORTS.F0-IP
       name: FastEthernet0.IP Address
       description: 'F0: IP-адрес 192.168.1.1'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 15
       steps:
       - name: 'ipconfig: matches (?m)IPv4 Address[. ]*: 192\.168\.1\.1\s*$'
@@ -24,6 +26,8 @@ Criterions:
     - code: PC1.PORTS.F0-MASK
       name: FastEthernet0.Subnet Mask
       description: 'F0: маска 255.255.255.0'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 2
       steps:
       - name: 'ipconfig: matches (?m)Subnet Mask[. ]*: 255\.255\.255\.0\s*$'
@@ -45,6 +49,8 @@ Criterions:
     - code: PC2.PORTS.F0-IP
       name: FastEthernet0.IP Address
       description: 'F0: IP-адрес 192.168.1.2'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 15
       steps:
       - name: 'ipconfig: matches (?m)IPv4 Address[. ]*: 192\.168\.1\.2\s*$'
@@ -60,6 +66,8 @@ Criterions:
     - code: PC2.PORTS.F0-MASK
       name: FastEthernet0.Subnet Mask
       description: 'F0: маска 255.255.255.0'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 2
       steps:
       - name: 'ipconfig: matches (?m)Subnet Mask[. ]*: 255\.255\.255\.0\s*$'
@@ -81,6 +89,8 @@ Criterions:
     - code: S1.CON.LOGIN
       name: Login
       description: 'Консоль: пароль запрашивается при входе (login)'
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ login\s*$'
@@ -96,6 +106,8 @@ Criterions:
     - code: S1.CON.PASSWORD
       name: Password
       description: 'Консоль: пароль задан'
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ password (?:cisco|7 00071A150754)\s*$'
@@ -114,6 +126,8 @@ Criterions:
     - code: S1.PORTS.VLAN1-IP
       name: Vlan1.IP Address
       description: 'Vlan1: IP-адрес 192.168.1.253'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 5
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address 192\.168\.1\.253 '
@@ -129,6 +143,8 @@ Criterions:
     - code: S1.PORTS.VLAN1-UP
       name: Vlan1.Port Status
       description: 'Vlan1: интерфейс включён (no shutdown)'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 10
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): has interface Vlan1'
@@ -155,6 +171,8 @@ Criterions:
     - code: S1.PORTS.VLAN1-MASK
       name: Vlan1.Subnet Mask
       description: 'Vlan1: маска 255.255.255.0'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 5
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address \S+ 255\.255\.255\.0\s*$'
@@ -173,6 +191,8 @@ Criterions:
     - code: S1.MISC.BANNER-MOTD
       name: Banner MOTD
       description: Задан баннер MOTD
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config: has banner motd'
@@ -189,6 +209,8 @@ Criterions:
     - code: S1.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
@@ -205,6 +227,8 @@ Criterions:
     - code: S1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S1
+      skills:
+      - Hostname Configuration
       max_mark: 1
       steps:
       - name: 'show running-config: matches (?m)^hostname S1\s*$'
@@ -220,6 +244,8 @@ Criterions:
     - code: S1.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
       max_mark: 2
       steps:
       - name: 'show startup-config: has hostname S1, ip address 192.168.1.253 255.255.255.0'
@@ -243,6 +269,8 @@ Criterions:
     - code: S2.CON.LOGIN
       name: Login
       description: 'Консоль: пароль запрашивается при входе (login)'
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ login\s*$'
@@ -258,6 +286,8 @@ Criterions:
     - code: S2.CON.PASSWORD
       name: Password
       description: 'Консоль: пароль задан'
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ password (?:cisco|7 00071A150754)\s*$'
@@ -276,6 +306,8 @@ Criterions:
     - code: S2.PORTS.VLAN1-IP
       name: Vlan1.IP Address
       description: 'Vlan1: IP-адрес 192.168.1.254'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 5
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address 192\.168\.1\.254 '
@@ -291,6 +323,8 @@ Criterions:
     - code: S2.PORTS.VLAN1-UP
       name: Vlan1.Port Status
       description: 'Vlan1: интерфейс включён (no shutdown)'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 10
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): has interface Vlan1'
@@ -317,6 +351,8 @@ Criterions:
     - code: S2.PORTS.VLAN1-MASK
       name: Vlan1.Subnet Mask
       description: 'Vlan1: маска 255.255.255.0'
+      skills:
+      - IPv4 Host Address Configuration
       max_mark: 5
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address \S+ 255\.255\.255\.0\s*$'
@@ -335,6 +371,8 @@ Criterions:
     - code: S2.MISC.BANNER-MOTD
       name: Banner MOTD
       description: Задан баннер MOTD
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config: has banner motd'
@@ -351,6 +389,8 @@ Criterions:
     - code: S2.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Basic Security Configuration
       max_mark: 1
       steps:
       - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
@@ -367,6 +407,8 @@ Criterions:
     - code: S2.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S2
+      skills:
+      - Hostname Configuration
       max_mark: 1
       steps:
       - name: 'show running-config: matches (?m)^hostname S2\s*$'
@@ -382,6 +424,8 @@ Criterions:
     - code: S2.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
+      skills:
+      - Configuration Management
       max_mark: 2
       steps:
       - name: 'show startup-config: has hostname S2, ip address 192.168.1.254 255.255.255.0'

@@ -9,6 +9,8 @@ Criterions:
     - code: CUSTOMERROUTER.CON.LOGIN
       name: Login
       description: 'Консоль: пароль запрашивается при входе (login)'
+      skills:
+      - Physical
       max_mark: 1
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ login\s*$'
@@ -24,6 +26,8 @@ Criterions:
     - code: CUSTOMERROUTER.CON.PASSWORD
       name: Password
       description: 'Консоль: пароль задан'
+      skills:
+      - Other
       max_mark: 1
       steps:
       - name: 'show running-config | section ^line con 0( |$): matches (?m)^ password (?:Cisco123|7 00271A1507545A545C)\s*$'
@@ -42,6 +46,8 @@ Criterions:
     - code: CUSTOMERROUTER.PORTS.G0-0-IP
       name: GigabitEthernet0/0.IP Address
       description: 'G0/0: IP-адрес 192.168.0.1'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/0( |$): matches (?m)^ ip address 192\.168\.0\.1 '
@@ -57,6 +63,8 @@ Criterions:
     - code: CUSTOMERROUTER.PORTS.G0-0-UP
       name: GigabitEthernet0/0.Port Status
       description: 'G0/0: интерфейс включён (no shutdown)'
+      skills:
+      - Physical
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/0( |$): has interface GigabitEthernet0/0'
@@ -83,6 +91,8 @@ Criterions:
     - code: CUSTOMERROUTER.PORTS.G0-0-MASK
       name: GigabitEthernet0/0.Subnet Mask
       description: 'G0/0: маска 255.255.255.192'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/0( |$): matches (?m)^ ip address \S+ 255\.255\.255\.192\s*$'
@@ -98,6 +108,8 @@ Criterions:
     - code: CUSTOMERROUTER.PORTS.G0-1-IP
       name: GigabitEthernet0/1.IP Address
       description: 'G0/1: IP-адрес 192.168.0.65'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/1( |$): matches (?m)^ ip address 192\.168\.0\.65 '
@@ -113,6 +125,8 @@ Criterions:
     - code: CUSTOMERROUTER.PORTS.G0-1-UP
       name: GigabitEthernet0/1.Port Status
       description: 'G0/1: интерфейс включён (no shutdown)'
+      skills:
+      - Physical
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/1( |$): has interface GigabitEthernet0/1'
@@ -139,6 +153,8 @@ Criterions:
     - code: CUSTOMERROUTER.PORTS.G0-1-MASK
       name: GigabitEthernet0/1.Subnet Mask
       description: 'G0/1: маска 255.255.255.192'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface GigabitEthernet0/1( |$): matches (?m)^ ip address \S+ 255\.255\.255\.192\s*$'
@@ -157,6 +173,8 @@ Criterions:
     - code: CUSTOMERROUTER.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
+      skills:
+      - Other
       max_mark: 1
       steps:
       - name: 'show running-config: has enable secret 5 $1$mERr$SyPPtOpXkWZ6JTQX'
@@ -173,6 +191,8 @@ Criterions:
     - code: CUSTOMERROUTER.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — CustomerRouter
+      skills:
+      - Other
       max_mark: 1
       steps:
       - name: 'show running-config: matches (?m)^hostname CustomerRouter\s*$'
@@ -194,6 +214,8 @@ Criterions:
     - code: LAN-A.PORTS.VLAN1-IP
       name: Vlan1.IP Address
       description: 'Vlan1: IP-адрес 192.168.0.2'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address 192\.168\.0\.2 '
@@ -209,6 +231,8 @@ Criterions:
     - code: LAN-A.PORTS.VLAN1-UP
       name: Vlan1.Port Status
       description: 'Vlan1: интерфейс включён (no shutdown)'
+      skills:
+      - Physical
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): has interface Vlan1'
@@ -238,6 +262,8 @@ Criterions:
     - code: LAN-A.MISC.DEFAULT-GW
       name: Default Gateway
       description: Шлюз по умолчанию 192.168.0.1
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config: matches (?m)^ip default-gateway 192\.168\.0\.1\s*$'
@@ -259,6 +285,8 @@ Criterions:
     - code: LAN-B.PORTS.VLAN1-IP
       name: Vlan1.IP Address
       description: 'Vlan1: IP-адрес 192.168.0.66'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address 192\.168\.0\.66 '
@@ -274,6 +302,8 @@ Criterions:
     - code: LAN-B.PORTS.VLAN1-UP
       name: Vlan1.Port Status
       description: 'Vlan1: интерфейс включён (no shutdown)'
+      skills:
+      - Physical
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): has interface Vlan1'
@@ -300,6 +330,8 @@ Criterions:
     - code: LAN-B.PORTS.VLAN1-MASK
       name: Vlan1.Subnet Mask
       description: 'Vlan1: маска 255.255.255.192'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config | section ^interface Vlan1( |$): matches (?m)^ ip address \S+ 255\.255\.255\.192\s*$'
@@ -318,6 +350,8 @@ Criterions:
     - code: LAN-B.MISC.DEFAULT-GW
       name: Default Gateway
       description: Шлюз по умолчанию 192.168.0.65
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'show running-config: matches (?m)^ip default-gateway 192\.168\.0\.65\s*$'
@@ -339,6 +373,8 @@ Criterions:
     - code: PC-A.PORTS.F0-IP
       name: FastEthernet0.IP Address
       description: 'F0: IP-адрес 192.168.0.62'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'ipconfig: matches (?m)IPv4 Address[. ]*: 192\.168\.0\.62\s*$'
@@ -354,6 +390,8 @@ Criterions:
     - code: PC-A.PORTS.F0-MASK
       name: FastEthernet0.Subnet Mask
       description: 'F0: маска 255.255.255.192'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'ipconfig: matches (?m)Subnet Mask[. ]*: 255\.255\.255\.192\s*$'
@@ -372,6 +410,8 @@ Criterions:
     - code: PC-A.MISC.DEFAULT-GW
       name: Default Gateway
       description: Шлюз по умолчанию 192.168.0.1
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.0\.1\s*$'
@@ -393,6 +433,8 @@ Criterions:
     - code: PC-B.PORTS.F0-IP
       name: FastEthernet0.IP Address
       description: 'F0: IP-адрес 192.168.0.126'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'ipconfig: matches (?m)IPv4 Address[. ]*: 192\.168\.0\.126\s*$'
@@ -408,6 +450,8 @@ Criterions:
     - code: PC-B.PORTS.F0-MASK
       name: FastEthernet0.Subnet Mask
       description: 'F0: маска 255.255.255.192'
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'ipconfig: matches (?m)Subnet Mask[. ]*: 255\.255\.255\.192\s*$'
@@ -426,6 +470,8 @@ Criterions:
     - code: PC-B.MISC.DEFAULT-GW
       name: Default Gateway
       description: Шлюз по умолчанию 192.168.0.65
+      skills:
+      - Ip
       max_mark: 1
       steps:
       - name: 'ipconfig: matches (?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.0\.65\s*$'
