@@ -197,9 +197,9 @@
    "provenance": {
     "legacy": "1.4.1-2.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "0e00cd456d9bdbd41267f26bbba03868ab0707d7ebb9c2ee721f39f613faf17e"
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "22d48f9884011862d0c9f4f21eb1a310558c29c35ff4a6caaa1c9c9877c6241e"
     }
    }
   },
@@ -9459,9 +9459,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.5-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.5-1.jpg"
+    "legacy": "1.2.5-1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "5eaa06be68ec3d3429f48c0e2b7264474843eb26b307e7ad93347646971b4844"
+    }
    }
   },
   {
@@ -9478,9 +9483,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.5-2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.5-2.jpg"
+    "legacy": "1.2.5-2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "b962c581b9de4b636323c91991fcf4679e6633d8a48f2d58590526f70cfe5c96"
+    }
    }
   },
   {
@@ -9497,9 +9507,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.5-3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.5-3.jpg"
+    "legacy": "1.2.5-3.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "e774431ca981a89c90af0ea2f1bedaea0a0a859ec3b2fddad023946b6d29f576"
+    }
    }
   },
   {
@@ -9516,9 +9531,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.5-4.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.5-4.jpg"
+    "legacy": "1.2.5-4.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "707ceea4f774eaadc7b368703cab8379724e567ee9df698302bb0cf17fcf7ae6"
+    }
    }
   },
   {
@@ -9535,9 +9555,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.5-5.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.5-5.jpg"
+    "legacy": "1.2.5-5.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "497d584c70c287c0268b7e0921bf9af4dc32a43a4945490661b5a0a1e7fd3ef1"
+    }
    }
   },
   {
@@ -9554,9 +9579,14 @@
     "path": "01-networking-today/01.02-network-components/assets/1.2.5-6.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.2.5-6.jpg"
+    "legacy": "1.2.5-6.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "33e318c82b4e04432e4b6d85891f573d55f97636a7cfda7f72d4bc617c0210df"
+    }
    }
   },
   {
@@ -9597,9 +9627,14 @@
     "path": "01-networking-today/01.08-network-security/assets/1.8.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.8.2.png"
+    "legacy": "1.8.2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "9044eb92391b3bbb48afcd51bba898c13f377061799478cb9243caa5f4d52fe8"
+    }
    }
   },
   {
@@ -9688,9 +9723,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.6.1-1.jpg"
+    "legacy": "2.6.1-1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "bdfc21911965d056ba5f72f6754ba4e78ae0090c9726fa2124766eaf5713b4c5"
+    }
    }
   },
   {
@@ -9707,9 +9747,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.1-2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.6.1-2.png"
+    "legacy": "2.6.1-2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "89b679abd1bf34855a20318f1aba0c23c6235ca41ec91aff85894b7ab6dd3ba1"
+    }
    }
   },
   {
@@ -9726,9 +9771,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses/assets/2.6.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.6.2.png"
+    "legacy": "2.6.2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "c4e054c8c79d044a1f334c9d53a38aaace63d8e4a66bb556c52552336838cfa6"
+    }
    }
   },
   {
@@ -9745,9 +9795,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.7.1-1.png"
+    "legacy": "2.7.1-1.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "41e67d5285f65f4f222c83a44ee61ad2d245ac097bc3ca68984576fdb07fd69a"
+    }
    }
   },
   {
@@ -9764,9 +9819,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.1-2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.7.1-2.jpg"
+    "legacy": "2.7.1-2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "053f06bb94c5b473aa0b0f4828d5108ece8aff0498fb7c6e322c2ce3f2535093"
+    }
    }
   },
   {
@@ -9783,9 +9843,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing/assets/2.7.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.7.2.jpg"
+    "legacy": "2.7.2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "269f0901ac07a9ddb491d6de5390767b0e63ce23509c707e95f32eaafdb70baa"
+    }
    }
   },
   {
@@ -9802,9 +9867,14 @@
     "path": "03-protocols-and-models/03.04-standards-organizations/assets/3.4.1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "3.4.1.png"
+    "legacy": "3.4.1.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "33e9170ba44b5cde39b462a14625e2819ce8c1ecfbfb9892a44dd8425b60f825"
+    }
    }
   },
   {
@@ -9821,9 +9891,14 @@
     "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.1.1-1.jpg"
+    "legacy": "4.1.1-1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "8c3738b68ab9867b7d035f10aefb6073ce7d49337943b161b5b4df5fb283c517"
+    }
    }
   },
   {
@@ -9840,9 +9915,14 @@
     "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.1.1-2.jpg"
+    "legacy": "4.1.1-2.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "721e57d232336ed347064ab98ce4e83be9eecc1673d0c36d383b1779fa72890b"
+    }
    }
   },
   {
@@ -9859,9 +9939,14 @@
     "path": "04-physical-layer/04.01-purpose-of-the-physical-layer/assets/4.1.1-3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.1.1-3.jpg"
+    "legacy": "4.1.1-3.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "7f1defcac50ceb649a8ce695df39c6cc14fa8f22e0b4b5dee0546be99b9bce08"
+    }
    }
   },
   {
@@ -9878,9 +9963,14 @@
     "path": "04-physical-layer/04.02-physical-layer-characteristics/assets/4.2.6.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.2.6.png"
+    "legacy": "4.2.6.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "296c96f0e81c1d069e42a4e0e3a0e973461d2e6295fab134543c643e1cc5d3b8"
+    }
    }
   },
   {
@@ -9897,9 +9987,14 @@
     "path": "04-physical-layer/04.03-copper-cabling/assets/4.3.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.3.2.png"
+    "legacy": "4.3.2.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "fd887ac7d57f4acf64d8fa25b1d58946152f5034fdb8156b0dea1833680d3d5e"
+    }
    }
   },
   {
@@ -9928,9 +10023,14 @@
     "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.4.1.jpg"
+    "legacy": "4.4.1.jpg",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "5fbb767a303cb08518206bb294331f5f3cb0460b5156755b3f83fe0e0aa1fb5d"
+    }
    }
   },
   {
@@ -9947,9 +10047,14 @@
     "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.4.2-1.png"
+    "legacy": "4.4.2-1.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "a6acace6880dcae57db67b13ea7ad307eadb99840a2b9c991b4a2b41e72f9569"
+    }
    }
   },
   {
@@ -9978,9 +10083,14 @@
     "path": "04-physical-layer/04.04-utp-cabling/assets/4.4.2-3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.4.2-3.png"
+    "legacy": "4.4.2-3.png",
+    "synced": {
+     "figmaVersion": "2412239420868654326",
+     "at": "2026-10-20T01:38:51Z",
+     "sha256": "23967dd3294218e3c1c7c6651de745fdd849916831f315f3359d5c2038d23bfd"
+    }
    }
   },
   {
