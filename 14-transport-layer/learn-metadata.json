@@ -33,7 +33,7 @@
             "$ref": "./14.08.01-lab-tcp-and-udp-communications/learn-metadata.json"
         },
         {
-            "$ref": "./14.09-summary/learn-metadata.json"
+            "$ref": "./14.09-exam/learn-metadata.json"
         }
     ]
 }
