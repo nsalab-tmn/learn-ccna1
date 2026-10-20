@@ -36,74 +36,89 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какой шестнадцатеричный эквивалент для десятичного 202?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "B10",
                     "correct": false,
                     "comment": "Шестнадцатеричный эквивалент 202 является CA."
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "BA",
                     "correct": false,
                     "comment": "Шестнадцатеричный эквивалент 202 является CA."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "C10",
                     "correct": false,
                     "comment": "Шестнадцатеричный эквивалент 202 является CA."
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "CA",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q02",
             "question": "Какой шестнадцатеричный эквивалент для десятичного 254?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "EA",
                     "correct": false,
                     "comment": "Шестнадцатеричный эквивалент 254 является FE."
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "ED ",
                     "correct": false,
                     "comment": "Шестнадцатеричный эквивалент 254 является FE."
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "FA",
                     "correct": false,
                     "comment": "Шестнадцатеричный эквивалент 254 является FE."
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "FE",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q03",
             "question": "Какой десятичный эквивалент для шестнадцатеричного A9?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "168",
                     "correct": false,
                     "comment": "Десятичный эквивалент A9 равен 169."
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "169 ",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "170",
                     "correct": false,
                     "comment": "Десятичный эквивалент A9 равен 169."
                 },
                 {
+                    "answerId": "q03-a4",
                     "answer": "171",
                     "correct": false,
                     "comment": "Десятичный эквивалент A9 равен 169."
@@ -111,24 +126,29 @@
             ]
         },
         {
+            "questionId": "q04",
             "question": "Что из перечисленного является десятичным эквивалентом шестнадцатеричного 7D? ",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q04-a1",
                     "answer": "124",
                     "correct": false,
                     "comment": "Десятичный эквивалент 7D равен 125."
                 },
                 {
+                    "answerId": "q04-a2",
                     "answer": "125",
                     "correct": true
                 },
                 {
+                    "answerId": "q04-a3",
                     "answer": "126",
                     "correct": false,
                     "comment": "Десятичный эквивалент 7D равен 125."
                 },
                 {
+                    "answerId": "q04-a4",
                     "answer": "127",
                     "correct": false,
                     "comment": "Десятичный эквивалент 7D равен 125."

@@ -38,24 +38,29 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какой из типов записей DNS используется для разрешения адресов IPv6?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "A",
                     "correct": false,
                     "comment": "Для разрешения имен в адреса IPv6 используются записи DNS типа AAAA."
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "NS",
                     "correct": false,
                     "comment": "Для разрешения имен в адреса IPv6 используются записи DNS типа AAAA."
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "AAAA",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "MX",
                     "correct": false,
                     "comment": "Для разрешения имен в адреса IPv6 используются записи DNS типа AAAA."
@@ -63,34 +68,41 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Верно ли утверждение? DNS-сервер, получающий запрос на разрешение имени, не входящего в его зону DNS, отправит запрашивающему клиенту сообщение об ошибке.",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "Истина",
                     "correct": false,
                     "comment": "Правильный  ответ — Ложь. Когда DNS-сервер получает запрос на разрешение имени, не входящего в его зону, сервер перенаправляет запрос другому DNS-серверу."
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "Ложь",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q03",
             "question": "Что из перечисленного отображается утилитой ``nslookup``?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "настроенный DNS-сервер по умолчанию",
                     "correct": true
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "адрес шлюза по умолчанию",
                     "correct": false,
                     "comment": "Адрес шлюза по умолчанию показывает ipconfig, а nslookup выводит DNS-сервер, к которому обращается узел."
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "все кэшированные записи DNS",
                     "correct": false,
                     "comment": "Записи DNS из кэша выводит команда ipconfig /displaydns."
@@ -98,24 +110,29 @@
             ]
         },
         {
+            "questionId": "q04",
             "question": "Какой из следующих типов записей ресурсов DNS разрешает полномочные серверы имен?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q04-a1",
                     "answer": "NS",
                     "correct": true
                 },
                 {
+                    "answerId": "q04-a2",
                     "answer": "A",
                     "correct": false,
                     "comment": "Записи NS разрешают полномочные серверы имен. Записи DNS A разрешают адреса IPv4. Записи AAAA разрешают адреса IPv6, а записи MX разрешают серверы обмена сообщениями."
                 },
                 {
+                    "answerId": "q04-a3",
                     "answer": "MX",
                     "correct": false,
                     "comment": "Записи NS разрешают полномочные серверы имен. Записи DNS A разрешают адреса IPv4. Записи AAAA разрешают адреса IPv6, а записи MX разрешают серверы обмена сообщениями."
                 },
                 {
+                    "answerId": "q04-a4",
                     "answer": "AAAA",
                     "correct": false,
                     "comment": "Записи NS разрешают полномочные серверы имен. Записи DNS A разрешают адреса IPv4. Записи AAAA разрешают адреса IPv6, а записи MX разрешают серверы обмена сообщениями."

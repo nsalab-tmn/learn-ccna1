@@ -36,33 +36,40 @@
     "passingScore": 100,
     "questions": [
         {
+            "questionId": "q01",
             "question": "Какие две функции обеспечивает ARP? (верны два варианта)",
             "answerType": "multiChoice",
             "answers": [
                 {
+                    "answerId": "q01-a1",
                     "answer": "ведет таблицу сопоставлений IPv4-адресов и доменных имен",
                     "correct": false,
                     "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
                 },
                 {
+                    "answerId": "q01-a2",
                     "answer": "ведет таблицу сопоставлений IPv4-MAC-адресов",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a3",
                     "answer": "ведет таблицу сопоставлений IPv6-MAC-адресов",
                     "correct": false,
                     "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
                 },
                 {
+                    "answerId": "q01-a4",
                     "answer": "преобразует IP-адреса в доменные имена",
                     "correct": false,
                     "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
                 },
                 {
+                    "answerId": "q01-a5",
                     "answer": "преобразует IPv4-адреса в MAC-адреса",
                     "correct": true
                 },
                 {
+                    "answerId": "q01-a6",
                     "answer": "преобразует IPv6-адреса в MAC-адреса",
                     "correct": false,
                     "comment": "ARP имеет две основные функции: вести таблицу сопоставлений IPv4- и MAC-адресов и определять MAC-адреса по известным IPv4-адресам"
@@ -70,94 +77,113 @@
             ]
         },
         {
+            "questionId": "q02",
             "question": "Где хранится таблица ARP на устройстве?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q02-a1",
                     "answer": "ПЗУ",
                     "correct": false,
                     "comment": "Таблица ARP временно кэшируется в ОЗУ"
                 },
                 {
+                    "answerId": "q02-a2",
                     "answer": "флеш-память",
                     "correct": false,
                     "comment": "Таблица ARP временно кэшируется в ОЗУ"
                 },
                 {
+                    "answerId": "q02-a3",
                     "answer": "NVRAM",
                     "correct": false,
                     "comment": "Таблица ARP временно кэшируется в ОЗУ"
                 },
                 {
+                    "answerId": "q02-a4",
                     "answer": "ОЗУ",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q03",
             "question": "Какое утверждение о протоколе ARP является верным?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q03-a1",
                     "answer": "кэш ARP не может быть удален вручную",
                     "correct": false,
                     "comment": "Таблица ARP временно кэшируется в ОЗУ"
                 },
                 {
+                    "answerId": "q03-a2",
                     "answer": "записи ARP кэшируются постоянно",
                     "correct": false,
                     "comment": "Таблица ARP временно кэшируется в ОЗУ"
                 },
                 {
+                    "answerId": "q03-a3",
                     "answer": "записи ARP кэшируются временно",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q04",
             "question": "Какую команду можно использовать на маршрутизаторе для просмотра таблицы ARP?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q04-a1",
                     "answer": "arp -a",
                     "correct": false,
                     "comment": "На маршрутизаторах для просмотра таблицы ARP используется команда show ip arp"
                 },
                 {
+                    "answerId": "q04-a2",
                     "answer": "arp -d",
                     "correct": false,
                     "comment": "На маршрутизаторах для просмотра таблицы ARP используется команда show ip arp"
                 },
                 {
+                    "answerId": "q04-a3",
                     "answer": "show arp table",
                     "correct": false,
                     "comment": "На маршрутизаторах для просмотра таблицы ARP используется команда show ip arp"
                 },
                 {
+                    "answerId": "q04-a4",
                     "answer": "show ip arp",
                     "correct": true
                 }
             ]
         },
         {
+            "questionId": "q05",
             "question": "Что такое атака с использованием ARP?",
             "answerType": "singleChoice",
             "answers": [
                 {
+                    "answerId": "q05-a1",
                     "answer": "широковещательные рассылки ARP",
                     "correct": false,
                     "comment": "Две проблемы безопасности, связанные с запросами ARP, заключаются в том, что сообщения ARP отправляются как широковещательные рассылки и могут быть подделаны"
                 },
                 {
+                    "answerId": "q05-a2",
                     "answer": "атака VLAN Hopping",
                     "correct": false,
                     "comment": "Две проблемы безопасности, связанные с запросами ARP, заключаются в том, что сообщения ARP отправляются как широковещательные рассылки и могут быть подделаны"
                 },
                 {
+                    "answerId": "q05-a3",
                     "answer": "атаки путем подделки ARP",
                     "correct": true
                 },
                 {
+                    "answerId": "q05-a4",
                     "answer": "атака истощения ресурсов ARP",
                     "correct": false,
                     "comment": "Две проблемы безопасности, связанные с запросами ARP, заключаются в том, что сообщения ARP отправляются как широковещательные рассылки и могут быть подделаны"
