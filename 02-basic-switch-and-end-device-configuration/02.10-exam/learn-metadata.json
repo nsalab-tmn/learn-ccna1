@@ -3,7 +3,7 @@
     "shortName": "ccna1.basic-switch-and-end-device-configuration.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: доступ к операционной системе, интерфейс командной строки, структура команд ОС, базовая настройка устройств, сохранение конфигураций, порты и адреса, настройка IP-адресации, проверка подключения.",
-    "difficulty": 1,
+    "difficulty": 3,
     "duration": "PT1H3M",
     "tags": {
         "$ref": "../../material-tags.json"

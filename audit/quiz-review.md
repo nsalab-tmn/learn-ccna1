@@ -12,7 +12,7 @@ A question-by-question review of every CCNA1 quiz and exam, and of the CCNA1 ban
 | module and final exams (`*-exam/`, `final-exam/`) | 7 | 419 |
 | bank copies (`__exams/CCNA1/*_Exam/`) | 7 | 420 |
 
-The CCNA2 and CCNA3 banks in `__exams/` are reviewed with those courses. `ITN_Assessment_PTSA.pka` and `__exams/CCNA1/final-lab` are out of scope (labs and `.pka` files, kb#271).
+The `__exams/CCNA1` bank was dissolved into the module exams in learn-ccna1#221 (kb#293) and `final-itn/test.json` in learn-ccna1#239 (kb#313), so the bank rows above describe the state at review time. The CCNA2 and CCNA3 banks in `__exams/` are reviewed with those courses. `ITN_Assessment_PTSA.pka` and `__exams/CCNA1/final-lab` are out of scope (labs and `.pka` files, kb#271).
 
 ## Why
 

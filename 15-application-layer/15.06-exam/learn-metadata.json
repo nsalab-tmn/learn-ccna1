@@ -3,8 +3,8 @@
     "shortName": "ccna1.application-layer.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: прикладные уровни модели OSI, одноранговые сети, протоколы веб-трафика и электронной почты, службы DNS и DHCP, сервисы совместного доступа к файлам.",
-    "difficulty": 1,
-    "duration": "PT0H55M",
+    "difficulty": 3,
+    "duration": "PT0H59M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -27,7 +27,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 36 questions covering module 15; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 38 questions covering module 15; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1042,6 +1042,50 @@
                     "answer": "предоставление IP-адресов локальным узлам",
                     "correct": false,
                     "comment": "Тема 15.4.0 — Две важные функции DNS:\n1. сопоставление IP-адресов и доменных имен, таких как ya.ru\n2. пересылка запросов на разрешение имен между серверами.\nDHCP предоставляет информацию об IP-адресации локальным устройствам. Протокол передачи файлов, такой как FTP, SFTP или TFTP, предоставляет службы обмена файлами. IMAP или POP можно использовать для получения сообщения электронной почты с сервера."
+                }
+            ]
+        },
+        {
+            "question": "Какой сервер использует типы записей, такие как A, NS, AAAA и MX для предоставления услуг?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "DNS",
+                    "correct": true
+                },
+                {
+                    "answer": "электронная почта",
+                    "correct": false
+                },
+                {
+                    "answer": "файл",
+                    "correct": false
+                },
+                {
+                    "answer": "сервер",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "В компьютерных сетевых коммуникациях какой процесс передачи данных использует протокол FTP-уровня?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "клиент-сервер",
+                    "correct": true
+                },
+                {
+                    "answer": "одноранговая сеть",
+                    "correct": false
+                },
+                {
+                    "answer": "Server Message Block (блок серверных сообщений)",
+                    "correct": false
+                },
+                {
+                    "answer": "gnutella",
+                    "correct": false
                 }
             ]
         }

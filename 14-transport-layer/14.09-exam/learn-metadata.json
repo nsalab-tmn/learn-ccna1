@@ -3,7 +3,7 @@
     "shortName": "ccna1.transport-layer.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: передача данных на транспортном уровне, обзор протокола TCP, обзор протокола UDP, номера портов TCP и UDP, обмен данными по протоколу TCP, надежность и управление потоком передачи данных в TCP, обмен данными по протоколу UDP.",
-    "difficulty": 1,
+    "difficulty": 3,
     "duration": "PT1H17M",
     "tags": {
         "$ref": "../../material-tags.json"

@@ -3,8 +3,8 @@
     "shortName": "ccna1.address-resolution.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: сопоставление MAC-адресов и IP-адресов, протокол ARP, обнаружение соседних IPv6-устройств.",
-    "difficulty": 1,
-    "duration": "PT0H54M",
+    "difficulty": 3,
+    "duration": "PT0H56M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -28,7 +28,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 33 questions covering module 9; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 34 questions covering module 9; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -919,6 +919,32 @@
                     "answer": "0.0.0.0",
                     "correct": false,
                     "comment": "Тема 9.2.0 - Целью запроса ARP является поиск MAC-адреса узла назначения в локальной сети Ethernet. Процесс ARP отправляет широковещательную рассылку уровня 2 всем устройствам в локальной сети Ethernet. Кадр содержит IP-адрес получателя и широковещательный MAC-адрес FF-FF-FF-FF-FF-FF"
+                }
+            ]
+        },
+        {
+            "question": "Каковы две проблемы, которые могут быть вызваны большим количеством запросов и ответов ARP? (верны два варианта)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "большое количество запросов ARP и ответов может замедлить процесс коммутации, что приводит к тому, что коммутатор вносит много изменений в свою таблицу MAC",
+                    "correct": false
+                },
+                {
+                    "answer": "все сообщения запроса ARP должны обрабатываться всеми узлами локальной сети",
+                    "correct": true
+                },
+                {
+                    "answer": "запрос ARP отправляется как широковещательная передача и приведет к переполнению всей подсети",
+                    "correct": true
+                },
+                {
+                    "answer": "сеть может стать перегруженной, поскольку ответные сообщения ARP имеют очень большую полезную нагрузку из-за 48-битного MAC-адреса и 32-битного IP-адреса, которые они содержат",
+                    "correct": false
+                },
+                {
+                    "answer": "коммутаторы перегружаются, поскольку они концентрируют весь трафик из подключенных подсетей",
+                    "correct": false
                 }
             ]
         }
