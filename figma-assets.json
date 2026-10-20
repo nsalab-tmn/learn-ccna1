@@ -4961,9 +4961,14 @@
     "path": "10-basic-router-configuration/10.05-exam/assets/4.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.png"
+    "legacy": "4.png",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "a8eb00e8786fd23b0b9023bc64926d1a8daf5c69316168aacf7f96d610e9370c"
+    }
    }
   },
   {
@@ -6951,9 +6956,9 @@
    "provenance": {
     "legacy": "14.1.2-1.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "4d04b9e177c7f57b7ca5794f21c7e1b0fa2a80da16789afd97083beb4f5296dc"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "e145f3c5fb64af094e4081ecbc4588f14164332c643fc786c4895d4c51c431f9"
     }
    },
    "notes": "[svg в git · пара: косвенно]"
@@ -6976,9 +6981,9 @@
    "provenance": {
     "legacy": "14.1.2-2.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "04a708d1933983d5f6fae3a3d0e1328a4c7df590762fa927b75dbbe1da06009e"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "1684778c180313faafe84399cf7b27f301ee909a53c1a9ca752461a99dec7f7e"
     }
    },
    "notes": "[svg в git · пара: текст]"
@@ -7001,9 +7006,9 @@
    "provenance": {
     "legacy": "14.1.2-3.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "e59fce4d4cf5f0ab5391ecdd61aed47a0f3c977dc6ca4d893ab7ff5a553dcbe8"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "23067c2e3ab7afc1976702551788d03449802b154259f875d7cd79da301058b3"
     }
    },
    "notes": "[svg в git · пара: косвенно]"
@@ -7026,9 +7031,9 @@
    "provenance": {
     "legacy": "14.1.2-4.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "cd0b473871fbb8a4e9999d88e9f3e81c32cf786288fcbeb1182f8d14f1f2014c"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "75db6342acce7332b7709e684708efbc2ea671afa30b825a044a004c5be1130b"
     }
    },
    "notes": "[svg в git · пара: текст]"
@@ -7051,9 +7056,9 @@
    "provenance": {
     "legacy": "14.1.2-5.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "48998d370e9170b462cd8fd797b550b83da008f2185c1b9c2c402d38281c4257"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "b7005aacc9c3e2d560e123253a4194a5ed81ab9f3207d05df5b166053f0fc661"
     }
    },
    "notes": "[svg в git · пара: косвенно]"
@@ -8058,9 +8063,9 @@
    "provenance": {
     "legacy": "15.2.1.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "27c71419571a2fdb6aae42319783f25e542d21a976db5bef31bdde9664885076"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "8b8860b029170d0cc3516d3dac91cb634c6f4576d663904e78dba59c5b34f9bf"
     }
    },
    "notes": "[svg в git · пара: текст]"
@@ -8233,9 +8238,9 @@
    "provenance": {
     "legacy": "15.3.1-4.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "ea43245bbe2472a1cb27111dfc0cba4522008ebe3fb42a029e75a0403f254b62"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "242405ee1c3026698b0f10abea8144da06e3504b1721fe1182c1a7a5b4bf68b0"
     }
    },
    "notes": "[svg в git · пара: текст]"
@@ -8608,9 +8613,9 @@
    "provenance": {
     "legacy": "15.5.2-1.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "162e369c69e018ddf04ec528194ca553ff19f0a52fe6bd27a51bb8d6068edae2"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "09dd504534537187fb70edfb081c589e27636ca1de67f3488c019c3f5fb01109"
     }
    },
    "notes": "[svg в git · пара: слабо]"
@@ -8633,9 +8638,9 @@
    "provenance": {
     "legacy": "15.5.2-2.svg",
     "synced": {
-     "figmaVersion": "2410340895510742005",
-     "at": "2026-10-14T23:14:48Z",
-     "sha256": "c16e93691a2e161901cfe238e9cc1a0ad66d102f88af045999be3930b1a3881d"
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "b9e42c00e563b8002ac5e4813af58ae6cb1cb4dc8563edeb81b672f7d99e392f"
     }
    },
    "notes": "[svg в git · пара: НЕТ]"
@@ -10214,9 +10219,14 @@
     "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.2-1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "11.1.2-1.jpg"
+    "legacy": "11.1.2-1.jpg",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "2372da04b77e7c5e99c91f3c713afd284906fded356282e1acebb1fafea605ee"
+    }
    }
   },
   {
@@ -10233,9 +10243,14 @@
     "path": "12-ipv6-addressing/12.04-gua-and-lla-static-configuration/assets/12.4.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "12.4.2.png"
+    "legacy": "12.4.2.png",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "0c6c0e5b31d2197f3ebba1e1759c983411a54a74a47dbe61647cc74015b892ea"
+    }
    }
   },
   {
@@ -10252,9 +10267,14 @@
     "path": "13-icmp/13.02-ping-and-traceroute-testing/assets/13.2.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "13.2.2.png"
+    "legacy": "13.2.2.png",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "4fc239393597506f4e936adb57e93fedf6a7c2e318e90d081521f30d6518dc7e"
+    }
    }
   },
   {
@@ -10300,9 +10320,14 @@
     "path": "16-network-security-fundamentals/16.03-network-attack-mitigation/assets/16.3.4.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "16.3.4.png"
+    "legacy": "16.3.4.png",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "77823c8ac5c5fbf2add36de409c3f84c1a4e9b26477bf5a641b7c34630ac26a8"
+    }
    }
   },
   {
@@ -10331,9 +10356,14 @@
     "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "17.3.2.png"
+    "legacy": "17.3.2.png",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "14bb23dde96dea5ba53cd4a30d3c43151726f072f89809ad4dd466639d08465d"
+    }
    }
   },
   {
@@ -10350,9 +10380,14 @@
     "path": "17-build-a-small-network/17.03-scale-to-larger-networks/assets/17.3.3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "17.3.3.png"
+    "legacy": "17.3.3.png",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "c531cc1d3870083f7b17e1869c001f13c44570bfbd1b32bbaa61e45980f951e8"
+    }
    }
   },
   {
@@ -10369,9 +10404,14 @@
     "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "17.5.1.jpg"
+    "legacy": "17.5.1.jpg",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "a31b8f51b5614d247931f98e78b113e3d6a1da5baa4d7d0dc7c95224c5109e6f"
+    }
    }
   },
   {
@@ -10388,9 +10428,14 @@
     "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "17.5.2.jpg"
+    "legacy": "17.5.2.jpg",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "dec0ed08707e566bd597127f6f5661ee7b3d36405834b8322be6bc071136a59a"
+    }
    }
   },
   {
@@ -10407,9 +10452,14 @@
     "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "17.5.3.jpeg"
+    "legacy": "17.5.3.jpeg",
+    "synced": {
+     "figmaVersion": "2412250511552610057",
+     "at": "2026-10-20T02:33:08Z",
+     "sha256": "37462e51c810f672533cbb1f11097fe21403d189ae821c5c76ccd3de0c3bc8ba"
+    }
    }
   }
  ]
