@@ -3,7 +3,7 @@
     "shortName": "ccna1.basic-router-configuration.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: первоначальная настройка маршрутизатора, настройка интерфейсов, настройка шлюза по умолчанию.",
-    "difficulty": 1,
+    "difficulty": 3,
     "duration": "PT1H7M",
     "tags": {
         "$ref": "../../material-tags.json"

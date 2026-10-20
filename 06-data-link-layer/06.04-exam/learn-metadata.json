@@ -3,8 +3,8 @@
     "shortName": "ccna1.data-link-layer.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: назначение канального уровня, топологии локальных и глобальных сетей, кадр канала передачи данных.",
-    "difficulty": 1,
-    "duration": "PT0H47M",
+    "difficulty": 3,
+    "duration": "PT0H50M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -25,7 +25,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 30 questions covering module 6; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 32 questions covering module 6; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -872,6 +872,50 @@
                     "answer": "определение пути второго уровня, через создание таблицы MAC-адресов.",
                     "correct": false,
                     "comment": "Тема 6.1.0 - Канальный уровень отвечает за обмен кадрами между узлами через физическую сетевую среду. В частности, на канальном уровне предоставляется два основных сервиса: прием пакетов третьего уровня и их инкапсуляция в кадры; управление доступом к среде и обнаружение ошибок"
+                }
+            ]
+        },
+        {
+            "question": "Какова одна из основных характеристик канального уровня?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "генерирует электрические или оптические сигналы, которые представляют 1 и 0 в среде",
+                    "correct": false
+                },
+                {
+                    "answer": "преобразует поток битов данных в предопределенный код",
+                    "correct": false
+                },
+                {
+                    "answer": "защищает протокол верхнего уровня от знания физической среды, которая будет использоваться в связи",
+                    "correct": true
+                },
+                {
+                    "answer": "принимает пакеты уровня 3 и определяет путь для пересылки пакета в удаленную сеть",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какова функция канального уровня?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "обеспечивает форматирование данных",
+                    "correct": false
+                },
+                {
+                    "answer": "обеспечивает обмен кадрами через общую локальную среду передачи данных",
+                    "correct": true
+                },
+                {
+                    "answer": "обеспечивает сквозную доставку данных между узлами",
+                    "correct": false
+                },
+                {
+                    "answer": "обеспечивает доставку данных между двумя приложениями",
+                    "correct": false
                 }
             ]
         }
