@@ -3,8 +3,8 @@
     "shortName": "ccna1.network-security-fundamentals.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: угрозы безопасности и уязвимости, сетевые атаки, защита от сетевых атак, обеспечение безопасности устройств.",
-    "difficulty": 1,
-    "duration": "PT1H5M",
+    "difficulty": 3,
+    "duration": "PT1H7M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -29,7 +29,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 42 questions covering module 16; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 43 questions covering module 16; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -1196,6 +1196,28 @@
                     "answer": "доступ к коммутатору на месте с помощью непосредственно подключенного ПК и консольного кабеля",
                     "correct": false,
                     "comment": "Тема 16.4.0 — SSH обеспечивает безопасный удаленный вход через виртуальный интерфейс. SSH обеспечивает более надежную парольную аутентификацию, чем Telnet. SSH также шифрует данные во время сеанса."
+                }
+            ]
+        },
+        {
+            "question": "Недовольный сотрудник использует некоторые бесплатные инструменты для беспроводных сетей, чтобы выяснить информацию о корпоративных беспроводных сетях. Этот человек планирует использовать их, чтобы взломать эту сеть. К какому типу относится такая атака?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "доступ",
+                    "correct": false
+                },
+                {
+                    "answer": "DoS-атака",
+                    "correct": false
+                },
+                {
+                    "answer": "разведывательная атака",
+                    "correct": true
+                },
+                {
+                    "answer": "троян",
+                    "correct": false
                 }
             ]
         }

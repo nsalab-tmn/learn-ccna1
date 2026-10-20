@@ -3,7 +3,7 @@
     "shortName": "ccna1.protocols-and-models.exam",
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: правила коммуникации, сетевые протоколы, наборы протоколов, организации по стандартизации, эталонные модели, инкапсуляция данных, доступ к данным.",
-    "difficulty": 1,
+    "difficulty": 3,
     "duration": "PT1H3M",
     "tags": {
         "$ref": "../../material-tags.json"
