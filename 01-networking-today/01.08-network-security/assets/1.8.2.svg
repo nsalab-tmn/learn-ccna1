@@ -329,12 +329,8 @@
 </g>
 <path data-node-id="I5508:8358;187:43234" d="M952.411 227.122L949.56 228.764C951.304 229.769 951.304 231.399 949.56 232.403L952.411 234.046L955.262 235.689C960.154 232.869 960.154 228.298 955.262 225.479L952.411 227.122ZM952.411 234.046L949.56 232.403L924.994 246.56L927.844 248.203L930.695 249.846L955.262 235.689L952.411 234.046ZM927.844 248.203L924.994 246.56C923.25 247.565 920.422 247.565 918.678 246.56L915.828 248.203L912.977 249.846C917.87 252.665 925.802 252.665 930.695 249.846L927.844 248.203ZM915.828 248.203L918.678 246.56C916.934 245.555 916.934 243.926 918.678 242.921L915.828 241.278L912.977 239.636C908.085 242.455 908.085 247.026 912.977 249.846L915.828 248.203ZM915.828 241.278L918.678 242.921L943.245 228.764L940.395 227.122L937.544 225.479L912.977 239.636L915.828 241.278ZM940.395 227.122L943.245 228.764C944.989 227.759 947.817 227.759 949.56 228.764L952.411 227.122L955.262 225.479C950.369 222.66 942.437 222.66 937.544 225.479L940.395 227.122Z" fill="white"/>
 <g data-node-id="I5508:8358;187:43235">
-<g data-node-id="I5508:8358;187:43236" filter="url(#filter0_d_5508_8142)">
-<path d="M922.332 231.256L907.309 228.936L911.334 237.593L913.949 236.086L944.993 254.642L950.968 251.199L919.925 232.643L922.332 231.256Z" fill="white"/>
-</g>
-<g data-node-id="I5508:8358;187:43237" filter="url(#filter1_d_5508_8142)">
-<path d="M958.105 238.834L962.131 247.491L947.108 245.171L949.723 243.665L917.956 224.567L923.932 221.124L955.698 240.221L958.105 238.834Z" fill="white"/>
-</g>
+<path data-node-id="I5508:8358;187:43236" d="M922.332 231.256L907.309 228.936L911.334 237.593L913.949 236.086L944.993 254.642L950.968 251.199L919.925 232.643L922.332 231.256Z" fill="white"/>
+<path data-node-id="I5508:8358;187:43237" d="M958.105 238.834L962.131 247.491L947.108 245.171L949.723 243.665L917.956 224.567L923.932 221.124L955.698 240.221L958.105 238.834Z" fill="white"/>
 </g>
 </g>
 <g data-node-id="5508:8373">
@@ -802,26 +798,6 @@
 <pattern id="pattern12_5508_8142" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image1_5508_8142" transform="matrix(-0.000520058 1.10463e-10 0 -0.00069341 1.36668 1.07707)"/>
 </pattern>
-<filter id="filter0_d_5508_8142" x="892.924" y="214.552" width="72.4292" height="54.4761" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="8.34465e-09"/>
-<feGaussianBlur stdDeviation="7.1925"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.329412 0 0 0 0 0.619608 0 0 0 0 0.968627 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5508_8142"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5508_8142" result="shape"/>
-</filter>
-<filter id="filter1_d_5508_8142" x="903.571" y="206.739" width="72.9448" height="55.1372" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="8.34465e-09"/>
-<feGaussianBlur stdDeviation="7.1925"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.329412 0 0 0 0 0.619608 0 0 0 0 0.968627 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5508_8142"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5508_8142" result="shape"/>
-</filter>
 <pattern id="pattern13_5508_8142" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image1_5508_8142" transform="matrix(0.00030003 0 0 0.000899203 0 -0.499015)"/>
 </pattern>
