@@ -51,21 +51,21 @@ Ethernet adapter Local Area Connection:
 **Пример динамического LLA с использованием EUI-64 на маршрутизаторе**
 
 ```
-R1# show interface gigabitEthernet 0/0/0
+R1#show interface gigabitEthernet 0/0/0
 GigabitEthernet0/0/0 is up, line protocol is up
-  Hardware is ISR4221-2x1GE, address is 7079.b392.3640 (bia 7079.b392.3640)
+  Hardware is Gigabit Ethernet, address is 00d0.e72c.7a01 (bia 00d0.e72c.7a01)
 (Output omitted)
-R1# show ipv6 interface brief
+R1#show ipv6 interface brief
 GigabitEthernet0/0/0   [up/up]
-    FE80::7279:B3FF:FE92:3640
+    FE80::2D0:E7FF:FE2C:7A01
     2001:DB8:ACAD:1::1
 GigabitEthernet0/0/1   [up/up]
-    FE80::7279:B3FF:FE92:3641
+    FE80::2D0:38FF:FEE1:5501
     2001:DB8:ACAD:2::1
 Serial0/1/0            [up/up]
-    FE80::7279:B3FF:FE92:3640
+    FE80::2D0:E7FF:FE2C:7A01
     2001:DB8:ACAD:3::1
-Serial0/1/1            [down/down]
+Serial0/1/1            [administratively down/down]
     unassigned
 R1#
 ```

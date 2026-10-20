@@ -219,7 +219,7 @@ Interface: 192.168.93.175 --- 0xc
 | **show arp** | Проверяет список известных узлов в локальных сетях Ethernet |
 | **show ip route**  | Проверяет информацию маршрутизации уровня 3 |
 | **show protocols**  | Проверяет, какие протоколы работают |
-| **show version**  | Проверяет память, интерфейсы и лицензии устройства |
+| **show version**  | Показывает версию ОС, файл образа, время работы, объем памяти и интерфейсы устройства |
 
 ### Команда show running-config 
 
@@ -271,35 +271,35 @@ R1#
 Проверяет состояние интерфейса и отображает все сообщения об ошибках
 
 ```
-R1# show interfaces
+R1#show interfaces
 GigabitEthernet0/0/0 is up, line protocol is up
-  Hardware is ISR4321-2x1GE, address is a0e0.af0d.e140 (bia a0e0.af0d.e140)
+  Hardware is Gigabit Ethernet, address is 00d0.e72c.7a01 (bia 00d0.e72c.7a01)
   Description: Link to R2
   Internet address is 209.165.200.225/30
-  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec,
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
      reliability 255/255, txload 1/255, rxload 1/255
   Encapsulation ARPA, loopback not set
-  Keepalive not supported
-  Full Duplex, 100Mbps, link type is auto, media type is RJ45
-  output flow-control is off, input flow-control is off
+  Keepalive set (10 sec)
+  Full Duplex, 1Gbps, media type is RJ45
+  output flow-control is unsupported, input flow-control is unsupported
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:01, output 00:00:21, output hang never
+  Last input never, output never, output hang never
   Last clearing of "show interface" counters never
-  Input queue: 0/375/0/0 (size/max/drops/flushes); Total output drops: 0
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     5127 packets input, 590285 bytes, 0 no buffer
-     Received 29 broadcasts (0 IP multicasts)
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 5043 multicast, 0 pause input
-     1150 packets output, 153999 bytes, 0 underruns
-     0 output errors, 0 collisions, 2 interface resets
+     0 watchdog, 0 multicast, 0 pause input
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
-     1 lost carrier, 0 no carrier, 0 pause output
+     0 lost carrier, 0 no carrier, 0 pause output
      0 output buffer failures, 0 output buffers swapped out
 GigabitEthernet0/0/1 is up, line protocol is up
 (Output omitted)
@@ -421,44 +421,23 @@ R1#
 
 ### Команда show version
 
-Проверяет память, интерфейсы и лицензии устройства
+Показывает версию ОС, файл образа, время работы, объем памяти и интерфейсы устройства
 
 ```
-R1# show version
-Cisco IOS XE Software, Version 03.16.08.S - Extended Support Release
-Cisco IOS Software, ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 15.5(3)S8, RELEASE SOFTWARE (fc2)
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2018 by Cisco Systems, Inc.
-Compiled Wed 08-Aug-18 10:48 by mcpre
+R1#show version
+NSALAB NetOS Software, NR05 Software (NR05-NETOS-M), Version 0.1.0, RELEASE SOFTWARE
+Copyright (c) 2026 NSALAB
 
-(Output omitted)
+R1 uptime is 1 minute
+System returned to ROM by power-on
+System image file is "flash0:nr05-netos-0.1.0.bin"
 
-ROM: IOS-XE ROMMON
-R1 uptime is 2 hours, 25 minutes
-Uptime for this control processor is 2 hours, 27 minutes
-System returned to ROM by reload
-System image file is "bootflash:/isr4300-universalk9.03.16.08.S.155-3.S8-ext.SPA.bin"
-Last reload reason: LocalSoft
-
-(Output omitted)
-
-Technology Package License Information:
------------------------------------------------------------------
-Technology    Technology-package           Technology-package
-              Current       Type           Next reboot
-------------------------------------------------------------------
-appxk9        appxk9        RightToUse     appxk9
-uck9          None          None           None
-securityk9    securityk9    Permanent      securityk9
-ipbase        ipbasek9      Permanent      ipbasek9
-cisco ISR4321/K9 (1RU) processor with 1647778K/6147K bytes of memory.
-Processor board ID FLM2044W0LT
+NSALAB NR05 (revision 1.0) with 1048576K/6147K bytes of memory.
+Processor board ID NSA00000001
 2 Gigabit Ethernet interfaces
-2 Serial interfaces
-32768K bytes of non-volatile configuration memory.
-4194304K bytes of physical memory.
-3207167K bytes of flash memory at bootflash:.
-978928K bytes of USB flash at usb0:.
+2 Serial(sync/async) interfaces
+256K bytes of non-volatile configuration memory.
+
 Configuration register is 0x2102
 R1#
 ```
@@ -482,12 +461,14 @@ R1#
 
 
 ```
-R3# show cdp neighbors
+R3#show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
                   D - Remote, C - CVTA, M - Two-port Mac Relay
+
 Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-S3               Gig 0/0/1         122              S I   WS-C2960+ Fas 0/5
+S3               Gig 0/0/1         150                S I NS01      Fas 0/5
+
 Total cdp entries displayed : 1
 R3#
 ```
