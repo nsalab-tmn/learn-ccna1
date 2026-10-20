@@ -9,6 +9,11 @@ spec exist; otherwise it is skipped with a reason. The whole file is never fetch
 addressed by id, and a page is read (depth 2) only to repair a lost node through the
 `⟨<id>⟩` layer-name stamp (contract §3).
 
+An entry with `ref` (a shared figure, contract §2) has no frame of its own: the owner's frame —
+found through the owner's entry in this manifest or, for another course's owner, in that course's
+manifest on its main (GitHub API, read-only) — is exported into the referrer's own `out.path`, and
+its node is cached in the referrer's `figma.nodeId`. `--scope refs` syncs only those entries.
+
 Exit codes: 0 ok · 2 some entries ended `broken` (manifest and artifacts still written) ·
 1 usage / auth / transport error. Stdlib only. Token: env `FIGMA_TOKEN` — a read-only PAT
 (File content: Read, File metadata: Read). The token is sent only to api.figma.com, never to the
@@ -259,14 +264,126 @@ def search_stamp(token: str, file_key: str, page_id: str, stamp: str) -> str | N
 
 
 def repair(token: str, file_key: str, asset: dict, pages: list[tuple[str, str]]) -> str | None:
-    stamp = f"⟨{asset['id']}⟩"
-    hint = asset.get("figma", {}).get("page")
+    """Find the frame stamped with the entry's own id. Never called for an entry with `ref` (see repair_owner)."""
+    return find_stamped(token, file_key, asset["id"], asset.get("figma", {}).get("page"), pages)
+
+
+def find_stamped(token: str, file_key: str, stamp_id: str, hint: str | None, pages: list[tuple[str, str]]) -> str | None:
+    stamp = f"⟨{stamp_id}⟩"
     ordered = sorted(pages, key=lambda p: 0 if p[1] == hint else 1)
     for pid, _name in ordered:
         found = search_stamp(token, file_key, pid, stamp)
         if found:
             return found
     return None
+
+
+# ---------------------------------------------------------------- shared figures (`ref`, contract §2)
+
+GITHUB_API = "https://api.github.com"
+SIBLING_REPO = "nsalab-tmn/learn-{course}"
+
+
+def github_manifest(repo: str, branch: str = "main", tries: int = 3) -> dict:
+    """A sibling course's figma-assets.json on its `branch`, read-only through the GitHub contents API.
+    The token (env GH_TOKEN or GITHUB_TOKEN — the workflow's own) goes only to api.github.com; the course
+    repos are public, so it only lifts the anonymous rate limit. The Figma token is never sent here."""
+    url = f"{GITHUB_API}/repos/{repo}/contents/figma-assets.json?ref={urllib.parse.quote(branch)}"
+    headers = {"Accept": "application/vnd.github.raw+json", "User-Agent": UA, "X-GitHub-Api-Version": "2022-11-28"}
+    gh = (os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or "").strip()
+    if gh:
+        headers["Authorization"] = f"Bearer {gh}"
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and i < tries - 1:
+                time.sleep(5 * 2 ** i)
+                continue
+            raise SyncError(f"HTTP {e.code} reading {repo}@{branch}:figma-assets.json") from None
+        except urllib.error.URLError as e:
+            if i < tries - 1:
+                time.sleep(5 * 2 ** i)
+                continue
+            raise SyncError(f"network error reading {repo}@{branch}:figma-assets.json: {e.reason}") from None
+        except ValueError as e:
+            raise SyncError(f"{repo}@{branch}:figma-assets.json is not JSON: {e}") from None
+    raise SyncError(f"gave up reading {repo}@{branch}:figma-assets.json")
+
+
+def course_of(asset_id: str) -> str:
+    return asset_id.split("-", 1)[0]
+
+
+class Owners:
+    """Owner manifests by course: this course's own (in memory, so a repair made earlier in the run is
+    seen), a sibling's from a local file (--sibling-manifest) or from its repo's main via the GitHub API.
+    Read once per course per run; a failed read is remembered as the reason."""
+
+    def __init__(self, manifest: dict, local: dict[str, Path], repo_tmpl: str):
+        self.cache: dict[str, dict | str] = {manifest["course"]: manifest}
+        self.local, self.repo_tmpl = local, repo_tmpl
+
+    def manifest(self, course: str) -> dict | str:
+        if course not in self.cache:
+            try:
+                if course in self.local:
+                    self.cache[course] = json.loads(self.local[course].read_text(encoding="utf-8"))
+                else:
+                    self.cache[course] = github_manifest(self.repo_tmpl.format(course=course))
+            except (OSError, ValueError, SyncError) as e:
+                self.cache[course] = f"owner manifest of {course} unreadable: {e}"
+        return self.cache[course]
+
+
+def owner_frame(owner: dict) -> str | None:
+    """The frame the owner's own sync exports: the scene frame for an animation, else figma.nodeId."""
+    fig = owner.get("figma") or {}
+    if owner["kind"] == "animation":
+        return (fig.get("motion") or {}).get("animId") or fig.get("nodeId")
+    return fig.get("nodeId")
+
+
+def resolve_owner(a: dict, file_key: str, owners: Owners) -> tuple[dict | None, dict | None, str | None]:
+    """(owner entry, owner manifest, None) or (None, None, reason). The checks the schema cannot make:
+    the owner exists, is not a referrer itself, is of the same kind, is not the entry, lives in the same
+    Figma file and has a frame."""
+    ref = a["ref"]
+    if ref == a["id"]:
+        return None, None, f"`ref` points at the entry itself ({ref})"
+    om = owners.manifest(course_of(ref))
+    if isinstance(om, str):
+        return None, None, om
+    owner = next((o for o in om.get("assets", []) if o.get("id") == ref), None)
+    if owner is None:
+        return None, None, f"unknown owner {ref}: no such id in the {course_of(ref)} manifest"
+    if owner.get("ref"):
+        return None, None, f"owner {ref} is itself a referrer (ref → {owner['ref']}); a ref never points at another referrer"
+    if owner["kind"] != a["kind"]:
+        return None, None, f"owner {ref} is of kind {owner['kind']}, this entry of kind {a['kind']}"
+    if om.get("figma", {}).get("fileKey") != file_key:
+        return None, None, f"owner {ref} lives in another Figma file ({om.get('figma', {}).get('fileKey')})"
+    if not owner_frame(owner):
+        return None, None, f"owner {ref} has no figma.nodeId"
+    return owner, om, None
+
+
+def tracks_dumps(token: str, file_key: str, node_ids: list[str]) -> dict[str, str | None]:
+    """The Motion tracks dump the plugin stored on each frame (shared plugin data nsalab/tracks), raw."""
+    out: dict[str, str | None] = {}
+    for i in range(0, len(node_ids), BATCH):
+        chunk = node_ids[i:i + BATCH]
+        res = api(f"/v1/files/{file_key}/nodes", token, {"ids": ",".join(chunk), "plugin_data": "shared", "depth": 1})
+        for nid in chunk:
+            doc = ((res.get("nodes") or {}).get(nid) or {}).get("document") or {}
+            out[nid] = (doc.get("sharedPluginData") or {}).get("nsalab", {}).get("tracks")
+    return out
+
+
+def tracks_bytes(raw: str) -> bytes:
+    """A dump as committed: the plugin's JSON verbatim (single line) plus a newline."""
+    return raw.strip().encode("utf-8") + b"\n"
 
 
 # ---------------------------------------------------------------- manifest + files
@@ -658,6 +775,8 @@ def select(assets: list[dict], scope: str, keys: set[str], ids: set[str]) -> lis
             continue  # unreferenced figures are exported only on explicit request
         if scope == "pending" and a["status"] not in ("pending", "broken"):
             continue
+        if scope == "refs" and not a.get("ref"):
+            continue  # the shared figures only: re-exported after an owner's sync PR merges
         picked.append(a)
     return picked
 
@@ -679,7 +798,7 @@ def run(args: argparse.Namespace) -> int:
     ids = {k.strip() for k in args.ids.split(",") if k.strip()}
     todo = select(manifest["assets"], args.scope, keys, ids)
 
-    report = {"written": [], "unchanged": [], "repaired": [], "broken": [], "skipped": []}
+    report = {"written": [], "unchanged": [], "repaired": [], "broken": [], "skipped": [], "why": {}, "refs": [], "drift": []}
     for a in [a for a in todo if not path_matches_format(a)]:
         report["skipped"].append((a, f"out.path extension does not match out.format {a['out'].get('format')!r} — not written"))
     todo = [a for a in todo if path_matches_format(a)]
@@ -695,9 +814,15 @@ def run(args: argparse.Namespace) -> int:
     if not todo:
         return finish(args, manifest, report, version="", wrote_manifest=False)
 
-    version = file_version(token, file_key, todo[0]["figma"]["nodeId"])
+    probe = next((a["figma"]["nodeId"] for a in todo if not a.get("ref") and a.get("figma", {}).get("nodeId")), None)
+    owners = Owners(manifest, {c: Path(p) for c, p in (s.split("=", 1) for s in args.sibling_manifest)}, args.sibling_repo)
+    if probe is None:  # a run of `ref` entries only: probe with an owner's frame
+        probe = next((owner_frame(o) for o, _, _ in (resolve_owner(a, file_key, owners) for a in todo) if o), None)
+    version = file_version(token, file_key, probe) if probe else ""
     stamp = now_iso()
     pages: list[tuple[str, str]] | None = None
+    refs = [a for a in todo if a.get("ref")]
+    todo = [a for a in todo if not a.get("ref")]   # the owners' path below never sees a referrer
 
     # ---- illustrations: one batched export, then per-entry write.
     # Always with svg_include_node_id=true: besides making every layer addressable, it makes the exporter
@@ -751,37 +876,157 @@ def run(args: argparse.Namespace) -> int:
             a["status"] = "broken"
             report["broken"].append(a)
             continue
-        doc = node_docs(token, file_key, [anim_id]).get(anim_id, {})
-        try:
-            tracked = [n["id"] for n in json.loads(tracks.read_text(encoding="utf-8")).get("nodes", [])]
-        except (ValueError, TypeError, AttributeError) as e:
-            report["skipped"].append((a, f"tracks.json unreadable: {e}"))
+        data = render_animation(args, token, file_key, url, anim_id, tracks, a, report)
+        if data is None:
             continue
-        base, why, n, injected, empty = fetch_svg(token, file_key, url, anim_id, doc, tracked)
-        if why:
-            report["skipped"].append((a, why))
-            continue
-        if empty:
-            report.setdefault("empty", []).append((a, empty))
-        if n:
-            report.setdefault("blends", []).append((a, n))
-        if injected:
-            report.setdefault("injected", []).append((a, injected))
-        with tempfile.TemporaryDirectory() as td:
-            bp, op, dp = Path(td) / "base.svg", Path(td) / "out.svg", Path(td) / "frame.json"
-            bp.write_bytes(base)
-            dp.write_text(json.dumps(doc), encoding="utf-8")
-            r = subprocess.run([sys.executable, args.renderer, str(bp), str(tracks), str(op), "--doc", str(dp)],
-                               capture_output=True, text=True)
-            if r.returncode != 0 or not op.exists():
-                report["skipped"].append((a, f"renderer failed: {r.stderr.strip()[:200]}"))
-                continue
-            data = op.read_bytes()
         record(a, data, version, stamp, report, root,
                spec_sha=sha256(spec.read_bytes()) if spec else None, tracks_sha=sha256(tracks.read_bytes()))
 
+    # ---- shared figures: the owner's frame into each referrer's own out.path
+    if refs:
+        sync_refs(args, token, file_key, refs, owners, version, stamp, report, root, course, prefix)
+
     save_manifest(mpath, manifest, indent)
     return finish(args, manifest, report, version, wrote_manifest=True)
+
+
+def render_animation(args: argparse.Namespace, token: str, file_key: str, url: str, frame: str, tracks: Path,
+                     a: dict, report: dict) -> bytes | None:
+    """Complete the base export of the scene frame and run the renderer with `tracks`; None = skipped
+    (the reason is in the report)."""
+    doc = node_docs(token, file_key, [frame]).get(frame, {})
+    try:
+        tracked = [n["id"] for n in json.loads(tracks.read_text(encoding="utf-8")).get("nodes", [])]
+    except (ValueError, TypeError, AttributeError) as e:
+        report["skipped"].append((a, f"tracks.json unreadable: {e}"))
+        return None
+    base, why, n, injected, empty = fetch_svg(token, file_key, url, frame, doc, tracked)
+    if why:
+        report["skipped"].append((a, why))
+        return None
+    if empty:
+        report.setdefault("empty", []).append((a, empty))
+    if n:
+        report.setdefault("blends", []).append((a, n))
+    if injected:
+        report.setdefault("injected", []).append((a, injected))
+    with tempfile.TemporaryDirectory() as td:
+        bp, op, dp = Path(td) / "base.svg", Path(td) / "out.svg", Path(td) / "frame.json"
+        bp.write_bytes(base)
+        dp.write_text(json.dumps(doc), encoding="utf-8")
+        r = subprocess.run([sys.executable, args.renderer, str(bp), str(tracks), str(op), "--doc", str(dp)],
+                           capture_output=True, text=True)
+        if r.returncode != 0 or not op.exists():
+            report["skipped"].append((a, f"renderer failed: {r.stderr.strip()[:200]}"))
+            return None
+        return op.read_bytes()
+
+
+def cache_owner_frame(a: dict, frame: str, owner: dict) -> None:
+    """The referrer's figma block is a cache of the owner's frame (contract §2 field table)."""
+    fig = a.setdefault("figma", {})
+    fig["nodeId"] = frame
+    page = (owner.get("figma") or {}).get("page")
+    if page:
+        fig["page"] = page
+    if "motion" in fig:
+        fig["motion"]["animId"] = frame
+
+
+def sync_refs(args: argparse.Namespace, token: str, file_key: str, refs: list[dict], owners: Owners, version: str,
+              stamp: str, report: dict, root: Path, course: str, prefix: str) -> None:
+    """Contract §2 «Shared figures», §3, §5. Each referrer is resolved through its owner: the owner's
+    frame (figma.motion.animId for an animation, else figma.nodeId), and if that node is gone, the frame
+    stamped ⟨owner id⟩ on the owner course's pages. A referrer is never resolved or repaired by its own
+    id: the old stamp left on its former duplicate frame is ignored. The resolved frame is cached in the
+    referrer's figma.nodeId and exported as for the owner's kind into the referrer's own out.path; an
+    animation also gets its own tracks.json, pulled from the frame's plugin data and checked by the frame
+    node (`anim`), not by the display key."""
+    pages_of: dict[str, tuple[str, list[tuple[str, str]]]] = {}
+
+    def broken(a: dict, why: str) -> None:
+        a["status"] = "broken"
+        report["broken"].append(a)
+        report["why"][a["id"]] = why
+
+    def pages_for(c: str) -> tuple[str, list[tuple[str, str]]]:
+        if c not in pages_of:
+            pfx = prefix if c == course else f"{c.upper()} ·"
+            pages_of[c] = (pfx, course_pages(token, file_key, pfx))
+        return pages_of[c]
+
+    resolved: list[tuple[dict, dict]] = []
+    for a in refs:
+        owner, _om, why = resolve_owner(a, file_key, owners)
+        if why:
+            broken(a, why)
+        elif a["kind"] == "animation" and not args.renderer:
+            report["skipped"].append((a, "no --renderer (animation pilot pending)"))
+        else:
+            resolved.append((a, owner))
+    if not resolved:
+        return
+    frames = sorted({owner_frame(o) for _, o in resolved})
+    urls = export_svg(token, file_key, frames, include_node_id=True)
+    ill_frames = sorted({owner_frame(o) for a, o in resolved if a["kind"] == "illustration" and urls.get(owner_frame(o))})
+    docs = node_docs(token, file_key, ill_frames) if ill_frames else {}
+    moved: dict[str, tuple[str | None, str | None]] = {}   # owner id → (stamped frame, its url), searched once
+
+    for a, owner in resolved:
+        frame = owner_frame(owner)
+        url = urls.get(frame)
+        if url is None:
+            oid = owner["id"]
+            pfx, pages = pages_for(course_of(oid))
+            if oid not in moved:
+                new = find_stamped(token, file_key, oid, (owner.get("figma") or {}).get("page"), pages)
+                moved[oid] = (new, export_svg(token, file_key, [new], include_node_id=True).get(new) if new else None)
+                if moved[oid][1] and a["kind"] == "illustration":
+                    docs.update(node_docs(token, file_key, [new]))
+            if moved[oid][1] is None:
+                broken(a, f"owner {oid}'s frame {frame} is gone and no frame on the «{pfx}» pages carries ⟨{oid}⟩")
+                continue
+            frame, url = moved[oid]
+            report["repaired"].append(a)
+        cache_owner_frame(a, frame, owner)
+
+        if a["kind"] == "illustration":
+            data, why, n, _, _ = fetch_svg(token, file_key, url, frame, docs.get(frame, {}))
+            if why:
+                report["skipped"].append((a, why))
+                continue
+            if n:
+                report.setdefault("blends", []).append((a, n))
+            record(a, data, version, stamp, report, root)
+        else:
+            raw = tracks_dumps(token, file_key, [frame]).get(frame)
+            if not raw:
+                report["skipped"].append((a, f"the owner's frame {frame} carries no tracks dump (plugin data nsalab/tracks) — re-dump the owner (runbook §5)"))
+                continue
+            try:
+                anim = json.loads(raw).get("anim")
+            except (ValueError, AttributeError):
+                report["skipped"].append((a, f"the tracks dump on {frame} is not a JSON object"))
+                continue
+            if anim != frame:
+                report["skipped"].append((a, f"the tracks dump on {frame} was taken from frame {anim} — re-dump the owner (runbook §5)"))
+                continue
+            tb = tracks_bytes(raw)
+            with tempfile.TemporaryDirectory() as td:
+                tp = Path(td) / "tracks.json"
+                tp.write_bytes(tb)
+                data = render_animation(args, token, file_key, url, frame, tp, a, report)
+            if data is None:
+                continue
+            a["tracks"] = a.get("tracks") or f"animations/{a['id']}/tracks.json"
+            write_if_changed(root, a["tracks"], tb)
+            record(a, data, version, stamp, report, root, tracks_sha=sha256(tb))
+            owner_tracks = (owner.get("provenance") or {}).get("synced", {}).get("tracksSha256")
+            if owner_tracks != sha256(tb):
+                report["drift"].append((a, owner, owner_tracks))
+        result = "written" if report["written"] and report["written"][-1] is a else "unchanged"
+        same = (owner.get("provenance") or {}).get("synced", {}).get("sha256") == a["provenance"]["synced"]["sha256"]
+        report["refs"].append((a, owner, result, same))
 
 
 def record(a: dict, data: bytes, version: str, stamp: str, report: dict, root: Path,
@@ -810,20 +1055,44 @@ def finish(args: argparse.Namespace, manifest: dict, report: dict, version: str,
     lines.append("|---|---|")
     for k in ("written", "unchanged", "repaired", "broken", "skipped"):
         lines.append(f"| {k} | {len(report[k])} |")
+    if report.get("refs"):
+        lines.append(f"| shared (ref → owner) | {len(report['refs'])} |")
+    if report.get("drift"):
+        lines.append(f"| ⚠ tracks differ from the owner's | {len(report['drift'])} |")
     if report.get("empty"):
         lines.append(f"| ⚠ empty tracked layers | {sum(len(ids) for _, ids in report['empty'])} |")
     lines.append("")
     if report["written"]:
-        lines += ["### Written", "", "| key | id | file |", "|---|---|---|"]
-        lines += [f"| {a['display']['key']} | `{a['id']}` | `{a['out']['path']}` |" for a in report["written"]]
+        if any(a.get("ref") for a in report["written"]):
+            lines += ["### Written", "", "| key | id | ref → owner | file |", "|---|---|---|---|"]
+            lines += [f"| {a['display']['key']} | `{a['id']}` | " + (f"→ `{a['ref']}`" if a.get("ref") else "") +
+                      f" | `{a['out']['path']}` |" for a in report["written"]]
+        else:
+            lines += ["### Written", "", "| key | id | file |", "|---|---|---|"]
+            lines += [f"| {a['display']['key']} | `{a['id']}` | `{a['out']['path']}` |" for a in report["written"]]
+        lines.append("")
+    if report["refs"]:
+        lines += ["### Shared figures — ref → owner (the owner's frame exported into the referrer's own file)", "",
+                  "| key | id | ref → owner | owner's file | frame | result | bytes = owner's synced sha256 |",
+                  "|---|---|---|---|---|---|---|"]
+        lines += [f"| {a['display']['key']} | `{a['id']}` | → `{o['id']}` ({o['display']['key']}) | `{course_of(o['id'])}:{o['out']['path']}` "
+                  f"| `{a['figma']['nodeId']}` | {res} | {'yes' if same else '**no**'} |" for a, o, res, same in report["refs"]]
+        lines.append("")
+    if report["drift"]:
+        lines += ["### ⚠ Tracks differ from the owner's (the referrer's tracks.json ≠ the owner's tracksSha256)", ""]
+        lines += [f"- {a['display']['key']} `{a['id']}` → `{o['id']}`: `{a['provenance']['synced'].get('tracksSha256', '')[:12]}` vs owner "
+                  f"`{(ot or 'none')[:12]}` — re-sync the owner, or re-dump its tracks (runbook §5)" for a, o, ot in report["drift"]]
         lines.append("")
     if report["repaired"]:
         lines += ["### Repaired via ⟨id⟩ stamp (nodeId updated in the manifest)", ""]
-        lines += [f"- {a['display']['key']} `{a['id']}` → `{a['figma']['nodeId']}`" for a in report["repaired"]]
+        lines += [f"- {a['display']['key']} `{a['id']}` → `{a['figma']['nodeId']}`" +
+                  (f" (the owner's stamp ⟨{a['ref']}⟩)" if a.get("ref") else "") for a in report["repaired"]]
         lines.append("")
     if report["broken"]:
-        lines += ["### ⚠ Broken — node gone and no ⟨id⟩ stamp found", ""]
-        lines += [f"- {a['display']['key']} `{a['id']}` (was `{a['figma']['nodeId']}`)" for a in report["broken"]]
+        lines += ["### ⚠ Broken — node gone and no ⟨id⟩ stamp found" +
+                  (", or a `ref` that cannot be resolved" if report.get("why") else ""), ""]
+        lines += [f"- {a['display']['key']} `{a['id']}` (was `{a.get('figma', {}).get('nodeId')}`)" +
+                  (f" — {report['why'][a['id']]}" if a["id"] in report.get("why", {}) else "") for a in report["broken"]]
         lines.append("")
     if report.get("empty"):
         lines += ["### ⚠ Visible tracked layers Figma renders as nothing — the animation ships without them "
@@ -851,15 +1120,23 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--root", default=".", help="course repo root (default: cwd)")
     ap.add_argument("--manifest", default="figma-assets.json", help="manifest path relative to root")
-    ap.add_argument("--scope", choices=["pending", "all"], default="pending",
-                    help="pending = status pending|broken; all = also re-export synced entries")
+    ap.add_argument("--scope", choices=["pending", "all", "refs"], default="pending",
+                    help="pending = status pending|broken; all = also re-export synced entries; "
+                         "refs = only the entries with `ref` (the shared figures)")
     ap.add_argument("--keys", default="", help="comma-separated display keys to sync (overrides scope; includes orphans)")
     ap.add_argument("--ids", default="", help="comma-separated stable ids to sync (overrides scope)")
     ap.add_argument("--renderer", default="", help="path to render.py; animations are skipped without it")
+    ap.add_argument("--sibling-manifest", action="append", default=[], metavar="COURSE=PATH",
+                    help="read a sibling course's manifest from a local file instead of its repo's main (repeatable)")
+    ap.add_argument("--sibling-repo", default=SIBLING_REPO,
+                    help=f"GitHub repo of a sibling course, read for cross-course `ref` owners (default {SIBLING_REPO})")
     ap.add_argument("--page-prefix", default="", help="page-name prefix of this course (default '<COURSE> ·')")
     ap.add_argument("--summary", default="", help="write the markdown report here (e.g. $GITHUB_STEP_SUMMARY)")
     ap.add_argument("--dry-run", action="store_true", help="select only; no network, no writes")
     args = ap.parse_args(argv)
+    bad = [s for s in args.sibling_manifest if "=" not in s]
+    if bad:
+        ap.error(f"--sibling-manifest wants COURSE=PATH, got {bad[0]!r}")
     try:
         return run(args)
     except SyncError as e:
