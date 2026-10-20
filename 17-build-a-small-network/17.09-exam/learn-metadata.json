@@ -4,7 +4,7 @@
     "type": "exam",
     "description": "Проверьте свои знания по темам модуля: устройства в рамках небольшой сети, приложения и протоколы в небольшой сети, масштабирование до размеров более крупных сетей, проверка сетевой доступности, команды для работы с конфигурацией IP, методики поиска и устранения неполадок, сценарии поиска и устранения неполадок.",
     "difficulty": 1,
-    "duration": "PT1H12M",
+    "duration": "PT1H9M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
@@ -32,7 +32,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 47 questions covering module 17; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 45 questions covering module 17; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -733,32 +733,6 @@
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answer": "copy running-config startup-config",
-                    "comment": "",
-                    "correct": true
-                },
-                {
-                    "answer": "show interfaces",
-                    "comment": "Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfaces, show ip nat translations и show ip route только выводят сведения и ничего не сохраняют.",
-                    "correct": false
-                },
-                {
-                    "answer": "show ip nat translations",
-                    "comment": "Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfaces, show ip nat translations и show ip route только выводят сведения и ничего не сохраняют.",
-                    "correct": false
-                },
-                {
-                    "answer": "show ip route",
-                    "comment": "Команда copy running-config startup-config сохраняет текущую конфигурацию в NVRAM как загрузочную. Команды show interfaces, show ip nat translations и show ip route только выводят сведения и ничего не сохраняют.",
-                    "correct": false
-                }
-            ],
-            "question": "Студент хочет сохранить конфигурацию маршрутизатора в NVRAM. Какую команду лучше всего использовать для выполнения задачи?"
-        },
-        {
-            "answerType": "singleChoice",
-            "answers": [
-                {
                     "answer": "networksetup -getinfo Wi-Fi",
                     "comment": "Команда networksetup -getinfo с именем службы Wi-Fi выводит IP-адрес, маску подсети и шлюз беспроводного подключения в macOS.",
                     "correct": true
@@ -780,32 +754,6 @@
                 }
             ],
             "question": "Специалист по поддержке должен знать IP-адрес беспроводного интерфейса на MacOS. Какую команду лучше всего использовать для выполнения задачи?"
-        },
-        {
-            "answerType": "singleChoice",
-            "answers": [
-                {
-                    "answer": "show ipv6 interface",
-                    "comment": "",
-                    "correct": true
-                },
-                {
-                    "answer": "show interfaces",
-                    "comment": "Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние интерфейсов, show ip nat translations — таблицу трансляций NAT, а show ip route — таблицу маршрутизации IPv4.",
-                    "correct": false
-                },
-                {
-                    "answer": "show ip nat translations",
-                    "comment": "Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние интерфейсов, show ip nat translations — таблицу трансляций NAT, а show ip route — таблицу маршрутизации IPv4.",
-                    "correct": false
-                },
-                {
-                    "answer": "show ip route",
-                    "comment": "Команда show ipv6 interface выводит IPv6-адреса интерфейсов маршрутизатора. Команда show interfaces показывает состояние интерфейсов, show ip nat translations — таблицу трансляций NAT, а show ip route — таблицу маршрутизации IPv4.",
-                    "correct": false
-                }
-            ],
-            "question": "Сетевой техник решает проблему и должен проверить все адреса интерфейса IPv6 на маршрутизаторе. Какую команду лучше всего использовать для выполнения задачи?"
         },
         {
             "answerType": "singleChoice",
