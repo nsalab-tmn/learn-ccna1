@@ -10575,9 +10575,14 @@
     "path": "02-basic-switch-and-end-device-configuration/02.10-exam/assets/3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "3.png"
+    "legacy": "3.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "f96f6811d35174b8956729a7c4fce800c609f89782000883eb314f13c1798ce7"
+    }
    }
   },
   {
@@ -10595,9 +10600,14 @@
     "path": "03-protocols-and-models/03.08-exam/assets/2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.png"
+    "legacy": "2.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "0db88034f8c0247b998cb9ded6c03d82164790a2e7003f8847c237684cb860e1"
+    }
    }
   },
   {
@@ -10615,9 +10625,14 @@
     "path": "04-physical-layer/04.08-exam/assets/1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.jpg"
+    "legacy": "1.jpg",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "90735646532d1b2f3a505ae83846cecd38dee4168a1473689b8ccc08d2106cb8"
+    }
    }
   },
   {
@@ -10635,9 +10650,14 @@
     "path": "04-physical-layer/04.08-exam/assets/2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.jpg"
+    "legacy": "2.jpg",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "0ccf3a4a1df4d294e4d8e103dbcdc5d91ae69435c1907234653f4cfc7640aae9"
+    }
    }
   },
   {
@@ -10655,9 +10675,14 @@
     "path": "04-physical-layer/04.08-exam/assets/4.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "4.png"
+    "legacy": "4.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "3367cdc9f305963cad0e802296d189f9bf9ccc5ed85d5e5a122dff0a7bd20140"
+    }
    }
   },
   {
@@ -10675,9 +10700,14 @@
     "path": "04-physical-layer/04.08-exam/assets/5.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "5.png"
+    "legacy": "5.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "5a7905918ac5491abb625bcfc6f5e06eb9644a39f2a39117192b1d1a0fcd8c85"
+    }
    }
   }
  ]
