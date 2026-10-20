@@ -10636,31 +10636,6 @@
    }
   },
   {
-   "id": "ccna1-bxw572o",
-   "kind": "illustration",
-   "display": {
-    "key": "4.8.2"
-   },
-   "claim": "Конец кабеля UTP: четыре витые пары медных проводников без экрана в общей оболочке.",
-   "figma": {
-    "nodeId": "5924:9928",
-    "page": "CCNA1 · 04 physical-layer"
-   },
-   "out": {
-    "path": "04-physical-layer/04.08-exam/assets/2.svg",
-    "format": "svg"
-   },
-   "status": "synced",
-   "provenance": {
-    "legacy": "2.jpg",
-    "synced": {
-     "figmaVersion": "2412562308480623212",
-     "at": "2026-10-20T21:30:00Z",
-     "sha256": "0ccf3a4a1df4d294e4d8e103dbcdc5d91ae69435c1907234653f4cfc7640aae9"
-    }
-   }
-  },
-  {
    "id": "ccna1-2kyjc65",
    "kind": "illustration",
    "display": {
