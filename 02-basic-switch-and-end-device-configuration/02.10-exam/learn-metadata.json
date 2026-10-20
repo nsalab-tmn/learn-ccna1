@@ -203,7 +203,7 @@
                     "correct": false
                 }
             ],
-            "question": "![](./assets/1.gif) Взгляните на рисунок. Сетевой администратор настраивает управление доступом к коммутатору SW1. Если он использует консольный порт для подключения к коммутатору, какой пароль требуется ввести для доступа к пользовательскому режиму EXEC?"
+            "question": "Сетевой администратор настраивает управление доступом к коммутатору SW1 следующими командами:\n\n```\nSW1#configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\nSW1(config)#enable password letmein\nSW1(config)#enable secret secretin\nSW1(config)#line console 0\nSW1(config-line)#password lineconin\nSW1(config-line)#login\nSW1(config-line)#exit\nSW1(config)#line vty 0 15\nSW1(config-line)#password linevtyin\nSW1(config-line)#login\nSW1(config-line)#end\nSW1#\n```\n\nЕсли он использует консольный порт для подключения к коммутатору, какой пароль требуется ввести для доступа к пользовательскому режиму EXEC?"
         },
         {
             "answerType": "singleChoice",
@@ -737,7 +737,7 @@
                     "correct": false
                 }
             ],
-            "question": "![](./assets/3.png) Посмотрите на рисунок. Администратор пытается настроить коммутатор, но при этом появляется сообщение об ошибке, показанное на иллюстрации. В чём проблема?"
+            "question": "![](./assets/3.svg) Посмотрите на рисунок. Администратор пытается настроить коммутатор, но при этом появляется сообщение об ошибке, показанное на иллюстрации. В чём проблема?"
         },
         {
             "question": "Какое утверждение верно для файла текущей конфигурации на сетевом устройстве?",
