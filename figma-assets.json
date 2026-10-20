@@ -10700,9 +10700,14 @@
     "path": "07-ethernet-switching/07.05-exam/assets/3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "3.png"
+    "legacy": "3.png",
+    "synced": {
+     "figmaVersion": "2412571147468024968",
+     "at": "2026-10-20T22:21:36Z",
+     "sha256": "811d6c33496d227634e13d5c13c26a407497d12cfdbaf4a3bb4db4aa4aeb35f5"
+    }
    }
   },
   {
@@ -10720,9 +10725,14 @@
     "path": "08-network-layer/08.06-exam/assets/1.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "1.png"
+    "legacy": "1.png",
+    "synced": {
+     "figmaVersion": "2412571147468024968",
+     "at": "2026-10-20T22:21:36Z",
+     "sha256": "24f4b4aaaf7ec1acc42ad8d1bfd0f811df6b0358117f37abefae2b5d40d31227"
+    }
    }
   },
   {
@@ -10740,9 +10750,14 @@
     "path": "09-address-resolution/09.04-exam/assets/2.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "2.png"
+    "legacy": "2.png",
+    "synced": {
+     "figmaVersion": "2412571147468024968",
+     "at": "2026-10-20T22:21:36Z",
+     "sha256": "0be9526e2553fab3eb77fd2e2cbd03e7b574b71042bba45fb39b7b2d9e509ca2"
+    }
    }
   },
   {
@@ -10760,9 +10775,14 @@
     "path": "09-address-resolution/09.04-exam/assets/3.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "3.gif"
+    "legacy": "3.gif",
+    "synced": {
+     "figmaVersion": "2412571147468024968",
+     "at": "2026-10-20T22:21:36Z",
+     "sha256": "4236ed65a7240d16d69580c328ca9caffd92701fab18b22436131059c6cd13f2"
+    }
    }
   },
   {
@@ -10780,9 +10800,14 @@
     "path": "10-basic-router-configuration/10.05-exam/assets/5.svg",
     "format": "svg"
    },
-   "status": "pending",
+   "status": "synced",
    "provenance": {
-    "legacy": "5.png"
+    "legacy": "5.png",
+    "synced": {
+     "figmaVersion": "2412571147468024968",
+     "at": "2026-10-20T22:21:36Z",
+     "sha256": "e4384e89c49ec33a0685f6ce4bef6f932af911feebeae231611a4e8a8234d09e"
+    }
    }
   }
  ]
