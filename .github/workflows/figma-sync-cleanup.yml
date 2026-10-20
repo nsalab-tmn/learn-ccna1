@@ -1,0 +1,36 @@
+# .github/workflows/figma-sync-cleanup.yml — delete the bot branch `figma-sync` once its PR is merged.
+# Companion of figma-sync.yml; contract: learn-knowledge-base conventions/figma-git-asset-contract.md §5;
+# operations: learn-knowledge-base runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
+#
+# Safety model: runs only for a MERGED pull request whose head is exactly `figma-sync` (a PR closed without
+# merge keeps its branch for inspection). It deletes only that one bot-owned branch, never the base or any
+# other ref, and touches no file. If the branch is already gone the run succeeds and does nothing.
+name: figma-sync-cleanup
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  delete-branch:
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'figma-sync' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      SYNC_BRANCH: figma-sync
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Delete the merged sync branch
+        run: |
+          if git ls-remote --exit-code --heads origin "$SYNC_BRANCH" >/dev/null 2>&1; then
+            git push origin --delete "$SYNC_BRANCH"
+            echo "deleted branch $SYNC_BRANCH (PR #${{ github.event.pull_request.number }} merged)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "branch $SYNC_BRANCH already gone — nothing to do" >> "$GITHUB_STEP_SUMMARY"
+          fi

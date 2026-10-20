@@ -6,6 +6,10 @@
 # Safety model: the result is always a pull request on the fixed branch `figma-sync`, never a push to the
 # base branch. A run with nothing changed in Figma writes no file, makes no commit and opens no PR
 # (idempotent). If a sync PR is already open, the next run adds a commit to it and posts the new summary.
+# Without an open sync PR the branch is always rebuilt from the base — a stale `figma-sync` left by a merged
+# PR is ignored, never merged — and the bot-owned branch is pushed with --force-with-lease (the lease guards
+# against a concurrent writer; `concurrency` serialises runs). figma-sync-cleanup.yml deletes the branch when
+# its PR is merged. See learn-knowledge-base runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
 # Only files named in figma-assets.json (`out.path`) and the manifest itself are ever written.
 name: figma-sync
 
@@ -42,19 +46,27 @@ jobs:
           fetch-depth: 0
           filter: blob:none   # full history metadata (so an open sync branch can be merged), blobs on demand
 
-      - name: Prepare the sync branch (continue an open sync PR, else start from the base)
+      - name: Prepare the sync branch (continue an open sync PR, else rebuild from the base)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name  "figma-sync[bot]"
           git config user.email "figma-sync@users.noreply.github.com"
           if git ls-remote --exit-code --heads origin "$SYNC_BRANCH" >/dev/null 2>&1; then
-            git fetch -q origin "$SYNC_BRANCH"
+            # refresh the remote-tracking ref: it is the value --force-with-lease checks at push time
+            git fetch -q origin "+refs/heads/$SYNC_BRANCH:refs/remotes/origin/$SYNC_BRANCH"
+          fi
+          open=$(gh pr list --head "$SYNC_BRANCH" --base "$BASE_BRANCH" --state open --json number --jq '.[0].number')
+          if [ -n "$open" ] && git rev-parse -q --verify "refs/remotes/origin/$SYNC_BRANCH" >/dev/null; then
+            # an open sync PR: continue its branch, bring in the base
             git checkout -q -B "$SYNC_BRANCH" "origin/$SYNC_BRANCH"
             if ! git merge -q --no-edit "origin/$BASE_BRANCH"; then
               git merge --abort
               git checkout -q -B "$SYNC_BRANCH" "origin/$BASE_BRANCH"
-              echo "⚠ the open sync branch could not be merged with $BASE_BRANCH — rebuilt from $BASE_BRANCH" >> "$GITHUB_STEP_SUMMARY"
+              echo "⚠ the open sync branch (PR #$open) could not be merged with $BASE_BRANCH — rebuilt from $BASE_BRANCH" >> "$GITHUB_STEP_SUMMARY"
             fi
           else
+            # no open sync PR: always start from the base; a stale branch of a merged PR is ignored, not merged
             git checkout -q -B "$SYNC_BRANCH" "origin/$BASE_BRANCH"
           fi
 
@@ -83,7 +95,7 @@ jobs:
           fi
           git add -A
           git commit -q -m "chore(assets): sync figures from Figma (run ${{ github.run_id }})"
-          git push -q -u origin "$SYNC_BRANCH"
+          git push -q -u --force-with-lease origin "$SYNC_BRANCH"   # bot-owned branch, may be rebuilt from the base
           printf '%s\n\nRun: %s/%s/actions/runs/%s\n' \
             "$(cat "$RUNNER_TEMP/figma-sync.md")" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" \
             > "$RUNNER_TEMP/pr-body.md"
