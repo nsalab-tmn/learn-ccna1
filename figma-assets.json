@@ -10559,6 +10559,131 @@
      "sha256": "37462e51c810f672533cbb1f11097fe21403d189ae821c5c76ccd3de0c3bc8ba"
     }
    }
+  },
+  {
+   "id": "ccna1-mz4efxj",
+   "kind": "illustration",
+   "display": {
+    "key": "2.10.3"
+   },
+   "claim": "Команда config t, введенная в пользовательском режиме EXEC (приглашение Switch1>), коммутатор не принимает как команду.",
+   "figma": {
+    "nodeId": "5922:9758",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
+   },
+   "out": {
+    "path": "02-basic-switch-and-end-device-configuration/02.10-exam/assets/3.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "3.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "f96f6811d35174b8956729a7c4fce800c609f89782000883eb314f13c1798ce7"
+    }
+   }
+  },
+  {
+   "id": "ccna1-sybqpia",
+   "kind": "illustration",
+   "display": {
+    "key": "3.8.2"
+   },
+   "claim": "Узел A и сервер B находятся в разных сетях: путь между ними проходит через коммутатор A, маршрутизатор A, последовательный канал, маршрутизатор B и коммутатор B.",
+   "figma": {
+    "nodeId": "5923:11467",
+    "page": "CCNA1 · 03 protocols-and-models"
+   },
+   "out": {
+    "path": "03-protocols-and-models/03.08-exam/assets/2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "0db88034f8c0247b998cb9ded6c03d82164790a2e7003f8847c237684cb860e1"
+    }
+   }
+  },
+  {
+   "id": "ccna1-uhsa2od",
+   "kind": "illustration",
+   "display": {
+    "key": "4.8.1"
+   },
+   "claim": "Оптоволоконные коммутационные шнуры с разъемами на концах.",
+   "figma": {
+    "nodeId": "5924:9863",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.08-exam/assets/1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.jpg",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "90735646532d1b2f3a505ae83846cecd38dee4168a1473689b8ccc08d2106cb8"
+    }
+   }
+  },
+  {
+   "id": "ccna1-2kyjc65",
+   "kind": "illustration",
+   "display": {
+    "key": "4.8.4"
+   },
+   "claim": "Разъем RJ-45, в котором провода раскручены слишком далеко и оболочка кабеля не доходит до прижима.",
+   "figma": {
+    "nodeId": "5924:10163",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.08-exam/assets/4.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "3367cdc9f305963cad0e802296d189f9bf9ccc5ed85d5e5a122dff0a7bd20140"
+    }
+   }
+  },
+  {
+   "id": "ccna1-hsyocgq",
+   "kind": "illustration",
+   "display": {
+    "key": "4.8.5"
+   },
+   "claim": "ПК, коммутатор и два маршрутизатора соединены цепочкой: канал 1 — ПК и коммутатор, канал 2 — коммутатор и маршрутизатор, канал 3 — два маршрутизатора.",
+   "figma": {
+    "nodeId": "5924:10225",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.08-exam/assets/5.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "5.png",
+    "synced": {
+     "figmaVersion": "2412562308480623212",
+     "at": "2026-10-20T21:30:00Z",
+     "sha256": "5a7905918ac5491abb625bcfc6f5e06eb9644a39f2a39117192b1d1a0fcd8c85"
+    }
+   }
   }
  ]
 }
