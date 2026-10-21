@@ -885,17 +885,15 @@ scenario:
 
         **Примечание.** Первые эхо-запросы могут пропасть: узлы и маршрутизаторы на пути еще не знают MAC-адресов соседей и узнают их по протоколу ARP. Когда таблицы ARP заполнены, потерь нет.
 
-        **Шаг 2.** Узнайте IP-адрес сервера netacad по имени командой **nslookup netacad.pka**. Компьютер PC1 выступает клиентом: он спрашивает DNS-сервер, адрес которого указан в строке Server, а сервер отвечает.
+        **Шаг 2.** Узнайте IP-адрес сервера netacad по имени командой **nslookup netacad.pka**. Компьютер PC1 выступает клиентом: он спрашивает DNS-сервер, адрес которого указан в строке Address под строкой Server, а сервер отвечает.
 
         ```
         C:\>nslookup netacad.pka
-
-        Server: [10.10.10.2]
+        Server:  UnKnown
         Address:  10.10.10.2
 
-        Non-authoritative answer:
-        Name:   netacad.pka
-        Address:   128.107.46.11
+        Name:    netacad.pka
+        Address:  128.107.46.11
         ```
 
         **Шаг 3.** Проверьте связь с сервером по имени командой **ping netacad.pka**. Компьютер сначала запрашивает адрес у DNS-сервера, а затем отправляет эхо-запросы на найденный адрес.
@@ -918,26 +916,22 @@ scenario:
 
         **Шаг 4.** На вкладке «Рабочий стол» запустите приложение «Веб-браузер», введите в поле «Адрес» http://netacad.pka и нажмите «Перейти». Открывается страница с заголовком «Web server» и строкой «The HTTP service on this server is running.»: браузер выступил клиентом, а netacad — веб-сервером.
 
-        **Шаг 5.** Откройте окно компьютера Sales в сети Branch Office. В приложении «Командная строка» выполните команды **nslookup branchserver.pka** и **nslookup netacad.pka**. В строке Server теперь адрес 172.16.0.3: компьютеры этой сети спрашивают свой сервер BranchServer.
+        **Шаг 5.** Откройте окно компьютера Sales в сети Branch Office. В приложении «Командная строка» выполните команды **nslookup branchserver.pka** и **nslookup netacad.pka**. Адрес DNS-сервера (строка Address под строкой Server) теперь 172.16.0.3: компьютеры этой сети спрашивают свой сервер BranchServer.
 
         ```
         C:\>nslookup branchserver.pka
-
-        Server: [172.16.0.3]
+        Server:  UnKnown
         Address:  172.16.0.3
 
-        Non-authoritative answer:
-        Name:   branchserver.pka
-        Address:   172.16.0.3
+        Name:    branchserver.pka
+        Address:  172.16.0.3
 
         C:\>nslookup netacad.pka
-
-        Server: [172.16.0.3]
+        Server:  UnKnown
         Address:  172.16.0.3
 
-        Non-authoritative answer:
-        Name:   netacad.pka
-        Address:   128.107.46.11
+        Name:    netacad.pka
+        Address:  128.107.46.11
         ```
 
         **Шаг 6.** Проверьте связь с сервером netacad командой **ping netacad.pka**. Запросы проходят через маршрутизатор R4 и сеть поставщика услуг.
