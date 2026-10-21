@@ -25,7 +25,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "Learner scores at least 80% on the exam's 33 questions covering module 6; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 32 questions covering module 6; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
@@ -530,38 +530,6 @@
                 }
             ],
             "question": "Какие функции выполняются на подуровне LLC на канальном уровне OSI? (верны два варианта)"
-        },
-        {
-            "questionId": "q17",
-            "bloom": "remember",
-            "answerType": "multiChoice",
-            "answers": [
-                {
-                    "answerId": "q17-a1",
-                    "answer": "предоставляет механизм, позволяющий нескольким устройствам обмениваться данными через общую среду",
-                    "comment": "",
-                    "correct": true
-                },
-                {
-                    "answerId": "q17-a2",
-                    "answer": "управляет сетевым адаптером, отвечающим за отправку и получение данных в физической среде",
-                    "comment": "",
-                    "correct": true
-                },
-                {
-                    "answerId": "q17-a3",
-                    "answer": "помещает в кадр информацию, указывающую, какой протокол сетевого уровня используется для данного кадра",
-                    "comment": "Сведения о протоколе сетевого уровня помещает в кадр подуровень LLC. Подуровень MAC управляет сетевым адаптером и доступом нескольких устройств к общей среде.",
-                    "correct": false
-                },
-                {
-                    "answerId": "q17-a6",
-                    "answer": "выбирает путь для пересылки пакета в удаленную сеть",
-                    "correct": false,
-                    "comment": "Путь к удаленной сети выбирает сетевой уровень, например маршрутизатор по IP-адресу назначения. Подуровень MAC управляет сетевым адаптером и доступом нескольких устройств к общей среде."
-                }
-            ],
-            "question": "Какие функции выполняются на подуровне MAC уровня канала передачи данных OSI? (верны два варианта)"
         },
         {
             "questionId": "q18",
