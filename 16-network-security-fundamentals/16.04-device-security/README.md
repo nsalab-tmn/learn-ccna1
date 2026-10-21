@@ -8,11 +8,55 @@
 Система безопасности на устройстве настроена по умолчанию при установке новой операционной системы. В большинстве случаев этот уровень безопасности является недостаточным. На некоторых маршрутизаторах базовые защитные настройки можно применить одной командой: команда **auto secure** в диалоге отключает ненужные службы и включает основные механизмы защиты, как показано в примере.
 
 ```
-Router# auto secure
-                --- AutoSecure Configuration ---
+Router#auto secure
+                      --- AutoSecure Configuration ---
+
 *** AutoSecure configuration enhances the security of
-the router but it will not make router absolutely secure
-from all security attacks ***
+the router, but it will not make it absolutely resistant
+to all security attacks ***
+
+AutoSecure will modify the configuration of your device.
+All configuration changes will be shown. For a detailed
+explanation of how the configuration changes enhance security
+and any possible side effects, please refer to the
+Autosecure documentation.
+At any prompt you may enter '?' for help.
+Use ctrl-c to abort this session at any prompt.
+
+Gathering information about the router for AutoSecure
+
+Is this router connected to internet? [no]:
+```
+
+Когда на все вопросы диалога даны ответы, маршрутизатор показывает сформированную конфигурацию и спрашивает, применить ли ее. Среди прочего она отключает протокол CDP и оба веб-сервера маршрутизатора, HTTP и HTTPS (команды **no ip http server** и **no ip http secure-server**), задает баннер, пароли, ограничение попыток входа и включает SSH, как показано в примере.
+
+```
+This is the configuration generated:
+
+service password-encryption
+no cdp run
+no ip http server
+no ip http secure-server
+banner motd ^C
+Unauthorized access only!
+^C
+security passwords min-length 6
+enable secret 5 $1$mERr$ZBBt6ccfHmu2dCR1
+enable password 7 00071A1507545A545C7519
+username admin password 7 0005170B0D555A545C7519
+line con 0
+ exec-timeout 5 0
+line vty 0 4
+ transport input telnet
+login block-for 60 attempts 2 within 30
+hostname R1
+ip domain-name example.net
+crypto key generate rsa general-keys modulus 2048
+line vty 0 4
+ transport input ssh telnet
+end
+
+ Apply this configuration to running-config? [yes]:
 ```
 
 Кроме того, для большинства операционных систем можно применить простые шаги:
@@ -141,28 +185,38 @@ R1(config)#
 Маршрутизаторы и коммутаторы запускаются с большим списком активных служб, которые могут потребоваться или не потребоваться при работе в сети. Отключите все неиспользуемые службы, чтобы сохранить системные ресурсы, такие как ЦП и ОЗУ, и предотвратить использование этих служб злоумышленниками. Какие службы включены по умолчанию, зависит от ОС и ее версии. Открытые порты можно проверить командой **show ip ports all**: в примере открыты только порты HTTPS и DHCP.
 
 ```
-Router# show ip ports all
+Router#show ip ports all
 Proto Local Address               Foreign Address             State       PID/Program Name
 TCB       Local Address               Foreign Address             (state)
-tcp   :::443                     :::*                        LISTEN      309/[IOS]HTTP CORE
-tcp   *:443                      *:*                         LISTEN      309/[IOS]HTTP CORE
-udp   *:67                        0.0.0.0:0                               387/[IOS]DHCPD Receive
+tcp   :::443                     :::*                        LISTEN      309/[NetOS]HTTP CORE
+tcp   *:443                      *:*                         LISTEN      309/[NetOS]HTTP CORE
+udp   *:67                        0.0.0.0:0                               387/[NetOS]DHCPD Receive
 Router#
 ```
 
 В более ранних версиях ОС для этого используется команда **show control-plane host open-ports**: ее можно встретить на устройствах прежних поколений, а ее выходные данные аналогичны. Обратите внимание, что на этом маршрутизаторе работают небезопасный HTTP-сервер и Telnet. Обе эти службы должны быть отключены. Как показано в примере, отключите HTTP командой **no ip http server** в режиме глобальной конфигурации. Отключите Telnet, указав только SSH в команде конфигурации строки **transport input ssh**.
 
 ```
-Router# show control-plane host open-ports 
+Router#show control-plane host open-ports
 Active internet connections (servers and established)
 Prot        Local Address      Foreign Address                  Service    State
  tcp                 *:23                  *:0                   Telnet   LISTEN
  tcp                 *:80                  *:0                HTTP CORE   LISTEN
  udp                 *:67                  *:0            DHCPD Receive   LISTEN
-Router# configure terminal
-Router(config)# no ip http server
-Router(config)# line vty 0 15
-Router(config-line)# transport input ssh
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#no ip http server
+Router(config)#line vty 0 15
+Router(config-line)#transport input ssh
+Router(config-line)#end
+*Mar  1 00:00:00.000: %SYS-5-CONFIG_I: Configured from console by console
+Router#show control-plane host open-ports
+Active internet connections (servers and established)
+Prot        Local Address      Foreign Address                  Service    State
+ udp                 *:67                  *:0            DHCPD Receive   LISTEN
+Router#
 ```
+
+Повторная команда **show control-plane host open-ports** показывает, что открытым остался только порт DHCP.
 
 <!-- 16.4.7 -->
