@@ -124,20 +124,20 @@ R1 настраивается вручную со статическим мар�
 
 
 ```
-R1# show ip route
+R1#show ip route
 Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
-       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
-       E1 - OSPF external type 1, E2 - OSPF external type 2
-       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
-       ia - IS-IS inter area, * - candidate default, U - per-user static route
-       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
-       a - application route
-       + - replicated route, % - next hop override, p - overrides from PfR
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
 Gateway of last resort is 209.165.200.226 to network 0.0.0.0
-S*    0.0.0.0/0 [1/0] via 209.165.200.226, GigabitEthernet0/0/1
+
+S*    0.0.0.0/0 [1/0] via 209.165.200.226
       10.0.0.0/24 is subnetted, 1 subnets
-O        10.1.1.0 [110/2] via 209.165.200.226, 00:02:45, GigabitEthernet0/0/1
+O        10.1.1.0 [110/2] via 209.165.200.226, 00:00:19, GigabitEthernet0/0/1
       192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
 C        192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
 L        192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
@@ -157,7 +157,7 @@ R1#
 
 В таблице маршрутизации отображаются все известные маршруты назначения IPv4 для R1.
 
-Присоединенная напрямую маршрут создается автоматически, когда интерфейс маршрутизатора настроен с информацией об IP-адресе и активирован. Маршрутизатор добавляет две записи маршрута с кодами C (т.е. подключенная сеть) и L (т.е. IP-адрес локального интерфейса подключенной сети). Записи маршрута также определяют интерфейс выхода для доступа к сети. Две напрямую подключенные сети в этом примере — 192.168.10.0/24 и 209.165.200.224/30.
+Присоединенный напрямую маршрут создается автоматически, когда интерфейс маршрутизатора настроен с информацией об IP-адресе и активирован. Маршрутизатор добавляет две записи маршрута с кодами C (т.е. подключенная сеть) и L (т.е. IP-адрес локального интерфейса подключенной сети). Записи маршрута также определяют интерфейс выхода для доступа к сети. Две напрямую подключенные сети в этом примере — 192.168.10.0/24 и 209.165.200.224/30.
 
 Маршрутизаторы R1 и R2 также используют протокол динамической маршрутизации OSPF для обмена информацией о маршрутизаторе. В примере таблицы маршрутизации R1 содержит запись маршрута для сети 10.1.1.0/24, которую он динамически узнал от R2 по протоколу маршрутизации OSPF.
 
