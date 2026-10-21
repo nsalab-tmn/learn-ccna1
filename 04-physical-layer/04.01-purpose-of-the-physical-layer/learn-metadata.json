@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.physical-layer.purpose-of-the-physical-layer",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Describe the physical layer's role: it takes frames from the data link layer, sends their bits one at a time over wired or wireless media, and passes received bits up to the data link layer."
+            "objective": "Describe the physical layer's role: it takes frames from the data link layer, turns the frame's bits into electrical, optical or radio signals and sends them into wired or wireless media, and passes received bits up to the data link layer."
         },
         "requires": [
             "ksa.ccna1.protocols-and-models.reference-models",
