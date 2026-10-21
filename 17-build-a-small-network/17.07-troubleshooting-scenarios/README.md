@@ -159,11 +159,10 @@ FastEthernet0 Connection:(default port)
 
 ```
 C:\>nslookup ya.ru
-
-Server: [77.88.8.8]
+Server:  UnKnown
 Address:  77.88.8.8
 
 Non-authoritative answer:
-Name:   ya.ru
-Address:   203.0.113.10
+Name:    ya.ru
+Address:  203.0.113.10
 ```

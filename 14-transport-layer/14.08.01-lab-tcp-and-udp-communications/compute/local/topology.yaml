@@ -148,13 +148,11 @@ scenario:
 
         ```
         C:\>nslookup multiserver.nsalab.local
-
-        Server: [192.168.1.254]
+        Server:  UnKnown
         Address:  192.168.1.254
 
-        Non-authoritative answer:
-        Name:   multiserver.nsalab.local
-        Address:   192.168.1.254
+        Name:    multiserver.nsalab.local
+        Address:  192.168.1.254
         ```
 
         **Шаг 7.** Сравните цвет квадрата в столбце «Тип» у строк TCP и DNS и цвет конвертов на схеме. Ответьте на вопрос 1 в форме ответов.
@@ -226,13 +224,11 @@ scenario:
 
         ```
         C:\>nslookup multiserver.nsalab.local
-
-        Server: [192.168.1.254]
+        Server:  UnKnown
         Address:  192.168.1.254
 
-        Non-authoritative answer:
-        Name:   multiserver.nsalab.local
-        Address:   192.168.1.254
+        Name:    multiserver.nsalab.local
+        Address:  192.168.1.254
         ```
 
         **Шаг 9.** Щелкните цветной квадрат последней строки списка («DNS-ответ multiserver.nsalab.local · принят»), откройте вкладку «Входящий PDU» и найдите раздел «UDP».

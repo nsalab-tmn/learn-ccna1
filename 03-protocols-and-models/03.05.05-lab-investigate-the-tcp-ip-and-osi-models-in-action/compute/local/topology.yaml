@@ -158,13 +158,11 @@ scenario:
 
         ```
         C:\>nslookup www.osi.local
-
-        Server: [192.168.1.1]
+        Server:  UnKnown
         Address:  192.168.1.1
 
-        Non-authoritative answer:
-        Name:   www.osi.local
-        Address:   192.168.1.1
+        Name:    www.osi.local
+        Address:  192.168.1.1
         ```
 
         **Примечание.** Служба сервера принимает запросы на определенном порту. Клиент указывает этот порт как порт назначения в заголовке транспортного уровня: в разделе TCP запроса HTTP и в разделе UDP запроса DNS на вкладках «Входящий PDU» и «Исходящий PDU».
