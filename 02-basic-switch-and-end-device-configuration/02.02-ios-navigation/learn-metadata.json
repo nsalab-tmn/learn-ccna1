@@ -95,33 +95,33 @@
             ]
         },
         {
-            "questionId": "q06",
+            "questionId": "q08",
             "bloom": "understand",
-            "question": "Администратор подключился к коммутатору и видит приглашение `Branch-SW>`. Что ему нужно ввести, чтобы перейти к настройке устройства?",
+            "question": "Администратор закончил настройку и видит приглашение `Branch-SW#`. Уходя, он хочет оставить консоль в режиме, где доступны только базовые команды мониторинга, а изменить конфигурацию нельзя. Какую команду ему ввести?",
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answerId": "q06-a1",
-                    "answer": "enable, затем configure terminal",
+                    "answerId": "q08-a1",
+                    "answer": "disable",
                     "correct": true
                 },
                 {
-                    "answerId": "q06-a2",
-                    "answer": "только configure terminal",
+                    "answerId": "q08-a2",
+                    "answer": "end",
                     "correct": false,
-                    "comment": "Символ > означает пользовательский режим EXEC, а в режим глобальной конфигурации входят только из привилегированного. Сначала нужно ввести enable, затем configure terminal."
+                    "comment": "end возвращает в привилегированный режим EXEC из режимов конфигурации, а администратор уже в нем. В пользовательский режим EXEC переводит disable."
                 },
                 {
-                    "answerId": "q06-a3",
-                    "answer": "disable, затем configure terminal",
+                    "answerId": "q08-a3",
+                    "answer": "enable",
                     "correct": false,
-                    "comment": "disable возвращает из привилегированного режима EXEC в пользовательский, а администратор уже в пользовательском режиме. В привилегированный режим переводит enable, затем вводят configure terminal."
+                    "comment": "enable переводит из пользовательского режима EXEC в привилегированный, то есть в обратную сторону. В пользовательский режим EXEC возвращает disable."
                 },
                 {
-                    "answerId": "q06-a4",
-                    "answer": "end, затем configure terminal",
+                    "answerId": "q08-a4",
+                    "answer": "configure terminal",
                     "correct": false,
-                    "comment": "end возвращает в привилегированный режим EXEC из режима конфигурации, но администратор находится в пользовательском режиме EXEC. Сначала нужно ввести enable, затем configure terminal."
+                    "comment": "Эта команда открывает режим глобальной конфигурации, где конфигурацию как раз меняют. В пользовательский режим EXEC переводит disable."
                 }
             ]
         },
