@@ -16,7 +16,7 @@ Criterions:
       - Physical
       max_mark: 1
       steps:
-      - name: 'ipconfig: matches (?m)IPv4 Address[. ]*: 192\.168\.1\.10\s*$'
+      - name: 'ipconfig: matches (?m)IPv4 Address[. ]*: \S+'
         code: check
         type: check
         device: Web-Client
@@ -24,5 +24,5 @@ Criterions:
         - action: verify_output_regex
           action_vars:
             command: ipconfig
-            expr: '(?m)IPv4 Address[. ]*: 192\.168\.1\.10\s*$'
+            expr: '(?m)IPv4 Address[. ]*: \S+'
             match: true

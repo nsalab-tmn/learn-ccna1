@@ -374,6 +374,30 @@ scenario:
         ```
 
         **Шаг 3.** Аналогично задайте адреса узлам сети коммутатора S2 с тем же шлюзом fe80::1: ноутбуку Engineering — командой **ipv6config 2001:db8:1:2::3/64 fe80::1**, компьютеру Design — командой **ipv6config 2001:db8:1:2::2/64 fe80::1**. Проверьте результат на каждом узле командой **ipv6config**.
+
+        ```
+        C:\>ipv6config 2001:db8:1:2::3/64 fe80::1
+        C:\>ipv6config
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:67FF:FE4E:7501
+           IPv6 Address....................: 2001:DB8:1:2::3/64
+           Default Gateway.................: FE80::1
+        ```
+
+        ```
+        C:\>ipv6config 2001:db8:1:2::2/64 fe80::1
+        C:\>ipv6config
+
+        FastEthernet0 Connection:(default port)
+
+           Connection-specific DNS Suffix..: 
+           Link-local IPv6 Address.........: FE80::2D0:C1FF:FE7D:7001
+           IPv6 Address....................: 2001:DB8:1:2::2/64
+           Default Gateway.................: FE80::1
+        ```
     - title: "Проверка доступа к серверам и связи"
       body: |
         **Шаг 1.** Убедитесь, что индикаторы на обоих концах кабелей между маршрутизатором R1 и коммутаторами S1 и S2 горят зеленым («Соединение активно» в условных обозначениях).

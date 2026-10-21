@@ -170,6 +170,25 @@ scenario:
         **Шаг 9.** Ответьте на вопрос 2 в форме ответов.
 
         **Шаг 10.** Аналогично настройте коммутатор S2: откройте его консоль, нажмите Enter, перейдите в привилегированный режим EXEC командой **enable**, задайте имя устройства командой **hostname S2**, те же пароль консоли cisco, пароль привилегированного режима EXEC class и баннер и сохраните конфигурацию командой **copy running-config startup-config**.
+
+        ```
+        Switch>enable
+        Switch#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        Switch(config)#hostname S2
+        S2(config)#line console 0
+        S2(config-line)#password cisco
+        S2(config-line)#login
+        S2(config-line)#exit
+        S2(config)#enable secret class
+        S2(config)#banner motd "Authorized access only. Violators will be prosecuted to the full extent of the law."
+        S2(config)#end
+        *Mar  1 00:02:19.568: %SYS-5-CONFIG_I: Configured from console by console
+        S2#copy running-config startup-config
+        Destination filename [startup-config]? 
+        Building configuration...
+        [OK]
+        ```
     - title: "Настройка IP-адресов компьютеров"
       body: |
         **Шаг 1.** Откройте окно компьютера PC1 и на вкладке «Рабочий стол» запустите приложение «IP-конфигурация». В разделе IPv4 выберите «Статический», в поле «IPv4-адрес» введите 192.168.1.1, а в поле «Маска» — 255.255.255.0. Значение поля сохраняется, когда вы переходите к другому полю или нажимаете Enter: под полем, в котором стоит курсор, написано «Сохраняется сразу».
@@ -255,6 +274,18 @@ scenario:
         **Шаг 4.** Ответьте на вопрос 5 в форме ответов.
 
         **Шаг 5.** Аналогично в консоли коммутатора S2 назначьте интерфейсу VLAN 1 адрес 192.168.1.254 с маской 255.255.255.0 и включите интерфейс.
+
+        ```
+        S2#configure terminal
+        Enter configuration commands, one per line.  End with CNTL/Z.
+        S2(config)#interface vlan 1
+        S2(config-if)#ip address 192.168.1.254 255.255.255.0
+        S2(config-if)#no shutdown
+        *Mar  1 00:04:05.702: %LINK-5-CHANGED: Interface Vlan1, changed state to up
+        *Mar  1 00:04:05.702: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+        S2(config-if)#end
+        *Mar  1 00:04:10.056: %SYS-5-CONFIG_I: Configured from console by console
+        ```
 
         **Шаг 6.** Убедитесь с помощью команды **show ip interface brief** на коммутаторе S1, что интерфейсу Vlan1 назначен адрес 192.168.1.253 и он работает (up/up). Вывод длиннее экрана: когда в конце страницы появится --More--, нажимайте пробел, пока не появится приглашение S1#.
 
