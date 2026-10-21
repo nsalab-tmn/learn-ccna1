@@ -181,7 +181,7 @@ scenario:
 
         **Шаг 2.** Создайте локального пользователя командой **username admin secret NetlabAdmin1**.
 
-        **Шаг 3.** Создайте ключи RSA командой **crypto key generate rsa** и на запрос размера ключа введите **1024**. После создания ключей на консоли появляется сообщение о том, что SSH включен.
+        **Шаг 3.** Создайте ключи RSA командой **crypto key generate rsa** и на запрос размера ключа введите **2048**. После создания ключей на консоли появляется сообщение о том, что SSH включен.
 
         ```
         RTA(config)#ip domain-name CCNA.com
@@ -192,8 +192,8 @@ scenario:
           General Purpose Keys. Choosing a key modulus greater than 512 may take
           a few minutes.
 
-        How many bits in the modulus [512]: 1024
-        % Generating 1024 bit RSA keys, keys will be non-exportable...
+        How many bits in the modulus [512]: 2048
+        % Generating 2048 bit RSA keys, keys will be non-exportable...
         [OK]
         *Mar  1 00:02:15.746: %SSH-5-ENABLED: SSH 1.99 has been enabled
         ```
@@ -286,7 +286,7 @@ scenario:
       body: |
         **Шаг 1.** Задайте доменное имя командой **ip domain-name CCNA.com** и создайте локального пользователя командой **username admin secret NetlabAdmin1**.
 
-        **Шаг 2.** Создайте ключи RSA командой **crypto key generate rsa** с размером ключа **1024**.
+        **Шаг 2.** Создайте ключи RSA командой **crypto key generate rsa** с размером ключа **2048**.
 
         ```
         SW1(config)#ip domain-name CCNA.com
@@ -297,8 +297,8 @@ scenario:
           General Purpose Keys. Choosing a key modulus greater than 512 may take
           a few minutes.
 
-        How many bits in the modulus [512]: 1024
-        % Generating 1024 bit RSA keys, keys will be non-exportable...
+        How many bits in the modulus [512]: 2048
+        % Generating 2048 bit RSA keys, keys will be non-exportable...
         [OK]
         *Mar  1 00:03:05.637: %SSH-5-ENABLED: SSH 1.99 has been enabled
         ```

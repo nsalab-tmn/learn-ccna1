@@ -42,7 +42,7 @@ devices:
     ip route 0.0.0.0 0.0.0.0 10.0.0.1
     ipv6 route ::/0 2001:db8:2::2
     ip domain-name CCNA-lab.com
-    crypto key generate rsa modulus 1024
+    crypto key generate rsa modulus 2048
     username Admin privilege 15 secret Admin1pa55
     line vty 0 4
      transport input telnet
