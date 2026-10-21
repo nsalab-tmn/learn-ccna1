@@ -134,7 +134,7 @@
                 },
                 {
                     "id": "q03-o4",
-                    "match": "2",
+                    "match": "0",
                     "option": "Router(config)# password Netlab"
                 },
                 {
