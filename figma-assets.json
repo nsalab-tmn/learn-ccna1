@@ -4948,6 +4948,24 @@
    "notes": "[svg в git · пара: косвенно]"
   },
   {
+   "id": "ccna1-t2b7v6o",
+   "kind": "illustration",
+   "display": {
+    "key": "10.4.2",
+    "title": "Имена интерфейсов маршрутизатора"
+   },
+   "figma": {
+    "nodeId": "6270:9111",
+    "page": "Видео · RH_KIUdHZlE · Различия маршрутизаторов (CCNA1 10.4.2) · прототип"
+   },
+   "out": {
+    "path": "10-basic-router-configuration/10.03-configure-the-default-gateway/assets/10.4.2.svg",
+    "format": "svg"
+   },
+   "status": "pending",
+   "claim": "В зависимости от модели маршрутизатора интерфейс Gigabit Ethernet обозначается тремя числами (слот/подслот/порт, G0/0/0) или двумя (слот/порт, G0/0)."
+  },
+  {
    "id": "ccna1-4qbeefr",
    "kind": "illustration",
    "display": {
