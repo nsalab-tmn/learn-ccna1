@@ -17,7 +17,7 @@ devices:
     service password-encryption
     ip domain-name cisco.pka
     username Admin01 privilege 15 secret cisco12345
-    crypto key generate rsa modulus 1024
+    crypto key generate rsa modulus 2048
     interface GigabitEthernet0/0
      ip address 172.16.1.1 255.255.255.0
      no shutdown

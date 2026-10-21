@@ -301,22 +301,22 @@ Criterions:
     aspects:
     - code: RTA.SECURITY.RSA-MODULUS
       name: Modulus Bits
-      description: Создан ключ RSA длиной 1024 бит
+      description: Создан ключ RSA длиной не меньше 2048 бит
       skills:
       - Device Hardening Configuration
       max_mark: 10
       steps:
-      - name: 'show crypto key mypubkey rsa: has (modulus 1024 bits)'
+      - name: 'show crypto key mypubkey rsa: matches \(modulus (?:204[89]|20[5-9]\d|2[1-9]\d\d|3\d\d\d|40[0-8]\d|409[0-6])
+          bits\)'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show crypto key mypubkey rsa
-            assert_tags:
-            - (modulus 1024 bits)
-            tags_are_present: true
+            expr: \(modulus (?:204[89]|20[5-9]\d|2[1-9]\d\d|3\d\d\d|40[0-8]\d|409[0-6]) bits\)
+            match: true
   - code: RTA.USERS
     name: User Names
     aspects:
@@ -1002,22 +1002,22 @@ Criterions:
     aspects:
     - code: SW1.SECURITY.RSA-MODULUS
       name: Modulus Bits
-      description: Создан ключ RSA длиной 1024 бит
+      description: Создан ключ RSA длиной не меньше 2048 бит
       skills:
       - Device Hardening Configuration
       max_mark: 10
       steps:
-      - name: 'show crypto key mypubkey rsa: has (modulus 1024 bits)'
+      - name: 'show crypto key mypubkey rsa: matches \(modulus (?:204[89]|20[5-9]\d|2[1-9]\d\d|3\d\d\d|40[0-8]\d|409[0-6])
+          bits\)'
         code: check
         type: check
         device: SW1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show crypto key mypubkey rsa
-            assert_tags:
-            - (modulus 1024 bits)
-            tags_are_present: true
+            expr: \(modulus (?:204[89]|20[5-9]\d|2[1-9]\d\d|3\d\d\d|40[0-8]\d|409[0-6]) bits\)
+            match: true
     - code: SW1.SECURITY.USERNAME
       name: Username
       description: Создан локальный пользователь с паролем secret
