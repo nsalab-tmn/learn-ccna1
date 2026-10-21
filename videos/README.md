@@ -14,11 +14,12 @@
 
 Колонка «Видеоряд (Figma)» в таблице фиксирует прогресс пересборки: по каким видео собран и принят новый видеоряд — анимация Figma Motion на нашей дизайн-системе. Голосовая дорожка — отдельный трек, пока не начат ни для одного видео.
 
-**Готово: 17 из 36** (explainer — 17 из 17).
+**Готово: 17 из 36** (explainer — 17 из 17). **Не делаем: 5** — `7E9ilk9dOOI`, `uync1j2x6Ms`, `wcIP__5sa1o`, `e85Y71fsyyY`, `DNL4DPxjgNM` (оператор, 2026-10-21).
 
 | статус | значит |
 |---|---|
 | — | пересборка не начата |
+| не делаем | видео не пересобирается: раздел удален или содержание передано тексту (решение оператора) |
 | раскадровка | раскадровка принята, анимации ещё нет |
 | Motion | анимация собрана по принятой раскадровке и ждёт приёмки оператора; время и ссылка — как у «готов» |
 | **готов** | анимация Figma Motion принята оператором; время — её хронометраж (у оригинала — колонка «Длит.»), ссылка ведёт на кадр анимации |
@@ -31,10 +32,10 @@
 
 | videoId | module/topic | Название (EN) | Длит. | Класс | Предложение по пересборке | Видеоряд (Figma) | Документ |
 |---|---|---|---|---|---|---|---|
-| 7E9ilk9dOOI | 01/01.00.05-lab-logical-and-physical-mode-exploration | Installing Cisco Packet Tracer | 5:22 | other (установка ПО) | текст + иллюстрация (скриншоты актуального установщика); NetAcad-часть устарела | — | [doc](01-networking-today/01.00.05-lab-logical-and-physical-mode-exploration--7E9ilk9dOOI.md) |
-| uync1j2x6Ms | 01/01.00.05-lab-logical-and-physical-mode-exploration | Quick start with Cisco Packet Tracer | 13:14 | lab-demo | код-рендер скринкаст ~5:00 в 2 частях (Logical / Physical) | — | [doc](01-networking-today/01.00.05-lab-logical-and-physical-mode-exploration--uync1j2x6Ms.md) |
-| wcIP__5sa1o | 01/01.01-networks-affect-our-lives | Cisco Networking Academy | 2:28 | **marketing** | убрать (вместе с разделом 1.1.2) | — | [doc](01-networking-today/01.01-networks-affect-our-lives--wcIP__5sa1o.md) |
-| e85Y71fsyyY | 01/01.07-network-trends | Cisco Webex Promo | 1:21 | **marketing** | убрать (одна фраза в 1.7.4) | — | [doc](01-networking-today/01.07-network-trends--e85Y71fsyyY.md) |
+| 7E9ilk9dOOI | 01/01.00.05-lab-logical-and-physical-mode-exploration | Installing Cisco Packet Tracer | 5:22 | other (установка ПО) | текст + иллюстрация (скриншоты актуального установщика); NetAcad-часть устарела | не делаем: раздел удален (оператор, 2026-10-21) | [doc](01-networking-today/01.00.05-lab-logical-and-physical-mode-exploration--7E9ilk9dOOI.md) |
+| uync1j2x6Ms | 01/01.00.05-lab-logical-and-physical-mode-exploration | Quick start with Cisco Packet Tracer | 13:14 | lab-demo | код-рендер скринкаст ~5:00 в 2 частях (Logical / Physical) | не делаем: раздел удален (оператор, 2026-10-21) | [doc](01-networking-today/01.00.05-lab-logical-and-physical-mode-exploration--uync1j2x6Ms.md) |
+| wcIP__5sa1o | 01/01.01-networks-affect-our-lives | Cisco Networking Academy | 2:28 | **marketing** | убрать (вместе с разделом 1.1.2) | не делаем: раздел 1.1.2 удален, текст лекции 01.01 — во введении курса и модуля 01 (оператор, 2026-10-21) | [doc](01-networking-today/01.01-networks-affect-our-lives--wcIP__5sa1o.md) |
+| e85Y71fsyyY | 01/01.07-network-trends | Cisco Webex Promo | 1:21 | **marketing** | убрать (одна фраза в 1.7.4) | не делаем: ролик снят с 1.7.5 (оператор, 2026-10-21) | [doc](01-networking-today/01.07-network-trends--e85Y71fsyyY.md) |
 | B269UlVAN40 | 02/02.02-ios-navigation | IOS CLI Primary Command Modes | 2:33 | cli-basics | код-рендер ~1:30 + сессия для симулятора (можно слить с 2.2.5) | Motion · 1:44 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5955-8941) | [doc](02-basic-switch-and-end-device-configuration/02.02-ios-navigation--B269UlVAN40.md) |
 | Z-n1tO4Xg6w | 02/02.02-ios-navigation | Navigate between IOS Modes | 3:52 | cli-basics | код-рендер ~2:30 + сессия для симулятора | **готов** · 3:11 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5822-9010) | [doc](02-basic-switch-and-end-device-configuration/02.02-ios-navigation--Z-n1tO4Xg6w.md) |
 | K_VEPe8aRUE | 02/02.03-the-command-structure | Context-Sensitive Help and Command Syntax Check | 4:02 | cli-basics | код-рендер ~2:30 + сессия для симулятора | Motion · 2:14 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5960-8941) | [doc](02-basic-switch-and-end-device-configuration/02.03-the-command-structure--K_VEPe8aRUE.md) |
@@ -55,7 +56,7 @@
 | Ud1angOlxHE | 09/09.02-arp | ARP Operation – ARP Reply | 1:45 | explainer | анимация Figma ≤ 60 с (трек 2 той же сцены) | **готов** · 0:52 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5408-8009) | [doc](09-address-resolution/09.02-arp--Ud1angOlxHE.md) |
 | 1ZB2euss3YY | 09/09.02-arp | ARP Role in Remote Communications | 3:01 | explainer | анимация Figma ≤ 60 с (трек 3) + сессия `arp -a` / `show ip arp` для симулятора | **готов** · 1:32 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5411-8587) | [doc](09-address-resolution/09.02-arp--1ZB2euss3YY.md) |
 | S0SyGKhCEV0 | 09/09.03-neighbor-discovery | IPv6 Neighbor Discovery | 6:07 | explainer | код-рендер с генер. голосом ~2:30–3:00 (или 2 анимации NS / NA) | **готов** · 1:30 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5410-7771) | [doc](09-address-resolution/09.03-neighbor-discovery--S0SyGKhCEV0.md) |
-| DNL4DPxjgNM | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 1 | 4:31 | **other** (обзор физического оборудования) | **убрать** как видео; текст + иллюстрация «имена интерфейсов по моделям» | — | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--DNL4DPxjgNM.md) |
+| DNL4DPxjgNM | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 1 | 4:31 | **other** (обзор физического оборудования) | **убрать** как видео; текст + иллюстрация «имена интерфейсов по моделям» | не делаем; текст — 10.4.2; иллюстрация — отдельной задачей (оператор, 2026-10-21) | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--DNL4DPxjgNM.md) |
 | RH_KIUdHZlE | 10/10.03-configure-the-default-gateway | Network Device Differences – Part 2 | 10:16 | **lab-demo** (по содержанию cli-basics) | код-рендер терминала ~4:00 + полная сессия трёх роутеров для симулятора | Motion · 4:03 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=6054-9033) | [doc](10-basic-router-configuration/10.03-configure-the-default-gateway--RH_KIUdHZlE.md) |
 | 7DoggTtOLN0 | 11/11.01-ipv4-address-structure | Network, Host and Broadcast Addresses | 6:22 | explainer | анимация Figma ≤ 60 с (побитовое И) / текст + иллюстрация | **готов** · 1:16 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5057-7150) | [doc](11-ipv4-addressing/11.01-ipv4-address-structure--7DoggTtOLN0.md) |
 | LKjCyGaiH4Q | 11/11.05-subnet-an-ipv4-network | The Subnet Mask | 8:09 | explainer | код-рендер ~2:30 (можно объединить с A2P7i6ebSCE) | **готов** · 1:24 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5069-7061) | [doc](11-ipv4-addressing/11.05-subnet-an-ipv4-network--LKjCyGaiH4Q.md) |
@@ -72,7 +73,7 @@
 
 **Всего:** 20 видео. **По классам:** `cli-basics` — 6, `lab-demo` — 6, `explainer` — 5, `marketing` — 2, `other` — 1.
 
-**Маркетинг → убрать (2):** `wcIP__5sa1o` (промо Cisco Networking Academy, 1.1.2 — убрать вместе с разделом) и `e85Y71fsyyY` (реклама Cisco Webex, 1.7.5 — убрать, одна фраза в 1.7.4). Пограничный случай `7E9ilk9dOOI` (установка PT через netacad.com) — не маркетинг, но половина ролика привязана к NetAcad-аккаунту, который у нас не используется; заменить пошаговым текстом со скриншотами актуального установщика.
+**Маркетинг → убрать (2):** `wcIP__5sa1o` (промо Cisco Networking Academy, 1.1.2 — убрать вместе с разделом) и `e85Y71fsyyY` (реклама Cisco Webex, 1.7.5 — убрать, одна фраза в 1.7.4). **Решено (оператор, 2026-10-21):** оба не делаем, ролики сняты с разделов; `7E9ilk9dOOI` и `uync1j2x6Ms` тоже не делаем — раздел 01.00.05 удален. Пограничный случай `7E9ilk9dOOI` (установка PT через netacad.com) — не маркетинг, но половина ролика привязана к NetAcad-аккаунту, который у нас не используется; заменить пошаговым текстом со скриншотами актуального установщика.
 
 **Самое ценное для симулятора (модуль 02 — 8 роликов, все с дословными сессиями в документах):**
 - **Z-n1tO4Xg6w (2.2.5) и B269UlVAN40 (2.2.3)** — навигация по режимам: `enable/disable`, `configure terminal`/`config t`, `exit` (включая выход из консоли по `exit` из `#`), `end`, `^Z`, `line console 0`, `line vty 0 15`, `interface vlan 1`, прямые переходы между вложенными режимами. Первый тренинг.
@@ -105,7 +106,7 @@
 
 **Всего:** 16 видео, суммарно ~1 ч 36 мин. **По классам:** `explainer` — 12, `lab-demo` — 2 (RH_KIUdHZlE, UbqcbYsPoss), `cli-basics` — 1 (dFKfyJkuSqQ), `other` — 1 (DNL4DPxjgNM, обзор физического оборудования), `marketing` — 0.
 
-**Маркетинговых видео нет.** Единственный кандидат на удаление — **DNL4DPxjgNM** (10.4.1, «Network Device Differences – Part 1»): фотографии задних панелей Cisco 4321/2951/1941 с рекомендацией NetAcad «4221 + 2960+»; для курса на симуляторе физический обзор не нужен — заменить абзацем и одной схемой о правилах именования интерфейсов (`G0/0/0` vs `G0/0`, `S0/1/0`), которые действительно нужны в CLI.
+**Маркетинговых видео нет.** **DNL4DPxjgNM** снят (оператор, 2026-10-21): видео не делаем, правила именования интерфейсов изложены текстом в 10.4.2, иллюстрация — отдельной задачей. Исходная рекомендация: единственный кандидат на удаление — **DNL4DPxjgNM** (10.4.1, «Network Device Differences – Part 1»): фотографии задних панелей Cisco 4321/2951/1941 с рекомендацией NetAcad «4221 + 2960+»; для курса на симуляторе физический обзор не нужен — заменить абзацем и одной схемой о правилах именования интерфейсов (`G0/0/0` vs `G0/0`, `S0/1/0`), которые действительно нужны в CLI.
 
 **Самое ценное для симулятора:**
 - **RH_KIUdHZlE (10.4.2)** — консольные сессии трёх реальных роутеров (ISR 4321, 2951, 1941): `show ip interface brief`, `show interfaces` (строки `media type is SX / RJ45`), `configure terminal` → `interface` → `ip address` → `no shutdown`, сообщения `%LINK-3-UPDOWN` / `%LINEPROTO-5-UPDOWN`, `ping` с 80 % → 100 % (ARP). В документе — полная дословная сессия (адреса 10.0.0.0/30 и 172.16.0.0/30) с выводами; это эталон «первая адресация точка-точка» и наглядный урок о том, что имена интерфейсов зависят от модели.
