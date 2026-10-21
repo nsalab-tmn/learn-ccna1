@@ -33,7 +33,7 @@
             "mode": "exam",
             "grader": "test-auto",
             "aligned_bloom": "apply",
-            "passes_when": "Learner scores at least 80% on the exam's 38 questions covering module 2; attempts unlimited.",
+            "passes_when": "Learner scores at least 80% on the exam's 37 questions covering module 2; attempts unlimited.",
             "calibration": "operator-judge"
         }
     },
