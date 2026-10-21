@@ -10809,6 +10809,183 @@
      "sha256": "e4384e89c49ec33a0685f6ce4bef6f932af911feebeae231611a4e8a8234d09e"
     }
    }
+  },
+  {
+   "id": "ccna1-rn2wz2o",
+   "kind": "illustration",
+   "display": {
+    "key": "13.4.5"
+   },
+   "claim": "Трассировка с ПК1 до 10.1.0.2 получает ответ только от первого перехода 192.168.1.254, дальше запросы остаются без ответа; ПК1 и ПК2 соединены через SW1, R1, последовательный канал, R2 и SW2.",
+   "figma": {
+    "nodeId": "5936:9793",
+    "page": "CCNA1 · 13 icmp"
+   },
+   "out": {
+    "path": "13-icmp/13.04-exam/assets/5.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "5.png",
+    "synced": {
+     "figmaVersion": "2412570954211210090",
+     "at": "2026-10-20T22:47:31Z",
+     "sha256": "fe1456cd6f9bf452cb736f85f1f17412305feb118a3db7341be9b5d485e67173"
+    }
+   }
+  },
+  {
+   "id": "ccna1-j2f6et2",
+   "kind": "illustration",
+   "display": {
+    "key": "17.9.2"
+   },
+   "claim": "Эхо-запросы коммутатора к 10.1.1.1 возвращаются сообщениями о недоступности (U.U.U), ни один ответ не получен.",
+   "figma": {
+    "nodeId": "5937:11332",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.09-exam/assets/2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.png",
+    "synced": {
+     "figmaVersion": "2412570954211210090",
+     "at": "2026-10-20T22:47:31Z",
+     "sha256": "acb21a6b98e7c46fea7acb3a4f2b14cab9da99cb0ec6df89deb18476b120eacc"
+    }
+   }
+  },
+  {
+   "id": "ccna1-nz2kq2h",
+   "kind": "illustration",
+   "display": {
+    "key": "17.9.3"
+   },
+   "claim": "К маршрутизатору R1 подключены две локальные сети (в одной — узел H1), к маршрутизатору R2 — сеть с узлом H3; R1 и R2 соединены последовательным каналом.",
+   "figma": {
+    "nodeId": "5937:11335",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "17-build-a-small-network/17.09-exam/assets/3.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "3.jpg",
+    "synced": {
+     "figmaVersion": "2412570954211210090",
+     "at": "2026-10-20T22:47:31Z",
+     "sha256": "edffaee9e315cb09249c233cfd04ebece29d5f01765925c928d80d84b34b9798"
+    }
+   }
+  },
+  {
+   "id": "ccna1-ftsrezd",
+   "kind": "illustration",
+   "display": {
+    "key": "18.0.3"
+   },
+   "claim": "ПК1 и ПК2 подключены к SW1, ПК3 — к SW2; коммутаторы соединены через маршрутизатор RT1 (Fa0/0 — в сторону SW1, Fa0/1 — в сторону SW2).",
+   "figma": {
+    "nodeId": "5937:11467",
+    "page": "CCNA1 · 17 build-a-small-network"
+   },
+   "out": {
+    "path": "final-exam/assets/3.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "3.png",
+    "synced": {
+     "figmaVersion": "2412570954211210090",
+     "at": "2026-10-20T22:47:31Z",
+     "sha256": "e3e7fd411615d86740773670729a5cad5ad29f9aaac7930d262e599b571c636e"
+    }
+   }
+  },
+  {
+   "id": "ccna1-uzm6f5x",
+   "ref": "ccna1-mz4efxj",
+   "kind": "illustration",
+   "display": {
+    "key": "18.0.1"
+   },
+   "claim": "Команда config t, введенная в пользовательском режиме EXEC (приглашение Switch1>), коммутатор не принимает как команду.",
+   "figma": {
+    "nodeId": "5922:9758",
+    "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
+   },
+   "out": {
+    "path": "final-exam/assets/1.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "1.png",
+    "synced": {
+     "figmaVersion": "2412570954211210090",
+     "at": "2026-10-20T22:47:31Z",
+     "sha256": "f96f6811d35174b8956729a7c4fce800c609f89782000883eb314f13c1798ce7"
+    }
+   }
+  },
+  {
+   "id": "ccna1-erlqmpj",
+   "ref": "ccna1-fimdlg3",
+   "kind": "illustration",
+   "display": {
+    "key": "18.0.4"
+   },
+   "claim": "К портам 1–4 коммутатора подключены PC4, PC3, PC2 и PC1; в таблице MAC-адресов коммутатора есть записи только для портов 1 и 3.",
+   "figma": {
+    "nodeId": "5931:10164",
+    "page": "CCNA1 · 09 address-resolution"
+   },
+   "out": {
+    "path": "final-exam/assets/4.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "4.png",
+    "synced": {
+     "figmaVersion": "2412570954211210090",
+     "at": "2026-10-20T22:47:31Z",
+     "sha256": "0be9526e2553fab3eb77fd2e2cbd03e7b574b71042bba45fb39b7b2d9e509ca2"
+    }
+   }
+  },
+  {
+   "id": "ccna1-gnr7uat",
+   "kind": "illustration",
+   "display": {
+    "key": "4.8.2"
+   },
+   "claim": "Конец кабеля UTP: четыре витые пары медных проводников без экрана в общей оболочке.",
+   "figma": {
+    "nodeId": "5935:10209",
+    "page": "CCNA1 · 04 physical-layer"
+   },
+   "out": {
+    "path": "04-physical-layer/04.08-exam/assets/2.svg",
+    "format": "svg"
+   },
+   "status": "synced",
+   "provenance": {
+    "legacy": "2.jpg",
+    "synced": {
+     "figmaVersion": "2412801164478680094",
+     "at": "2026-10-21T13:04:44Z",
+     "sha256": "b8ccf91449e9cf2f4540d90132dd34b1ddf90430377284cf5e4f956525861a3b"
+    }
+   }
   }
  ]
 }
