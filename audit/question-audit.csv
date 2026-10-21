@@ -688,6 +688,7 @@ material,questionId,bloom,rule_failed,finding,fix
 09-address-resolution/09.04-exam,q33,remember,5;6;10,Five options; «127.0.0.1» (loopback) is no learner's mistake. The shared comment restates the key. Identical stem to q04: keep one.,text
 09-address-resolution/09.04-exam,q34,remember,1;5;10,"Key «запрос ARP … приведет к переполнению всей подсети» overstates: a broadcast is flooded through the subnet, it does not «overflow» it, and 9.2.8 says the effect is brief and minimal. Five options; no comment on any wrong option.",text
 09-address-resolution/09.04-exam,q35,understand,,New item replacing q05.,none
+09-address-resolution/09.04-exam,q36,understand,,New item replacing q27.,none
 10-basic-router-configuration/10.01-configure-initial-router-settings,q01,remember,,"Recall of «Привилегированный режим EXEC — самый важный режим для защиты» (10.1.2); key true, per-option comments explain each distractor. The one allowed recall item of the lecture.",none
 10-basic-router-configuration/10.01-configure-initial-router-settings,q02,remember,3,Second recall item: the stem paraphrases step 2 of 10.1.1 («Обеспечьте безопасность привилегированного режима EXEC») and the key is the command printed under it and in 10.1.2 («enable secret netlab»). Rework into a case the learner classifies (e.g. what a given command protects).,rework
 10-basic-router-configuration/10.01-configure-initial-router-settings,q03,remember,3;6,"Third recall item: step 4 of 10.1.1 («безопасность удаленного доступа по протоколу Telnet или SSH») with its command. The stem asks for a global configuration command, which removes «copy running-config startup-config» (a privileged EXEC command, «R1#» in 10.1.2).",rework
@@ -1427,3 +1428,4 @@ final-exam,q55,understand,,New item replacing q01.,none
 final-exam,q56,understand,,New item replacing q21.,none
 final-exam,q57,understand,,New item replacing q39.,none
 final-exam,q58,remember,,New item replacing q41.,none
+final-exam,q59,analyze,,New item replacing q07.,none
