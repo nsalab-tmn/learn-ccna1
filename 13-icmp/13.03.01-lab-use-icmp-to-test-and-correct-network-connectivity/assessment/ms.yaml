@@ -140,3 +140,82 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?10\.10\.5\.1\s*$'
             match: true
+- code: PC-1
+  name: PC-1
+  subCriterions:
+  - code: PC-1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC-1.CONNECTIVITY-TESTS.CT-ALL
+      name: Connectivity Tests
+      description: 'Проверка связи: PC-1 → 10.10.5.10, PC-4 → 203.0.113.100, Server1 → 10.10.1.20, PC-2 → 2001:db8:5::20,
+        Laptop-C → 2001:db8:acad::100'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 10.10.5.10: has : bytes='
+        code: check
+        type: check
+        device: PC-1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 10.10.5.10
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 203.0.113.100: has : bytes='
+        code: check
+        type: check
+        device: PC-4
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 203.0.113.100
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 10.10.1.20: has : bytes='
+        code: check
+        type: check
+        device: Server1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 10.10.1.20
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 2001:db8:5::20: has : bytes='
+        code: check
+        type: check
+        device: PC-2
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:5::20
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 2001:db8:acad::100: has : bytes='
+        code: check
+        type: check
+        device: Laptop-C
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad::100
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15

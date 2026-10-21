@@ -43,6 +43,68 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?172\.16\.1\.62\s*$'
             match: true
+  - code: IT.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: IT.CONNECTIVITY-TESTS.CT-ALL
+      name: Connectivity Tests
+      description: 'Проверка связи: IT → 64.100.0.3, Marketing → 172.16.1.126, R-D → 2001:db8:acad::3, IT → 172.16.1.125'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 64.100.0.3: has : bytes='
+        code: check
+        type: check
+        device: IT
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 64.100.0.3
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 172.16.1.126: has : bytes='
+        code: check
+        type: check
+        device: Marketing
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 172.16.1.126
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 2001:db8:acad::3: has : bytes='
+        code: check
+        type: check
+        device: R-D
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad::3
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 172.16.1.125: has : bytes='
+        code: check
+        type: check
+        device: IT
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 172.16.1.125
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
 - code: R-D
   name: R-D
   subCriterions:

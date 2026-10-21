@@ -192,6 +192,28 @@ Criterions:
             command: show running-config | section ^interface Serial0/0/0( |$)
             expr: (?m)^ ip address \S+ 255\.255\.255\.252\s*$
             match: true
+  - code: HQ.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: HQ.CONNECTIVITY-TESTS.CT-4
+      name: 'HQ to 192.168.203.130 : 192.168.203.130 (ICMP)'
+      description: 'HQ → 192.168.203.130 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 2
+      steps:
+      - name: 'ping 192.168.203.130: some replies'
+        code: check
+        type: check
+        device: HQ
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ping 192.168.203.130 repeat 2
+            expr: Success rate is [1-9]
+            match: true
+            retries: 3
+            retry_interval: 15
 - code: HQ-1
   name: HQ-1
   subCriterions:
@@ -734,6 +756,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.97\s*$'
             match: true
+  - code: WS116.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: WS116.CONNECTIVITY-TESTS.CT-0
+      name: 'WS116 to 192.168.203.142 : 192.168.203.142 (ICMP)'
+      description: 'WS116 → 192.168.203.142 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 2
+      steps:
+      - name: 'ping -n 2 192.168.203.142: has : bytes='
+        code: check
+        type: check
+        device: WS116
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.203.142
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: WS145
   name: WS145
   subCriterions:
@@ -794,6 +839,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.1\s*$'
             match: true
+  - code: WS145.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: WS145.CONNECTIVITY-TESTS.CT-1
+      name: 'WS145 to 192.168.203.94 : 192.168.203.94 (ICMP)'
+      description: 'WS145 → 192.168.203.94 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 2
+      steps:
+      - name: 'ping -n 2 192.168.203.94: has : bytes='
+        code: check
+        type: check
+        device: WS145
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.203.94
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: WS203
   name: WS203
   subCriterions:
@@ -854,6 +922,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.129\s*$'
             match: true
+  - code: WS203.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: WS203.CONNECTIVITY-TESTS.CT-2
+      name: 'WS203 to 192.168.203.2 : 192.168.203.2 (ICMP)'
+      description: 'WS203 → 192.168.203.2 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 2
+      steps:
+      - name: 'ping -n 2 192.168.203.2: has : bytes='
+        code: check
+        type: check
+        device: WS203
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.203.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: WS234
   name: WS234
   subCriterions:
@@ -914,3 +1005,26 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.203\.65\s*$'
             match: true
+  - code: WS234.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: WS234.CONNECTIVITY-TESTS.CT-3
+      name: 'WS234 to 192.168.203.98 : 192.168.203.98 (ICMP)'
+      description: 'WS234 → 192.168.203.98 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 2
+      steps:
+      - name: 'ping -n 2 192.168.203.98: has : bytes='
+        code: check
+        type: check
+        device: WS234
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.203.98
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15

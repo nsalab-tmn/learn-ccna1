@@ -359,17 +359,16 @@ Criterions:
       - initial config-rtr
       max_mark: 1
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
         code: check
         type: check
         device: Building-1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true
     - code: BUILDING-1.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -377,17 +376,16 @@ Criterions:
       - device hardening-rtr
       max_mark: 1
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$GK3L4mY8Ynlm4SbM'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$GK3L4mY8Ynlm4SbM\s*$'
         code: check
         type: check
         device: Building-1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$GK3L4mY8Ynlm4SbM
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$GK3L4mY8Ynlm4SbM\s*$
+            match: true
     - code: BUILDING-1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — Building-1
@@ -429,17 +427,16 @@ Criterions:
       - device hardening-rtr
       max_mark: 1
       steps:
-      - name: 'show running-config: has security passwords min-length 10'
+      - name: 'show running-config: matches (?m)^security passwords min\-length 10\s*$'
         code: check
         type: check
         device: Building-1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - security passwords min-length 10
-            tags_are_present: true
+            expr: (?m)^security passwords min\-length 10\s*$
+            match: true
     - code: BUILDING-1.MISC.PWD-ENCRYPTION
       name: Service Password Encryption
       description: Включено шифрование паролей (service password-encryption)
@@ -447,17 +444,16 @@ Criterions:
       - device hardening-rtr
       max_mark: 1
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: Building-1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
 - code: HOST-1
   name: Host-1
   subCriterions:
@@ -552,6 +548,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: HOST-1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: HOST-1.CONNECTIVITY-TESTS.CT-0
+      name: 'Host-1 to 192.168.1.146 : 192.168.1.146 (ICMP)'
+      description: 'Host-1 → 192.168.1.146 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.1.146: has : bytes='
+        code: check
+        type: check
+        device: Host-1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.1.146
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: HOST-2
   name: Host-2
   subCriterions:
@@ -646,6 +665,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: HOST-2.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: HOST-2.CONNECTIVITY-TESTS.CT-1
+      name: 'Host-2 to 2001:db8:acad:b::15 : 2001:db8:acad:b::15 (ICMP)'
+      description: 'Host-2 → 2001:db8:acad:b::15 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:acad:b::15: has : bytes='
+        code: check
+        type: check
+        device: Host-2
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad:b::15
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: HOST-3
   name: Host-3
   subCriterions:
@@ -740,6 +782,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: HOST-3.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: HOST-3.CONNECTIVITY-TESTS.CT-2
+      name: 'Host-3 to 192.168.1.157 : 192.168.1.157 (ICMP)'
+      description: 'Host-3 → 192.168.1.157 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.1.157: has : bytes='
+        code: check
+        type: check
+        device: Host-3
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.1.157
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: SERVER
   name: Server
   subCriterions:
@@ -834,6 +899,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: SERVER.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: SERVER.CONNECTIVITY-TESTS.CT-3
+      name: 'Server to 2001:db8:acad:a::ff : 2001:db8:acad:a::ff (ICMP)'
+      description: 'Server → 2001:db8:acad:a::ff (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:acad:a::ff: has : bytes='
+        code: check
+        type: check
+        device: Server
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad:a::ff
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: SECOND-FLOOR-SWITCH
   name: Second-Floor-Switch
   subCriterions:

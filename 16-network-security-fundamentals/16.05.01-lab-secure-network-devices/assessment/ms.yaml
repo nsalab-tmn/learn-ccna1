@@ -591,3 +591,29 @@ Criterions:
             command: show running-config
             expr: (?m)^ip domain-name security\.com\s*$
             match: true
+- code: LAPTOP
+  name: Laptop
+  subCriterions:
+  - code: LAPTOP.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: LAPTOP.CONNECTIVITY-TESTS.CT-0
+      name: 'Laptop to 192.168.1.254 : 192.168.1.254 (ICMP)'
+      description: 'Laptop → 192.168.1.254 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 6
+      steps:
+      - name: 'ping -n 2 192.168.1.254: has : bytes='
+        code: check
+        type: check
+        device: Laptop
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.1.254
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15

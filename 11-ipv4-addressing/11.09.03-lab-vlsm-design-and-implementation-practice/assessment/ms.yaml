@@ -88,6 +88,28 @@ Criterions:
             command: show running-config
             expr: (?m)^ip default-gateway 10\.11\.48\.113\s*$
             match: true
+  - code: ASW-3.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: ASW-3.CONNECTIVITY-TESTS.CT-3
+      name: 'ASW-3 to 10.11.48.65 : 10.11.48.65 (ICMP)'
+      description: 'ASW-3 → 10.11.48.65 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping 10.11.48.65: some replies'
+        code: check
+        type: check
+        device: ASW-3
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ping 10.11.48.65 repeat 2
+            expr: Success rate is [1-9]
+            match: true
+            retries: 3
+            retry_interval: 15
 - code: BUILDING1
   name: Building1
   subCriterions:
@@ -218,6 +240,28 @@ Criterions:
             command: show running-config | section ^interface GigabitEthernet0/1( |$)
             expr: (?m)^ ip address \S+ 255\.255\.255\.224\s*$
             match: true
+  - code: BUILDING1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: BUILDING1.CONNECTIVITY-TESTS.CT-4
+      name: 'Building1 to 10.11.48.62 : 10.11.48.62 (ICMP)'
+      description: 'Building1 → 10.11.48.62 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping 10.11.48.62: some replies'
+        code: check
+        type: check
+        device: Building1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ping 10.11.48.62 repeat 2
+            expr: Success rate is [1-9]
+            match: true
+            retries: 3
+            retry_interval: 15
 - code: HOST-D
   name: Host-D
   subCriterions:
@@ -278,3 +322,66 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?10\.11\.48\.1\s*$'
             match: true
+  - code: HOST-D.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: HOST-D.CONNECTIVITY-TESTS.CT-0
+      name: 'Host-D to 10.11.48.97 : 10.11.48.97 (ICMP)'
+      description: 'Host-D → 10.11.48.97 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 10.11.48.97: has : bytes='
+        code: check
+        type: check
+        device: Host-D
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 10.11.48.97
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: HOST-D.CONNECTIVITY-TESTS.CT-1
+      name: 'Host-D to 10.11.48.114 : 10.11.48.114 (ICMP)'
+      description: 'Host-D → 10.11.48.114 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 10.11.48.114: has : bytes='
+        code: check
+        type: check
+        device: Host-D
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 10.11.48.114
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
+    - code: HOST-D.CONNECTIVITY-TESTS.CT-2
+      name: 'Host-D to 10.11.48.110 : 10.11.48.110 (ICMP)'
+      description: 'Host-D → 10.11.48.110 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 10.11.48.110: has : bytes='
+        code: check
+        type: check
+        device: Host-D
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 10.11.48.110
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5

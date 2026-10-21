@@ -60,6 +60,49 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?172\.16\.1\.1\s*$'
             match: true
+  - code: PCA.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PCA.CONNECTIVITY-TESTS.CT-0
+      name: 'PCA to 172.16.1.1 : 172.16.1.1 (ICMP)'
+      description: 'PCA → 172.16.1.1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 7
+      steps:
+      - name: 'ping -n 2 172.16.1.1: has : bytes='
+        code: check
+        type: check
+        device: PCA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 172.16.1.1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: PCA.CONNECTIVITY-TESTS.CT-1
+      name: 'PCA to 172.16.1.2 : 172.16.1.2 (ICMP)'
+      description: 'PCA → 172.16.1.2 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 7
+      steps:
+      - name: 'ping -n 2 172.16.1.2: has : bytes='
+        code: check
+        type: check
+        device: PCA
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 172.16.1.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
 - code: RTA
   name: RTA
   subCriterions:
@@ -90,17 +133,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 5
       steps:
-      - name: 'show running-config: has enable secret 5 '
+      - name: 'show running-config: matches (?m)^enable secret 5 \S'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - 'enable secret 5 '
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \S
+            match: true
     - code: RTA.MISC.PWD-ENCRYPTION
       name: Service Password Encryption
       description: Включено шифрование паролей (service password-encryption)
@@ -108,17 +150,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 5
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: RTA.MISC.PWD-MIN-LENGTH
       name: Security Password Min-Length
       description: Минимальная длина пароля — 10 символов
@@ -126,17 +167,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has security passwords min-length 10'
+      - name: 'show running-config: matches (?m)^security passwords min\-length 10\s*$'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - security passwords min-length 10
-            tags_are_present: true
+            expr: (?m)^security passwords min\-length 10\s*$
+            match: true
     - code: RTA.MISC.DOMAIN-NAME
       name: IP Domain Name
       description: Доменное имя CCNA.com
@@ -161,17 +201,16 @@ Criterions:
       - Configuration Management
       max_mark: 5
       steps:
-      - name: 'show startup-config: has hostname RTA'
+      - name: 'show startup-config: matches (?m)^ ?hostname RTA\s*$'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname RTA
-            tags_are_present: true
+            expr: (?m)^ ?hostname RTA\s*$
+            match: true
   - code: RTA.DNS
     name: DNS
     aspects:
@@ -182,17 +221,16 @@ Criterions:
       - Configuration Management
       max_mark: 1
       steps:
-      - name: 'show running-config: has no ip domain-lookup'
+      - name: 'show running-config: matches (?m)^no ip domain\-lookup\s*$'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - no ip domain-lookup
-            tags_are_present: true
+            expr: (?m)^no ip domain\-lookup\s*$
+            match: true
   - code: RTA.PORTS
     name: Ports
     aspects:
@@ -309,17 +347,16 @@ Criterions:
       - Device Hardening Configuration
       max_mark: 4
       steps:
-      - name: 'show running-config: has login block-for 180 attempts 4 within 120'
+      - name: 'show running-config: matches (?m)^login block\-for 180 attempts 4 within 120\s*$'
         code: check
         type: check
         device: RTA
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - login block-for 180 attempts 4 within 120
-            tags_are_present: true
+            expr: (?m)^login block\-for 180 attempts 4 within 120\s*$
+            match: true
   - code: RTA.VTY
     name: VTY Lines
     aspects:
@@ -501,6 +538,28 @@ Criterions:
             command: show startup-config | section ^line vty (0 4|1 4|2 4|3 4|4)$
             expr: (?m)^ exec-timeout 6 0\s*$
             match: true
+  - code: RTA.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: RTA.CONNECTIVITY-TESTS.CT-2
+      name: 'RTA to 172.16.1.10 : 172.16.1.10 (ICMP)'
+      description: 'RTA → 172.16.1.10 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 7
+      steps:
+      - name: 'ping 172.16.1.10: some replies'
+        code: check
+        type: check
+        device: RTA
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ping 172.16.1.10 repeat 2
+            expr: Success rate is [1-9]
+            match: true
+            retries: 3
+            retry_interval: 15
 - code: SW1
   name: SW1
   subCriterions:
@@ -531,17 +590,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 5
       steps:
-      - name: 'show running-config: has enable secret 5 '
+      - name: 'show running-config: matches (?m)^enable secret 5 \S'
         code: check
         type: check
         device: SW1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - 'enable secret 5 '
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \S
+            match: true
     - code: SW1.MISC.PWD-ENCRYPTION
       name: Service Password Encryption
       description: Включено шифрование паролей (service password-encryption)
@@ -549,17 +607,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 5
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: SW1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: SW1.MISC.DOMAIN-NAME
       name: IP Domain Name
       description: Доменное имя CCNA.com
@@ -584,17 +641,16 @@ Criterions:
       - Device Hardening Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has no ip domain-lookup'
+      - name: 'show running-config: matches (?m)^no ip domain\-lookup\s*$'
         code: check
         type: check
         device: SW1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - no ip domain-lookup
-            tags_are_present: true
+            expr: (?m)^no ip domain\-lookup\s*$
+            match: true
     - code: SW1.MISC.DEFAULT-GW
       name: Default Gateway
       description: Шлюз по умолчанию 172.16.1.1
@@ -619,17 +675,16 @@ Criterions:
       - Configuration Management
       max_mark: 5
       steps:
-      - name: 'show startup-config: has hostname SW1'
+      - name: 'show startup-config: matches (?m)^ ?hostname SW1\s*$'
         code: check
         type: check
         device: SW1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname SW1
-            tags_are_present: true
+            expr: (?m)^ ?hostname SW1\s*$
+            match: true
   - code: SW1.PORTS
     name: Ports
     aspects:

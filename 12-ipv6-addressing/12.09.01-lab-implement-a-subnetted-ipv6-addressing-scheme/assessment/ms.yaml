@@ -23,6 +23,49 @@ Criterions:
             command: ipv6config /all
             expr: '(?m)IPv6 Auto Config[. ]*: Yes\s*$'
             match: true
+  - code: PC1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC1.CONNECTIVITY-TESTS.CT-0
+      name: 'PC1 to 2001:db8:acad:c9::1 : 2001:db8:acad:c9::1 (ICMP)'
+      description: 'PC1 → 2001:db8:acad:c9::1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:acad:c9::1: has : bytes='
+        code: check
+        type: check
+        device: PC1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad:c9::1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: PC1.CONNECTIVITY-TESTS.CT-1
+      name: 'PC1 to 2001:db8:acad:cb::1 : 2001:db8:acad:cb::1 (ICMP)'
+      description: 'PC1 → 2001:db8:acad:cb::1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:acad:cb::1: has : bytes='
+        code: check
+        type: check
+        device: PC1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad:cb::1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
 - code: PC2
   name: PC2
   subCriterions:
@@ -46,6 +89,29 @@ Criterions:
             command: ipv6config /all
             expr: '(?m)IPv6 Auto Config[. ]*: Yes\s*$'
             match: true
+  - code: PC2.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC2.CONNECTIVITY-TESTS.CT-3
+      name: 'PC2 to fe80::1 : fe80::1 (ICMP)'
+      description: 'PC2 → fe80::1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 fe80::1: has : bytes='
+        code: check
+        type: check
+        device: PC2
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 fe80::1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: PC3
   name: PC3
   subCriterions:
@@ -92,6 +158,29 @@ Criterions:
             command: ipv6config /all
             expr: '(?m)IPv6 Auto Config[. ]*: Yes\s*$'
             match: true
+  - code: PC4.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC4.CONNECTIVITY-TESTS.CT-2
+      name: 'PC4 to 2001:db8:acad:c8::1 : 2001:db8:acad:c8::1 (ICMP)'
+      description: 'PC4 → 2001:db8:acad:c8::1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:acad:c8::1: has : bytes='
+        code: check
+        type: check
+        device: PC4
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:acad:c8::1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: R1
   name: R1
   subCriterions:
