@@ -577,7 +577,7 @@
         {
             "questionId": "q20",
             "bloom": "understand",
-            "question": "Какая функция команды ``tracert`` отличает её от команды ``ping`` при использовании на рабочей станции?",
+            "question": "Какая функция команды ``tracert`` отличает ее от команды ``ping`` при использовании на рабочей станции?",
             "answerType": "singleChoice",
             "answers": [
                 {
