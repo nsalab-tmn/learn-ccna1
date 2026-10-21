@@ -1,8 +1,4 @@
 material,questionId,bloom,rule_failed,finding,fix
-01-networking-today/01.01-networks-affect-our-lives,q01,remember,,"Recall of the cloud sentence (1.1.3); key, distractors and comments pass.",none
-01-networking-today/01.01-networks-affect-our-lives,q02,understand,8,Asks for the cause (instant communication). The key is conspicuously the longest option; shorten it.,text
-01-networking-today/01.01-networks-affect-our-lives,q03,remember,3,"Second pure-recall item of the lecture (the list «национальные границы, географические расстояния» is copied from 1.1.3); rule 3 allows one. Rework into a case the learner classifies.",rework
-01-networking-today/01.01-networks-affect-our-lives,q04,understand,,New item replacing q03.,none
 01-networking-today/01.02-network-components,q01,remember,6;10,"«Сети» is not a device class, so no learner of the lecture picks it. One shared comment repeats the key and does not say why «Серверы» (a kind of host, not all hosts) or «Промежуточные устройства» (they forward, they do not originate) are wrong.",text
 01-networking-today/01.02-network-components,q02,remember,3;10,"Pure recall of the encoding list (1.2.5), second recall item. Comments only restate the key; they should say copper carries electrical pulses and wireless modulated radio frequencies.",rework
 01-networking-today/01.02-network-components,q03,remember,3;10,"Third recall item. Routers and switches are named as intermediary devices only in the paragraph that describes figure 1.2.4 (README line 125), which kb#403 may rewrite; the fact must stay in the prose. The shared comment does not say «Узлы» and «Серверы» are end devices. Rework into a classification of a device not listed in the text.",rework
