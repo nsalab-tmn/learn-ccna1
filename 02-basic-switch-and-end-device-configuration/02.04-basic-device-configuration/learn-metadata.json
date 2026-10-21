@@ -38,6 +38,7 @@
     "questions": [
         {
             "questionId": "q01",
+            "bloom": "remember",
             "question": "Какая команда используется, чтобы назначить имя «Sw-Floor-2» коммутатору?",
             "answerType": "singleChoice",
             "answers": [
@@ -50,133 +51,168 @@
                     "answerId": "q01-a2",
                     "answer": "host name Sw-Floor-2",
                     "correct": false,
-                    "comment": "Командой глобальной конфигурации для установки имени узла на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
+                    "comment": "Имя устройства задает команда hostname — одно слово, за которым через пробел следует имя: hostname Sw-Floor-2. Запись host name Sw-Floor-2 имя не задаст."
                 },
                 {
                     "answerId": "q01-a3",
                     "answer": "name Sw-Floor-2",
                     "correct": false,
-                    "comment": "Командой глобальной конфигурации для установки имени узла на устройстве является hostname. То есть, в этом примере полная команда Switch(config)# hostname Sw-Floor-2"
+                    "comment": "Имя устройства задает не name, а команда глобальной конфигурации hostname, например hostname Sw-Floor-2."
                 }
             ]
         },
         {
-            "questionId": "q02",
-            "question": "Как обеспечить безопасный доступ к привилегированному режиму EXEC на коммутаторе?",
+            "questionId": "q06",
+            "bloom": "understand",
+            "question": "Администратор ввел на коммутаторе команду enable secret netlab. Что изменится для пользователя, который подключится к консоли?",
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answerId": "q02-a1",
-                    "answer": "enable netlab",
-                    "correct": false,
-                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                    "answerId": "q06-a1",
+                    "answer": "Команда enable запросит пароль netlab",
+                    "correct": true
                 },
                 {
-                    "answerId": "q02-a2",
-                    "answer": "secret netlab",
+                    "answerId": "q06-a2",
+                    "answer": "Пароль netlab потребуется уже при подключении к консоли",
                     "correct": false,
-                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                    "comment": "Пароль при подключении к консоли задают командами password и login в режиме настройки линии консоли. enable secret защищает переход в привилегированный режим EXEC."
                 },
                 {
-                    "answerId": "q02-a3",
+                    "answerId": "q06-a3",
+                    "answer": "Все пароли в конфигурации будут зашифрованы",
+                    "correct": false,
+                    "comment": "Все пароли простого текста шифрует команда service password-encryption. enable secret задает пароль, который запрашивает команда enable при переходе в привилегированный режим EXEC."
+                },
+                {
+                    "answerId": "q06-a4",
+                    "answer": "При подключении появится баннер с текстом netlab",
+                    "correct": false,
+                    "comment": "Баннер задают командой banner motd с разделителями. enable secret задает пароль привилегированного режима EXEC: его запросит команда enable."
+                }
+            ]
+        },
+        {
+            "questionId": "q07",
+            "bloom": "understand",
+            "question": "Администратор задал пароль на линии консоли коммутатора командой password netlab, но любой, кто подключается к консоли, по-прежнему входит без пароля. Какую команду он пропустил?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answerId": "q07-a1",
+                    "answer": "login",
+                    "correct": true
+                },
+                {
+                    "answerId": "q07-a2",
                     "answer": "enable secret netlab",
-                    "correct": true
+                    "correct": false,
+                    "comment": "enable secret защищает переход в привилегированный режим EXEC: пароль запрашивает команда enable, а не подключение к консоли. Проверку пароля на линии включает команда login."
                 },
                 {
-                    "answerId": "q02-a4",
+                    "answerId": "q07-a3",
                     "answer": "service password-encryption",
                     "correct": false,
-                    "comment": "Защита доступа к привилегированному режиму EXEC на коммутаторе выполняется командой enable secret, за которой следует пароль. В этом примере команда Switch(config)# enable secret netlab"
+                    "comment": "Эта команда только шифрует пароли в файле конфигурации, но не включает их проверку. Проверку пароля на линии включает команда login."
+                },
+                {
+                    "answerId": "q07-a4",
+                    "answer": "banner motd #Authorized Access Only#",
+                    "correct": false,
+                    "comment": "Баннер лишь предупреждает, что доступ разрешен только авторизованным пользователям, но пароль не запрашивает. Проверку пароля на линии включает команда login."
                 }
             ]
         },
         {
-            "questionId": "q03",
-            "question": "Какая команда включает аутентификацию по паролю для доступа пользователя в режиме EXEC на коммутаторе?",
+            "questionId": "q08",
+            "bloom": "understand",
+            "question": "На коммутаторе заданы пароли линий консоли и VTY, и в выводе show running-config они видны простым текстом. Администратор вводит service password-encryption. Что изменится?",
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answerId": "q03-a1",
-                    "answer": "enable secret",
-                    "correct": false,
-                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
-                },
-                {
-                    "answerId": "q03-a2",
-                    "answer": "login",
+                    "answerId": "q08-a1",
+                    "answer": "Пароли в конфигурации станут зашифрованными",
                     "correct": true
                 },
                 {
-                    "answerId": "q03-a3",
-                    "answer": "secret",
+                    "answerId": "q08-a2",
+                    "answer": "Пароли будут зашифрованы и при передаче по сети",
                     "correct": false,
-                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
+                    "comment": "Шифрование применяется только к паролям в файле конфигурации, а не к паролям, которые отправлены по сети: Telnet по-прежнему передает их простым текстом."
                 },
                 {
-                    "answerId": "q03-a4",
-                    "answer": "service password-encryption",
+                    "answerId": "q08-a3",
+                    "answer": "Команда enable начнет запрашивать пароль",
                     "correct": false,
-                    "comment": "Доступ пользователя в режиме EXEC через консольный порт разрешается с помощью команды login, введенной в режиме настройки линии. Например: Switch(config-line)# login"
+                    "comment": "Пароль привилегированного режима EXEC задает команда enable secret. service password-encryption только шифрует пароли, уже записанные в конфигурацию."
+                },
+                {
+                    "answerId": "q08-a4",
+                    "answer": "Консоль начнет запрашивать пароль при подключении",
+                    "correct": false,
+                    "comment": "Проверку пароля на линии включает команда login. service password-encryption доступ не меняет, а только шифрует пароли в файле конфигурации."
                 }
             ]
         },
         {
-            "questionId": "q04",
-            "question": "Какая команда шифрует все незашифрованные пароли доступа на коммутаторе?",
+            "questionId": "q09",
+            "bloom": "understand",
+            "question": "Руководство требует, чтобы каждый, кто подключается к коммутаторам компании, видел предупреждение: доступ разрешен только авторизованным пользователям. Что нужно настроить на коммутаторах?",
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answerId": "q04-a1",
-                    "answer": "enable secret",
-                    "correct": false,
-                    "comment": "Команда service password-encryption, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли"
-                },
-                {
-                    "answerId": "q04-a2",
-                    "answer": "login",
-                    "correct": false,
-                    "comment": "Команда service password-encryption, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли"
-                },
-                {
-                    "answerId": "q04-a3",
-                    "answer": "secret",
-                    "correct": false,
-                    "comment": "Команда service password-encryption, введенная в режиме глобальной конфигурации, зашифрует все незашифрованные пароли"
-                },
-                {
-                    "answerId": "q04-a4",
-                    "answer": "service password-encryption",
+                    "answerId": "q09-a1",
+                    "answer": "Баннерное сообщение дня командой banner motd",
                     "correct": true
+                },
+                {
+                    "answerId": "q09-a2",
+                    "answer": "Пароль привилегированного режима командой enable secret",
+                    "correct": false,
+                    "comment": "enable secret защищает паролем привилегированный режим EXEC, но предупреждения не показывает. Сообщение для всех, кто подключается к устройству, задают баннером: banner motd."
+                },
+                {
+                    "answerId": "q09-a3",
+                    "answer": "Проверку пароля на линиях командой login",
+                    "correct": false,
+                    "comment": "login включает проверку пароля на линии, но предупреждения не показывает. Сообщение для всех, кто подключается к устройству, задают баннером: banner motd."
+                },
+                {
+                    "answerId": "q09-a4",
+                    "answer": "Шифрование паролей командой service password-encryption",
+                    "correct": false,
+                    "comment": "Эта команда шифрует пароли в файле конфигурации и ничего не показывает пользователям. Предупреждение при подключении задают баннером: banner motd."
                 }
             ]
         },
         {
-            "questionId": "q05",
-            "question": "Какая команда предназначена для настройки баннера, который будет отображаться при подключении к коммутатору?",
+            "questionId": "q10",
+            "bloom": "understand",
+            "question": "Администратор выбирает пароль привилегированного режима EXEC для коммутатора в рабочей сети. Какой из паролей лучше всего соответствует правилам выбора надежных паролей?",
             "answerType": "singleChoice",
             "answers": [
                 {
-                    "answerId": "q05-a1",
-                    "answer": "banner $ Keep out $",
-                    "correct": false,
-                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору: Switch(config)# banner motd $ Keep out $"
-                },
-                {
-                    "answerId": "q05-a2",
-                    "answer": "banner motd $ Keep out $",
+                    "answerId": "q10-a1",
+                    "answer": "Ld4!wq8#Zt2m",
                     "correct": true
                 },
                 {
-                    "answerId": "q05-a3",
-                    "answer": "display $ Keep out $",
+                    "answerId": "q10-a2",
+                    "answer": "netlab",
                     "correct": false,
-                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору: Switch(config)# banner motd $ Keep out $"
+                    "comment": "Короткий простой пароль легко подобрать: netlab используют только в лабораторных работах для удобства. Надежный пароль длиннее 8 символов и сочетает буквы разного регистра, цифры и специальные символы."
                 },
                 {
-                    "answerId": "q05-a4",
-                    "answer": "login banner $ Keep out $",
+                    "answerId": "q10-a3",
+                    "answer": "12345678",
                     "correct": false,
-                    "comment": "Команда для установки баннера с надписью «Keep out», который будет отображаться при подключении к коммутатору: Switch(config)# banner motd $ Keep out $"
+                    "comment": "В этом пароле всего 8 символов, и это одни цифры подряд. Надежный пароль длиннее 8 символов и сочетает буквы разного регистра, цифры и специальные символы."
+                },
+                {
+                    "answerId": "q10-a4",
+                    "answer": "Administrator",
+                    "correct": false,
+                    "comment": "Пароль длиннее 8 символов, но это распространенное слово, которое легко подобрать, и в нем нет цифр и специальных символов. Надежный пароль сочетает буквы разного регистра, цифры и специальные символы."
                 }
             ]
         }
