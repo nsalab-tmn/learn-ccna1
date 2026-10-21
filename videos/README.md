@@ -66,7 +66,7 @@
 | UbqcbYsPoss | 14/14.05-tcp-communication-process | TCP 3-Way Handshake (Wireshark) | 6:55 | **lab-demo** | код-рендер ~3:00 (синтетический Wireshark) + сценарий захвата для симулятора | — | [doc](14-transport-layer/14.05-tcp-communication-process--UbqcbYsPoss.md) |
 | tz7eawYRHf0 | 14/14.06-reliability-and-flow-control | TCP Reliability – Sequence Numbers and Acknowledgements | 4:06 | explainer | анимация Figma ≤ 60 с / текст + исправленная иллюстрация | **готов** · 1:16 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5126-7298) | [doc](14-transport-layer/14.06-reliability-and-flow-control--tz7eawYRHf0.md) |
 | 3AzR-82OI7Q | 14/14.06-reliability-and-flow-control | TCP Reliability – Data Loss and Retransmission | 3:24 | explainer | анимация Figma ≤ 60 с (+ опц. трек SACK) | **готов** · 1:34 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=5133-7459) | [doc](14-transport-layer/14.06-reliability-and-flow-control--3AzR-82OI7Q.md) |
-| dFKfyJkuSqQ | 17/17.05-host-and-ios-commands | The Show Version Command | 5:37 | **cli-basics** | код-рендер терминала ~3:00 + эталонный вывод `show version` для симулятора | — | [doc](17-build-a-small-network/17.05-host-and-ios-commands--dFKfyJkuSqQ.md) |
+| dFKfyJkuSqQ | 17/17.05-host-and-ios-commands | The Show Version Command | 5:37 | **cli-basics** | код-рендер терминала ~3:00 + эталонный вывод `show version` для симулятора | Motion · 2:06 · [Figma](https://www.figma.com/design/3FtCg22qFubpLBPOetQU03/CCNA-Design?node-id=6060-8812) | [doc](17-build-a-small-network/17.05-host-and-ios-commands--dFKfyJkuSqQ.md) |
 
 ## Сводка — модули 01, 02, 03, 05, 07, 08
 
