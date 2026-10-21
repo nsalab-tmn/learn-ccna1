@@ -1423,3 +1423,7 @@ final-exam,q51,remember,1;5;10,"Keys true (16.3.3; 1.8.2). Distractor «удал
 final-exam,q52,apply,2;10,"Key true (12.5.1: «ipv6 unicast-routing» is a global command, which show running-config displays, 17.5.5). «show ip nat translations» is not taught in the course. No wrong option has a comment.",text
 final-exam,q53,apply,2;5;10,Keys true (15.4.4; 17.7.5; ping resolves the name first). Five options; «nbtstat» is taught nowhere and «net ya.ru» is no valid command. The shared comment explains ping and nslookup but not the three wrong commands.,text
 final-exam,q54,understand,,Key true (17.1.4: a second provider as the backup connection). The combined comment explains each distractor. Passes.,none
+final-exam,q55,understand,,New item replacing q01.,none
+final-exam,q56,understand,,New item replacing q21.,none
+final-exam,q57,understand,,New item replacing q39.,none
+final-exam,q58,remember,,New item replacing q41.,none
