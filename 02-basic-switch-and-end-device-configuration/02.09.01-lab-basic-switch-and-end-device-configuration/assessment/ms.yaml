@@ -118,17 +118,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 2
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true
     - code: S1.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -136,17 +135,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 2
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$WmhDCwgvAVWR28qR
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$
+            match: true
     - code: S1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S1
@@ -171,17 +169,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: S1.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
@@ -189,18 +186,26 @@ Criterions:
       - Configuration Management
       max_mark: 2
       steps:
-      - name: 'show startup-config: has hostname S1, ip address 192.168.1.1 255.255.255.0'
+      - name: 'show startup-config: matches (?m)^ ?hostname S1\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname S1
-            - ip address 192.168.1.1 255.255.255.0
-            tags_are_present: true
+            expr: (?m)^ ?hostname S1\s*$
+            match: true
+      - name: 'show startup-config: matches (?m)^ ?ip address 192\.168\.1\.1 255\.255\.255\.0\s*$'
+        code: check
+        type: check
+        device: S1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: (?m)^ ?ip address 192\.168\.1\.1 255\.255\.255\.0\s*$
+            match: true
 - code: S2
   name: S2
   subCriterions:
@@ -319,17 +324,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 2
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true
     - code: S2.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -337,17 +341,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 2
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$WmhDCwgvAVWR28qR
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$
+            match: true
     - code: S2.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S2
@@ -372,17 +375,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: S2.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
@@ -390,18 +392,26 @@ Criterions:
       - Configuration Management
       max_mark: 2
       steps:
-      - name: 'show startup-config: has hostname S2, ip address 192.168.1.2 255.255.255.0'
+      - name: 'show startup-config: matches (?m)^ ?hostname S2\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname S2
-            - ip address 192.168.1.2 255.255.255.0
-            tags_are_present: true
+            expr: (?m)^ ?hostname S2\s*$
+            match: true
+      - name: 'show startup-config: matches (?m)^ ?ip address 192\.168\.1\.2 255\.255\.255\.0\s*$'
+        code: check
+        type: check
+        device: S2
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: (?m)^ ?ip address 192\.168\.1\.2 255\.255\.255\.0\s*$
+            match: true
 - code: PC-A
   name: PC-A
   subCriterions:
@@ -442,6 +452,49 @@ Criterions:
             command: ipconfig
             expr: '(?m)Subnet Mask[. ]*: 255\.255\.255\.0\s*$'
             match: true
+  - code: PC-A.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC-A.CONNECTIVITY-TESTS.CT-0
+      name: 'PC-A to 192.168.1.11 : 192.168.1.11 (ICMP)'
+      description: 'PC-A → 192.168.1.11 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 3
+      steps:
+      - name: 'ping -n 2 192.168.1.11: has : bytes='
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.1.11
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: PC-A.CONNECTIVITY-TESTS.CT-1
+      name: 'PC-A to 192.168.1.1 : 192.168.1.1 (ICMP)'
+      description: 'PC-A → 192.168.1.1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 3
+      steps:
+      - name: 'ping -n 2 192.168.1.1: has : bytes='
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.1.1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
 - code: PC-B
   name: PC-B
   subCriterions:
@@ -482,3 +535,26 @@ Criterions:
             command: ipconfig
             expr: '(?m)Subnet Mask[. ]*: 255\.255\.255\.0\s*$'
             match: true
+  - code: PC-B.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC-B.CONNECTIVITY-TESTS.CT-2
+      name: 'PC-B to 192.168.1.2 : 192.168.1.2 (ICMP)'
+      description: 'PC-B → 192.168.1.2 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 3
+      steps:
+      - name: 'ping -n 2 192.168.1.2: has : bytes='
+        code: check
+        type: check
+        device: PC-B
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.1.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15

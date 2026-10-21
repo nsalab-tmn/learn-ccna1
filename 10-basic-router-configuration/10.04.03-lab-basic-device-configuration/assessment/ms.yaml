@@ -152,17 +152,16 @@ Criterions:
       - Basic Configuration
       max_mark: 2
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
         code: check
         type: check
         device: Class-B
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true
     - code: CLASS-B.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -170,17 +169,16 @@ Criterions:
       - Basic Configuration
       max_mark: 2
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$'
         code: check
         type: check
         device: Class-B
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$WmhDCwgvAVWR28qR
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$
+            match: true
     - code: CLASS-B.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — Class-B
@@ -205,17 +203,16 @@ Criterions:
       - Other
       max_mark: 1
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: Class-B
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: CLASS-B.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
@@ -223,17 +220,16 @@ Criterions:
       - Backup Configs
       max_mark: 2
       steps:
-      - name: 'show startup-config: has hostname Class-B'
+      - name: 'show startup-config: matches (?m)^ ?hostname Class\-B\s*$'
         code: check
         type: check
         device: Class-B
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname Class-B
-            tags_are_present: true
+            expr: (?m)^ ?hostname Class\-B\s*$
+            match: true
 - code: COLLEGE
   name: College
   subCriterions:
@@ -589,17 +585,16 @@ Criterions:
       - Initial Router Configuration
       max_mark: 3
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
         code: check
         type: check
         device: College
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true
     - code: COLLEGE.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -607,17 +602,16 @@ Criterions:
       - Initial Router Configuration
       max_mark: 3
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$'
         code: check
         type: check
         device: College
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$WmhDCwgvAVWR28qR
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$
+            match: true
     - code: COLLEGE.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — College
@@ -642,17 +636,16 @@ Criterions:
       - Initial Router Configuration
       max_mark: 3
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: College
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: COLLEGE.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
@@ -660,18 +653,26 @@ Criterions:
       - Initial Router Configuration
       max_mark: 3
       steps:
-      - name: 'show startup-config: has hostname College, ip address 172.14.5.1 255.255.255.0'
+      - name: 'show startup-config: matches (?m)^ ?hostname College\s*$'
         code: check
         type: check
         device: College
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname College
-            - ip address 172.14.5.1 255.255.255.0
-            tags_are_present: true
+            expr: (?m)^ ?hostname College\s*$
+            match: true
+      - name: 'show startup-config: matches (?m)^ ?ip address 172\.14\.5\.1 255\.255\.255\.0\s*$'
+        code: check
+        type: check
+        device: College
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: (?m)^ ?ip address 172\.14\.5\.1 255\.255\.255\.0\s*$
+            match: true
 - code: STUDENT-1
   name: Student-1
   subCriterions:
@@ -712,6 +713,49 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: STUDENT-1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: STUDENT-1.CONNECTIVITY-TESTS.CT-0
+      name: 'Student-1 to 172.14.10.11 : 172.14.10.11 (ICMP)'
+      description: 'Student-1 → 172.14.10.11 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 4
+      steps:
+      - name: 'ping -n 2 172.14.10.11: has : bytes='
+        code: check
+        type: check
+        device: Student-1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 172.14.10.11
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: STUDENT-1.CONNECTIVITY-TESTS.CT-1
+      name: 'Student-1 to 2001:db8:b::11 : 2001:db8:b::11 (ICMP)'
+      description: 'Student-1 → 2001:db8:b::11 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 4
+      steps:
+      - name: 'ping -n 2 2001:db8:b::11: has : bytes='
+        code: check
+        type: check
+        device: Student-1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:b::11
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
 - code: STUDENT-2
   name: Student-2
   subCriterions:
@@ -792,6 +836,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: STUDENT-3.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: STUDENT-3.CONNECTIVITY-TESTS.CT-3
+      name: 'Student-3 to 172.14.10.2 : 172.14.10.2 (ICMP)'
+      description: 'Student-3 → 172.14.10.2 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 4
+      steps:
+      - name: 'ping -n 2 172.14.10.2: has : bytes='
+        code: check
+        type: check
+        device: Student-3
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 172.14.10.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: STUDENT-4
   name: Student-4
   subCriterions:
@@ -852,3 +919,26 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: STUDENT-4.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: STUDENT-4.CONNECTIVITY-TESTS.CT-2
+      name: 'Student-4 to 2001:db8:a::10 : 2001:db8:a::10 (ICMP)'
+      description: 'Student-4 → 2001:db8:a::10 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 4
+      steps:
+      - name: 'ping -n 2 2001:db8:a::10: has : bytes='
+        code: check
+        type: check
+        device: Student-4
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:a::10
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15

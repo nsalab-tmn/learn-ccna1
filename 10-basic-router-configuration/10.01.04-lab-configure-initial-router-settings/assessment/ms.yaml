@@ -50,17 +50,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 8
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
         code: check
         type: check
         device: R1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true
     - code: R1.MISC.ENABLE-PASSWORD
       name: Enable Password
       description: Пароль привилегированного режима задан (enable password)
@@ -85,17 +84,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 8
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$aaFgycF7RyVFzB8m'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$aaFgycF7RyVFzB8m\s*$'
         code: check
         type: check
         device: R1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$aaFgycF7RyVFzB8m
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$aaFgycF7RyVFzB8m\s*$
+            match: true
     - code: R1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — R1
@@ -120,17 +118,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 8
       steps:
-      - name: 'show running-config: has service password-encryption'
+      - name: 'show running-config: matches (?m)^service password\-encryption\s*$'
         code: check
         type: check
         device: R1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - service password-encryption
-            tags_are_present: true
+            expr: (?m)^service password\-encryption\s*$
+            match: true
     - code: R1.MISC.STARTUP-CONFIG
       name: Startup Config
       description: Конфигурация сохранена в NVRAM
@@ -138,15 +135,23 @@ Criterions:
       - Configuration Management
       max_mark: 8
       steps:
-      - name: 'show startup-config: has hostname R1, banner motd'
+      - name: 'show startup-config: matches (?m)^ ?hostname R1\s*$'
         code: check
         type: check
         device: R1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname R1
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^ ?hostname R1\s*$
+            match: true
+      - name: 'show startup-config: matches (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$'
+        code: check
+        type: check
+        device: R1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: (?m)^banner motd \^C\s*(?!\^C\s*$)\S[\s\S]*?\^C\s*$
+            match: true

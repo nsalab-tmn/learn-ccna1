@@ -58,3 +58,60 @@ devices:
           mit: true
         settings:
           HA_INIT_CONFIG_COMMANDS: []
+  PC-1:
+    os: iosxe
+    type: pc
+    credentials:
+      default:
+        username: '%ENV{ssh_user}'
+        password: '%ENV{ssh_password}'  # ggignore - a placeholder, filled at grading time
+    connections:
+      cli:
+        protocol: ssh
+        ip: '%ENV{lab_ip}'
+        port: '%ENV{ssh_port_PC_1}'
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+          mit: true
+        settings:
+          HA_INIT_CONFIG_COMMANDS: []
+  PC-2:
+    os: iosxe
+    type: pc
+    credentials:
+      default:
+        username: '%ENV{ssh_user}'
+        password: '%ENV{ssh_password}'  # ggignore - a placeholder, filled at grading time
+    connections:
+      cli:
+        protocol: ssh
+        ip: '%ENV{lab_ip}'
+        port: '%ENV{ssh_port_PC_2}'
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+          mit: true
+        settings:
+          HA_INIT_CONFIG_COMMANDS: []
+  Laptop-C:
+    os: iosxe
+    type: laptop
+    credentials:
+      default:
+        username: '%ENV{ssh_user}'
+        password: '%ENV{ssh_password}'  # ggignore - a placeholder, filled at grading time
+    connections:
+      cli:
+        protocol: ssh
+        ip: '%ENV{lab_ip}'
+        port: '%ENV{ssh_port_Laptop_C}'
+        ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=no
+        arguments:
+          connection_timeout: 30
+          learn_hostname: true
+          mit: true
+        settings:
+          HA_INIT_CONFIG_COMMANDS: []

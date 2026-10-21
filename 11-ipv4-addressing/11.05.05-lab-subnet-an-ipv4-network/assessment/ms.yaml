@@ -177,17 +177,16 @@ Criterions:
       - Other
       max_mark: 1
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$SyPPtOpXkWZ6JTQX'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$SyPPtOpXkWZ6JTQX\s*$'
         code: check
         type: check
         device: CustomerRouter
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$SyPPtOpXkWZ6JTQX
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$SyPPtOpXkWZ6JTQX\s*$
+            match: true
     - code: CUSTOMERROUTER.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — CustomerRouter
@@ -424,6 +423,49 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.0\.1\s*$'
             match: true
+  - code: PC-A.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC-A.CONNECTIVITY-TESTS.CT-0
+      name: 'PC-A to 192.168.0.126 : 192.168.0.126 (ICMP)'
+      description: 'PC-A → 192.168.0.126 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.0.126: has : bytes='
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.0.126
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: PC-A.CONNECTIVITY-TESTS.CT-1
+      name: 'PC-A to 192.168.0.1 : 192.168.0.1 (ICMP)'
+      description: 'PC-A → 192.168.0.1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.0.1: has : bytes='
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.0.1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
 - code: PC-B
   name: PC-B
   subCriterions:
@@ -484,3 +526,26 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.0\.65\s*$'
             match: true
+  - code: PC-B.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC-B.CONNECTIVITY-TESTS.CT-2
+      name: 'PC-B to 192.168.0.62 : 192.168.0.62 (ICMP)'
+      description: 'PC-B → 192.168.0.62 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.0.62: has : bytes='
+        code: check
+        type: check
+        device: PC-B
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.0.62
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15

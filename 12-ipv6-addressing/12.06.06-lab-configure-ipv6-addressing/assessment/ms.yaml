@@ -180,6 +180,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: CAD.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: CAD.CONNECTIVITY-TESTS.CT-3
+      name: 'CAD to 2001:db8:1:a001::1 : 2001:db8:1:a001::1 (ICMP)'
+      description: 'CAD → 2001:db8:1:a001::1 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:1:a001::1: has : bytes='
+        code: check
+        type: check
+        device: CAD
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:1:a001::1
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: DESIGN
   name: Design
   subCriterions:
@@ -240,6 +263,33 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: DESIGN.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: DESIGN.CONNECTIVITY-TESTS.CT-6
+      name: 'Design to 2001:db8:1:1::4 : 2001:db8:1:1::4 (TCP)'
+      description: 'Design → 2001:db8:1:1::4 (HTTP): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'browse 2001:db8:1:1::4: ok'
+        code: check
+        type: check
+        device: Design
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/Design/browse
+            method: POST
+            content:
+              url: 2001:db8:1:1::4
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 3
+            retry_interval: 15
 - code: ENGINEERING
   name: Engineering
   subCriterions:
@@ -300,6 +350,53 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: ENGINEERING.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: ENGINEERING.CONNECTIVITY-TESTS.CT-2
+      name: 'Engineering to 2001:db8:1:1::4 : 2001:db8:1:1::4 (ICMP)'
+      description: 'Engineering → 2001:db8:1:1::4 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:1:1::4: has : bytes='
+        code: check
+        type: check
+        device: Engineering
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:1:1::4
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: ENGINEERING.CONNECTIVITY-TESTS.CT-7
+      name: 'Engineering to 2001:db8:1:2::4 : 2001:db8:1:2::4 (TCP)'
+      description: 'Engineering → 2001:db8:1:2::4 (HTTP): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'browse 2001:db8:1:2::4: ok'
+        code: check
+        type: check
+        device: Engineering
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/Engineering/browse
+            method: POST
+            content:
+              url: 2001:db8:1:2::4
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
 - code: R1
   name: R1
   subCriterions:
@@ -575,17 +672,16 @@ Criterions:
       - Other
       max_mark: 1
       steps:
-      - name: 'show startup-config: has ipv6 address 2001:DB8:1:1::1/64'
+      - name: 'show startup-config: matches (?m)^ ?ipv6 address 2001:DB8:1:1::1/64\s*$'
         code: check
         type: check
         device: R1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - ipv6 address 2001:DB8:1:1::1/64
-            tags_are_present: true
+            expr: (?m)^ ?ipv6 address 2001:DB8:1:1::1/64\s*$
+            match: true
 - code: SALES
   name: Sales
   subCriterions:
@@ -646,3 +742,94 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: FE80::1\s*$'
             match: true
+  - code: SALES.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: SALES.CONNECTIVITY-TESTS.CT-0
+      name: 'Sales to 2001:db8:1:1::4 : 2001:db8:1:1::4 (ICMP)'
+      description: 'Sales → 2001:db8:1:1::4 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:1:1::4: has : bytes='
+        code: check
+        type: check
+        device: Sales
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:1:1::4
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+    - code: SALES.CONNECTIVITY-TESTS.CT-1
+      name: 'Sales to 2001:db8:1:2::4 : 2001:db8:1:2::4 (ICMP)'
+      description: 'Sales → 2001:db8:1:2::4 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 2001:db8:1:2::4: has : bytes='
+        code: check
+        type: check
+        device: Sales
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 2001:db8:1:2::4
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 1
+            retry_interval: 5
+    - code: SALES.CONNECTIVITY-TESTS.CT-4
+      name: 'Sales to 2001:db8:1:1::4 : 2001:db8:1:1::4 (TCP)'
+      description: 'Sales → 2001:db8:1:1::4 (HTTP): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'browse 2001:db8:1:1::4: ok'
+        code: check
+        type: check
+        device: Sales
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/Sales/browse
+            method: POST
+            content:
+              url: 2001:db8:1:1::4
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+    - code: SALES.CONNECTIVITY-TESTS.CT-5
+      name: 'Sales to 2001:db8:1:2::4 : 2001:db8:1:2::4 (TCP)'
+      description: 'Sales → 2001:db8:1:2::4 (HTTP): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'browse 2001:db8:1:2::4: ok'
+        code: check
+        type: check
+        device: Sales
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/Sales/browse
+            method: POST
+            content:
+              url: 2001:db8:1:2::4
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5

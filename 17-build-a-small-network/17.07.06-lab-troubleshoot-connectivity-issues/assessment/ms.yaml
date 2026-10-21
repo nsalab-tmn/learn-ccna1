@@ -23,6 +23,207 @@ Criterions:
             command: ipconfig
             expr: '(?m)IPv4 Address[. ]*: 172\.16\.1\.3\s*$'
             match: true
+  - code: PC-01.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC-01.CONNECTIVITY-TESTS.CT-ALL
+      name: Connectivity Tests
+      description: 'Проверка связи: PC-01 → 209.165.201.2, PC-02 → 209.165.201.2, PC-A → 209.165.201.2, PC-B → 209.165.201.2,
+        PC-01 → http://www.nsalab.local, PC-02 → http://www.nsalab.local, PC-A → http://www.nsalab.local, PC-B →
+        http://www.nsalab.local, PC-01 → http://209.165.201.2, PC-02 → http://209.165.201.2, PC-A → http://209.165.201.2,
+        PC-B → http://209.165.201.2'
+      skills:
+      - Other
+      max_mark: 2
+      steps:
+      - name: 'ping -n 2 209.165.201.2: has : bytes='
+        code: check
+        type: check
+        device: PC-01
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 209.165.201.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 209.165.201.2: has : bytes='
+        code: check
+        type: check
+        device: PC-02
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 209.165.201.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 209.165.201.2: has : bytes='
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 209.165.201.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'ping -n 2 209.165.201.2: has : bytes='
+        code: check
+        type: check
+        device: PC-B
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 209.165.201.2
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
+      - name: 'browse http://www.nsalab.local: ok'
+        code: check
+        type: check
+        device: PC-01
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-01/browse
+            method: POST
+            content:
+              url: http://www.nsalab.local
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://www.nsalab.local: ok'
+        code: check
+        type: check
+        device: PC-02
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-02/browse
+            method: POST
+            content:
+              url: http://www.nsalab.local
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://www.nsalab.local: ok'
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-A/browse
+            method: POST
+            content:
+              url: http://www.nsalab.local
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://www.nsalab.local: ok'
+        code: check
+        type: check
+        device: PC-B
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-B/browse
+            method: POST
+            content:
+              url: http://www.nsalab.local
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://209.165.201.2: ok'
+        code: check
+        type: check
+        device: PC-01
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-01/browse
+            method: POST
+            content:
+              url: http://209.165.201.2
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://209.165.201.2: ok'
+        code: check
+        type: check
+        device: PC-02
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-02/browse
+            method: POST
+            content:
+              url: http://209.165.201.2
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://209.165.201.2: ok'
+        code: check
+        type: check
+        device: PC-A
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-A/browse
+            method: POST
+            content:
+              url: http://209.165.201.2
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
+      - name: 'browse http://209.165.201.2: ok'
+        code: check
+        type: check
+        device: PC-B
+        action_chain:
+        - action: validate_web_response
+          action_vars:
+            name: http://{lab_ip}:7681/api/hosts/PC-B/browse
+            method: POST
+            content:
+              url: http://209.165.201.2
+            assert_code: 200
+            assert_jmespath:
+              path: status
+              value: ok
+            retries: 1
+            retry_interval: 5
 - code: PC-02
   name: PC-02
   subCriterions:

@@ -23,6 +23,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)IPv4 Address[. ]*: 192\.168\.10\.10\s*$'
             match: true
+  - code: PC1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC1.CONNECTIVITY-TESTS.CT-0
+      name: 'PC1 to 192.168.11.11 : 192.168.11.11 (ICMP)'
+      description: 'PC1 → 192.168.11.11 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.11.11: has : bytes='
+        code: check
+        type: check
+        device: PC1
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.11.11
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: PC4
   name: PC4
   subCriterions:
@@ -46,6 +69,29 @@ Criterions:
             command: ipconfig
             expr: '(?m)Default Gateway[. ]*: (?:\S+\s*\n\s+)?192\.168\.11\.1\s*$'
             match: true
+  - code: PC4.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: PC4.CONNECTIVITY-TESTS.CT-1
+      name: 'PC4 to 192.168.10.10 : 192.168.10.10 (ICMP)'
+      description: 'PC4 → 192.168.10.10 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping -n 2 192.168.10.10: has : bytes='
+        code: check
+        type: check
+        device: PC4
+        action_chain:
+        - action: verify_output
+          action_vars:
+            command: ping -n 2 192.168.10.10
+            assert_tags:
+            - ': bytes='
+            tags_are_present: true
+            retries: 3
+            retry_interval: 15
 - code: S1
   name: S1
   subCriterions:
@@ -69,6 +115,28 @@ Criterions:
             command: show running-config
             expr: (?m)^ip default-gateway 192\.168\.10\.1\s*$
             match: true
+  - code: S1.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: S1.CONNECTIVITY-TESTS.CT-2
+      name: 'S1 to 192.168.11.2 : 192.168.11.2 (ICMP)'
+      description: 'S1 → 192.168.11.2 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping 192.168.11.2: some replies'
+        code: check
+        type: check
+        device: S1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ping 192.168.11.2 repeat 2
+            expr: Success rate is [1-9]
+            match: true
+            retries: 3
+            retry_interval: 15
 - code: S2
   name: S2
   subCriterions:
@@ -92,3 +160,25 @@ Criterions:
             command: show running-config | section ^interface Vlan1( |$)
             expr: '(?m)^ ip address 192\.168\.11\.2 '
             match: true
+  - code: S2.CONNECTIVITY-TESTS
+    name: Connectivity Tests
+    aspects:
+    - code: S2.CONNECTIVITY-TESTS.CT-3
+      name: 'S2 to 192.168.10.10 : 192.168.10.10 (ICMP)'
+      description: 'S2 → 192.168.10.10 (PING): проходит'
+      skills:
+      - Other
+      max_mark: 1
+      steps:
+      - name: 'ping 192.168.10.10: some replies'
+        code: check
+        type: check
+        device: S2
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: ping 192.168.10.10 repeat 2
+            expr: Success rate is [1-9]
+            match: true
+            retries: 3
+            retry_interval: 15

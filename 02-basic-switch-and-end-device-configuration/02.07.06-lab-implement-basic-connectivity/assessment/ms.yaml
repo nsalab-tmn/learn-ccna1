@@ -195,17 +195,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C(?:(?!\^C\s*$)[\s\S])*?[ ][\s\S]*?\^C\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C(?:(?!\^C\s*$)[\s\S])*?[ ][\s\S]*?\^C\s*$
+            match: true
     - code: S1.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -213,17 +212,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$WmhDCwgvAVWR28qR
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$
+            match: true
     - code: S1.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S1
@@ -248,18 +246,26 @@ Criterions:
       - Configuration Management
       max_mark: 2
       steps:
-      - name: 'show startup-config: has hostname S1, ip address 192.168.1.253 255.255.255.0'
+      - name: 'show startup-config: matches (?m)^ ?hostname S1\s*$'
         code: check
         type: check
         device: S1
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname S1
-            - ip address 192.168.1.253 255.255.255.0
-            tags_are_present: true
+            expr: (?m)^ ?hostname S1\s*$
+            match: true
+      - name: 'show startup-config: matches (?m)^ ?ip address 192\.168\.1\.253 255\.255\.255\.0\s*$'
+        code: check
+        type: check
+        device: S1
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: (?m)^ ?ip address 192\.168\.1\.253 255\.255\.255\.0\s*$
+            match: true
 - code: S2
   name: S2
   subCriterions:
@@ -375,17 +381,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has banner motd'
+      - name: 'show running-config: matches (?m)^banner motd \^C(?:(?!\^C\s*$)[\s\S])*?[ ][\s\S]*?\^C\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - banner motd
-            tags_are_present: true
+            expr: (?m)^banner motd \^C(?:(?!\^C\s*$)[\s\S])*?[ ][\s\S]*?\^C\s*$
+            match: true
     - code: S2.MISC.ENABLE-SECRET
       name: Enable Secret
       description: Пароль привилегированного режима задан как enable secret
@@ -393,17 +398,16 @@ Criterions:
       - Basic Security Configuration
       max_mark: 1
       steps:
-      - name: 'show running-config: has enable secret 5 $1$mERr$WmhDCwgvAVWR28qR'
+      - name: 'show running-config: matches (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show running-config
-            assert_tags:
-            - enable secret 5 $1$mERr$WmhDCwgvAVWR28qR
-            tags_are_present: true
+            expr: (?m)^enable secret 5 \$1\$mERr\$WmhDCwgvAVWR28qR\s*$
+            match: true
     - code: S2.MISC.HOSTNAME
       name: Host Name
       description: Имя устройства — S2
@@ -428,15 +432,23 @@ Criterions:
       - Configuration Management
       max_mark: 2
       steps:
-      - name: 'show startup-config: has hostname S2, ip address 192.168.1.254 255.255.255.0'
+      - name: 'show startup-config: matches (?m)^ ?hostname S2\s*$'
         code: check
         type: check
         device: S2
         action_chain:
-        - action: verify_output
+        - action: verify_output_regex
           action_vars:
             command: show startup-config
-            assert_tags:
-            - hostname S2
-            - ip address 192.168.1.254 255.255.255.0
-            tags_are_present: true
+            expr: (?m)^ ?hostname S2\s*$
+            match: true
+      - name: 'show startup-config: matches (?m)^ ?ip address 192\.168\.1\.254 255\.255\.255\.0\s*$'
+        code: check
+        type: check
+        device: S2
+        action_chain:
+        - action: verify_output_regex
+          action_vars:
+            command: show startup-config
+            expr: (?m)^ ?ip address 192\.168\.1\.254 255\.255\.255\.0\s*$
+            match: true
