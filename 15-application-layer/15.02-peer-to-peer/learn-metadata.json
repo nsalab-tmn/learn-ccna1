@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.application-layer.peer-to-peer",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Distinguish the peer-to-peer model from the client-server model by the need for a dedicated server, and tell BitTorrent sharing of file parts from Gnutella sharing of whole files."
+            "objective": "Distinguish the peer-to-peer model from the client-server model by the need for a dedicated server, and tell how peers find each other in BitTorrent (a torrent file and a tracker) from Gnutella (queries passed from peer to peer)."
         },
         "requires": [
             "ksa.ccna1.application-layer.application-presentation-and-session",
