@@ -430,7 +430,7 @@ Copyright (c) 2026 NSALAB
 
 R1 uptime is 1 minute
 System returned to ROM by power-on
-System image file is "flash0:nr05-netos-0.1.0.bin"
+System image file is "flash:nr05-netos-0.1.0.bin"
 
 NSALAB NR05 (revision 1.0) with 1048576K/6147K bytes of memory.
 Processor board ID NSA00000001
@@ -555,7 +555,7 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 Команду **show version** можно применять для проверки и устранения неполадок базовых программных и аппаратных компонентов, которые используются во время загрузки.
 
 1. Команда **show version** привилегированного режима EXEC выводит сведения о программном обеспечении и оборудовании маршрутизатора R1. Первая строка вывода содержит имя и версию операционной системы и имя образа: `NR05-NETOS-M`, `Version 0.1.0`.
-2. Строка `R1 uptime is 1 minute` показывает время работы маршрутизатора с последнего запуска, а строка `System returned to ROM by power-on` — причину этого запуска: включение питания. Строка `System image file is "flash0:nr05-netos-0.1.0.bin"` указывает файл образа операционной системы и его расположение во flash-памяти.
+2. Строка `R1 uptime is 1 minute` показывает время работы маршрутизатора с последнего запуска, а строка `System returned to ROM by power-on` — причину этого запуска: включение питания. Строка `System image file is "flash:nr05-netos-0.1.0.bin"` указывает файл образа операционной системы и его расположение во flash-памяти.
 3. Далее указаны объем оперативной памяти (`1048576K/6147K bytes of memory`), число и тип физических интерфейсов (`2 Gigabit Ethernet interfaces`, `2 Serial(sync/async) interfaces`) и объем NVRAM (`256K bytes of non-volatile configuration memory`) — энергонезависимой памяти, в которой хранится файл загрузочной конфигурации startup-config.
 4. Последняя строка — значение регистра конфигурации: `Configuration register is 0x2102`. При этом значении, которое используется по умолчанию, маршрутизатор загружает образ операционной системы из flash-памяти, а затем конфигурацию из NVRAM.
 5. Команда **show flash:** выводит содержимое flash-памяти: файл образа `nr05-netos-0.1.0.bin` и его размер, а также занятый и свободный объем памяти.

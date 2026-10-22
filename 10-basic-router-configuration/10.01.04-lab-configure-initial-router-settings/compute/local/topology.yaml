@@ -344,8 +344,8 @@ scenario:
         R1#show flash
         System flash directory:
         File  Length   Name/status
-          2   432      startup-config
           1   33591768 nr01-netos-0.1.0.bin
+          2   432      startup-config
         [33592200 bytes used, 222151800 available, 255744000 total]
         249750K bytes of processor board System flash (Read/Write)
         ```

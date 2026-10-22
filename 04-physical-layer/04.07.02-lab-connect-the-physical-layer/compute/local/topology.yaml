@@ -260,7 +260,7 @@ scenario:
 
         East uptime is 0 minutes
         System returned to ROM by power-on
-        System image file is "flash0:nr11-netos-0.1.0.bin"
+        System image file is "flash:nr11-netos-0.1.0.bin"
 
         NSALAB NR11 (revision 1.0) with 524288K/65536K bytes of memory.
         Processor board ID NSA00000001
