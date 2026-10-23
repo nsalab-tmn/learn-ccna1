@@ -11004,10 +11004,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.02-ios-navigation/assets/2.2.3.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-qntpblf/tracks.json",
    "provenance": {
-    "youtube": "B269UlVAN40"
+    "youtube": "B269UlVAN40",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "db8351b874ce5316e8eb047f1009a7afa631ac8869583cf9bf004a3b4258952c",
+     "tracksSha256": "bfebecf823f77a77c282a67a9fa75b68225017272267fcd57be1c4d21f3b930f"
+    }
    },
    "notes": "[ремейк видео NetAcad «Основные режимы командной строки» (YouTube B269UlVAN40, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11028,10 +11034,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.02-ios-navigation/assets/2.2.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-a3bjzhd/tracks.json",
    "provenance": {
-    "youtube": "Z-n1tO4Xg6w"
+    "youtube": "Z-n1tO4Xg6w",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "f1c157584d896d94d4e4e6283265e344ec739054f5b20de02cb0effd63d97147",
+     "tracksSha256": "17fa11f4167f0e24a76711e4fe62103a4d2b8b95cbbe8eecd0ee14440abf64a1"
+    }
    },
    "notes": "[ремейк видео NetAcad «Переключение между режимами» (YouTube Z-n1tO4Xg6w, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11052,10 +11064,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.03-the-command-structure/assets/2.3.4.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-hu3etb2/tracks.json",
    "provenance": {
-    "youtube": "K_VEPe8aRUE"
+    "youtube": "K_VEPe8aRUE",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "9db77467813181576df000fffadf09f0ce84ea1a6f7c5106dd8318ff390fe2fb",
+     "tracksSha256": "02b2ba53124cac32141b88acd96cab37fc68fdacc8f61cf196182a6de626538d"
+    }
    },
    "notes": "[ремейк видео NetAcad «Контекстная справка и проверка синтаксиса» (YouTube K_VEPe8aRUE, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11076,10 +11094,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.03-the-command-structure/assets/2.3.6.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-aywxdld/tracks.json",
    "provenance": {
-    "youtube": "YDXgJUjGjcw"
+    "youtube": "YDXgJUjGjcw",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "78601dc071e9a71a7d29d9f717458bfe60b4deef95a19a7552ee792925ec3ae0",
+     "tracksSha256": "5b0e7206fb555b0eacaca829a35c6a2e07bfc0ee2af249a6d127634bf647d65f"
+    }
    },
    "notes": "[ремейк видео NetAcad «Горячие клавиши и сокращения» (YouTube YDXgJUjGjcw, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11100,10 +11124,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.04-basic-device-configuration/assets/2.4.6.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-temgmu7/tracks.json",
    "provenance": {
-    "youtube": "Ae9qSUlJ3a4"
+    "youtube": "Ae9qSUlJ3a4",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "27090b22aadba7355a44554d2c139b4487dcfdce82816e4c99a069afcf728d75",
+     "tracksSha256": "44fc3ca1d9b5e039ecf33bc20ca0ad5c904218e56d611155c090367ef338e2a0"
+    }
    },
    "notes": "[ремейк видео NetAcad «Безопасный административный доступ к коммутатору» (YouTube Ae9qSUlJ3a4, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11124,10 +11154,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.05-save-configurations/assets/2.5.3.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-fq6yeqo/tracks.json",
    "provenance": {
-    "youtube": "lQQ28pdSqfg"
+    "youtube": "lQQ28pdSqfg",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "a7c5081daa5cefff76c2f1c1010119e96256d6fb7ef7cf515814186d685f2984",
+     "tracksSha256": "4201177655a24f553e610d389b2ea0271624036f6561316cea6b0b4791819b89"
+    }
    },
    "notes": "[ремейк видео NetAcad «Сохранение конфигурации коммутатора» (YouTube lQQ28pdSqfg, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11148,10 +11184,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.08-verify-connectivity/assets/2.8.1.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-fxil7di/tracks.json",
    "provenance": {
-    "youtube": "CkvRVRcOkls"
+    "youtube": "CkvRVRcOkls",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "2bbe8e1b0eab4c068c1e28b260fa51fd2650ff1f2aeab08d2272736dc9d289f7",
+     "tracksSha256": "4ae009cf4fda20a612ea72652ebb3ea6266d29e803a4dcf6d23707c4005c9eb8"
+    }
    },
    "notes": "[ремейк видео NetAcad «Проверка состояния интерфейсов» (YouTube CkvRVRcOkls, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11172,10 +11214,16 @@
     "path": "02-basic-switch-and-end-device-configuration/02.08-verify-connectivity/assets/2.8.2.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-huohjis/tracks.json",
    "provenance": {
-    "youtube": "gex3BaiuQiw"
+    "youtube": "gex3BaiuQiw",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "42311b0b7566817d79ce6284ed3ced894bcb634f3c179a59ab22ee85dba28ac8",
+     "tracksSha256": "dfc72e29eec5c1861d8cf2df44fae52789280e963f7ddf72cb056a9b02d48486"
+    }
    },
    "notes": "[ремейк видео NetAcad «Проверка сквозного подключения» (YouTube gex3BaiuQiw, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11196,10 +11244,16 @@
     "path": "03-protocols-and-models/03.01-the-rules/assets/3.1.1.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-coxxznx/tracks.json",
    "provenance": {
-    "youtube": "yWjd-4WN4hE"
+    "youtube": "yWjd-4WN4hE",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "6ab15a5f809597cfbb89b3dc8e832432e265edca07e11f81c2edf62afe4d0618",
+     "tracksSha256": "bbef1f299de247f864d13cf324ab863e90dc30349cb81f28d349c5250f19ad30"
+    }
    },
    "notes": "[ремейк видео NetAcad «Устройства в пузыре» (YouTube yWjd-4WN4hE, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11220,10 +11274,16 @@
     "path": "05-number-systems/05.01-binary-number-system/assets/5.1.2.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-sddd2a6/tracks.json",
    "provenance": {
-    "youtube": "lxeBvUOA9oE"
+    "youtube": "lxeBvUOA9oE",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "90d0cecef43cb4ca390579307216cac94238ee6344c2da1a406d4c6820e570a4",
+     "tracksSha256": "f26ddc254091285df33db656bafe2d9f85d4c98181f1457207fc618b84c40070"
+    }
    },
    "notes": "[ремейк видео NetAcad «Перевод между двоичной и десятичной системами» (YouTube lxeBvUOA9oE, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11244,10 +11304,16 @@
     "path": "05-number-systems/05.02-hexadecimal-number-system/assets/5.2.2.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-bf7clut/tracks.json",
    "provenance": {
-    "youtube": "50O7DGHEz6A"
+    "youtube": "50O7DGHEz6A",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "7248564f3f1aa0abc410d87a8f158937bad962f82e7aeaf5c1053f8183ad5e5f",
+     "tracksSha256": "8bce7dc5e64e2ae08d90cd6ca8613cfe1800741ac22c207983bedb70155f3044"
+    }
    },
    "notes": "[ремейк видео NetAcad «Перевод между шестнадцатеричной и десятичной системами» (YouTube 50O7DGHEz6A, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11268,10 +11334,16 @@
     "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.4.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-rcgwqft/tracks.json",
    "provenance": {
-    "youtube": "fi7Ss-_9LvY"
+    "youtube": "fi7Ss-_9LvY",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "93c7a2f7d9efbdc8dd58b4a8348d013137800b4604cc35a5f41fb240812d764c",
+     "tracksSha256": "9e3da242e0b7931777242d968fbb46d7e97afc49291a3e4759f90ce7357111d4"
+    }
    },
    "notes": "[ремейк видео NetAcad «MAC-таблицы двух коммутаторов» (YouTube fi7Ss-_9LvY, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11292,10 +11364,16 @@
     "path": "07-ethernet-switching/07.03-the-mac-address-table/assets/7.3.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-7wypty5/tracks.json",
    "provenance": {
-    "youtube": "RXLercop7eU"
+    "youtube": "RXLercop7eU",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "5bc7401805b7f184e040ade0ea8c6b7015d3182c2fb5b12f0357953421e7a328",
+     "tracksSha256": "20cff933de89f6e06db1fa9a4f81737a9a2421bdbdc5bb83c95067ca9790045b"
+    }
    },
    "notes": "[ремейк видео NetAcad «Отправка кадра на шлюз по умолчанию» (YouTube RXLercop7eU, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11316,10 +11394,16 @@
     "path": "08-network-layer/08.02-ipv4-packet/assets/8.2.3.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-j6d4jvg/tracks.json",
    "provenance": {
-    "youtube": "PArGE7H_eN8"
+    "youtube": "PArGE7H_eN8",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "be607fd39fbac4993a235d4f927e63cdf18fd2e1487637b609bfc1f9835400c6",
+     "tracksSha256": "51e09ebb8bbb02d3b79fc85fd89a71feed0b6ff2e7e1201accc83b40c359291a"
+    }
    },
    "notes": "[ремейк видео NetAcad «Пример заголовков IPv4» (YouTube PArGE7H_eN8, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11340,10 +11424,16 @@
     "path": "08-network-layer/08.03-ipv6-packet/assets/8.3.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-mel37pe/tracks.json",
    "provenance": {
-    "youtube": "aOwXEempJ4k"
+    "youtube": "aOwXEempJ4k",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "65666ae23f6fcb72d39eaeeb6a81861f51fb90b2f5732441307240599020a62c",
+     "tracksSha256": "1995818692af0e9c4e295ecbabbdb41ad0929ac18c9c8e266d546aac13221f71"
+    }
    },
    "notes": "[ремейк видео NetAcad «Пример заголовков IPv6» (YouTube aOwXEempJ4k, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11364,10 +11454,16 @@
     "path": "08-network-layer/08.05-router-routing-tables/assets/8.5.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-alsvvo3/tracks.json",
    "provenance": {
-    "youtube": "pt_Qw1Jfo5w"
+    "youtube": "pt_Qw1Jfo5w",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "13c4c5c822d95c4b017ffe8b11b5e5300cf21faaaf3ace445c60fc3b29d0ffad",
+     "tracksSha256": "daa8a4a9675d4bec1306a95df16298a542c5315b59507237ffaf470eb75a361e"
+    }
    },
    "notes": "[ремейк видео NetAcad «Таблица маршрутизации маршрутизатора IPv4» (YouTube pt_Qw1Jfo5w, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11388,10 +11484,16 @@
     "path": "09-address-resolution/09.02-arp/assets/9.2.3.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-qly3q4s/tracks.json",
    "provenance": {
-    "youtube": "tna6DaUeu5c"
+    "youtube": "tna6DaUeu5c",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "bae8ecd63f041d4099c57ad599387ed4488c3ac4e68a033d4b02e79e996344f4",
+     "tracksSha256": "132953f2ba14ac5b60bd4949d49a3ac0bf9ea051990b327cfc768712711405e6"
+    }
    },
    "notes": "[ремейк видео NetAcad «ARP-запрос» (YouTube tna6DaUeu5c, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11412,10 +11514,16 @@
     "path": "09-address-resolution/09.02-arp/assets/9.2.4.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-d3tka72/tracks.json",
    "provenance": {
-    "youtube": "Ud1angOlxHE"
+    "youtube": "Ud1angOlxHE",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "c9b4ec36bda7a9dd7a1ecd7fe129b23e3c34fd06e2d57530510824fc9b0a7660",
+     "tracksSha256": "760b7183c3abaa26b5fc3e64a5ee4b01a9e58342691d22711019320744ceef7a"
+    }
    },
    "notes": "[ремейк видео NetAcad «ARP-ответ» (YouTube Ud1angOlxHE, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11436,10 +11544,16 @@
     "path": "09-address-resolution/09.02-arp/assets/9.2.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-il7rn3v/tracks.json",
    "provenance": {
-    "youtube": "1ZB2euss3YY"
+    "youtube": "1ZB2euss3YY",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "679aae3a47942a1b45fe2a3c6d83cb062556fce41c9424ca9d154c705c90bd78",
+     "tracksSha256": "d88a68451f27533c7480a78d40806da4ba86af07b6675f71b82f5c207d2df172"
+    }
    },
    "notes": "[ремейк видео NetAcad «MAC-адрес шлюза» (YouTube 1ZB2euss3YY, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11460,10 +11574,16 @@
     "path": "09-address-resolution/09.03-neighbor-discovery/assets/9.3.1.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-qlxg372/tracks.json",
    "provenance": {
-    "youtube": "S0SyGKhCEV0"
+    "youtube": "S0SyGKhCEV0",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "c32c9d77a4350528da7022bf7223a07c5756e3f9dc47572312bceae4007b28a3",
+     "tracksSha256": "1459bd136adce17f2075ed43a2b64e6a10562bf9bf9cb5ccfbf7bcd89586cecc"
+    }
    },
    "notes": "[ремейк видео NetAcad «Обнаружение соседей IPv6» (YouTube S0SyGKhCEV0, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11484,10 +11604,16 @@
     "path": "10-basic-router-configuration/10.03-configure-the-default-gateway/assets/10.3.3.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-yzuairh/tracks.json",
    "provenance": {
-    "youtube": "RH_KIUdHZlE"
+    "youtube": "RH_KIUdHZlE",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "964c0a1c9ba55263cdf089f9ca84b16a8edc1faf0c9dda34739eca024deac518",
+     "tracksSha256": "fe5e03080aa863aaae9d409d675c83d6a535f2151bd675dfcdc9e320a60e4dbb"
+    }
    },
    "notes": "[ремейк видео NetAcad «Различия маршрутизаторов» (YouTube RH_KIUdHZlE, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11508,10 +11634,16 @@
     "path": "11-ipv4-addressing/11.01-ipv4-address-structure/assets/11.1.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-5bu5yud/tracks.json",
    "provenance": {
-    "youtube": "7DoggTtOLN0"
+    "youtube": "7DoggTtOLN0",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "392743e7a381d27c537e7e7ec879123c2794459f5b79b8be0895e93d3b2eb082",
+     "tracksSha256": "5c9e9bc23f90901862539662a69e32581fb4ccc24ae4011c1b210e5ee6fbe019"
+    }
    },
    "notes": "[ремейк видео NetAcad «Сетевой адрес, адреса хостов и широковещательный адрес» (YouTube 7DoggTtOLN0, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11532,10 +11664,16 @@
     "path": "11-ipv4-addressing/11.05-subnet-an-ipv4-network/assets/11.5.3.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-j4us7aw/tracks.json",
    "provenance": {
-    "youtube": "LKjCyGaiH4Q"
+    "youtube": "LKjCyGaiH4Q",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "5a8e1c72a83e6451fdbc379563059eae6e5cae59e78d3c3d2346ec8d82c116de",
+     "tracksSha256": "6df1fda5d955c2215ca4018ca82a7d177a38e657cc15b9ec0645b9c111bc2988"
+    }
    },
    "notes": "[ремейк видео NetAcad «Маска подсети» (YouTube LKjCyGaiH4Q, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11556,10 +11694,16 @@
     "path": "11-ipv4-addressing/11.05-subnet-an-ipv4-network/assets/11.5.4.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-l6ykfga/tracks.json",
    "provenance": {
-    "youtube": "A2P7i6ebSCE"
+    "youtube": "A2P7i6ebSCE",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "df8d132ec6da52cc2ea0b428af07cbc5cf2b2ac3621459130db6101996e393be",
+     "tracksSha256": "a3bc707d496496127d54bec27bb4b133ddcd8e0ca18c52d8354d145e8a2218ae"
+    }
    },
    "notes": "[ремейк видео NetAcad «Подсети по «магическому числу»» (YouTube A2P7i6ebSCE, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11580,10 +11724,16 @@
     "path": "11-ipv4-addressing/11.06-subnet-a-16-and-8-prefix/assets/11.6.4.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-eyualzn/tracks.json",
    "provenance": {
-    "youtube": "TJSWlSplC1Q"
+    "youtube": "TJSWlSplC1Q",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "91a01c2beccbfafa1950a14002c2a38d2eef2d44a645a5f167ccbef6f4e5aae2",
+     "tracksSha256": "ea2d9be2ab9c68c516f1aa0bfce9a38ae84ba3ce5affb493a31a9e1d9f7a8e1e"
+    }
    },
    "notes": "[ремейк видео NetAcad «Подсети в нескольких октетах» (YouTube TJSWlSplC1Q, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11604,10 +11754,16 @@
     "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.1.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-lt4g6kk/tracks.json",
    "provenance": {
-    "youtube": "R_Ti9y2AShc"
+    "youtube": "R_Ti9y2AShc",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "c2ec91d9527ebc9819c24938a55fbac1647bd21f199066f3503cf37886b9a62b",
+     "tracksSha256": "cfeb5770bd988a41856e6fcfeb5ad577f98a17be99f0be5b7bf3105a0fd4cadc"
+    }
    },
    "notes": "[ремейк видео NetAcad «Основы VLSM» (YouTube R_Ti9y2AShc, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11628,10 +11784,16 @@
     "path": "11-ipv4-addressing/11.08-variable-length-subnet-masking/assets/11.8.2.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-k62w4ae/tracks.json",
    "provenance": {
-    "youtube": "_V-YboU4Rq4"
+    "youtube": "_V-YboU4Rq4",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "dd62e41d0d5195903e4235a3c2f15665e032697ad69ac685c69c1d9b14ce5a98",
+     "tracksSha256": "21c10c679d1d791d7c7a0231e9819d270e7e12766c751915afa5f47ddf6079b2"
+    }
    },
    "notes": "[ремейк видео NetAcad «Пример VLSM» (YouTube _V-YboU4Rq4, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11652,10 +11814,16 @@
     "path": "14-transport-layer/14.05-tcp-communication-process/assets/14.5.5.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-tbrj7g3/tracks.json",
    "provenance": {
-    "youtube": "UbqcbYsPoss"
+    "youtube": "UbqcbYsPoss",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "86fb41d6f33acdcd606b184a35026d8b80039b66c3811753f9167a801e406c0c",
+     "tracksSha256": "f854fbf9698b147c6448ed5d178e715562746f527b614640fb574cc8cf00cf72"
+    }
    },
    "notes": "[ремейк видео NetAcad «Трехэтапное рукопожатие TCP» (YouTube UbqcbYsPoss, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11676,10 +11844,16 @@
     "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.2.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-n4rkgkx/tracks.json",
    "provenance": {
-    "youtube": "tz7eawYRHf0"
+    "youtube": "tz7eawYRHf0",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "f792fe0180ec74ee546a29aa2742d40ceb6ab506deb62122deb9fe94ce195d45",
+     "tracksSha256": "144d3c2f1e315a31f8fe343dc3d9e1c950efbd40d0c3d9d9a2fc50c0ab5b3dca"
+    }
    },
    "notes": "[ремейк видео NetAcad «Порядковые номера и подтверждения» (YouTube tz7eawYRHf0, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11700,10 +11874,16 @@
     "path": "14-transport-layer/14.06-reliability-and-flow-control/assets/14.6.4.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-o6srh76/tracks.json",
    "provenance": {
-    "youtube": "3AzR-82OI7Q"
+    "youtube": "3AzR-82OI7Q",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "12def98931960148e5468e1033b38b3751045d34456984b361eb4c78b9e80f5e",
+     "tracksSha256": "af8d7b5b0abd065139926124fab0ec518b0878ebf6a2f4326ea85e954dce7d03"
+    }
    },
    "notes": "[ремейк видео NetAcad «Потеря данных и повторная передача» (YouTube 3AzR-82OI7Q, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   },
@@ -11724,10 +11904,16 @@
     "path": "17-build-a-small-network/17.05-host-and-ios-commands/assets/17.5.8.svg",
     "format": "animated-svg"
    },
-   "status": "pending",
+   "status": "synced",
    "tracks": "animations/ccna1-pi4bhck/tracks.json",
    "provenance": {
-    "youtube": "dFKfyJkuSqQ"
+    "youtube": "dFKfyJkuSqQ",
+    "synced": {
+     "figmaVersion": "2413683815138594987",
+     "at": "2026-10-23T22:14:16Z",
+     "sha256": "8c934e7b6edf0f50b64722fca033ebd1e91cb9abf30c1440babd2243120d3e5f",
+     "tracksSha256": "14366c966fa32f031617d5f0220e99b8b9c2bc11ed4e017dfa88ef5fa86a36e1"
+    }
    },
    "notes": "[ремейк видео NetAcad «Команда show version» (YouTube dFKfyJkuSqQ, kb#327), принят оператором; кадр перенесён в поток курса 2026-10-24]"
   }
