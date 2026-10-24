@@ -60,7 +60,7 @@ hostname Sw-Floor-1
 
 Текущая конфигурация хранится в RAM и теряется при перезагрузке; чтобы изменения ее пережили, их сохраняют командой **copy running-config startup-config**.
 
-![youtube](https://www.youtube.com/watch?v=lQQ28pdSqfg)
+![](./assets/2.5.3.svg)
 
 <!-- 2.5.4 -->
 ## Запись конфигурации в текстовый файл
