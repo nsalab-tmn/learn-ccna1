@@ -11,7 +11,8 @@ oversized textures are cut down. Three steps, all deterministic for the same inp
    TEXT node's real weight and italic flag, so each `<text>` gets `font-weight` / `font-style` from it.
 2. **Embedded fonts.** An SVG shown as `<img>` loads no external resources, so each face the file draws
    (family, weight, style) is embedded as an `@font-face` WOFF2 data: URI, subset to the characters this
-   file uses — 1–12 KB a face. The faces are instanced from the variable fonts in `fonts/` (OFL).
+   file uses — 1–12 KB a face. The faces are instanced from the variable fonts in `fonts/` (OFL). Text is
+   set with `text-rendering: geometricPrecision`, so a scaled-down file keeps Figma's run positions.
 3. **Textures.** Embedded PNGs larger than `tex_cap` px are downscaled: the library's stipple textures are
    stored at up to 3415 px but drawn on faces a few hundred px across (no visible change at 2×).
 
@@ -147,7 +148,9 @@ def embed_fonts(svg: str, fonts: Path = FONTS) -> tuple[str, list[str], list[str
                      f"src:url(data:font/woff2;base64,{base64.b64encode(data).decode()}) format('woff2')}}")
     if rules:
         m = re.search(r"<svg\b[^>]*>", svg)
-        svg = svg[:m.end()] + "<style>" + "".join(rules) + "</style>" + svg[m.end():]
+        # geometricPrecision: scaled down (a lecture column), Chromium otherwise rounds glyph advances to whole
+        # pixels, and a monospace run in a mixed-font line overruns the next run Figma placed after it
+        svg = svg[:m.end()] + "<style>text{text-rendering:geometricPrecision}" + "".join(rules) + "</style>" + svg[m.end():]
     return svg, faces, unknown
 
 

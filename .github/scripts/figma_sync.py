@@ -47,8 +47,10 @@ class SyncError(Exception):
 
 # ---------------------------------------------------------------- transport
 
-def api(path: str, token: str, params: dict | None = None, tries: int = 5) -> dict:
-    """GET api.figma.com with the PAT header; retries 429/5xx with backoff."""
+def api(path: str, token: str, params: dict | None = None, tries: int = 8) -> dict:
+    """GET api.figma.com with the PAT header; retries 429/5xx with backoff. Figma's Retry-After on a 429 is a
+    few seconds while the limit lasts minutes (three course syncs at once hit it), so the wait doubles
+    from 5 s regardless, up to 5 min."""
     url = API + path + ("?" + urllib.parse.urlencode(params) if params else "")
     for i in range(tries):
         req = urllib.request.Request(url, headers={"X-Figma-Token": token, "User-Agent": UA})
@@ -57,7 +59,7 @@ def api(path: str, token: str, params: dict | None = None, tries: int = 5) -> di
                 return json.load(r)
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503, 504) and i < tries - 1:
-                wait = int(e.headers.get("Retry-After") or 0) or 5 * 2 ** i
+                wait = min(300, max(int(e.headers.get("Retry-After") or 0), 5 * 2 ** i))
                 print(f"  {e.code} on {path} — retry in {wait}s", file=sys.stderr)
                 time.sleep(wait)
                 continue
