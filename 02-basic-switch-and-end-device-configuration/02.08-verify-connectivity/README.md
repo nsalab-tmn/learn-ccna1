@@ -55,7 +55,7 @@ Vlan1                      192.168.1.20    YES manual up                    up
 Sw-Floor-1#
 ```
 
-![youtube](https://www.youtube.com/watch?v=CkvRVRcOkls)
+![](./assets/2.8.1.svg)
 
 <!-- 2.8.2 -->
 ## Проверка сквозного подключения
@@ -95,5 +95,4 @@ Approximate round trip times in milli-seconds:
 C:\>
 ```
 
-![youtube](https://www.youtube.com/watch?v=gex3BaiuQiw)
-
+![](./assets/2.8.2.svg)
