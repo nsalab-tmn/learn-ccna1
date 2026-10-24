@@ -1,7 +1,8 @@
 # .github/workflows/figma-sync.yml — on-demand Figma → repo sync (D3), one copy per course repo.
 # Contract: learn-knowledge-base conventions/figma-git-asset-contract.md §5.
 # Needs the repo secret FIGMA_TOKEN (read-only PAT: File content Read, File metadata Read) and the script
-# vendored at .github/scripts/figma_sync.py.
+# vendored at .github/scripts/figma_sync.py, with svg_optimize.py, render.py and fonts/ next to it (animations ship
+# with live text and their fonts embedded; fonttools, brotli and Pillow are installed below).
 #
 # Safety model: the result is always a pull request on the fixed branch `figma-sync`, never a push to the
 # base branch. A run with nothing changed in Figma writes no file, makes no commit and opens no PR
@@ -71,6 +72,13 @@ jobs:
             # no open sync PR: always start from the base; a stale branch of a merged PR is ignored, not merged
             git checkout -q -B "$SYNC_BRANCH" "origin/$BASE_BRANCH"
           fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the animation optimizer's libraries (svg_optimize.py: fonts and textures)
+        run: python3 -m pip install --quiet fonttools==4.67.0 brotli==1.2.1 pillow==13.0.0
 
       - name: Sync from Figma
         id: sync
