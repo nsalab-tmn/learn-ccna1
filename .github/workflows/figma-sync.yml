@@ -77,7 +77,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install the animation optimizer's libraries (svg_optimize.py: fonts and textures)
+      - name: Install the animation optimizer's libraries (svg_optimize.py, fonts and textures)
         run: python3 -m pip install --quiet fonttools==4.67.0 brotli==1.2.1 pillow==13.0.0
 
       - name: Sync from Figma
