@@ -15,7 +15,8 @@ manifest on its main (GitHub API, read-only) — is exported into the referrer's
 its node is cached in the referrer's `figma.nodeId`. `--scope refs` syncs only those entries.
 
 Exit codes: 0 ok · 2 some entries ended `broken` (manifest and artifacts still written) ·
-1 usage / auth / transport error. Stdlib only. Token: env `FIGMA_TOKEN` — a read-only PAT
+1 usage / auth / transport error. Stdlib only, except that rendering an animation imports
+svg_optimize (fonttools, brotli, Pillow), which embeds the fonts of its live text. Token: env `FIGMA_TOKEN` — a read-only PAT
 (File content: Read, File metadata: Read). The token is sent only to api.figma.com, never to the
 S3 download hosts, and never printed.
 """
@@ -85,14 +86,15 @@ def download(url: str, tries: int = 3) -> bytes:
 
 
 def export_svg(token: str, file_key: str, node_ids: list[str], include_node_id: bool = False,
-               absolute_bounds: bool = False) -> dict[str, str | None]:
+               absolute_bounds: bool = False, outline_text: bool = True) -> dict[str, str | None]:
     """Images endpoint: returns {nodeId: url|None} (None = Figma could not render / node gone).
     absolute_bounds: canvas = the node's own bounding box (content at bbox-relative coordinates), not
-    the cropped render bounds — what a standalone export needs to be placed back into its frame."""
+    the cropped render bounds — what a standalone export needs to be placed back into its frame.
+    outline_text=False keeps text as <text> (animations: svg_optimize embeds the fonts)."""
     out: dict[str, str | None] = {}
     for i in range(0, len(node_ids), BATCH):
         chunk = node_ids[i:i + BATCH]
-        params = {"ids": ",".join(chunk), "format": "svg", "svg_outline_text": "true"}
+        params = {"ids": ",".join(chunk), "format": "svg", "svg_outline_text": "true" if outline_text else "false"}
         if include_node_id:
             params["svg_include_node_id"] = "true"
         if absolute_bounds:
@@ -571,7 +573,7 @@ def empty_tracked(svg: str, doc: dict, tracked: list[str]) -> list[str]:
     return out
 
 
-def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key: str
+def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key: str, outline_text: bool = True
                   ) -> tuple[str, list[str], list[str], str | None]:
     """Put back the tracked layers the frame export left out. The exporter culls a layer that sits entirely
     (or all but a few px) outside a clipping container at rest — exactly how a Motion build parks a wave,
@@ -636,7 +638,7 @@ def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key:
                     todo.append(x)
     partial = [t for t in partial if visible(t)]
     cand = [nid for nid in todo if visible(nid) and not idx[nid][0].get("clipsContent")] + partial
-    urls = export_svg(token, file_key, cand, include_node_id=True, absolute_bounds=True) if cand else {}
+    urls = export_svg(token, file_key, cand, include_node_id=True, absolute_bounds=True, outline_text=outline_text) if cand else {}
     injected, hidden, defs = [], [], []
     for nid in todo + partial:
         if nid in partial:
@@ -664,7 +666,8 @@ def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key:
             data = download(urls[nid])
             short = degraded(data, n)
             if short:
-                retry = export_svg(token, file_key, [nid], include_node_id=True, absolute_bounds=True).get(nid)
+                retry = export_svg(token, file_key, [nid], include_node_id=True, absolute_bounds=True,
+                                   outline_text=outline_text).get(nid)
                 if retry:
                     data = download(retry)
                     short = degraded(data, n)
@@ -726,8 +729,8 @@ def ensure_window_clips(svg: str, doc: dict, tracked: list[str]) -> tuple[str, l
     return svg, done
 
 
-def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, tracked: list[str] | None = None
-              ) -> tuple[bytes, str | None, int, list[str], list[str]]:
+def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, tracked: list[str] | None = None,
+              outline_text: bool = True) -> tuple[bytes, str | None, int, list[str], list[str]]:
     """Download one export; re-export once if its image fills are missing; put back tracked layers the
     exporter culled (animations); re-inject the blend modes the exporter dropped. Returns (data,
     skip_reason, blends_reinjected, injected_ids, empty_tracked_ids) — a skip means the committed file is
@@ -735,7 +738,7 @@ def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, trac
     data = download(url)
     short = degraded(data, doc)
     if short:
-        retry = export_svg(token, file_key, [node_id], include_node_id=True).get(node_id)
+        retry = export_svg(token, file_key, [node_id], include_node_id=True, outline_text=outline_text).get(node_id)
         if retry:
             data = download(retry)
             short = degraded(data, doc)
@@ -745,7 +748,7 @@ def fetch_svg(token: str, file_key: str, url: str, node_id: str, doc: dict, trac
     injected: list[str] = []
     empty: list[str] = []
     if tracked:
-        text, injected, hidden, why = complete_base(text, doc, tracked, token, file_key)
+        text, injected, hidden, why = complete_base(text, doc, tracked, token, file_key, outline_text)
         if why:
             return data, why, 0, injected, []
         text, clipped = ensure_window_clips(text, doc, tracked)
@@ -900,7 +903,9 @@ def render_animation(args: argparse.Namespace, token: str, file_key: str, url: s
     except (ValueError, TypeError, AttributeError) as e:
         report["skipped"].append((a, f"tracks.json unreadable: {e}"))
         return None
-    base, why, n, injected, empty = fetch_svg(token, file_key, url, frame, doc, tracked)
+    # live text: an outlined export of a text-heavy scene runs to tens of MB; svg_optimize embeds the fonts
+    live = export_svg(token, file_key, [frame], include_node_id=True, outline_text=False).get(frame) or url
+    base, why, n, injected, empty = fetch_svg(token, file_key, live, frame, doc, tracked, outline_text=False)
     if why:
         report["skipped"].append((a, why))
         return None
@@ -919,7 +924,11 @@ def render_animation(args: argparse.Namespace, token: str, file_key: str, url: s
         if r.returncode != 0 or not op.exists():
             report["skipped"].append((a, f"renderer failed: {r.stderr.strip()[:200]}"))
             return None
-        return op.read_bytes()
+        rendered = op.read_bytes()
+    import svg_optimize  # fonttools, brotli, Pillow: needed only here (the workflow installs them)
+    data, summary = svg_optimize.optimize(rendered, doc)
+    report.setdefault("optimized", []).append((a, summary))
+    return data
 
 
 def cache_owner_frame(a: dict, frame: str, owner: dict) -> None:
@@ -1102,6 +1111,13 @@ def finish(args: argparse.Namespace, manifest: dict, report: dict, version: str,
     if report["skipped"]:
         lines += ["### Skipped", ""]
         lines += [f"- {a['display']['key']} `{a['id']}` — {why}" for a, why in report["skipped"]]
+        lines.append("")
+    if report.get("optimized"):
+        lines += ["### Animations: live text with embedded fonts, textures cut down (svg_optimize)", "",
+                  "| key | id | rendered | written | faces | textures shrunk |", "|---|---|---|---|---|---|"]
+        lines += [f"| {a['display']['key']} | `{a['id']}` | {s['before'] / 1e6:.1f} MB | {s['after'] / 1e6:.1f} MB | "
+                  f"{len(s['faces'])}" + (f" (⚠ not embedded: {', '.join(s['unknown'])})" if s["unknown"] else "") +
+                  f" | {s['images']} |" for a, s in report["optimized"]]
         lines.append("")
     if report.get("injected"):
         lines += ["### Parked layers put back (culled by the frame export, exported standalone; `(culled part)` = emitted with a part culled, re-exported whole; `(hidden)` = kept out on purpose, `(clip)` = a window the export left unclipped, now clipped)", ""]
