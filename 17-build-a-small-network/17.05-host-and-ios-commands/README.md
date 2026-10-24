@@ -562,4 +562,3 @@ FastEthernet0/3        unassigned      YES unset  up                    up
 6. Команда **reload** перезагружает маршрутизатор; запрос `Proceed with reload? [confirm]` подтверждается клавишей Enter. Маршрутизатор сообщает причину перезагрузки (`Reload Reason: Reload Command`), загрузчик (`System Bootstrap`) загружает образ из flash-памяти (`Loading "flash:nr05-netos-0.1.0.bin"`), после чего консоль выводит приглашение. Повторная команда **show version** показывает `R1 uptime is 0 minutes` и `System returned to ROM by reload`: маршрутизатор только что запущен, и причина запуска — команда reload.
 
 ![](./assets/17.5.8.svg)
-
