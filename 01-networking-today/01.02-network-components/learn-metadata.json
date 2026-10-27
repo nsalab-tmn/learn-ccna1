@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.networking-today.network-components",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Classify a network device as a host, an end device or an intermediary device, and match each media type (copper, fiber-optic, wireless) to the way it encodes data."
+            "objective": "Classify a network device as an end device (a host) or an intermediary device, and match each media type (copper, fiber-optic, wireless) to the way it encodes data."
         },
         "requires": [],
         "measurement": {
