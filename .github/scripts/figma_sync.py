@@ -480,6 +480,20 @@ def _find_elem(svg: str, nid: str) -> tuple[int, int] | None:
     return _element_span(svg, m.start()) if m else None
 
 
+def _drop_root_opacity(inner: str, nid: str) -> str:
+    """A standalone export carries the node's own opacity on its root (Figma writes it on the exported
+    node itself), and the wrapper <g data-node-id> the put-back builds around it carries the same value —
+    the renderer's <animate> targets the wrapper, so the node's opacity applied twice: a layer staged at
+    0.01 and animated to 1 stayed at 0.01 (1 765 nodes in 31 synced animations, kb#536). The wrapper keeps
+    the opacity; the export root loses its copy."""
+    import re
+    m = re.search(r'<[a-zA-Z]+[^>]*\sdata-export-root="' + re.escape(nid) + r'"[^>]*>', inner)
+    if not m:
+        return inner
+    tag = re.sub(r'\sopacity="[^"]*"', "", m.group(0), count=1)
+    return inner[:m.start()] + tag + inner[m.end():]
+
+
 def _insert_child(svg: str, parent: dict, node: dict, fragment: str) -> str:
     """Put `fragment` where `node` belongs among `parent`'s children (z-order): right after the last earlier
     sibling the export emitted, else first — past the fills the exporter writes before a container's children
@@ -681,6 +695,8 @@ def complete_base(svg: str, doc: dict, tracked: list[str], token: str, file_key:
                 defs.append(d[6:-7])
                 inner = inner.replace(d, "")
             inner = inner.replace(f'data-node-id="{nid}"', f'data-export-root="{nid}"', 1)
+            if op:
+                inner = _drop_root_opacity(inner, nid)
             fragment = (f'<g data-node-id="{nid}" data-export-origin="{_num(dx)} {_num(dy)}" '
                         f'transform="translate({_num(dx)} {_num(dy)})"{op}>{inner}</g>')
             if nid in partial:
