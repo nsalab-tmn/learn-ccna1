@@ -38,3 +38,6 @@ the text of the PR as merged.
   q07), 03.04 q02 and q08 re-cased, 03.06 q11-a4 replaced and q13, q14 added, 03.01 says «рассылка»; 03.05's text
   changed one sentence (#378), so only its with-lecture judge was re-run. Those six materials were re-judged; 03.03
   and 03.07 did not change (03.07's objective did, which the judges do not see).
+- `rounds/m03-v3/03.06-data-encapsulation` — round 3 of 03.06, the run kb reviewed (commit `a73f7df`). Three of its eight
+  keys were «Сегмент», so q13 was re-keyed to the sequence numbers and q14 to the packet left after only the Ethernet
+  header and trailer come off; 03.06 was re-judged.
