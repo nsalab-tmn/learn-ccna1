@@ -27,3 +27,8 @@ Same method; the S judge of each lecture carries the pilot's notebook of all mat
 (`notebook/15-02.08…` for 03.01 up to `21-03.06…` for 03.07), the exam judge E the notebook after 03.07.
 «Before» is the pilot's run on the original banks (`pilot/student/raw/03.*/score.json`); `final/03.*` is the run on
 the text of the PR as merged.
+
+- `rounds/m03-v1/03.08-exam` — the exam's round 1 (39 items, PR branch commit `9d3396c`): the floor got 35/39 and the
+  judges named the cross-cues (q04's ISO description → q25, q05's PDU gloss → q32, q28 → q09 and q37) and the
+  duplicates (q14/q21/q18, q22/q24, q06/q39, q12/q38, q19/q34). Round 2 replaced the duplicates and the recall items
+  with cases (q45–q52, 36 items) and was re-judged; the lectures did not change between the rounds.
