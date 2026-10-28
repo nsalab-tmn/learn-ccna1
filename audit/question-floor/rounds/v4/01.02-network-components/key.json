@@ -1,0 +1,71 @@
+{
+ "material": "01-networking-today/01.02-network-components",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q08",
+   "type": "singleChoice",
+   "labels": {
+    "q08-a1": "А",
+    "q08-a2": "Б",
+    "q08-a4": "В",
+    "q08-a3": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "2": {
+   "questionId": "q09",
+   "type": "singleChoice",
+   "labels": {
+    "q09-a1": "А",
+    "q09-a2": "Б",
+    "q09-a4": "В",
+    "q09-a3": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "3": {
+   "questionId": "q10",
+   "type": "singleChoice",
+   "labels": {
+    "q10-a2": "А",
+    "q10-a1": "Б",
+    "q10-a3": "В",
+    "q10-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "4": {
+   "questionId": "q11",
+   "type": "singleChoice",
+   "labels": {
+    "q11-a3": "А",
+    "q11-a2": "Б",
+    "q11-a1": "В",
+    "q11-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "5": {
+   "questionId": "q12",
+   "type": "singleChoice",
+   "labels": {
+    "q12-a3": "А",
+    "q12-a4": "Б",
+    "q12-a2": "В",
+    "q12-a1": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  }
+ }
+}
