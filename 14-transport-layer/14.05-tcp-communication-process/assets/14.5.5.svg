@@ -1516,7 +1516,7 @@
 <text data-node-id="6322:9612" fill="#1B1B2F" style="white-space: pre" xml:space="preserve" font-family="JetBrains Mono" font-size="13" letter-spacing="0px" font-weight="400" font-style="normal"><tspan x="429" y="1061.45">TTL 128 &#xb7; &#x43c;&#x430;&#x440;&#x448;&#x440;&#x443;&#x442; C 192.168.254.0/24 &#x2192; G0/0/1</tspan></text>
 </g>
 </g></g><g data-anim-for="6322:9613"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.53771;0.53772;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9613" xlink:href="#fx-6322-9613"/><g id="fx-6322-9613" data-node-id="6322:9613" data-export-origin="29 1072.68" transform="translate(29 1072.68)" opacity="0.01">
-<g data-export-root="6322:9613" opacity="0.01">
+<g data-export-root="6322:9613">
 <g data-node-id="6322:9614">
 <mask id="path-1-inside-1_6322_9613" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1567,7 +1567,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9626"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.79273;0.79274;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9626" xlink:href="#fx-6322-9626"/><g id="fx-6322-9626" data-node-id="6322:9626" data-export-origin="29 1106.477" transform="translate(29 1106.477)" opacity="0.01">
-<g data-export-root="6322:9626" opacity="0.01">
+<g data-export-root="6322:9626">
 <g data-node-id="6322:9627">
 <mask id="path-1-inside-1_6322_9626" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1618,7 +1618,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9639"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.7982;0.7983;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9639" xlink:href="#fx-6322-9639"/><g id="fx-6322-9639" data-node-id="6322:9639" data-export-origin="29 1140.258" transform="translate(29 1140.258)" opacity="0.01">
-<g data-export-root="6322:9639" opacity="0.01">
+<g data-export-root="6322:9639">
 <g data-node-id="6322:9640">
 <mask id="path-1-inside-1_6322_9639" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1669,7 +1669,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9652"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.80375;0.80376;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9652" xlink:href="#fx-6322-9652"/><g id="fx-6322-9652" data-node-id="6322:9652" data-export-origin="29 1174.07" transform="translate(29 1174.07)" opacity="0.01">
-<g data-export-root="6322:9652" opacity="0.01">
+<g data-export-root="6322:9652">
 <g data-node-id="6322:9653">
 <mask id="path-1-inside-1_6322_9652" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1720,7 +1720,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9665"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.80926;0.80927;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9665" xlink:href="#fx-6322-9665"/><g id="fx-6322-9665" data-node-id="6322:9665" data-export-origin="29 1207.867" transform="translate(29 1207.867)" opacity="0.01">
-<g data-export-root="6322:9665" opacity="0.01">
+<g data-export-root="6322:9665">
 <g data-node-id="6322:9666">
 <mask id="path-1-inside-1_6322_9665" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1777,7 +1777,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9678"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.94899;0.949;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9678" xlink:href="#fx-6322-9678"/><g id="fx-6322-9678" data-node-id="6322:9678" data-export-origin="29 1241.703" transform="translate(29 1241.703)" opacity="0.01">
-<g data-export-root="6322:9678" opacity="0.01">
+<g data-export-root="6322:9678">
 <g data-node-id="6322:9679">
 <mask id="path-1-inside-1_6322_9678" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1828,7 +1828,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9691"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.954;0.955;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9691" xlink:href="#fx-6322-9691"/><g id="fx-6322-9691" data-node-id="6322:9691" data-export-origin="29 1275.5" transform="translate(29 1275.5)" opacity="0.01">
-<g data-export-root="6322:9691" opacity="0.01">
+<g data-export-root="6322:9691">
 <g data-node-id="6322:9692">
 <mask id="path-1-inside-1_6322_9691" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1879,7 +1879,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9704"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.960006;0.960013;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9704" xlink:href="#fx-6322-9704"/><g id="fx-6322-9704" data-node-id="6322:9704" data-export-origin="29 1309.301" transform="translate(29 1309.301)" opacity="0.01">
-<g data-export-root="6322:9704" opacity="0.01">
+<g data-export-root="6322:9704">
 <g data-node-id="6322:9705">
 <mask id="path-1-inside-1_6322_9704" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1930,7 +1930,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9717"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.965515;0.965522;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9717" xlink:href="#fx-6322-9717"/><g id="fx-6322-9717" data-node-id="6322:9717" data-export-origin="29 1343.102" transform="translate(29 1343.102)" opacity="0.01">
-<g data-export-root="6322:9717" opacity="0.01">
+<g data-export-root="6322:9717">
 <g data-node-id="6322:9718">
 <mask id="path-1-inside-1_6322_9717" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -1981,7 +1981,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9730"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.97102;0.97103;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9730" xlink:href="#fx-6322-9730"/><g id="fx-6322-9730" data-node-id="6322:9730" data-export-origin="29 1376.902" transform="translate(29 1376.902)" opacity="0.01">
-<g data-export-root="6322:9730" opacity="0.01">
+<g data-export-root="6322:9730">
 <g data-node-id="6322:9731">
 <mask id="path-1-inside-1_6322_9730" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -2032,7 +2032,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9743"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.97653;0.97654;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9743" xlink:href="#fx-6322-9743"/><g id="fx-6322-9743" data-node-id="6322:9743" data-export-origin="29 1410.703" transform="translate(29 1410.703)" opacity="0.01">
-<g data-export-root="6322:9743" opacity="0.01">
+<g data-export-root="6322:9743">
 <g data-node-id="6322:9744">
 <mask id="path-1-inside-1_6322_9743" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -2083,7 +2083,7 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:9756"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.98204;0.98205;1" values="0;0;1;1" calcMode="linear" href="#fx-6322-9756" xlink:href="#fx-6322-9756"/><g id="fx-6322-9756" data-node-id="6322:9756" data-export-origin="29 1444.5" transform="translate(29 1444.5)" opacity="0.01">
-<g data-export-root="6322:9756" opacity="0.01">
+<g data-export-root="6322:9756">
 <g data-node-id="6322:9757">
 <mask id="path-1-inside-1_6322_9756" fill="white">
 <path d="M0 0H22V33.7969H0V0Z"/>
@@ -5042,9 +5042,9 @@
 </g>
 </g>
 </g></g><g data-anim-for="6322:11123"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.636;0.638;0.779;0.781;0.841;0.842;0.888;0.89;1" values="0;0;0.75;0.75;0;0;0.75;0.75;0;0" calcMode="linear" href="#fx-6322-11123" xlink:href="#fx-6322-11123"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="154.3s" repeatCount="indefinite" keyTimes="0;1" values="0 513.1;0 513.1" calcMode="linear"/><g id="fx-6322-11123" data-node-id="6322:11123" data-export-origin="60 -760" transform="translate(60 -760)" opacity="0.01">
-<rect data-export-root="6322:11123" opacity="0.01" width="1069" height="860" fill="white"/>
+<rect data-export-root="6322:11123" width="1069" height="860" fill="white"/>
 </g></g><g data-anim-for="6322:11124"><animate attributeName="opacity" dur="154.3s" repeatCount="indefinite" keyTimes="0;0.636;0.638;0.779;0.781;0.841;0.842;0.888;0.89;1" values="0;0;0.75;0.75;0;0;0.75;0.75;0;0" calcMode="linear" href="#fx-6322-11124" xlink:href="#fx-6322-11124"/><animateTransform attributeName="transform" type="translate" additive="sum" dur="154.3s" repeatCount="indefinite" keyTimes="0;1" values="0 -129.3;0 -129.3" calcMode="linear"/><g id="fx-6322-11124" data-node-id="6322:11124" data-export-origin="60 960" transform="translate(60 960)" opacity="0.01">
-<rect data-export-root="6322:11124" opacity="0.01" width="1069" height="860" fill="white"/>
+<rect data-export-root="6322:11124" width="1069" height="860" fill="white"/>
 </g></g>
 </g>
 <rect x="61" y="101" width="1067" height="858" stroke="#1B1B2F" stroke-width="2"/>
