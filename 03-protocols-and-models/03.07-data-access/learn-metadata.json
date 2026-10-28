@@ -30,7 +30,7 @@
             "mode": "test",
             "grader": "test-auto",
             "aligned_bloom": "understand",
-            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): default gateway for remote networks, network part and subnet mask, logical and physical addresses, address order in a frame, changing data-link addresses.",
+            "passes_when": "All embedded questions answered correctly (100%, unlimited attempts): default gateway for remote networks, network part and subnet mask, logical and physical addresses, changing data-link addresses.",
             "calibration": "operator-judge"
         }
     },
