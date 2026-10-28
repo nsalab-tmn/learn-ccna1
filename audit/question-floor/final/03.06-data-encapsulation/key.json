@@ -59,7 +59,7 @@
    "type": "singleChoice",
    "labels": {
     "q11-a3": "А",
-    "q11-a4": "Б",
+    "q11-a5": "Б",
     "q11-a2": "В",
     "q11-a1": "Г"
    },
@@ -78,6 +78,32 @@
    },
    "correct": [
     "Б"
+   ]
+  },
+  "7": {
+   "questionId": "q13",
+   "type": "singleChoice",
+   "labels": {
+    "q13-a3": "А",
+    "q13-a2": "Б",
+    "q13-a1": "В",
+    "q13-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "8": {
+   "questionId": "q14",
+   "type": "singleChoice",
+   "labels": {
+    "q14-a3": "А",
+    "q14-a4": "Б",
+    "q14-a1": "В",
+    "q14-a2": "Г"
+   },
+   "correct": [
+    "В"
    ]
   }
  }

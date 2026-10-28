@@ -53,19 +53,6 @@
    "correct": [
     "В"
    ]
-  },
-  "5": {
-   "questionId": "q09",
-   "type": "singleChoice",
-   "labels": {
-    "q09-a3": "А",
-    "q09-a4": "Б",
-    "q09-a2": "В",
-    "q09-a1": "Г"
-   },
-   "correct": [
-    "Г"
-   ]
   }
  }
 }
