@@ -20,3 +20,10 @@ No judge saw the author's notes or another judge's answers; the author never jud
 - `rounds/v2`, `rounds/v3`, `rounds/v4` — the earlier rounds, on the text of the commits they measured
   (PR branch commits `08b564a` / `5d590b7` / `74d6757`); a material absent from a round was not changed in it. The first draft's run was discarded: its key was regenerated after the text changed, so its
   scores were invalid.
+
+## Module 03 (learn-ccna1 PR for kb#536 item 3, module 03)
+
+Same method; the S judge of each lecture carries the pilot's notebook of all materials before it
+(`notebook/15-02.08…` for 03.01 up to `21-03.06…` for 03.07), the exam judge E the notebook after 03.07.
+«Before» is the pilot's run on the original banks (`pilot/student/raw/03.*/score.json`); `final/03.*` is the run on
+the text of the PR as merged.
