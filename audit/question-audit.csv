@@ -7,9 +7,8 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.02-network-components,q06,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.02-network-components,q07,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.02-network-components,,,11,Lecture-level: sections «Одноранговые сети» (1.2.2) and «Оконечные устройства» (1.2.3: source or destination) have no question.,rework
-01-networking-today/01.02-network-components,q08,understand,,"New item (kb#536 item 3). This rewrite retired q01, q04–q07.",none
+01-networking-today/01.02-network-components,q08,understand,,"New item (kb#536 item 3). This rewrite retired q01, q04–q07 and, after review, q10.",none
 01-networking-today/01.02-network-components,q09,understand,,"New item (kb#536 item 3).",none
-01-networking-today/01.02-network-components,q10,understand,,"New item (kb#536 item 3).",none
 01-networking-today/01.02-network-components,q11,understand,,"New item (kb#536 item 3).",none
 01-networking-today/01.02-network-components,q12,understand,,"New item (kb#536 item 3).",none
 01-networking-today/01.02-network-components,q13,understand,,"New item (kb#536 item 3: how a medium encodes signals (fibre → light) was never a key).",none
