@@ -1,0 +1,487 @@
+{
+ "material": "02-basic-switch-and-end-device-configuration/02.10-exam",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q01",
+   "type": "multiChoice",
+   "labels": {
+    "q01-a1": "А",
+    "q01-a2": "Б",
+    "q01-a5": "В",
+    "q01-a3": "Г"
+   },
+   "correct": [
+    "А",
+    "Б",
+    "В"
+   ]
+  },
+  "2": {
+   "questionId": "q02",
+   "type": "singleChoice",
+   "labels": {
+    "q02-a1": "А",
+    "q02-a2": "Б",
+    "q02-a4": "В",
+    "q02-a3": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "3": {
+   "questionId": "q03",
+   "type": "singleChoice",
+   "labels": {
+    "q03-a2": "А",
+    "q03-a1": "Б",
+    "q03-a3": "В",
+    "q03-a4": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "4": {
+   "questionId": "q04",
+   "type": "singleChoice",
+   "labels": {
+    "q04-a5": "А",
+    "q04-a3": "Б",
+    "q04-a1": "В",
+    "q04-a6": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "5": {
+   "questionId": "q39",
+   "type": "singleChoice",
+   "labels": {
+    "q39-a3": "А",
+    "q39-a4": "Б",
+    "q39-a2": "В",
+    "q39-a1": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "6": {
+   "questionId": "q06",
+   "type": "singleChoice",
+   "labels": {
+    "q06-a3": "А",
+    "q06-a1": "Б",
+    "q06-a4": "В",
+    "q06-a2": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "7": {
+   "questionId": "q07",
+   "type": "singleChoice",
+   "labels": {
+    "q07-a3": "А",
+    "q07-a2": "Б",
+    "q07-a1": "В",
+    "q07-a4": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "8": {
+   "questionId": "q08",
+   "type": "singleChoice",
+   "labels": {
+    "q08-a3": "А",
+    "q08-a4": "Б",
+    "q08-a1": "В",
+    "q08-a2": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "9": {
+   "questionId": "q09",
+   "type": "multiChoice",
+   "labels": {
+    "q09-a1": "А",
+    "q09-a4": "Б",
+    "q09-a3": "В",
+    "q09-a2": "Г"
+   },
+   "correct": [
+    "В",
+    "Г"
+   ]
+  },
+  "10": {
+   "questionId": "q10",
+   "type": "multiChoice",
+   "labels": {
+    "q10-a2": "А",
+    "q10-a5": "Б",
+    "q10-a4": "В",
+    "q10-a1": "Г"
+   },
+   "correct": [
+    "А",
+    "Б"
+   ]
+  },
+  "11": {
+   "questionId": "q11",
+   "type": "singleChoice",
+   "labels": {
+    "q11-a3": "А",
+    "q11-a1": "Б",
+    "q11-a2": "В",
+    "q11-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "12": {
+   "questionId": "q12",
+   "type": "matching",
+   "correct": {
+    "1": "Г",
+    "2": "Д",
+    "3": "А",
+    "4": "Б"
+   }
+  },
+  "13": {
+   "questionId": "q13",
+   "type": "multiChoice",
+   "labels": {
+    "q13-a5": "А",
+    "q13-a6": "Б",
+    "q13-a3": "В",
+    "q13-a2": "Г"
+   },
+   "correct": [
+    "А",
+    "Б",
+    "Г"
+   ]
+  },
+  "14": {
+   "questionId": "q14",
+   "type": "singleChoice",
+   "labels": {
+    "q14-a2": "А",
+    "q14-a4": "Б",
+    "q14-a1": "В",
+    "q14-a3": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "15": {
+   "questionId": "q15",
+   "type": "matching",
+   "correct": {
+    "1": "Б",
+    "2": "Б",
+    "3": "В",
+    "4": "В",
+    "5": "А",
+    "6": "А"
+   }
+  },
+  "16": {
+   "questionId": "q16",
+   "type": "matching",
+   "correct": {
+    "1": "Б",
+    "2": "А",
+    "3": "Д",
+    "4": "Г",
+    "5": "В"
+   }
+  },
+  "17": {
+   "questionId": "q17",
+   "type": "singleChoice",
+   "labels": {
+    "q17-a3": "А",
+    "q17-a1": "Б",
+    "q17-a2": "В",
+    "q17-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "18": {
+   "questionId": "q18",
+   "type": "singleChoice",
+   "labels": {
+    "q18-a2": "А",
+    "q18-a4": "Б",
+    "q18-a5": "В",
+    "q18-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "19": {
+   "questionId": "q19",
+   "type": "singleChoice",
+   "labels": {
+    "q19-a4": "А",
+    "q19-a3": "Б",
+    "q19-a1": "В",
+    "q19-a2": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "20": {
+   "questionId": "q40",
+   "type": "singleChoice",
+   "labels": {
+    "q40-a2": "А",
+    "q40-a3": "Б",
+    "q40-a4": "В",
+    "q40-a1": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "21": {
+   "questionId": "q21",
+   "type": "singleChoice",
+   "labels": {
+    "q21-a2": "А",
+    "q21-a3": "Б",
+    "q21-a4": "В",
+    "q21-a1": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "22": {
+   "questionId": "q22",
+   "type": "singleChoice",
+   "labels": {
+    "q22-a4": "А",
+    "q22-a3": "Б",
+    "q22-a1": "В",
+    "q22-a2": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "23": {
+   "questionId": "q23",
+   "type": "singleChoice",
+   "labels": {
+    "q23-a1": "А",
+    "q23-a4": "Б",
+    "q23-a3": "В",
+    "q23-a2": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "24": {
+   "questionId": "q41",
+   "type": "singleChoice",
+   "labels": {
+    "q41-a1": "А",
+    "q41-a4": "Б",
+    "q41-a2": "В",
+    "q41-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "25": {
+   "questionId": "q25",
+   "type": "multiChoice",
+   "labels": {
+    "q25-a2": "А",
+    "q25-a1": "Б",
+    "q25-a4": "В",
+    "q25-a5": "Г"
+   },
+   "correct": [
+    "А",
+    "Г"
+   ]
+  },
+  "26": {
+   "questionId": "q26",
+   "type": "singleChoice",
+   "labels": {
+    "q26-a3": "А",
+    "q26-a1": "Б",
+    "q26-a2": "В",
+    "q26-a4": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "27": {
+   "questionId": "q27",
+   "type": "singleChoice",
+   "labels": {
+    "q27-a5": "А",
+    "q27-a3": "Б",
+    "q27-a6": "В",
+    "q27-a7": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "28": {
+   "questionId": "q28",
+   "type": "multiChoice",
+   "labels": {
+    "q28-a6": "А",
+    "q28-a4": "Б",
+    "q28-a5": "В",
+    "q28-a3": "Г"
+   },
+   "correct": [
+    "Б",
+    "В",
+    "Г"
+   ]
+  },
+  "29": {
+   "questionId": "q29",
+   "type": "singleChoice",
+   "labels": {
+    "q29-a3": "А",
+    "q29-a6": "Б",
+    "q29-a1": "В",
+    "q29-a5": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "30": {
+   "questionId": "q30",
+   "type": "singleChoice",
+   "labels": {
+    "q30-a1": "А",
+    "q30-a3": "Б",
+    "q30-a2": "В"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "31": {
+   "questionId": "q31",
+   "type": "singleChoice",
+   "labels": {
+    "q31-a1": "А",
+    "q31-a4": "Б",
+    "q31-a3": "В",
+    "q31-a2": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "32": {
+   "questionId": "q32",
+   "type": "singleChoice",
+   "labels": {
+    "q32-a1": "А",
+    "q32-a4": "Б",
+    "q32-a2": "В",
+    "q32-a3": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "33": {
+   "questionId": "q33",
+   "type": "singleChoice",
+   "labels": {
+    "q33-a4": "А",
+    "q33-a1": "Б",
+    "q33-a5": "В",
+    "q33-a2": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "34": {
+   "questionId": "q43",
+   "type": "singleChoice",
+   "labels": {
+    "q43-a3": "А",
+    "q43-a1": "Б",
+    "q43-a2": "В",
+    "q43-a4": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "35": {
+   "questionId": "q35",
+   "type": "multiChoice",
+   "labels": {
+    "q35-a4": "А",
+    "q35-a1": "Б",
+    "q35-a2": "В",
+    "q35-a3": "Г"
+   },
+   "correct": [
+    "Б",
+    "В"
+   ]
+  },
+  "36": {
+   "questionId": "q36",
+   "type": "singleChoice",
+   "labels": {
+    "q36-a1": "А",
+    "q36-a2": "Б",
+    "q36-a4": "В",
+    "q36-a5": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "37": {
+   "questionId": "q38",
+   "type": "matching",
+   "correct": {
+    "1": "В",
+    "2": "А",
+    "3": "Д",
+    "4": "Б"
+   }
+  }
+ }
+}

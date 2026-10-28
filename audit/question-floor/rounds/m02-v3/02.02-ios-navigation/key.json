@@ -1,0 +1,85 @@
+{
+ "material": "02-basic-switch-and-end-device-configuration/02.02-ios-navigation",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q07",
+   "type": "multiChoice",
+   "labels": {
+    "q07-a1": "А",
+    "q07-a2": "Б",
+    "q07-a4": "В",
+    "q07-a3": "Г"
+   },
+   "correct": [
+    "А",
+    "Б"
+   ]
+  },
+  "2": {
+   "questionId": "q08",
+   "type": "singleChoice",
+   "labels": {
+    "q08-a1": "А",
+    "q08-a2": "Б",
+    "q08-a4": "В",
+    "q08-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "3": {
+   "questionId": "q09",
+   "type": "singleChoice",
+   "labels": {
+    "q09-a2": "А",
+    "q09-a1": "Б",
+    "q09-a3": "В",
+    "q09-a4": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "4": {
+   "questionId": "q11",
+   "type": "singleChoice",
+   "labels": {
+    "q11-a3": "А",
+    "q11-a2": "Б",
+    "q11-a1": "В",
+    "q11-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "5": {
+   "questionId": "q13",
+   "type": "singleChoice",
+   "labels": {
+    "q13-a3": "А",
+    "q13-a4": "Б",
+    "q13-a2": "В",
+    "q13-a1": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "6": {
+   "questionId": "q15",
+   "type": "singleChoice",
+   "labels": {
+    "q15-a3": "А",
+    "q15-a1": "Б",
+    "q15-a4": "В",
+    "q15-a2": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  }
+ }
+}

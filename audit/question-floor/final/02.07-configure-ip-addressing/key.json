@@ -1,0 +1,59 @@
+{
+ "material": "02-basic-switch-and-end-device-configuration/02.07-configure-ip-addressing",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q05",
+   "type": "singleChoice",
+   "labels": {
+    "q05-a1": "А",
+    "q05-a2": "Б",
+    "q05-a4": "В",
+    "q05-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "2": {
+   "questionId": "q06",
+   "type": "multiChoice",
+   "labels": {
+    "q06-a1": "А",
+    "q06-a2": "Б",
+    "q06-a4": "В",
+    "q06-a3": "Г"
+   },
+   "correct": [
+    "А",
+    "Б"
+   ]
+  },
+  "3": {
+   "questionId": "q01",
+   "type": "singleChoice",
+   "labels": {
+    "q01-a2": "А",
+    "q01-a1": "Б",
+    "q01-a4": "В",
+    "q01-a5": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "4": {
+   "questionId": "q08",
+   "type": "singleChoice",
+   "labels": {
+    "q08-a3": "А",
+    "q08-a5": "Б",
+    "q08-a1": "В",
+    "q08-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  }
+ }
+}

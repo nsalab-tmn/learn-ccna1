@@ -1,0 +1,84 @@
+{
+ "material": "02-basic-switch-and-end-device-configuration/02.03-the-command-structure",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q06",
+   "type": "singleChoice",
+   "labels": {
+    "q06-a1": "А",
+    "q06-a2": "Б",
+    "q06-a4": "В",
+    "q06-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "2": {
+   "questionId": "q07",
+   "type": "singleChoice",
+   "labels": {
+    "q07-a1": "А",
+    "q07-a2": "Б",
+    "q07-a4": "В",
+    "q07-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "3": {
+   "questionId": "q08",
+   "type": "singleChoice",
+   "labels": {
+    "q08-a2": "А",
+    "q08-a1": "Б",
+    "q08-a3": "В",
+    "q08-a4": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "4": {
+   "questionId": "q03",
+   "type": "singleChoice",
+   "labels": {
+    "q03-a3": "А",
+    "q03-a2": "Б",
+    "q03-a1": "В",
+    "q03-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  },
+  "5": {
+   "questionId": "q14",
+   "type": "singleChoice",
+   "labels": {
+    "q14-a3": "А",
+    "q14-a4": "Б",
+    "q14-a2": "В",
+    "q14-a1": "Г"
+   },
+   "correct": [
+    "Г"
+   ]
+  },
+  "6": {
+   "questionId": "q15",
+   "type": "singleChoice",
+   "labels": {
+    "q15-a3": "А",
+    "q15-a1": "Б",
+    "q15-a4": "В",
+    "q15-a2": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  }
+ }
+}
