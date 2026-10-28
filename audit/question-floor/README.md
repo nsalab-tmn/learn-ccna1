@@ -16,7 +16,7 @@ Raw judge outputs behind the before/after table of learn-ccna1 #351. Method, as 
 
 No judge saw the author's notes or another judge's answers; the author never judged their own items.
 
-- `final/` — the run on the text of the PR as merged.
+- `final/` — the run on the text of the PR as merged; `selfcheck.md` is the shuffled sheet the judges saw.
 - `rounds/v2`, `rounds/v3`, `rounds/v4` — the earlier rounds, on the text of the commits they measured
   (PR branch commits `08b564a` / `5d590b7` / `74d6757`); a material absent from a round was not changed in it. The first draft's run was discarded: its key was regenerated after the text changed, so its
   scores were invalid.

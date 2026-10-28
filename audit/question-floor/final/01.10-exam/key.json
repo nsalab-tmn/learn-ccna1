@@ -334,9 +334,9 @@
    "questionId": "q52",
    "type": "singleChoice",
    "labels": {
-    "q52-a2": "А",
-    "q52-a4": "Б",
-    "q52-a5": "В",
+    "q52-a6": "А",
+    "q52-a7": "Б",
+    "q52-a8": "В",
     "q52-a1": "Г"
    },
    "correct": [
@@ -438,10 +438,10 @@
    "questionId": "q61",
    "type": "singleChoice",
    "labels": {
-    "q61-a2": "А",
-    "q61-a4": "Б",
+    "q61-a5": "А",
+    "q61-a7": "Б",
     "q61-a1": "В",
-    "q61-a3": "Г"
+    "q61-a6": "Г"
    },
    "correct": [
     "В"
