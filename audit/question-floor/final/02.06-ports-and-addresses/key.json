@@ -1,0 +1,45 @@
+{
+ "material": "02-basic-switch-and-end-device-configuration/02.06-ports-and-addresses",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q04",
+   "type": "singleChoice",
+   "labels": {
+    "q04-a1": "А",
+    "q04-a2": "Б",
+    "q04-a4": "В",
+    "q04-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "2": {
+   "questionId": "q05",
+   "type": "singleChoice",
+   "labels": {
+    "q05-a1": "А",
+    "q05-a2": "Б",
+    "q05-a4": "В",
+    "q05-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "3": {
+   "questionId": "q07",
+   "type": "singleChoice",
+   "labels": {
+    "q07-a2": "А",
+    "q07-a1": "Б",
+    "q07-a3": "В",
+    "q07-a4": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  }
+ }
+}
