@@ -20,7 +20,7 @@
             "id": "ksa.ccna1.protocols-and-models.data-access",
             "kind": "K",
             "bloom": "understand",
-            "objective": "Distinguish network-layer (IP) from data-link-layer (MAC) addresses by type, length, order in the frame and whether they change on the way, and state how the network part of an IPv4 address is identified and why frames for another IP network go to the default gateway."
+            "objective": "Distinguish network-layer (IP) from data-link-layer (MAC) addresses by type and by whether they change on the way, and state how the network part of an IPv4 address is identified and why frames for another IP network go to the default gateway."
         },
         "requires": [
             "ksa.ccna1.protocols-and-models.data-encapsulation",
