@@ -7,11 +7,12 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.02-network-components,q06,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.02-network-components,q07,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.02-network-components,,,11,Lecture-level: sections «Одноранговые сети» (1.2.2) and «Оконечные устройства» (1.2.3: source or destination) have no question.,rework
-01-networking-today/01.02-network-components,q08,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01, q04–q07).,none
-01-networking-today/01.02-network-components,q09,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.02-network-components,q10,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.02-network-components,q11,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.02-network-components,q12,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.02-network-components,q08,understand,,"New item (kb#536 item 3). This rewrite retired q01, q04–q07.",none
+01-networking-today/01.02-network-components,q09,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.02-network-components,q10,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.02-network-components,q11,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.02-network-components,q12,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.02-network-components,q13,understand,,"New item (kb#536 item 3: how a medium encodes signals (fibre → light) was never a key).",none
 01-networking-today/01.03-network-topologies,q01,remember,4;10,Stem «Какое соединение…» calls a NIC a connection. The shared comment does not say a port is the connector on the network device and an interface a port that joins separate networks.,text
 01-networking-today/01.03-network-topologies,q02,remember,2;3;10,The stem copies the lecture definition of «интерфейс» word for word (rule 2: paraphrase); second recall item; shared comment restates it.,rework
 01-networking-today/01.03-network-topologies,q03,remember,3;10,"Two options are allowed here (exactly two diagram types). Third recall item; the comment does not say a physical diagram shows locations, not attachments. Rework: a described diagram (interface names, addresses) the learner classifies.",rework
@@ -19,10 +20,11 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.03-network-topologies,q05,understand,,New item replacing q02.,none
 01-networking-today/01.03-network-topologies,q06,understand,,New item replacing q03.,none
 01-networking-today/01.03-network-topologies,q07,understand,,New item replacing q04.,none
-01-networking-today/01.03-network-topologies,q08,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01, q05–q07).,none
-01-networking-today/01.03-network-topologies,q09,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.03-network-topologies,q10,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.03-network-topologies,q11,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.03-network-topologies,q08,understand,,"New item (kb#536 item 3). This rewrite retired q01, q05–q07.",none
+01-networking-today/01.03-network-topologies,q09,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.03-network-topologies,q11,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.03-network-topologies,q12,understand,,"New item (kb#536 item 3: replaces q10 (its key «логическая — для порта» was wrong: the physical diagram shows ports too); asks for the address instead).",none
+01-networking-today/01.03-network-topologies,q13,understand,,"New item (kb#536 item 3: the NIC was never a key).",none
 01-networking-today/01.04-network-types,q01,remember,10,"Shared comment restates the key; it does not say intranet and extranet are defined by who may use the network, not by its area, or that a WAN spans large areas.",text
 01-networking-today/01.04-network-types,q02,remember,2;3;10,Stem copies the extranet definition from 1.4.4; second recall item; the comment repeats the definition for every distractor.,rework
 01-networking-today/01.04-network-types,q03,remember,3;10,Third recall item (WAN definition from 1.4.2); shared comment restates the key.,rework
@@ -31,11 +33,10 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.04-network-types,q06,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.04-network-types,q07,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.04-network-types,,,11,"Lecture-level: sections «Сети различного размера» (1.4.1: SOHO, the Internet as a network of networks) and «Интернет» (1.4.3: nobody owns it; IETF, ICANN, IAB) have no question.",rework
-01-networking-today/01.04-network-types,q08,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01, q04–q07).,none
-01-networking-today/01.04-network-types,q09,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.04-network-types,q10,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.04-network-types,q11,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.04-network-types,q12,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.04-network-types,q08,understand,,"New item (kb#536 item 3). This rewrite retired q01, q04–q05, q07 and kept q06 with per-option comments.",none
+01-networking-today/01.04-network-types,q09,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.04-network-types,q11,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.04-network-types,q12,understand,,"New item (kb#536 item 3).",none
 01-networking-today/01.05-internet-connection,q01,remember,,Recall of the DSL property; per-option comments explain each distractor. Passes.,none
 01-networking-today/01.05-internet-connection,q02,remember,3;6,Second recall item. «Когда спутник находится вне зоны прямой видимости антенны» contradicts the stated requirement and is not a learner mistake.,rework
 01-networking-today/01.05-internet-connection,q03,remember,3;5,Five options for two keys; third recall item (business list of 1.5.3). Drop one home option.,rework
@@ -44,22 +45,22 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.05-internet-connection,q06,understand,,New item replacing q02.,none
 01-networking-today/01.05-internet-connection,q07,understand,,New item replacing q03.,none
 01-networking-today/01.05-internet-connection,q08,understand,,New item replacing q04.,none
-01-networking-today/01.05-internet-connection,q09,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01, q06–q08, q05).,none
-01-networking-today/01.05-internet-connection,q10,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.05-internet-connection,q11,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.05-internet-connection,q12,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.05-internet-connection,q13,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.05-internet-connection,q14,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.05-internet-connection,q09,understand,,"New item (kb#536 item 3). This rewrite retired q01, q05–q08.",none
+01-networking-today/01.05-internet-connection,q10,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.05-internet-connection,q11,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.05-internet-connection,q12,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.05-internet-connection,q14,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.05-internet-connection,q15,understand,,"New item (kb#536 item 3: Metro Ethernet was never a key; replaces the second ADSL/SDSL item q13).",none
 01-networking-today/01.06-redundant-networks,q01,remember,10,"Options differ in case («масштабируемость» here, «Масштабируемость» in q04). Shared comment restates the key and does not say what each other characteristic covers.",text
 01-networking-today/01.06-redundant-networks,q02,remember,3;10,"Second recall item (CIA belongs to security, stated in 1.6.5); shared comment.",rework
 01-networking-today/01.06-redundant-networks,q03,remember,3;4;10,"Stem asks «какого типа политики», but fault tolerance, scalability and security are characteristics, not router policies (non-homogeneous options). Third recall item; shared comment.",rework
 01-networking-today/01.06-redundant-networks,q04,understand,10,Classifies a measure (redundancy); shared comment restates the key.,text
 01-networking-today/01.06-redundant-networks,q05,understand,,New item replacing q02.,none
 01-networking-today/01.06-redundant-networks,q06,understand,,New item replacing q03.,none
-01-networking-today/01.06-redundant-networks,q07,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01, q05–q06, q04).,none
-01-networking-today/01.06-redundant-networks,q08,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.06-redundant-networks,q09,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.06-redundant-networks,q10,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.06-redundant-networks,q08,understand,,"New item (kb#536 item 3). This rewrite retired q01, q04–q06.",none
+01-networking-today/01.06-redundant-networks,q09,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.06-redundant-networks,q10,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.06-redundant-networks,q11,understand,,"New item (kb#536 item 3: replaces q07: what a fault-tolerant network provides when a path fails (the lay reading as distractors)).",none
 01-networking-today/01.07-network-trends,q01,understand,2;10,A scenario; passes on level. Stem calls a trend «функция» (the lecture says «тенденции»). Shared comment restates the key.,text
 01-networking-today/01.07-network-trends,q02,remember,2;10,BYOD definition recall («функция» for a trend); shared comment restates the key. The one allowed recall item.,text
 01-networking-today/01.07-network-trends,q03,remember,3;10,Second recall item (the cloud types are listed in the lecture); shared comment.,rework
@@ -71,14 +72,14 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.07-network-trends,q09,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.07-network-trends,q10,understand,,New item (rule 11: a section had no question).,none
 01-networking-today/01.07-network-trends,,,11,Lecture-level: «Совместная работа через Интернет» and «Технологические тенденции в домашних сетях» (smart home) have no question; smart home is only a distractor.,rework
-01-networking-today/01.07-network-trends,q11,remember,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01–q02, q06–q10).,none
-01-networking-today/01.07-network-trends,q12,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.07-network-trends,q13,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.07-network-trends,q14,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.07-network-trends,q15,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.07-network-trends,q16,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.07-network-trends,q17,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.07-network-trends,q18,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.07-network-trends,q11,remember,,"New item (kb#536 item 3). This rewrite retired q01–q02, q06–q10.",none
+01-networking-today/01.07-network-trends,q12,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.07-network-trends,q13,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.07-network-trends,q15,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.07-network-trends,q17,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.07-network-trends,q18,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.07-network-trends,q19,understand,,"New item (kb#536 item 3: replaces q14: how a community cloud differs from a public one).",none
+01-networking-today/01.07-network-trends,q20,understand,,"New item (kb#536 item 3: replaces q16 (a second defensible key, 1.7.7 «напрямую подключиться к духовке»): a smart-home scenario).",none
 01-networking-today/01.08-network-security,q01,remember,5;6;10,"Five options. For «Какая атака…» two options are not attacks (firewall, VPN), so the category gives the key away. Shared comment restates the key. All five items reuse one option list.",text
 01-networking-today/01.08-network-security,q02,remember,3;5;6;10,Same five-option list; for «безопасное соединение» three options are threats. Second recall item; shared comment.,rework
 01-networking-today/01.08-network-security,q03,remember,3;5;6;10,"Same list, third recall item (firewall definition); shared comment.",rework
@@ -88,11 +89,11 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.08-network-security,q07,understand,,New item replacing q03.,none
 01-networking-today/01.08-network-security,q08,understand,,New item replacing q04.,none
 01-networking-today/01.08-network-security,q09,understand,,New item replacing q05.,none
-01-networking-today/01.08-network-security,q10,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q01, q06–q09).,none
-01-networking-today/01.08-network-security,q11,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.08-network-security,q12,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.08-network-security,q13,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.08-network-security,q14,understand,,New item (kb#536 item 3).,none
+01-networking-today/01.08-network-security,q11,understand,,"New item (kb#536 item 3). This rewrite retired q01, q08–q09 and kept q06–q07 with per-option comments.",none
+01-networking-today/01.08-network-security,q12,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.08-network-security,q15,understand,,"New item (kb#536 item 3: replaces q10: is an attack on an unpatched device a zero-day attack).",none
+01-networking-today/01.08-network-security,q16,understand,,"New item (kb#536 item 3: denial of service was never a key).",none
+01-networking-today/01.08-network-security,q17,understand,,"New item (kb#536 item 3: malware was never a key).",none
 01-networking-today/01.10-exam,q01,understand,,Matching; the instruction says one premise is unused and the key agrees. Passes.,none
 01-networking-today/01.10-exam,q02,understand,10,"Scenario; key true. Shared comment gives only the intranet definition; it does not say why extranet (outsiders), the Internet or a single LAN (two sites) is wrong.",text
 01-networking-today/01.10-exam,q03,understand,1;10,"Distractor «беспроводные точки доступа используют адаптеры сети электропитания для передачи данных по домашней локальной сети» is true on real equipment: a Wi-Fi access point is commonly attached to a powerline adapter, and powerline kits with a built-in access point are sold (HomePlug AV / IEEE 1901 carry the LAN frames). It also has no comment. Replace the option with a false statement (new answerId; the item keeps q03).",key
@@ -130,22 +131,25 @@ material,questionId,bloom,rule_failed,finding,fix
 01-networking-today/01.10-exam,q35,remember,2;8;10,Stem «шпионская угроза»: the lecture says «шпионские программы». The key is conspicuously the longest option. No comments on wrong options.,text
 01-networking-today/01.10-exam,q36,remember,,New item replacing q26.,none
 01-networking-today/01.10-exam,q37,remember,,New item replacing q32.,none
-01-networking-today/01.10-exam,q39,understand,,New item (kb#536 item 3: self-check rewritten to question-authoring.md; retired q10–q18, q20, q22, q24, q31, q33, q35; kept with per-option comments q01–q09, q19, q21, q23, q25, q36, q27–q30, q37, q34).,none
-01-networking-today/01.10-exam,q40,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q41,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q42,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q43,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q44,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q45,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q46,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q47,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q48,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q49,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q50,remember,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q38,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q51,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q52,understand,,New item (kb#536 item 3).,none
-01-networking-today/01.10-exam,q53,understand,,"New item (kb#536 item 3): topology diagrams were not on the exam; q03 retired — its key («адаптер … в электрическую розетку») answered q44.",none
+01-networking-today/01.10-exam,q39,understand,,"New item (kb#536 item 3). This rewrite retired q01, q03, q10–q22, q24, q31, q33, q35 and kept q02, q04–q09, q23, q25, q27–q30, q34, q36–q37 with per-option comments.",none
+01-networking-today/01.10-exam,q40,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q41,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q42,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q46,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q47,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q48,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q38,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q51,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q52,understand,,"New item (kb#536 item 3).",none
+01-networking-today/01.10-exam,q54,understand,,"New item (kb#536 item 3: replaces q43 (a re-skin of 01.04 q06): a carrier network between a bank's offices → WAN).",none
+01-networking-today/01.10-exam,q55,understand,,"New item (kb#536 item 3: replaces q44 (a re-skin of 01.07 q17): a private cloud run by a provider).",none
+01-networking-today/01.10-exam,q56,understand,,"New item (kb#536 item 3: replaces q45 (a re-skin of 01.06 q09): voice calls break under downloads → QoS).",none
+01-networking-today/01.10-exam,q57,understand,,"New item (kb#536 item 3: replaces q49 (a re-skin of 01.06 q08): three new branches → scalability).",none
+01-networking-today/01.10-exam,q58,understand,,"New item (kb#536 item 3: replaces q50 (a re-skin of 01.04 q12): «наш Интернет» in an advert).",none
+01-networking-today/01.10-exam,q59,understand,,"New item (kb#536 item 3: replaces q53 (a re-skin of 01.03 q10): what changes on the physical diagram after a move).",none
+01-networking-today/01.10-exam,q60,understand,,"New item (kb#536 item 3: replaces q21 (BYOD spelt out in the key): work mail on a personal phone).",none
+01-networking-today/01.10-exam,q61,understand,,"New item (kb#536 item 3: replaces q19 («тайно собирает» gave the key away): an attachment that corrupts files and spreads).",none
+01-networking-today/01.10-exam,q62,understand,,"New item (kb#536 item 3: replaces q01 (the characteristics it listed fed five other items): matching on NIC / port / interface, with a comment on every premise and option).",none
 02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios,q01,understand,1;2;10,"A case (an unconfigured switch in the room); key true. The shared comment «его можно настроить только через консольный порт» overstates (switches also ship with web or zero-touch DHCP-based setup), and for «Aux» it gives the wrong reason: 2.1.4 says the auxiliary port needs no network setup either; it is wrong because it is a legacy modem port for remote access, mostly on routers. Option «Aux»: the lecture says «вспомогательный порт»; «AUX» first appears in 02.02.",text
 02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios,q02,remember,2;10,The one allowed recall item (the «специальный кабель консоли» of 2.1.4). The shared comment restates the key; it does not say Telnet/SSH run over an ordinary network connection or that the auxiliary port is for a modem. «Aux» is not the lecture's term («вспомогательный порт»).,text
 02-basic-switch-and-end-device-configuration/02.01-access-to-cisco-ios,q03,remember,2;3;10,"Second recall item (SSH and Telnet work «по сети», 2.1.4). «внутриполосный» is not in the module, which only says «внеполосный». The shared comment restates the key and does not say console and the auxiliary port are out-of-band; «Aux» as in q02.",rework
