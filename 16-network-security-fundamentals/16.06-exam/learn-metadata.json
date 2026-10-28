@@ -9,9 +9,6 @@
         "$ref": "../../material-tags.json"
     },
     "skills": {},
-    "assets": {
-        "$ref": "./assets"
-    },
     "competency": {
         "produces": {
             "id": "ksa.ccna1.network-security-fundamentals.exam",
