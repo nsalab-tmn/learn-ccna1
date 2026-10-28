@@ -1,0 +1,58 @@
+{
+ "material": "03-protocols-and-models/03.02-protocols",
+ "seed": 518,
+ "key": {
+  "1": {
+   "questionId": "q05",
+   "type": "singleChoice",
+   "labels": {
+    "q05-a1": "А",
+    "q05-a2": "Б",
+    "q05-a4": "В",
+    "q05-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "2": {
+   "questionId": "q06",
+   "type": "singleChoice",
+   "labels": {
+    "q06-a1": "А",
+    "q06-a2": "Б",
+    "q06-a4": "В",
+    "q06-a3": "Г"
+   },
+   "correct": [
+    "А"
+   ]
+  },
+  "3": {
+   "questionId": "q07",
+   "type": "singleChoice",
+   "labels": {
+    "q07-a2": "А",
+    "q07-a1": "Б",
+    "q07-a3": "В",
+    "q07-a4": "Г"
+   },
+   "correct": [
+    "Б"
+   ]
+  },
+  "4": {
+   "questionId": "q08",
+   "type": "singleChoice",
+   "labels": {
+    "q08-a3": "А",
+    "q08-a2": "Б",
+    "q08-a1": "В",
+    "q08-a4": "Г"
+   },
+   "correct": [
+    "В"
+   ]
+  }
+ }
+}
