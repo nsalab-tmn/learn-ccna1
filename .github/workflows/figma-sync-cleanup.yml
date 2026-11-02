@@ -1,6 +1,6 @@
 # .github/workflows/figma-sync-cleanup.yml — delete the bot branch `figma-sync` once its PR is merged.
 # Companion of figma-sync.yml; contract: learn-knowledge-base conventions/figma-git-asset-contract.md §5;
-# operations: learn-knowledge-base runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
+# operations: learn-materials https://github.com/nsalab-tmn/learn-materials/blob/main/runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
 #
 # Safety model: runs only for a MERGED pull request whose head is exactly `figma-sync` (a PR closed without
 # merge keeps its branch for inspection). It deletes only that one bot-owned branch, never the base or any

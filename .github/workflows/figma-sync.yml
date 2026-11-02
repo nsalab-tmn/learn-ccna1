@@ -10,7 +10,7 @@
 # Without an open sync PR the branch is always rebuilt from the base — a stale `figma-sync` left by a merged
 # PR is ignored, never merged — and the bot-owned branch is pushed with --force-with-lease (the lease guards
 # against a concurrent writer; `concurrency` serialises runs). figma-sync-cleanup.yml deletes the branch when
-# its PR is merged. See learn-knowledge-base runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
+# its PR is merged. See learn-materials https://github.com/nsalab-tmn/learn-materials/blob/main/runbooks/figma-sync-operations.md «Stale sync branch» (kb#352).
 # Only files named in figma-assets.json (`out.path`, an animation referrer's `tracks`) and the manifest itself are
 # ever written. A `ref` entry (a shared figure, contract §2) gets its owner's frame; an owner in a sibling course is
 # read from that course's figma-assets.json on its main with the workflow's own token (read-only; the repos are public).
