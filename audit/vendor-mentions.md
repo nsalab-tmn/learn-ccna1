@@ -150,7 +150,7 @@
 13. **Метаданные и имена.** Тег `"Cisco"` в `material-tags.json` (ставится всем материалам) и `final-itn/test.json`; 8 каталогов с `cisco-ios` / `-ios-` в имени (меняют `$ref` и внешние ссылки — переименовывать одним проходом); имена страниц Figma `CCNA1 · NN …` и `course: "ccna1"` в `figma-assets.json`. `final-itn/test.json` удалён 2026-10-20 (kb#313, learn-ccna1#239), его строка ccna1-vm-1269 закрыта.
 14. **Гигиена репозитория.** `__exams/` (24 каталога/файла: копии экзаменов CCNA1 с расхождениями + экзамены CCNA2/CCNA3, 17 `.pka`, 182 изображения в стиле NetAcad, `CiscoVille`, `netacad.net`) не подключён к курсу — убрать или вынести в архив; `packet-tracer-source-files/` (41 `.docx` с «Packet Tracer» в именах и © Cisco) — удалить после миграции; `readme-assets/*.png` (17 скриншотов NetAcad/PT к инструкции по миграции) и сама `migration-instructions.md` — решить, нужна ли инструкция в репозитории курса; `final-itn/test.json` — не подключён. `__exams/` удалён в learn-ccna1#221 (kb#293), `final-itn/test.json` — в learn-ccna1#239 (kb#313); их строки (ccna1-vm-1280 … ccna1-vm-1306, ccna1-vm-1269) закрыты статусом «removed».
 15. **Префикс `2001:db8:acad::/48`** — конвенция NetAcad («acad»), 23 файлов (295 вхождений, модули 9–13, 17, лабы, оценочные `ms.yaml`). Заменить на другой документационный префикс одним проходом (вместе с `ms.yaml`) или признать нейтральным.
-16. **Вне вендора, но замечено:** фото Linksys (4.1.1-1/-2, 1.2.5-6 — бренд Cisco-эпохи, решить вместе с семьёй фигур по `raster-inventory`), логотипы IEEE/IETF/ITU/RIR (3.4.1, 3.4.2-1, 6.1.4, 11.3.6, 12.1.1), скриншоты Windows/PuTTY/Wireshark/Telegram/Gmail внутри фигур — чужие UI, не Cisco; тема другого аудита.
+16. **Вне вендора, но замечено:** фото Linksys (4.1.1-1/-2, 1.2.5-6 — бренд Cisco-эпохи, решить вместе с семьёй фигур по learn-materials `research/raster-inventory-ccna1.md`), логотипы IEEE/IETF/ITU/RIR (3.4.1, 3.4.2-1, 6.1.4, 11.3.6, 12.1.1), скриншоты Windows/PuTTY/Wireshark/Telegram/Gmail внутри фигур — чужие UI, не Cisco; тема другого аудита.
 
 ## Покрытие
 
@@ -180,7 +180,7 @@
 |---|---|---|---|
 | illustration | 325 | 325 | рендер SVG → контактные листы 2×2; текст подписей читался с рендера |
 | animation | 44 | 44 | 10 моментов времени на анимацию (SMIL setCurrentTime), листы 5×2 |
-| native | 74 | 74 | просмотр + сверка с design/raster-inventory-ccna1.md |
+| native | 74 | 74 | просмотр + сверка с https://github.com/nsalab-tmn/learn-materials/blob/main/research/raster-inventory-ccna1.md |
 
 | видео | всего | просмотрено | как |
 |---|---|---|---|

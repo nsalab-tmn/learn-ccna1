@@ -1,7 +1,7 @@
 # Floor and with-lecture measurement of the module 01 self-checks (kb#536, item 3)
 
 Raw judge outputs behind the before/after table of learn-ccna1 #351. Method, as in the learning-study pilot
-(`learn-knowledge-base`, `design/learning-study/pilot/student/tools`):
+(`learn-materials`, [`tools/learning-study/student/`](https://github.com/nsalab-tmn/learn-materials/blob/main/tools/learning-study/student/)):
 
 - for every material the questions are shuffled and relabelled with `build_inputs.py --seed 518`; `key.json` is
   the key after the shuffle;
