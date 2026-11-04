@@ -5,6 +5,7 @@
     "description": "Цель лабораторной работы: отработка комплексных навыков по поиску и устранению типовых неисправностей в сети.",
     "difficulty": 1,
     "duration": "PT1H30M",
+    "timeLimit": "PT1H30M",
     "tags": {
         "$ref": "../../material-tags.json"
     },
