@@ -7,7 +7,7 @@
     "duration": "PT1H30M",
     "timeLimit": "PT1H30M",
     "tags": {
-        "$ref": "../material-tags.json"
+        "$ref": "../../material-tags.json"
     },
     "compute": {
         "local": {

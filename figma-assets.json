@@ -10897,7 +10897,7 @@
     "page": "CCNA1 · 17 build-a-small-network"
    },
    "out": {
-    "path": "final-exam/assets/3.svg",
+    "path": "18-small-network-check/18.02-final-exam/assets/3.svg",
     "format": "svg"
    },
    "status": "synced",
@@ -10923,7 +10923,7 @@
     "page": "CCNA1 · 02 basic-switch-and-end-device-configuration"
    },
    "out": {
-    "path": "final-exam/assets/1.svg",
+    "path": "18-small-network-check/18.02-final-exam/assets/1.svg",
     "format": "svg"
    },
    "status": "synced",
@@ -10949,7 +10949,7 @@
     "page": "CCNA1 · 09 address-resolution"
    },
    "out": {
-    "path": "final-exam/assets/4.svg",
+    "path": "18-small-network-check/18.02-final-exam/assets/4.svg",
     "format": "svg"
    },
    "status": "synced",

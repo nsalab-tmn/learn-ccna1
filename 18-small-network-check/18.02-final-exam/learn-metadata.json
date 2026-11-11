@@ -6,7 +6,7 @@
     "difficulty": 1,
     "duration": "PT1H34M",
     "tags": {
-        "$ref": "../material-tags.json"
+        "$ref": "../../material-tags.json"
     },
     "skills": {},
     "assets": {

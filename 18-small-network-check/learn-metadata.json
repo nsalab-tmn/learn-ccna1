@@ -1,0 +1,18 @@
+{
+    "title": "Собрать и настроить небольшую сеть",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "description": {
+        "$ref": "./README.md"
+    },
+    "materials": [
+        {
+            "$ref": "./18.01-final-lab/learn-metadata.json"
+        },
+        {
+            "$ref": "./18.02-final-exam/learn-metadata.json"
+        }
+    ]
+}
